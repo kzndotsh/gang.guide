@@ -1,0 +1,28 @@
+{
+  "id": "org:del-paso-heights-bloods",
+  "name": "Del Paso Heights Bloods",
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "founded_year": 2000,
+  "founded_year_precision": "range",
+  "description": "The Del Paso Heights Bloods are based in the Del Paso Heights neighborhood of North Sacramento, an area devastated by the crack epidemic of the 1980s. The neighborhood was cut off by highway construction and military base closure, leading to economic decline and gang proliferation.",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/del-paso-heights-bloods/",
+      "title": "Del Paso Heights Bloods \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips%E2%80%93Bloods_gang_war",
+      "title": "Crips%E2%80%93Bloods gang war \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Sacramento",
+  "aliases": [
+    "TMG"
+  ],
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "status": "active"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "org:liggett-bloods",
+  "name": "Liggett Bloods",
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "founded_year": 1986,
+  "founded_year_precision": "range",
+  "description": "Liggett Street Gangsters are a blood street gang located in Panorama City, in the San Fernando Valley of Los Angeles, California. They originated in the late 1980s or early 1990s, as a neutral street gang with no affiliation with Bloods or Crips.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/liggett/bloods/",
+      "title": "Liggett Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/liggett-street-bloods/",
+      "title": "Liggett Street Bloods \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "LSGB",
+    "Liggett Street Gangsters"
+  ],
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "status": "active"
+}

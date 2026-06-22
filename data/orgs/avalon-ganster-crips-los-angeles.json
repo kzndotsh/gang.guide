@@ -1,0 +1,28 @@
+{
+  "id": "org:avalon-ganster-crips-los-angeles",
+  "name": "Avalon Gangster Crips",
+  "aliases": [
+    "116 AGC"
+  ],
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "The 116 Avalon Gangster Crips are a predominantly African-American Crip set based on the East Side of South Los Angeles around 116th Street and Avalon Boulevard, under the Gangster Crips umbrella.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/116agc/",
+      "title": "Avalon Ganster Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/avalon-gangster-crips/",
+      "title": "Avalon Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "type": "street_gang",
+  "founded_year": 1970,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

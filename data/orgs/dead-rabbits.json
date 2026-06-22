@@ -1,0 +1,44 @@
+{
+  "id": "org:dead-rabbits",
+  "name": "Dead Rabbits",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "Irish American criminal street gang active in Lower Manhattan from the 1830s to 1860s. They were founded by disgruntled members of the Roach Guards and were known for their rivalry with the Bowery Boys. The gang engaged in street fighting, assault, murder, and rioting, and supported Tammany Hall politicians. Their symbol was a dead rabbit on a pike.",
+  "aliases": [
+    "Mulberry Boys",
+    "Mulberry Street Boys"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Dead_Rabbits",
+      "title": "Dead Rabbits \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Atlantic_Guards",
+      "title": "Atlantic Guards \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bloody_Tubs",
+      "title": "Bloody Tubs \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bowery_Boys_%28gang%29",
+      "title": "Bowery Boys %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chichesters",
+      "title": "Chichesters \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Five_Points_Gang",
+      "title": "Five Points Gang \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year": 1830,
+  "founded_year_precision": "decade"
+}

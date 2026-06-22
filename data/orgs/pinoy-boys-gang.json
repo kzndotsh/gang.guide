@@ -1,0 +1,21 @@
+{
+  "id": "org:pinoy-boys-gang",
+  "name": "Pinoy Boys Gang",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Filipino-American street gang based in the Los Angeles area, part of the network of Filipino gangs that emerged in Southern California during the 1980s\u20131990s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/losangelesnorth/pbg/",
+      "title": "Pinoy Boys Gang \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

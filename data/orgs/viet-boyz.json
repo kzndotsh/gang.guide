@@ -1,0 +1,19 @@
+{
+  "id": "org:viet-boyz",
+  "name": "Viet Boyz",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Vietnamese-American street gang based in the Alhambra/San Gabriel Valley area of Los Angeles, part of the network of Vietnamese gangs in Southern California.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/alhambra/vietboyz/",
+      "title": "Viet Boyz \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

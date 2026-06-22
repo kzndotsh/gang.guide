@@ -1,0 +1,44 @@
+{
+  "id": "org:west-covina-mob-piru",
+  "name": "West Covina Mob Piru",
+  "type": "street_gang",
+  "lane": "blood-nation",
+  "description": "West Covina Mob Piru is a predominately African-American street gang in the city of West Covina in Los Angeles County.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/west-covina-mob-piru/",
+      "title": "West Covina Mob Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/westcovina/wcmobpiru/",
+      "title": "Team West Covina Mob Piru West Covina Mob Piru \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "founded_year": 1981,
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "WCMP"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

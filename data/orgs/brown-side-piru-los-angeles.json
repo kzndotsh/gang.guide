@@ -1,0 +1,24 @@
+{
+  "id": "org:brown-side-piru-los-angeles",
+  "name": "Brown Side Piru",
+  "aliases": [
+    "BSP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "founded_year": 1973,
+  "founded_year_precision": "range",
+  "description": "The Brown Side Piru is a Blood gang set on the East Side of South Los Angeles under the Piru alliance. Like other Piru sets, they trace their lineage to the original Piru Street Boys who broke from the Crip alliance in the early 1970s.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/bsp/",
+      "title": "Brown Side Piru \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "status": "active"
+}

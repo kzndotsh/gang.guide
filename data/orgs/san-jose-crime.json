@@ -1,0 +1,24 @@
+{
+  "id": "org:san-jose-crime",
+  "name": "San Jose Crime",
+  "aliases": [
+    "Cerrito crime family",
+    "San Jose Mafia"
+  ],
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "founded_year": 1940,
+  "founded_year_precision": "exact",
+  "description": "Italian American Mafia crime family based in San Jose, California, founded in the early 1940s by Onofrio Sciortino. The family engaged in loansharking, gambling, counterfeiting, prostitution, and extortion, with around 25 made members in the 1960s. It was led by Joseph Cerrito and later Angelo Marino, and was active until the 2000s.",
+  "metro": "United States",
+  "colors": [
+    "black"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/San_Jose_Crime",
+      "title": "San Jose Crime \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

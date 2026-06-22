@@ -1,0 +1,22 @@
+{
+  "id": "org:chiwest",
+  "name": "Chi-West",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "description": "Albany Park neighborhood Established 1974-1976 Sections of Albany Park St. Louis & Leland Established 1974-1976",
+  "founded_year": 1958,
+  "founded_year_precision": "exact",
+  "colors": [
+    "dark blue"
+  ],
+  "nation_affiliation": "org:people-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/chi-west/",
+      "title": "Chi-West - Chicago Gang History"
+    }
+  ]
+}

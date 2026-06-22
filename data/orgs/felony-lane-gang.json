@@ -1,0 +1,19 @@
+{
+  "id": "org:felony-lane-gang",
+  "name": "Felony Lane Gang",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "Organized crime gang based in Fort Lauderdale, Florida, known for smash-and-grab thefts from parked cars to steal identification and cash fraudulent checks. They recruit drug addicts and target mothers at daycares, fitness centers, and outdoor areas. The gang operates nationwide in the United States.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Felony_Lane_Gang",
+      "title": "Felony Lane Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 2007,
+  "founded_year_precision": "circa",
+  "aliases": [],
+  "colors": []
+}

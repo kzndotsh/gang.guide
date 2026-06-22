@@ -1,0 +1,29 @@
+{
+  "id": "org:bedrocc",
+  "name": "Bedrock Gangster Crips",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "founded_year": 2010,
+  "description": "Bedrocc Gangster Crips was a predominately African-American street gang located in the West LA section of Los Angeles in the same area of the PlayBoy Gangster Crips.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/bedrocc/",
+      "title": "Bedrock Gangster Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/gangster-crips/",
+      "title": "Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "aliases": [
+    "BGC"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

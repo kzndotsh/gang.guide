@@ -1,0 +1,21 @@
+{
+  "id": "org:311-boyz",
+  "name": "311 Boyz",
+  "lane": "other-national",
+  "founded_year": 2003,
+  "founded_year_precision": "exact",
+  "description": "The 311 Boyz was a teen gang in Las Vegas, Nevada, estimated at 140 members, active in 2003. The group consisted mostly of young males who attended Centennial High School and lived in the northwest area of Las Vegas. They were involved in violent acts, including an attack on a pickup truck that led to multiple criminal charges.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/311_Boyz",
+      "title": "311 Boyz \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Las Vegas",
+  "type": "street_gang",
+  "colors": [
+    "white"
+  ],
+  "status": "active",
+  "aliases": []
+}

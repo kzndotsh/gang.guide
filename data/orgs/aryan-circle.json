@@ -1,0 +1,40 @@
+{
+  "id": "org:aryan-circle",
+  "name": "Aryan Circle",
+  "aliases": [
+    "AC",
+    "C\u00edrculo Ario"
+  ],
+  "type": "prison_gang",
+  "lane": "white-supremacist",
+  "founded_year": 1985,
+  "founded_year_precision": "exact",
+  "description": "The Aryan Circle is a white supremacist neo-Nazi prison gang operating in the United States, founded in 1985 by Mark 'Cowboy' Gaspard in the Texas Department of Corrections as a splinter group from the Aryan Brotherhood of Texas. It is the second-largest prison gang in Texas, with members involved in drug trafficking, murder, and extortion. The gang remains active in state and federal prisons.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Circle",
+      "title": "Aryan Circle \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/asian/southlosangeles/ac/",
+      "title": "Aryan Circle \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood_of_Texas",
+      "title": "Aryan Brotherhood of Texas \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermandad_Aria_de_Texas",
+      "title": "Hermandad Aria de Texas \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Peckerwood",
+      "title": "Peckerwood \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "white"
+  ],
+  "status": "active"
+}

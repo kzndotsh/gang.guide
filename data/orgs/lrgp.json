@@ -1,0 +1,21 @@
+{
+  "id": "org:lrgp",
+  "name": "LRGP Gang",
+  "aliases": [
+    "LRGP Crew"
+  ],
+  "lane": "new-york",
+  "founded_year": 2000,
+  "founded_year_precision": "exact",
+  "description": "LRGP (Lester, Ralph, George, Playter) was a street gang based in the Broadway-Fillmore area of Buffalo, New York, founded in the 2000s. Primarily involved in drug trafficking including marijuana and crack cocaine, they engaged in violent conflict with the rival Bailey Boys. The gang was heavily targeted by law enforcement, leading to multiple arrests and its eventual disbandment by 2016.",
+  "metro": "New York",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/LRGP_Gang",
+      "title": "LRGP Gang \u2014 Wikipedia"
+    }
+  ],
+  "type": "street_gang",
+  "status": "active",
+  "colors": []
+}

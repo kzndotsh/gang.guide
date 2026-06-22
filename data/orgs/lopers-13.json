@@ -1,0 +1,28 @@
+{
+  "id": "org:lopers-13",
+  "name": "Lopers 13",
+  "aliases": [
+    "LPS",
+    "LPSX13"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-inland",
+  "founded_year": 1975,
+  "founded_year_precision": "exact",
+  "description": "Lopers 13 is a Mexican American street gang founded in Santa Ana, California, in the late 1980s or early 1990s. It is the largest gang in Santa Ana by territory, controlling areas including Main Street, Minnie Street, First Street, and Edinger Avenue. The gang is involved in drug trafficking and has been targeted by law enforcement operations.",
+  "metro": "Santa Ana",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/lopers/13/",
+      "title": "Lopers 13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lopers_13",
+      "title": "Lopers 13 \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

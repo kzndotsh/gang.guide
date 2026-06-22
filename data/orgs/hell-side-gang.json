@@ -1,0 +1,19 @@
+{
+  "id": "org:hell-side-gang",
+  "name": "Hell Side Gang",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "An Asian-American street gang based in Alhambra and the San Gabriel Valley, composed primarily of Chinese and Southeast Asian youth.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/alhambra/hsg/",
+      "title": "Hell Side Gang \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

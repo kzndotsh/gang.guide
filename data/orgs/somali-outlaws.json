@@ -1,0 +1,21 @@
+{
+  "id": "org:somali-outlaws",
+  "name": "Somali Outlaws",
+  "type": "street_gang",
+  "lane": "midwest",
+  "description": "The Somali Outlaws are a Somali American street gang based in the Minneapolis\u2013Saint Paul metropolitan area, active since the 2000s. The gang operates primarily around the Karmel Mall in south Minneapolis and the Cedar-Riverside neighborhood, with additional territory in Saint Paul and Nashville. Their activities include drug trafficking and human trafficking.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Somali_Outlaws",
+      "title": "Somali Outlaws \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Minneapolis",
+  "founded_year": 2005,
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": []
+}

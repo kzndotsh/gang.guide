@@ -1,0 +1,25 @@
+{
+  "id": "org:1200-east-coast-blocc-crips-riverside",
+  "name": "1200 East Coast Blocc Crips Riverside",
+  "lane": "california-crips-east-coast",
+  "metro": "Los Angeles",
+  "description": "The 1200 East Coast Blocc Crips are an African-American Crip subset based on the east side of Riverside, California, with approximately 147 members involved in violent assaults, drug trafficking, and robberies.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/1200-east-coast-blocc-crips-riverside/",
+      "title": "1200 East Coast Blocc Crips Riverside \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1980,
+  "aliases": [
+    "1200ECBCR",
+    "1200 East Coast Blocc Crips"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

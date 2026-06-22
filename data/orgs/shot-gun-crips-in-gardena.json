@@ -1,0 +1,44 @@
+{
+  "id": "org:shot-gun-crips-in-gardena",
+  "name": "Shot Gun Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1975,
+  "description": "Shot Gun Crips are a predominately African-American street gang in the South Bay city of Gardena that formed around 1975.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/gardena/shotguncrips/",
+      "title": "Shotguncrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/shot-gun-crips/",
+      "title": "Shot Gun Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/asian/gardena/",
+      "title": "Shot Gun Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/gardena/",
+      "title": "Shot Gun Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/gardena/",
+      "title": "Shot Gun Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/gardena/gardena/",
+      "title": "Shot Gun Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "SGC"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

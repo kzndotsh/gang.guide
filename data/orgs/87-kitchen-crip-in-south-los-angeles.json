@@ -1,0 +1,25 @@
+{
+  "id": "org:87-kitchen-crip-in-south-los-angeles",
+  "name": "Eastside 87 Kitchen Crip Gang",
+  "aliases": [
+    "KCG"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1970,
+  "founded_year_precision": "decade",
+  "description": "Eastside 87 Kitchen Crip Gang is a predominately African-American street gang located in Florence, a section of unincorporated Los Angeles County adjacent to South Los Angeles. Their territory is located from Central (west) to Mary (east) from Manchester (north) to Florence (south) on the eastside of South Los Angeles. Prior to the formation of this gang, the Avenues, led by Craig Monson were active in this community from 1966 to 1971.",
+  "nation_affiliation": "org:crips",
+  "metro": "Los Angeles",
+  "colors": [
+    "blue",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/florence/87kcg/",
+      "title": "Eastside 87 Kitchen Crip Gang \u2014 StreetGangs"
+    }
+  ],
+  "status": "active"
+}

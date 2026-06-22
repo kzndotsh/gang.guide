@@ -1,0 +1,39 @@
+{
+  "id": "org:white-hand-gang",
+  "name": "White Hand Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The White Hand Gang was a collection of Irish American gangs on the New York City, Brooklyn, and Red Hook waterfronts from the early 1900s to 1925. They organized against the growing influence of Italian gangsters, choosing their name as a response to the Sicilian Black Hand gangs. Known for being virulently anti-Italian and particularly violent, the gang suffered from unstable leadership and internal killings, leading to its demise.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/White_Hand_Gang",
+      "title": "White Hand Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/American_Mafia",
+      "title": "American Mafia \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mafia_estadounidense",
+      "title": "Mafia estadounidense \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Five_Points_Gang",
+      "title": "Five Points Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Swamp_Angels",
+      "title": "Swamp Angels \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Irish_mob",
+      "title": "Irish mob \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1900,
+  "founded_year_precision": "circa",
+  "aliases": [],
+  "colors": []
+}

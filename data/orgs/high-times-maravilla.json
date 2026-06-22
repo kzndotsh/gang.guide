@@ -1,0 +1,21 @@
+{
+  "id": "org:high-times-maravilla",
+  "name": "High Times MaraVilla",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "High Times Maravilla is a Chicano street gang and clique of the historic Maravilla gang network in East Los Angeles. Named distinctly from other Maravilla cliques, they operate within the 8.25-square-mile Maravilla area that has contained at least 14 active gangs since the mid-20th century.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/hightimesmv/",
+      "title": "High Times MaraVilla \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1943,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "org:69-east-coast-crips",
+  "name": "69 East Coast Crips",
+  "aliases": [
+    "69ECC",
+    "69 Shacc Boys",
+    "69 NH ECC",
+    "Shacc Gang"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-east-coast",
+  "metro": "Los Angeles",
+  "founded_year": 1970,
+  "founded_year_precision": "range",
+  "description": "Neighborhood East Coast Crips are a predominately African-American street gang located on the Eastside of South Los Angeles. They are among one of the oldest Crip gangs, being founded during the early 1970s when they were simply known as Shack Boys.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/69_East_Coast_Crips",
+      "title": "69 East Coast Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/69-east-coast-crips/",
+      "title": "69 East Coast Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/69ecc/",
+      "title": "69 East Coast Crips \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

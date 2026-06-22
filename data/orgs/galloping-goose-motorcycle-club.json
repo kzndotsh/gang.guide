@@ -1,0 +1,41 @@
+{
+  "id": "org:galloping-goose-motorcycle-club",
+  "name": "Galloping Goose Motorcycle Club",
+  "aliases": [
+    "GG Bunch",
+    "GGMC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1942,
+  "founded_year_precision": "exact",
+  "description": "Outlaw motorcycle club founded in 1942 in Los Angeles, California by Dick Hershberg. Initially an informal racing team, it chartered in 1946 and expanded across the Midwest and South. Considered a second-tier outlaw motorcycle gang by law enforcement, it has been involved in violent crimes and has support clubs.",
+  "metro": "Los Angeles",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Galloping_Goose_Motorcycle_Club",
+      "title": "Galloping Goose Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/El_Forastero_Motorcycle_Club",
+      "title": "El Forastero Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hells_Angels_MC_criminal_allegations_and_incidents",
+      "title": "Hells Angels MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Outlaws_MC_criminal_allegations_and_incidents",
+      "title": "Outlaws MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Vagos_Motorcycle_Club",
+      "title": "Vagos Motorcycle Club \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

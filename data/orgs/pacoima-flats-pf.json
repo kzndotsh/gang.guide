@@ -1,0 +1,21 @@
+{
+  "id": "org:pacoima-flats-pf",
+  "name": "Pacoima Flats (PF)",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "This neighborhood in the past has controlled Pacoima, yet many have moved on and become peace makers bussiness owners etc.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/pacoimaflats/",
+      "title": "Pacoima Flats (PF) \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

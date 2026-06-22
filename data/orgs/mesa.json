@@ -1,0 +1,28 @@
+{
+  "id": "org:mesa",
+  "name": "Varrio Mesa Locos",
+  "type": "street_gang",
+  "lane": "california-latino-inland",
+  "founded_year": 1980,
+  "founded_year_precision": "range",
+  "description": "Mesa Locos (MLS) are primarily an Mexican-American street gang located in the Mesa Margarita, neighborhood on the West Side of Oceanside, in San Diego County, California. This gang originated sometime in the early 1980s, around the Libby Lake Park area, between Calle Vallecitos and Calle Montecito.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/mesa/",
+      "title": "Varrio Mesa Locos \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/varrio-mesa-locos/",
+      "title": "Varrio Mesa Locos \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "San Diego",
+  "aliases": [
+    "MLS",
+    "VMLS13"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "org:vincent-town",
+  "name": "Vincent Town",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "K vida de este barrio los k fuimos solo nos acordamos los k vivimos en este barrio sabemos lo k hay en las calles de north hills k anos los 1999 al 2001 verdad cuando asias filas para comprar comidad jajajajaja.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/vincenttown/",
+      "title": "Vincent Town \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

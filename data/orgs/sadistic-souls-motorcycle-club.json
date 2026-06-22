@@ -1,0 +1,27 @@
+{
+  "id": "org:sadistic-souls-motorcycle-club",
+  "name": "Sadistic Souls Motorcycle Club",
+  "aliases": [
+    "ANSSMC",
+    "Aryan Nations Sadistic Souls Motorcycle Club",
+    "Sadistic Souls MC",
+    "SSMC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 2010,
+  "founded_year_precision": "exact",
+  "description": "White supremacist outlaw motorcycle club founded in 2010 by ex-KKK member Dennis McGiffen. Acts as the militant wing of Aryan Nations, with chapters across the US and several other countries. Listed as an active neo-Nazi group by the Southern Poverty Law Center since 2014.",
+  "metro": "United States",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Sadistic_Souls_Motorcycle_Club",
+      "title": "Sadistic Souls Motorcycle Club \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

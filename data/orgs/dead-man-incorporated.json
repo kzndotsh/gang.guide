@@ -1,0 +1,31 @@
+{
+  "id": "org:dead-man-incorporated",
+  "name": "Dead Man Incorporated",
+  "aliases": [
+    "DMI"
+  ],
+  "type": "prison_gang",
+  "lane": "prison",
+  "founded_year": 2000,
+  "founded_year_precision": "exact",
+  "description": "Dead Man Incorporated (DMI) is a predominantly white organized crime enterprise founded in the late 1990s in the Maryland Department of Corrections by Perry Roark, James Sweeney, and Brian Jordan. Initially allied with the Black Guerrilla Family, the gang expanded into drug trafficking, murder, and other crimes.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Dead_Man_Incorporated",
+      "title": "Dead Man Incorporated \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
+      "title": "Aryan Brotherhood \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Guerrilla_Family",
+      "title": "Black Guerrilla Family \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Baltimore",
+  "colors": [
+    "black"
+  ],
+  "status": "active"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "org:the-yogurt-connection",
+  "name": "The Yogurt Connection",
+  "aliases": [
+    "Yogurt Connection"
+  ],
+  "lane": "midwest",
+  "founded_year": 1975,
+  "founded_year_precision": "exact",
+  "description": "A drug smuggling ring based in Indianapolis, Indiana, operating in the late 1970s and early 1980s. Organized by Linda Leary and her sons Richard and Paul Heilbrunn, it smuggled an estimated 250,000 pounds of marijuana from Colombia, Jamaica, and Thailand into eleven midwestern states, valued at $50-100 million.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/the/yogurt/connection/",
+      "title": "Connection \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Indianapolis",
+  "type": "street_gang",
+  "status": "active",
+  "colors": []
+}

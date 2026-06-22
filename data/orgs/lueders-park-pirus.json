@@ -1,0 +1,22 @@
+{
+  "id": "org:lueders-park-pirus",
+  "name": "Lueders Park Pirus",
+  "lane": "california-bloods",
+  "metro": "Los Angeles",
+  "description": "East Side Lueders Park Pirus are a predominately African-American street gang located on the eastside of Compton, CA. This area was originally known as East Side Piru, but the East Side Pirus splintered into several Piru sets with Lueders Park Pirus as the first Piru set on the eastside. During the early 1970s the Lueders Park Piru and the Compton Varrio 70s were closely aligned.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/lpp/",
+      "title": "Lueders Park Pirus \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1972,
+  "founded_year_precision": "decade",
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "status": "active",
+  "aliases": []
+}

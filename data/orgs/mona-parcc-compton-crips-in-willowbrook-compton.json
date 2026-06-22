@@ -1,0 +1,26 @@
+{
+  "id": "org:mona-parcc-compton-crips-in-willowbrook-compton",
+  "name": "Mona Parcc Compton Crips",
+  "aliases": [
+    "mona parcc",
+    "mona park",
+    "mpcc"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "description": "Mona Parcc Compton Crips are a predominately African-American street gang located in the unincorporated section of Los Angeles County known as Willowbrook which is just north of the City of Compton. They are named for the large County Park, Mona Park, located at 2291 East 121st Street between Mona Boulevard and Willowbrook Avenue.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/compton/mpcc/",
+      "title": "Mona Parcc Compton Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "founded_year": 1980,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

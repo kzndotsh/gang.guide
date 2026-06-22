@@ -1,0 +1,54 @@
+{
+  "id": "org:simon-city-royals-chicago",
+  "name": "Simon City Royals",
+  "aliases": [
+    "SCR",
+    "Royals",
+    "Almighty Simon City Royal Nation"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-folk-people",
+  "metro": "Chicago",
+  "founded_year": 1952,
+  "founded_year_precision": "exact",
+  "description": "The Simon City Royals (Almighty Simon City Royal Nation) are a predominantly white street and prison gang founded in 1952 as Simon City (a greaser gang at Simons Park in Chicago's Humboldt Park) and renamed in 1969 after merging with the Ashland Royals. One of the oldest and largest white gangs in the US. In 1978, they joined Larry Hoover's Folk Nation alliance. Originally multiethnic (Mexican, Puerto Rican, Cuban, White, Arabic members). They've expanded from Chicago to Wisconsin, Mississippi, and Alabama \u2014 one of four most prominent gangs in Mississippi. In 2022, 21 members were RICO-indicted, with 37 total convicted by 2024. Involved in drug trafficking, human trafficking, and loan sharking in prisons.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Simon_City_Royals",
+      "title": "Simon City Royals \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/opa/pr/21-alleged-gang-members-and-associates-charged-rico-indictment",
+      "title": "Simon City Royals RICO \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chicago_Gaylords",
+      "title": "Chicago Gaylords \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
+      "title": "Popes %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Vice_Lord_Nation",
+      "title": "Almighty Vice Lord Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gangster_Disciples",
+      "title": "Gangster Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-simon-city-royals/",
+      "title": "Simon City Royals - Chicago Gang History"
+    }
+  ],
+  "symbols": [
+    "cross",
+    "shield"
+  ],
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "status": "active"
+}

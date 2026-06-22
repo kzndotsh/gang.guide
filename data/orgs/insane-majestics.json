@@ -1,0 +1,24 @@
+{
+  "id": "org:insane-majestics",
+  "name": "Insane Majestics",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "Marshall Square neighborhood Established 1985-1990 Sections of Marshall Square I do not know exactly where they were, please send feedback",
+  "founded_year": 1985,
+  "founded_year_precision": "circa",
+  "colors": [
+    "black",
+    "grey",
+    "white"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/insane-majestics/",
+      "title": "Insane Majestics - Chicago Gang History"
+    }
+  ]
+}

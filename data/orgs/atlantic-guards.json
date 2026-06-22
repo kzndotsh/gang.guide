@@ -1,0 +1,37 @@
+{
+  "id": "org:atlantic-guards",
+  "name": "Atlantic Guards",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Atlantic Guards were a 19th-century American street gang active in New York City from the 1840s to the 1860s. They were one of the original Bowery gangs, known for nativist vigilante activities and street fighting against Irish American gangs like the Dead Rabbits. They wore a red stripe on their trousers as a uniform and were allied with the Bowery Boys. The gang participated in the Dead Rabbits Riot of 1857.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Atlantic_Guards",
+      "title": "Atlantic Guards \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bowery_Boys_%28gang%29",
+      "title": "Bowery Boys %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dead_Rabbits",
+      "title": "Dead Rabbits \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Roach_Guards",
+      "title": "Roach Guards \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Shirt_Tails",
+      "title": "Shirt Tails \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year": 1840,
+  "founded_year_precision": "decade",
+  "aliases": []
+}

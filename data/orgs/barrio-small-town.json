@@ -1,0 +1,27 @@
+{
+  "id": "org:barrio-small-town",
+  "name": "Barrio Small Town",
+  "type": "street_gang",
+  "lane": "california-latino-harbor",
+  "founded_year": 1970,
+  "founded_year_precision": "range",
+  "description": "The Barrio Small Town 13 (BST13) and Pueblo Chico which means Small Town in Spanish this gang is majority Hispanic located in the downtown area of Long Beach, California. Their neighborhood stretches from 4th Street to 7th Street between Golden Avenue and Pacific Ave. The barrio was established in the early 1970s, on 4th street in the golden projects.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/longbeach/barriosmalltown/",
+      "title": "Barriosmalltown \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/barrio-small-town/",
+      "title": "Barrio Small Town \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "BST13"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "org:lynwood-vikings",
+  "name": "Lynwood Vikings",
+  "aliases": [
+    "LASD",
+    "Vikings"
+  ],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "description": "The Lynwood Vikings is a deputy gang within the Los Angeles County Sheriff's Department (LASD), formerly based at the Lynwood station. Composed of sworn deputy sheriffs, it has been described as a neo-Nazi, white supremacist gang engaged in racially motivated hostility. Members have been involved in police brutality and corruption, with tattoos symbolizing officer-involved shootings.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/lynwood/",
+      "title": "Lynwood Vikings \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/lynwood/",
+      "title": "Lynwood Vikings \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/lynwood/",
+      "title": "Lynwood Vikings \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Big_Circle_Gang",
+      "title": "Big Circle Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Compton_Executioners",
+      "title": "Compton Executioners \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lynwood_Vikings",
+      "title": "Lynwood Vikings \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Los Angeles",
+  "founded_year": 1979,
+  "colors": [
+    "white"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

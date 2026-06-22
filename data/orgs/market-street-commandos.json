@@ -1,0 +1,29 @@
+{
+  "id": "org:market-street-commandos",
+  "name": "Market Street Commandos",
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "metro": "United States",
+  "description": "The Market Street Commandos was an outlaw motorcycle club that participated in the 1947 Hollister incident alongside the Boozefighters and Pissed Off Bastards of Bloomington. The club merged with the Hells Angels in 1954 to become their San Francisco chapter.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Market_Street_Commandos",
+      "title": "Market Street Commandos \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hells_Angels",
+      "title": "Hells Angels \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pissed_Off_Bastards_of_Bloomington",
+      "title": "Pissed Off Bastards of Bloomington \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year": 1940,
+  "founded_year_precision": "decade",
+  "aliases": []
+}

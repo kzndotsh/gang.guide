@@ -1,0 +1,25 @@
+{
+  "id": "org:40s-piru-los-angeles",
+  "name": "East Side 40s Piru",
+  "aliases": [
+    "40s Piru",
+    "Rollin 40s Piru LA"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "founded_year": 2000,
+  "founded_year_precision": "range",
+  "description": "East Side 40s Piru were a predominately African-American Blood street gang located on the eastside of South Los Angeles. A newer generation of Bloods from the same neighborhood started claiming All For Crime Bloods in the early 2000s, and the 40s Piru identity has slowly disappeared.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/40s-piru/",
+      "title": "East Side 40s Piru \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "status": "active"
+}

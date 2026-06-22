@@ -1,0 +1,39 @@
+{
+  "id": "org:dirty-dozen-motorcycle-club",
+  "name": "Dirty Dozen Motorcycle Club",
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "metro": "United States",
+  "description": "The Dirty Dozen Motorcycle Club was an outlaw motorcycle club based in Arizona, founded in 1964 by twelve founding members. It became the largest and most violent motorcycle gang in the state, involved in drug trafficking, arms trafficking, prostitution, assault, and murder. The club merged with the Hells Angels in 1997.",
+  "founded_year": 1964,
+  "aliases": [
+    "DDMC"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Dirty_Dozen_Motorcycle_Club",
+      "title": "Dirty Dozen Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Loners_Motorcycle_Club",
+      "title": "Loners Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mongols_MC_criminal_allegations_and_incidents",
+      "title": "Mongols MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Savage_Nomads",
+      "title": "Savage Nomads \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Savage_Skulls",
+      "title": "Savage Skulls \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate"
+}

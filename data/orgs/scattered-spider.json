@@ -1,0 +1,26 @@
+{
+  "id": "org:scattered-spider",
+  "name": "Scattered Spider",
+  "aliases": [
+    "Muddled Libra",
+    "Octo Tempest",
+    "Scatter Swine",
+    "ShinyHunters",
+    "Star Fraud",
+    "UNC3944"
+  ],
+  "lane": "other-national",
+  "founded_year": 2022,
+  "founded_year_precision": "exact",
+  "description": "Scattered Spider is a hacking group mostly composed of teens and young adults from the United States and the United Kingdom, believed to be affiliated with the cybercriminal network 'The Com'. Founded around May 2022, the group gained notoriety for hacking and extorting Caesars Entertainment and MGM Resorts International in 2023.",
+  "metro": "United States",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Scattered_Spider",
+      "title": "Scattered Spider \u2014 Wikipedia"
+    }
+  ],
+  "type": "street_gang",
+  "status": "active",
+  "colors": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": "org:94-hoover-crips",
+  "name": "94 Hoover Crips",
+  "aliases": [
+    "94 Hoover",
+    "94HCG",
+    "Nine-Four"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-hoover",
+  "metro": "Los Angeles",
+  "founded_year": 1969,
+  "founded_year_precision": "circa",
+  "description": "Westside 94 Hoover are a predominately African American street gang located in the area of 94th Street & Hoover Avenues near Bret Harte Middle School. For many years they identified as Crips but in the 1990s they dropped the Crip identity because of their inability to have any allies that were Crips. Since the 1980s they have been involved in rivalries with some of the largest Crips gangs, including the Rollin 60s Crips, Main Street Crips, and several sets of East Coasts Crips.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/94_Hoover_Crips",
+      "title": "94 Hoover Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/94hoover/",
+      "title": "94 Hoover Crips \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "orange"
+  ],
+  "status": "active"
+}

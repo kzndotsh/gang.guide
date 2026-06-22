@@ -1,0 +1,32 @@
+{
+  "id": "org:elm-street-piru",
+  "name": "Elm Street Piru",
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "New York",
+  "description": "The Elm Street Piru is a Blood/Piru set that started in Compton, California and has since spread to Brooklyn, Atlanta, Virginia, Newark, St. Louis, and other cities. In 2009, a father-daughter pair was charged with recruiting high school students across Northern Virginia. In 2020, an Elm Street Piru member shot and killed 8-year-old Secoreia Turner during the Rayshard Brooks protests in Atlanta when her mother's car failed to stop at a gang-erected barricade.",
+  "founded_year": 1972,
+  "aliases": [
+    "Elm Street Piru Bloods"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Elm_Street_Piru",
+      "title": "Elm Street Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kelly_Park_Compton_Crips",
+      "title": "Kelly Park Compton Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mob_Piru",
+      "title": "Mob Piru \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "org:39ers-gang",
+  "name": "39ers gang",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "Hybrid street gang formed in 2010 from the merger of the G-Strip gang (Gallier Street) and 3-N-G gang (Third and Galvez) in New Orleans. Primarily African American, involved in drug trafficking, murder, and racketeering. Linked to over 45 murders, including the 2010 killing of rapper Magnolia Shorty. Ten members were indicted and convicted in 2017.",
+  "founded_year": 2009,
+  "aliases": [
+    "3-N-G",
+    "G-Strip"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/39ers_gang",
+      "title": "39ers gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/110ers",
+      "title": "110ers \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Byrd_Gang",
+      "title": "Byrd Gang \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

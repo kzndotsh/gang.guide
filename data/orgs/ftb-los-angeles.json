@@ -1,0 +1,33 @@
+{
+  "id": "org:ftb-los-angeles",
+  "name": "Westside Fruit Town Brims",
+  "aliases": [
+    "FTB",
+    "S FTB"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "founded_year": 1973,
+  "founded_year_precision": "exact",
+  "description": "Westside Fruit Town Brims are a predominately African-American street gang aligned with the Bloods located in the Exposition Park area of South Los Angeles.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/ftb/",
+      "title": "Westside Fruit Town Brims \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/fruit/town/brims/",
+      "title": "Westside Fruit Town Brims \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/fruit-town-brims/",
+      "title": "Fruit Town Brims \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "status": "active"
+}

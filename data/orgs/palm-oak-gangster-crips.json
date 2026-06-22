@@ -1,0 +1,25 @@
+{
+  "id": "org:palm-oak-gangster-crips",
+  "name": "Palm & Oak Gangster Crips",
+  "lane": "california-crips-gangster",
+  "metro": "Los Angeles",
+  "description": "Oak Gangster Crips (POGC) are predominantly an African-American street gang situated on the east side of Lynwood, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/palm-oak-gangster-crips/",
+      "title": "Palm & Oak Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "POGC"
+  ],
+  "status": "active"
+}

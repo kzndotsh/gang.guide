@@ -1,0 +1,28 @@
+{
+  "id": "org:r30crips",
+  "name": "Rollin 30s Original Harlem Crips",
+  "lane": "california-crips-rollin",
+  "metro": "Los Angeles",
+  "founded_year": 2006,
+  "description": "Original Harlem Crips are a predominately African-American street gang located in the Jefferson Park area of South Los Angeles.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/r30crips/",
+      "title": "Rollin 30s Original Harlem Crips \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "RTC",
+    "Dirt Gang",
+    "OHC",
+    "Original Harlem Crip",
+    "Rollin 30s"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

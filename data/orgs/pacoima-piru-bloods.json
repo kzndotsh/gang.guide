@@ -1,0 +1,33 @@
+{
+  "id": "org:pacoima-piru-bloods",
+  "name": "Pacoima Piru Bloods",
+  "aliases": [
+    "PPB",
+    "Pacoima Piru"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "Pacoima Piru Bloods are a predominately African-America street gang located in the community of Pacoima in the San Fernando Valley section of Los Angeles. They are among the only African-American gang in the Pacoima community which is dominated by several Latino gangs, and one of the few non-Compton Pirus in Los Angeles.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Pacoima_Piru_Bloods",
+      "title": "Pacoima Piru Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/pacoima-piru-bloods/",
+      "title": "Pacoima Piru Bloods \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/pacoimapirus/",
+      "title": "Pacoimapirus \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1969,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

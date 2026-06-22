@@ -1,0 +1,21 @@
+{
+  "id": "org:shadowcrew",
+  "name": "Shadowcrew",
+  "aliases": [
+    "ShadowCrew.com"
+  ],
+  "lane": "other-national",
+  "founded_year": 2002,
+  "founded_year_precision": "exact",
+  "description": "ShadowCrew was a cybercrime forum operating from 2002 to 2004, founded by Brett Johnson, Seth Sanders, and Kim Marvin Taylor. It facilitated credit card fraud, hacking, and other illegal activities, with around 4,000 members. The site was infiltrated by the US Secret Service through informant Albert Gonzalez, leading to its shutdown.",
+  "metro": "United States",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Shadowcrew",
+      "title": "Shadowcrew \u2014 Wikipedia"
+    }
+  ],
+  "type": "street_gang",
+  "status": "active",
+  "colors": []
+}

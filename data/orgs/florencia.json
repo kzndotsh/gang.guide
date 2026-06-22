@@ -1,0 +1,50 @@
+{
+  "id": "org:florencia",
+  "name": "Florencia 13",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "founded_year": 1952,
+  "description": "Florencia 13 (F13/South Side Florencia 13) is one of the largest Sure\u00f1o gangs in South Los Angeles with 2,000-3,000+ members, named after the Florence area of LA County. Controlled by the Mexican Mafia. Notorious for racially motivated attacks on African-Americans \u2014 in 2007, 102 members were indicted in 'Operation Joker's Wild' (the biggest gang raid in US history at the time), with court testimony confirming race-based targeting. They've expanded to Oregon, Colorado, Florida, Utah, Arizona, Kansas, Mexico, Canada, Brazil, and Germany. In 2022, three members pled guilty to RICO charges for the murder of off-duty LAPD Officer Fernando Arroyos. Allied with Pueblo Bishop Bloods and Harvard Park Brims despite being Sure\u00f1o.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Florencia_13",
+      "title": "Florencia 13 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/bellgardens/florencia/",
+      "title": "Florencia 13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/huntingtonpark/florencia13/",
+      "title": "Florencia13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/florence/",
+      "title": "Florencia 13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/florence/",
+      "title": "Florencia 13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/lacounty/florence/",
+      "title": "Florencia 13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/grand-jury-charges-37-florencia-13-members-and-associates-federal-crimes-including-3",
+      "title": "DOJ - Florencia 13 RICO Charges"
+    }
+  ],
+  "aliases": [
+    "F13",
+    "Florence Gang",
+    "South Side Florencia 13"
+  ],
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

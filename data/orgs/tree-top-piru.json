@@ -1,0 +1,43 @@
+{
+  "id": "org:tree-top-piru",
+  "name": "Tree Top Piru",
+  "aliases": [
+    "TTP",
+    "Bompton Tree Top Piru",
+    "Tree Top Piru Bloods"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "description": "The Tree Top Piru (Bompton Tree Top Piru) is a Blood/Piru set formed in the 1970s on the west side of Compton, named after tree-themed streets (Acacia, Poplar, Maple, Spruce, Cedar, Elm). Has spread to Tennessee, Texas, Maryland, and Baltimore. Connected to rappers DJ Quik and YG. In 2007, Baltimore TTP leader Michelle Hebron was sentenced to 30 years for racketeering and murder. In Texas, member Javan Williams received life for two 2017 murders.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Tree_Top_Piru",
+      "title": "Tree Top Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/tree-top-piru/",
+      "title": "Tree Top Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cedar_Block_Piru",
+      "title": "Cedar Block Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Elm_Street_Piru",
+      "title": "Elm Street Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Fruit_Town_Piru",
+      "title": "Fruit Town Piru \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1983,
+  "colors": [
+    "red",
+    "green"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

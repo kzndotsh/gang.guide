@@ -1,0 +1,31 @@
+{
+  "id": "org:110ers",
+  "name": "110ers",
+  "aliases": [
+    "110ers Gang"
+  ],
+  "lane": "southeast-southwest",
+  "description": "The 110ers are a violent criminal organization based in New Orleans, Louisiana, operating primarily in the 10th and 11th Wards. Founded in the 2000s, the gang is involved in drug trafficking, murder, theft, and kidnapping. They have been under federal investigation since 2010 and were indicted in 2013 for multiple killings, including the death of a child.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/110ers/",
+      "title": "110ers \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/110ers",
+      "title": "110ers \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/39ers_gang",
+      "title": "39ers gang \u2014 Wikipedia"
+    }
+  ],
+  "metro": "New Orleans",
+  "founded_year": 2008,
+  "type": "street_gang",
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

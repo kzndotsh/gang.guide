@@ -1,0 +1,37 @@
+{
+  "id": "org:rollin-20s-outlaw-bloods",
+  "name": "Rollin 20s Outlaw Bloods",
+  "aliases": [
+    "OLS",
+    "Outlaw 20s"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "Outlaw Bloods are a predominately African-American street gang located on the eastside of South Los Angeles near Adams Blvd and Central Avenues.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/",
+      "title": "Rollin 20s Outlaw Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/outlaw20s/",
+      "title": "Rollin 20s Outlaw Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/outlaw20s/",
+      "title": "Team Eastside Rollin 20s Outlaw Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/outlaw-bloods/",
+      "title": "Outlaw Bloods - Chicago Gang History"
+    }
+  ],
+  "founded_year": 1969,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

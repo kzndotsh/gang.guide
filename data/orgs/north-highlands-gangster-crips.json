@@ -1,0 +1,25 @@
+{
+  "id": "org:north-highlands-gangster-crips",
+  "name": "North Highlands Gangster Crips",
+  "type": "street_gang",
+  "lane": "california-crips-gangster",
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "description": "The North Highlands Gangster Crips are an African-American Crip set based in North Highlands, north of Sacramento, California. They are allied with the Valley Hi Gangster Crips and rival the Beast Mob Bloods and Del Paso Heights Bloods.",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/north-highlands-gangster-crips/",
+      "title": "North Highlands Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "aliases": [
+    "NHGC"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

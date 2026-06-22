@@ -1,0 +1,42 @@
+{
+  "id": "org:trinitarios",
+  "name": "Trinitarios",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "Dominican American criminal organization founded in 1993 on Rikers Island, New York City, by Leonides Sierra and Julio Marine. Initially formed to protect Dominican and Hispanic inmates, it expanded into drug trafficking, murder, and robbery across the northeastern US and internationally. Despite major prosecutions in 2009-2014, the group experienced a resurgence with internal factional violence.",
+  "founded_year": 1993,
+  "aliases": [
+    "Bronx Trinitarios Gang",
+    "BTG"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Trinitarios",
+      "title": "Trinitarios \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bloods",
+      "title": "Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dominicans_Don%27t_Play",
+      "title": "Dominicans Don't Play \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Tiny_Rascal_Gang",
+      "title": "Tiny Rascal Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/%C3%91etas",
+      "title": "%C3%91etas \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "green",
+    "white",
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

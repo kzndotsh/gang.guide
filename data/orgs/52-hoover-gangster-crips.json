@@ -1,0 +1,33 @@
+{
+  "id": "org:52-hoover-gangster-crips",
+  "name": "52 Hoover Gangster Crips",
+  "aliases": [
+    "52HGC",
+    "Five Deuce"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-hoover",
+  "metro": "Los Angeles",
+  "founded_year": 1976,
+  "founded_year_precision": "range",
+  "description": "52 Hoover Gangster Crips are a predominately African-American street gang located in the Vermont-Slauson community of South LA in the City of Los Angeles. They are connected to both the Gangster alliance and the Hoover alliance and formed during the late 1970s.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/52_Hoover_Gangster_Crips",
+      "title": "52 Hoover Gangster Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/52hoover/",
+      "title": "52 Hoover Gangster Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/gangster-crips/",
+      "title": "Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "orange"
+  ],
+  "status": "active"
+}

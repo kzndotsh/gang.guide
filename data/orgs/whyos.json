@@ -1,0 +1,37 @@
+{
+  "id": "org:whyos",
+  "name": "Whyos",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Whyos were a dominant street gang in New York City from the late 1860s to the early 1890s, formed from remnants of Five Points gangs after police crackdowns. They controlled much of Manhattan, engaging in street fighting, murder, robbery, and extortion. The gang was predominantly Irish and required members to have killed at least once. They were eventually defeated by the Monk Eastman Gang.",
+  "aliases": [
+    "Whyos Gang"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Whyos",
+      "title": "Whyos \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cherry_Hill_Gang",
+      "title": "Cherry Hill Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chichesters",
+      "title": "Chichesters \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Eastman_Gang",
+      "title": "Eastman Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Five_Points_Gang",
+      "title": "Five Points Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1868,
+  "founded_year_precision": "circa",
+  "colors": []
+}

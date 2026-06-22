@@ -1,0 +1,21 @@
+{
+  "id": "org:high-times-familia",
+  "name": "High Times Familia",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "Latino street gang in the San Fernando Valley, documented among active SFV gangs since at least the late 1990s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/hightimes/",
+      "title": "High Times Familia \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

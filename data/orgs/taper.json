@@ -1,0 +1,24 @@
+{
+  "id": "org:taper",
+  "name": "Taper Street Pirus",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "description": "Compton Taper Street Pirus were a predominately African-American street gang on the westside of Compton during the early 1970s.",
+  "type": "street_gang",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/taper/",
+      "title": "Taper Street Pirus \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "aliases": [
+    "Taper Pirus"
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

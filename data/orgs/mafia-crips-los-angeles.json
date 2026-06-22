@@ -1,0 +1,23 @@
+{
+  "id": "org:mafia-crips-los-angeles",
+  "name": "Mafia Crips",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "description": "The Mafia Crips are a large African-American Crip alliance consisting of several street gang sets that originated throughout South Los Angeles, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/mafia-crips-los-angeles/",
+      "title": "Mafia Crips Los Angeles \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue",
+    "yellow"
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "aliases": null,
+  "status": "active"
+}

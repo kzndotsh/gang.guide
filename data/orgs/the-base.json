@@ -1,0 +1,29 @@
+{
+  "id": "org:the-base",
+  "name": "The Base",
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 2018,
+  "founded_year_precision": "exact",
+  "description": "The Base is an international neo-Nazi organization and paramilitary training network formed in 2018 by Rinaldo Nazzaro. It advocates accelerationist and white nationalist ideology, aiming to establish white ethnostates through terrorism and violent overthrow of governments. The group operates training camps and has links to other far-right extremist groups.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/the/base/",
+      "title": "The Base \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Atomwaffen_Division",
+      "title": "Atomwaffen Division \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Base_%28neo-Nazi_group%29",
+      "title": "The Base %28neo-Nazi group%29 \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "white"
+  ],
+  "status": "active",
+  "aliases": []
+}

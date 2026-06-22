@@ -1,0 +1,34 @@
+{
+  "id": "org:black-mafia",
+  "name": "Black Mafia",
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "metro": "Philadelphia",
+  "description": "The Black Mafia was a Philadelphia-based African-American organized crime syndicate founded around 1969 by Samuel Christian. It controlled drug trafficking, extortion, and other rackets in Philadelphia and the Delaware Valley during the 1970s and early 1980s. The group was known for its use of intimidation and violence, with over 40 murders attributed to it. It became largely defunct by 1984, though a successor group, the Junior Black Mafia, operated until 1992.",
+  "founded_year": 1969,
+  "aliases": [
+    "Black Muslim Mafia",
+    "Muslim Mob",
+    "PBM",
+    "Philadelphia Black Mafia"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Mafia",
+      "title": "Black Mafia \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ghetto_Boys",
+      "title": "Ghetto Boys \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Philadelphia_crime_family",
+      "title": "Philadelphia crime family \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate"
+}

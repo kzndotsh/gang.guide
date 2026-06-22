@@ -1,0 +1,37 @@
+{
+  "id": "org:highwaymen-motorcycle-club",
+  "name": "Highwaymen Motorcycle Club",
+  "aliases": [
+    "Highwaymen",
+    "Highwaymen MC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1954,
+  "founded_year_precision": "exact",
+  "description": "The Highwaymen Motorcycle Club is a one-percenter outlaw motorcycle club founded in Detroit, Michigan in 1954. It is the largest motorcycle club in the Detroit area with over 400 members and chapters in several U.S. states. The club has been the subject of major FBI investigations in 1973, 1987, and 2007, resulting in convictions for racketeering, drug trafficking, and other crimes.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/highwaymen/motorcycle/club/",
+      "title": "Highwaymen Motorcycle Club \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Detroit_Partnership",
+      "title": "Detroit Partnership \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hells_Angels_MC_criminal_allegations_and_incidents_in_British_Columbia",
+      "title": "Hells Angels MC criminal allegations and incidents in British Columbia \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Outlaws_MC_criminal_allegations_and_incidents",
+      "title": "Outlaws MC criminal allegations and incidents \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Detroit",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "status": "active"
+}

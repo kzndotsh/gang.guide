@@ -1,0 +1,40 @@
+{
+  "id": "org:135-pirus",
+  "name": "135 Pirus",
+  "aliases": [
+    "The Five"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "founded_year": 1975,
+  "description": "135 Pirus are a predominately African-American street gang near 135th between Main Street and Avalon. This neighborhood was formed around 1975 in unincorporated Los Angeles County in a small community between Compton to the east and Gardena to the west.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/135_Pirus",
+      "title": "135 Pirus \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/135pirus/",
+      "title": "135 Pirus \u2014 StreetGangs"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/rufus-buck-gang-1895-1896/",
+      "title": "Academic research"
+    },
+    {
+      "url": "https://blackpast.org/global-african-history/taylor-john-baron-taylor-warwick-1952/",
+      "title": "Academic research"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/new-breeds",
+      "title": "Encyclopedia of Chicago"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

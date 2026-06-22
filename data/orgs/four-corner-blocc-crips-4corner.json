@@ -1,0 +1,22 @@
+{
+  "id": "org:four-corner-blocc-crips-4corner",
+  "name": "Four Corner Blocc Crips 4corner",
+  "lane": "california-crips-other",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/4corner/",
+      "title": "Four Corner Blocc Crips 4corner \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "founded_year": 1970,
+  "description": "Four Corner Blocc Crips (4CBC) is an African-American Crip set based in South Los Angeles, California. Part of the broader network of Crip sets in the South Central area.",
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": []
+}

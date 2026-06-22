@@ -1,0 +1,21 @@
+{
+  "id": "org:south-side-play-boys-pbs-in-south-los-angeles",
+  "name": "South Side Play Boys (PBS)",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "description": "East Side Play Boys are a predominately Hispanic street gang located on the eastside of South Los Angeles. The PBS from this neighborhood started during the mid 1970s and have the following clicks; 35th, 42nd Cyclones, 43rd, 46th Locos, 49th, 51st Locos, 56th Locos, 64th Street Chicos Locos. The PlayBoys are among one of the first Latino gangs to form in this area of Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/playboys/",
+      "title": "South Side Play Boys (PBS) in South Los Angeles \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

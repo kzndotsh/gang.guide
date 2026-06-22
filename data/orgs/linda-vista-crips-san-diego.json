@@ -1,0 +1,25 @@
+{
+  "id": "org:linda-vista-crips-san-diego",
+  "name": "Linda Vista Crips San Diego",
+  "lane": "california-crips-other",
+  "founded_year": 1990,
+  "founded_year_precision": "range",
+  "description": "The Linda Vista Crips (LVC), also known as the Linda Vista Rollin 60s Crips, are a multi-ethnic street gang operating on the north side of the Linda Vista community in San Diego, California.",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/linda-vista-crips-san-diego/",
+      "title": "Linda Vista Crips San Diego \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "San Diego",
+  "aliases": [
+    "LVCSD",
+    "Linda Vista Rollin 60s Crips"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "type": "street_gang",
+  "status": "active"
+}

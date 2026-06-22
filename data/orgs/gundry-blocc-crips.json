@@ -1,0 +1,28 @@
+{
+  "id": "org:gundry-blocc-crips",
+  "name": "Gundry Blocc Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "description": "The Gundry Blocc Crips (GBC) are a predominantly African-American Crip set based near Gundry Avenue in the Compton/North Long Beach area of Los Angeles.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/paramount/gundryblocc/",
+      "title": "Gundryblocc \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/paramount-gundry-blocc-crips-2/",
+      "title": "Paramount Gundry Blocc Crips 2 \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "GBC"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

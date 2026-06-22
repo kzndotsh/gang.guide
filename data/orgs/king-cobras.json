@@ -1,0 +1,23 @@
+{
+  "id": "org:king-cobras",
+  "name": "King Cobras",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "The King Cobras (Insane King Cobras) are a Latino Folk Nation street gang founded in 1972 in Chicago. Colors are black and green. Symbols include the cobra snake and pitchfork. Active in Hegewisch and surrounding south side neighborhoods.",
+  "founded_year": 1972,
+  "founded_year_precision": "exact",
+  "colors": [
+    "black",
+    "green"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/insane-king-cobras/",
+      "title": "King Cobras - Chicago Gang History"
+    }
+  ]
+}

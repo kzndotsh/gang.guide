@@ -1,0 +1,58 @@
+{
+  "id": "org:mickey-cobras-chicago",
+  "name": "Mickey Cobras",
+  "aliases": [
+    "MC",
+    "Mickey Cobra Nation",
+    "Egyptian King Cobras",
+    "Cobra Stones"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "founded_year": 1954,
+  "founded_year_precision": "exact",
+  "description": "The Mickey Cobras are a Chicago gang affiliated with the People Nation, originally founded in 1954 as the Egyptian King Cobras on Chicago's West Side. Named after leader Henry 'Mickey' Cogwell who was assassinated by Jeff Fort in 1977 for refusing to join the El Rukns. Their colors are green, black, and red. Allied with the Chicago Outfit (organized crime link documented since 1970). They operated a large-scale heroin ring netting over $100,000/week until the 2001 federal prosecution of 15 members. Described by US Attorney Patrick Fitzgerald as one of Chicago's 'super-gangs.'",
+  "nation_affiliation": "org:people-nation",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Mickey_Cobras",
+      "title": "Mickey Cobras \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.dea.gov/sites/default/files/divisions/chi/2006/pr062106ap.html",
+      "title": "Mickey Cobras Drug Operation \u2014 DEA"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
+      "title": "Almighty Black P. Stone Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Vice_Lord_Nation",
+      "title": "Almighty Vice Lord Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Disciples",
+      "title": "Black Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gangster_Disciples",
+      "title": "Gangster Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/mickey-cobras/",
+      "title": "Mickey Cobras - Chicago Gang History"
+    }
+  ],
+  "colors": [
+    "green",
+    "black",
+    "red"
+  ],
+  "symbols": [
+    "cobra",
+    "five-pointed star",
+    "crescent moon"
+  ],
+  "status": "active"
+}

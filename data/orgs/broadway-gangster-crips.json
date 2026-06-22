@@ -1,0 +1,33 @@
+{
+  "id": "org:broadway-gangster-crips",
+  "name": "Broadway Gangster Crips",
+  "lane": "california-crips-gangster",
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "description": "The Broadway Gangster Crips consist of two sub-sets the 52 Broadway Gangster Crips and the 112 Broadway Gangster Crips.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/broadway/gangster/crips/",
+      "title": "Broadway Gangster Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/broadway-gangster-crips/",
+      "title": "Broadway Gangster Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/112bgc/",
+      "title": "Broadway Gangster Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Chicago",
+  "type": "street_gang",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "aliases": [
+    "BGC"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

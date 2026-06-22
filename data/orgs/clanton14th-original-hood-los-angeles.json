@@ -1,0 +1,33 @@
+{
+  "id": "org:clanton14th-original-hood-los-angeles",
+  "name": "Clanton 14th Street (Original Hood)",
+  "lane": "california-latino-harbor",
+  "metro": "Los Angeles",
+  "founded_year": 1921,
+  "founded_year_precision": "circa",
+  "description": "Clanton 14th Street is a predominately Hispanic gang originally from Los Angeles\u2019 eastside. The original Clanton varrio started in the early 1920s on Clanton Street which was located between San Pedro and Central Avenue. The territory of Clanton varrio once went from Olympic Blvd (north) to Santa Barbara Avenue (south) which is now known as Martin Luther King Jr.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/clanton14th-original-hood/",
+      "title": "Clanton14Th Original Hood \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/18th_Street_gang",
+      "title": "18th Street gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mara_Barrio_18",
+      "title": "Mara Barrio 18 \u2014 Wikipedia"
+    }
+  ],
+  "type": "street_gang",
+  "aliases": [
+    "Clanton 14",
+    "C14",
+    "Original Hood"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

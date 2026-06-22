@@ -1,0 +1,32 @@
+{
+  "id": "org:spook-town-compton-crips",
+  "name": "Spook Town Compton Crips",
+  "aliases": [
+    "STCC"
+  ],
+  "type": "street_gang",
+  "lane": "crip-nation",
+  "description": "Spook Town Compton Crips are an African-American street gang located on the eastside of Compton. The have a close alliance with Acacia Blocc Compton Crips and the Farm Dog Comtpon Crip, represented by the ATF identity.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/spook-town-compton-crips/",
+      "title": "Spook Town Compton Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/compton/stcc/",
+      "title": "Spook Town Compton Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Nutty_Blocc_Compton_Crips",
+      "title": "Nutty Blocc Compton Crips \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Los Angeles",
+  "founded_year": 1975,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

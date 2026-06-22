@@ -1,0 +1,24 @@
+{
+  "id": "org:92bishop",
+  "name": "92 Bishop Bloods",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "Bishop Bloods are a predominately African-American street gang that was founded during the early 1970s on Bandera Street in the Watts section of South Los Angeles.",
+  "type": "street_gang",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/florence/92bishop/",
+      "title": "92 Bishop Bloods \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year": 1973,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "92BB"
+  ],
+  "status": "active"
+}

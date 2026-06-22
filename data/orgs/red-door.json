@@ -1,0 +1,19 @@
+{
+  "id": "org:red-door",
+  "name": "Red Door",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "An Asian-American criminal organization based in Diamond Bar, California. In 2010, 18 members were arrested on federal drug trafficking and marriage fraud charges.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/diamondbar/reddoor/",
+      "title": "Red Door \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

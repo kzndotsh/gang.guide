@@ -1,0 +1,22 @@
+{
+  "id": "org:nip-crips",
+  "name": "Nip Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1990,
+  "founded_year_precision": "range",
+  "description": "Nip Crips were a short lived predominately southeast Asian street gang in Long Beach, California. It members included Cambodian, Vietnamese, and Laotian members that were located near the intersection of Dawson & Anaheim. They became defunct during the early 1990s.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/longbeach/nipcrips/",
+      "title": "Nip Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "status": "inactive",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "aliases": []
+}

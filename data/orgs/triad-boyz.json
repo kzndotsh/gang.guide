@@ -1,0 +1,19 @@
+{
+  "id": "org:triad-boyz",
+  "name": "Triad BoyZ",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Chinese/Asian-American street gang active in the Los Angeles area, named after the Chinese Triad criminal organizations but operating as a local street gang.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/torrance/tbz/",
+      "title": "Triad BoyZ \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

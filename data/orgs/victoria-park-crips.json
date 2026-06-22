@@ -1,0 +1,28 @@
+{
+  "id": "org:victoria-park-crips",
+  "name": "Victoria Park Crips",
+  "lane": "california-crips-long-beach",
+  "metro": "Los Angeles",
+  "description": "The Victoria Park Crips (VPC) also known as Victoria Park Carson Crips (VPCC) are predominantly, but not exclusively, an African-American street gang located on the Eastside in Carson, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/victoria-park-crips/",
+      "title": "Victoria Park Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "but not exclusively",
+    "VPC",
+    "VPCC",
+    "Victoria Park Carson Crips",
+    "Victoria Park Carson Crips (VPCC)"
+  ],
+  "status": "active"
+}

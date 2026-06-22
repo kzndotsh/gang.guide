@@ -1,0 +1,25 @@
+{
+  "id": "org:harvard-gangster-crips",
+  "name": "Harvard Gangster Crips",
+  "lane": "california-crips-gangster",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/harvard-gangster-crips/",
+      "title": "Harvard Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "founded_year": 1970,
+  "description": "The Harvard Park Gangster Crips are an African-American Crip set based in the Harvard Park neighborhood of South Los Angeles, operating under the Gangster Crips umbrella.",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "aliases": [
+    "C14"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

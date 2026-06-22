@@ -1,0 +1,23 @@
+{
+  "id": "org:hard-time-hustler-crips-88-93",
+  "name": "88/93 Hard Time Hustler Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "A subset of the Hard Time Hustler Crips operating along 88th and 93rd Streets in South Los Angeles, part of the broader HTHC alliance that is one of the larger Hustler Crip formations in the area.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/hthc88x93/",
+      "title": "Hard Time Hustler Crips, 88, 93 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue",
+    "green"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

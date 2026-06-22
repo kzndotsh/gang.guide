@@ -1,0 +1,26 @@
+{
+  "id": "org:marginals",
+  "name": "Marginals",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "Paddy Irish gang, was a New York street gang active in the early 1900s. Based on the Lower West Side of Manhattan, they were involved in extortion and labor slugging. Under leader Thomas F. 'Tanner' Smith, they succeeded the Hudson Dusters in their territory. The gang's reign ended with Smith's murder in 1919.",
+  "aliases": [
+    "Paddy Irish gang",
+    "Tanner Smiths"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Marginals",
+      "title": "Marginals \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hudson_Dusters",
+      "title": "Hudson Dusters \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1910,
+  "founded_year_precision": "decade",
+  "colors": []
+}

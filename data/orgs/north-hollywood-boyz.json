@@ -1,0 +1,21 @@
+{
+  "id": "org:north-hollywood-boyz",
+  "name": "North Hollywood Boyz",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "Latino street gang based in North Hollywood in the San Fernando Valley, active since at least the late 1990s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/nhbz/",
+      "title": "North Hollywood Boyz \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

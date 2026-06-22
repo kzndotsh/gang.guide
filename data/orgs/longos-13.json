@@ -1,0 +1,30 @@
+{
+  "id": "org:longos-13",
+  "name": "Longos 13",
+  "lane": "california-latino-harbor",
+  "founded_year": 1968,
+  "founded_year_precision": "decade",
+  "description": "The Varrio Longo 13 are the largest Sure\u00f1o gang throughout the Harbor Area of Long Beach, California. The Longo 13 is made up of three sets: The East Side Longos (ESL13) which is the largest of the three, with an estimate of over 600 members. The second largest of the three are the West Side Longos (WSL13), with around 300 members, followed by the North Side Longos (NSL13).",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/longos/13/",
+      "title": "Longos 13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/varrio-longos-13/",
+      "title": "Varrio Longos 13 \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "ESL13",
+    "NSL13",
+    "WSL13",
+    "Area of Long Beach"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "type": "street_gang",
+  "status": "active"
+}

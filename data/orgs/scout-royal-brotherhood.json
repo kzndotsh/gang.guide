@@ -1,0 +1,21 @@
+{
+  "id": "org:scout-royal-brotherhood",
+  "name": "Scout Royal Brotherhood",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Filipino organization that originated as a fraternity in the Philippines. In California, some members have been involved in gang activity, with the Carson chapter linked to Blood affiliation.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/carson/srb/",
+      "title": "Scout Royal Brotherhood \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "founded_year_precision": "decade",
+  "colors": [
+    "red"
+  ],
+  "status": "active",
+  "aliases": []
+}

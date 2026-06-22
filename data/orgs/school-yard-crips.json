@@ -1,0 +1,32 @@
+{
+  "id": "org:school-yard-crips",
+  "name": "School Yard Crips",
+  "aliases": [
+    "SYC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "founded_year": 1976,
+  "founded_year_precision": "range",
+  "description": "School Yard Crips are a predominately African-American neighborhood located in the Mid-Town section of Los Angeles located between Venice and Washington. In the 1970s there was a short lived Blood gang located in this community called Mid Town Family. During the late 1970s, when dancer crews were extremely popular, the Sharp Dancers formed in this community, then eventually some of these dancers transformed into the School Yard Crips.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/School_Yard_Crips",
+      "title": "School Yard Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/schoolyardcrips/",
+      "title": "Schoolyardcrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/school-yard-crips/",
+      "title": "School Yard Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

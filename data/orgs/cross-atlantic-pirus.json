@@ -1,0 +1,36 @@
+{
+  "id": "org:cross-atlantic-pirus",
+  "name": "Cross Atlantic Pirus",
+  "aliases": [
+    "CAP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "description": "The Cross Atlantic Pirus are a Blood gang set based in Compton, California, part of the Piru alliance that formed when young African Americans refused to submit to Crip dominance in the early 1970s, becoming the foundation of the Bloods movement.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Cross_Atlantic_Pirus",
+      "title": "Cross Atlantic Pirus \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/gardena/ss/",
+      "title": "Cross Atlantic Pirus \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/cross-atlantic-piru/",
+      "title": "Cross Atlantic Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/cap/",
+      "title": "Cross Atlantic Pirus \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

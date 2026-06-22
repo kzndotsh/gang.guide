@@ -1,0 +1,21 @@
+{
+  "id": "org:varrio-43rd-street",
+  "name": "Varrio 43rd Street",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "description": "Varrio 43rd Street is a predominantly Latino Sure\u00f1o-affiliated street gang based around 43rd Street in South Los Angeles, part of the dense network of numbered-street varrios in the South Central corridor.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/43rdstreet/",
+      "title": "Varrio 43rd Street \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1955,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

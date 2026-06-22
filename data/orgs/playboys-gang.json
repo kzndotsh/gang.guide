@@ -1,0 +1,39 @@
+{
+  "id": "org:playboys-gang",
+  "name": "Playboys",
+  "type": "street_gang",
+  "lane": "organized-crime",
+  "metro": "Los Angeles",
+  "description": "American street gang founded in Los Angeles County, California in the mid-1950s, originally a car club. It has multiple cliques and is predominantly Hispanic, with an estimated 6,500 members. The gang is aligned with the Mexican Mafia (La EME) and engages in drug trafficking, assault, robbery, and other criminal activities. It remains active across several U.S. states and Mexico.",
+  "founded_year": 1955,
+  "aliases": [
+    "Conejo",
+    "PBS13",
+    "Playboys 13 Gang",
+    "Rabbit gang",
+    "Southern California, Latin Playboys Car Club",
+    "PBS",
+    "Westside PlayBoys"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Playboys_%28gang%29",
+      "title": "Playboys %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/playboys-ventures-pulaski-park-rice-boys/",
+      "title": "Playboys, Ventures, Pulaski Park, Rice Boys - Chicago Gang History"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Westside_PlayBoys",
+      "title": "Westside PlayBoys \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black",
+    "white",
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

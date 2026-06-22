@@ -1,0 +1,28 @@
+{
+  "id": "org:65-menlo-crips-in-south-los-angeles-los-angeles",
+  "name": "The 65 Menlo Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "founded_year": 1980,
+  "founded_year_precision": "range",
+  "description": "The 65 Menlo Crips are a predominately African American street gang located in South Los Angeles off 65th Street & Menlo Avenue. They started off as the Menlo Boys and during the early 1980s and they had a positive relationship with the 52 Hoover Gangster Crips and 59 Hoovers, the dominant gangs in the area.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/65menlo/",
+      "title": "The 65 Menlo Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/menlo-crips/",
+      "title": "Menlo Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "65TMC"
+  ],
+  "status": "active"
+}

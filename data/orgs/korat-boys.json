@@ -1,0 +1,19 @@
+{
+  "id": "org:korat-boys",
+  "name": "Korat Boys",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "An Asian-American street gang based in Long Beach, California, named after the Khorat region of Thailand. Composed primarily of Thai and Southeast Asian youth.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/longbeach/koratboys/",
+      "title": "Korat Boys \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

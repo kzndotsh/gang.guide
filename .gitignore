@@ -1,0 +1,14 @@
+node_modules/
+.svelte-kit/
+data/raw/
+/tmp/
+*.db
+.DS_Store
+.venv/
+.env
+
+# Alchemy state (contains API tokens in plaintext)
+.alchemy/
+
+# Old build output (now using adapter-cloudflare)
+apps/web/build/

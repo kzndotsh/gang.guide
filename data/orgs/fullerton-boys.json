@@ -1,0 +1,25 @@
+{
+  "id": "org:fullerton-boys",
+  "name": "Fullerton Boys",
+  "aliases": [
+    "Fullerton Boyz"
+  ],
+  "type": "street_gang",
+  "lane": "asian-gangs",
+  "founded_year": 1996,
+  "founded_year_precision": "exact",
+  "description": "A Korean-American street gang based in Fullerton, California, founded in 1996. Members were originally from other gangs such as LVM, SZA, and Wah Ching. The gang emerged as a collective identity after other gangs disbanded in Fullerton.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/fullerton/",
+      "title": "Fullerton Boys \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Fullerton_Boys",
+      "title": "Fullerton Boys \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Fullerton",
+  "status": "active",
+  "colors": []
+}

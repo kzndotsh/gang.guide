@@ -1,0 +1,27 @@
+{
+  "id": "org:street-villains-gang",
+  "name": "Street Villains Gang",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "description": "Calle Villanos, are a Mexican-American street gang located in South Los Angeles, California (formerly known as South Central).",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/street-villains-gang/",
+      "title": "Street Villains Gang \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "Street Villains 13 (STV13",
+    "Calle Villanos",
+    "STV",
+    "STV13",
+    "Street Villains 13"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

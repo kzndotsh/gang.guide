@@ -1,0 +1,54 @@
+{
+  "id": "org:spanish-cobras-chicago",
+  "name": "Spanish Cobras",
+  "aliases": [
+    "Insane Spanish Cobras Nation",
+    "SGD"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-folk-people",
+  "metro": "Chicago",
+  "founded_year": 1958,
+  "founded_year_precision": "circa",
+  "description": "The Insane Spanish Cobras are a primarily Latino (Puerto Rican/Mexican) Folk Nation street gang founded circa 1958 in Bridgeport, Chicago as 'Loco De Culebro' (Crazy Snakes). Richard 'King Cobra' Medina created the 'Insane' concepts in the mid-1970s, adopting black and green colors. Medina was assassinated by Insane Unknowns in 1979 at age 20. In 1989, Cobras, Maniac Latin Disciples, and Two Sixers formed Spanish Growth and Development (SGD), modeled after the Chicago Outfit, to control shootings \u2014 it eventually collapsed. The Insane-Maniac war escalated in 1996 making Chicago Tribune headlines. Led by Anibal 'Tuffy C' Santiago. Present in Chicago (North/West sides), Milwaukee, Racine, Kenosha, Detroit, Ohio, Connecticut, and Florida.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/spanish/cobras/",
+      "title": "Spanish Cobras \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Spanish_Cobras",
+      "title": "Spanish Cobras \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
+      "title": "Popes %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Eagles",
+      "title": "Latin Eagles \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Kings",
+      "title": "Latin Kings \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Maniac_Latin_Disciples",
+      "title": "Maniac Latin Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/",
+      "title": "Spanish Cobras - Chicago Gang History"
+    }
+  ],
+  "symbols": [
+    "cobra",
+    "six-pointed star",
+    "pitchfork"
+  ],
+  "colors": [
+    "black",
+    "green"
+  ],
+  "status": "active"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "org:diablos-motorcycle-club",
+  "name": "Diablos Motorcycle Club",
+  "aliases": [
+    "Diablos MC",
+    "DMC",
+    "Los Diablos Motorcycle Club"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1961,
+  "founded_year_precision": "exact",
+  "description": "Outlaw motorcycle club founded in San Bernardino, California in 1961 by John J. 'Cadillac Jack' Baltas. Has chapters across the United States, with a significant presence in New England. Known for its red-and-black devil insignia and considered a second-tier outlaw motorcycle gang by law enforcement.",
+  "metro": "United States",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Diablos_Motorcycle_Club",
+      "title": "Diablos Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents",
+      "title": "Bandidos MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents_in_Australia",
+      "title": "Bandidos MC criminal allegations and incidents in Australia \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_Motorcycle_Club",
+      "title": "Bandidos Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cossacks_Motorcycle_Club",
+      "title": "Cossacks Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Diablos_Motorcycle_Club_%28founded_1999%29",
+      "title": "Diablos Motorcycle Club %28founded 1999%29 \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

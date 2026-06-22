@@ -1,0 +1,22 @@
+{
+  "id": "org:burris-blocc-compton-crip",
+  "name": "Burris Blocc Compton Crip",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "The Burris Blocc Compton Crips are a predominantly African-American Crip set based in the Compton area of Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/compton/burrisbcc/",
+      "title": "Burris Blocc Compton Crip \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1973,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

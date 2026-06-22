@@ -1,0 +1,21 @@
+{
+  "id": "org:varrio-vista-rifa",
+  "name": "Varrio Vista Rifa",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Varrio Vista Rifa is a Latino Sure\u00f1o-affiliated street gang based in the Vista area of Los Angeles, part of the network of barrio gangs in Southern California.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/varriovista/",
+      "title": "Varrio Vista Rifa \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1955,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

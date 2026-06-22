@@ -1,0 +1,28 @@
+{
+  "id": "org:imperial-village-crips",
+  "name": "Imperial Village Crips",
+  "aliases": [
+    "IVC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-inglewood",
+  "metro": "Inglewood",
+  "description": "Imperial Village Crips are a predominately African-American street gang in the city of Inglewood in the Arbor Village on the Imperial Highway.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/imperial-village-crips/",
+      "title": "Imperial Village Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/inglewood/imperialvc/",
+      "title": "Imperialvc \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1973,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

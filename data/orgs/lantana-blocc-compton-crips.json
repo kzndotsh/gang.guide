@@ -1,0 +1,33 @@
+{
+  "id": "org:lantana-blocc-compton-crips",
+  "name": "Lantana Blocc Compton Crips",
+  "aliases": [
+    "LBCC",
+    "Ls"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "Westside Lantana Blocc Compton Crips are a predominately African-American street gang located on the westside of Compton.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/losangelesnorth/ab/",
+      "title": "Lantana Blocc Compton Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/lantana-blocc-compton-crips/",
+      "title": "Lantana Blocc Compton Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/compton/lbcc/",
+      "title": "Lantana Blocc Compton Crips \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

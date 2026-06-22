@@ -1,0 +1,19 @@
+{
+  "id": "org:korean-play-boys",
+  "name": "Korean Play Boys",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Korean-American street gang based in the Los Angeles area, emerged during the late 1980s-1990s within the Korean-American community.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/southlosangeles/kpb/",
+      "title": "Korean Play Boys \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1985,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

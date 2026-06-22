@@ -1,0 +1,29 @@
+{
+  "id": "org:rollin-30s-tre-tre-crips",
+  "name": "Rollin 30s Tre Tre Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "description": "Crips are an African-American street gang located in the neighborhood of Northeast Denver, Colorado. They were founded in the mid-1980\u2019s by a group of friends, Michael Asberry (Cyco Mike) and Philip Jefferson and Albert Jones, three teenagers with family ties to the Watts area in South Los Angeles, California.",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/rollin-30s-tre-tre-crips/",
+      "title": "Rollin 30S Tre Tre Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/herbert-alphonso-rap-dixon-1902-1944/",
+      "title": "Academic research"
+    }
+  ],
+  "metro": "Denver",
+  "aliases": [
+    "Tre-O Crips",
+    "Rolling 30s Crips"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

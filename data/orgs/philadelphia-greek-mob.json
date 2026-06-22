@@ -1,0 +1,39 @@
+{
+  "id": "org:philadelphia-greek-mob",
+  "name": "Philadelphia Greek Mob",
+  "aliases": [
+    "Philadelphia Greek Mafia"
+  ],
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "description": "The Philadelphia Greek Mob was a loose-knit Greek-American criminal faction operating in Philadelphia, Pennsylvania, closely allied with the Italian-American Philadelphia crime family. Active primarily from the 1970s to the 1980s, it engaged in racketeering, drug trafficking, extortion, loansharking, and illegal gambling.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/philadelphia/greek/mob/",
+      "title": "Philadelphia Greek Mob \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/K%26A_Gang",
+      "title": "K%26A Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Philadelphia_crime_family",
+      "title": "Philadelphia crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Philadelphia_Greek_Mob",
+      "title": "Philadelphia Greek Mob \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Velentzas_Organization",
+      "title": "Velentzas Organization \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Philadelphia",
+  "founded_year": 1970,
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

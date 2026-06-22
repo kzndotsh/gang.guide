@@ -1,0 +1,32 @@
+{
+  "id": "org:miller-gangster-bloods-los-angeles",
+  "name": "Miller Gangster Bloods",
+  "aliases": [
+    "MGB"
+  ],
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "description": "Miller Gangster Bloods are a predominately African-American street located in South Los Angeles. The gang was started by an OG Athens Park Blood members on 120th Street in the Dorie Miller Manor Apartments between Central and Avalon.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/",
+      "title": "Miller Gangster Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/miller-gangster-bloods/",
+      "title": "Miller Gangster Bloods \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/mgb/",
+      "title": "Miller Gangster Bloods \u2014 StreetGangs"
+    }
+  ],
+  "type": "street_gang",
+  "founded_year": 1969,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

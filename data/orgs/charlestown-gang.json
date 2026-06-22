@@ -1,0 +1,29 @@
+{
+  "id": "org:charlestown-gang",
+  "name": "Charlestown Gang",
+  "type": "organized_crime",
+  "lane": "historical-east",
+  "metro": "United States",
+  "description": "Irish American organized crime gang based in Charlestown, Boston, headed by the McLaughlin brothers. Active from the 1950s until 1966, the gang controlled gambling and loan sharking on the docks and carried out contract killings for the Patriarca and Genovese crime families. They were destroyed in a gang war with the Winter Hill Gang, resulting in the deaths or imprisonment of its leaders.",
+  "founded_year": 1950,
+  "aliases": [
+    "McLaughlin Gang"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Charlestown_Gang",
+      "title": "Charlestown Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Patriarca_crime_family",
+      "title": "Patriarca crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Winter_Hill_Gang",
+      "title": "Winter Hill Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "colors": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "org:fresnecks-the-fresnecks",
+  "name": "Fresnecks",
+  "lane": "white-supremacist",
+  "metro": "United States",
+  "type": "white_supremacist",
+  "description": "The Fresnecks are a white supremacist street gang based in Fresno, California, aligned with the Aryan Brotherhood. They were the target of a major 2020 federal takedown (Operation Lucky Charm) resulting in over 100 arrests for violent crimes and drug trafficking.",
+  "sources": [
+    {
+      "url": "https://www.prisongang.info/2025/04/20/1485/",
+      "title": "Fresnecks The Fresnecks \u2014 Prison Gang Project"
+    }
+  ],
+  "colors": [
+    "white"
+  ],
+  "founded_year": 2000,
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": []
+}

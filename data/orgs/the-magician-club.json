@@ -1,0 +1,21 @@
+{
+  "id": "org:the-magician-club",
+  "name": "The Magician Club",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Small Los Angeles street gang that emerged from the party crew scene of the late 1980s\u2013early 1990s, when numerous social crews evolved into criminal street gangs across LA County.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/hollywood/tmc/",
+      "title": "The Magician Club \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

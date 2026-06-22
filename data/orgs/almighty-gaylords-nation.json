@@ -1,0 +1,53 @@
+{
+  "id": "org:almighty-gaylords-nation",
+  "name": "Almighty Gaylords Nation",
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "The Almighty Gaylords Nation is a European-American Chicago street gang founded in 1952 in the West Town neighborhood at Grand and Noble Street, originally composed mostly of Italians. By 1979, they ranked as the fourth most powerful gang in Chicago with 1,500 members, known as 'Chicago's largest White street gang.' At their peak in the early 1980s they had 6,000 members across the North, West, and South Sides. Part of the People Nation alliance. Allied with Latin Kings, Vice Lords, and Indiana Aryan Brotherhood. They declined in the 1990s as leaders were incarcerated and white populations suburbanized. In 2011, nine suburban members were arrested for drug dealing and gun trafficking.",
+  "founded_year": 1952,
+  "aliases": [
+    "Gaylords",
+    "GLs"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Chicago_Gaylords",
+      "title": "Chicago Gaylords \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
+      "title": "Popes %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Maniac_Latin_Disciples",
+      "title": "Maniac Latin Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/People_Nation",
+      "title": "People Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Simon_City_Royals",
+      "title": "Simon City Royals \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Jousters",
+      "title": "Jousters \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-gaylords/",
+      "title": "Gaylords - Chicago Gang History"
+    }
+  ],
+  "colors": [
+    "black",
+    "gray",
+    "grey",
+    "green",
+    "light blue"
+  ],
+  "founded_year_precision": "exact",
+  "status": "active",
+  "nation_affiliation": "org:folk-nation"
+}

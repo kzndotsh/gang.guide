@@ -1,0 +1,22 @@
+{
+  "id": "org:east-coast-blocc-crips-118",
+  "name": "118 East Coast Blocc Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "118 East Coast Blocc Crips are a predominately African-American street gang located in South Los Angeles and part of the East Coast Crips alliance. They are only one of only two East Coast Crip sets that identify as Blocc Crips.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/118ecc/",
+      "title": "East Coast Blocc Crips, 118 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

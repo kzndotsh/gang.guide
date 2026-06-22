@@ -1,0 +1,5737 @@
+[
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:armenian-power",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:black-p-stones-jungles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:ms-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:santa-monica-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:vineland-boys",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:albanian-boys",
+    "target": "org:ms-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:black-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:four-corner-hustlers-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-saints",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:aryan-brotherhood-of-texas",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:black-guerrilla",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:dead-man-incorporated",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:nuestra-familia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood-of-texas",
+    "target": "org:aryan-brotherhood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:asian-boyz",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-disciples-chicago",
+    "target": "org:black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-disciples-chicago",
+    "target": "org:mickey-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:aryan-brotherhood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:aryan-brotherhood-of-texas",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:asian-boyz",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:ms-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bounty-hunter-watts-bloods",
+    "target": "org:grape-watts-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:cedar-block-piru",
+    "target": "org:fruit-town-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:cedar-block-piru",
+    "target": "org:mob-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:cedar-block-piru",
+    "target": "org:tree-top-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:aryan-brotherhood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:pirus",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:santa-monica-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:united-blood-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:culver-city-boys",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:dominicans-don-t-play",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:dominicans-don-t-play",
+    "target": "org:trinitarios",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:dominicans-don-t-play",
+    "target": "org:united-blood-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:four-corner-hustlers-chicago",
+    "target": "org:black-p-stone-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:four-corner-hustlers-chicago",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:fresno-bulldogs",
+    "target": "org:nuestra-familia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:cedar-block-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:grape-watts-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:mob-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:south-side-compton-crips-sscc",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ghetto-brothers",
+    "target": "org:black-spades",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ghetto-brothers",
+    "target": "org:savage-skulls",
+    "type": "alliance"
+  },
+  {
+    "source": "org:grape-watts-crips",
+    "target": "org:bounty-hunter-watts-bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hidden-valley-kings",
+    "target": "org:united-blood-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:kelly-park-compton-crips",
+    "target": "org:mob-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:black-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:ms-13",
+    "type": "alliance"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:la-raza-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:spanish-gangster-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:spanish-gangster-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:la-raza-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:latin-eagles-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:united-blood-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:black-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:four-corner-hustlers-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:la-raza-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:mickey-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ms-13",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ms-13",
+    "target": "org:armenian-power",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ms-13",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ms-13",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexikanemi",
+    "target": "org:nuestra-familia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mickey-cobras-chicago",
+    "target": "org:black-p-stone-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mickey-cobras-chicago",
+    "target": "org:black-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mickey-cobras-chicago",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:fruit-town-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:south-side-compton-crips-sscc",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:nuestra-familia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:native-mob",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nine-trey-gangsters",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nuestra-familia",
+    "target": "org:aryan-brotherhood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nuestra-familia",
+    "target": "org:fresno-bulldogs",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nuestra-familia",
+    "target": "org:mexikanemi",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nutty-blocc-compton-crips",
+    "target": "org:south-side-compton-crips-sscc",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaw-gangster-disciples",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:pirus",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:puro-tango-blast",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:rollin-30s-harlem-crips",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:rollin-90s-neighborhood-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:rollin-90s-neighborhood-crips",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:santa-monica-13",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:savage-nomads",
+    "target": "org:savage-skulls",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:savage-skulls",
+    "target": "org:savage-nomads",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:black-guerrilla",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:ms-13",
+    "type": "alliance"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:united-blood-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:latin-eagles-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:south-brooklyn-boys",
+    "target": "org:supreme-team",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:south-brooklyn-boys",
+    "target": "org:tanglewood-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:south-side-compton-crips-sscc",
+    "target": "org:fruit-town-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:south-side-compton-crips-sscc",
+    "target": "org:mob-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:south-side-compton-crips-sscc",
+    "target": "org:nutty-blocc-compton-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:spanish-cobras-chicago",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-cobras-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-cobras-chicago",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:latin-counts-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:latin-eagles-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:supreme-team",
+    "target": "org:south-brooklyn-boys",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:tree-top-piru",
+    "target": "org:fruit-town-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:trinitarios",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:trinitarios",
+    "target": "org:dominicans-don-t-play",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:united-blood-nation",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:united-blood-nation",
+    "target": "org:latin-kings-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:genovese-crime",
+    "target": "org:ms-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:zoe-pound",
+    "target": "org:ms-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:people-nation",
+    "target": "org:folk-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:atlantic-gardens-compton-crips",
+    "target": "org:front-hood-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-cobras-chicago",
+    "target": "org:hidden-valley-kings",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:96-gangster-crips",
+    "target": "org:elm-street-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nuestra-familia",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:98-gangster-crips",
+    "target": "org:denver-lane-bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:98-gangster-crips",
+    "target": "org:hoover-criminals",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:folk-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:cossacks-motorcycle-club",
+    "target": "org:bandidos-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:puente-13",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:vineland-boys",
+    "target": "org:barrio-maravilla-east-los-angeles",
+    "type": "alliance"
+  },
+  {
+    "source": "org:el-sereno-rifa-los-angeles",
+    "target": "org:el-hoyo-maravilla",
+    "type": "alliance"
+  },
+  {
+    "source": "org:orchard-park-trailblazers",
+    "target": "org:columbia-point-dawgs",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:el-monte-flores",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:azusa-13",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:dead-man-incorporated",
+    "target": "org:black-guerrilla",
+    "type": "alliance"
+  },
+  {
+    "source": "org:deuces-and-trays",
+    "target": "org:dorner-blocc-criminal-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:68ecc",
+    "target": "org:east-coast-crips-los-angeles",
+    "type": "alliance"
+  },
+  {
+    "source": "org:joe-boys",
+    "target": "org:wah-ching",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:doty-block-bloods",
+    "target": "org:osage-legend-crips-inglewood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:doty-block-bloods",
+    "target": "org:original-inglewood-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:doty-block-bloods",
+    "target": "org:imperial-village-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:queen-street-bloods",
+    "target": "org:osage-legend-crips-inglewood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:queen-street-bloods",
+    "target": "org:original-inglewood-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:queen-street-bloods",
+    "target": "org:imperial-village-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:avenue-piru-gang",
+    "target": "org:osage-legend-crips-inglewood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:avenue-piru-gang",
+    "target": "org:original-inglewood-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:avenue-piru-gang",
+    "target": "org:imperial-village-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:pasadena-squiggly-lane-gangster-bloods",
+    "target": "org:107-hoover-criminals",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:pasadena-squiggly-lane-gangster-bloods",
+    "target": "org:stevenson-village-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hoover-park-family-bloods",
+    "target": "org:107-hoover-criminals",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hoover-park-family-bloods",
+    "target": "org:stevenson-village-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:clanton14th-original-hood-los-angeles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:florencia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:albanian-boys",
+    "target": "org:rudaj-organization",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:black-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:four-corner-hustlers-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:mickey-cobras-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:mob-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-saints",
+    "target": "org:la-raza-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-saints",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-saints",
+    "target": "org:satan-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:american-front",
+    "target": "org:white-aryan-resistance",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:american-front",
+    "target": "org:white-aryan-resistance",
+    "type": "alliance"
+  },
+  {
+    "source": "org:armenian-power",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:armenian-power",
+    "target": "org:vineland-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:black-p-stones-jungles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:aryan-nations",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:public-enemy-no-1",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:vagos-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood-of-texas",
+    "target": "org:aryan-brotherhood",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood-of-texas",
+    "target": "org:aryan-circle",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood-of-texas",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood-of-texas",
+    "target": "org:texas-syndicate",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-circle",
+    "target": "org:aryan-brotherhood-of-texas",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-nations",
+    "target": "org:the-order",
+    "type": "alliance"
+  },
+  {
+    "source": "org:asian-boyz",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:asian-boyz",
+    "target": "org:fresno-bulldogs",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:asian-boyz",
+    "target": "org:menace-of-destruction",
+    "type": "alliance"
+  },
+  {
+    "source": "org:asian-boyz",
+    "target": "org:wah-ching",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:atomwaffen-division",
+    "target": "org:the-base",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bailey-boys",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bailey-boys",
+    "target": "org:lrgp",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:brother-speed-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:diablos-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:gypsy-joker-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:iron-horsemen-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:mongols-mc",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:vagos-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:wheels-of-soul-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:barrio-azteca",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:barriox13",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-dragons",
+    "target": "org:asian-boyz",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-dragons",
+    "target": "org:wah-ching",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:black-p-stones-jungles",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:black-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:kumi-415",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:nuestra-familia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:texas-syndicate",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:weather-underground",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-spades",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:florencia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:decavalcante-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:east-harlem-purple",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:gambino-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:genovese-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:decavalcante-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:san-jose-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bounty-hunter-watts-bloods",
+    "target": "org:118-east-coast-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bounty-hunter-watts-bloods",
+    "target": "org:pj-watts-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:brother-speed-motorcycle-club",
+    "target": "org:aryan-nations",
+    "type": "alliance"
+  },
+  {
+    "source": "org:brother-speed-motorcycle-club",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bufalino-crime",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bufalino-crime",
+    "target": "org:genovese-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bufalino-crime",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bufalino-crime",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:cedar-block-piru",
+    "target": "org:palmer-blocc-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:colacurcio-organization",
+    "target": "org:bonanno-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:comando-vermelho-united-states",
+    "target": "org:primeiro-comando-da-capital-united-states",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:comando-vermelho-united-states",
+    "target": "org:primeiro-comando-da-capital-united-states",
+    "type": "alliance"
+  },
+  {
+    "source": "org:cossacks-motorcycle-club",
+    "target": "org:diablos-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:florencia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:pirus",
+    "type": "alliance"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:venice",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:culver-city-boys",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:culver-city-boys",
+    "target": "org:venice",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:culver-city-boys",
+    "target": "org:venice-shoreline-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:decavalcante-crime",
+    "target": "org:gambino-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:decavalcante-crime",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:decavalcante-crime",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:diablos-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:diablos-motorcycle-club",
+    "target": "org:satanas",
+    "type": "alliance"
+  },
+  {
+    "source": "org:east-harlem-purple",
+    "target": "org:bonanno-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:east-harlem-purple",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:east-harlem-purple",
+    "target": "org:rudaj-organization",
+    "type": "alliance"
+  },
+  {
+    "source": "org:east-harlem-purple",
+    "target": "org:the-council",
+    "type": "alliance"
+  },
+  {
+    "source": "org:el-forastero-motorcycle-club",
+    "target": "org:galloping-goose-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:el-monte-flores",
+    "target": "org:azusa-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:farm-dog-compton-crips",
+    "target": "org:spook-town-compton-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:florencia",
+    "target": "org:east-coast-crips-los-angeles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:florencia",
+    "target": "org:east-coast-crips-los-angeles",
+    "type": "alliance"
+  },
+  {
+    "source": "org:florencia",
+    "target": "org:grape-watts-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:florencia",
+    "target": "org:harvard-park-brims-los-angeles",
+    "type": "alliance"
+  },
+  {
+    "source": "org:florencia",
+    "target": "org:hat-watts-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:florencia",
+    "target": "org:mad-swan-bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:florencia",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:flying-dragons",
+    "target": "org:ghost-shadows",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:forming-kaos",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:fresno-bulldogs",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:front-hood-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:santana-blocc-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:genovese-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:ozone-park-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:rudaj-organization",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:velentzas-organization",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:westies",
+    "type": "alliance"
+  },
+  {
+    "source": "org:garden-blocc-crips",
+    "target": "org:del-paso-heights-bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:genovese-crime",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:genovese-crime",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ghetto-brothers",
+    "target": "org:los-solidos",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ghetto-brothers",
+    "target": "org:mongols-mc",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ghetto-brothers",
+    "target": "org:savage-nomads",
+    "type": "alliance"
+  },
+  {
+    "source": "org:lynwood-vikings",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:grape-watts-crips",
+    "target": "org:bounty-hunter-watts-bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:grape-watts-crips",
+    "target": "org:east-coast-crips-los-angeles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:grape-watts-crips",
+    "target": "org:pj-watts-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:grape-watts-crips",
+    "target": "org:pj-watts-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:gypsy-joker-motorcycle-club",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hammerskins",
+    "target": "org:atomwaffen-division",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:chosen-few-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:diablos-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:diablos-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:el-forastero-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:galloping-goose-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:hessians-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:highwaymen-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:iron-horsemen-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:mongols-mc",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:decavalcante-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:san-jose-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:sons-of-satan-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:sons-of-silence",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:vagos-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hidden-valley-kings",
+    "target": "org:zoe-pound",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hoover-criminals",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:jackson-boys",
+    "target": "org:wah-ching",
+    "type": "alliance"
+  },
+  {
+    "source": "org:keystone-united",
+    "target": "org:hammerskins",
+    "type": "alliance"
+  },
+  {
+    "source": "org:kumi-415",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:kumi-415",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:black-p-stones-jungles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:imperial-gangsters-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:satan-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:imperial-gangsters-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:spanish-cobras-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:lenox-boys",
+    "target": "org:columbia-point-dawgs",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:lenox-boys",
+    "target": "org:orchard-park-trailblazers",
+    "type": "alliance"
+  },
+  {
+    "source": "org:lrgp",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:lucchese-crime-brooklyn-faction",
+    "target": "org:bonanno-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:lucchese-crime-brooklyn-faction",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:lucchese-crime-brooklyn-faction",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:black-p-stones-jungles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:almighty-saints",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:imperial-gangsters-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:spanish-gangster-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ms-13",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ms-13",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:menace-of-destruction",
+    "target": "org:fresno-bulldogs",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:menace-of-destruction",
+    "target": "org:white-tigers",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:azmv",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:barrio-azteca",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:mexikanemi",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:mongols-mc",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:wilmas-13",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mexikanemi",
+    "target": "org:texas-syndicate",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:pirus",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:santana-blocc-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:straight-satans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:vagos-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:native-mob",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nine-trey-gangsters",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nine-trey-gangsters",
+    "target": "org:united-blood-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nuestra-familia",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nuestra-familia",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nutty-blocc-compton-crips",
+    "target": "org:atlantic-drive-compton-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nutty-blocc-compton-crips",
+    "target": "org:farm-dog-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nutty-blocc-compton-crips",
+    "target": "org:garden-blocc-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nutty-blocc-compton-crips",
+    "target": "org:spook-town-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaw-gangster-disciples",
+    "target": "org:black-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaw-gangster-disciples",
+    "target": "org:black-guerrilla",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaw-gangster-disciples",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaw-gangster-disciples",
+    "target": "org:zoe-pound",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:aryan-nations",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:chosen-few-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:chosen-few-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:el-forastero-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:galloping-goose-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:gypsy-joker-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:hammerskins",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:highwaymen-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:iron-horsemen-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:sons-of-silence",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:pissed-off-bastards-of-bloomington",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:playboys-surenos-13",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:playboys-surenos-13",
+    "target": "org:aryan-brotherhood",
+    "type": "alliance"
+  },
+  {
+    "source": "org:playboys-surenos-13",
+    "target": "org:florencia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:playboys-surenos-13",
+    "target": "org:ms-13",
+    "type": "alliance"
+  },
+  {
+    "source": "org:playboys-surenos-13",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:playboys-surenos-13",
+    "target": "org:venice-shoreline-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:primeiro-comando-da-capital-united-states",
+    "target": "org:barriox13",
+    "type": "alliance"
+  },
+  {
+    "source": "org:public-enemy-no-1",
+    "target": "org:friends-stand-united",
+    "type": "alliance"
+  },
+  {
+    "source": "org:puente-13",
+    "target": "org:azusa-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:puro-tango-blast",
+    "target": "org:barrio-azteca",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:puro-tango-blast",
+    "target": "org:mexikanemi",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:puro-tango-blast",
+    "target": "org:texas-syndicate",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:rudaj-organization",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:rudaj-organization",
+    "target": "org:velentzas-organization",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sadistic-souls-motorcycle-club",
+    "target": "org:aryan-nations",
+    "type": "alliance"
+  },
+  {
+    "source": "org:savage-nomads",
+    "target": "org:los-solidos",
+    "type": "alliance"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:pirus",
+    "type": "alliance"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:imperial-gangsters-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sin-city-deciples-motorcycle-club",
+    "target": "org:wheels-of-soul-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:soldiers-of-aryan-culture",
+    "target": "org:aryan-brotherhood",
+    "type": "alliance"
+  },
+  {
+    "source": "org:sons-of-samoa",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:sons-of-silence",
+    "target": "org:diablos-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:sons-of-silence",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sons-of-silence",
+    "target": "org:iron-horsemen-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:south-brooklyn-boys",
+    "target": "org:mau-maus",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:south-brooklyn-boys",
+    "target": "org:ozone-park-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:south-side-compton-crips-sscc",
+    "target": "org:atlantic-drive-compton-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:south-side-compton-crips-sscc",
+    "target": "org:santana-blocc-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-cobras-chicago",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:imperial-gangsters-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:imperial-gangsters-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:latin-eagles-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:satan-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:spanish-cobras-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:supreme-team",
+    "target": "org:black-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:tanglewood-boys",
+    "target": "org:albanian-boys",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:tanglewood-boys",
+    "target": "org:genovese-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:taylor-jousters",
+    "target": "org:satan-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:taylor-jousters",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:texas-syndicate",
+    "target": "org:aryan-brotherhood",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:texas-syndicate",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:tongancrips",
+    "target": "org:18th-street-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:tongancrips",
+    "target": "org:ms-13",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:tongancrips",
+    "target": "org:sons-of-samoa",
+    "type": "alliance"
+  },
+  {
+    "source": "org:universal-aryan-brotherhood",
+    "target": "org:aryan-circle",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:vagos-motorcycle-club",
+    "target": "org:galloping-goose-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:vagos-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:velentzas-organization",
+    "target": "org:philadelphia-greek-mob",
+    "type": "alliance"
+  },
+  {
+    "source": "org:venice",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:venice",
+    "target": "org:18th-street-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:venice",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:venice",
+    "target": "org:venice-shoreline-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:venice",
+    "target": "org:venice-shoreline-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:vineland-boys",
+    "target": "org:18th-street-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:vineland-boys",
+    "target": "org:mexican-mafia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:wah-ching",
+    "target": "org:black-dragons",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:warlocks-motorcycle-club-florida",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:warlocks-motorcycle-club-florida",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:westies",
+    "target": "org:genovese-crime",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:white-tigers",
+    "target": "org:ghost-shadows",
+    "type": "alliance"
+  },
+  {
+    "source": "org:zoe-pound",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:zoe-pound",
+    "target": "org:crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:zoe-pound",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:10th--oregon-crew",
+    "target": "org:pagans-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:10th-street-gang",
+    "target": "org:7th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:110ers",
+    "target": "org:39ers-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:110ers",
+    "target": "org:rod-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:18th-street-gang",
+    "target": "org:manson-family",
+    "type": "alliance"
+  },
+  {
+    "source": "org:39ers-gang",
+    "target": "org:byrd",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:black-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:four-corner-hustlers-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:mickey-cobras-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:mob-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-black-p-stone-nation",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-gaylords-nation",
+    "target": "org:almighty-insane-popes-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-gaylords-nation",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-gaylords-nation",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-gaylords-nation",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-gaylords-nation",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-gaylords-nation",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:almighty-black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:imperial-gangsters-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:satan-disciples-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:tap-boyz-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-saints",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:mickey-cobras-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:people-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:10th--oregon-crew",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:bonanno-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:chaldean-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:decavalcante-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:east-harlem-purple",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:south-brooklyn-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:tanglewood-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-commission",
+    "target": "org:white-hand-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:angiulo-brothers",
+    "target": "org:winter-hill-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:armenian-power",
+    "target": "org:the-commission",
+    "type": "alliance"
+  },
+  {
+    "source": "org:armenian-power",
+    "target": "org:whitefence",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:almighty-black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:the-commission",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:dc-blacks",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:manson-family",
+    "type": "alliance"
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:nazi-lowriders",
+    "type": "alliance"
+  },
+  {
+    "source": "org:asian-boyz",
+    "target": "org:tiny-rascal-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:atlantic-guards",
+    "target": "org:dead-rabbits",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bergin-hunt-and-fish-club",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-disciples-chicago",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-disciples-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-disciples-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-dragons",
+    "target": "org:tiny-rascal-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:mickey-cobras-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:tiny-rascal-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-guerrilla",
+    "target": "org:almighty-black-p-stone-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-mafia",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:black-mafia-family",
+    "target": "org:zoe-pound",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:tiny-rascal-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bloods",
+    "target": "org:trinitarios",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:new-springville-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bonanno-crime",
+    "target": "org:rochester-crime-family",
+    "type": "alliance"
+  },
+  {
+    "source": "org:born-to-kill-gang",
+    "target": "org:the-commission",
+    "type": "alliance"
+  },
+  {
+    "source": "org:born-to-kill-gang",
+    "target": "org:flying-dragons",
+    "type": "alliance"
+  },
+  {
+    "source": "org:born-to-kill-gang",
+    "target": "org:ghost-shadows",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:breed-motorcycle-club",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:breed-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:breed-motorcycle-club",
+    "target": "org:pagans-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:byrd",
+    "target": "org:39ers-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:chaldean-mafia",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:charlestown-gang",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:charlestown-gang",
+    "target": "org:winter-hill-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:tiny-rascal-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:tiny-rascal-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:dc-blacks",
+    "target": "org:black-guerrilla",
+    "type": "alliance"
+  },
+  {
+    "source": "org:dead-rabbits",
+    "target": "org:roach-guards",
+    "type": "alliance"
+  },
+  {
+    "source": "org:dead-rabbits",
+    "target": "org:shirt-tails",
+    "type": "alliance"
+  },
+  {
+    "source": "org:dirty-dozen-motorcycle-club",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:dirty-dozen-motorcycle-club",
+    "target": "org:mongols-mc",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:dirty-dozen-motorcycle-club",
+    "target": "org:vagos-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:dominicans-don-t-play",
+    "target": "org:trinitarios",
+    "type": "alliance"
+  },
+  {
+    "source": "org:elm-street-piru",
+    "target": "org:cedar-block-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:elm-street-piru",
+    "target": "org:fruit-town-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:elm-street-piru",
+    "target": "org:kelly-park-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:elm-street-piru",
+    "target": "org:santana-blocc-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:elm-street-piru",
+    "target": "org:south-side-compton-crips-sscc",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:elm-street-piru",
+    "target": "org:tree-top-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:flying-dragons",
+    "target": "org:born-to-kill-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:four-corner-hustlers-chicago",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:four-corner-hustlers-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:gambino-crime",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:genovese-crime",
+    "target": "org:ka-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:genovese-crime",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:genovese-crime",
+    "target": "org:rochester-crime-family",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ghost-shadows",
+    "target": "org:tiny-rascal-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-lovers-motorcycle-club",
+    "target": "org:outlaws-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hells-lovers-motorcycle-club",
+    "target": "org:wheels-of-soul-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:devils-diciples-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:market-street-commandos",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:nazi-lowriders",
+    "type": "alliance"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:pagans-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ka-gang",
+    "target": "org:philadelphia-greek-mob",
+    "type": "alliance"
+  },
+  {
+    "source": "org:manson-family",
+    "target": "org:menace-of-destruction",
+    "type": "alliance"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:almighty-black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-eagles-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:logan-heights-gang",
+    "target": "org:18th-street-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:logan-heights-gang",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:almighty-black-p-stone-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:manson-family",
+    "target": "org:straight-satans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:market-street-commandos",
+    "target": "org:pissed-off-bastards-of-bloomington",
+    "type": "alliance"
+  },
+  {
+    "source": "org:menace-of-destruction",
+    "target": "org:tiny-rascal-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:tiny-rascal-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mickey-cobras-chicago",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:cross-atlantic-pirus",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:elm-street-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:nazi-lowriders",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:mullen",
+    "target": "org:winter-hill-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:native-mob",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:native-mob",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:black-guerrilla",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:dc-blacks",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:gambino-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:nuestra-familia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:public-enemy-no-1",
+    "type": "alliance"
+  },
+  {
+    "source": "org:nazi-lowriders",
+    "target": "org:vagos-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:new-springville-boys",
+    "target": "org:the-commission",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaw-gangster-disciples",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaw-gangster-disciples",
+    "target": "org:black-mafia-family",
+    "type": "alliance"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:devils-diciples-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:pagans-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ovs",
+    "target": "org:aryan-brotherhood",
+    "type": "alliance"
+  },
+  {
+    "source": "org:ovs",
+    "target": "org:black-guerrilla",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ovs",
+    "target": "org:bloods",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ovs",
+    "target": "org:crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ovs",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:pagans-motorcycle-club",
+    "target": "org:wheels-of-soul-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:playboys-gang",
+    "target": "org:18th-street-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:playboys-gang",
+    "target": "org:aryan-brotherhood",
+    "type": "alliance"
+  },
+  {
+    "source": "org:playboys-gang",
+    "target": "org:florencia",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:playboys-gang",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:playboys-gang",
+    "target": "org:venice-shoreline-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:roach-guards",
+    "target": "org:atlantic-guards",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:roach-guards",
+    "target": "org:dead-rabbits",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:rollin-40s-neighborhood-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:rollin-90s-neighborhood-crips",
+    "target": "org:rollin-40s-neighborhood-crips",
+    "type": "alliance"
+  },
+  {
+    "source": "org:rudaj-organization",
+    "target": "org:the-commission",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:rudaj-organization",
+    "target": "org:the-commission",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-company",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:savage-nomads",
+    "target": "org:dirty-dozen-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:savage-skulls",
+    "target": "org:dirty-dozen-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:shirt-tails",
+    "target": "org:atlantic-guards",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:shirt-tails",
+    "target": "org:roach-guards",
+    "type": "alliance"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:almighty-gaylords-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:sons-of-satan-motorcycle-club",
+    "target": "org:pagans-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:sons-of-satan-motorcycle-club",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-brotherhood-of-eternal-love",
+    "target": "org:weather-underground",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-company",
+    "target": "org:the-commission",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-covenant-the-sword-and-the-arm-of-the-lord",
+    "target": "org:aryan-brotherhood",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-covenant-the-sword-and-the-arm-of-the-lord",
+    "target": "org:aryan-nations",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-covenant-the-sword-and-the-arm-of-the-lord",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:the-covenant-the-sword-and-the-arm-of-the-lord",
+    "target": "org:the-order",
+    "type": "alliance"
+  },
+  {
+    "source": "org:tiny-rascal-gang",
+    "target": "org:asian-boyz",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:tiny-rascal-gang",
+    "target": "org:trinitarios",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:tiny-rascal-gang",
+    "target": "org:wah-ching",
+    "type": "alliance"
+  },
+  {
+    "source": "org:trinitarios",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:hammerskins",
+    "type": "alliance"
+  },
+  {
+    "source": "org:warlocks-motorcycle-club-florida",
+    "target": "org:pagans-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:warlocks-motorcycle-club-pennsylvania",
+    "target": "org:breed-motorcycle-club",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:warlocks-motorcycle-club-pennsylvania",
+    "target": "org:pagans-motorcycle-club",
+    "type": "alliance"
+  },
+  {
+    "source": "org:warlocks-motorcycle-club-pennsylvania",
+    "target": "org:warlocks-motorcycle-club-florida",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:weather-underground",
+    "target": "org:manson-family",
+    "type": "alliance"
+  },
+  {
+    "source": "org:westies",
+    "target": "org:the-commission",
+    "type": "alliance"
+  },
+  {
+    "source": "org:whitefence",
+    "target": "org:el-hoyo-maravilla",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:whitefence",
+    "target": "org:frogtown",
+    "type": "alliance"
+  },
+  {
+    "source": "org:whitefence",
+    "target": "org:mexican-mafia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:winter-hill-gang",
+    "target": "org:genovese-crime",
+    "type": "alliance"
+  },
+  {
+    "source": "org:winter-hill-gang",
+    "target": "org:mullen",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mexican-mafia",
+    "target": "org:easy-riders-gang",
+    "type": "alliance"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:mob-piru",
+    "type": "alliance"
+  },
+  {
+    "source": "org:folk-nation",
+    "target": "org:black-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:folk-nation",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:folk-nation",
+    "target": "org:latin-eagles-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:folk-nation",
+    "target": "org:spanish-cobras-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:folk-nation",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "alliance"
+  },
+  {
+    "source": "org:grape-watts-crips",
+    "target": "org:samoan-warrior-bounty-hunters",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:fresno-bulldogs",
+    "target": "org:tiny-rascal-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:easy-riders-gang",
+    "target": "org:tiny-rascal-gang",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:texas-syndicate",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:nuestra-familia",
+    "target": "org:texas-syndicate",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:almighty-saints",
+    "target": "org:latin-counts-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:people-nation",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:ken-side-wah-ching",
+    "target": "org:wah-ching",
+    "type": "alliance"
+  },
+  {
+    "source": "org:paul-side-wah-ching",
+    "target": "org:wah-ching",
+    "type": "alliance"
+  },
+  {
+    "source": "org:samoan-warrior-bounty-hunters",
+    "target": "org:bounty-hunter-watts-bloods",
+    "type": "alliance"
+  },
+  {
+    "source": "org:velentzas-organization",
+    "target": "org:tanglewood-boys",
+    "type": "alliance"
+  },
+  {
+    "source": "org:wah-ching-ken-side",
+    "target": "org:wah-ching",
+    "type": "alliance"
+  },
+  {
+    "source": "org:wah-ching-t-side",
+    "target": "org:wah-ching",
+    "type": "alliance"
+  },
+  {
+    "source": "org:wdcc",
+    "target": "org:east-coast-crips-los-angeles",
+    "type": "alliance"
+  },
+  {
+    "source": "org:west-side-asian-boyz",
+    "target": "org:asian-boyz",
+    "type": "alliance"
+  },
+  {
+    "source": "org:118th-gangster-crips",
+    "target": "org:hawthorne-piru",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:atlantic-drive-compton-crips",
+    "target": "org:santana-blocc-compton-crips",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:4-tray-gangster-crips",
+    "target": "org:eight-tray-83-gangster-crip-los-angeles",
+    "type": "spin_off"
+  },
+  {
+    "source": "org:neighborhood-crips-nhc",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "spin_off"
+  },
+  {
+    "source": "org:bahala-na-nalang-gang",
+    "target": "org:nuestra-familia",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bahala-na-nalang-gang",
+    "target": "org:true-brown-style",
+    "type": "alliance"
+  },
+  {
+    "source": "org:bahala-na-nalang-gang",
+    "target": "org:north-side-satanas",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:bahala-na-nalang-gang",
+    "target": "org:pinoy-real",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:lueders-park-pirus",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:lueders-park-pirus",
+    "type": "spin_off"
+  },
+  {
+    "source": "org:kelly-park-compton-crips",
+    "target": "org:lueders-park-pirus",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:eight-tray-83-gangster-crip-los-angeles",
+    "type": "rivalry"
+  },
+  {
+    "source": "org:101-crip-gang",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:102raymond",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:105th-street-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:107-hoover-criminals",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:111-neighbor-hood-crips-in-south-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:112-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:112bgc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:115-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:116-avalon-gangster-crips",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:117-street-watts-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:118-blocc-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:118-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:118-eucalyptus-mob-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:118th-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:1200-east-coast-blocc-crips-riverside",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:135-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:145-neighborhood-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:190-east-coast-blocc-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:19th-street-crips-in-long-beach",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:1st-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:357-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:4-tray-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:40s-piru-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:42gc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:43-hoover-criminals-gang",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:43-hoover-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:43gcss",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:456-island-piru-pomona",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:46-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:47-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:5-9-brims-san-diego",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:5-deuce-hoover-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:51-trouble-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:52-broadway-gangster-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:52-hoover-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:53-five-tray-avalon-gangster-crips-in-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:59-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:59hoover",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:6-pacc-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:62-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:65-menlo-crips-in-south-los-angeles-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:67-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:68ecc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:69-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:71-gangster-crips",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:73-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:73hustlercrip",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:74-hoover-criminals",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:76ecc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:76qsb",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:77-hoover-block-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:80-hoover-criminals",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:81st-east-side-hustler-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:83hoover",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:87-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:87-kitchen-crip-in-south-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:88agc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:89-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:89ecc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:90-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:90s-westcoast-crips-in-south-los-angeles-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:92bishop",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:92hoover",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:94-hoover-criminals-gang",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:94-hoover-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:96-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:97-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:98-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:a-line-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:akrhos-flip-city-kings",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:allforcrime-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:almighty-popes",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:almighty-saints",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:altadena-blocc-crip-abc-in-altadena",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:ambrose",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:anzac-grape-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:arch-dukes",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:ashland-vikings",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:asian-boyz-crips-eastside-abz",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:athens-park-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:atlantic-blocc-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:atlantic-drive-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:atlantic-gardens-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:avalon-40s-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:avalon-ganster-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:avenue-bloods-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:avenue-piru-gang",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:back-street-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:barjug",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:bartender-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:beach-town-mafia-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:bedrocc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:bible-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:bishops",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:black-disciples-chicago",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:black-p-stones-jungles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:black-p-stones",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:blackmafiacripdog",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:blood-stone-villians-eastside-los-angeles-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:blue-gate-mafia-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:born-to-jacc-crips-73rdst",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:boulevard-mafia-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:bounty-hunter-watts-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:brazers",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:bricc-boy-crips-long-beach",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:brik-boy-crips-bbc-in-northside-long-beach",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:broadway-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:brown-side-piru-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:budlong-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:burnside-avenue-crip-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:burris-blocc-compton-crip",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:butler-block-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:by-yourself-gangster-crips-west-la-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:by-yourself-hustler-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:cedar-block-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:center-park-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:center-view-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:centinela-park-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:centinela-park-family",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:chester-street-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:circle-city-pirus-in-watts-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:cnotes",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:colden-avenue-gangster",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:colton-city-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:crenshaw-mafia-gang",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:criminal-class-locastas",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:cross-atlantic-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:cullerton-deuces",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:dalton-gangster-bloods-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:deep-valley-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:del-amo-blocc-190-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:del-monte-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:del-paso-heights-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:delmann-heights-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:denver-lane-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:detroit-gangster-disciples",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:dgaf",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:dirty-old-man-gang",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:dodge-city-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:donna-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:dorner-blocc-criminal-gang",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:doty-block-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:down-ass-pimp-gang-109",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:down-ass-pimp",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:dragnet",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:dshc-91st",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:ducky-hood-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:duroc-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-coast-blocc-crips-118",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-coast-crips-66",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-coast-crips-97",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-coast-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-compton-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-dago-mob-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-side-hustler-crips-115-118",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-side-hustler-crips-from-south-los-angeles-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-side-pirus-compton",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-side-players-97",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-side-players-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-side-ridas-64",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:east-side-ridaz-59",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:eastside-116-kitchen-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:eastside-be-bopp-watts-bloods-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:eastside-fruit-town-pirus-in-compton",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:efcc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:eight-tray-83-gangster-crip-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:elm-street-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:emerald-hills-gangster-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:familia-stones",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:family-swan-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:farm-dog-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:filthy-crip",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:five-time-hometown-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:four-corner-blocc-crips-4corner",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:four-corner-hustlers-chicago",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:four-duece-42-crip-gang-w-s",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:four-line-drive-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:four-tray-gangster-crips-43-gc-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:front-hood-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:front-street-watts-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:fruit-town-brims",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:fruit-town-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:ftb-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:fudge-town-mafia-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:future-puerto-rican-stones",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:gangster-crips-47",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:gangster-crips-48",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:gangster-crips-96",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:gangster-crips-97",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:gangster-crips-98",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:gangster-stones",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:garden-blocc-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:almighty-gaylords-nation",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:geer-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:ghetto-brothers-organizationyates-boys-organization",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:ghost-town-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:grace-avenue-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:grandee-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:grape-watts-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:graveyard-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:gundry-blocc-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hacienda-village-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:harbor-city-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hard-time-hustler-crips-78",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hard-time-hustler-crips-88-93",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hard-time-hustler-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hard-time-hustler-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:harrison-gents",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:harvard-gangster-crips-127",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:harvard-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:harvard-park-brims-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:hat-watts-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hawthorne-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:hawthorne-thug-family-htf",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hickery-watts-crip-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hollyhood-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:holmes-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:holmes-town-crips-97",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:holmes-town-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:home-boys-crimino-gang-in-the-west-la-area",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:homes-side-hustler-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:hoover-park-family-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:hustler-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:imperial-gangsters-chicago",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:imperial-village-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:insane-campbell-boys",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:insane-crips-long-beach",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:insane-deuces",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:insane-dragons",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:insane-majestics",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:insane-popes-south-side",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:insane-unknowns",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:kelly-park-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:king-cobras",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:kitchen-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:krazy-get-down-boys",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:krook-city-bloods-san-diego",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:la-raza-chicago",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:lantana-blocc-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-angels",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-brothers",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-dragons",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-jivers",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-kings-chicago",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-kings",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-lovers",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-pachucos",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-souls",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-stones",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:latin-stylers",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:liggett-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:lime-hood-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:lincoln-park-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:linda-vista-crips-san-diego",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:little-africa-piru-san-diego",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:los-be-be-stones",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:lueders-park-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:lynwood-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:mac-mafia-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:macon-macc-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:mad-ass-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:mad-swan-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:mafia-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:main-mafia-crips-msmc-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:main-street-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:maniac-campbell-boys",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:maniac-latin-disciples-chicago",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:mansfield-gangster-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:marvin-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:menlo-gangster-crips-103",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:menlo-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:mickey-cobras-chicago",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:mid-town-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:mid-wilshire-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:miller-gangster-bloods-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:milwaukee-kings",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:mob-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:mona-parcc-compton-crips-in-willowbrook-compton",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:mona-park-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:morgan-boys-18th-street-folks",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:most-valuable-pimp-gangster-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:mulberry",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:naughty-nasty-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:neighbor-hood-crips-106",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:neighbor-hood-crips-lynwood",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:neighborhood-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:neighborhood-crips-nhc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:neighborhood-family-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:neighborhood-piru-inglewood",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:neighborhood-swan-bloods-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:nestor-ave-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:nine-trey-gangsters",
+    "target": "org:united-blood-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:nip-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:noble-knights",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:nogales-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:north-highlands-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:nutty-blocc-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:oak-park-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:orchard-brim",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:original-block-pirus-151",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:original-front-hood-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:original-genoside-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:original-hood-crips-long-beach",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:original-inglewood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:original-swamp-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:original-valley-gangster-crip-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:orquestra-albany",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:osage-legend-crips-inglewood",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:outlaw-bloods",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:pacoima-piru-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:palm-and-blocc-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:palm-oak-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:palmer-blocc-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:parke-nine-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:parkside-piru-san-diego",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:party-people",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:party-players",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:pasadena-denver-lanes",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:pasadena-park-nine",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:pasadena-squiggly-lane-gangster-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:paulina-barry-community",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:pbgc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:people-nation",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:perris-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:pimp-player-hustler-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:pj-watts-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:play-boy-hustler-crips-68-69",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:play-boy-hustler-crips-75",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:play-boy-style-crips-106",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:play-boy-style-crips-82",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:play-boy-style-crips-93-95",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:playboys-ventures-pulaski-park-rice-boys",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:pope-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:project-gangster-bloods-in-pasadena",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:project-gangster-crips-riverside",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:pueblobloods-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:puerto-rican-stones",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:pvcc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:q102-east-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:queen-street-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:r30crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:racine-boys",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:raymond-ave-crips-120th-street-in-west-athens-unincorporated",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:raymond-street-hustler-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:ridgeway-lords",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-20s-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-20s-neighborhood-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-20s-outlaw-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-30-s-bloodstone-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-30s-harlem-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-30s-tre-tre-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-40s-avalon-gangster-crips",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-40s-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-40s-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-50s-brim",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-50s-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-80s-west-coast-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-90s-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin-90s-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:rollin100s",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:sacremento-ave-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:samoan-warrior-bounty-hunters",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:sanpedro",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:santana-blocc-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:satan-disciples-chicago",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:school-yard-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:scott-park-piru-carson",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:scotts-dale-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:sex-money-murder",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:shot-gun-crips-in-gardena",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:sin-city-boys",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:six-hood-compton-crips-in-willowbrook",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:skyline-piru-san-diego",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:sons-of-samoa",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:south-side-compton-crips-sscc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:south-side-village-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:spanish-lords",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:spanish-vice-lords",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:spook-town-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:stevenson-village-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:stoned-freaks",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:straight-ballers-society",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:tall-arabian-posse",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:taper",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:ten-line-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:tiny-oriental-crips-san-diego",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:tongancrips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:too-many-hoes-tmhg-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:too-many-hoes",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:tpcc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:tray-duece-crip-32crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:tree-top-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:trouble-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:tub-of-blood-bunch",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:twelfth-street-players",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:twilight-zone-compton-crips-in-rosewood-park",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:twilight-zone-crips-110-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:twilightzone",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:two-ones-folks-21stleavitt",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:two-six",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:two-two-boys",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:under-ground-crips-103",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:united-blood-nation",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:unknown-assassins",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:unton-untouchable-brims-los-angeles",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:uptown-rebels",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:valley-hi-gangster-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:van-ness-gangsters",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:venice-shoreline-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:victoria-park-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:village-town-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:walnut-blocc-crips-lynwood",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:ward-lane-compton-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:warlords-wicker-park-la-familia-warlords",
+    "target": "org:people-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:water-front-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:watergate-crips-in-hawthorne",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:watts-franklin-square-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:wattsmafiacrip",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:wdcc",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:west-blvd-crips-los-angeles",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:west-coast-crips-san-diego",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:west-covina-mob-piru",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:west-covina-neighborhood-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:west-downtown-inglewood-bloods",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:west-park-pirus",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:west-side-pirus-compton",
+    "target": "org:bloods",
+    "type": "nation"
+  },
+  {
+    "source": "org:westmob",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:westside-99-mafia-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:westside-original-blocc-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:whitsett-avenue-crips",
+    "target": "org:crips",
+    "type": "nation"
+  },
+  {
+    "source": "org:ylo-cobras",
+    "target": "org:folk-nation",
+    "type": "nation"
+  },
+  {
+    "source": "org:ylo-disciples",
+    "target": "org:folk-nation",
+    "type": "nation"
+  }
+]

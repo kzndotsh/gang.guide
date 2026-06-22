@@ -1,0 +1,33 @@
+{
+  "id": "org:mid-city-stoners",
+  "name": "Mid City Storners",
+  "lane": "california-latino-harbor",
+  "metro": "Los Angeles",
+  "description": "City Stoners 13 are a Mexican-American criminal street gang located in the City of Los Angeles and Long Beach, California.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/mid-city-stoners/",
+      "title": "Mid City Storners \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/longbeach/midcitystoners/",
+      "title": "Midcitystoners \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/mid-city-stoners/",
+      "title": "Mid City Stoners \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "Long Beach",
+    "MCS",
+    "Mid-City Stoners 13"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

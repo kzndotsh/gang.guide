@@ -1,0 +1,22 @@
+{
+  "id": "org:tub-of-blood-bunch",
+  "name": "Tub of Blood Bunch",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "Early New York waterfront street gang active in the late 1860s, based in the Corlears' Hook section of the East River. Formed from members of various gangs after a police cleanup of the Fourth Ward. Operated from a bar called the Tub of Blood. The gang faded into obscurity by the 1880s.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Tub_of_Blood_Bunch",
+      "title": "Tub of Blood Bunch \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "founded_year": 1865,
+  "founded_year_precision": "circa",
+  "aliases": []
+}

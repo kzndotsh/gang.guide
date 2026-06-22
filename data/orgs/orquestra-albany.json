@@ -1,0 +1,23 @@
+{
+  "id": "org:orquestra-albany",
+  "name": "Orquestra Albany",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "Orquestra Albany (La Orquestra Albany) is a Latino (Puerto Rican) Folk Nation street gang founded in 1972 in Chicago's Logan Square neighborhood. Colors are gold and brown.",
+  "founded_year": 1972,
+  "founded_year_precision": "exact",
+  "colors": [
+    "gold",
+    "brown"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/insane-la-orquestra-albany/",
+      "title": "Orquestra Albany - Chicago Gang History"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "org:scotts-dale-piru",
+  "name": "Scotts Dale Piru",
+  "aliases": [
+    "SDP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-carson",
+  "metro": "Los Angeles",
+  "description": "Scotts Dale Piru are a predominately African-American street gang located in the Avalon Village community of Carson, California.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Scotts_Dale_Piru",
+      "title": "Scotts Dale Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/longbeach/sc/",
+      "title": "Scotts Dale Piru \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/scottsdale-piru/",
+      "title": "Scottsdale Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/carson/sdp/",
+      "title": "Scotts Dale Piru \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

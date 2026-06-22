@@ -1,0 +1,26 @@
+{
+  "id": "org:warlocks-motorcycle-club-pennsylvania",
+  "name": "Warlocks Motorcycle Club (Pennsylvania)",
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "metro": "Philadelphia",
+  "description": "American outlaw motorcycle club formed in Philadelphia in 1967. The club is involved in narcotics distribution, prostitution, kidnapping, burglary, sale of stolen property, violent crime, and murder. It is most prominent in the Delaware Valley and has chapters in several Mid-Atlantic states. Membership is restricted to white males over 18 who own a Harley-Davidson motorcycle.",
+  "founded_year": 1967,
+  "aliases": [
+    "Harpy Warlocks",
+    "Philadelphia Warlocks",
+    "Philly Warlocks",
+    "WMC"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Warlocks_Motorcycle_Club_%28Pennsylvania%29",
+      "title": "Warlocks Motorcycle Club %28Pennsylvania%29 \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

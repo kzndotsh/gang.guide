@@ -1,0 +1,23 @@
+{
+  "id": "org:53-five-tray-avalon-gangster-crips-in-los-angeles",
+  "name": "53 (Five Tray) Avalon Gangster Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "Avalon Gangster Crips are a predominately African-American street gang on the eastside of South Los Angeles. They are based in the community around South Park, where award winning singer Barry White grew up. During the 1950s and 1960s, the BusinessMen where the dominant group in the area prior to the 1965 Watts Riots.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/53agc/",
+      "title": "53 (Five Tray) Avalon Gangster Crips in Los Angeles \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1972,
+  "founded_year_precision": "circa",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

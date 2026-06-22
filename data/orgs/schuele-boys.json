@@ -1,0 +1,23 @@
+{
+  "id": "org:schuele-boys",
+  "name": "Schuele Boys",
+  "type": "street_gang",
+  "lane": "new-york",
+  "founded_year": 2000,
+  "founded_year_precision": "exact",
+  "description": "Street gang based in Buffalo, New York, founded in 2000 on Schuele Avenue. Engages in drug trafficking, robbery, extortion, contract killing, arms trafficking, and selling stolen property. Known for producing drill rap music under the label 'Gone Entertainment'. In 2017, 28 members were arrested for narcotics distribution and homicides.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Schuele_Boys",
+      "title": "Schuele Boys \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Buffalo_crime_family",
+      "title": "Buffalo crime family \u2014 Wikipedia"
+    }
+  ],
+  "metro": "New York",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

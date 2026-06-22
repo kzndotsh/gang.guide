@@ -1,0 +1,29 @@
+{
+  "id": "org:east-compton-piru",
+  "name": "East Compton Piru",
+  "aliases": [
+    "C14",
+    "ECP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/East_Compton_Piru",
+      "title": "East Compton Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/ecp/",
+      "title": "East Compton Piru \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "description": "A Blood/Piru gang based on the East Side of Compton, California. They are part of the network of Piru sets in the Compton area.",
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

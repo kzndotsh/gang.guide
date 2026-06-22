@@ -1,0 +1,30 @@
+{
+  "id": "org:savage-nomads",
+  "name": "Savage Nomads",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "founded_year": 1970,
+  "founded_year_precision": "exact",
+  "description": "The Savage Nomads were a mostly Puerto Rican and African American street gang founded in the South Bronx, New York City in 1970 by Benjamin Melendez. Active primarily in the 1970s, the gang engaged in small crimes and battles with rival gangs such as the Seven Immortals and Savage Skulls. After a period of dormancy, the gang resurfaced in 2017 with homicides linked to them.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Savage_Nomads",
+      "title": "Savage Nomads \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ghetto_Brothers",
+      "title": "Ghetto Brothers \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Savage_Skulls",
+      "title": "Savage Skulls \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "red",
+    "black"
+  ],
+  "status": "active",
+  "aliases": []
+}

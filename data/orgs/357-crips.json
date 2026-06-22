@@ -1,0 +1,25 @@
+{
+  "id": "org:357-crips",
+  "name": "357 Crips",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "description": "Seven are primarily an African-American criminal street gang located in the Valwood neighborhood, on the West Side of Pomona, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/357-crips/",
+      "title": "357 Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "357 Gangster Crips",
+    "Tray-Five-Seven"
+  ],
+  "status": "active"
+}

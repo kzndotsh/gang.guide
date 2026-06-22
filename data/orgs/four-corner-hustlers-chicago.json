@@ -1,0 +1,48 @@
+{
+  "id": "org:four-corner-hustlers-chicago",
+  "name": "Four Corner Hustlers",
+  "aliases": [
+    "4CH",
+    "FCH",
+    "Hustlers"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "founded_year": 1968,
+  "founded_year_precision": "circa",
+  "description": "The Four Corner Hustlers (4CH) are an African-American People Nation street gang with 9,000+ members, founded in the late 1960s by Walter 'King' Wheat and Freddy Gauge in West Garfield Park, Chicago. Originally wore black and brown, now black and gold. Allied with Vice Lords since 1977. Reputation as the most violent and feared gang on Chicago's West Side. Present in Chicago, Memphis, North Carolina, Detroit, Atlanta, and Milwaukee. Symbols include champagne glass, Playboy bunny, globe, crescent moon with star, dice, top hat with cane. Notable associate: rapper Common. Founder King Wheat was killed in 1994.",
+  "nation_affiliation": "org:people-nation",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Four_Corner_Hustlers",
+      "title": "Four Corner Hustlers \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-imperial-gangsters",
+      "title": "Encyclopedia of Chicago"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
+      "title": "Almighty Black P. Stone Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Kings",
+      "title": "Latin Kings \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/four-corner-hustlers/",
+      "title": "Four Corner Hustlers - Chicago Gang History"
+    }
+  ],
+  "colors": [
+    "black",
+    "gold"
+  ],
+  "symbols": [
+    "four-pointed star",
+    "dollar sign",
+    "top hat"
+  ],
+  "status": "active"
+}

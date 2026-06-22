@@ -1,0 +1,31 @@
+{
+  "id": "org:imperial-klans-of-america",
+  "name": "Imperial Klans Of America",
+  "aliases": [
+    "IKA"
+  ],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 1996,
+  "founded_year_precision": "exact",
+  "description": "White supremacist, white nationalist, neo-Nazi paramilitary organization founded in 1996 by Ron Edwards in Dawson Springs, Kentucky. It was the second largest Klan group in the United States until the late 2000s, and briefly the largest in the early 2000s. The group has been weakened by legal judgments and Edwards' imprisonment, but remained active as of 2020 with only two chapters by 2012.",
+  "metro": "United States",
+  "colors": [
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Imperial_Klans_Of_America",
+      "title": "Imperial Klans Of America \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Imperial_Klans_of_America",
+      "title": "Imperial Klans of America - Wikipedia"
+    },
+    {
+      "url": "https://www.splcenter.org/fighting-hate/extremist-files/group/imperial-klans-america/",
+      "title": "Imperial Klans - SPLC"
+    }
+  ],
+  "status": "active"
+}

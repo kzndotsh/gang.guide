@@ -1,0 +1,25 @@
+{
+  "id": "org:43gcss",
+  "name": "43 Gangster Crips (Southside)",
+  "lane": "california-crips-gangster",
+  "metro": "Los Angeles",
+  "description": "African-American Gangster Crip set located on the eastside of South Los Angeles in an area known as the Low Bottoms. Also known as Four Tray Gangster Crips Southside.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/43gcss/",
+      "title": "43 Gangster Crips (South Side) \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "SS Four Tray GC"
+  ],
+  "status": "active"
+}

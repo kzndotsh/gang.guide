@@ -1,0 +1,21 @@
+{
+  "id": "org:winter-gardens-in-east-los-angeles",
+  "name": "Winter Gardens",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "Winter Gardens are a predominately Latino street gangs in East Los Angeles, an unincorporated section of Los Angeles County. They are located between Olympic (north) and the 5 Freeway (south) from Atlantic (east) to Arizona (west).",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/wintergardens/",
+      "title": "Winter Gardens in East Los Angeles \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "org:original-inglewood-crips",
+  "name": "Original Inglewood Crips",
+  "aliases": [
+    "Inglewood Crips"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-inglewood",
+  "metro": "Inglewood",
+  "description": "Original Inglewood Crips The Inglewood Crips were a predominately African-American street gang that formed around 1972. One of its early leaders was Mike Christian who later became a success professional bodybuilder.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/compton/original-front-hood-compton-crip/",
+      "title": "Original Front Hood Compton Crip \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/inglewood/inglewood-crips/",
+      "title": "Inglewood Crips \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1972,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

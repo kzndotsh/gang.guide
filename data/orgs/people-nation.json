@@ -1,0 +1,51 @@
+{
+  "id": "org:people-nation",
+  "name": "People Nation",
+  "aliases": [
+    "People",
+    "Peoples"
+  ],
+  "type": "alliance",
+  "lane": "chicago-folk-people",
+  "metro": "Chicago",
+  "founded_year": 1978,
+  "founded_year_precision": "exact",
+  "description": "The People Nation is a multiethnic alliance of street gangs formed in 1978 in Chicago by the Vice Lords (Bobby Gore), Black P. Stones (Jeff Fort), and Latin Kings (Gustavo Colon) as a counter to the Folk Nation. Member gangs include Vice Lords, Latin Kings, Black P. Stones, Mickey Cobras, Four Corner Hustlers, Gaylords, and Latin Counts. They identify with the five-pointed star, five-pointed crown, left-side symbolism, and the phrase 'all is well.' Their motto against rivals: 'five alive, six must die' (referencing Folk Nation's six-pointed star).",
+  "nation_affiliation": "org:folk-nation",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/People_Nation",
+      "title": "People Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
+      "title": "Almighty Black P. Stone Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chicago_Gaylords",
+      "title": "Chicago Gaylords \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
+      "title": "Popes %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Saints",
+      "title": "Almighty Saints \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Vice_Lord_Nation",
+      "title": "Almighty Vice Lord Nation \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "red",
+    "black",
+    "gold"
+  ],
+  "symbols": [
+    "five-pointed star",
+    "five-pointed crown"
+  ],
+  "status": "active"
+}

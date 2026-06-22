@@ -1,0 +1,22 @@
+{
+  "id": "org:18thstreet-westlake",
+  "name": "18th Street (Westlake)",
+  "lane": "california-latino-westside",
+  "metro": "Los Angeles",
+  "description": "The Westlake clique of the 18th Street Gang operates in the MacArthur Park and Westlake district of Los Angeles, west of downtown. In 2026, federal prosecutors charged seven alleged members with racketeering, accusing them of taking orders from a Mexican Mafia member held in state prison.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/18thstreet-westlake/",
+      "title": "18Thstreet Westlake \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": []
+}

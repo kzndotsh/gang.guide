@@ -1,0 +1,27 @@
+{
+  "id": "org:7th-street-gang",
+  "name": "7th Street Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The 7th Street Gang was a Hispanic street gang based in Buffalo, New York, founded in 2000 by Efrain \"Cheko\" Hidalgo. It engaged in drug trafficking of cocaine, heroin, and other narcotics, and was involved in violent conflicts with rival gangs, particularly the 10th Street Gang. The gang was active from 2000 to 2017, when many members were arrested.",
+  "founded_year": 2000,
+  "aliases": [
+    "Cheko's Crew"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/7th_Street_Gang",
+      "title": "7th Street Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/10th_Street_Gang",
+      "title": "10th Street Gang \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate"
+}

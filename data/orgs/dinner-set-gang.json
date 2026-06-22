@@ -1,0 +1,21 @@
+{
+  "id": "org:dinner-set-gang",
+  "name": "Dinner Set Gang",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "A gang of thieves active in the late 1960s and 1970s, known for burglarizing wealthy Americans' homes while the victims were at dinner. Based in the United States, the gang was led by brothers-in-law Peter Salerno and Dominick Latella. They stole millions in jewels, targeting families like the DuPonts and Flaglers. The gang avoided violence and carried no weapons.",
+  "aliases": [
+    "Dinner Set Trays"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Dinner_Set_Gang",
+      "title": "Dinner Set Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1968,
+  "founded_year_precision": "circa",
+  "colors": []
+}

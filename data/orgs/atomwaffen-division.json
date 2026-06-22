@@ -1,0 +1,37 @@
+{
+  "id": "org:atomwaffen-division",
+  "name": "Atomwaffen Division",
+  "aliases": [
+    "AWD",
+    "National Socialist Order",
+    "National Socialist Resistance Front"
+  ],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 2015,
+  "founded_year_precision": "exact",
+  "description": "International far-right extremist and neo-Nazi network formed in 2015 and based in the Southern United States. It expanded across the US and several other countries, described as one of the most violent neo-Nazi movements of the 21st century. Members have been responsible for murders, bombings, and planned terrorist attacks.",
+  "metro": "United States",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Atomwaffen_Division",
+      "title": "Atomwaffen Division \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Combat_18",
+      "title": "Combat 18 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hammerskins",
+      "title": "Hammerskins \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Base_%28neo-Nazi_group%29",
+      "title": "The Base %28neo-Nazi group%29 \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "white"
+  ],
+  "status": "active"
+}

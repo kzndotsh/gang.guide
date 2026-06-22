@@ -1,0 +1,29 @@
+{
+  "id": "org:allforcrime-los-angeles",
+  "name": "All For Crime Bloods",
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "founded_year": 2003,
+  "description": "All For Crime Bloods are a predominately African-American street gang, that is part of the Bloods alliance on the eastside of South Los Angeles. This street gang formed around 2003 and they have an established territory near 42nd Street & Ascott in South Los Angeles that once belonged to the Rollin 40s Pirus, another Blood gang. In recent years the 40s Piru identity has been over shadowed by AFCB. There are members of the Rollin 40s Pirus still in the area, but the younger generation of gang members have decided to represent AFCB.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/allforcrime/",
+      "title": "Allforcrime \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/all-for-crime-bloods/",
+      "title": "All For Crime Bloods \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "AFCB",
+    "Crime Bloods"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

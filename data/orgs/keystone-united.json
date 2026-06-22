@@ -1,0 +1,28 @@
+{
+  "id": "org:keystone-united",
+  "name": "Keystone United",
+  "aliases": [
+    "Keystone State Skinheads",
+    "KSS"
+  ],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 2001,
+  "founded_year_precision": "exact",
+  "description": "Neo-Nazi group based in Pennsylvania, founded in 2001 by five men from Harrisburg. Originally focused on uniting white power skinheads across Pennsylvania, it expanded to multiple chapters and became one of the largest single-state racist skinhead crews in the US.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/carson/keystone/",
+      "title": "Keystone United \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Keystone_United",
+      "title": "Keystone United \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "white"
+  ],
+  "status": "active"
+}

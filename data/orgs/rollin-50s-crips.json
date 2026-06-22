@@ -1,0 +1,24 @@
+{
+  "id": "org:rollin-50s-crips",
+  "name": "Rollin 50s Neighborhood Crips",
+  "aliases": [
+    "R 50s NHC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "founded_year": 1996,
+  "founded_year_precision": "range",
+  "description": "Crips are a predominately African-American street gang from the westside of South Los Angeles, California. They are located between Vermont (east) and Western Avenues (west) from Slauson Avenue (south) and 54th Street (north). This set is a result of three different independent sets, 55, 57 and 58 unifying during the late 1990s becoming the Rollin 50s Neighborhood Crips.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/rollin-50s-crips/",
+      "title": "Rollin 50S Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

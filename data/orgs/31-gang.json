@@ -1,0 +1,19 @@
+{
+  "id": "org:31-gang",
+  "name": "31 Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "A street gang based in East Buffalo, New York, founded in the early 2000s and named after the ID number of the Harriet Ross Tubman School. The gang operates in the Willert Park and Broadway-Fillmore areas, primarily involved in drug trafficking, including cocaine and crack cocaine. Members have faced federal charges, and the gang has been active in conflicts with law enforcement.",
+  "founded_year": 2000,
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/31_Gang",
+      "title": "31 Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

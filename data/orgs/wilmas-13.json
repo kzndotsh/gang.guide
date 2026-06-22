@@ -1,0 +1,31 @@
+{
+  "id": "org:wilmas-13",
+  "name": "Wilmas 13",
+  "aliases": [
+    "Eastside Wilmas",
+    "IMG Insane MEXICAN Gang",
+    "Northside Wilmas",
+    "W13",
+    "Westside Wilmas"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-harbor",
+  "description": "Wilmas 13 is a Mexican American street gang based in Wilmington, Los Angeles, California, controlled by the Mexican Mafia. It has four sub-gangs and is involved in drug trafficking, arms trafficking, murder, and extortion. The gang has been subject to federal racketeering indictments and civil injunctions.",
+  "metro": "Los Angeles",
+  "colors": [
+    "black"
+  ],
+  "founded_year": 1970,
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Wilmas_13",
+      "title": "Wilmas 13 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mexican_Mafia",
+      "title": "Mexican Mafia \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

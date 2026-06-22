@@ -1,0 +1,47 @@
+{
+  "id": "org:mob-piru",
+  "name": "Mob Piru",
+  "aliases": [
+    "MOB Piru",
+    "East Side Mob Piru",
+    "Insane Mob Gang",
+    "Mob Piru Bloods"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "description": "The Mob Piru (East Side Mob Piru) is a Piru/Blood set based on the east side of Compton, California. Suge Knight, co-founder of Death Row Records, was an affiliate and hired many Mob Piru members as label security. Tupac Shakur also became affiliated when he joined Death Row in 1995. The gang split from the Lueders Park Piru and the two developed a rivalry after a murder in 2009. Several Mob Piru members connected to Death Row were murdered in the early 2000s, including Alton 'Buntry' McDonald and Wardell 'Poochie' Fouse (implicated in the murder of Notorious B.I.G.).",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Mob_Piru",
+      "title": "Mob Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/mobpiru/",
+      "title": "Mob Piru \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/compton-mob-piru/",
+      "title": "Compton Mob Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/westcovina/wcmobpiru/",
+      "title": "Mob Piru \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_P._Stones_%28Jungles%29",
+      "title": "Black P. Stones %28Jungles%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cedar_Block_Piru",
+      "title": "Cedar Block Piru \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1974,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

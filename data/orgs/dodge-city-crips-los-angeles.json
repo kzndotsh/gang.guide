@@ -1,0 +1,28 @@
+{
+  "id": "org:dodge-city-crips-los-angeles",
+  "name": "Dodge City Crips",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "description": "The Dodge City Crips are a predominantly African-American Crip gang based in the Harbor area of Los Angeles, near the Harbor City and Lomita neighborhoods.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/dodgecitycrips/",
+      "title": "Dodgecitycrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/dodge-city-crips/",
+      "title": "Dodge City Crips \u2014 UnitedGangs"
+    }
+  ],
+  "type": "street_gang",
+  "aliases": [
+    "BAN"
+  ],
+  "founded_year": 1970,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

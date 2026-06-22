@@ -1,0 +1,48 @@
+{
+  "id": "org:pagans-motorcycle-club",
+  "name": "Pagan's Motorcycle Club",
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "metro": "United States",
+  "description": "Outlaw motorcycle club formed by Lou Dobkin in 1959 in Prince George's County, Maryland. Known for territorial conflicts with the Hells Angels and other clubs. Active across the United States and Puerto Rico with over 100 chapters. Involved in traditional organized crime, including ties to La Cosa Nostra.",
+  "founded_year": 1959,
+  "aliases": [
+    "Pagan Nation",
+    "Pagans"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Pagan%27s_Motorcycle_Club",
+      "title": "Pagan's Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/10th_%26_Oregon_Crew",
+      "title": "10th %26 Oregon Crew \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/American_Mafia",
+      "title": "American Mafia \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mafia_estadounidense",
+      "title": "Mafia estadounidense \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Breed_Motorcycle_Club",
+      "title": "Breed Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gambino_crime_family",
+      "title": "Gambino crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pagan's_Motorcycle_Club",
+      "title": "Pagan's Motorcycle Club - Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

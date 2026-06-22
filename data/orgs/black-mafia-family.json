@@ -1,0 +1,33 @@
+{
+  "id": "org:black-mafia-family",
+  "name": "Black Mafia Family",
+  "type": "prison_gang",
+  "lane": "prison",
+  "metro": "Detroit",
+  "description": "The Black Mafia Family (BMF) is a drug trafficking and money laundering organization founded in 1985 in Detroit, Michigan by brothers Demetrius and Terry Flenory. It distributed cocaine across the United States with ties to Mexican cartels and used a hip-hop record label as a front. The organization was dismantled by federal indictments in 2005, with the Flenory brothers sentenced to 30 years in prison.",
+  "founded_year": 1985,
+  "aliases": [
+    "50 Boyz",
+    "BMF",
+    "BMF Entertainment"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Mafia_Family",
+      "title": "Black Mafia Family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/OutLaw_Gangster_Disciples",
+      "title": "OutLaw Gangster Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Zoe_Pound",
+      "title": "Zoe Pound \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate"
+}

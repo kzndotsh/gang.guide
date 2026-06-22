@@ -1,0 +1,23 @@
+{
+  "id": "org:gangster-crips-96",
+  "name": "96 Gangster Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "The 96 Gangster Crips are a predominantly African-American Crip set based around 96th Street on the East Side of South Los Angeles, formed in the early 1980s under the Gangster Crips card.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/96gc/",
+      "title": "Gangster Crips, 96 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

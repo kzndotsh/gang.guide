@@ -1,0 +1,23 @@
+{
+  "id": "org:harrison-gents",
+  "name": "Harrison Gents",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "Harrison Gents is a Latino (Puerto Rican), White, and African American Folk Nation street gang founded in 1959 in Chicago.",
+  "founded_year": 1959,
+  "founded_year_precision": "exact",
+  "colors": [
+    "black",
+    "purple"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-harrison-gents/",
+      "title": "Harrison Gents - Chicago Gang History"
+    }
+  ]
+}

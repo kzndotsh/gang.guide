@@ -1,0 +1,37 @@
+{
+  "id": "org:el-forastero-motorcycle-club",
+  "name": "El Forastero Motorcycle Club",
+  "aliases": [
+    "EFMC",
+    "El Forastero MC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1962,
+  "founded_year_precision": "exact",
+  "description": "One-percenter motorcycle club founded in 1962 by Tom Fugle and Harlan 'Tiny' Brower in Sioux City, Iowa. Known for criminal activities including motorcycle theft and methamphetamine distribution. Considered a second-tier outlaw club after the 'Big Four'. Has chapters in Iowa, Minnesota, Kansas, and Missouri.",
+  "metro": "United States",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/El_Forastero_Motorcycle_Club",
+      "title": "El Forastero Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Galloping_Goose_Motorcycle_Club",
+      "title": "Galloping Goose Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hells_Angels_MC_criminal_allegations_and_incidents",
+      "title": "Hells Angels MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Outlaws_MC_criminal_allegations_and_incidents",
+      "title": "Outlaws MC criminal allegations and incidents \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

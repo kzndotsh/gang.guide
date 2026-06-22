@@ -1,0 +1,27 @@
+{
+  "id": "org:10th-street-gang",
+  "name": "10th Street Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "A street gang based in Buffalo, New York, formed in the 1980s in the Lower West Side. The gang is multicultural with a Hispanic majority and operates without a traditional leader. It gained notoriety for a violent rivalry with the 7th Street Gang, resulting in 38 homicides between 2009 and 2012. In 2011, 27 members were arrested on RICO charges.",
+  "founded_year": 1980,
+  "aliases": [
+    "1015",
+    "1015 Gang",
+    "MOB"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/10th_Street_Gang",
+      "title": "10th Street Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/7th_Street_Gang",
+      "title": "7th Street Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "colors": []
+}

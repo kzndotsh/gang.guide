@@ -1,0 +1,24 @@
+{
+  "id": "org:grandee-compton-crips",
+  "name": "Grandee Compton Crips",
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "founded_year": 1970,
+  "founded_year_precision": "range",
+  "description": "Grandee Compton Crips were a predominately African-American street gang located in Compton, California that started during the early 1970s right off Grandee Street by Arthur \u201cBig Hauncho\u201d Day and Mack Thomas. They were one of the first Crip street gangs in Compton creating their own specific identity by taking on the name Grandee, after a street in southwest Compton. Both Day and Thomas lived in Watts before their families relocated to Compton in the early 1970s.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/compton/grandee-compton-crips/",
+      "title": "Grandee Compton Crips \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "GCC"
+  ],
+  "status": "active"
+}

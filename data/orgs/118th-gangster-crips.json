@@ -1,0 +1,31 @@
+{
+  "id": "org:118th-gangster-crips",
+  "name": "118th Gangster Crips",
+  "lane": "california-crips-gangster",
+  "description": "The 118 Gangster Crips are an African-American Crip set under the Gangster Crips card, based in Hawthorne, California. Formed in the 1980s, they rival the Hawthorne Piru and Acacia Blocc Hustlers.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/gangster-crips/",
+      "title": "Gangster Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/hawthorne/118gc/",
+      "title": "Team 118th Gangster Crips 118th Gangster Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/118-gangster-crips/",
+      "title": "118 Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "founded_year": 1974,
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "aliases": null,
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

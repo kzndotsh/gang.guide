@@ -1,0 +1,26 @@
+{
+  "id": "org:westside-original-blocc-crips",
+  "name": "The Original Blocc Crips",
+  "aliases": [
+    "BCG",
+    "OBCG",
+    "OBC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "description": "The Original Blocc Crips are a predominately African-American street gang located in the unincorporated section of Los Angeles County known as Athens. Their turf lays between Normandie (east) and Western Avenues (west) from 107th Street (north) to Imperial Highway (south). This section of South Los Angeles is policed by the Lennox Department of the Los Angeles County Sheriff\u2019s Department, but it is adjacent to the City of Los Angeles to the north.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/athens/obc/",
+      "title": "The Original Blocc Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "founded_year": 1970,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

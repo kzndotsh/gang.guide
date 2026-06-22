@@ -1,0 +1,21 @@
+{
+  "id": "org:central-side-asian-boyz",
+  "name": "Central Side Asian Boyz",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "The Asian Boyz are predominantly Cambodian, Vietnamese, and Filipino, with approximately 2,000 members across 14 states.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/cerritos/nsab/",
+      "title": "Central Side Asian Boyz \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1989,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

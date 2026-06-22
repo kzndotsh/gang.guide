@@ -1,0 +1,24 @@
+{
+  "id": "org:parkside-piru-san-diego",
+  "name": "Parkside Pirus",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "African-American Piru Blood gang with presence in multiple cities, operating under the Piru/Bloods alliance since the late 1970s\u20131980s, including San Diego's Paradise Hills neighborhood.",
+  "type": "street_gang",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/parkside-piru-san-diego/",
+      "title": "Parkside Pirus \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year": 1972,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "PSP"
+  ],
+  "status": "active"
+}

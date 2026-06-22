@@ -1,0 +1,20 @@
+[
+  {
+    "nodes": 968,
+    "edges": 1147,
+    "sources": 2021,
+    "delta_nodes": 0,
+    "delta_edges": 0,
+    "delta_sources": 0,
+    "built_at": "2026-06-25T21:08:08.411769+00:00"
+  },
+  {
+    "nodes": 967,
+    "edges": 1147,
+    "sources": 2020,
+    "delta_nodes": -1,
+    "delta_edges": 0,
+    "delta_sources": -1,
+    "built_at": "2026-06-26T00:00:08.233110+00:00"
+  }
+]

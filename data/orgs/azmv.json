@@ -1,0 +1,27 @@
+{
+  "id": "org:azmv",
+  "name": "Arizona MaraVilla",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "Arizona Maravilla (AMV) is a Mexican-American street gang and clique within the Maravilla gang cluster in East Los Angeles. The Maravilla area spans 8.25 square miles with at least 14 active gangs, making it one of the oldest concentrations of Latino gang activity in the US.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Arizona_MaraVilla",
+      "title": "Arizona MaraVilla \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mexican_Mafia",
+      "title": "Mexican Mafia \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1943,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "AZ"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

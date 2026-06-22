@@ -1,0 +1,23 @@
+{
+  "id": "org:hard-time-hustler-crips-78",
+  "name": "78 Hard Time Hustler Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "A subset of the Hard Time Hustler Crips operating around 78th Street in the Watts/South Los Angeles area, one of several cliques within the broader HTHC alliance that spans from 78th to 104th Streets.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/hthc78/",
+      "title": "Hard Time Hustler Crips, 78 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue",
+    "green"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

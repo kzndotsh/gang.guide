@@ -1,0 +1,41 @@
+{
+  "id": "org:gypsy-joker-motorcycle-club",
+  "name": "Gypsy Joker Motorcycle Club",
+  "aliases": [
+    "GJMC",
+    "Gypsy Jokers"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1956,
+  "founded_year_precision": "exact",
+  "description": "The Gypsy Joker Motorcycle Club is a one-percenter motorcycle club founded in San Bernardino, California on April 1, 1956. It expanded internationally, gaining notoriety in Australia, the United States, Germany, and Norway. The club is known for its violent criminal activities, including drug trafficking, homicide, and arson.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/montebello/jokers/",
+      "title": "Gypsy Joker Motorcycle Club \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gypsy_Joker_Motorcycle_Club",
+      "title": "Gypsy Joker Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents",
+      "title": "Bandidos MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents_in_Australia",
+      "title": "Bandidos MC criminal allegations and incidents in Australia \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Coffin_Cheaters",
+      "title": "Coffin Cheaters \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "status": "active"
+}

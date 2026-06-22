@@ -1,0 +1,24 @@
+{
+  "id": "org:akrhos-flip-city-kings",
+  "name": "Akrhos (Flip City Kings)",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "description": "Albany Park neighborhood 1984-2000s as Flip City Kings Sections of Albany Park Leland & Troy Established 1984-2000s as Flip City Kings",
+  "founded_year": 1984,
+  "founded_year_precision": "exact",
+  "colors": [
+    "black",
+    "red",
+    "gold"
+  ],
+  "nation_affiliation": "org:people-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/akrohs-flip-city-kings/",
+      "title": "Akrhos (Flip City Kings) - Chicago Gang History"
+    }
+  ]
+}

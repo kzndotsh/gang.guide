@@ -1,0 +1,31 @@
+{
+  "id": "org:westside-locos",
+  "name": "Westside Locos",
+  "type": "street_gang",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "Predominantly Latino-American street gang based in San Fernando Valley, Glendale, with history dating back to the 1950s. They reside mainly in the Riverside Rancho neighborhood and are known for murder. Their main subset is Chicos Malos or Lake street. The gang is part of a larger Locos 13 alliance throughout Los Angeles County.",
+  "founded_year": 1950,
+  "aliases": [
+    "LOKOS",
+    "LSX3",
+    "Westside Locos 13",
+    "WS Locos",
+    "WSLS"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Westside_Locos",
+      "title": "Westside Locos \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Toonerville_Rifa_13",
+      "title": "Toonerville Rifa 13 \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

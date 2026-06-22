@@ -1,0 +1,33 @@
+{
+  "id": "org:the-council",
+  "name": "The Council",
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "founded_year": 1972,
+  "founded_year_precision": "exact",
+  "description": "African-American organized crime syndicate in New York City that controlled the heroin trade in Harlem during the 1970s. Formed by Nicky Barnes in 1972, the seven-man organization handled local criminal disputes and drug distribution. It was heavily connected to the Italian-American Mafia, supplied by the Lucchese crime family. The Council dissolved in 1983 after Barnes became a federal informant.",
+  "metro": "New York",
+  "colors": [
+    "black"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Council",
+      "title": "The Council \u2014 Wikipedia"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/walker-darren-1959/",
+      "title": "Academic research"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/East_Harlem_Purple_Gang",
+      "title": "East Harlem Purple Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Council_%28drug_syndicate%29",
+      "title": "The Council %28drug syndicate%29 \u2014 Wikipedia"
+    }
+  ],
+  "status": "active",
+  "aliases": []
+}

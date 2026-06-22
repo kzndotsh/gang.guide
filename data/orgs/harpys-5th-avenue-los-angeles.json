@@ -1,0 +1,23 @@
+{
+  "id": "org:harpys-5th-avenue-los-angeles",
+  "name": "Harpys 5th Avenue",
+  "aliases": [
+    "HPS"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-westside",
+  "metro": "Los Angeles",
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "description": "Harpys 5th Avenue is a predominately Hispanic gang neighborhood located between Pico Blvd and Washington Ave just east of Crenshaw Blvd in the Mid City section of Los Angeles. They are located in the Wilshire Division of the LAPD and their closest rival are the Mara Salvatrucha gang located on Bronson & Country Club Avenue just east of Crenshaw Blvd.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Harpys_5th_Avenue",
+      "title": "Harpys 5th Avenue \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

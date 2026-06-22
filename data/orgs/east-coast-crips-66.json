@@ -1,0 +1,22 @@
+{
+  "id": "org:east-coast-crips-66",
+  "name": "66 East Coast Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "The 66 East Coast Crips (Six-Six) are a subset of the East Coast Crips on the East Side of South Los Angeles. They are part of the 6-Pacc alliance alongside the 62, 68, and 69 East Coast Crip sets, operating between Avalon Blvd and the 110 Freeway.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/66ecc/",
+      "title": "East Coast Crips, 66 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1971,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

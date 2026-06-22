@@ -1,0 +1,25 @@
+{
+  "id": "org:hard-time-hustler-crips-los-angeles",
+  "name": "Hard Time Hustler Crips",
+  "type": "street_gang",
+  "lane": "california-crips-hustler",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/hard-time-hustler-crips/",
+      "title": "Hard Time Hustler Crips \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "description": "The Hard Time Hustler Crips are a predominantly African-American Crip set operating in the Watts and South Los Angeles area, with multiple subsets along different streets including 78th, 88th, 93rd, and 103rd-104th.",
+  "colors": [
+    "blue",
+    "green"
+  ],
+  "aliases": [
+    "C14"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

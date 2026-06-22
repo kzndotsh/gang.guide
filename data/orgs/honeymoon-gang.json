@@ -1,0 +1,19 @@
+{
+  "id": "org:honeymoon-gang",
+  "name": "Honeymoon Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Honeymoon Gang was a mid-19th century New York street gang based in the East Side's 18th Ward. Known for brutal attacks on passersby, they operated with impunity until 1853 when police Captain George W. Walling formed the Strong Arm Squad to suppress them. The gang was disbanded within two weeks, with members fleeing the district.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Honeymoon_Gang",
+      "title": "Honeymoon Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1850,
+  "founded_year_precision": "decade",
+  "aliases": [],
+  "colors": []
+}

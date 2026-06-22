@@ -1,0 +1,24 @@
+{
+  "id": "org:barriovannuys",
+  "name": "Barrio Van Nuys",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "Los Angeles Barrio Van Nuys (BVN) is a predominately Hispanic street gang located in the Van Nuys community of the San Fernando Valley in the City of Los Angeles Clicks of this gang include North Side, South Side, Delano Street, Dukes, Cyclones, Jokers, Poor Boys, Tiny Locos, Traviesos, and the Locos.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Barrio_Van_Nuys",
+      "title": "Barrio Van Nuys \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "BVN",
+    "Boys"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

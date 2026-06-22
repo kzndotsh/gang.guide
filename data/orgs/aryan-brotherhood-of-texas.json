@@ -1,0 +1,51 @@
+{
+  "id": "org:aryan-brotherhood-of-texas",
+  "name": "Aryan Brotherhood Of Texas",
+  "aliases": [
+    "ABT",
+    "Hermandad Aria de Texas"
+  ],
+  "type": "prison_gang",
+  "lane": "white-supremacist",
+  "founded_year": 1981,
+  "founded_year_precision": "exact",
+  "description": "Texas is a white supremacist prison gang operating in Texas state prisons. Founded in the early 1980s by Texas inmates after being denied affiliation with the original Aryan Brotherhood, it emerged as one of the largest and most violent prison gangs in the United States. The group is responsible for numerous murders, drug trafficking, extortion, and other violent crimes.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
+      "title": "Aryan Brotherhood \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood_Of_Texas",
+      "title": "Aryan Brotherhood Of Texas \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/prison/aryan-brotherhood/",
+      "title": "Aryan Brotherhood \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/aryan-brotherhood/",
+      "title": "Aryan Brotherhood \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edca/pr/aryan-brotherhood-members-and-associates-charged-racketeering-directing-murders-and",
+      "title": "Aryan Brotherhood RICO \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
+      "title": "Hermandad Aria \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "symbols": [
+    "shamrock",
+    "swastika",
+    "SS bolts",
+    "AB"
+  ],
+  "colors": [
+    "white",
+    "green"
+  ],
+  "status": "active"
+}

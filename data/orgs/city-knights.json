@@ -1,0 +1,23 @@
+{
+  "id": "org:city-knights",
+  "name": "City Knights",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": ">Other gangs nearby Back of the Yards (New City) Saints City Knights Latin Souls Party Players Rebels Two Six Search for:",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "colors": [
+    "black",
+    "grey"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/insane-gangster-city-knights/",
+      "title": "City Knights - Chicago Gang History"
+    }
+  ]
+}

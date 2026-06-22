@@ -1,0 +1,24 @@
+{
+  "id": "org:whitsett-avenue-crips",
+  "name": "Whitsett Avenue Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1986,
+  "founded_year_precision": "range",
+  "description": "The Whitsett Avenue Crips (WAC) is predominantly a black street gang, located on the East Side of North Hollywood, San Fernando Valley, California. They originated during the late 1980s, named after Whitsett Ave, a local street which runs through the heart of their neighborhood, between Oxnard Street and Sherman Way.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/whitsett/",
+      "title": "Whitsett Avenue Crips \u2014 StreetGangs"
+    }
+  ],
+  "aliases": [
+    "WAC"
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "org:insane-guess-boys",
+  "name": "Insane Guess Boys",
+  "aliases": [
+    "IGB"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "The Insane Guess Boys are a Folk Nation street gang based in Chicago. Listed by the Illinois State Police as an active Folk Nation-affiliated gang.",
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "colors": [],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Gangs_in_Chicago",
+      "title": "Gangs in Chicago - Wikipedia"
+    }
+  ]
+}

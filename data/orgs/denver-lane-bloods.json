@@ -1,0 +1,50 @@
+{
+  "id": "org:denver-lane-bloods",
+  "name": "Denver Lane Bloods",
+  "aliases": [
+    "DLB",
+    "DLBG",
+    "The Lanes"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "The Denver Lane Bloods are one of the original founding sets of the Bloods alliance, established in South Los Angeles in the early 1970s alongside the Pirus, Brims, and Bounty Hunters to oppose Crip dominance. In 2025, a multi-agency operation targeted the Pasadena Denver Lane Bloods for gun trafficking.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Denver_Lane_Bloods",
+      "title": "Denver Lane Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/",
+      "title": "Denver Lane Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/la-denver-lane-bloods/",
+      "title": "La Denver Lane Bloods \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/dlb/",
+      "title": "Denver Lane Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://fbi.gov/losangeles/press-releases/2012/federal-criminal-cases-target-narcotics-trafficking-related-to-pasadena-denver-lane-bloods-street-gang",
+      "title": "Denver Lane Bloods Narcotics \u2014 FBI"
+    },
+    {
+      "url": "https://www.justice.gov/archive/usao/cac/Pressroom/2012/144.html",
+      "title": "DOJ - Denver Lane Bloods Narcotics Arrests"
+    }
+  ],
+  "founded_year": 1972,
+  "colors": [
+    "red"
+  ],
+  "symbols": [
+    "letters DLB",
+    "Denver Broncos"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

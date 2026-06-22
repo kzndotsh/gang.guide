@@ -1,0 +1,29 @@
+{
+  "id": "org:fudge-town-mafia-crips",
+  "name": "Fudge Town Mafia Crips",
+  "aliases": [
+    "Fudge Town Crips"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "An African-American Crip set based in the Watts area of South Los Angeles, controlling territory from Wilmington to Weigand Avenues between 102nd and 108th Streets. Part of the broader Mafia Crips alliance.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/fudgetown/",
+      "title": "Fudge Town Mafia Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/fudge-town-mafia-crips/",
+      "title": "Fudge Town Mafia Crips \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "colors": [
+    "blue",
+    "yellow"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

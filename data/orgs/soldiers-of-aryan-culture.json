@@ -1,0 +1,32 @@
+{
+  "id": "org:soldiers-of-aryan-culture",
+  "name": "Soldiers Of Aryan Culture",
+  "aliases": [
+    "SAC",
+    "Soldiers of an Aryan Culture"
+  ],
+  "type": "prison_gang",
+  "lane": "white-supremacist",
+  "founded_year": 1997,
+  "founded_year_precision": "exact",
+  "description": "A large white supremacist prison gang in the United States, founded in 1997 by Tracy David 'Tinman' Swena in Utah. The gang operates both inside and outside prison walls, engaging in drug trafficking, extortion, and violence. It has a paramilitary ranking structure and requires members to attack sex offenders and informants.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Soldiers_Of_Aryan_Culture",
+      "title": "Soldiers Of Aryan Culture \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/altadena/sac/",
+      "title": "Soldiers Of Aryan Culture \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Big_Circle_Gang",
+      "title": "Big Circle Gang \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "white"
+  ],
+  "status": "active"
+}

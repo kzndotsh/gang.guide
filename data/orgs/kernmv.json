@@ -1,0 +1,23 @@
+{
+  "id": "org:kernmv",
+  "name": "Kern Maravilla",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "Kern Maravilla (KMV) is a predominately Latino street gang based in East Los Angeles and it is part of the large Maravilla association of several varrios throughout Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Kern_Maravilla",
+      "title": "Kern Maravilla \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1943,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "KMV"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "org:village-town-piru",
+  "name": "Village Town Piru",
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "description": "Ujima Village Piru is a predominately African-American street gang located in the public housing projects in Willowbrook, unincorporated Los Angeles County. Willowbrook is located adjacent to the City of Compton on the northwest side and the Ujima Village homes are located next to Magic Johnson Park.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Village_Town_Piru",
+      "title": "Village Town Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/villagetownpiru/",
+      "title": "Villagetownpiru \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/village-town-piru/",
+      "title": "Village Town Piru \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 2013,
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "VTP"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

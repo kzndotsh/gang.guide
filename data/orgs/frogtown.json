@@ -1,0 +1,34 @@
+{
+  "id": "org:frogtown",
+  "name": "Frog Town Rifa",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "Varrio Frog Town Rifa (VFTR), also known as Frogtown 13, is a Latino Sure\u00f1o street gang based in the Elysian Valley (Frogtown) neighborhood of Northeast Los Angeles along the Los Angeles River. They were part of a Mexican Mafia-orchestrated coalition of three Northeast LA gangs targeted in a 2016 federal RICO indictment for drug trafficking and tax collection from narcotics dealers.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Frogtown",
+      "title": "Frogtown \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/White_Fence",
+      "title": "White Fence \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/no-3-defendant-rico-indictment-targeting-northeast-la-gang-coalition-overseen-mexican",
+      "title": "DOJ - Frogtown RICO Case"
+    }
+  ],
+  "founded_year": 1955,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "Frogtown 13",
+    "VFTR",
+    "Varrio Frog Town Rifa",
+    "Frogtown"
+  ],
+  "colors": [
+    "green"
+  ],
+  "status": "active"
+}

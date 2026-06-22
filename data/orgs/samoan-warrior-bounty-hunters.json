@@ -1,0 +1,37 @@
+{
+  "id": "org:samoan-warrior-bounty-hunters",
+  "name": "Samoan Warrior Bounty Hunters",
+  "aliases": [
+    "C14",
+    "SWBH"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-carson",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/carson/swbh/",
+      "title": "Samoan Warrior Bounty Hunters \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/bountyhunters/",
+      "title": "Bountyhunters \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/federal-indictments-target-street-gang-alleged-crack-cocaine-distribution-and-firearm",
+      "title": "Bounty Hunter Bloods Indicted \u2014 DOJ"
+    },
+    {
+      "url": "https://www.fbi.gov/contact-us/field-offices/newark/news/press-releases/seven-members-of-bounty-hunter-bloods-gang-indicted-for-racketeering-conspiracy",
+      "title": "Bounty Hunter Bloods Racketeering \u2014 FBI"
+    }
+  ],
+  "founded_year": 1971,
+  "description": "A Samoan-American Blood gang based in the Carson area of Los Angeles, affiliated with the Bounty Hunter Bloods.",
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

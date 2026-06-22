@@ -1,0 +1,21 @@
+{
+  "id": "org:primera-flats-23rd-street-in-south-la",
+  "name": "Primera Flats 23rd Street",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Primera Flats is one of the oldest Latino neighborhood gangs in South Central Los Angeles, based around 23rd Street near Santee High School. They were one of the first three gangs targeted by an LA gang injunction in 1982 alongside Dogtown and the 62nd East Coast Crips.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/primeraflats/",
+      "title": "Primera Flats 23rd Street in South LA \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

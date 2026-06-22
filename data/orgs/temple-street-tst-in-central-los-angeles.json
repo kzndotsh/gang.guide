@@ -1,0 +1,25 @@
+{
+  "id": "org:temple-street-tst-in-central-los-angeles",
+  "name": "Temple Street (TST)",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Varrio Westside Temple Street is a predominately Hispanic gang located in the central area of Los Angeles west of downtown. Founded in the early 1920s, TST is among the oldest street gang in Los Angeles named after one of the oldest streets in Los Angeles. They have a unique history of being a racially diverse gang, especially during the 1970s and 1980s, when they had black, Filipino and White members.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/templestreet/",
+      "title": "Temple Street (TST) in Central Los Angeles \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-1994-10-30-me-56654-story.html",
+      "title": "Hard Knocks Reunion - LA Times"
+    }
+  ],
+  "founded_year": 1945,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

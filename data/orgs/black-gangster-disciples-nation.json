@@ -1,0 +1,64 @@
+{
+  "id": "org:black-gangster-disciples-nation",
+  "name": "Gangster Disciples",
+  "type": "nation",
+  "lane": "prison",
+  "metro": "Chicago",
+  "description": "The Gangster Disciples (GDN) are an African-American street and prison gang founded in 1966 in Chicago's Englewood neighborhood. Originally formed as the Supreme Gangsters by Larry Hoover, they merged with David Barksdale's Black Disciples in 1969 to create the Black Gangster Disciple Nation. After Barksdale's death in 1974 and the 1989 split with the Black Disciples, the GDs became the largest gang in Chicago with 50,000-90,000 members across 100+ cities and 50 states. Hoover ran the gang from prison until his 1995 federal arrest (17-year investigation) and is now at ADX Florence serving life. Symbols include the six-pointed Star of David (for co-founder 'King David' Barksdale) and the trident (Folk Nation). In 2016, 32 members were RICO-indicted including a former police officer who served as a hitman. In 2022, Hoover renounced his gang ties.",
+  "founded_year": 1966,
+  "aliases": [
+    "GDs",
+    "GDN",
+    "Gangster Disciple Nation",
+    "Growth & Development",
+    "Black Gangster Disciples"
+  ],
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Gangster_Disciples",
+      "title": "Gangster Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
+      "title": "Almighty Black P. Stone Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Saints",
+      "title": "Almighty Saints \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Vice_Lord_Nation",
+      "title": "Almighty Vice Lord Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Disciples",
+      "title": "Black Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bloods",
+      "title": "Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://vault.fbi.gov/gangster-disciples",
+      "title": "FBI Vault - Gangster Disciples"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ndga/pr/thirty-one-gangster-disciples-members-federally-indicted-rico-charges",
+      "title": "DOJ - 32 GD Members RICO Indictment (2016)"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/gangster-disciples/",
+      "title": "Gangster Disciples - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/spanish-gangster-disciples/",
+      "title": "Spanish Gangster Disciples - Chicago Gang History"
+    }
+  ],
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "founded_year_precision": "exact"
+}

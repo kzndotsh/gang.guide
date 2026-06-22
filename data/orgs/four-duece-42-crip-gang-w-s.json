@@ -1,0 +1,29 @@
+{
+  "id": "org:four-duece-42-crip-gang-w-s",
+  "name": "42 Four Deuce Crip Gang",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "The Four Deuce (42) Crips are an African-American Crip set based on the West Side of South Los Angeles around 42nd Street.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/42cg/",
+      "title": "Four Duece (42) Crip Gang (w/s) \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Four_Duece_42_Crip_W_S",
+      "title": "Four Duece 42 Crip W S \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": [
+    "C14",
+    "Four Duece 42 Crip W S"
+  ]
+}

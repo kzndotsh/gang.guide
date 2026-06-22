@@ -1,0 +1,41 @@
+{
+  "id": "org:wheels-of-soul-motorcycle-club",
+  "name": "Wheels Of Soul Motorcycle Club",
+  "aliases": [
+    "Wheels of Soul",
+    "Wheels of Soul MC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1967,
+  "founded_year_precision": "exact",
+  "description": "Multiracial one-percenter outlaw motorcycle club founded in 1967 in Philadelphia, Pennsylvania. Primarily based in Philadelphia, with chapters in at least 25 states and Puerto Rico. Engages in drug trafficking, robbery, murder, and other violent crimes. Deemed a violent gang by federal officials.",
+  "metro": "Philadelphia",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Wheels_Of_Soul_Motorcycle_Club",
+      "title": "Wheels Of Soul Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents_in_the_United_States",
+      "title": "Bandidos MC criminal allegations and incidents in the United States \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hell%27s_Lovers_Motorcycle_Club",
+      "title": "Hell's Lovers Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pagan%27s_Motorcycle_Club",
+      "title": "Pagan's Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Sin_City_Deciples_Motorcycle_Club",
+      "title": "Sin City Deciples Motorcycle Club \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

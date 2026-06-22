@@ -1,0 +1,22 @@
+{
+  "id": "org:dirty-old-man-gang",
+  "name": "Dirty Old Man Gang",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "Historical street gang based in the Jefferson Park area of South Los Angeles, active since at least the mid-20th century.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/domg/",
+      "title": "Dirty Old Man Gang \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

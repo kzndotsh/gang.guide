@@ -1,0 +1,21 @@
+{
+  "id": "org:the-company",
+  "name": "The Company",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "Organized crime syndicate based in Hawaii, founded in 1969 by Wilford Pulawa. Controlled criminal activities in Hawaii from the late 1960s to the mid-1990s, involved in illegal gambling, prostitution, racketeering, extortion, and drug trafficking. Extended influence to mainland US states including California and Nevada.",
+  "founded_year": 1969,
+  "aliases": [
+    "Hawaiian Syndicate"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Company_%28Hawaiian_organized_crime%29",
+      "title": "The Company %28Hawaiian organized crime%29 \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "colors": []
+}

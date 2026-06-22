@@ -1,0 +1,43 @@
+{
+  "id": "org:flying-dragons",
+  "name": "Flying Dragons",
+  "aliases": [
+    "FDS"
+  ],
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "founded_year": 1968,
+  "founded_year_precision": "exact",
+  "description": "Chinese American street gang prominent in New York City's Chinatown from the 1970s to the early 1990s. Formed in 1967 by immigrants primarily from Hong Kong, they were affiliated with the Hip Sing Tong. Engaged in extortion, kidnapping, murder, racketeering, illegal gambling, and heroin trafficking. The gang was largely dismantled after a 1994 federal indictment of 33 members.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Flying_Dragons",
+      "title": "Flying Dragons \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Born_to_Kill_%28gang%29",
+      "title": "Born to Kill %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Flying_Dragons_%28gang%29",
+      "title": "Flying Dragons %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Ghost_Shadows",
+      "title": "Ghost Shadows \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hip_Sing_Association",
+      "title": "Hip Sing Association \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/news/120392-heroin-suspect/",
+      "title": "120392 Heroin Suspect \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "status": "active"
+}

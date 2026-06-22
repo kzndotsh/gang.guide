@@ -1,0 +1,28 @@
+{
+  "id": "org:easy-riders-gang",
+  "name": "Easy Riders Gang",
+  "lane": "california-latino-westside",
+  "metro": "Los Angeles",
+  "description": "Riders are a Mexican-American Sure\u00f1o criminal street gang established in the 1970s, with geographical cliques located throughout the city of Los Angeles, California.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/easy-riders-gang/",
+      "title": "Easy Riders Gang \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/easy/riders/",
+      "title": "Easy Riders Gang \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "aliases": [
+    "ERS",
+    "EZ Riders"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

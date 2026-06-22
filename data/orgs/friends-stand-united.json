@@ -1,0 +1,26 @@
+{
+  "id": "org:friends-stand-united",
+  "name": "Friends Stand United",
+  "aliases": [
+    "FSU",
+    "Fuck Shit Up"
+  ],
+  "type": "white_supremacist",
+  "lane": "other-national",
+  "founded_year": 1989,
+  "founded_year_precision": "exact",
+  "description": "Anti-fascist, anti-racist, and anti-drug hardcore crew founded in the late 1980s by Elgin James in Boston, Massachusetts. Originally fought Neo-Nazis and racist groups in the punk scene, but later accused of unprovoked violence and intimidation. Classified by the FBI as a street gang.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Friends_Stand_United",
+      "title": "Friends Stand United \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Peckerwood",
+      "title": "Peckerwood \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Boston",
+  "status": "active",
+  "colors": []
+}

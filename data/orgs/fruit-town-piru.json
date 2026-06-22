@@ -1,0 +1,42 @@
+{
+  "id": "org:fruit-town-piru",
+  "name": "Fruit Town Piru",
+  "aliases": [
+    "Neighborhood Piru",
+    "Fruit Piru Bloods",
+    "FTP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "description": "The Fruit Town Piru (Neighborhood Piru) is a Blood/Piru set formed in the 1970s on the east side of Compton, California, named after fruit-themed streets (Plum, Cherry, Apple, Peach). Active in Fort Worth, Houston, St. Louis, Newark, Norfolk, and Birmingham. They developed a rivalry with Mob Piru in the late 1990s connected to Death Row Records disputes, resulting in several murders. Rappers Chris Brown and Soulja Boy have claimed affiliation.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Fruit_Town_Piru",
+      "title": "Fruit Town Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/fruit-town-piru/",
+      "title": "Fruit Town Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cedar_Block_Piru",
+      "title": "Cedar Block Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Elm_Street_Piru",
+      "title": "Elm Street Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pirus",
+      "title": "Pirus \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1972,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

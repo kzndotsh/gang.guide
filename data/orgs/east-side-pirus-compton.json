@@ -1,0 +1,40 @@
+{
+  "id": "org:east-side-pirus-compton",
+  "name": "East Side Pirus (Compton)",
+  "aliases": [
+    "ESP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "founded_year": 1971,
+  "description": "East Side Pirus are the first Pirus on the eastside of Compton and were formed after the original members of the Westside Pirus, which included Puddin and Bobalouie visited the eastside around 1971.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/East_Side_Pirus_Compton",
+      "title": "East Side Pirus Compton \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/",
+      "title": "East Side Pirus (Compton) \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/esp/",
+      "title": "East Side Pirus (Compton) \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/esp/",
+      "title": "East Side Pirus (Compton) \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/paramount/esp/",
+      "title": "East Side Pirus (Compton) \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

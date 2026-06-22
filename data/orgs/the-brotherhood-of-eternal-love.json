@@ -1,0 +1,25 @@
+{
+  "id": "org:the-brotherhood-of-eternal-love",
+  "name": "The Brotherhood of Eternal Love",
+  "type": "organized_crime",
+  "lane": "prison",
+  "metro": "United States",
+  "description": "Eternal Love was an organization of drug users and distributors operating from the mid-1960s through the late 1970s in Orange County, California. Founded by John Griggs, it produced and distributed LSD and hashish with the goal of sparking a 'psychedelic revolution' in the United States. The group was known for the 'Orange Sunshine' LSD tablets and assisted Timothy Leary's escape from prison.",
+  "founded_year": 1966,
+  "aliases": [
+    "Hippie Mafia"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Brotherhood_of_Eternal_Love",
+      "title": "The Brotherhood of Eternal Love \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Weather_Underground",
+      "title": "Weather Underground \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "colors": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "org:play-boy-hustler-crips-75",
+  "name": "75 Play Boy Hustler Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "A subset of the Play Boy Hustler Crips operating around 75th Street in South Los Angeles, part of the mid-South LA corridor where numerous Crip sets overlap between Florence and Manchester Boulevards.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/75pbhc/",
+      "title": "Play Boy Hustler Crips, 75 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue",
+    "green"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

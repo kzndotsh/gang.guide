@@ -1,0 +1,30 @@
+{
+  "id": "org:del-amo-blocc-190-east-coast-crips",
+  "name": "Del Amo Blocc 190 East Coast Crips",
+  "aliases": [
+    "190ECC",
+    "ECBC",
+    "Del Amo Blocc"
+  ],
+  "lane": "california-crips-east-coast",
+  "description": "The Del Amo Blocc 190 East Coast Crips are a predominantly African-American Crip set based in the city of Carson, California, part of the East Coast Crips alliance operating around 190th Street.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/east-coast-crips/",
+      "title": "East Coast Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/carson/190ecc/",
+      "title": "Del Amo Blocc 190 East Coast Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "founded_year": 1970,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

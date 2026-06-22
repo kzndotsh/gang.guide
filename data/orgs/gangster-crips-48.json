@@ -1,0 +1,23 @@
+{
+  "id": "org:gangster-crips-48",
+  "name": "48 Gangster Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "The 48 Gangster Crips are a predominantly African-American Crip set operating around 48th Street in South Los Angeles under the Gangster Crips umbrella.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/48gc/",
+      "title": "Gangster Crips, 48 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

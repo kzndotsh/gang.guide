@@ -1,0 +1,33 @@
+{
+  "id": "org:87-gangster-crips",
+  "name": "87 Gangster Crips",
+  "aliases": [
+    "87 GC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-gangster",
+  "metro": "Los Angeles",
+  "description": "Gangster Crips are a predominately Black American gang located on the Eastside of South Los Angeles in the area of Manchester and Main Street.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/87_Gangster_Crips",
+      "title": "87 Gangster Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/87-gangster-crips/",
+      "title": "87 Gangster Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/87gc/",
+      "title": "87 Gangster Crips \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1976,
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "org:hollyhood-pirus",
+  "name": "Holly Hood Pirus",
+  "aliases": [
+    "HHP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "description": "Hollyhood Piru is a predominately Black street gang located on the Eastside of Compton that historically falls under the Lueders Park Pirus like the rest of the Pirus on the eastside. They are named after the street, Holly Avenue.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Holly_Hood_Pirus",
+      "title": "Holly Hood Pirus \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/pirus/",
+      "title": "Holly Hood Pirus \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/holly-hood-piru/",
+      "title": "Holly Hood Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/hhp/",
+      "title": "Holly Hood Pirus \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1979,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

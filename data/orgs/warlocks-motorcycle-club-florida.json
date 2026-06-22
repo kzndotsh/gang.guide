@@ -1,0 +1,29 @@
+{
+  "id": "org:warlocks-motorcycle-club-florida",
+  "name": "Warlocks Motorcycle Club Florida",
+  "aliases": [
+    "WMC",
+    "Florida Warlocks",
+    "Phoenix Warlocks",
+    "Harpy Warlocks",
+    "Philadelphia Warlocks",
+    "Philly Warlocks"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1967,
+  "founded_year_precision": "exact",
+  "description": "International outlaw motorcycle club founded in 1967 in Florida by ex-US naval servicemen. Known as a 'One Percenter' club with chapters in the US, Canada, England, and Germany. The mother chapter remains in Orlando, Florida. Founder Tom 'Grub' Freeland died in 2019.",
+  "metro": "United States",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Warlocks_Motorcycle_Club_(Florida)",
+      "title": "Warlocks Motorcycle Club Florida \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black",
+    "white"
+  ],
+  "status": "active"
+}

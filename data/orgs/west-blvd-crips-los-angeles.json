@@ -1,0 +1,28 @@
+{
+  "id": "org:west-blvd-crips-los-angeles",
+  "name": "West Blvd Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "description": "The West Blvd Crips are a predominately African-American street gang located in the West Adams section of South Los Angeles.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/westblvdcrips/",
+      "title": "Westblvdcrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/64westblvdcrips/",
+      "title": "64Westblvdcrips \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "WBC"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

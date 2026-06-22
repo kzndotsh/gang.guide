@@ -1,0 +1,21 @@
+{
+  "id": "org:6-shots-pinoy-real",
+  "name": "6 Shots Pinoy Real",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Filipino-American street gang based in Los Angeles, affiliated with the Pinoy Real network of Filipino sets active in the LA area.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/rowlandheights/6shotspr/",
+      "title": "6 Shots Pinoy Real \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

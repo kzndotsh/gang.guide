@@ -1,0 +1,21 @@
+{
+  "id": "org:reseda-west-side",
+  "name": "Reseda, West Side",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "A Latino Sure\u00f1o-affiliated street gang based on the west side of the Reseda neighborhood in the San Fernando Valley.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/westsidereseda/",
+      "title": "Reseda, West Side \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

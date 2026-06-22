@@ -1,0 +1,37 @@
+{
+  "id": "org:universal-aryan-brotherhood",
+  "name": "Universal Aryan Brotherhood",
+  "aliases": [
+    "UAB",
+    "United Aryan Brotherhood",
+    "Universal Family"
+  ],
+  "type": "prison_gang",
+  "lane": "white-supremacist",
+  "founded_year": 1993,
+  "founded_year_precision": "exact",
+  "description": "Active neo-Nazi white supremacist prison gang in the United States, primarily based in Oklahoma. Founded in 1993 by Wilhelm Mast within the Oklahoma Department of Corrections. The gang operates both inside and outside prison walls, engaging in racketeering, kidnapping, murder, drug trafficking, and other crimes. It has no connection to the original Aryan Brotherhood.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Universal_Aryan_Brotherhood",
+      "title": "Universal Aryan Brotherhood \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/aryan-brotherhood/",
+      "title": "Aryan Brotherhood \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/news/032792-zoot-story/",
+      "title": "032792 Zoot Story \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/news/010198-where-the-boyz/",
+      "title": "010198 Where The Boyz \u2014 StreetGangs"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "white"
+  ],
+  "status": "active"
+}

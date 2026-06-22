@@ -1,0 +1,70 @@
+# gang.guide
+
+Evidence-backed US criminal organization history data platform. Curated org profiles → build script → interactive timeline map.
+
+## Core Commands
+
+- Rebuild graph from data: `python3 build.py`
+- Run web viewer: `cd apps/web && npm run dev`
+- Type-check frontend: `cd apps/web && npm run check`
+- Deploy to production: `cd apps/web && npm run deploy`
+- Deploy preview (personal stage): `cd apps/web && npm run deploy:preview`
+- Destroy production: `cd apps/web && npm run destroy`
+
+## Project Layout
+
+```
+├── build.py              ← Generates graph.json + details.json from flat files
+├── data/
+│   ├── orgs/             ← One JSON file per org (source of truth, ~980 files)
+│   ├── edges.json        ← Edge list (alliances, rivalries, affiliations)
+│   ├── config/lanes.json ← Lane taxonomy + org anchors + metro defaults
+│   └── raw/              ← 682MB scraped source material (gitignored)
+└── apps/web/             ← SvelteKit interactive map viewer
+    ├── alchemy.run.ts    ← Alchemy deployment config (Cloudflare Workers)
+    ├── svelte.config.js  ← adapter-cloudflare
+    └── .env              ← ALCHEMY_PASSWORD, CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
+```
+
+## Architecture
+
+- **No database, no pipeline** — flat JSON files are the source of truth
+- `build.py` reads `data/orgs/*.json` + `edges.json` → outputs `apps/web/static/graph.json` (rendering) + `details.json` (lazy-loaded)
+- The web app is a prerendered SvelteKit site deployed to Cloudflare Workers via Alchemy
+- Coverage stats are computed at build time and embedded in graph.json meta
+- `+layout.ts` exports `prerender = true` — all pages are static HTML at build time
+
+## Deployment
+
+- **IaC**: Alchemy (`alchemy.run.ts`) using `SvelteKit` resource from `alchemy/cloudflare`
+- **Adapter**: `@sveltejs/adapter-cloudflare`
+- **Domain**: `gang.guide` via Alchemy `domains` prop
+- **Env vars**: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` in `apps/web/.env`
+- **Deploy**: `npm run deploy` = `vite build && tsx alchemy.run.ts --stage production`
+- **State**: `.alchemy/` directory tracks deployed resources (commit to git)
+
+## Data Conventions
+
+- Org files: one per gang, schema includes `id`, `name`, `lane`, `metro`, `description`, `founded_year`, `founded_year_precision`, `colors`, `aliases`, `sources`, `nation_affiliation`, `status`
+- `founded_year_precision`: `exact`, `circa`, `decade`, `estimate` (estimate = unresearched placeholder)
+- `sources` array: objects with `url` and `title`
+- `lane` must match an ID in `data/config/lanes.json`
+- All descriptions must be factual, no comment-section scrape junk, no slurs, no HTML entities
+- Node IDs use format `org:slug-name`
+
+## Constraints
+
+- Never commit `data/raw/` (682MB, gitignored)
+- Never fabricate gang data — every entry must be a real organization
+- Descriptions should be factual 1-3 sentences, not scraped comments
+- When editing org files, always run `python3 build.py` after to regenerate outputs
+- The web app uses Svelte 5 runes mode (`$state`, `$derived`, `$effect`, `$props`)
+- `.env` is gitignored — never commit secrets
+
+## Current Stats (967 nodes)
+
+- 967 orgs, 1,147 edges, 2,020 sources
+- 100% have descriptions, 100% have founding year, 87% have colors
+- 32% exact/circa year precision, 44% decade-estimated, 24% unresearched
+- Edge types: nation (438), rivalry (366), alliance (340), spin-off (3)
+- Top sources: Wikipedia (855), StreetGangs (754), UnitedGangs (252), Chicago Gang History (112), DOJ (39)

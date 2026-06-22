@@ -1,0 +1,25 @@
+{
+  "id": "org:80-hoover-criminals",
+  "name": "80 Hoover Criminals",
+  "aliases": [
+    "C14",
+    "80 Hoovers"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-hoover",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/80-hoovers/",
+      "title": "80 Hoovers \u2014 StreetGangs"
+    }
+  ],
+  "description": "The 80 Hoover Criminals are a subset of the Hoover Criminal Gang, operating around 80th Street on the West Side of South Los Angeles along Hoover Street.",
+  "founded_year": 1975,
+  "colors": [
+    "orange"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

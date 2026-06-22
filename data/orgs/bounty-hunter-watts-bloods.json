@@ -1,0 +1,40 @@
+{
+  "id": "org:bounty-hunter-watts-bloods",
+  "name": "Bounty Hunter Watts Bloods",
+  "aliases": [
+    "Bounty Hunters",
+    "BH",
+    "Green Jackets",
+    "Bounty Hunter Bloods"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "The Bounty Hunter Watts Bloods are a Blood set based in the Nickerson Gardens public housing projects in Watts, the largest government housing complex west of the Mississippi. Originally known as the Green Jackets, founded in 1969 by Gary Barker and Bobby Jack. With over 2,000 documented members subdivided into cliques (Lot Boys, Block Boys, Bell Haven, Ace Line, Duece Line, Tray Line, Four Line, Five Line), they control the largest territory of any African-American street gang in Watts. Their longstanding feud with the Grape Street Watts Crips has been described as 'the most violent and long lasting feud between two gangs in the Watts area.' They notably allied with the rival PJ Watts Crips against the Grape Street Crips.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Bounty_Hunter_Watts_Bloods",
+      "title": "Bounty Hunter Watts Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips%E2%80%93Bloods_gang_war",
+      "title": "Crips%E2%80%93Bloods gang war \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Grape_Street_Watts_Crips",
+      "title": "Grape Street Watts Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips",
+      "title": "Crips \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1969,
+  "colors": [
+    "red",
+    "green"
+  ],
+  "founded_year_precision": "exact",
+  "status": "active"
+}

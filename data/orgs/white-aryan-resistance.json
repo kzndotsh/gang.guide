@@ -1,0 +1,30 @@
+{
+  "id": "org:white-aryan-resistance",
+  "name": "White Aryan Resistance",
+  "aliases": [
+    "WAPA",
+    "WAR",
+    "White American Political Association",
+    "White American Resistance"
+  ],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 1983,
+  "founded_year_precision": "exact",
+  "description": "White Aryan Resistance (WAR) was a white supremacist and neo-Nazi organization in the United States, founded and formerly led by former Ku Klux Klan Grand Dragon Tom Metzger. It was based in Warsaw, Indiana, and described itself as an 'openly white-racist' organization. The group published a newspaper and produced a public-access cable television show. It is now defunct.",
+  "metro": "United States",
+  "colors": [
+    "white"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/White_Aryan_Resistance",
+      "title": "White Aryan Resistance \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/American_Front",
+      "title": "American Front \u2014 Wikipedia"
+    }
+  ]
+}

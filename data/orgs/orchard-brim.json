@@ -1,0 +1,32 @@
+{
+  "id": "org:orchard-brim",
+  "name": "Orchard Brim",
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Orchard_Brim",
+      "title": "Orchard Brim \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/orchardbrim/",
+      "title": "Orchardbrim \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/bell/orchard/",
+      "title": "Orchard Brim \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "description": "African-American Blood gang operating under the Brim alliance in the South Bay area of Los Angeles County, emerged in the late 1970s\u2013early 1980s as part of the Brim faction that formed the core of the Bloods alliance.",
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "C14"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

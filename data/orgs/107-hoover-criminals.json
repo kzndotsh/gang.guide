@@ -1,0 +1,36 @@
+{
+  "id": "org:107-hoover-criminals",
+  "name": "107 Hoover Criminals",
+  "aliases": [
+    "Se Low"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-hoover",
+  "metro": "Los Angeles",
+  "description": "The 107 Hoover Criminals are a subset of the Hoover Criminal Gang on the West Side of South Los Angeles along Hoover Street between Vermont and Figueroa Avenues, centered around 107th Street. In 2020, a joint FBI-LAPD investigation dubbed 'Operation Hoover Dam' led to federal indictments for distributing methamphetamine, crack cocaine, and PCP from a South LA storefront.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/107_Hoover_Criminals",
+      "title": "107 Hoover Criminals \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/107hoover/",
+      "title": "107 Hoover Criminals \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/107-hoover-criminals-gang/",
+      "title": "107 Hoover Criminals Gang \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/joint-fbi-lapd-investigation-south-la-street-gang-leads-14-arrests-federal-charges",
+      "title": "FBI-LAPD Investigation Hoover Gang \u2014 DOJ"
+    }
+  ],
+  "founded_year": 1972,
+  "colors": [
+    "orange"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

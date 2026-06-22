@@ -1,0 +1,21 @@
+{
+  "id": "org:temple-street-52nd-tokers-south-los-angeles",
+  "name": "Temple Street Tokers (52nd)",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "description": "Temple Street is one of the oldest street gangs in Los Angeles, founded by Filipino and Mexican youths in the 1920s\u20131930s in the downtown LA area. They have been involved in murders, assaults, burglaries, and drug trafficking throughout their long history.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/southlaws/temple/",
+      "title": "Temple Street  52nd Tokers  South Los Angeles \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1960,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "org:party-people",
+  "name": "Party People",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "Gage Park neighborhood Established 1989 Sections of Gage Park 55th to 59th, Talman to Campbell (G-Town) Fairfield from 57th to 59th Established 1995",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/gangster-party-people/",
+      "title": "Party People - Chicago Gang History"
+    }
+  ]
+}

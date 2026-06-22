@@ -1,0 +1,21 @@
+{
+  "id": "org:watts-village-boys",
+  "name": "Watts Village Boys",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Street gang based in the Gonzaque Village public housing project in Watts, South Los Angeles, where they and rival Hacienda Village Bloods divide territory along 106th Street.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/villageboys/",
+      "title": "Watts Village Boys \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

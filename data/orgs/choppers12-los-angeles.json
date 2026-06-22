@@ -1,0 +1,21 @@
+{
+  "id": "org:choppers12-los-angeles",
+  "name": "Choppers 12",
+  "type": "street_gang",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "founded_year": 1952,
+  "description": "Choppers 12 is a predominately Latino street gang located on the border of East Los Angeles, unincorporated LA County and the City of Commerce. They were founded around 1952 as a motorcylce social club and the number \u201c12\u201d referred to Midnight.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/commerce/choppers12/",
+      "title": "Choppers12 \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": []
+}

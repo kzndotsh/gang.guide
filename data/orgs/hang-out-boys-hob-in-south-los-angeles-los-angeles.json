@@ -1,0 +1,23 @@
+{
+  "id": "org:hang-out-boys-hob-in-south-los-angeles-los-angeles",
+  "name": "Hang Out Boys",
+  "type": "street_gang",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "description": "Hang Out Boys (HOB) are a predominately Latino street gang located in South Los Angeles off Broadway and Martin Luther King Blvd. They formed during the mid-1980s.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/southlosangeles/",
+      "title": "Southlosangeles \u2014 StreetGangs"
+    }
+  ],
+  "aliases": [
+    "HOB"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

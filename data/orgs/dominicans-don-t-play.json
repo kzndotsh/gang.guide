@@ -1,0 +1,48 @@
+{
+  "id": "org:dominicans-don-t-play",
+  "name": "Dominicans Don't Play",
+  "aliases": [
+    "143",
+    "DDP"
+  ],
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "founded_year": 1991,
+  "founded_year_precision": "exact",
+  "description": "Dominicans Don't Play (DDP) is a Dominican-American street gang formed in Manhattan, New York, in 1991. Known for using machetes and knives, they are involved in drug trafficking, robbery, extortion, and murder. The gang operates across New York City, New Jersey, and internationally, with ties to Colombian cartels for cocaine distribution.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Dominicans_Don_T_Play",
+      "title": "Dominicans Don T Play \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dominicans_Don%27t_Play",
+      "title": "Dominicans Don't Play \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Kings",
+      "title": "Latin Kings \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Trinitarios",
+      "title": "Trinitarios \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/%C3%91etas",
+      "title": "%C3%91etas \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dominicans_Don't_Play",
+      "title": "Dominicans Don't Play - Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/news/122997-homicide-rate/",
+      "title": "122997 Homicide Rate \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "green"
+  ],
+  "status": "active"
+}

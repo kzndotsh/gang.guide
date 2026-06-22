@@ -1,0 +1,33 @@
+{
+  "id": "org:dc-blacks",
+  "name": "D.C. Blacks",
+  "type": "prison_gang",
+  "lane": "prison",
+  "metro": "United States",
+  "description": "The D.C. Blacks is an African-American prison gang in the United States whose members are from Washington D.C. They are allied with the Black Guerrilla Family and rival the Aryan Brotherhood. Formed due to the concentration of D.C. inmates in federal facilities, they are one of the largest prison gangs within penitentiaries but smaller than gangs like the Bloods and Crips.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/D.C._Blacks",
+      "title": "D.C. Blacks \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
+      "title": "Aryan Brotherhood \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
+      "title": "Hermandad Aria \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Nazi_Lowriders",
+      "title": "Nazi Lowriders \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year": 1970,
+  "founded_year_precision": "circa",
+  "aliases": []
+}

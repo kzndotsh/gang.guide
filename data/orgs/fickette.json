@@ -1,0 +1,21 @@
+{
+  "id": "org:fickette",
+  "name": "Fickette",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Fickette (Fickett Street) is a Latino street gang based along Fickett Street in the Boyle Heights neighborhood of East Los Angeles, documented by LAPD's Hollenbeck Division as one of its most dangerous corridors.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/fickette/",
+      "title": "Fickette \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,58 @@
+{
+  "id": "org:el-monte-flores",
+  "name": "El Monte Flores",
+  "aliases": [
+    "EMF",
+    "Monte Flores",
+    "Flores"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-sgv",
+  "founded_year": 1950,
+  "founded_year_precision": "circa",
+  "description": "El Monte Flores (EMF) is the largest Hispanic gang in the San Gabriel Valley and one of the oldest in LA County, founded around 1950 in El Monte, California. Named after Barrio Las Flores (the flower fields/nurseries of El Monte). With 2,000+ members, they claim El Monte, South El Monte, North El Monte, and Mayflower Village. Sure\u00f1o-affiliated and Mexican Mafia-controlled. In 2014, 41 members linked to the Mexican Mafia were indicted. Colors are blue and gray. They've expanded to Victorville, Arizona, Washington, New Mexico, Chicago, and Florida.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/elmonte/",
+      "title": "El Monte Flores \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/elmonte/elmonte/",
+      "title": "El Monte Flores \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/elmonte/elmonteflores/",
+      "title": "Elmonteflores \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/bellflower/coloniaflores/",
+      "title": "Coloniaflores \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/El_Monte_Flores",
+      "title": "El Monte Flores \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.courtlistener.com/docket/5842233/1263/united-states-v-cerna/",
+      "title": "Courtlistener"
+    },
+    {
+      "url": "https://www.courtlistener.com/docket/4179028/1026/united-states-v-ortiz/",
+      "title": "Courtlistener"
+    },
+    {
+      "url": "https://www.courtlistener.com/docket/4179028/1030/united-states-v-ortiz/",
+      "title": "Courtlistener"
+    },
+    {
+      "url": "https://www.courtlistener.com/docket/4179028/1045/united-states-v-ortiz/",
+      "title": "Courtlistener"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "status": "active"
+}

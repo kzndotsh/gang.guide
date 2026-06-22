@@ -1,0 +1,25 @@
+{
+  "id": "org:original-valley-gangster-crip-los-angeles",
+  "name": "Original Valley Gangster Crip",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:crips",
+  "type": "street_gang",
+  "founded_year": 1980,
+  "description": "One of the first African-American Crip gangs in the San Fernando Valley, founded in the early 1970s. Widely regarded as the first Crip set in the Valley, contemporaries of the Pacoima Pirus.",
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "aliases": [
+    "C14"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Original_Valley_Gangster_Crip",
+      "title": "Original Valley Gangster Crip \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

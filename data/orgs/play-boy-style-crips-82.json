@@ -1,0 +1,22 @@
+{
+  "id": "org:play-boy-style-crips-82",
+  "name": "82 Play Boy Style Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "Street Play Boy Style Crips are a Black American street gang located on the westside of South Los Angeles. There are two other factions of Play Boy Style Crips; the 106th Street PBSCs located in South Los Angeles and the 95th Street PBSC located in West Athens / Westmont, an Unincorporated section of Los Angeles County.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/82pbsc/",
+      "title": "Play Boy Style Crips, 82 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,19 @@
+{
+  "id": "org:black-tuna-gang",
+  "name": "Black Tuna Gang",
+  "type": "street_gang",
+  "lane": "southeast-southwest",
+  "metro": "Miami",
+  "description": "The Black Tuna Gang was a Miami-based drug smuggling organization in the 1970s, led by Robert Platshorn and Robert Meinster. They imported an estimated 500 tons of marijuana into the United States over 16 months. The gang was known for sophisticated methods, including radio code words and surveillance countermeasures. They were dismantled by a joint FBI-DEA operation, resulting in convictions of eight members.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Tuna_Gang",
+      "title": "Black Tuna Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1976,
+  "founded_year_precision": "circa",
+  "aliases": [],
+  "colors": []
+}

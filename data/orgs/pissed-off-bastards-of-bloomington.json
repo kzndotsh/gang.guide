@@ -1,0 +1,29 @@
+{
+  "id": "org:pissed-off-bastards-of-bloomington",
+  "name": "Pissed Off Bastards Of Bloomington",
+  "aliases": [
+    "Pissed Off Bastards of Berdoo",
+    "POBOB"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1945,
+  "founded_year_precision": "exact",
+  "description": "An outlaw motorcycle club founded in Bloomington, California in 1945 by Norman Briggs. The club participated in the 1947 Hollister riot, which inspired the film The Wild One. It is considered a precursor to the Hells Angels, as a former member founded that club. The club remains active in California, Nevada, and Utah.",
+  "metro": "Bloomington",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Pissed_Off_Bastards_Of_Bloomington",
+      "title": "Pissed Off Bastards Of Bloomington \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Market_Street_Commandos",
+      "title": "Market Street Commandos \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

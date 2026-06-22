@@ -1,0 +1,42 @@
+{
+  "id": "org:barrio-azteca",
+  "name": "Barrio Azteca",
+  "aliases": [
+    "\u02c8barjo as\u02c8teka",
+    "los as\u02c8tekas",
+    "Azteca Barrio",
+    "Los Aztecas"
+  ],
+  "type": "prison_gang",
+  "lane": "southeast-southwest",
+  "founded_year": 1986,
+  "founded_year_precision": "exact",
+  "description": "Barrio Azteca is a Mexican-American criminal organization originating in El Paso, Texas, founded in 1986 as a prison gang. It has grown into a multinational criminal enterprise with thousands of members in the US and Mexico, primarily involved in drug trafficking, murder, and other organized crime.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Barrio_Azteca",
+      "title": "Barrio Azteca \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/barrio-azteca/",
+      "title": "Barrio Azteca \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-wdtx/pr/barrio-azteca-gang-members-sentenced",
+      "title": "Barrio Azteca Sentenced \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Artistas_Asesinos",
+      "title": "Artistas Asesinos \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/opa/pr/barrio-azteca-gang-leader-pleads-guilty-racketeering-conspiracy-and-murder-charges-related",
+      "title": "DOJ - Barrio Azteca Leader Pleads Guilty"
+    }
+  ],
+  "metro": "El Paso",
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

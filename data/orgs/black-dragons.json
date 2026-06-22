@@ -1,0 +1,35 @@
+{
+  "id": "org:black-dragons",
+  "name": "Black Dragons",
+  "aliases": [
+    "Haak1 Lung4"
+  ],
+  "type": "street_gang",
+  "lane": "asian-gangs",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "description": "Chinese-American criminal organization and street gang formed in 1980 by Chinese immigrants in Lincoln Heights, Los Angeles. Operated in Los Angeles and San Gabriel Valley, involved in both organized crime (extortion, prostitution, money laundering, narcotics, counterfeiting) and street-level crime (murder, robbery, home invasion). At its peak had over 100 core members.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/cerritos/blackdragon/",
+      "title": "Blackdragon \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/black-dragons-gang/",
+      "title": "Black Dragons Gang \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Dragons_%28gang%29",
+      "title": "Black Dragons %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Wah_Ching",
+      "title": "Wah Ching \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "black"
+  ],
+  "status": "active"
+}

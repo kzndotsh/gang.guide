@@ -1,0 +1,28 @@
+{
+  "id": "org:black-spades",
+  "name": "Black Spades",
+  "aliases": [
+    "Black Lotus",
+    "TBS New Direction"
+  ],
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "founded_year": 1968,
+  "founded_year_precision": "exact",
+  "description": "The Black Spades is a predominantly African-American street gang formed in the Bronxdale Houses in New York City during the late 1960s. It gained popularity in the 1970s and spread to other boroughs and states. In 2019, the gang rebranded as TBS New Direction, a community service group focusing on anti-violence and food distribution.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Spades",
+      "title": "Black Spades \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hoe_Avenue_peace_meeting",
+      "title": "Hoe Avenue peace meeting \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "status": "active"
+}

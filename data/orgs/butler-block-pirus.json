@@ -1,0 +1,24 @@
+{
+  "id": "org:butler-block-pirus",
+  "name": "Butler Block Pirus",
+  "type": "street_gang",
+  "lane": "california-bloods-compton",
+  "metro": "Los Angeles",
+  "founded_year": 1972,
+  "founded_year_precision": "decade",
+  "description": "Small Piru Blood gang that operated on the west side of Compton, California during the 1970s. Named after Butler Street, they were among the early Piru sets but became defunct by the early 1980s.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/compton/butler-block-pirus/",
+      "title": "Butler Block Pirus \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "status": "inactive",
+  "aliases": [
+    "BBP"
+  ]
+}

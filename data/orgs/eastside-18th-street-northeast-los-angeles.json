@@ -1,0 +1,22 @@
+{
+  "id": "org:eastside-18th-street-northeast-los-angeles",
+  "name": "Eastside 18th Street, Northeast Los Angeles",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Eastside 18th Street is predominately a Latino street gang located in the northeast section of Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/northeast/eastside-18th-street/",
+      "title": "Eastside 18th Street, Northeast Los Angeles \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "status": "active",
+  "aliases": []
+}

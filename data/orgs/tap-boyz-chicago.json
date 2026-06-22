@@ -1,0 +1,39 @@
+{
+  "id": "org:tap-boyz-chicago",
+  "name": "TAP Boyz",
+  "aliases": [
+    "TAP Boyz",
+    "The Arabian Posse",
+    "TAP",
+    "Tall Arabian Posse"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
+  "founded_year": 1992,
+  "founded_year_precision": "exact",
+  "description": "The TAP Boyz (The Arabian Posse) was a Chicago-based Arab-American street gang formed in 1992 at 63rd Street and Kedzie Avenue. Formed in response to anti-Arab sentiment from rival gangs following the Gulf War \u2014 their goal was to protect the Arab-American community from racially motivated assaults. Allied with Latin Kings. Disbanded in 1999 after losing members to Gangster Two-Six and Almighty Ambrose. Colors were white and red; symbol was a four-pointed star, occasionally using a crescent moon to represent Islam. Also had presence in Bridgeview, Illinois. Independent of Folk and People Nations.",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/tap-boyz-chicago/",
+      "title": "TAP Boyz \u2014 Chicago Gang History"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
+      "title": "Popes %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/TAP_Boyz",
+      "title": "TAP Boyz \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/tall-arabian-posse/",
+      "title": "Tall Arabian Posse - Chicago Gang History"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "status": "inactive",
+  "nation_affiliation": null
+}

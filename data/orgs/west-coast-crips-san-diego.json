@@ -1,0 +1,28 @@
+{
+  "id": "org:west-coast-crips-san-diego",
+  "name": "West Coast Crips San Diego",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1972,
+  "founded_year_precision": "exact",
+  "description": "The West Coast Crips originated in 1972, as the West Coast Mafia Crips. Like many black gangs in Southeast San Diego, they also have roots in South Los Angeles, California.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/westcoastcrips/",
+      "title": "Westcoastcrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/west-coast-crips-san-diego/",
+      "title": "West Coast Crips San Diego \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "WCCSD"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

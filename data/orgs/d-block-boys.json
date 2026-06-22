@@ -1,0 +1,24 @@
+{
+  "id": "org:d-block-boys",
+  "name": "D Block Boys",
+  "aliases": [
+    "D-Block Gang",
+    "DBG"
+  ],
+  "type": "street_gang",
+  "lane": "southeast-southwest",
+  "founded_year": 2004,
+  "founded_year_precision": "exact",
+  "description": "American criminal street gang based in Algiers, New Orleans, Louisiana, formed by teenagers from the DeGaulle Manor Public Housing Complex and Fischer Projects. Active from 2004 to 2017, involved in drug trafficking, multiple murders, and violent crimes. The gang was tracked by NOPD since the mid-2000s and listed as a threat by the FBI in 2011.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/D_Block_Boys",
+      "title": "D Block Boys \u2014 Wikipedia"
+    }
+  ],
+  "metro": "New Orleans",
+  "colors": [
+    "red"
+  ],
+  "status": "active"
+}

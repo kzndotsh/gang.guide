@@ -1,0 +1,19 @@
+{
+  "id": "org:charlton-street-gang",
+  "name": "Charlton Street Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Charlton Street Gang was a group of river pirates active on the Hudson River in New York City during the mid-19th century. They raided small cargo ships and later moved upriver, stealing a sloop in 1869 under leader Sadie the Goat. The gang engaged in kidnapping for ransom and flew the Jolly Roger flag. They dissolved by the end of the 1860s after conflicts with vigilantes.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Charlton_Street_Gang",
+      "title": "Charlton Street Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1860,
+  "founded_year_precision": "decade",
+  "aliases": [],
+  "colors": []
+}

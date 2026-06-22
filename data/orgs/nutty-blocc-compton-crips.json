@@ -1,0 +1,40 @@
+{
+  "id": "org:nutty-blocc-compton-crips",
+  "name": "Nutty Blocc Compton Crips",
+  "aliases": [
+    "NBCC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "The Nutty Blocc Compton Crips are a set of the Crips gang alliance based in Compton, California. They are one of the larger Crip sets in Compton and have been involved in gang wars, notably with the ATF alliance in 1995. Several influential rappers have been associated with the gang.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/nutty/blocc/crips/",
+      "title": "Nutty Blocc Compton Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/nutty-blocc-compton-crips/",
+      "title": "Nutty Blocc Compton Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/compton/nbcc/",
+      "title": "Nutty Blocc Compton Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Nutty_Blocc_Compton_Crips",
+      "title": "Nutty Blocc Compton Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/South_Side_Compton_Crips",
+      "title": "South Side Compton Crips \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1976,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

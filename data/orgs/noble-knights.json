@@ -1,0 +1,23 @@
+{
+  "id": "org:noble-knights",
+  "name": "Noble Knights",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "description": "The Noble Knights are a People Nation street gang founded circa 1972 in Chicago. Colors are black and royal blue. Membership includes both Latino and white members.",
+  "founded_year": 1972,
+  "founded_year_precision": "circa",
+  "colors": [
+    "black",
+    "royal blue"
+  ],
+  "nation_affiliation": "org:people-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-noble-knights/",
+      "title": "Noble Knights - Chicago Gang History"
+    }
+  ]
+}

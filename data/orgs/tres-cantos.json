@@ -1,0 +1,19 @@
+{
+  "id": "org:tres-cantos",
+  "name": "Tres Cantos",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "An Asian-American street gang active in the Cerritos/LA County area, composed primarily of Filipino youth.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/southlosangeles/tcs/",
+      "title": "Tres Cantos \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

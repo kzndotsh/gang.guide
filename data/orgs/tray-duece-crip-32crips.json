@@ -1,0 +1,22 @@
+{
+  "id": "org:tray-duece-crip-32crips",
+  "name": "32 Tray Deuce Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "The Tray Deuce (32) Crips are an African-American Crip set based around 32nd Street in South Los Angeles, one of the northernmost Crip sets in the South Central area near the University of Southern California.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/32crips/",
+      "title": "Tray Duece Crip (32crips) \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

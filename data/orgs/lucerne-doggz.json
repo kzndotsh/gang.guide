@@ -1,0 +1,23 @@
+{
+  "id": "org:lucerne-doggz",
+  "name": "Lucerne Doggz",
+  "aliases": [
+    "Lucerne Street Gang"
+  ],
+  "type": "street_gang",
+  "lane": "historical-east",
+  "founded_year": 2003,
+  "founded_year_precision": "exact",
+  "description": "Street gang based in the Lucerne Street area of Mattapan, Boston, founded in 2003. Primarily African American, involved in drug trafficking, robbery, and murder. In 2006, the gang was responsible for 37 shootings, accounting for 10% of all shootings in Boston that year.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Lucerne_Doggz",
+      "title": "Lucerne Doggz \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Boston",
+  "colors": [
+    "black"
+  ],
+  "status": "active"
+}

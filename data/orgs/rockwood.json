@@ -1,0 +1,23 @@
+{
+  "id": "org:rockwood",
+  "name": "Rockwood Street",
+  "lane": "california-latino-westside",
+  "metro": "Los Angeles",
+  "founded_year": 2003,
+  "description": "Central Los Angeles Rockwood Street Locos (RWST, RSL, RSLCS) are a predominately Hispanic street gang located in the Westlake area of Central Los Angeles west of Downtown Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Rockwood_Street",
+      "title": "Rockwood Street \u2014 Wikipedia"
+    }
+  ],
+  "aliases": [
+    "RWST"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

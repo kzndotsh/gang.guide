@@ -1,0 +1,44 @@
+{
+  "id": "org:la-raza-chicago",
+  "name": "La Raza Nation",
+  "aliases": [
+    "La Raza",
+    "LRN",
+    "DK Town"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "founded_year": 1973,
+  "founded_year_precision": "exact",
+  "description": "La Raza Nation is a Hispanic (Mexican/Central American) Folk Nation street gang founded in Chicago in 1973. Colors are green, white, and red (Mexican flag). Though Folk-affiliated, they've warred with fellow Folk gangs including Gangster Disciples and Maniac Latin Disciples. Expanded beyond Chicago to Wisconsin, Ohio, Florida, and Georgia. In 1985, opened a chapter in West Humboldt Park ('DK Town'). In 2004, 89 high-ranking members arrested in Naples, FL. In 2005, listed by ICE as one of 54 violent gangs targeted in Operation Community Shield. 17% of US law enforcement agencies reported La Raza presence in their jurisdictions. Symbols include the Mexican flag, cross, and six-point star.",
+  "colors": [
+    "green",
+    "white",
+    "red"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/La_Raza_Nation",
+      "title": "La Raza Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/la-raza/",
+      "title": "La Raza \u2014 Chicago Gang History"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Almighty_Saints",
+      "title": "Almighty Saints \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Counts",
+      "title": "Latin Counts \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Kings",
+      "title": "Latin Kings \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

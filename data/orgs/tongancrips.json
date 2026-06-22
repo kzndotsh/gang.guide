@@ -1,0 +1,33 @@
+{
+  "id": "org:tongancrips",
+  "name": "Tongan Crip Gang",
+  "lane": "california-crips-inglewood",
+  "metro": "Inglewood",
+  "description": "The Tongan Crip Gang (TCG) is a Tongan-American Crip set founded in Inglewood, California in the 1970s. Active in California, Utah, Alaska, Washington, and Auckland, New Zealand. The Salt Lake City branch formed in the mid-1980s after Tongan youth were intimidated by Latino gangs in Glendale. Members moved to Utah to escape LA law enforcement pressure. They use the Texas Rangers and Minnesota Twins baseball logos as symbols. In 2007, TCG and 18th Street were indicted for conspiracy to murder 33 MS-13 members.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/inglewood/tongancrips/",
+      "title": "Tongancrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/inglewood-tongan-crip-gang/",
+      "title": "Tonga Crip Gang \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Tongan_Crip_Gang",
+      "title": "Tongan Crip Gang \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "TCG",
+    "Tongan Crips"
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "status": "active"
+}

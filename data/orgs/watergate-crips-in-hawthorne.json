@@ -1,0 +1,28 @@
+{
+  "id": "org:watergate-crips-in-hawthorne",
+  "name": "Watergate Crips In Hawthorne",
+  "aliases": [
+    "WGC"
+  ],
+  "type": "street_gang",
+  "lane": "crip-nation",
+  "description": "Water Gate Crips are a predominately African-American street gang located in the city of Hawthorne. The WGCs are part of the Rollin 100s Crip alliance.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/hawthorne/water-gate-crips/",
+      "title": "Water Gate Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/water-gate-crips/",
+      "title": "Water Gate Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "founded_year": 2015,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

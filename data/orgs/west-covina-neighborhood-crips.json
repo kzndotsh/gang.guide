@@ -1,0 +1,44 @@
+{
+  "id": "org:west-covina-neighborhood-crips",
+  "name": "West Covina Neighborhood Crips",
+  "type": "street_gang",
+  "lane": "california-crips-neighborhood",
+  "founded_year": 2012,
+  "founded_year_precision": "exact",
+  "description": "The West Covina Crips are a well-known criminal street gang based in West Covina, California. They falls under the Neighborhorhood Crips 2x (Deuces) umbrella, with several subsets in different parts of the country in states such as Oregon, Washington, Nebraska, and Ohio, California.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/westcovina/",
+      "title": "Westcovina \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/west-covina-neighborhood-crips/",
+      "title": "West Covina Neighborhood Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/covina/",
+      "title": "West Covina Neighborhood Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "WCNC"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

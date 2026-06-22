@@ -1,0 +1,53 @@
+{
+  "id": "org:grape-watts-crips",
+  "name": "Grape Street Watts Crips",
+  "aliases": [
+    "Grape Street Crips"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "The Grape Street Watts Crips are a Crip set based in the Jordan Downs housing project in Watts, formed in the 1970s. Uniquely identified by wearing purple rather than traditional Crip blue. Their rivalry with the Bounty Hunter Bloods (Nickerson Gardens) has been called 'the most violent and long lasting feud between two gangs in the Watts area.' In 2008, the murder of veteran member Brandon 'BL' Bullard by East Coast Crips sparked a war resulting in 9 dead and 26 wounded in six weeks. In 2008, a federal indictment charged members with distributing PCP. Active in California, Tennessee, and New Jersey.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/grape/watts/crips/",
+      "title": "Grape Street Watts Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/grapestreetwatts/",
+      "title": "Grapestreetwatts \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Grape_Street_Watts_Crips",
+      "title": "Grape Street Watts Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/grape-street-crips-members-sentenced",
+      "title": "Grape Street Crips Sentenced \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bounty_Hunter_Watts_Bloods",
+      "title": "Bounty Hunter Watts Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Florencia_13",
+      "title": "Florencia 13 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/archive/opa/pr/2008/March/08_opa_237.html",
+      "title": "DOJ - Grape Street Crips Indictment"
+    }
+  ],
+  "founded_year": 1972,
+  "colors": [
+    "blue",
+    "purple"
+  ],
+  "symbols": [
+    "bunch of grapes",
+    "letter G"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

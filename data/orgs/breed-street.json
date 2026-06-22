@@ -1,0 +1,21 @@
+{
+  "id": "org:breed-street",
+  "name": "Breed Street",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "Breed Street is a Latino street gang based on Breed Street in the Boyle Heights neighborhood of East Los Angeles, one of the oldest gang-impacted areas in the city with gangs dating to the 1930s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/breedstreet/",
+      "title": "Breed Street \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1955,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

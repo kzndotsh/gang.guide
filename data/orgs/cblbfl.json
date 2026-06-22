@@ -1,0 +1,22 @@
+{
+  "id": "org:cblbfl",
+  "name": "CBL/BFL",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "American street gang based in Buffalo, New York, founded in 2009 in the Towne Gardens Housing Complex. Engages in drug trafficking (heroin, fentanyl, cocaine, crack, marijuana) and weapons racketeering. Involved in turf wars with rival gangs, including the Ronnie Gang. Members have been convicted under RICO statutes.",
+  "founded_year": 2009,
+  "aliases": [
+    "Brothers For Life",
+    "Cash Been Long"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/CBL%2FBFL",
+      "title": "CBL%2FBFL \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "colors": []
+}

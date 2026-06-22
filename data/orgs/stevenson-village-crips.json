@@ -1,0 +1,29 @@
+{
+  "id": "org:stevenson-village-crips",
+  "name": "Stevenson Village Crips",
+  "lane": "california-crips-long-beach",
+  "metro": "Los Angeles",
+  "description": "The Stevenson Village Crips (SVC) are an African-American Crip set on the West Side of Carson, California, one of several Crip sets in the Carson area.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/stevenson-village-crips/",
+      "title": "Stevenson Village Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "SVC",
+    "SVCC",
+    "CVD",
+    "WSVC",
+    "Stevenson Village Carson Crips",
+    "West Side Village Crips (WSVC)"
+  ],
+  "status": "active"
+}

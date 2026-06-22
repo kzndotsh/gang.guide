@@ -1,0 +1,24 @@
+{
+  "id": "org:free-souls-motorcycle-club",
+  "name": "Free Souls Motorcycle Club",
+  "aliases": [
+    "Free Souls MC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1969,
+  "founded_year_precision": "exact",
+  "description": "Outlaw motorcycle club founded in Eugene, Oregon in 1969. Has chapters in Oregon, Washington, Germany, and Australia. Its center patch features an ankh over a motorcycle wheel on handlebars, with blue and white colors.",
+  "metro": "United States",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Free_Souls_Motorcycle_Club",
+      "title": "Free Souls Motorcycle Club \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "org:aryan-brotherhood",
+  "name": "Aryan Brotherhood",
+  "aliases": [
+    "AB",
+    "Hermandad Aria",
+    "One-Two",
+    "The Brand"
+  ],
+  "type": "prison_gang",
+  "lane": "prison",
+  "founded_year": 1964,
+  "founded_year_precision": "exact",
+  "description": "The Aryan Brotherhood is a white supremacist prison gang and organized crime syndicate in the United States, founded in 1964 at San Quentin State Prison. With an estimated 20,000 members inside and outside prison, it is responsible for up to 25% of murders in the federal prison system despite comprising less than 3% of the inmate population.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
+      "title": "Aryan Brotherhood \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/prison/aryan-brotherhood/",
+      "title": "Aryan Brotherhood \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/aryan-brotherhood/",
+      "title": "Aryan Brotherhood \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/asian/losangelesnorth/ab/",
+      "title": "Aryan Brotherhood \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
+      "title": "Hermandad Aria \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edca/pr/three-aryan-brotherhood-prison-gang-members-convicted-rico-conspiracy-and-murder-aid",
+      "title": "DOJ - Aryan Brotherhood RICO Conviction"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "white",
+    "green"
+  ],
+  "status": "active"
+}

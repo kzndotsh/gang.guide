@@ -1,0 +1,19 @@
+{
+  "id": "org:grady-gang",
+  "name": "Grady Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Grady Gang was a New York City sneak thief gang during the 1860s, organized by fence John D. 'Traveling Mike' Grady after the American Civil War. The gang operated in Broadway's 'Thieves Exchange' and was known for the robbery of $2 million from financier Rufus L. Lord in 1866. Most members retired by the end of the decade, but Grady continued as a fence.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Grady_Gang",
+      "title": "Grady Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1865,
+  "founded_year_precision": "circa",
+  "aliases": [],
+  "colors": []
+}

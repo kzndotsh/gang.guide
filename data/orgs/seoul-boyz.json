@@ -1,0 +1,21 @@
+{
+  "id": "org:seoul-boyz",
+  "name": "Seoul BoyZ",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Korean-American street gang based in the Los Angeles area, named after Seoul, South Korea. Part of the Korean gang network that emerged in LA during the 1980s-1990s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/losangelesnorth/sb/",
+      "title": "Seoul BoyZ \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1985,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

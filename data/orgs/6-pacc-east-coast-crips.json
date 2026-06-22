@@ -1,0 +1,24 @@
+{
+  "id": "org:6-pacc-east-coast-crips",
+  "name": "6 Pacc East Coast Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1971,
+  "founded_year_precision": "decade",
+  "description": "The 6-Pacc East Coast Crips who originated on the East Side of South Los Angeles, California. Their neighborhood stretches from Avalon Blvd to the 110 Freeway (Harbor Fwy), between 60th Street to 69th Street.",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/east-coast-crips/",
+      "title": "East Coast Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "6PECC"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

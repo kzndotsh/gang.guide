@@ -1,0 +1,32 @@
+{
+  "id": "org:circle-city-pirus-in-watts-los-angeles",
+  "name": "Circle City Piru",
+  "aliases": [
+    "CCP"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "description": "Circle City Piru is a predominately black street gang based in the Watts section of South Los Angeles. There are located between Central Avenue (west) and Success (east) between 103rd (north) and 107th Street. The CCP are among several gangs adjacent to Ted Watkins Park (formerly known as Will Rogers Park). In 1995 the park was renamed to honor Watkins, who was the founder of the Watts Labor Community Action Committee (WLCAC).",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/pirus/",
+      "title": "Circle City Piru \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/circle-city-piru/",
+      "title": "Circle City Piru \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/ccp/",
+      "title": "Circle City Piru \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "org:pj-watts-crips",
+  "name": "PJ Watts Crips",
+  "aliases": [
+    "Project Boys",
+    "PJ Crips",
+    "Imperial Courts Crips"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "founded_year": 1972,
+  "founded_year_precision": "circa",
+  "description": "The PJ Watts Crips (Project Boys) are a predominantly African-American Crip set based in the Imperial Courts housing project in Watts, South Los Angeles. Founded in the early 1970s, they were one of the three gangs central to the historic 1992 Watts Truce alongside the Grape Street Crips (Jordan Downs) and Bounty Hunter Bloods (Nickerson Gardens). They are allied with the Bounty Hunters against their mutual rival the Grape Street Crips.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Pj_Watts_Crips",
+      "title": "Pj Watts Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/pjwattscrips/",
+      "title": "Pjwattscrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/pj-watts-crips/",
+      "title": "Pj Watts Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bounty_Hunter_Watts_Bloods",
+      "title": "Bounty Hunter Watts Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips",
+      "title": "Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips%E2%80%93Bloods_gang_war",
+      "title": "Crips%E2%80%93Bloods gang war \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Watts_truce",
+      "title": "Watts truce - Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

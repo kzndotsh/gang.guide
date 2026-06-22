@@ -1,0 +1,25 @@
+{
+  "id": "org:decavalcante-crime",
+  "name": "Decavalcante Crime Family",
+  "aliases": [
+    "North Jersey crime family",
+    "North Jersey Mafia",
+    "Sixth Family"
+  ],
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "founded_year": 1930,
+  "founded_year_precision": "exact",
+  "description": "The DeCavalcante crime family is an Italian-American Mafia crime family operating primarily in North Jersey, particularly in Elizabeth, Newark, Linden, and West New York. Founded around the 1900s by Phil Amari, it is considered by some to be the 'Sixth Family' due to its strong ties with New York's Five Families.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/decavalcante/crime/",
+      "title": "Decavalcante Crime Family \u2014 StreetGangs"
+    }
+  ],
+  "metro": "New York",
+  "colors": [
+    "black"
+  ],
+  "status": "active"
+}

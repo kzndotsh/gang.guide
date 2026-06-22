@@ -1,0 +1,21 @@
+{
+  "id": "org:crazy-riders-crs",
+  "name": "Crazy Riders (CRS)",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "A street gang based in East Los Angeles with largely Central American membership, particularly Salvadoran and Guatemalan immigrants. They were notably at war with the 18th Street Gang in the late 1980s and have been linked to multiple murders.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/crs/",
+      "title": "Crazy Riders (CRS) \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

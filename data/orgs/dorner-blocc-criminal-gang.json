@@ -1,0 +1,25 @@
+{
+  "id": "org:dorner-blocc-criminal-gang",
+  "name": "Dorner Blocc Crips",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "description": "The Dorner Blocc Crips (DBC) also known as D-Blocc, are primarily, but not exclusively, an African-American street gang located on the East Side in the Edgemont neighborhood of Moreno Valley, region of Riverside County, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/dorner-blocc-criminal-gang/",
+      "title": "Dorner Blocc Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "D-Blocc",
+    "DBC"
+  ],
+  "status": "active"
+}

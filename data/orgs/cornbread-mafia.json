@@ -1,0 +1,19 @@
+{
+  "id": "org:cornbread-mafia",
+  "name": "Cornbread Mafia",
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "metro": "United States",
+  "description": "The Cornbread Mafia was a group of Kentucky men who operated the largest domestic marijuana production operation in U.S. history, based in central Kentucky. Founded in the late 1970s by Joe Keith Bickett and others, the group grew marijuana across 30 farms in 10 states. The term was first publicly used by federal prosecutors in 1989 after a massive bust. The group was known for its code of silence, which prevented a Continuing Criminal Enterprise prosecution.",
+  "founded_year": 1978,
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Cornbread_Mafia",
+      "title": "Cornbread Mafia \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "aliases": [],
+  "colors": []
+}

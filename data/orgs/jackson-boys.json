@@ -1,0 +1,23 @@
+{
+  "id": "org:jackson-boys",
+  "name": "Jackson Boys",
+  "aliases": [
+    "Jackson Boyz",
+    "JBZ",
+    "JSB"
+  ],
+  "type": "street_gang",
+  "lane": "asian-gangs",
+  "founded_year": 1990,
+  "founded_year_precision": "exact",
+  "description": "Asian American street gang based in San Francisco's Chinatown, founded in the 1990s by the Tsan brothers (Bobby, Johnny, Tommy) as successors to the Wo Hop To triad. Engaged in extortion, drug trafficking, arson, and illegal gambling. Noted for a 1995 shooting on Stockton Street that wounded seven bystanders. Still active as of 2000.",
+  "metro": "San Francisco",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Jackson_Boys",
+      "title": "Jackson Boys \u2014 Wikipedia"
+    }
+  ],
+  "status": "active",
+  "colors": []
+}

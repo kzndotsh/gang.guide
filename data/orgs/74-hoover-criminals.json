@@ -1,0 +1,38 @@
+{
+  "id": "org:74-hoover-criminals",
+  "name": "74 Hoover Criminals",
+  "aliases": [
+    "7Foe",
+    "74HCG",
+    "SFH"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-hoover",
+  "metro": "Los Angeles",
+  "description": "The 74 Hoover Criminals are a subset of the Hoover Criminal Gang founded around 1973 on the West Side of South Central Los Angeles near 74th Street and Hoover Street. Like other Hoover subsets, they dropped their Crip affiliation in the 1980s and became hostile to both Crip and Blood gangs. In 2005, a federal indictment in Seattle targeted the 74 Hoover Crips for drug trafficking operations that had spread from LA to the Pacific Northwest.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/74_Hoover_Criminals",
+      "title": "74 Hoover Criminals \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/74hoover/",
+      "title": "74 Hoover Criminals \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/74-hoover-criminals-gang/",
+      "title": "74 Hoover Criminals Gang \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/74-hoover-criminals-gang/",
+      "title": "The 74 Hoover Criminals \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1972,
+  "colors": [
+    "orange"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

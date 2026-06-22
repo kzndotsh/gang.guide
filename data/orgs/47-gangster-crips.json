@@ -1,0 +1,25 @@
+{
+  "id": "org:47-gangster-crips",
+  "name": "47 Gangster Crips",
+  "lane": "california-crips-gangster",
+  "metro": "Los Angeles",
+  "description": "The 47 Gangster Crips fall under the East Side Crips/Gangster Crips card and are allies of most gangs who claim the same.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/47-gangster-crips/",
+      "title": "47 Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "47GC"
+  ],
+  "status": "active"
+}

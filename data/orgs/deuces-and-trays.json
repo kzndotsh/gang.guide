@@ -1,0 +1,23 @@
+{
+  "id": "org:deuces-and-trays",
+  "name": "Deuces And Trays",
+  "type": "street_gang",
+  "lane": "other-national",
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "description": "Deuce\u201d or 2x card is an alliance reference to various street gangs that are affiated with the NeighborHood Crips as well as Rollin 0\u2019s card. The majority of the sets affiated with the Deuce (2x) card are produced by the West Side Crips gang. A number of Deuces (2x) cliques are also allied with the Blocc Crips, which is an totally a separate Crip card.",
+  "metro": "Chicago",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Deuces_And_Trays",
+      "title": "Deuces And Trays \u2014 Wikipedia"
+    }
+  ],
+  "aliases": [
+    "DAT"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

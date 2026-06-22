@@ -1,0 +1,23 @@
+{
+  "id": "org:bailey-boys",
+  "name": "Bailey Boys",
+  "type": "street_gang",
+  "lane": "new-york",
+  "founded_year": 2011,
+  "founded_year_precision": "exact",
+  "description": "Street gang based in Buffalo, New York, founded around 2011 and named after Bailey Avenue. Known for murder, robbery, drug trafficking, and racketeering. The gang gained notoriety after a 2012 shooting in Martin Luther King Jr. Park. Its leader Kenneth Pettway Jr. was arrested in 2018 on federal drug and RICO charges.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Bailey_Boys",
+      "title": "Bailey Boys \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/LRGP_%28gang%29",
+      "title": "LRGP %28gang%29 \u2014 Wikipedia"
+    }
+  ],
+  "metro": "New York",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

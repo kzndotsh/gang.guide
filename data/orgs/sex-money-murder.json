@@ -1,0 +1,26 @@
+{
+  "id": "org:sex-money-murder",
+  "name": "Sex Money Murder",
+  "aliases": [
+    "SMM",
+    "Sex Money Murda",
+    "$.M.M."
+  ],
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "Sex Money Murder (SMM) is a Blood set and one of the original subgroups of the United Blood Nation, formed on September 27, 1995 in the Soundview Houses in the Bronx by Peter 'Pistol Pete' Rollock. Rollock was sentenced to life at ADX Florence in 2000 for seven murders, held under special administrative measures due to fears his orders would be carried out by members. SMM has spread to Brooklyn, Long Island, Charlotte, Raleigh, and Georgia. They gained independence from UBN after the 'Wet T-Shirt War' and operate as a fully independent Blood set.",
+  "founded_year": 1995,
+  "founded_year_precision": "exact",
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Sex_Money_Murder",
+      "title": "Sex Money Murder - Wikipedia"
+    }
+  ],
+  "status": "active"
+}

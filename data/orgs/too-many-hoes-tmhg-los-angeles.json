@@ -1,0 +1,25 @@
+{
+  "id": "org:too-many-hoes-tmhg-los-angeles",
+  "name": "Too Many Hoes Tmhg",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:crips",
+  "type": "street_gang",
+  "founded_year": 1980,
+  "description": "An African-American Crip set based in South Los Angeles, part of the network of smaller Crip sets in the South Central area.",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "TMHG",
+    "Too Many Hoes"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Too_Many_Hoes_Tmhg",
+      "title": "Too Many Hoes Tmhg \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "org:rollin-30-s-bloodstone-piru",
+  "name": "Rollin 30 S Bloodstone Piru",
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "founded_year": 1970,
+  "founded_year_precision": "exact",
+  "description": "Blood Stone Pirus) are an African-American street gang located on the East Side of South Los Angeles, California. The BSP originated in the 1970\u2019s around Martin Luther King Jr Blvd, between Avalon Blvd to Central Ave. The BloodStone Pirus have been acted for over thirty year, and falls under the Piru umbrella.",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/blood-stone-piru/",
+      "title": "Blood Stone Piru \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "BSP",
+    "they cl",
+    "Rollin 30\u2019s"
+  ],
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "status": "active"
+}

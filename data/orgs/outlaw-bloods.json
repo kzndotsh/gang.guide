@@ -1,0 +1,22 @@
+{
+  "id": "org:outlaw-bloods",
+  "name": "Outlaw Bloods",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "description": "Outlaw Bloods 1983-2000s Broadway to Sheridan, Argyle to Leland Circa 1992 Outlaw Blood Argyle Street circa 1992 with a Outlaw Blood tag on the stop sign and a Outlaw Blood member Circa 1992 Outlaw Bloods",
+  "founded_year": 1983,
+  "founded_year_precision": "exact",
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:people-nation",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/outlaw-bloods/",
+      "title": "Outlaw Bloods - Chicago Gang History"
+    }
+  ]
+}

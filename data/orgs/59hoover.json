@@ -1,0 +1,22 @@
+{
+  "id": "org:59hoover",
+  "name": "59 Hoovers",
+  "lane": "california-crips-hoover",
+  "metro": "Los Angeles",
+  "description": "The 59 Hoover Criminals are a subset of the Hoover Criminal Gang on the West Side of South Los Angeles. The Hoovers originated in the late 1960s as the Hoover Groovers, later dropping their Crip affiliation to become independent Hoover Criminals, identifiable by their orange color.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/59hoover/",
+      "title": "59 Hoovers \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "orange"
+  ],
+  "founded_year": 1969,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "aliases": []
+}

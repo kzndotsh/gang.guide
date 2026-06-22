@@ -1,0 +1,27 @@
+{
+  "id": "org:marianna-maravilla-east-los-angeles",
+  "name": "Marianna Maravilla East",
+  "type": "street_gang",
+  "lane": "california-latino-east-la",
+  "founded_year": 1940,
+  "description": "The Marianna Maravilla (MMV), are a Mexican-American subset of the larger Barrio Maravilla Gang, which consist several of smaller criminal street gangs operating in the same barrio in East Los Angeles, California.",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/marianna-maravilla-east-los-angeles/",
+      "title": "Marianna Maravilla East Los Angeles \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/maravilla/",
+      "title": "Marianna Maravilla East \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "MMV"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

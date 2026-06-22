@@ -1,0 +1,28 @@
+{
+  "id": "org:eastside-be-bopp-watts-bloods-los-angeles",
+  "name": "Eastside Be-Bopp Watts Bloods",
+  "aliases": [
+    "Be-Bopp Watts Bloods"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "Bopp Watts Bloods Be Bopp Watts Bloods are a predominately Black street organization located in the Watts section of South Los Angeles. They have 2 main clicks or subgroups, the 92nd Street and 93rd Street clicks are are located from 92nd Street (north) to 98th Street (south) along Central Avenue.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/",
+      "title": "Eastside Be-Bopp Watts Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/beboppwatts/",
+      "title": "Beboppwatts \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1969,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

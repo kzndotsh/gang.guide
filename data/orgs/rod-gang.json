@@ -1,0 +1,25 @@
+{
+  "id": "org:rod-gang",
+  "name": "ROD Gang",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "A small murderous drug ring that operated in New Orleans, primarily in the St. Roch neighborhood. Formed among teens in trailers after Hurricane Katrina, the gang sold crack, marijuana, and heroin from 2007 to 2013. Twelve members were indicted on murder and racketeering charges in 2013.",
+  "founded_year": 2007,
+  "aliases": [
+    "Ride or Die Gang"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/ROD_Gang",
+      "title": "ROD Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/110ers",
+      "title": "110ers \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "colors": []
+}

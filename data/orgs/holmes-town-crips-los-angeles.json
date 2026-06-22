@@ -1,0 +1,24 @@
+{
+  "id": "org:holmes-town-crips-los-angeles",
+  "name": "Holmes Town Crips",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:crips",
+  "type": "street_gang",
+  "founded_year": 1970,
+  "description": "The Holmes Town Crips are an African-American Crip set based in the Holmes Avenue corridor of Watts/South Los Angeles, operating near the Jordan Downs and Nickerson Gardens housing projects.",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "C14"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Holmes_Town_Crips",
+      "title": "Holmes Town Crips \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

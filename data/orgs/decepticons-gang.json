@@ -1,0 +1,21 @@
+{
+  "id": "org:decepticons-gang",
+  "name": "Decepticons",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Decepticons were a Brooklyn street gang active from the mid-1980s into the early 1990s. Named after the antagonists of the Transformers franchise, they were known for flash-mob style attacks and muggings. The gang originated in Brooklyn and expanded across New York City, with offshoots in Queens and the Bronx. Some former members later became notable in hip-hop music.",
+  "aliases": [
+    "Decepts"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Decepticons_%28gang%29",
+      "title": "Decepticons %28gang%29 \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1986,
+  "founded_year_precision": "circa",
+  "colors": []
+}

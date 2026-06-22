@@ -1,0 +1,22 @@
+{
+  "id": "org:89-east-coast-crips",
+  "name": "89 East Coast Crips",
+  "lane": "california-crips-east-coast",
+  "metro": "Los Angeles",
+  "description": "The 89 East Coast Crips are a predominantly African-American Crip set operating around 89th Street on the East Side of South Los Angeles, part of the East Coast Crips alliance.",
+  "type": "street_gang",
+  "founded_year": 1971,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/89ecc/",
+      "title": "89 East Coast Crips \u2014 StreetGangs"
+    }
+  ],
+  "status": "active",
+  "aliases": []
+}

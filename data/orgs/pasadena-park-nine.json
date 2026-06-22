@@ -1,0 +1,44 @@
+{
+  "id": "org:pasadena-park-nine",
+  "name": "Pasadena Park Nine",
+  "aliases": [
+    "C14"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/pasadena/",
+      "title": "Pasadena Park Nine \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/pasadena/",
+      "title": "Pasadena Park Nine \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/pasadena/",
+      "title": "Pasadena Park Nine \u2014 StreetGangs"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-black-p-stones",
+      "title": "Encyclopedia of Chicago"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-latin-kings",
+      "title": "Encyclopedia of Chicago"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/black-disciples",
+      "title": "Encyclopedia of Chicago"
+    }
+  ],
+  "founded_year": 1975,
+  "description": "A Blood gang operating in the Pasadena area of Los Angeles County, one of the few Blood sets in the Pasadena/Altadena corridor.",
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

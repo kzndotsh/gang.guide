@@ -1,0 +1,24 @@
+{
+  "id": "org:stoned-freaks",
+  "name": "Stoned Freaks",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "description": "The Stoned Freaks are a mostly white People Nation street gang founded in 1967 in Chicago. Colors are black, red, and light blue. Active on the southwest side.",
+  "founded_year": 1967,
+  "founded_year_precision": "exact",
+  "colors": [
+    "black",
+    "red",
+    "light blue"
+  ],
+  "nation_affiliation": "org:people-nation",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/stoned-freaks/",
+      "title": "Stoned Freaks - Chicago Gang History"
+    }
+  ]
+}

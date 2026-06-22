@@ -1,0 +1,23 @@
+{
+  "id": "org:slaughter-house-gang",
+  "name": "Slaughter House Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "A prominent street gang in New York's Fourth Ward during the late 1880s to the mid-1990s, known for violent muggings and murder. They lured victims into dive bars or used a bucket of ash to blind them before robbing and sometimes killing them. The gang was led by George Leese, a river pirate and illegal prize fight organizer. They dominated the Fourth Ward until police drove them out after the American Civil War.",
+  "aliases": [
+    "Slaughter Housers",
+    "Slaughter Street",
+    "Slaughter Street Gang"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Slaughter_House_Gang",
+      "title": "Slaughter House Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1840,
+  "founded_year_precision": "decade",
+  "colors": []
+}

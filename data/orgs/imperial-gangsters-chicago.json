@@ -1,0 +1,50 @@
+{
+  "id": "org:imperial-gangsters-chicago",
+  "name": "Almighty Imperial Gangsters",
+  "aliases": [
+    "Imperial Gangsters",
+    "IG"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "founded_year": 1970,
+  "founded_year_precision": "exact",
+  "description": "The Almighty Imperial Gangsters are a Latino (Puerto Rican) Folk Nation street gang founded in 1970 in Logan Square, Chicago. Originally called 'Imperial Spanish Gangsters,' started by Carlos 'Mexico' Quintanilla who merged with the 'Mighty Grand' crew (Greek, Norwegian, Polish and Ukrainian kids fighting Italian gangs). Colors of black and pink adopted in 1975 after Latin Kings shot and killed 17-year-old female member Nora 'Morena' Salazar. Part of the United Latino Organization (1978-1992). Their rounded crown symbol comes from the Imperial Margarine brand. Territory in Logan Square, Hermosa, Belmont-Cragin, and Franklin Park suburb ('The Jungle').",
+  "colors": [
+    "black",
+    "pink"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/imperial-gangsters-chicago/",
+      "title": "Almighty Imperial Gangsters \u2014 Chicago Gang History"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
+      "title": "Popes %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Counts",
+      "title": "Latin Counts \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Eagles",
+      "title": "Latin Eagles \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Maniac_Latin_Disciples",
+      "title": "Maniac Latin Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Simon_City_Royals",
+      "title": "Simon City Royals \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-imperial-gangsters/",
+      "title": "Imperial Gangsters - Chicago Gang History"
+    }
+  ],
+  "status": "active"
+}

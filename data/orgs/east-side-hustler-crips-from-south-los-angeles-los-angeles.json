@@ -1,0 +1,37 @@
+{
+  "id": "org:east-side-hustler-crips-from-south-los-angeles-los-angeles",
+  "name": "East Side Hustler Crips",
+  "type": "street_gang",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "description": "East Side Hustler Crips are a predominately African-American street gang located on the eastside of South LA occupying the neighborhood around 104th Street and 108th Streets between Avalon (east) and Main Street (west).",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/eastside-hustler-crip/",
+      "title": "Eastside Hustler Crip \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/",
+      "title": "East Side Hustler Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/hustler-crips/",
+      "title": "Hustler Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/east-side-hustler-crips/",
+      "title": "East Side Hustler Crips \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "colors": [
+    "blue",
+    "green"
+  ],
+  "aliases": [
+    "ESHC"
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

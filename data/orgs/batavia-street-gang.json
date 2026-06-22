@@ -1,0 +1,31 @@
+{
+  "id": "org:batavia-street-gang",
+  "name": "Batavia Street Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "New York independent street gang based in the Fourth Ward during the 1890s. Affiliated with the Eastman Gang, they were rivals of the Cherry Hill Gang. Known for a jewelry store robbery to fund costumes for a ball. Five members were arrested and tried in the incident.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Batavia_Street_Gang",
+      "title": "Batavia Street Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cherry_Hill_Gang",
+      "title": "Cherry Hill Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Eastman_Gang",
+      "title": "Eastman Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Five_Points_Gang",
+      "title": "Five Points Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1890,
+  "founded_year_precision": "decade",
+  "aliases": [],
+  "colors": []
+}

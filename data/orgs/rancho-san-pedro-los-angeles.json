@@ -1,0 +1,23 @@
+{
+  "id": "org:rancho-san-pedro-los-angeles",
+  "name": "Rancho San Pedro",
+  "aliases": [
+    "rsp"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-harbor",
+  "metro": "Los Angeles",
+  "founded_year": 1956,
+  "founded_year_precision": "range",
+  "description": "Rancho San Pedro is a predominately Latino street gang located in the San Pedro community in the city of Los Angeles on the far southern tip of the city. The varrio was founded in the late 1950s or early 1960s as Mexicans were migrating into this section of the city during the post WW2 boom.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sanpedro/",
+      "title": "Rancho San Pedro \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

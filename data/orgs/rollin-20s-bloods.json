@@ -1,0 +1,32 @@
+{
+  "id": "org:rollin-20s-bloods",
+  "name": "Rollin 20S Bloods",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "The Rollin 20s Neighborhood Bloods (R20NHB), are primarily, but not exclusively, an African-American street gang located in the West Adams district on the West Side of South Los Angeles, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/rollin-20s-bloods/",
+      "title": "Rollin 20S Bloods \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/rollin20scrips/",
+      "title": "Rollin20Scrips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/rollin-20s-crip/",
+      "title": "Rollin 20S Crip \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "R20NHB"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

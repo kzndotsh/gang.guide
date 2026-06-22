@@ -1,0 +1,20 @@
+{
+  "id": "org:rampants",
+  "name": "Rampants",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
+  "description": "The Rampants were a street gang in Chicago's Heart of Chicago (West Pilsen) neighborhood, active from the late 1950s. Territory ran from Damen to Ashland along 18th Street. Many members later became Ambrose when they absorbed the Little Rampants in 1964.",
+  "founded_year": 1959,
+  "founded_year_precision": "circa",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/rampants/",
+      "title": "Rampants - Chicago Gang History"
+    }
+  ]
+}

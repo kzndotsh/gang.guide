@@ -1,0 +1,19 @@
+{
+  "id": "org:true-brown-style",
+  "name": "True Brown Style",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "True Brown Style (TBS) is a Filipino gang originating in the Philippines with some presence in Filipino-American communities in Southern California.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/carson/tbs/",
+      "title": "True Brown Style \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

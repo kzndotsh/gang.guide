@@ -1,0 +1,24 @@
+{
+  "id": "org:neighborhood-crips-nhc",
+  "name": "Neighborhood Crips (NHC)",
+  "type": "street_gang",
+  "lane": "california-crips-neighborhood",
+  "founded_year": 1983,
+  "founded_year_precision": "range",
+  "description": "The Neighborhood Crips are originated from the Rollin 60s Neighborhood Crips and are one of the fastest growing organisation in the history of gangs.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/neighborhood-crips/",
+      "title": "Neighborhood Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "NCN"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

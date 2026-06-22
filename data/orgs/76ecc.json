@@ -1,0 +1,26 @@
+{
+  "id": "org:76ecc",
+  "name": "76 East Coast Crip",
+  "lane": "california-crips-east-coast",
+  "metro": "Los Angeles",
+  "founded_year": 2000,
+  "description": "Neighborhood East Coast Crips are a predominately African-American street gangs located on 76th Street between Central and Compton Ave on the eastside of South Los Angeles.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/florence/76ecc/",
+      "title": "Team 76 East Coast Crip \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "76ECC",
+    "76 NHC ECC",
+    "76ECG"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "org:rollin-30s-harlem-crips",
+  "name": "Rollin 30s Harlem Crips",
+  "aliases": [
+    "Rollin' 30s Crips"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-rollin",
+  "metro": "New York",
+  "description": "The Rollin' 30s Harlem Crips are a set of the Crips street gang alliance, formed by Belizean American Crips who moved from South Los Angeles to Belize and then to Harlem, New York. The gang is involved in drug trafficking, weapon trafficking, prostitution, murder, and robbery. It was established in New York City in the late 1980s or early 1990s by Dalmin \"Diamond\" Mayen and his associates.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Rollin_30S_Harlem_Crips",
+      "title": "Rollin 30S Harlem Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/rollin-30s-harlem-crips/",
+      "title": "Rollin 30S Harlem Crips \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1976,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

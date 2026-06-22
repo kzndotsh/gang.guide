@@ -1,0 +1,23 @@
+{
+  "id": "org:varrio-junior-mafia-near-imperial-highway",
+  "name": "Varrio Junior Mafia",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "description": "Varrio Junior Mafia is predominately Hispanic-American street gang located near Imperial Highway in South Los Angeles. They also have another gang located near 107th Street between Vermont Normandie Avenues.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/juniormafia/",
+      "title": "Varrio Junior Mafia  near Imperial Highway \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1955,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "Mafia"
+  ],
+  "status": "active"
+}

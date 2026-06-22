@@ -1,0 +1,32 @@
+{
+  "id": "org:six-hood-compton-crips-in-willowbrook",
+  "name": "Six Hood Compton Crips",
+  "lane": "california-crips-south-la",
+  "description": "Six Hood Compton Crips In Willowbrook are a predominately Black gang located in the unincorporated section of Willowbrook, just north of Compton.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/six-hood-compton-crips/",
+      "title": "Six Hood Compton Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/willowbrook/",
+      "title": "Willowbrook \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/lacounty/willowbrook/",
+      "title": "Willowbrook \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "founded_year": 1980,
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "SHCCIW"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active"
+}

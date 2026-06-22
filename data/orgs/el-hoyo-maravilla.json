@@ -1,0 +1,50 @@
+{
+  "id": "org:el-hoyo-maravilla",
+  "name": "El Hoyo Maravilla",
+  "type": "street_gang",
+  "lane": "california-latino-east-la",
+  "founded_year": 1935,
+  "founded_year_precision": "exact",
+  "description": "El Hoyo Maravilla are primarily a Mexican-American criminal street gang located in Unincorporated East Los Angeles, California. They originated in 1935, the 1st generation was known as the \u201cOriginals\u201d and the second generation was known as the \u201cCherries\u201d.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/el/hoyo/maravilla/",
+      "title": "El Hoyo Maravilla \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/el-hoyo-maravilla/",
+      "title": "El Hoyo Maravilla \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/1994-sister-souljah-we-are-war/",
+      "title": "Academic research"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/african-american-museums-united-states/",
+      "title": "Academic research"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/african-american-u-s-ambassadors-1869/",
+      "title": "Academic research"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/alexander-p-ashbourne-1820-1915/",
+      "title": "Academic research"
+    },
+    {
+      "url": "https://blackpast.org/african-american-history/bloods-1972/",
+      "title": "Academic research"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "HMV",
+    "Hoyo MaraVilla (HMV)",
+    "Locos"
+  ],
+  "colors": [
+    "brown",
+    "khaki"
+  ],
+  "status": "active"
+}

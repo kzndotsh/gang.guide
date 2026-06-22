@@ -1,0 +1,35 @@
+{
+  "id": "org:nogales-gangster-crips",
+  "name": "Nogales Gangster Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "description": "The Nogales Gangster Crips (NGC), also known as the Nogales Street Gangster Crips (NSGC) or simply Nogales Crips (NC) are primarily, but not exclusively, an African-American street gang named after a residential street (Nogales St.) between Rio Linda Blvd and Marysville Blvd located in North Sacramento, California.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/nogales/gangster/crips/",
+      "title": "Nogales Gangster Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/nogales-gangster-crips/",
+      "title": "Nogales Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Sacramento",
+  "aliases": [
+    "Marysville Blvd located in North Sacramento",
+    "NC",
+    "NGC",
+    "NSGC",
+    "Nogales Gangster Crips (NGC)",
+    "but not exclusively",
+    "Nogales Street Gangster Crips"
+  ],
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

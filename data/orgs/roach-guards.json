@@ -1,0 +1,41 @@
+{
+  "id": "org:roach-guards",
+  "name": "Roach Guards",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Roach Guards were an ethnically Irish criminal gang in the Five Points neighborhood of New York City in the early to mid-19th century. Founded by Ted Roach, the gang originally protected liquor merchants before engaging in robbery and murder. They fought rival gangs such as the Bowery Boys and declined during the 1850s, disappearing by 1865.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Roach_Guards",
+      "title": "Roach Guards \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bowery_Boys_%28gang%29",
+      "title": "Bowery Boys %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dead_Rabbits",
+      "title": "Dead Rabbits \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Forty_Thieves_%28New_York_gang%29",
+      "title": "Forty Thieves %28New York gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kerryonians",
+      "title": "Kerryonians \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Shirt_Tails",
+      "title": "Shirt Tails \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1820,
+  "founded_year_precision": "decade",
+  "aliases": []
+}

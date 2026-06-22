@@ -1,0 +1,21 @@
+{
+  "id": "org:pinoy-real",
+  "name": "Pinoy Real",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Filipino-American street gang network based in Los Angeles with multiple cliques across different neighborhoods. 'Pinoy' is a colloquial term for Filipino.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/longbeach/pinoyreal/",
+      "title": "Pinoy Real \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

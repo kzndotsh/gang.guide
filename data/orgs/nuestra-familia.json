@@ -1,0 +1,47 @@
+{
+  "id": "org:nuestra-familia",
+  "name": "Nuestra Familia",
+  "aliases": [
+    "Our Family"
+  ],
+  "type": "prison_gang",
+  "lane": "prison",
+  "founded_year": 1968,
+  "founded_year_precision": "exact",
+  "description": "Nuestra Familia ('Our Family') is a Mexican-American prison gang founded in 1968 at Deuel Vocational Institute in Tracy, California, in response to violence from the Mexican Mafia. They represent Northern California (Norte\u00f1o) inmates, with the dividing line from their rivals being roughly at Bakersfield. Their street army operates through affiliated Norte\u00f1o gangs controlling drug trafficking and extortion throughout Northern California.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Nuestra_Familia",
+      "title": "Nuestra Familia \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/prison/nuestra-familia/",
+      "title": "Nuestra Familia \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ndca/pr/nuestra-familia-s-general-council-and-other-members-and-associates-charged-racketeering",
+      "title": "Nuestra Familia RICO \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
+      "title": "Aryan Brotherhood \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
+      "title": "Hermandad Aria \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bahala_Na_Gang",
+      "title": "Bahala Na Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ndca/pr/four-leaders-notorious-nuestra-familia-prison-gang-convicted-racketeering-and-related",
+      "title": "DOJ - Nuestra Familia Leaders Convicted"
+    }
+  ],
+  "metro": "Salinas",
+  "colors": [
+    "red"
+  ],
+  "status": "active"
+}

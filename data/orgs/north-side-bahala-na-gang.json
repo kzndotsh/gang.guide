@@ -1,0 +1,21 @@
+{
+  "id": "org:north-side-bahala-na-gang",
+  "name": "North Side Bahala Na Gang",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "A Filipino-American street gang affiliated with the Bahala Na Gang network, based in the northern areas of Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/losangelesnorth/nsbng/",
+      "title": "North Side Bahala Na Gang \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1970,
+  "founded_year_precision": "decade",
+  "colors": [
+    "white"
+  ],
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "org:angiulo-brothers",
+  "name": "Angiulo Brothers",
+  "aliases": [
+    "In-Town"
+  ],
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "founded_year": 1960,
+  "founded_year_precision": "exact",
+  "description": "The Angiulo brothers were a leading Italian-American crime group based in Boston's North End, active from the 1960s until the mid-1980s. They were made men in the Patriarca crime family and controlled racketeering throughout Massachusetts. Their headquarters was the 'Dog House' convenience store. The organization was dismantled after FBI bugging, leading to convictions in the 1980s.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/angiulo/brothers/",
+      "title": "Angiulo Brothers \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/pomona/sintown/",
+      "title": "Angiulo Brothers \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Angiulo_brothers",
+      "title": "Angiulo brothers \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Boston",
+  "colors": [
+    "black"
+  ],
+  "status": "active"
+}

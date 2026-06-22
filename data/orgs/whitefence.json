@@ -1,0 +1,32 @@
+{
+  "id": "org:whitefence",
+  "name": "Whitefence",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "founded_year": 1939,
+  "description": "Eastside Varrio White Fence is a predominately Hispanic-American street gang from the Boyle Heights area of Los Angeles. It is considered one of the oldest and most respected neighborhoods in all of Los Angeles. It dates back to the late 1920s and they have been active in the same community for nearly 100 years. Their rivalry with El Hoyo Maravilla is the oldest gang rivalry in all of Southern California, and probably the entire United States.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Whitefence",
+      "title": "Whitefence \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/whitefence/",
+      "title": "Eastside Varrio White Fence \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/White_Fence",
+      "title": "White Fence - Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue",
+    "white"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": [
+    "Eastside Varrio White Fence"
+  ]
+}

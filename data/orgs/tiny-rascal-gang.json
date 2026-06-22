@@ -1,0 +1,50 @@
+{
+  "id": "org:tiny-rascal-gang",
+  "name": "Tiny Rascal Gang",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "The Tiny Rascal Gang (TRG) is a predominantly Cambodian-American gang founded in 1981 in Long Beach, California by Cambodian refugees who escaped the Khmer Rouge genocide. With 5,000-10,000 members and associates in 16 US states (FBI 2009), they are one of the largest Asian gangs in America. A branch split off to form the Asian Boyz. They have alliances with the Wah Ching and 14K triad. The Mexican Mafia 'green-lighted' TRG in the 1990s, leading to war with Sure\u00f1os. Colors are gray or blue. Members have killed a Sacramento police officer (2007) and committed a mass shooting killing 3 in 2019. In 2023, 1,000 Cambodian-Americans have been deported partly due to TRG activity.",
+  "founded_year": 1981,
+  "aliases": [
+    "TRG",
+    "Tiny Rascals",
+    "Tiny Rascal Gangsters"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Tiny_Rascal_Gang",
+      "title": "Tiny Rascal Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/14K_%28triad%29",
+      "title": "14K %28triad%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Asian_Boyz",
+      "title": "Asian Boyz \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Black_Dragons_%28gang%29",
+      "title": "Black Dragons %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gangster_Disciples",
+      "title": "Gangster Disciples \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bloods",
+      "title": "Bloods \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ri/pr/twenty-six-charged-indictment-alleging-federal-racketeering-conspiracy-and-other-crimes",
+      "title": "DOJ - Tiny Rascal Gang RICO Charges"
+    }
+  ],
+  "colors": [
+    "blue",
+    "gray"
+  ],
+  "founded_year_precision": "exact",
+  "status": "active"
+}

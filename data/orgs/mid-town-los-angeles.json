@@ -1,0 +1,24 @@
+{
+  "id": "org:mid-town-los-angeles",
+  "name": "Mid Town Family",
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "description": "Mid Town Family was a predominately African-America Blood street gang in the Mid-Town section of Central Los Angeles during the 1970s.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/mid-town/",
+      "title": "Mid Town Family \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "MTF"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

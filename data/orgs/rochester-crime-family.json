@@ -1,0 +1,38 @@
+{
+  "id": "org:rochester-crime-family",
+  "name": "Rochester crime family",
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "metro": "New York",
+  "description": "Italian American Mafia crime family based in Rochester, New York, founded in the 1950s by Constenze 'Stanley' Valenti. It operated primarily in the Greater Rochester area, engaging in racketeering, loansharking, gambling, extortion, and other illegal activities. The family split from the Buffalo crime family in the 1970s and was active until around 1993.",
+  "founded_year": 1950,
+  "aliases": [
+    "Rochester Mafia",
+    "Valenti crime family"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Rochester_crime_family",
+      "title": "Rochester crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bonanno_crime_family",
+      "title": "Bonanno crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Buffalo_crime_family",
+      "title": "Buffalo crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Commission_%28American_Mafia%29",
+      "title": "The Commission %28American Mafia%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Pittsburgh_crime_family",
+      "title": "Pittsburgh crime family \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "colors": []
+}

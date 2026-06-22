@@ -1,0 +1,21 @@
+{
+  "id": "org:pacas-pierce-st",
+  "name": "Pacas Pierce St.",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "PACAS PROJECT BOYS X3***PACAS PROJECT FLATS X3 CARL ST 13000 BLK f PISS BOYS ! WE Call the shots in the valle !",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/piercestreet/",
+      "title": "Pacas Pierce St. \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

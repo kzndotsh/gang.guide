@@ -1,0 +1,19 @@
+{
+  "id": "org:shapiro-brothers",
+  "name": "Shapiro Brothers",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Shapiro Brothers were a group of Jewish-American mobsters from New York City, based in Williamsburg, who led a faction in the garment industry. They were involved in a violent conflict with Jacob Shapiro and Louis Buchalter for control of the industry in Brooklyn. All three brothers were killed by rivals between 1931 and 1934.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Shapiro_Brothers",
+      "title": "Shapiro Brothers \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1920,
+  "founded_year_precision": "decade",
+  "aliases": [],
+  "colors": []
+}

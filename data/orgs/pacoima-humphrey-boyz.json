@@ -1,0 +1,21 @@
+{
+  "id": "org:pacoima-humphrey-boyz",
+  "name": "Pacoima Humphrey Boyz",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "Latino street gang based on Humphrey Avenue in the Pacoima neighborhood of the San Fernando Valley, one of many street-named gangs in the heavily gang-impacted Pacoima area which has over a dozen active sets.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/humphrey/",
+      "title": "Pacoima Humphrey Boyz \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

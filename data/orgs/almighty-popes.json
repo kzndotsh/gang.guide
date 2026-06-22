@@ -1,0 +1,23 @@
+{
+  "id": "org:almighty-popes",
+  "name": "Almighty Popes",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "description": "The Almighty Popes were a People Nation street gang in Chicago, founded circa 1994. Colors were black and grey. Now extinct.",
+  "founded_year": 1994,
+  "founded_year_precision": "circa",
+  "colors": [
+    "black",
+    "grey"
+  ],
+  "nation_affiliation": "org:people-nation",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-popes/",
+      "title": "Almighty Popes - Chicago Gang History"
+    }
+  ]
+}

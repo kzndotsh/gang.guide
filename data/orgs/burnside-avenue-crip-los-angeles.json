@@ -1,0 +1,24 @@
+{
+  "id": "org:burnside-avenue-crip-los-angeles",
+  "name": "Burnside Avenue Crip",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "metro": "Los Angeles",
+  "description": "Burnside Avenue Crip Gang are a predominately African-American street gang located in the West LA section of Los Angeles within the territory of Mansfield Gangster Crips.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/burnside/",
+      "title": "Burnside Avenue Crip \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "BAC"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

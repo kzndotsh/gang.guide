@@ -1,0 +1,23 @@
+{
+  "id": "org:morgan-boys-18th-street-folks",
+  "name": "Morgan Boys 18th Street (Folks)",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "Pilsen neighborhood Established 1980-mid 2000s 16th to 18th Place, Morgan to Miller Established 1980-mid 2000s",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "colors": [
+    "red",
+    "blue"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/morgan-boys/",
+      "title": "Morgan Boys 18th Street (Folks) - Chicago Gang History"
+    }
+  ]
+}

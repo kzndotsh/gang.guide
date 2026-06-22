@@ -1,0 +1,27 @@
+{
+  "id": "org:forming-kaos",
+  "name": "Forming Kaos",
+  "aliases": [
+    "FK",
+    "Forming Kaos 13",
+    "4MK",
+    "Kaos Gang",
+    "Formando Desmadre"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-inland",
+  "founded_year": 1993,
+  "founded_year_precision": "circa",
+  "description": "Forming Kaos (FK) is a Sure\u00f1o street gang based in Costa Mesa, Orange County, California. Started as a party/tagger crew in the early 1990s, became a formal street gang by 1999-2000 after absorbing East Side FK. Mexican Mafia-affiliated \u2014 they extort drug dealers and forward proceeds to imprisoned La Eme members. In 2011, 'Operation Black Flag' (3.5-year FBI investigation) led to 99 arrests of Mexican Mafia-affiliated gang members, with 17 FK members indicted on federal RICO charges. Territory bounded by Fairview Road, Placentia Avenue, 19th Street, and West Wilson Street.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Forming_Kaos",
+      "title": "Forming Kaos \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Costa Mesa",
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

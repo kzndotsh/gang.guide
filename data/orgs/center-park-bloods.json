@@ -1,0 +1,33 @@
+{
+  "id": "org:center-park-bloods",
+  "name": "Center Park Bloods",
+  "aliases": [
+    "CPB",
+    "Center Park Boys"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Inglewood",
+  "description": "The Center Park Gangster Bloods (CPB) are an African-American Blood gang based in Inglewood, California, one of several Blood sets operating alongside the Crenshaw Mafia and Inglewood Family Gang.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/center/park/bloods/",
+      "title": "Center Park Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/center-park-bloods/",
+      "title": "Center Park Bloods \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/inglewood/cpb/",
+      "title": "Center Park Bloods \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1972,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

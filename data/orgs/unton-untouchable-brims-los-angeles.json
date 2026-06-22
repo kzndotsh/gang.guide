@@ -1,0 +1,29 @@
+{
+  "id": "org:unton-untouchable-brims-los-angeles",
+  "name": "Unton Untouchable Brims",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:bloods",
+  "type": "street_gang",
+  "founded_year": 1972,
+  "description": "The Untouchable Brims are an African-American Blood gang under the Brim alliance, operating in the Los Angeles area. The Brims are one of the founding factions of the Bloods alongside the Pirus, formed in the early 1970s.",
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "C14",
+    "Unton (Untouchable) Brims"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Unton_Untouchable_Brims",
+      "title": "Unton Untouchable Brims \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/unton/",
+      "title": "Unton (Untouchable) Brims \u2014 StreetGangs"
+    }
+  ],
+  "founded_year_precision": "decade",
+  "status": "active"
+}

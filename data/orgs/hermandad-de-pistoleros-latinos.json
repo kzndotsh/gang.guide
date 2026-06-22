@@ -1,0 +1,30 @@
+{
+  "id": "org:hermandad-de-pistoleros-latinos",
+  "name": "Hermandad De Pistoleros Latinos",
+  "aliases": [
+    "Brotherhood of Latin Gunmen",
+    "Hermanos de Pistoleros Latinos",
+    "HPL",
+    "HPL 45s"
+  ],
+  "type": "prison_gang",
+  "lane": "southeast-southwest",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "description": "Mexican American prison gang founded by Chino Avitia in Texas during the early 1980s. It operates in Texas prisons and communities, particularly Laredo, and is active in Mexico with a large contingent in Nuevo Laredo. The gang has over 1,000 members and is involved in trafficking cocaine and marijuana from Mexico into the United States.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/huntingtonpark/hpl/",
+      "title": "Hermandad De Pistoleros Latinos \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermanos_De_Pistoleros_Latinos",
+      "title": "Hermanos De Pistoleros Latinos \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "brown"
+  ],
+  "status": "active"
+}

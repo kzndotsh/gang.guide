@@ -1,0 +1,32 @@
+{
+  "id": "org:straight-satans-motorcycle-club",
+  "name": "Straight Satans Motorcycle Club",
+  "aliases": [
+    "Straight Satans"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1959,
+  "founded_year_precision": "exact",
+  "description": "The Straight Satans Motorcycle Club was a one-percenter outlaw motorcycle gang based in Southern California, founded in July 1959 by three bikers known as Father Bill, Little Jerry, and Glick. It was among the earliest outlaw motorcycle clubs in the Los Angeles area, but remained localized without chapters beyond its original base.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Straight_Satans_Motorcycle_Club",
+      "title": "Straight Satans Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Manson_Family",
+      "title": "Manson Family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mongols_MC_criminal_allegations_and_incidents",
+      "title": "Mongols MC criminal allegations and incidents \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "status": "active"
+}

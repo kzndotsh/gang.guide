@@ -1,0 +1,21 @@
+{
+  "id": "org:volksfront",
+  "name": "Volksfront",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "American white separatist organization founded in 1994 by Randal Lee Krager and Richard Arden while incarcerated in Oregon. The group aimed to create an all-white homeland in the Pacific Northwest and had chapters in the US and several other countries. It was considered a neo-Nazi skinhead group by watchdogs. The US branch dissolved in 2012.",
+  "founded_year": 1994,
+  "aliases": [
+    "Volksfront International"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Volksfront",
+      "title": "Volksfront \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "colors": []
+}

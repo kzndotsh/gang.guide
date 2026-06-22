@@ -1,0 +1,21 @@
+{
+  "id": "org:tepatitlan-tepa-in-lennox-ca",
+  "name": "Tepatitlan 13",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Tepatitlan (Tepa) is a predominately Latino street gang in the unincorporated area of Lennox in the South Bay portion of Los Angeles County. The varrio was formed on 106th Street and Freeman Avenue during the late 1970s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/lacounty/lennox/tepa/",
+      "title": "Tepatitlan (Tepa) in Lennox, CA \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1968,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

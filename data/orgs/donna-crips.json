@@ -1,0 +1,28 @@
+{
+  "id": "org:donna-crips",
+  "name": "Donna Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1977,
+  "founded_year_precision": "exact",
+  "description": "Qs are one of the oldest African-American street gangs located in North Las Vegas, Nevada. Their name is derived from Donna street which is the heart of their gang. They were established in 1977, originally known as the GQs by original gangsters such as Ramont \u201cPaps\u201d Williams, after moving to Las Vegas from Compton, California.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/donna/crips/",
+      "title": "Donna Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/donna-street-crips/",
+      "title": "Donna Street Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "aliases": [
+    "DSC"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

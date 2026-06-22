@@ -1,0 +1,19 @@
+{
+  "id": "org:la-oriental-boys",
+  "name": "LA Oriental Boys",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "The LA Oriental Boys are an Asian American street gang operating in the Los Angeles area, part of a network of Asian gangs documented by law enforcement since the 1980s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/southlosangeles/laob/",
+      "title": "LA Oriental Boys \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

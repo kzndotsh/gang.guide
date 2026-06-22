@@ -1,0 +1,21 @@
+{
+  "id": "org:watts-grape-los-angeles",
+  "name": "Watts Grape",
+  "type": "street_gang",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "description": "Watts Varrio Grape Street 13 is a long-standing Mexican-American street gang in the Watts neighborhood near the Jordan Downs Housing Projects. Originally part of a multiracial gang that included Black members, the Latino faction split off and aligned with the Sure\u00f1os by the 1970s.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Watts_Grape",
+      "title": "Watts Grape \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": "org:homes-side-hustler-los-angeles",
+  "name": "Homes Side Hustler",
+  "lane": "california-crips-hustler",
+  "metro": "Los Angeles",
+  "nation_affiliation": "org:crips",
+  "type": "street_gang",
+  "founded_year": 1980,
+  "description": "The Homes Side Hustler Crips are a subset of the Hustler Crips alliance operating in the South Los Angeles area, part of the network of Hustler Crip sets that emerged in the mid-1970s.",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "C14"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Homes_Side_Hustler",
+      "title": "Homes Side Hustler \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

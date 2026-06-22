@@ -1,0 +1,27 @@
+{
+  "id": "org:112-hoover-criminals",
+  "name": "112 Hoover Criminals",
+  "lane": "california-crips-hoover",
+  "founded_year": 1970,
+  "description": "The 112 Hoover Criminals Gang are a sub-set of the infamous Hoover Criminals Gang. The 112 Hoover Criminals Gang originated in the 1970s, around 107 Street and Hoover.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/athens/112hoover/",
+      "title": "112 Hoover Criminals \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/112-hoover-criminals-gang/",
+      "title": "112 Hoover Criminals Gang \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "colors": [
+    "orange"
+  ],
+  "aliases": [
+    "112HC"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

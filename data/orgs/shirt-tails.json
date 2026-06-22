@@ -1,0 +1,35 @@
+{
+  "id": "org:shirt-tails",
+  "name": "Shirt Tails",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Shirt Tails were a mid-19th-century street gang based in the Five Points slum in Manhattan, New York City. They wore their shirts outside their pants as insignia and concealed weapons beneath. Active from the 1830s to the 1860s, they participated in the New York Draft Riots and disappeared shortly before the American Civil War.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Shirt_Tails",
+      "title": "Shirt Tails \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bowery_Boys_%28gang%29",
+      "title": "Bowery Boys %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Dead_Rabbits",
+      "title": "Dead Rabbits \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Forty_Thieves_%28New_York_gang%29",
+      "title": "Forty Thieves %28New York gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kerryonians",
+      "title": "Kerryonians \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1830,
+  "founded_year_precision": "decade",
+  "aliases": [],
+  "colors": []
+}

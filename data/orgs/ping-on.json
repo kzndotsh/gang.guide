@@ -1,0 +1,30 @@
+{
+  "id": "org:ping-on",
+  "name": "Ping On",
+  "aliases": [
+    "Ping On Club",
+    "Ping On syndicate"
+  ],
+  "lane": "asian-gangs",
+  "founded_year": 1970,
+  "founded_year_precision": "exact",
+  "description": "Boston-based Chinese criminal organization founded in the 1970s by Stephen 'Sky Dragon' Tse, who had ties to the 14K Triad. It engaged in drug trafficking, arms trafficking, fraud, prostitution, human trafficking, illegal gambling, money laundering, extortion, murder, illegal immigration, and racketeering.",
+  "metro": "Boston",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ping_On",
+      "title": "Ping On \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/14K_%28triad%29",
+      "title": "14K %28triad%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Stephen_Tse",
+      "title": "Stephen Tse \u2014 Wikipedia"
+    }
+  ],
+  "type": "street_gang",
+  "status": "active",
+  "colors": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "org:fruit-belt-gang",
+  "name": "Fruit Belt Gang",
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "Street gang based in Buffalo, New York, founded in the 1960s-1970s in the Fruit Belt area. Primarily African American, it engages in drug trafficking, weapons smuggling, and murder. The gang is in direct opposition to the Central Park Gang and has been involved in ongoing violent conflicts.",
+  "aliases": [
+    "Fruit Belt Posse"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Fruit_Belt_Gang",
+      "title": "Fruit Belt Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1960,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "colors": []
+}

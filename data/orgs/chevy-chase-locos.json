@@ -1,0 +1,21 @@
+{
+  "id": "org:chevy-chase-locos",
+  "name": "Chevy Chase Locos",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "The chevy chase park area is alot calmer now and beatiful No and the people that live there are new to the area. Most of the gang members are in jail or living regular lives. The few remaining gang members are old and care less about that lifestyle. Basically all the crazy people are gone.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/northeast/chevychase/",
+      "title": "Chevy Chase Locos \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1960,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

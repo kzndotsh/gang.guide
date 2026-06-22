@@ -1,0 +1,46 @@
+{
+  "id": "org:chosen-few-motorcycle-club",
+  "name": "Chosen Few Motorcycle Club",
+  "aliases": [
+    "36",
+    "CF",
+    "CFMC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1959,
+  "founded_year_precision": "exact",
+  "description": "The Chosen Few Motorcycle Club is the first mixed-race 1%er outlaw motorcycle club, founded around 1959 in Los Angeles, California by Lionel Ricks and others. It has chapters across the United States and internationally in the Philippines. The club is known for its outlaw status and diverse membership.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Chosen_Few_Motorcycle_Club",
+      "title": "Chosen Few Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hells_Angels",
+      "title": "Hells Angels \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Kinahan_Organised_Crime_Group",
+      "title": "Kinahan Organised Crime Group \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Outlaws_MC_criminal_allegations_and_incidents",
+      "title": "Outlaws MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Outlaws_Motorcycle_Club",
+      "title": "Outlaws Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Satan%27s_Choice_Motorcycle_Club",
+      "title": "Satan's Choice Motorcycle Club \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "status": "active"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "org:sin-city-deciples-motorcycle-club",
+  "name": "Sin City Deciples Motorcycle Club",
+  "aliases": [
+    "1934 Express",
+    "SCDMC",
+    "Sin City Nation"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1967,
+  "founded_year_precision": "exact",
+  "description": "The Sin City Deciples Motorcycle Club is a mixed-race one-percenter outlaw motorcycle club founded in Gary, Indiana in 1967. It is one of the oldest and most well-known black outlaw motorcycle clubs in the United States, with chapters across the U.S. and international presence. The club is involved in illicit drug sales and is regarded as a criminal organization by law enforcement.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Sin_City_Deciples_Motorcycle_Club",
+      "title": "Sin City Deciples Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips",
+      "title": "Crips \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "status": "active"
+}

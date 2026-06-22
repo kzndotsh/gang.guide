@@ -1,0 +1,23 @@
+{
+  "id": "org:blythe-bst-los-angeles",
+  "name": "Blythe Street Gang",
+  "type": "street_gang",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "founded_year": 1980,
+  "founded_year_precision": "circa",
+  "description": "Blythe Street (BST) is a predominately Hispanic-American street gang located in the Panorama City section of Los Angeles in the West San Fernando Valley. During the late 1970s, Blythe Street was originally a click or subgroup of the gang Barrio Van Nuys, but it broke away from BVN to establish their own neighborhood.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Blythe_Bst",
+      "title": "Blythe Bst \u2014 Wikipedia"
+    }
+  ],
+  "aliases": [
+    "BST"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

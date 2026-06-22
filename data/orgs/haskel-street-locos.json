@@ -1,0 +1,21 @@
+{
+  "id": "org:haskel-street-locos",
+  "name": "Haskel Street Locos",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Latino street gang named after Haskel Street in the West San Fernando Valley, documented among active SFV Hispanic gangs since at least the late 1990s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/haskelstreet/",
+      "title": "Haskel Street Locos \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1960,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

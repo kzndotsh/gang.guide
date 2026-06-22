@@ -1,0 +1,37 @@
+{
+  "id": "org:brik-boy-crips-bbc-in-northside-long-beach",
+  "name": "Brik Boy Crips",
+  "aliases": [
+    "BBC",
+    "NSBBC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "description": "The Brik Boy Crips (NSBBC) are an African-American Crip set based in North Long Beach, California. In 2016, they were indicted as part of a $14.3 million identity theft and tax fraud scheme.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/longbeach/",
+      "title": "Brik Boy Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/",
+      "title": "Brik Boy Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/bbc/",
+      "title": "Brik Boy Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/longbeach/",
+      "title": "Brik Boy Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "founded_year": 2012,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

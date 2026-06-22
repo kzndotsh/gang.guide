@@ -1,0 +1,22 @@
+{
+  "id": "org:lgkk",
+  "name": "Last Generation Korean Killers",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "The Last Generation Korean Killers (LGKK) are a Korean-American street gang in the Los Angeles area, identified by LAPD as responsible for armed robbery sprees. Their case was notable as one of the first to utilize an extradition treaty with South Korea.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/southlosangeles/lgkk/",
+      "title": "Last Generation Korean Killers \u2014 StreetGangs"
+    }
+  ],
+  "aliases": [
+    "LGKK",
+    "Team Last Generation"
+  ],
+  "founded_year": 1990,
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "colors": []
+}

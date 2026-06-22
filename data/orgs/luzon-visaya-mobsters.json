@@ -1,0 +1,19 @@
+{
+  "id": "org:luzon-visaya-mobsters",
+  "name": "Luzon Visaya Mobsters",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "The Luzon Visaya Mobsters (LVM) are a Filipino American street gang based in Los Angeles. Their name references the two main island groups of the Philippines (Luzon and Visayas).",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/losangelesnorth/lvm/",
+      "title": "Luzon Visaya Mobsters \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1980,
+  "founded_year_precision": "decade",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

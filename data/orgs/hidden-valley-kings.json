@@ -1,0 +1,31 @@
+{
+  "id": "org:hidden-valley-kings",
+  "name": "Hidden Valley Kings",
+  "aliases": [
+    "Kings",
+    "Knowledgeable Islamic Nubian Gods",
+    "Krucial Islamic Nubian Gods",
+    "Queen City Kings"
+  ],
+  "type": "street_gang",
+  "lane": "southeast-southwest",
+  "founded_year": 2000,
+  "founded_year_precision": "exact",
+  "description": "Neighborhood-based gang in Charlotte, North Carolina, formed in the late 1990s to early 2000s as a branch of the Queen City Kings. Engages in drug trafficking, extortion, racketeering, robbery, murder, and other criminal activities. The gang is still active.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Hidden_Valley_Kings",
+      "title": "Hidden Valley Kings \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.wbtv.com/story/11446920/taking-down-the-hidden-valley-king-gang",
+      "title": "Taking Down Hidden Valley Kings \u2014 WBTV"
+    }
+  ],
+  "metro": "Charlotte",
+  "colors": [
+    "green",
+    "gold"
+  ],
+  "status": "active"
+}

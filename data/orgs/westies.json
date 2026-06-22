@@ -1,0 +1,37 @@
+{
+  "id": "org:westies",
+  "name": "Westies",
+  "aliases": [
+    "West Side Gang"
+  ],
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "description": "The Westies were a New York City-based Irish-American organized crime gang operating from the early 1960s until 1988. They were involved in racketeering, drug trafficking, and contract killing, and were partnered with the Italian-American Mafia. Based in Hell's Kitchen, Manhattan, they were responsible for 60-100 murders between 1968 and 1986.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Westies",
+      "title": "Westies \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Colombo_crime_family",
+      "title": "Colombo crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Roy_DeMeo",
+      "title": "Roy DeMeo \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gambino_crime_family",
+      "title": "Gambino crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Serbian_mafia",
+      "title": "Serbian mafia \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1968,
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "colors": []
+}

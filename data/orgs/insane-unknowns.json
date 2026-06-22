@@ -1,0 +1,23 @@
+{
+  "id": "org:insane-unknowns",
+  "name": "Insane Unknowns",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-people",
+  "metro": "Chicago",
+  "description": "Belmont-Cragin neighborhood 80s, 90s, 2000s Sections of Belmont-Cragin Armitage & Kilpatrick Grand & Mobile 80s, 90s Dickens & Mobile 80s Wrightwood & Laramie 2000s",
+  "founded_year": 1964,
+  "founded_year_precision": "exact",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "nation_affiliation": "org:people-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/insane-unknowns/",
+      "title": "Insane Unknowns - Chicago Gang History"
+    }
+  ]
+}

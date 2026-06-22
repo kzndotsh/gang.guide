@@ -1,0 +1,23 @@
+{
+  "id": "org:38thstreet",
+  "name": "Varrio 38th Street",
+  "lane": "california-latino-south-la",
+  "metro": "Los Angeles",
+  "founded_year": 1997,
+  "description": "South Los Angeles Varrio South Side 38th street is a predominately Hispanic Street gang on the eastside of South Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/38th-street-gang/",
+      "title": "The 38th Street Gang \u2014 UnitedGangs"
+    }
+  ],
+  "aliases": [
+    "Tres Ocho"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

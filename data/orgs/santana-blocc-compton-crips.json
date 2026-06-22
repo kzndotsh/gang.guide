@@ -1,0 +1,45 @@
+{
+  "id": "org:santana-blocc-compton-crips",
+  "name": "Santana Blocc Compton Crips",
+  "aliases": [
+    "SBCC"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "Eastside Santana Blocc Compton Crips is a predominately African-American street gang located on the Eastside of the City of Compton. Prior to the formation of Santana Blocc Crip, there were two other neighborhoods that existed, Oak Parks Business Men (Oaks Park Boys) and Mid Town which were active during the early 1970s. Circa 1978 the two neighborhoods merged to form into the Santana Blocc Crips. Ken \u201cYogi\u201d Tate may have initially had the vision to form Santana Blocc Crips, but it wasn\u2019t until after his death the merger was solidified.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/losangelesnorth/ab/",
+      "title": "Santana Blocc Compton Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/santana-blocc-compton-crips/",
+      "title": "Santana Blocc Compton Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/compton/sbcc/",
+      "title": "Santana Blocc Compton Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Elm_Street_Piru",
+      "title": "Elm Street Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Fruit_Town_Piru",
+      "title": "Fruit Town Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Mob_Piru",
+      "title": "Mob Piru \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1978,
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "founded_year_precision": "exact",
+  "status": "active"
+}

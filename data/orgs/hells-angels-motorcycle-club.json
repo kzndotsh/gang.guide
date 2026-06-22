@@ -1,0 +1,55 @@
+{
+  "id": "org:hells-angels-motorcycle-club",
+  "name": "Hells Angels Motorcycle Club",
+  "aliases": [
+    "81",
+    "Big Red Machine",
+    "HAMC",
+    "Hells Angels",
+    "Hells Angels MC",
+    "Hells Angels Motorcycle Corporation",
+    "Red & White"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1948,
+  "founded_year_precision": "exact",
+  "description": "The Hells Angels Motorcycle Club is an international outlaw biker gang that expanded to Australia in 1975, establishing chapters in Melbourne and Sydney. It has approximately 250 members and 14 chapters in Australia, involved in drug trafficking, violent crimes, and money laundering through legitimate businesses.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Hells_Angels",
+      "title": "Hells Angels Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ednc/pr/16-hells-angels-red-devils-members-face-charges-related-violent-racketeering",
+      "title": "Hells Angels Racketeering \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/%27Ndrangheta",
+      "title": "'Ndrangheta \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/14K_%28triad%29",
+      "title": "14K %28triad%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/856_gang",
+      "title": "856 gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/AK81",
+      "title": "AK81 \u2014 Wikipedia"
+    }
+  ],
+  "metro": "United States",
+  "symbols": [
+    "1% patch",
+    "deaths head",
+    "winged skull"
+  ],
+  "colors": [
+    "black",
+    "white"
+  ],
+  "status": "active"
+}

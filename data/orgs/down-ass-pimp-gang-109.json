@@ -1,0 +1,24 @@
+{
+  "id": "org:down-ass-pimp-gang-109",
+  "name": "109 Down Ass Pimp Gang",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "A predominantly African-American street gang (DAP) located around 109th Street in South Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/athens/dapg/",
+      "title": "Down Ass Pimp Gang, 109 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "DAP"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

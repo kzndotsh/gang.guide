@@ -1,0 +1,23 @@
+{
+  "id": "org:5th-and-hill-los-angeles",
+  "name": "5th And Hill",
+  "lane": "california-latino-westside",
+  "metro": "Los Angeles",
+  "founded_year": 2007,
+  "description": "During the 1970s and 1980s they had a strong presence but as the city continued to develop the downtown section of LA, the gang\u2019s presence has declined as housing values have increase.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/5th_And_Hill",
+      "title": "5th And Hill \u2014 Wikipedia"
+    }
+  ],
+  "type": "street_gang",
+  "aliases": [
+    "AH"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

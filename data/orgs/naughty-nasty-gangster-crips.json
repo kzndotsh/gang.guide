@@ -1,0 +1,28 @@
+{
+  "id": "org:naughty-nasty-gangster-crips",
+  "name": "Naughty Nasty Gangster Crips",
+  "lane": "california-crips-gangster",
+  "founded_year": 1990,
+  "founded_year_precision": "exact",
+  "description": "The Naughty Nasty Gangster Crips are an African-American Crip set in South Los Angeles notable for adopting brown as their primary color rather than the traditional Crip blue.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/naughty-nasty-gangster-crips/",
+      "title": "Naughty Nasty Gangster Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/naughty-nasty-gangster-crips/",
+      "title": "Naughty Nasty Gangster Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "colors": [
+    "brown"
+  ],
+  "aliases": [
+    "NNGC"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

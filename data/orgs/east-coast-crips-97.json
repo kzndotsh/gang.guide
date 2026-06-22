@@ -1,0 +1,22 @@
+{
+  "id": "org:east-coast-crips-97",
+  "name": "97 East Coast Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "East Coast Crips are a predominately African-American street gang on the eastside of South Los Angeles and Watts. They are aligned with all other East Coast Crips sets and are part of the Neighborhood Crip car.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/97ecc/",
+      "title": "East Coast Crips, 97 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1971,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

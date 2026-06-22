@@ -1,0 +1,21 @@
+{
+  "id": "org:big-top-locos",
+  "name": "Big Top Locos",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Big Top Locos is a Latino Sure\u00f1o-affiliated street gang based in the Los Angeles area, part of the network of 'Locos' cliques operating under Mexican Mafia authority since the 1980s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/bigtoplocos/",
+      "title": "Big Top Locos \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1960,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

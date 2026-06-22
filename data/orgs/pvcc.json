@@ -1,0 +1,22 @@
+{
+  "id": "org:pvcc",
+  "name": "Parc Village Compton Crips",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "Wilmington Arms Apartments Park Village Compton Crips are a predominately African-American and Samoan street gang located on the westside of Compton.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/neighborhood-crips/pvcc/",
+      "title": "Parc Village Compton Crips \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1973,
+  "founded_year_precision": "decade",
+  "aliases": null,
+  "status": "active"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "org:ovs",
+  "name": "OVS",
+  "type": "street_gang",
+  "lane": "organized-crime",
+  "metro": "Ontario",
+  "description": "Ontario Varrio Sur (OVS) is a Chicano street gang from Ontario, California with approximately 450 members as of 2010. Contains two main cliques: Jr Black Angels and Black Angels. Has deep-rooted ties to the Mexican Mafia with over a dozen active La Eme members. Their primary activity according to Ontario PD is murder. OVS member Reuben 'Tupi' Hernandez rose to become La Eme godfather, challenging Benjamin 'Topo' Peters for control. In 2010, a joint federal-state RICO operation indicted 52 OVS members. San Bernardino County's largest gang case ended in 2015 with 485 years of combined prison sentences. Territory spans San Bernardino, Orange, Riverside, and Los Angeles counties.",
+  "founded_year": 1950,
+  "aliases": [
+    "OVS",
+    "Ontario Varrio Sur",
+    "Onterio Varrio Sunkist",
+    "Black Angels"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/OVS_%28gang%29",
+      "title": "OVS %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/OVS_(gang)",
+      "title": "OVS (gang) - Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/archive/usao/cac/Pressroom/pr2010/073.html",
+      "title": "DOJ - OVS RICO Indictment"
+    }
+  ],
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

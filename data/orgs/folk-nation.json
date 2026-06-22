@@ -1,0 +1,40 @@
+{
+  "id": "org:folk-nation",
+  "name": "Folk Nation",
+  "aliases": [
+    "Folks",
+    "Folk",
+    "Folks Nation"
+  ],
+  "type": "alliance",
+  "lane": "chicago-folk-people",
+  "metro": "Chicago",
+  "founded_year": 1978,
+  "founded_year_precision": "exact",
+  "description": "The Folk Nation is a multiethnic alliance of street gangs formed on November 11, 1978 at Stateville Correctional Center in Illinois by Larry Hoover of the Gangster Disciples. Hoover persuaded leaders of large black, white, and Latino Chicago gangs to join. Member gangs include Gangster Disciples, Black Disciples, Spanish Cobras, Latin Eagles, Maniac Latin Disciples, Simon City Royals, Spanish Gangster Disciples, La Raza Nation, and Imperial Gangsters. They identify with the six-pointed Star of David, the number 6, pitchforks, and right-side symbolism. Their primary rival is the People Nation. They maintain an alliance with the Crips in prison known as '8-ball.'",
+  "nation_affiliation": "org:folk-nation",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Folk_Nation",
+      "title": "Folk Nation \u2014 Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/folk-nation/",
+      "title": "Folk Nation \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edny/pr/11-members-and-associates-folk-nation-gangster-disciples-charged-multiple-shootings-and",
+      "title": "Folk Nation GDs Charged \u2014 DOJ"
+    }
+  ],
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "symbols": [
+    "six-pointed star",
+    "pitchfork",
+    "number 6"
+  ],
+  "status": "active"
+}

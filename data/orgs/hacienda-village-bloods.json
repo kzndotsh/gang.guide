@@ -1,0 +1,28 @@
+{
+  "id": "org:hacienda-village-bloods",
+  "name": "Hacienda Village Bloods",
+  "lane": "california-bloods-la-south-bay",
+  "metro": "Los Angeles",
+  "description": "The Hacienda Village Bloods (HVB) are a African-American street gang located on the East Side in Watts neighborhood of South Central, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/hacienda-village-bloods/",
+      "title": "Hacienda Village Bloods \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/bell/hacienda/",
+      "title": "Hacienda Village Bloods \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1969,
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "HVB"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

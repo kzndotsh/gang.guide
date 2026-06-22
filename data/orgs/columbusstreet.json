@@ -1,0 +1,23 @@
+{
+  "id": "org:columbusstreet",
+  "name": "Columbus Street",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "founded_year": 1995,
+  "description": "Columbus Street (CST) is a predominately Hispanic street gang located in the North Hills community of the San Fernando Valley in the City of Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Columbus_Street",
+      "title": "Columbus Street \u2014 Wikipedia"
+    }
+  ],
+  "aliases": [
+    "CST"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

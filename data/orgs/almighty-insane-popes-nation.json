@@ -1,0 +1,49 @@
+{
+  "id": "org:almighty-insane-popes-nation",
+  "name": "Almighty Insane Popes Nation",
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": "The North Side Almighty Insane Popes are a mostly European-American Folk Nation street gang formed in the late 1950s in Chicago. Originally a Greek greaser gang at Lawrence and Rockwell that had problems with Latin Kings. Rather than joining the Simon City Royals, they formed their own gang. Name originally stood for 'Protecting Our People Eliminating Scum.' Peak membership of 300-500 in mid-1960s to early 1970s. Main membership was Polish (Albany Park), German, Irish, and Scandinavian (Portage Park, Jefferson Park). In the 1980s, some members were children of Chicago firefighters and police officers. Allied with Simon City Royals and Imperial Gangsters.",
+  "founded_year": 1958,
+  "aliases": [
+    "Insane Popes",
+    "North Side Insane Popes",
+    "Popes",
+    "South Side Almighty Insane Popes",
+    "North Side Popes",
+    "AIPN",
+    "Insane Popes (North side)"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
+      "title": "Popes %28gang%29 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chicago_Gaylords",
+      "title": "Chicago Gaylords \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Simon_City_Royals",
+      "title": "Simon City Royals \u2014 Wikipedia"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-insane-north-side-popes/",
+      "title": "Insane Popes (North side) - Chicago Gang History"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Popes_(gang)",
+      "title": "Popes (gang) - Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue",
+    "white",
+    "black",
+    "light blue"
+  ],
+  "founded_year_precision": "circa",
+  "status": "active",
+  "nation_affiliation": "org:folk-nation"
+}

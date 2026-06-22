@@ -1,0 +1,250 @@
+{
+  "lanes": [
+    {
+      "id": "prison",
+      "label": "Prison gangs",
+      "group": "Prison",
+      "order": 10
+    },
+    {
+      "id": "white-supremacist",
+      "label": "White supremacist",
+      "group": "White Supremacist",
+      "order": 12
+    },
+    {
+      "id": "motorcycle-clubs",
+      "label": "Motorcycle clubs",
+      "group": "Motorcycle",
+      "order": 14
+    },
+    {
+      "id": "organized-crime",
+      "label": "Organized crime",
+      "group": "Organized Crime",
+      "order": 16
+    },
+    {
+      "id": "chicago-folk-people",
+      "label": "Chicago · Folk / People",
+      "group": "Chicago",
+      "order": 20
+    },
+    {
+      "id": "chicago-folk",
+      "label": "Chicago · Folk",
+      "group": "Chicago",
+      "order": 22
+    },
+    {
+      "id": "chicago-people",
+      "label": "Chicago · People",
+      "group": "Chicago",
+      "order": 24
+    },
+    {
+      "id": "chicago-independent",
+      "label": "Chicago · Independent",
+      "group": "Chicago",
+      "order": 26
+    },
+    {
+      "id": "blood-nation",
+      "label": "Bloods (alliance)",
+      "group": "Bloods",
+      "order": 35
+    },
+    {
+      "id": "california-bloods",
+      "label": "California · Bloods sets",
+      "group": "Bloods",
+      "order": 37
+    },
+    {
+      "id": "california-bloods-compton",
+      "label": "California · Bloods · Compton",
+      "group": "Bloods",
+      "order": 38
+    },
+    {
+      "id": "california-bloods-carson",
+      "label": "California · Bloods · Carson",
+      "group": "Bloods",
+      "order": 39
+    },
+    {
+      "id": "california-bloods-la-south-bay",
+      "label": "California · Bloods · LA / Inglewood",
+      "group": "Bloods",
+      "order": 40
+    },
+    {
+      "id": "california-bloods-other",
+      "label": "California · Bloods · other",
+      "group": "Bloods",
+      "order": 41
+    },
+    {
+      "id": "crip-nation",
+      "label": "Crips (alliance)",
+      "group": "Crips",
+      "order": 45
+    },
+    {
+      "id": "california-crips",
+      "label": "California · Crips sets",
+      "group": "Crips",
+      "order": 46
+    },
+    {
+      "id": "california-crips-hoover",
+      "label": "California · Crips · Hoover",
+      "group": "Crips",
+      "order": 47
+    },
+    {
+      "id": "california-crips-neighborhood",
+      "label": "California · Crips · Neighborhood",
+      "group": "Crips",
+      "order": 48
+    },
+    {
+      "id": "california-crips-east-coast",
+      "label": "California · Crips · East Coast",
+      "group": "Crips",
+      "order": 49
+    },
+    {
+      "id": "california-crips-gangster",
+      "label": "California · Crips · Gangster",
+      "group": "Crips",
+      "order": 50
+    },
+    {
+      "id": "california-crips-rollin",
+      "label": "California · Crips · Rollin sets",
+      "group": "Crips",
+      "order": 51
+    },
+    {
+      "id": "california-crips-hustler",
+      "label": "California · Crips · Hustler",
+      "group": "Crips",
+      "order": 52
+    },
+    {
+      "id": "california-crips-south-la",
+      "label": "California · Crips · Watts / South LA",
+      "group": "Crips",
+      "order": 53
+    },
+    {
+      "id": "california-crips-long-beach",
+      "label": "California · Crips · Long Beach",
+      "group": "Crips",
+      "order": 54
+    },
+    {
+      "id": "california-crips-inglewood",
+      "label": "California · Crips · Inglewood",
+      "group": "Crips",
+      "order": 55
+    },
+    {
+      "id": "california-crips-other",
+      "label": "California · Crips · misc sets",
+      "group": "Crips",
+      "order": 56
+    },
+    {
+      "id": "california-latino-east-la",
+      "label": "California · Latino · East LA",
+      "group": "Latino",
+      "order": 60
+    },
+    {
+      "id": "california-latino-south-la",
+      "label": "California · Latino · South LA",
+      "group": "Latino",
+      "order": 62
+    },
+    {
+      "id": "california-latino-sfv",
+      "label": "California · Latino · SF Valley",
+      "group": "Latino",
+      "order": 64
+    },
+    {
+      "id": "california-latino-sgv",
+      "label": "California · Latino · SG Valley",
+      "group": "Latino",
+      "order": 65
+    },
+    {
+      "id": "california-latino-westside",
+      "label": "California · Latino · Westside",
+      "group": "Latino",
+      "order": 66
+    },
+    {
+      "id": "california-latino-harbor",
+      "label": "California · Latino · Harbor / LB",
+      "group": "Latino",
+      "order": 67
+    },
+    {
+      "id": "california-latino-inland",
+      "label": "California · Latino · Inland / SD",
+      "group": "Latino",
+      "order": 68
+    },
+    {
+      "id": "california-latino-other",
+      "label": "California · Latino · other",
+      "group": "Latino",
+      "order": 69
+    },
+    {
+      "id": "asian-gangs",
+      "label": "Asian gangs",
+      "group": "Asian",
+      "order": 75
+    },
+    {
+      "id": "new-york",
+      "label": "New York",
+      "group": "New York",
+      "order": 80
+    },
+    {
+      "id": "midwest",
+      "label": "Midwest",
+      "group": "Regional",
+      "order": 82
+    },
+    {
+      "id": "southeast-southwest",
+      "label": "South / Southwest",
+      "group": "Regional",
+      "order": 84
+    },
+    {
+      "id": "historical-east",
+      "label": "Historical · East Coast",
+      "group": "New York",
+      "order": 86
+    },
+    {
+      "id": "other-national",
+      "label": "Other / National",
+      "group": "Regional",
+      "order": 90
+    },
+    {
+      "id": "unplaced",
+      "label": "Unplaced",
+      "group": "Regional",
+      "order": 100
+    }
+  ]
+}

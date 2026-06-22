@@ -1,0 +1,21 @@
+{
+  "id": "org:clanton-14th-street-4th-hood",
+  "name": "Clanton 14th Street (4th Hood)",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Approximately in 1975 Clanton started a fifth neighborhood in the North Hollywood area of Los Angeles just west of Burbank. Clanton was one of the first non-Valley neighborhoods to start a neighborhood in the Valley and two brothers from the 2nd Hood, Ernie \"Big Cuate\" and Ricky were the founders of the North Hollywood varrio.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/clanton14th_4th/",
+      "title": "Clanton 14th Street  4th Hood \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1921,
+  "founded_year_precision": "circa",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

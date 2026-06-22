@@ -1,0 +1,21 @@
+{
+  "id": "org:yellow-henry-gang",
+  "name": "Yellow Henry Gang",
+  "type": "street_gang",
+  "lane": "historical-east",
+  "metro": "United States",
+  "description": "The Yellow Henry Gang was a 19th-century New Orleans street gang active during the early 1870s and late 1880s. Originally led by Turpo, it was taken over by \"Yellow\" Henry Stewart after Turpo's arrest in 1877. The gang engaged in burglaries, armed robberies, and extortions, attracting many prominent criminals. It disbanded after leader Henry died in prison in 1886 and briefly reformed in 1888 before final dissolution in 1892.",
+  "aliases": [
+    "Yellow Henrys"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Yellow_Henry_Gang",
+      "title": "Yellow Henry Gang \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1870,
+  "founded_year_precision": "decade",
+  "colors": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "org:harbor-city-crips",
+  "name": "Harbor City Crips",
+  "aliases": [
+    "HCC",
+    "City Crips (HCC)"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "Harbor City Crips (HCC) are primarily, but not exclusively, an African-American street gang located on the West Side of Harbor City, California. Their neighborhood stretches from Vermont Ave to Western Ave, between Lomita Blvd and Anaheim Street.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Harbor_City_Crips",
+      "title": "Harbor City Crips \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/harborcity/",
+      "title": "Harborcity \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/harbor-city-crips/",
+      "title": "Harbor City Crips \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "org:east-dago-mob-crips",
+  "name": "East Dago Mob Crips",
+  "type": "street_gang",
+  "lane": "california-crips-other",
+  "founded_year": 1996,
+  "founded_year_precision": "range",
+  "description": "The East Dago Mob Crips (EDMC) are a violent street gang residing on the East Side in the City Heights neighborhood in San Diego, California. They were originally known as \u201cPlayboy International\u201d (PBI), but changed it to East Dago Mob Crips in 1985. The main cliques of the East Dago Mob Crips are 46th Street and 46th Street (Lil Neighbors).",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/east-dago-mob-crips/",
+      "title": "East Dago Mob Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "San Diego",
+  "aliases": [
+    "EDMC",
+    "PBI"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "org:play-boy-style-crips-93-95",
+  "name": "93/95 Play Boy Style Crips",
+  "lane": "california-crips",
+  "metro": "Los Angeles",
+  "description": "Playboy Style Crips are a predominately Black American street gang located on the westside of South Los Angeles in an unincorporated Athens. The first click of this faction of the PBSCs was 95th Street and for a short time they had the 93rd Street representatives.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/athens/pbsc/",
+      "title": "Play Boy Style Crips, 93, 95 \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": "org:crips",
+  "status": "active",
+  "aliases": []
+}

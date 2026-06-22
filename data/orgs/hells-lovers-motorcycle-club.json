@@ -1,0 +1,28 @@
+{
+  "id": "org:hells-lovers-motorcycle-club",
+  "name": "Hell's Lovers Motorcycle Club",
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "metro": "Chicago",
+  "description": "Multi-ethnic outlaw motorcycle club founded in Chicago in 1967 by Frank 'Claim-Jumper' Rios. Active in various U.S. states with over 1,500 members. Associated with drug trafficking and motorcycle theft, and has been involved in violent incidents with rival clubs.",
+  "founded_year": 1967,
+  "aliases": [
+    "812",
+    "HLMC"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Hell%27s_Lovers_Motorcycle_Club",
+      "title": "Hell's Lovers Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Wheels_of_Soul_Motorcycle_Club",
+      "title": "Wheels of Soul Motorcycle Club \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

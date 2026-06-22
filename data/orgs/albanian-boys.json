@@ -1,0 +1,32 @@
+{
+  "id": "org:albanian-boys",
+  "name": "Albanian Boys",
+  "aliases": [
+    "Albanian Bad Boys"
+  ],
+  "type": "street_gang",
+  "lane": "new-york",
+  "founded_year": 1991,
+  "founded_year_precision": "exact",
+  "description": "The Albanian Boys were a gang of Albanians operating in the Bronx, New York, founded in 1991. Initially a youth ethnic street gang, they evolved into subcontractors for organized crime, engaging in extortion, intimidation, protection money, and debt collection. The gang was active through the 1990s.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/albanian/boys/",
+      "title": "Albanian Boys \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Albanian_Boys",
+      "title": "Albanian Boys \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Tanglewood_Boys",
+      "title": "Tanglewood Boys \u2014 Wikipedia"
+    }
+  ],
+  "metro": "New York",
+  "colors": [
+    "black",
+    "red"
+  ],
+  "status": "active"
+}

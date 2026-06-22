@@ -1,0 +1,30 @@
+{
+  "id": "org:original-front-hood-compton-crips",
+  "name": "Original Front Hood Compton Crips",
+  "aliases": [
+    "OFHCC",
+    "FHCC",
+    "Front Hood"
+  ],
+  "lane": "california-crips-south-la",
+  "founded_year": 1970,
+  "founded_year_precision": "range",
+  "description": "Original Front Hood Compton Crips are a predominately Black gang located in the city of Compton founded in the early 1970s. This set started off as the Original Front Brothers.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/compton/original-front-hood-compton-crip/",
+      "title": "Original Front Hood Compton Crip \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/front-hood-compton-crips/",
+      "title": "Front Hood Compton Crips \u2014 UnitedGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "type": "street_gang",
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

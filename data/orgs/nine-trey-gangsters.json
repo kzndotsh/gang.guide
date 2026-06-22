@@ -1,0 +1,43 @@
+{
+  "id": "org:nine-trey-gangsters",
+  "name": "Nine Trey Gangsters",
+  "aliases": [
+    "NTG",
+    "Nine Trey Gangsta Bloods",
+    "Bentleys",
+    "Billionaires"
+  ],
+  "type": "street_gang",
+  "lane": "new-york",
+  "metro": "New York",
+  "founded_year": 1993,
+  "founded_year_precision": "exact",
+  "description": "The Nine Trey Gangster Bloods (NTG) are a set of the United Blood Nation formed in 1993 at Rikers Island, operating on the East Coast. They initially sold crack, heroin, and PCP in Harlem from abandoned buildings on Lenox Avenue. Gained notoriety through the 2018 Tekashi 6ix9ine RICO case where the rapper turned state's evidence. They maintain an alliance with the Lucchese crime family for smuggling drugs into East Jersey State Prison. Multiple federal operations (Operation Nine Connect, 83-member indictment) have targeted the gang.",
+  "nation_affiliation": "org:united-blood-nation",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Nine_Trey_Gangsters",
+      "title": "Nine Trey Gangsters \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-sdny/pr/leader-nine-trey-gangsta-bloods-sentenced-17-years-prison",
+      "title": "Nine Trey Leader Sentenced \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lucchese_crime_family",
+      "title": "Lucchese crime family \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Lucchese_crime_family_New_Jersey_faction",
+      "title": "Lucchese crime family New Jersey faction \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/United_Blood_Nation",
+      "title": "United Blood Nation \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "status": "active"
+}

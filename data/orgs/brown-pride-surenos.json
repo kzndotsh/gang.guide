@@ -1,0 +1,21 @@
+{
+  "id": "org:brown-pride-surenos",
+  "name": "Brown Pride Surenos",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "Sure\u00f1o-affiliated Latino street gang based in the San Fernando Valley, active since at least the late 1990s.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/brownpridesurenos/",
+      "title": "Brown Pride Surenos \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1968,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

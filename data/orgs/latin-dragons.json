@@ -1,0 +1,23 @@
+{
+  "id": "org:latin-dragons",
+  "name": "Latin Dragons",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "metro": "Chicago",
+  "description": ">Other gangs nearby South Chicago Latin Counts Latin Kings Conservative Vice Lords Black P Stones Gangster Disciples Latin Dragons Search for:",
+  "founded_year": 1979,
+  "founded_year_precision": "circa",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "nation_affiliation": "org:folk-nation",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://chicagoganghistory.com/gang/latin-dragons/",
+      "title": "Latin Dragons - Chicago Gang History"
+    }
+  ]
+}

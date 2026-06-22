@@ -1,0 +1,29 @@
+{
+  "id": "org:neighborhood-swan-bloods-los-angeles",
+  "name": "Neighborhood Swan Bloods",
+  "aliases": [
+    "FSB",
+    "NHFSB"
+  ],
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "metro": "Los Angeles",
+  "description": "Eastside Neighborhood Family Swan Bloods are a predominately African-American street gang on the eastside of South Los Angeles. Located south of Manchester to 92nd Street (s) between Avalon (w) and Central Avenues. The northwest section of this area is controlled by the 88 Avalon Garden Crips.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/bloods/",
+      "title": "Neighborhood Swan Bloods \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/losangeles/fsb/",
+      "title": "Neighborhood Swan Bloods \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1969,
+  "colors": [
+    "red"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

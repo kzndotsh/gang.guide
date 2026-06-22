@@ -1,0 +1,22 @@
+{
+  "id": "org:18thstreet-picounion",
+  "name": "18th Street (Pico-Union)",
+  "lane": "california-latino-westside",
+  "metro": "Los Angeles",
+  "description": "The Pico-Union clique of the 18th Street Gang operates near where the Santa Monica and Harbor freeways intersect around 18th Street and Union Avenue. The 18th Street Gang formed in the 1960s when youths excluded from Clanton 14 created their own organization, growing into one of the largest transnational gangs with 30,000-50,000 members across the US, Mexico, and Central America.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/18thstreet-picounion/",
+      "title": "18Thstreet Picounion \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": []
+}

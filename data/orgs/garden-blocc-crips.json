@@ -1,0 +1,32 @@
+{
+  "id": "org:garden-blocc-crips",
+  "name": "Garden Blocc Crips",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "description": "The Garden Blocc Crips (GBC) are primarily, but not exclusively, an African-American street gang located in the Meadowview, neighborhood of Sacramento, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/garden-blocc-crips/",
+      "title": "Garden Blocc Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips%E2%80%93Bloods_gang_war",
+      "title": "Crips%E2%80%93Bloods gang war \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Nutty_Blocc_Compton_Crips",
+      "title": "Nutty Blocc Compton Crips \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "GBC"
+  ],
+  "status": "active"
+}

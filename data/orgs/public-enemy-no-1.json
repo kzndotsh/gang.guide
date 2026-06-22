@@ -1,0 +1,30 @@
+{
+  "id": "org:public-enemy-no-1",
+  "name": "Public Enemy No 1",
+  "aliases": [
+    "737",
+    "PDS",
+    "PEN1",
+    "PENI Death Squad"
+  ],
+  "type": "street_gang",
+  "lane": "white-supremacist",
+  "founded_year": 1986,
+  "founded_year_precision": "exact",
+  "description": "Public Enemy No. 1 (PEN1) is a street gang with prison presence formed in Long Beach, California, in the 1980s. Based in Orange County, it engages in identity theft, credit card fraud, and methamphetamine trafficking. The gang has ties to the Aryan Brotherhood and Nazi Lowriders. As of 2004, it had around 200 members statewide, with an estimated 400-500 members currently.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/public_enemy_no_1_gang",
+      "title": "public enemy no 1 gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Public_Enemy_No._1_(gang)",
+      "title": "Public Enemy No. 1 - Wikipedia"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "white"
+  ],
+  "status": "active"
+}

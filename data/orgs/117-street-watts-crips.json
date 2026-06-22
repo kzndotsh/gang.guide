@@ -1,0 +1,24 @@
+{
+  "id": "org:117-street-watts-crips",
+  "name": "117 Street Watts Crips",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "Street Watts, are primarily an active African-American street gang located on the East Side in the Willowbrook/Watts, section of Los Angeles, California.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/117-street-watts-crips/",
+      "title": "117 Street Watts Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1973,
+  "aliases": [
+    "7th Street Watts"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

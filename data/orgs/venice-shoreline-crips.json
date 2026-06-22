@@ -1,0 +1,38 @@
+{
+  "id": "org:venice-shoreline-crips",
+  "name": "Venice Shoreline Crips",
+  "aliases": [
+    "VSLC",
+    "Shoreline Crips",
+    "Venice Shore Line Crips"
+  ],
+  "type": "street_gang",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "description": "The Venice Shoreline Crips (VSLC) are a Crip set based in Venice's Oakwood neighborhood \u2014 originally a 'servant's zone' and one of the few places near California's coastline where blacks could own property. Founded in the late 1960s-early 1970s alongside the original Crip gangs. Warred with Culver City 13 and Venice 13 over the drug trade in the 1990s. In 1980, a member murdered Senator Abraham Ribicoff's niece.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/venice/shoreline/crips/",
+      "title": "Venice Shore Line Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/venice-shoreline-crips/",
+      "title": "Venice Shoreline Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/vslc/",
+      "title": "Venice Shore Line Crips \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Venice_Shoreline_Crips",
+      "title": "Venice Shoreline Crips - Wikipedia"
+    }
+  ],
+  "founded_year": 1970,
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

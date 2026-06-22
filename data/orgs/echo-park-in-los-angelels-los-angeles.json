@@ -1,0 +1,23 @@
+{
+  "id": "org:echo-park-in-los-angelels-los-angeles",
+  "name": "Echo Park Locos",
+  "aliases": [
+    "ExP"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "founded_year": 2000,
+  "founded_year_precision": "range",
+  "description": "Varrio Echo Park is a predominately Latino street gang located in the Echo Park community of Los Angeles. Since the 1990s, this community has went through a radical transformation as developers been constructing new luxury buildings, building owners have been renovating existing properties and small businesses have expanded into the area.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Echo_Park_In_Los_Angelels",
+      "title": "Echo Park In Los Angelels \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "status": "active"
+}

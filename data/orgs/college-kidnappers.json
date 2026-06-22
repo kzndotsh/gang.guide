@@ -1,0 +1,19 @@
+{
+  "id": "org:college-kidnappers",
+  "name": "College Kidnappers",
+  "type": "street_gang",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
+  "description": "A Chicago-based group of University of Illinois alumni who kidnapped wealthy mobsters for ransom, active in the early 1930s. Led by Theodore 'Handsome Jack' Klutas, the group consisted of ten members. They targeted mobsters because they were unlikely to go to police and could pay ransoms.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/College_Kidnappers",
+      "title": "College Kidnappers \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1930,
+  "founded_year_precision": "circa",
+  "aliases": [],
+  "colors": []
+}

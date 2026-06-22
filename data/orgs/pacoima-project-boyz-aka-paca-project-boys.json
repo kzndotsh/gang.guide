@@ -1,0 +1,24 @@
+{
+  "id": "org:pacoima-project-boyz-aka-paca-project-boys",
+  "name": "Pacoima Project Boyz, aka Paca Project Boys",
+  "lane": "california-latino-sfv",
+  "metro": "Los Angeles",
+  "description": "Pacoima are a predominately Hispanic street gang based in the San Fernando Gardens housing projects in Pacoima which is in the City of Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/pjb/",
+      "title": "Pacoima Project Boyz, aka Paca Project Boys \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "Paca Project Boys",
+    "PJB"
+  ],
+  "status": "active"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "org:111-neighbor-hood-crips-in-south-los-angeles",
+  "name": "The 111 Neighbor Hood Crips",
+  "type": "street_gang",
+  "lane": "california-crips-neighborhood",
+  "founded_year": 1973,
+  "description": "The 111 Neighbor Hood Crips are a predominately African-American street gang located in South Los Angeles west of Western Avenue off 111th Street. They were founded around 1973 or 1974 and are among one of the oldest Crip gangs on the Westside of Los Angeles.",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/111-neighborhood-crips/",
+      "title": "111 Neighborhood Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/athens/111nhc/",
+      "title": "The 111 Neighbor Hood Crips \u2014 StreetGangs"
+    }
+  ],
+  "metro": "Los Angeles",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "111TNHC",
+    "Hood Crips"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

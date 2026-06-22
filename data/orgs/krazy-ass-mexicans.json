@@ -1,0 +1,21 @@
+{
+  "id": "org:krazy-ass-mexicans",
+  "name": "Krazy Ass Mexicans",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "The Krazy Ass Mexicans (KAM) are a Latino street gang based in East Los Angeles that has operated for multiple generations. In 2002, a gang injunction was filed against KAM for terrorizing the East Los Angeles community.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/kam/",
+      "title": "Krazy Ass Mexicans \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1965,
+  "founded_year_precision": "decade",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

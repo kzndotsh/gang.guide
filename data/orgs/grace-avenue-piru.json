@@ -1,0 +1,32 @@
+{
+  "id": "org:grace-avenue-piru",
+  "name": "Grace Avenue Piru",
+  "type": "street_gang",
+  "lane": "california-bloods-carson",
+  "metro": "Los Angeles",
+  "description": "The Grace Avenue Piru is a Blood-affiliated gang based in Carson, California, with African-American and Samoan membership, part of the Piru alliance in the Carson area which has a significant Polynesian presence.",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Grace_Avenue_Piru",
+      "title": "Grace Avenue Piru \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/bloods/carson/grace-avenue-piru/",
+      "title": "Grace Avenue Piru \u2014 StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/grace-avenue-piru/",
+      "title": "Grace Avenue Piru \u2014 UnitedGangs"
+    }
+  ],
+  "founded_year": 1975,
+  "colors": [
+    "red"
+  ],
+  "aliases": [
+    "GAP"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

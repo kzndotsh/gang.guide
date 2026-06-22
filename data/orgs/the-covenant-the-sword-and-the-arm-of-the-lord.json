@@ -1,0 +1,21 @@
+{
+  "id": "org:the-covenant-the-sword-and-the-arm-of-the-lord",
+  "name": "The Covenant, the Sword, and the Arm of the Lord",
+  "type": "street_gang",
+  "lane": "other-national",
+  "metro": "United States",
+  "description": "Far-right survivalist anti-government militia advocating Christian Identity, active in the United States during the 1970s and early 1980s. Developed from a Baptist congregation founded in 1971 in Pontiac, Missouri, and later operated a compound in northern Arkansas. Dissolved after a 1985 siege and arrest of its leaders.",
+  "founded_year": 1971,
+  "aliases": [
+    "CSA"
+  ],
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Covenant%2C_the_Sword%2C_and_the_Arm_of_the_Lord",
+      "title": "The Covenant%2C the Sword%2C and the Arm of the Lord \u2014 Wikipedia"
+    }
+  ],
+  "founded_year_precision": "estimate",
+  "colors": []
+}

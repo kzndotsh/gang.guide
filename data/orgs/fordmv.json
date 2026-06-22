@@ -1,0 +1,21 @@
+{
+  "id": "org:fordmv",
+  "name": "Ford MaraVilla",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "founded_year": 1977,
+  "description": "Ford MaraVilla is a predominately Hispanic street gang in the an unincorporated section of Los Angeles County called East Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ford_MaraVilla",
+      "title": "Ford MaraVilla \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "aliases": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "org:outlaw-gangster-disciples",
+  "name": "Outlaw Gangster Disciples",
+  "aliases": [
+    "OutLaw Gangster Disciple Nation"
+  ],
+  "type": "street_gang",
+  "lane": "chicago-folk",
+  "founded_year": 1990,
+  "founded_year_precision": "exact",
+  "description": "A subset of the Gangster Disciples street gang, formed in the early 1990s in Chicago's Cabrini-Green housing project by Charles 'Big Chuck' Dorsey. It engages in drug trafficking, robbery, extortion, and murder, with an estimated 25,000\u201350,000 members as of 2009. The gang has expanded to Chicago's South Side and has been documented in the U.S. military.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/outlaw/gangster/disciples/",
+      "title": "Outlaw Gangster Disciples \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/OutLaw_Gangster_Disciples",
+      "title": "OutLaw Gangster Disciples \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Chicago",
+  "colors": [
+    "black",
+    "blue"
+  ],
+  "status": "active",
+  "nation_affiliation": "org:folk-nation"
+}

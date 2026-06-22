@@ -1,0 +1,19 @@
+{
+  "id": "org:cowboy-mafia",
+  "name": "Cowboy Mafia",
+  "type": "organized_crime",
+  "lane": "organized-crime",
+  "metro": "United States",
+  "description": "The Cowboy Mafia was a nickname for a group of marijuana smugglers operating in the United States during the 1970s. Based in Texas, they imported over 106 tons of marijuana from Colombia using shrimp boats. The group was arrested in 1978 and 26 members were convicted in 1979. Rex Cauble, considered the headman, was sentenced to 95 years.",
+  "status": "inactive",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Cowboy_Mafia",
+      "title": "Cowboy Mafia \u2014 Wikipedia"
+    }
+  ],
+  "founded_year": 1976,
+  "founded_year_precision": "circa",
+  "aliases": [],
+  "colors": []
+}

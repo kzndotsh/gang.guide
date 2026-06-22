@@ -1,0 +1,32 @@
+{
+  "id": "org:cossacks-motorcycle-club",
+  "name": "Cossacks Motorcycle Club",
+  "aliases": [
+    "Cossacks MC"
+  ],
+  "type": "motorcycle_club",
+  "lane": "motorcycle-clubs",
+  "founded_year": 1969,
+  "founded_year_precision": "exact",
+  "description": "American outlaw motorcycle club founded in Tyler, Texas in 1969 by six bikers. One of the largest outlaw biker groups in Texas, known for conflicts with the Bandidos Motorcycle Club, including the 2015 Waco shootout. Has chapters in Texas, Ohio, Indiana, and Virginia.",
+  "metro": "United States",
+  "colors": [
+    "black",
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Cossacks_Motorcycle_Club",
+      "title": "Cossacks Motorcycle Club \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents",
+      "title": "Bandidos MC criminal allegations and incidents \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents_in_the_United_States",
+      "title": "Bandidos MC criminal allegations and incidents in the United States \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

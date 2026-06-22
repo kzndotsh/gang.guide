@@ -1,0 +1,21 @@
+{
+  "id": "org:the-lott-2nd-hood",
+  "name": "The Lott (2nd Hood)",
+  "lane": "california-latino-east-la",
+  "metro": "Los Angeles",
+  "description": "The Lott is a predominately Hispanic street gang that started their initial varrio in East Los Angeles during the late 1970s stoner era. A second varrio started on the east side of East LA bordering the City of Montebello.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/lott_2/",
+      "title": "The Lott (2nd Hood) \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1978,
+  "founded_year_precision": "circa",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

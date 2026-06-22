@@ -1,0 +1,21 @@
+{
+  "id": "org:clanton-14th-street-c14-3rd-hood-hollywood-ca",
+  "name": "Clanton 14th Street (3rd Hood)",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "The Hollywood Westside Clanton 14 Street is their 3rd of a total of five Clanton barrios in Los Angeles. The original Eastside Clanton neighborhood was founded in the early 1920s and by the 1970s, they formed five solid neighborhoods throughout Los Angeles.",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/hollywood/clanton14th_3rd/",
+      "title": "Clanton 14th Street (C14)  3rd Hood, Hollywood, CA \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1921,
+  "founded_year_precision": "circa",
+  "colors": [
+    "blue"
+  ],
+  "status": "active",
+  "aliases": []
+}

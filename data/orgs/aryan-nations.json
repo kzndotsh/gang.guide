@@ -1,0 +1,37 @@
+{
+  "id": "org:aryan-nations",
+  "name": "Aryan Nations",
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 1970,
+  "founded_year_precision": "exact",
+  "description": "Aryan Nations is a North American neo-Nazi organization founded in the 1970s by Richard Girnt Butler, originally based in Hayden Lake, Idaho. It adheres to Christian Identity doctrine, a white supremacist interpretation of Christianity. The group was classified as a terrorist threat by the FBI in 2001 and described as the first nationwide terrorist network in the US and Canada.",
+  "metro": "United States",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Nations",
+      "title": "Aryan Nations \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
+      "title": "Aryan Brotherhood \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
+      "title": "Hermandad Aria \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Big_Circle_Gang",
+      "title": "Big Circle Gang \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Brother_Speed_Motorcycle_Club",
+      "title": "Brother Speed Motorcycle Club \u2014 Wikipedia"
+    }
+  ],
+  "colors": [
+    "white"
+  ],
+  "status": "active",
+  "aliases": []
+}

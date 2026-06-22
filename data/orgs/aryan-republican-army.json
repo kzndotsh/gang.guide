@@ -1,0 +1,24 @@
+{
+  "id": "org:aryan-republican-army",
+  "name": "Aryan Republican Army",
+  "aliases": [
+    "ARA",
+    "Midwest Bank bandits"
+  ],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 1992,
+  "founded_year_precision": "exact",
+  "description": "White nationalist terrorist gang that robbed 22 banks in the Midwest from 1994 to 1996. Founded in 1992 by Donna Langan and Richard Lee Guthrie Jr., the group stockpiled weapons for a race war and allegedly conspired with Timothy McVeigh. Members were arrested in 1996 after informants cooperated with the FBI.",
+  "metro": "Cincinnati",
+  "colors": [
+    "white"
+  ],
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Republican_Army",
+      "title": "Aryan Republican Army \u2014 Wikipedia"
+    }
+  ],
+  "status": "active"
+}

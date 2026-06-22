@@ -1,0 +1,29 @@
+{
+  "id": "org:boulevard-mafia-crips",
+  "name": "Blvd Mafia Crips",
+  "lane": "california-crips-long-beach",
+  "metro": "Los Angeles",
+  "description": "The Boulevard Mafia Crips (BMC) are an African-American street gang located in North Long Beach, California, originating in the early 1980s during the crack epidemic era. They are involved in narcotics distribution and feud with rival gangs in surrounding neighborhoods.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/boulevard-mafia-crips/",
+      "title": "Blvd Mafia Crips \u2014 UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/longbeach/blvdmafiacrips/",
+      "title": "Blvdmafiacrips \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 2012,
+  "colors": [
+    "blue",
+    "yellow"
+  ],
+  "aliases": [
+    "BMC"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "org:5-9-brims-san-diego",
+  "name": "5-9 Brims",
+  "type": "street_gang",
+  "lane": "california-bloods-other",
+  "founded_year": 1970,
+  "founded_year_precision": "exact",
+  "description": "The 5-9 Brims (South Side Brims) are a Blood-affiliated gang based in the Lincoln Park area of San Diego, California. They are also known as the Central City Gangsters and are one of several Blood sets operating in the San Diego area.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/5_9_Brims_San_Diego",
+      "title": "5 9 Brims San Diego \u2014 Wikipedia"
+    }
+  ],
+  "metro": "San Diego",
+  "aliases": [
+    "South Side Brims",
+    "SSB",
+    "Central City Gangsters"
+  ],
+  "colors": [
+    "red"
+  ],
+  "nation_affiliation": "org:bloods",
+  "status": "active"
+}

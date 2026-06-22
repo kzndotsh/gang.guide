@@ -1,0 +1,76 @@
+{
+  "id": "org:ms-13",
+  "name": "MS-13",
+  "aliases": [
+    "Mara Salvatrucha",
+    "Mara Salvatrucha 13",
+    "MS",
+    "La Mara"
+  ],
+  "type": "street_gang",
+  "lane": "california-latino-other",
+  "metro": "Los Angeles",
+  "description": "International criminal gang originating in Los Angeles, California in the 1980s, initially formed to protect Salvadoran immigrants. It expanded through deportations to Central America and is active in the US, Canada, Mexico, and Central America. Engages in drug trafficking, murder, extortion, and other crimes. Designated as a terrorist organization by the US, Canada, and El Salvador.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ms_13",
+      "title": "Ms 13 \u2014 Wikipedia"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/ms-13/",
+      "title": "MS-13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/ms13/",
+      "title": "MS-13 \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/marasalvatrucha/",
+      "title": "Marasalvatrucha \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/hollywood/marasalvatrucha/",
+      "title": "Marasalvatrucha \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/marasalvatrucha/",
+      "title": "Marasalvatrucha \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.justice.gov/criminal-ojp/ms-13",
+      "title": "MS-13 \u2014 DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/MS-13",
+      "title": "MS-13 - Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edva/pr/ms-13-members-and-associates-indicted-racketeering-narcotics-and-multiple-murder",
+      "title": "DOJ - MS-13 RICO Indictment"
+    },
+    {
+      "url": "https://www.streetgangs.com/news/041498-injunction-targets/",
+      "title": "041498 Injunction Targets \u2014 StreetGangs"
+    },
+    {
+      "url": "https://www.courtlistener.com/docket/70476164/232/united-states-v-abrego-garcia/",
+      "title": "Courtlistener"
+    },
+    {
+      "url": "https://www.courtlistener.com/docket/70475970/232/united-states-v-abrego-garcia/",
+      "title": "Courtlistener"
+    }
+  ],
+  "founded_year": 1980,
+  "symbols": [
+    "devil horns hand sign",
+    "number 13",
+    "machete"
+  ],
+  "colors": [
+    "blue",
+    "white"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active"
+}

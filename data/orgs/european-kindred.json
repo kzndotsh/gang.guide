@@ -1,0 +1,23 @@
+{
+  "id": "org:european-kindred",
+  "name": "European Kindred",
+  "aliases": [
+    "EK"
+  ],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "founded_year": 1998,
+  "founded_year_precision": "exact",
+  "description": "The European Kindred (EK) is a white supremacist prison and street gang founded in 1998 in the Oregon prison system by David Patrick Kennedy. It operates primarily in Oregon, with an estimated 500 members. The gang is involved in drug trafficking, extortion, assaults, and dog fighting, and is known for its violent initiation and exit rituals.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/European_Kindred",
+      "title": "European Kindred \u2014 Wikipedia"
+    }
+  ],
+  "metro": "Portland",
+  "colors": [
+    "white"
+  ],
+  "status": "active"
+}

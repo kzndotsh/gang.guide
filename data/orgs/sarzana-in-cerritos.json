@@ -1,0 +1,19 @@
+{
+  "id": "org:sarzana-in-cerritos",
+  "name": "Sarzana in Cerritos",
+  "lane": "asian-gangs",
+  "metro": "Los Angeles",
+  "description": "Sarzana is a Filipino American street gang based in the Cerritos/Artesia area of Southern California, part of the Filipino gang scene that emerged alongside groups like Satanas (founded 1972).",
+  "type": "street_gang",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/asian/cerritos/sza/",
+      "title": "Sarzana in Cerritos \u2014 StreetGangs"
+    }
+  ],
+  "founded_year": 1972,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "aliases": [],
+  "colors": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": "org:white-tigers",
+  "name": "White Tigers",
+  "aliases": [
+    "Baak Fu"
+  ],
+  "type": "street_gang",
+  "lane": "asian-gangs",
+  "founded_year": 1980,
+  "founded_year_precision": "exact",
+  "description": "The White Tigers were a Chinese American street gang based in New York City's Flushing, Queens, and northern Chinatown. Formed in 1980 by Cantonese and Taiwanese immigrants and American-born Chinese, they engaged in extortion, kidnapping, drug trafficking, and murder. Active from the early 1980s to the mid-1990s, they fought turf wars with rival gangs like the Green Dragons.",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/white/tigers/",
+      "title": "White Tigers \u2014 StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Menace_of_Destruction",
+      "title": "Menace of Destruction \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/White_Tigers_%28gang%29",
+      "title": "White Tigers %28gang%29 \u2014 Wikipedia"
+    }
+  ],
+  "metro": "New York",
+  "status": "active",
+  "colors": []
+}

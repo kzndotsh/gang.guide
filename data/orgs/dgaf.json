@@ -1,0 +1,24 @@
+{
+  "id": "org:dgaf",
+  "name": "DGAF",
+  "lane": "california-crips-long-beach",
+  "metro": "Los Angeles",
+  "description": "Give A F%$@ (DGAF) was a mostly African-American crew based in the Long Beach area of Los Angeles County Visit Other Related posts: No related posts.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/carson/dgaf/",
+      "title": "DGAF \u2014 StreetGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "Don't Give A F"
+  ],
+  "founded_year": 1974,
+  "founded_year_precision": "decade",
+  "status": "active"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "org:comando-vermelho-united-states",
+  "name": "Comando Vermelho",
+  "lane": "prison",
+  "metro": "United States",
+  "founded_year": 1964,
+  "founded_year_precision": "range",
+  "description": "Comando Vermelho (Red Command) is one of the oldest and most influential criminal organizations in Brazil, founded in 1979 in the C\u00e2ndido Mendes prison in Rio de Janeiro. It is primarily involved in drug trafficking, arms dealing, and territorial control of favelas.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Comando_Vermelho",
+      "title": "Comando Vermelho \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Amigos_dos_Amigos",
+      "title": "Amigos dos Amigos \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_criminal_gangs_in_Brazil",
+      "title": "List of criminal gangs in Brazil \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bala_na_Cara",
+      "title": "Bala na Cara \u2014 Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bonde_do_Maluco",
+      "title": "Bonde do Maluco \u2014 Wikipedia"
+    }
+  ],
+  "type": "prison_gang",
+  "colors": [
+    "black"
+  ],
+  "status": "active",
+  "aliases": []
+}

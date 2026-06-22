@@ -1,0 +1,24 @@
+{
+  "id": "org:watts-franklin-square-crips",
+  "name": "Watts Franklin Square Crips",
+  "lane": "california-crips-south-la",
+  "metro": "Los Angeles",
+  "description": "Watts Franklin Square Crips (WFC) are a small gang on the east side of Watts Ca, located on 101st and 102nd st, between Success Ave and Compton Ave.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/watts-franklin-square-crips/",
+      "title": "Watts Franklin Square Crips \u2014 UnitedGangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": 1972,
+  "founded_year_precision": "decade",
+  "aliases": [
+    "WFC"
+  ],
+  "status": "active"
+}
