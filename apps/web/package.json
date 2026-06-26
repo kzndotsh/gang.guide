@@ -45,6 +45,7 @@
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
     "@tailwindcss/vite": "^4.3.1",
     "@tanstack/table-core": "^8.21.3",
+    "@types/node": "^26.0.1",
     "alchemy": "^0.93.12",
     "dotenv": "^17.4.2",
     "svelte": "^5.56.4",
