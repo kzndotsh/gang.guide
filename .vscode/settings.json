@@ -28,6 +28,7 @@
       "source.organizeImports.ruff": "explicit"
     }
   },
+  "ruff.configurationPreference": "filesystemFirst",
 
   // ── Tailwind CSS ────────────────────────────────────────────────────────────
   "tailwindCSS.classFunctions": ["cn", "cva", "clsx", "twMerge"],
