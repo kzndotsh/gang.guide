@@ -153,3 +153,15 @@ Requires `.env` in `apps/web/` with:
 - **Frontend**: SvelteKit 5, Konva.js, Tailwind CSS, shadcn-svelte
 - **Rendering**: Raw Konva Canvas API (imperative, 4-layer architecture)
 - **Deployment**: Cloudflare Workers via Alchemy (`adapter-cloudflare`, prerendered)
+
+## AI agent setup
+
+AI agent instructions are managed via [Ruler](https://github.com/intellectronica/ruler). The source of truth is `.ruler/AGENTS.md` — generated agent config files (`AGENTS.md`, `CLAUDE.md`, `.kiro/steering/`) are gitignored.
+
+After cloning, generate configs for your AI tools:
+
+```bash
+npx --prefix apps/web ruler apply
+```
+
+This creates the appropriate config files for Claude, Copilot, Cursor, and Kiro.
