@@ -218,11 +218,11 @@
 ---
 
 ## Discarded
-- JSONL for edges (easier append/grep than one big JSON array)
-- Consider dynamic lane assignment based on filter state
-- Evaluate pixi.js / WebGL
-- Virtual rendering — only draw nodes/edges in viewport
-- Web Worker for layout computation
+- JSONL for edges — JSON array works fine at 1,147 edges, JSONL adds complexity for no benefit at this scale
+- Dynamic lane assignment based on filter state — lanes are a fixed taxonomy, not user-configurable; URL params handle filtering
+- Evaluate pixi.js / WebGL — Konva handles 967 nodes smoothly, no perf issues to solve yet
+- Virtual rendering (only draw nodes in viewport) — all nodes render fine without virtualization at current scale
+- Web Worker for layout computation — layout is instant (<50ms), no jank to offload
 
 ---
 
