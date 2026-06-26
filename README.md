@@ -56,12 +56,17 @@ No database. No pipeline. Flat JSON files are the source of truth.
 ├── data/
 │   ├── orgs/                 ← One JSON per org (~980 files, source of truth)
 │   ├── edges.json            ← Edge list (alliances, rivalries, affiliations)
-│   └── config/lanes.json     ← Lane taxonomy + org anchors
+│   └── lanes.json            ← Lane taxonomy + org anchors
 ├── apps/
 │   ├── web/                  ← SvelteKit + Konva.js Canvas map viewer
+│   │   └── alchemy.run.ts   ← Deployment config (Cloudflare Workers)
 │   └── pipeline/             ← Python scraping, parsing, LLM extraction
 ├── .ruler/                   ← AI agent instructions (source of truth)
+├── .github/workflows/        ← CI + release workflows
+├── .vscode/                  ← Shared editor settings + recommended extensions
 ├── justfile                  ← Task runner commands
+├── lefthook.yml              ← Git hook config (commitlint)
+├── commitlint.config.js      ← Conventional commit enforcement
 └── PLAN.md                   ← Roadmap
 ```
 

@@ -18,7 +18,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 ├── data/
 │   ├── orgs/             ← One JSON file per org (source of truth, ~980 files)
 │   ├── edges.json        ← Edge list (alliances, rivalries, affiliations)
-│   ├── config/lanes.json ← Lane taxonomy + org anchors + metro defaults
+│   ├── lanes.json        ← Lane taxonomy + org anchors + metro defaults
 │   └── raw/              ← 682MB scraped source material (gitignored)
 └── apps/web/             ← SvelteKit interactive map viewer
     ├── alchemy.run.ts    ← Alchemy deployment config (Cloudflare Workers)
@@ -48,7 +48,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 - Org files: one per gang, schema includes `id`, `name`, `lane`, `metro`, `description`, `founded_year`, `founded_year_precision`, `colors`, `aliases`, `sources`, `nation_affiliation`, `status`
 - `founded_year_precision`: `exact`, `circa`, `decade`, `estimate` (estimate = unresearched placeholder)
 - `sources` array: objects with `url` and `title`
-- `lane` must match an ID in `data/config/lanes.json`
+- `lane` must match an ID in `data/lanes.json`
 - All descriptions must be factual, no comment-section scrape junk, no slurs, no HTML entities
 - Node IDs use format `org:slug-name`
 

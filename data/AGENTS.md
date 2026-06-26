@@ -7,7 +7,7 @@ All gang data lives here as flat JSON files. No database.
 ```
 ├── orgs/               ← 980 JSON files, one per organization
 ├── edges.json  ← Edge list (1,561 edges)
-├── config/lanes.json   ← Lane definitions + sort order
+├── lanes.json          ← Lane definitions + sort order
 └── raw/                ← Scraped source material (gitignored, 682MB)
     ├── streetgangs/    ← 1,436 pages from StreetGangs.com
     └── chicago_history/ ← 97 pages from Chicago Gang History
@@ -38,7 +38,7 @@ All gang data lives here as flat JSON files. No database.
 - Every org must be a real, documented organization
 - Descriptions must be factual — no scraped comments, no slurs, no HTML entities
 - Sources must have both `url` and `title`
-- `lane` must match an ID in `config/lanes.json`
+- `lane` must match an ID in `lanes.json`
 - `nation_affiliation` creates an automatic edge in build.py
 - After editing, run `python3 build.py` from repo root
 
