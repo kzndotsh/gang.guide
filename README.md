@@ -51,27 +51,15 @@ just dev
 
 ## How It Works
 
-```
-DATA                       PIPELINE                                      OUTPUT
-────                       ────────                                      ──────
-data/raw/ → scrape → clean → extract ×3 → adjudicate → merge → data/orgs/*.json
-             (HTML)   (text)  (sonnet 4.5)  (opus 4.6)   (2/3)   data/edges.json
-                               │                                        │
-                          3 temperatures                            build.py
-                          0.1 / 0.3 / 0.7                               │
-                                                                        ▼
-                                                              graph.json + details.json
-                                                                        │
-                                                              SvelteKit + Konva Canvas
-                                                                        │
-                                                              gang.guide (Cloudflare)
-```
-
 **Pipeline** (`just pipeline chicago_history`):
-1. **Extract** — sends cleaned page text to sonnet 4.5 at 3 temperatures, gets structured JSON with edges + evidence quotes
-2. **Adjudicate** — opus 4.6 validates evidence, resolves conflicts, filters hallucinations
-3. **Merge** — algorithmic consensus (2/3 agreement) or uses adjudicated result
-4. **Apply** — conservative upgrade: only improves weaker fields, adds new edges, lint gates the result
+1. **Scrape** — raw HTML from sources into `data/raw/`
+2. **Clean** — strip HTML to plaintext
+3. **Extract** — sonnet 4.5 at 3 temperatures (0.1, 0.3, 0.7) produces structured JSON with edges + evidence quotes
+4. **Adjudicate** — opus 4.6 validates evidence, resolves conflicts, filters hallucinations
+5. **Merge** — algorithmic consensus (2/3 agreement) or adjudicated result
+6. **Apply** — conservative upgrade to `data/orgs/*.json` + `data/edges.json`, lint gates the result
+7. **Build** — `build.py` compiles flat files into `graph.json` + `details.json`
+8. **Serve** — SvelteKit + Konva.js canvas, deployed to Cloudflare Workers
 
 **Architecture**:
 - No database — flat JSON files are the source of truth
