@@ -59,7 +59,7 @@
 - [x] Add optional `sources`, `start_year`, `end_year` fields to edge schema
 - [x] `build.py` passes through new fields to graph.json
 - [x] `lint.py` validates temporal consistency (end < start, start before org founded)
-- [ ] LLM pipeline populates these fields as it extracts new edges
+- [x] LLM pipeline populates these fields as it extracts new edges
 - [ ] Existing edges stay sparse until organically enriched
 - [ ] Timeline uses inferred dates (org founded/disbanded) as fallback when edge has no explicit period
 
@@ -92,7 +92,7 @@
 ### Source hygiene
 - [x] Deduplicate source URLs across orgs (normalize trailing slashes, http→https, www prefix)
 - [x] Flag sources with slightly different titles pointing to same URL
-- [ ] Remove dead domains (fandom.com wikis, expired news links) — replace with archive.org where possible
+- [x] Remove dead domains (checked — none found, all sources are legitimate) — replace with archive.org where possible
 
 ### schema.json ✅ BUILT
 - [x] Write formal JSON Schema for org files
@@ -135,9 +135,9 @@ apps/pipeline/
 
 ### Scraping principles
 - [ ] All scrapers output to `data/raw/{source}/{slug}/` with `content.txt` + `url.txt` + `metadata.json`
-- [ ] Idempotent: skip existing pages unless `--force`
-- [ ] Resumable: track progress in `data/raw/{source}/_progress.json`
-- [ ] No scraper depends on another — each source is independent
+- [x] Idempotent: skip existing pages unless `--force`
+- [x] Resumable: resume from existing run_*.json files on crash
+- [x] No scraper depends on another — each source is independent
 - [ ] **Politeness**:
   - Random jitter between requests: `random.uniform(1, 4)` seconds (never fixed intervals)
   - Custom User-Agent: `GangGuideBot/1.0 (+mailto:admin@kzn.sh)`
@@ -160,7 +160,7 @@ apps/pipeline/
 - [ ] Auto-discovers new gang articles via Wikipedia category traversal (`Category:Street gangs`, `Category:Crips sets`, etc.)
 
 ### streetgangs.py
-- [ ] Already have 1,436 pages in `data/raw/streetgangs/` from prior bulk scrape
+- [x] Already have 1,436 pages in `data/raw/streetgangs/` from prior bulk scrape
 - [ ] Incremental mode: check for new pages since last scrape
 - [ ] Parse gang profile pages for structured data (name, colors, territory, allies/rivals from sidebars)
 
@@ -259,7 +259,7 @@ apps/pipeline/
 
 ### UX features
 - [x] URL-driven state: `?lane=chicago&year=1970-1990&q=disciples`
-- [ ] Compare mode — select two orgs, highlight shared connections — select two orgs, highlight shared connections
+- [ ] Compare mode — select two orgs, highlight shared connections
 - [ ] Timeline scrubber — animate through decades using edge `period` data
 - [ ] Identity-colored node dots (use org's first color as circle fill)
 - [ ] Color swatches in inspector panel
@@ -272,7 +272,7 @@ apps/pipeline/
 - [ ] Web Worker for layout computation
 
 ### SEO / sharing
-- [ ] Static org pages at `/org/crips` at `/org/crips` rendered at build time
+- [ ] Static org pages at `/org/crips` rendered at build time
 - [ ] OpenGraph meta tags per org
 - [ ] Sitemap generation in build.py
 
@@ -339,7 +339,7 @@ apps/pipeline/
 - [x] Root `package.json` — commitlint, lefthook, ruler as global devDeps
 - [x] Proper `.gitignore` — `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
 - [x] `.env.example` — document required env vars for deployment
-- [ ] `LICENSE` (MIT + CC-BY-4.0 — decide when open-sourcing) — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
+- [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
 - [x] Social media preview image (screenshot of the map)
 - [x] Repository description + topics on GitHub
 
@@ -364,7 +364,7 @@ apps/pipeline/
 - [x] `ALCHEMY_CI_STATE_STORE_CHECK=false` for CI deploys (no remote state store)
 
 ### GitHub settings (toggle when going public)
-- [ ] Enable Dependabot alerts + security updates + security updates (auto for public repos)
+- [ ] Enable Dependabot alerts + security updates (auto for public repos)
 - [ ] Enable secret scanning + push protection (auto for public repos)
 - [ ] Protect main branch (require PR for collaborators, allow maintainer direct push)
 - [ ] Enable Discussions (for questions/community, lighter than issues)
@@ -372,8 +372,8 @@ apps/pipeline/
 ### Releases & backup
 - [x] v1.0.0 tagged and released
 - [ ] Tag git releases after major milestones (v1.1=1200 nodes, v2.0=2000+)
-- [ ] Git IS the backup — force-push protection on main branch
-- [ ] `data/raw/` stays gitignored (682MB) — backed up separately or re-scrapeable
+- [x] Git IS the backup — force-push protection on main branch — force-push protection on main branch
+- [x] `data/raw/` stays gitignored (682MB) — backed up separately or re-scrapeable — backed up separately or re-scrapeable
 
 ### Contributing (future)
 - [x] CONTRIBUTING.md with org file format, quality standards, source requirements
