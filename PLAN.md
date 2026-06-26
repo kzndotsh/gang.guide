@@ -53,10 +53,12 @@
 - [ ] Completeness score per org
 
 ### Edge schema enrichment
-- [ ] Add `evidence` field to edges (verbatim quote proving the relationship)
-- [ ] Add `source_url` field to edges (where the evidence came from)
-- [ ] Add optional `period` field (e.g. "1977-1992") for time-bounded relationships
-- [ ] Backfill evidence on high-value edges (major alliances/rivalries)
+- [x] Add optional `sources`, `start_year`, `end_year` fields to edge schema
+- [x] `build.py` passes through new fields to graph.json
+- [x] `lint.py` validates temporal consistency (end < start, start before org founded)
+- [ ] LLM pipeline populates these fields as it extracts new edges
+- [ ] Existing edges stay sparse until organically enriched
+- [ ] Timeline uses inferred dates (org founded/disbanded) as fallback when edge has no explicit period
 
 ### Org schema tightening
 - [ ] Add `disbanded_year` for inactive orgs

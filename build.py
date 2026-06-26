@@ -116,12 +116,18 @@ def build_graph(out_path=None):
         raw_edges = json.loads(EDGES_FILE.read_text(encoding="utf-8"))
         for e in raw_edges:
             if e["source"] in node_ids and e["target"] in node_ids:
-                edges.append({
+                edge = {
                     "source": e["source"],
                     "target": e["target"],
                     "type": e["type"],
-                    "confidence_score": e.get("confidence"),
-                })
+                }
+                if e.get("start_year"):
+                    edge["start_year"] = e["start_year"]
+                if e.get("end_year"):
+                    edge["end_year"] = e["end_year"]
+                if e.get("sources"):
+                    edge["sources"] = e["sources"]
+                edges.append(edge)
 
     # Split into slim graph (for rendering) and details (loaded on demand)
     details = {"nodes": {}}

@@ -261,6 +261,16 @@ def check_edges(edges: list[dict], org_ids: set[str]):
             errors.append(f"edge[{i}]: duplicate edge {src} → {tgt} ({etype})")
         seen_edges.add(key)
 
+        # Optional temporal fields
+        start = e.get("start_year")
+        end = e.get("end_year")
+        if start and end and end < start:
+            errors.append(f"edge[{i}]: end_year {end} before start_year {start}")
+        if start and src in org_ids:
+            org_founded = orgs.get(src, {}).get("founded_year", 0)
+            if org_founded and start < org_founded - 10:
+                info.append(f"edge[{i}]: start_year {start} is well before {src} founded ({org_founded})")
+
     # Contradictory edges
     alliance_pairs = {(e["source"], e["target"]) for e in edges if e.get("type") == "alliance"}
     rivalry_pairs = {(e["source"], e["target"]) for e in edges if e.get("type") == "rivalry"}
