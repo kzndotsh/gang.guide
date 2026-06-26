@@ -58,6 +58,8 @@ data/orgs/*.json  →  build.py  →  graph.json + details.json  →  SvelteKit 
 - **No CMS** — edit org files directly, run `just build-data`
 - **No API** — static JSON files served from Cloudflare Workers edge
 
+The [pipeline](apps/pipeline/) handles enrichment separately: scrape sources → clean HTML → LLM extract ×3 → consensus filter → conservative merge back into org files.
+
 ## Project Structure
 
 ```
