@@ -31,7 +31,8 @@ DATA_EXTRACTED.mkdir(exist_ok=True)
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
 MODEL = os.environ.get("EXTRACT_MODEL", "claude-haiku-4.5")
-RUNS_PER_PAGE = 3
+TEMPERATURES = [0.0, 0.2, 0.4]  # deterministic → slight variance → more variance
+RUNS_PER_PAGE = len(TEMPERATURES)
 MAX_CHUNK_WORDS = 2500
 
 PROMPT_VERSION = "v1"
@@ -83,12 +84,12 @@ def chunk_text(text: str) -> list[str]:
     return chunks
 
 
-def call_kiro(text: str, timeout: float = 90.0) -> dict | None:
+def call_kiro(text: str, temperature: float = 0.0, timeout: float = 90.0) -> dict | None:
     """Call kiro gateway and parse JSON response."""
     payload = {
         "model": MODEL,
         "max_tokens": 4096,
-        "temperature": 0.3,
+        "temperature": temperature,
         "messages": [
             {"role": "user", "content": f"Extract gang data from this text:\n\n{text}"}
         ],
@@ -161,10 +162,10 @@ def extract_page(source: str, slug: str, force: bool = False) -> dict | None:
 
     # Run extraction N times
     runs = []
-    for run_idx in range(RUNS_PER_PAGE):
+    for run_idx, temp in enumerate(TEMPERATURES):
         run_results = []
         for chunk in chunks:
-            result = call_kiro(chunk)
+            result = call_kiro(chunk, temperature=temp)
             if result:
                 run_results.append(result)
             time.sleep(random.uniform(0.5, 1.5))
