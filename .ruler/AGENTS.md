@@ -14,16 +14,16 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 ## Project Layout
 
 ```
-├── build.py              ← Generates graph.json + details.json from flat files
+├── build.py              # Generates graph.json + details.json from flat files
 ├── data/
-│   ├── orgs/             ← One JSON file per org (source of truth, ~980 files)
-│   ├── edges.json        ← Edge list (alliances, rivalries, affiliations)
-│   ├── lanes.json        ← Lane taxonomy + org anchors + metro defaults
-│   └── raw/              ← 682MB scraped source material (gitignored)
-└── apps/web/             ← SvelteKit interactive map viewer
-    ├── alchemy.run.ts    ← Alchemy deployment config (Cloudflare Workers)
-    ├── svelte.config.js  ← adapter-cloudflare
-    └── .env              ← ALCHEMY_PASSWORD, CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
+│   ├── orgs/             # One JSON file per org (source of truth, ~980 files)
+│   ├── edges.json        # Edge list (alliances, rivalries, affiliations)
+│   ├── lanes.json        # Lane taxonomy + org anchors + metro defaults
+│   └── raw/              # 682MB scraped source material (gitignored)
+└── apps/web/             # SvelteKit interactive map viewer
+    ├── alchemy.run.ts    # Alchemy deployment config (Cloudflare Workers)
+    ├── svelte.config.js  # adapter-cloudflare
+    └── .env              # ALCHEMY_PASSWORD, CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
 ```
 
 ## Architecture

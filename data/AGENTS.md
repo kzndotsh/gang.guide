@@ -5,12 +5,12 @@ All gang data lives here as flat JSON files. No database.
 ## Structure
 
 ```
-├── orgs/               ← 980 JSON files, one per organization
-├── edges.json  ← Edge list (1,561 edges)
-├── lanes.json          ← Lane definitions + sort order
-└── raw/                ← Scraped source material (gitignored, 682MB)
-    ├── streetgangs/    ← 1,436 pages from StreetGangs.com
-    └── chicago_history/ ← 97 pages from Chicago Gang History
+├── orgs/               # 980 JSON files, one per organization
+├── edges.json  # Edge list (1,561 edges)
+├── lanes.json          # Lane definitions + sort order
+└── raw/                # Scraped source material (gitignored, 682MB)
+    ├── streetgangs/    # 1,436 pages from StreetGangs.com
+    └── chicago_history/ # 97 pages from Chicago Gang History
 ```
 
 ## Org File Schema
