@@ -62,7 +62,7 @@
 }
 
 @theme inline {
-  --font-sans: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
   --font-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   --radius-sm: calc(var(--radius) - 4px);
