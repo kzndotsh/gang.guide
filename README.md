@@ -51,7 +51,7 @@ just dev
 
 ## How It Works
 
-**Pipeline** (`just pipeline chicago_history`):
+**Pipeline**:
 1. **Scrape** — raw HTML from sources into `data/raw/`
 2. **Clean** — strip HTML to plaintext
 3. **Extract** — sonnet 4.5 at 3 temperatures (0.1, 0.3, 0.7) produces structured JSON with edges + evidence quotes
