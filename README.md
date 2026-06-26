@@ -50,15 +50,29 @@ just dev
 ## How It Works
 
 ```
-data/orgs/*.json  →  build.py  →  graph.json + details.json  →  SvelteKit + Konva.js
-   (source)          (compile)        (static assets)              (interactive map)
+┌─────────────────────────────────────────────────────────────────────┐
+│                          DATA PIPELINE                               │
+│                                                                     │
+│  Wikipedia ─┐                                                       │
+│  StreetGangs ─┼─→ scrape → clean HTML → LLM extract ×3             │
+│  DOJ/FBI ───┘                    │                                  │
+│                                  ▼                                  │
+│                         consensus filter (2/3 agree)                │
+│                                  │                                  │
+│                                  ▼                                  │
+│                         conservative merge                          │
+│                                  │                                  │
+└──────────────────────────────────┼──────────────────────────────────┘
+                                   ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│  data/orgs/*.json  →  build.py  →  graph.json  →  SvelteKit+Konva  │
+│     (967 files)       (compile)    (static)       (interactive map) │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
-- **No database** — ~980 flat JSON files are the source of truth
+- **No database** — flat JSON files are the source of truth
 - **No CMS** — edit org files directly, run `just build-data`
 - **No API** — static JSON files served from Cloudflare Workers edge
-
-The [pipeline](apps/pipeline/) handles enrichment separately: scrape sources → clean HTML → LLM extract ×3 → consensus filter → conservative merge back into org files.
 
 ## Project Structure
 
