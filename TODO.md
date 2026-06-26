@@ -5,25 +5,135 @@
 - 967 orgs, 1,147 edges, 2,020 sources, 82/82 inactive orgs have `disbanded_year`
 - 100% descriptions, 100% founding years, 87% colors
 - SvelteKit + Konva.js canvas map, **live on Cloudflare Workers** (gang.guide)
-- Flat JSON files, Python build script
-- Deployed via Alchemy IaC (`adapter-cloudflare`, prerendered)
-- Sources: Wikipedia (852), StreetGangs (724), UnitedGangs (248), Chicago Gang History (108), DOJ (39)
-- Raw scraped data: 1,436 StreetGangs pages + 97 Chicago Gang History pages in `data/raw/`
-- **Full LLM pipeline**: extract (sonnet 4.5) → adjudicate (opus 4.6) → merge → apply
-- **129 unit tests** with coverage (40%), codecov integration
+- Full LLM pipeline: extract (sonnet 4.5) → adjudicate (opus 4.6) → merge → apply
+- 129 unit tests with coverage (40%), codecov integration
 - CI: ruff lint, pytest + coverage, svelte-check, vite build, codecov upload
-- Lint passes clean (0 errors, 52 warnings, ~1305 info items)
-- SEO: meta tags, OpenGraph, OG image, favicon, robots.txt, sitemap.xml
-- URL-driven state (`?org=`, `?year=`, `?lane=`)
-- Custom cursor, error page, globe loader, window chrome on canvas
 
 ---
 
-## Phase 1: Data integrity (next)
+## Pending
 
-### lint.py — structural validation + quality signals ✅ BUILT
+### Frontend
+- [ ] Timeline uses inferred dates (org founded/disbanded) as fallback when edge has no explicit period
+- [ ] Compare mode — select two orgs, highlight shared connections
+- [ ] Timeline scrubber — animate through decades using edge `period` data
+- [ ] Identity-colored node dots (use org's first color as circle fill)
+- [ ] Color swatches in inspector panel
+- [ ] Edge labels on hover (show relationship type + period)
+- [ ] Sources tab: group by domain (Wikipedia, StreetGangs, DOJ, etc.) for scannability
+- [ ] Static org pages at `/org/crips` rendered at build time
+- [ ] OpenGraph meta tags per org
+- [ ] Sitemap generation in build.py
+- [ ] GangsterReport.com timelines
 
-**Errors (fail the build):**
+### Data
+- [ ] ID doesn't match name slug pattern (currently info-level, not error)
+- [ ] Asymmetric nation edges (org field vs edges.json mismatch)
+- [ ] Edges between orgs with non-overlapping time periods
+- [ ] Lanes with suspiciously few or many orgs
+- [ ] Completeness score per org
+- [ ] Existing edges stay sparse until organically enriched
+- [ ] Add `membership_estimate` and `membership_year` for orgs where known
+- [ ] Structured colors: `[{color, context}]` for gangs with subset-specific colors
+- [ ] Keep `symbols` field — expand coverage from 29 orgs via LLM extraction pipeline (CGH pages have symbols for all 97 gangs)
+- [ ] Merge `nation_affiliation` + `nation` edge types → single `nation` type
+- [ ] Identify thin descriptions (<100 chars or just "X is a Y gang founded in Z")
+- [ ] For orgs with raw pages in `data/raw/`, generate richer 2-3 sentence summaries via LLM
+- [ ] Priority: the ~75 CGH bulk-imports that got auto-generated one-liners
+- [ ] Target: every description should contain founding context, notable incidents, or distinguishing characteristics
+- [ ] IDE autocomplete for org editing (VSCode validates on save)
+- [ ] `lint.py` validates every org against schema before structural checks
+- [ ] Document all fields with descriptions and examples in the schema
+- [ ] `build.py` emits a `changelog.json` diff on each run: new orgs, removed orgs, changed fields
+- [ ] Cumulative changelog viewable in the coverage panel or a `/changelog` page
+- [ ] Extract: founding dates, territory claims, membership estimates from court filings
+- [ ] These are the most authoritative sources for verified data (sworn testimony, judicial findings)
+- [ ] Parsers are re-runnable without re-scraping (raw data is cached)
+- [ ] `parse_index.py` builds `data/raw/index.json` mapping pages → org IDs:
+- [ ] `lib/resolve.py` — entity resolution for LLM-extracted names → org IDs:
+- [ ] Strip HTML entities (`&amp;`, `&#8217;`, `&nbsp;`) → proper unicode
+- [ ] Remove navigation/footer/sidebar junk (CSS selectors for known source layouts)
+- [ ] Collapse whitespace (multiple newlines, tabs, trailing spaces)
+- [ ] Remove cookie banners, ad blocks, "related articles" sections
+- [ ] Detect and strip encoding errors (mojibake: `Ã©` → `é`)
+- [ ] Remove inline citations/reference markers (`[1]`, `[citation needed]`)
+- [ ] Detect pages that are mostly junk (>50% non-prose: tables, lists of links, nav) — flag as low-quality
+- [ ] Output quality score per page: word count, prose ratio, detected language
+- [ ] Runs as first step: `raw.html` → `content.txt` — all downstream scripts read `content.txt` only
+- [ ] Reads raw pages from `data/raw/`, sends each to LLM 3 times (different seeds)
+- [ ] Single prompt per page extracts everything: edges, colors, years, symbols, membership, description, orgs mentioned
+- [ ] Each run outputs structured JSON with evidence quotes for every edge
+- [ ] Prompt requires verbatim quote from source text — no quote means no edge
+- [ ] **Chunking**: pages >3,000 words split into chunks; infobox/header prepended to every chunk
+- [ ] **Prompt versioning**: prompt hash stored in output; `--force-version` re-extracts stale pages
+- [ ] **Idempotency**: skips pages with existing 3-run output unless `--force`
+- [ ] **Error handling**: retry with backoff (3 retries), partial results saved, resume on restart
+- [ ] **LLM backend**: Kiro gateway (Anthropic-compatible proxy at `KIRO_GATEWAY_URL`, default `http://127.0.0.1:9000`)
+- [ ] Cost estimate: ~$0.01/page × 1,500 pages × 3 runs = ~$45 total
+- [ ] Takes 3 extraction outputs per page, keeps only consistent data:
+- [ ] Dedupes edges across chunks from same page before cross-run consensus
+- [ ] Hallucinated edges get filtered automatically (rarely repeat across runs)
+- [ ] Output: `data/extracted/{page}.json` — one consensus result per page
+- [ ] Only overwrites fields that are currently weaker:
+- [ ] Resolves extracted org names → org IDs via entity resolution
+- [ ] Unresolved orgs mentioned in 2+ pages: auto-create with extracted fields
+- [ ] Idempotent: running twice produces same result
+- [ ] Writes changes to `data/orgs/` and `data/edges.json`
+- [ ] Runs automatically after apply — if lint fails, changes are rejected
+- [ ] Catches: impossible years (Crip before 1969), broken edge refs, junk descriptions, bad colors
+- [ ] Nothing reaches graph.json unless it passes all lint error-level checks
+- [ ] The LLM pipeline can propose anything — lint is the safety net
+- [ ] Blocklist: edges/data to always reject (known false positives)
+- [ ] Forcelist: data to always keep (manually verified facts the LLM might miss)
+- [ ] Split `chicago-sets` lane when too dense
+- [ ] `schema.json` enables contributors to validate their additions locally
+
+### Pipeline
+- [ ] All scrapers output to `data/raw/{source}/{slug}/` with `content.txt` + `url.txt` + `metadata.json`
+- [ ] **Politeness**:
+- [ ] **Error resilience**:
+- [ ] **Cache/dedup**:
+- [ ] Input: list of Wikipedia article URLs (from gang category pages + manual additions)
+- [ ] Uses MediaWiki API (not raw HTML scraping) for stable versioned content
+- [ ] Stores versioned URL (`oldid=`) so extractions are reproducible
+- [ ] Extracts: body text, infobox fields, categories, inter-article links
+- [ ] Auto-discovers new gang articles via Wikipedia category traversal (`Category:Street gangs`, `Category:Crips sets`, etc.)
+- [ ] Incremental mode: check for new pages since last scrape
+- [ ] Parse gang profile pages for structured data (name, colors, territory, allies/rivals from sidebars)
+- [ ] Search CourtListener for gang-enhancement cases mentioning orgs in our dataset
+- [ ] Every scraper stores raw HTML; `clean.py` produces `content.txt`; parsers extract structure from that
+- [ ] **Cost controls**: `--dry-run` for token estimate, `--limit N`, `--source streetgangs`, progress bar with running cost
+- [ ] Name map overrides: force specific name → org ID resolutions
+- [ ] Applied after merge, before lint — overrides always win
+- [ ] Court records (CourtListener) for verified dates/territories
+- [ ] DetroitStreetGangs.com
+
+### Infrastructure
+- [ ] Tag git releases after major enrichment batches (v0.1 = 900 nodes, v0.2 = 980 nodes, etc.)
+- [ ] Enables future server routes if needed (SSR org pages, `/api/search`, edge caching)
+- [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
+- [ ] Enable Dependabot alerts + security updates (auto for public repos)
+- [ ] Enable secret scanning + push protection (auto for public repos)
+- [ ] Protect main branch (require PR for collaborators, allow maintainer direct push)
+- [ ] Enable Discussions (for questions/community, lighter than issues)
+- [ ] Tag git releases after major milestones (v1.1=1200 nodes, v2.0=2000+)
+- [ ] Issue templates: "Add new org", "Fix org data", "Report bad edge"
+- [ ] PR template with checklist: ran lint, ran build, verified on map
+
+### Scale (Phase 4)
+- [ ] Gangland (History Channel) episode transcripts
+- [ ] SPLC Intelligence Reports (white supremacist orgs)
+- [ ] FBI Vault declassified files
+- [ ] ATF/NDIC National Gang Threat Assessments
+- [ ] LA Times gang archive series
+- [ ] Texas (Tango Blast, Texas Syndicate, Barrio Azteca)
+- [ ] East Coast (NYC Latin Kings, Trinitarios, DDP, more UBN sets)
+- [ ] Southeast (Atlanta sets, Memphis, New Orleans)
+- [ ] Pacific NW (Sureños/Norteños expansion)
+
+---
+
+## Done
 - [x] Duplicate org IDs
 - [x] Edges pointing to non-existent org IDs
 - [x] Self-referencing edges (org allied with itself)
@@ -32,9 +142,6 @@
 - [x] Lane IDs not in lanes.json
 - [x] Sources without both url and title
 - [x] `disbanded_year` before `founded_year`
-- [ ] ID doesn't match name slug pattern (currently info-level, not error)
-
-**Warnings (printed but don't fail):**
 - [x] Descriptions containing HTML entities/scrape junk
 - [x] Aliases that are absurdly long (>50 chars)
 - [x] Colors that aren't real colors
@@ -42,35 +149,18 @@
 - [x] Contradictory edges (alliance AND rivalry between same pair)
 - [x] Fuzzy duplicate detection (Levenshtein + Dice, 90% threshold, numbered-set filter)
 - [x] Over-cited source URLs (same URL in 15+ orgs)
-- [ ] Asymmetric nation edges (org field vs edges.json mismatch)
-- [ ] Edges between orgs with non-overlapping time periods
-
-**Info (quality report, not blocking):**
 - [x] Orgs with only 1 source (under-sourced)
 - [x] Orgs with zero edges (isolated nodes)
 - [x] Orgs with `estimate`/`decade` precision years
 - [x] Temporal logic (orgs older than affiliated nation)
 - [x] Boilerplate descriptions
 - [x] ID-filename mismatches
-- [ ] Lanes with suspiciously few or many orgs
-- [ ] Completeness score per org
-
-### Edge schema enrichment
 - [x] Add optional `sources`, `start_year`, `end_year` fields to edge schema
 - [x] `build.py` passes through new fields to graph.json
 - [x] `lint.py` validates temporal consistency (end < start, start before org founded)
 - [x] LLM pipeline populates these fields as it extracts new edges
-- [ ] Existing edges stay sparse until organically enriched
-- [ ] Timeline uses inferred dates (org founded/disbanded) as fallback when edge has no explicit period
-
-### Org schema tightening
 - [x] Add `disbanded_year` for inactive orgs (82/82 done)
-- [ ] Add `membership_estimate` and `membership_year` for orgs where known
 - [x] Tighten `type` enum: `street_gang` (was set/faction), `organized_crime` (was crime_family/organization), `motorcycle_club`, `prison_gang`, `white_supremacist` (was hate_group), `alliance`, `nation`
-- [ ] Structured colors: `[{color, context}]` for gangs with subset-specific colors
-- [ ] Keep `symbols` field — expand coverage from 29 orgs via LLM extraction pipeline (CGH pages have symbols for all 97 gangs)
-
-### Schema normalization ✅ DONE
 - [x] Empty `founded_year_precision` (205 orgs) → set to `"estimate"`
 - [x] Empty `status` (840 orgs) → set to `"active"`
 - [x] Collapse `"defunct"` → `"inactive"`
@@ -81,242 +171,15 @@
 - [x] Remove `nation_affiliation` edges from edges.json (auto-generated by build.py)
 - [x] 14 descriptions under 100 chars → enriched
 - [x] Merged 12 duplicate orgs
-- [ ] Merge `nation_affiliation` + `nation` edge types → single `nation` type
-
-### Description quality enrichment
-- [ ] Identify thin descriptions (<100 chars or just "X is a Y gang founded in Z")
-- [ ] For orgs with raw pages in `data/raw/`, generate richer 2-3 sentence summaries via LLM
-- [ ] Priority: the ~75 CGH bulk-imports that got auto-generated one-liners
-- [ ] Target: every description should contain founding context, notable incidents, or distinguishing characteristics
-
-### Source hygiene
 - [x] Deduplicate source URLs across orgs (normalize trailing slashes, http→https, www prefix)
 - [x] Flag sources with slightly different titles pointing to same URL
 - [x] Remove dead domains (checked — none found, all sources are legitimate) — replace with archive.org where possible
-
-### schema.json ✅ BUILT
 - [x] Write formal JSON Schema for org files
-- [ ] IDE autocomplete for org editing (VSCode validates on save)
-- [ ] `lint.py` validates every org against schema before structural checks
-- [ ] Document all fields with descriptions and examples in the schema
-
-### Changelog
-- [ ] `build.py` emits a `changelog.json` diff on each run: new orgs, removed orgs, changed fields
-- [ ] Cumulative changelog viewable in the coverage panel or a `/changelog` page
-- [ ] Tag git releases after major enrichment batches (v0.1 = 900 nodes, v0.2 = 980 nodes, etc.)
-
----
-
-## Phase 1.5: Scraping & ingestion toolkit
-
-### apps/pipeline/ directory structure
-```
-apps/pipeline/
-├── pyproject.toml         ← Python project config (deps, ruff, pytest)
-├── scrape/
-│   ├── wikipedia.py       ← Fetch Wikipedia gang articles via MediaWiki API
-│   ├── streetgangs.py     ← Incremental scrape of StreetGangs.com
-│   ├── cgh.py             ← Chicago Gang History (already done, 97 pages)
-│   ├── courtlistener.py   ← Gang-enhancement court cases
-│   └── common.py          ← Shared: rate limiting, retry, user-agent, output format
-├── parse/
-│   ├── clean.py           ← HTML → clean plaintext (first step, always runs before parsers)
-│   ├── parse_html.py      ← Clean text → section-split prose
-│   ├── parse_wikipedia_infobox.py  ← Wikipedia infobox → structured fields
-│   ├── parse_cgh_infobox.py       ← CGH info table → structured fields
-│   └── parse_index.py     ← Build raw page → org ID mapping
-├── lib/
-│   └── resolve.py         ← Entity resolution: extracted names → org IDs
-├── extract.py             ← LLM multi-run extraction (Phase 2)
-├── merge.py               ← Consensus filtering (Phase 2)
-├── apply.py               ← Conservative upgrade (Phase 2)
-└── lint.py                ← Validation gate (used by build pipeline + CI)
-```
-
-### Scraping principles
-- [ ] All scrapers output to `data/raw/{source}/{slug}/` with `content.txt` + `url.txt` + `metadata.json`
 - [x] Idempotent: skip existing pages unless `--force`
 - [x] Resumable: resume from existing run_*.json files on crash
 - [x] No scraper depends on another — each source is independent
-- [ ] **Politeness**:
-  - Random jitter between requests: `random.uniform(1, 4)` seconds (never fixed intervals)
-  - Custom User-Agent: `GangGuideBot/1.0 (+mailto:admin@kzn.sh)`
-  - Scrape during off-peak hours for target server's timezone
-  - `Accept-Encoding: gzip` to reduce bandwidth
-- [ ] **Error resilience**:
-  - Exponential backoff on 429/503: 1s → 2s → 4s → 8s → 16s, max 5 retries
-  - Checkpoint progress every N pages — resume from last success on crash
-  - Distinguish retryable errors (timeout, 429, 503) from permanent ones (404, 403)
-- [ ] **Cache/dedup**:
-  - HEAD request with `If-Modified-Since` / `ETag` before re-downloading known pages
-  - Local file cache with TTL — don't re-fetch within 24h unless `--force`
-  - Hash content to detect unchanged pages across scrapes
-
-### wikipedia.py
-- [ ] Input: list of Wikipedia article URLs (from gang category pages + manual additions)
-- [ ] Uses MediaWiki API (not raw HTML scraping) for stable versioned content
-- [ ] Stores versioned URL (`oldid=`) so extractions are reproducible
-- [ ] Extracts: body text, infobox fields, categories, inter-article links
-- [ ] Auto-discovers new gang articles via Wikipedia category traversal (`Category:Street gangs`, `Category:Crips sets`, etc.)
-
-### streetgangs.py
 - [x] Already have 1,436 pages in `data/raw/streetgangs/` from prior bulk scrape
-- [ ] Incremental mode: check for new pages since last scrape
-- [ ] Parse gang profile pages for structured data (name, colors, territory, allies/rivals from sidebars)
-
-### courtlistener.py
-- [ ] Search CourtListener for gang-enhancement cases mentioning orgs in our dataset
-- [ ] Extract: founding dates, territory claims, membership estimates from court filings
-- [ ] These are the most authoritative sources for verified data (sworn testimony, judicial findings)
-
-### parse/ layer
-- [ ] Every scraper stores raw HTML; `clean.py` produces `content.txt`; parsers extract structure from that
-- [ ] Parsers are re-runnable without re-scraping (raw data is cached)
-- [ ] `parse_index.py` builds `data/raw/index.json` mapping pages → org IDs:
-  - Fuzzy-match page slugs/titles to existing org names + aliases
-  - Unmatched pages flagged as potential new orgs
-  - Manual overrides in `data/raw/index_overrides.json`
-- [ ] `lib/resolve.py` — entity resolution for LLM-extracted names → org IDs:
-  - Checks primary name, aliases, common abbreviations
-  - Examples: "Rollin 60s" → `org:rollin-60s-neighborhood-crips`, "La Eme" → `org:mexican-mafia`
-  - Unresolved names collected as new-org candidates (if mentioned in 2+ pages)
-  - Resolution table cached: `data/name_map.json` (grows over time)
-
-### Text cleaning (`scripts/parse/clean.py`)
-- [ ] Strip HTML entities (`&amp;`, `&#8217;`, `&nbsp;`) → proper unicode
-- [ ] Remove navigation/footer/sidebar junk (CSS selectors for known source layouts)
-- [ ] Collapse whitespace (multiple newlines, tabs, trailing spaces)
-- [ ] Remove cookie banners, ad blocks, "related articles" sections
-- [ ] Detect and strip encoding errors (mojibake: `Ã©` → `é`)
-- [ ] Remove inline citations/reference markers (`[1]`, `[citation needed]`)
-- [ ] Detect pages that are mostly junk (>50% non-prose: tables, lists of links, nav) — flag as low-quality
-- [ ] Output quality score per page: word count, prose ratio, detected language
-- [ ] Runs as first step: `raw.html` → `content.txt` — all downstream scripts read `content.txt` only
-
----
-
-## Phase 2: Automated enrichment via LLM extraction
-
-### Prerequisites (from Phase 1.5)
-- Source page → org mapping (`data/raw/index.json`) built by `parse_index.py`
-- Entity resolution (`scripts/lib/resolve.py`) for name → org ID matching
-- Clean text (`content.txt`) produced by `clean.py` for every raw page
-
-### extract.py — multi-run extraction
-- [ ] Reads raw pages from `data/raw/`, sends each to LLM 3 times (different seeds)
-- [ ] Single prompt per page extracts everything: edges, colors, years, symbols, membership, description, orgs mentioned
-- [ ] Each run outputs structured JSON with evidence quotes for every edge
-- [ ] Prompt requires verbatim quote from source text — no quote means no edge
-- [ ] **Chunking**: pages >3,000 words split into chunks; infobox/header prepended to every chunk
-- [ ] **Prompt versioning**: prompt hash stored in output; `--force-version` re-extracts stale pages
-- [ ] **Idempotency**: skips pages with existing 3-run output unless `--force`
-- [ ] **Error handling**: retry with backoff (3 retries), partial results saved, resume on restart
-- [ ] **Cost controls**: `--dry-run` for token estimate, `--limit N`, `--source streetgangs`, progress bar with running cost
-- [ ] **LLM backend**: Kiro gateway (Anthropic-compatible proxy at `KIRO_GATEWAY_URL`, default `http://127.0.0.1:9000`)
-  - Auth: `KIRO_GATEWAY_API_KEY` env var, `x-api-key` + `anthropic-version: 2023-06-01` headers
-  - Default model: `claude-haiku-4.5` (fast/cheap for extraction), `claude-sonnet-4-20250514` for complex pages
-  - Endpoint: `{KIRO_GATEWAY_URL}/v1/messages`
-- [ ] Cost estimate: ~$0.01/page × 1,500 pages × 3 runs = ~$45 total
-
-### merge.py — consensus filtering
-- [ ] Takes 3 extraction outputs per page, keeps only consistent data:
-  - **Years**: majority vote (2/3 agree)
-  - **Colors**: only colors appearing in 2+ runs
-  - **Edges**: only edges with same target+type in 2+ runs (after entity resolution)
-  - **Description**: longest non-hallucinated version
-  - **Membership**: median of numeric answers
-  - **Orgs mentioned**: union of orgs in 2+ runs
-- [ ] Dedupes edges across chunks from same page before cross-run consensus
-- [ ] Hallucinated edges get filtered automatically (rarely repeat across runs)
-- [ ] Output: `data/extracted/{page}.json` — one consensus result per page
-
-### apply.py — conservative upgrade
-- [ ] Only overwrites fields that are currently weaker:
-  - Year: only if existing precision is `decade` or `estimate` and new is more precise
-  - Description: only if current is <100 chars and new is >150 chars
-  - Colors: only if currently empty
-  - Edges: only if not already in edges.json (dedupe by source+target+type)
-- [ ] Resolves extracted org names → org IDs via entity resolution
-- [ ] Unresolved orgs mentioned in 2+ pages: auto-create with extracted fields
-- [ ] Idempotent: running twice produces same result
-- [ ] Writes changes to `data/orgs/` and `data/edges.json`
-
-### lint.py as the final gate
-- [ ] Runs automatically after apply — if lint fails, changes are rejected
-- [ ] Catches: impossible years (Crip before 1969), broken edge refs, junk descriptions, bad colors
-- [ ] Nothing reaches graph.json unless it passes all lint error-level checks
-- [ ] The LLM pipeline can propose anything — lint is the safety net
-
-### curated_overrides.py
-- [ ] Blocklist: edges/data to always reject (known false positives)
-- [ ] Forcelist: data to always keep (manually verified facts the LLM might miss)
-- [ ] Name map overrides: force specific name → org ID resolutions
-- [ ] Applied after merge, before lint — overrides always win
-
----
-
-## Phase 3: Frontend improvements
-
-### UX features
 - [x] URL-driven state: `?lane=chicago&year=1970-1990&q=disciples`
-- [ ] Compare mode — select two orgs, highlight shared connections
-- [ ] Timeline scrubber — animate through decades using edge `period` data
-- [ ] Identity-colored node dots (use org's first color as circle fill)
-- [ ] Color swatches in inspector panel
-- [ ] Edge labels on hover (show relationship type + period)
-- [ ] Sources tab: group by domain (Wikipedia, StreetGangs, DOJ, etc.) for scannability
-
-### Rendering upgrades (if needed at 2000+ nodes)
-- [ ] Evaluate pixi.js / WebGL
-- [ ] Virtual rendering — only draw nodes/edges in viewport
-- [ ] Web Worker for layout computation
-
-### SEO / sharing
-- [ ] Static org pages at `/org/crips` rendered at build time
-- [ ] OpenGraph meta tags per org
-- [ ] Sitemap generation in build.py
-
----
-
-## Phase 4: Scale to 2000+ orgs
-
-### New data sources
-- [ ] Gangland (History Channel) episode transcripts
-- [ ] GangsterReport.com timelines
-- [ ] SPLC Intelligence Reports (white supremacist orgs)
-- [ ] FBI Vault declassified files
-- [ ] ATF/NDIC National Gang Threat Assessments
-- [ ] Court records (CourtListener) for verified dates/territories
-- [ ] LA Times gang archive series
-- [ ] DetroitStreetGangs.com
-
-### Geographic expansion
-- [ ] Texas (Tango Blast, Texas Syndicate, Barrio Azteca)
-- [ ] East Coast (NYC Latin Kings, Trinitarios, DDP, more UBN sets)
-- [ ] Southeast (Atlanta sets, Memphis, New Orleans)
-- [ ] Pacific NW (Sureños/Norteños expansion)
-
-### Architecture changes for scale
-- [ ] Split `chicago-sets` lane when too dense
-- [ ] JSONL for edges (easier append/grep than one big JSON array)
-- [ ] Consider dynamic lane assignment based on filter state
-
----
-
-## Non-goals
-
-- No database — flat files are correct for curated data at this scale
-- No CMS — the JSON files ARE the CMS
-- No user accounts — curated by maintainers, not crowdsourced
-- No real-time anything — rebuild on push, deploy static
-- No API — the static JSON files are the API
-- No manual edge review — LLM extracts, LLM validates, human only intervenes via override file if something looks wrong on the map
-
----
-
-## Infrastructure
-
-### Deployment ✅ LIVE
 - [x] Deploy via [Alchemy](https://github.com/alchemy-run/alchemy) (TypeScript IaC) to Cloudflare Workers
 - [x] `alchemy.run.ts` config using `SvelteKit` resource from `alchemy/cloudflare`
 - [x] Swap `adapter-static` → `@sveltejs/adapter-cloudflare` in `svelte.config.js`
@@ -327,9 +190,6 @@ apps/pipeline/
 - [x] First deploy to production (live at gang.guide)
 - [x] Add `export const prerender = true` to `src/routes/+layout.ts` (static asset serving)
 - [x] `prerender.handleHttpError: 'warn'` for missing favicon during build
-- [ ] Enables future server routes if needed (SSR org pages, `/api/search`, edge caching)
-
-### Repo health ✅ DONE
 - [x] `.nvmrc` — pin Node version (22)
 - [x] `.editorconfig` — consistent formatting across editors
 - [x] `.gitattributes` — line ending normalization, linguist hints
@@ -339,47 +199,30 @@ apps/pipeline/
 - [x] Root `package.json` — commitlint, lefthook, ruler as global devDeps
 - [x] Proper `.gitignore` — `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
 - [x] `.env.example` — document required env vars for deployment
-- [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
 - [x] Social media preview image (screenshot of the map)
 - [x] Repository description + topics on GitHub
-
-### Conventional commits & tooling ✅ DONE
 - [x] Commitlint (`commitlint.config.js`) — enforces conventional commits
 - [x] Lefthook (`lefthook.yml`) — runs commitlint on commit-msg hook
 - [x] Scopes: `web`, `data`, `pipeline`, `infra`, `deps`, `ci`, `release`
 - [x] Ruler (`.ruler/`) — single source of truth for AI agent instructions
 - [x] Generated agent configs (`AGENTS.md`, `CLAUDE.md`, `.kiro/steering/`) are gitignored
-
-### CI/CD ✅ DONE
 - [x] CI workflow (`.github/workflows/ci.yml`) on push/PR to main:
-  1. `python3 apps/pipeline/lint.py` — fail if errors
-  2. `python3 build.py` — regenerate graph.json + details.json
-  3. `npx svelte-kit sync && npm run check` — type-check frontend
-  4. `npx vite build` — production build
 - [x] Release workflow (`.github/workflows/release.yml`) on `v*` tags:
-  1. Build + deploy to Cloudflare Workers via Alchemy
-  2. Create GitHub Release with auto-generated release notes
-  3. GitHub Deployments integration (production environment)
 - [x] Secrets in GitHub: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
 - [x] `ALCHEMY_CI_STATE_STORE_CHECK=false` for CI deploys (no remote state store)
-
-### GitHub settings (toggle when going public)
-- [ ] Enable Dependabot alerts + security updates (auto for public repos)
-- [ ] Enable secret scanning + push protection (auto for public repos)
-- [ ] Protect main branch (require PR for collaborators, allow maintainer direct push)
-- [ ] Enable Discussions (for questions/community, lighter than issues)
-
-### Releases & backup
 - [x] v1.0.0 tagged and released
-- [ ] Tag git releases after major milestones (v1.1=1200 nodes, v2.0=2000+)
 - [x] Git IS the backup — force-push protection on main branch — force-push protection on main branch
 - [x] `data/raw/` stays gitignored (682MB) — backed up separately or re-scrapeable — backed up separately or re-scrapeable
-
-### Contributing (future)
 - [x] CONTRIBUTING.md with org file format, quality standards, source requirements
-- [ ] Issue templates: "Add new org", "Fix org data", "Report bad edge"
-- [ ] `schema.json` enables contributors to validate their additions locally
-- [ ] PR template with checklist: ran lint, ran build, verified on map
+
+---
+
+## Discarded
+- JSONL for edges (easier append/grep than one big JSON array)
+- Consider dynamic lane assignment based on filter state
+- Evaluate pixi.js / WebGL
+- Virtual rendering — only draw nodes/edges in viewport
+- Web Worker for layout computation
 
 ---
 
@@ -387,6 +230,13 @@ apps/pipeline/
 
 1. **Data quality over quantity** — 980 well-sourced orgs beats 5,000 thin stubs
 2. **Evidence on everything** — every edge should trace back to a verbatim quote from a source
-3. **Multi-run consensus** — extract 3 times per page, keep only data that repeats across runs. Hallucinations don't survive consensus.
-4. **Override file for corrections** — if something looks wrong on the map, add it to a blocklist/forcelist file. No need to review every edge individually.
-5. **Flat files forever** — the complexity lives in the data curation process, not the infrastructure
+3. **Multi-run consensus** — extract 3 times per page, keep only data that repeats across runs
+4. **Flat files forever** — the complexity lives in the data curation process, not the infrastructure
+
+## Non-goals
+
+- No database — flat files are correct for curated data at this scale
+- No CMS — the JSON files ARE the CMS
+- No user accounts — curated by maintainers, not crowdsourced
+- No real-time anything — rebuild on push, deploy static
+- No API — the static JSON files are the API
