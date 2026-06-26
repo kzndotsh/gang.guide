@@ -1,4 +1,5 @@
 <script lang="ts">
+  // @ts-nocheck — Konva types don't export shape classes (Rect, Circle, etc.) properly
   import { onMount, onDestroy } from 'svelte';
   import type { Graph, GraphEdge, GraphNode } from '$lib/types';
   import Konva from 'konva/lib/Core';
