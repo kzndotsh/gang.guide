@@ -9,7 +9,7 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Tub_of_Blood_Bunch",
-      "title": "Tub of Blood Bunch \u2014 Wikipedia"
+      "title": "Tub of Blood Bunch — Wikipedia"
     }
   ],
   "colors": [
@@ -18,5 +18,6 @@
   "nation_affiliation": "org:bloods",
   "founded_year": 1865,
   "founded_year_precision": "circa",
-  "aliases": []
+  "aliases": [],
+  "disbanded_year": 1910
 }

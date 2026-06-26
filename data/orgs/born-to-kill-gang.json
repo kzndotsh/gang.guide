@@ -15,11 +15,11 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Born_to_Kill_%28gang%29",
-      "title": "Born to Kill %28gang%29 \u2014 Wikipedia"
+      "title": "Born to Kill %28gang%29 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Flying_Dragons_%28gang%29",
-      "title": "Flying Dragons %28gang%29 \u2014 Wikipedia"
+      "title": "Flying Dragons %28gang%29 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Born_to_Kill_(gang)",
@@ -29,5 +29,6 @@
   "colors": [
     "red"
   ],
-  "founded_year_precision": "estimate"
+  "founded_year_precision": "estimate",
+  "disbanded_year": 1992
 }

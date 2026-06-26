@@ -16,19 +16,20 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Black_Mafia",
-      "title": "Black Mafia \u2014 Wikipedia"
+      "title": "Black Mafia — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Ghetto_Boys",
-      "title": "Ghetto Boys \u2014 Wikipedia"
+      "title": "Ghetto Boys — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Philadelphia_crime_family",
-      "title": "Philadelphia crime family \u2014 Wikipedia"
+      "title": "Philadelphia crime family — Wikipedia"
     }
   ],
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate"
+  "founded_year_precision": "estimate",
+  "disbanded_year": 1984
 }

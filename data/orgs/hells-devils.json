@@ -5,7 +5,7 @@
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
-  "description": "Belmont \u2013 Cragin neighborhood Established 1978-1982 Sections of Belmont-Cragin Diversey & Major Established 1978-1982",
+  "description": "Belmont – Cragin neighborhood Established 1978-1982 Sections of Belmont-Cragin Diversey & Major Established 1978-1982",
   "founded_year": 1975,
   "founded_year_precision": "circa",
   "colors": [
@@ -19,5 +19,6 @@
       "url": "https://chicagoganghistory.com/gang/hells-devils/",
       "title": "Hell's Devils - Chicago Gang History"
     }
-  ]
+  ],
+  "disbanded_year": 1982
 }

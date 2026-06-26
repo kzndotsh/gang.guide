@@ -13,28 +13,29 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Ghost_Shadows",
-      "title": "Ghost Shadows \u2014 Wikipedia"
+      "title": "Ghost Shadows — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Born_to_Kill_%28gang%29",
-      "title": "Born to Kill %28gang%29 \u2014 Wikipedia"
+      "title": "Born to Kill %28gang%29 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Flying_Dragons_%28gang%29",
-      "title": "Flying Dragons %28gang%29 \u2014 Wikipedia"
+      "title": "Flying Dragons %28gang%29 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/On_Leong_Chinese_Merchants_Association",
-      "title": "On Leong Chinese Merchants Association \u2014 Wikipedia"
+      "title": "On Leong Chinese Merchants Association — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Tiny_Rascal_Gang",
-      "title": "Tiny Rascal Gang \u2014 Wikipedia"
+      "title": "Tiny Rascal Gang — Wikipedia"
     }
   ],
   "metro": "New York",
   "status": "inactive",
   "colors": [
     "black"
-  ]
+  ],
+  "disbanded_year": 1990
 }

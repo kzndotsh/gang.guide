@@ -13,17 +13,18 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Charlestown_Gang",
-      "title": "Charlestown Gang \u2014 Wikipedia"
+      "title": "Charlestown Gang — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Patriarca_crime_family",
-      "title": "Patriarca crime family \u2014 Wikipedia"
+      "title": "Patriarca crime family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Winter_Hill_Gang",
-      "title": "Winter Hill Gang \u2014 Wikipedia"
+      "title": "Winter Hill Gang — Wikipedia"
     }
   ],
   "founded_year_precision": "estimate",
-  "colors": []
+  "colors": [],
+  "disbanded_year": 1966
 }

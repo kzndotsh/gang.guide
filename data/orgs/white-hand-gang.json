@@ -9,31 +9,32 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/White_Hand_Gang",
-      "title": "White Hand Gang \u2014 Wikipedia"
+      "title": "White Hand Gang — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/American_Mafia",
-      "title": "American Mafia \u2014 Wikipedia"
+      "title": "American Mafia — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Mafia_estadounidense",
-      "title": "Mafia estadounidense \u2014 Wikipedia"
+      "title": "Mafia estadounidense — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Five_Points_Gang",
-      "title": "Five Points Gang \u2014 Wikipedia"
+      "title": "Five Points Gang — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Swamp_Angels",
-      "title": "Swamp Angels \u2014 Wikipedia"
+      "title": "Swamp Angels — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Irish_mob",
-      "title": "Irish mob \u2014 Wikipedia"
+      "title": "Irish mob — Wikipedia"
     }
   ],
   "founded_year": 1900,
   "founded_year_precision": "circa",
   "aliases": [],
-  "colors": []
+  "colors": [],
+  "disbanded_year": 1930
 }

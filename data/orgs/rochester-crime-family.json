@@ -14,25 +14,26 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Rochester_crime_family",
-      "title": "Rochester crime family \u2014 Wikipedia"
+      "title": "Rochester crime family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Bonanno_crime_family",
-      "title": "Bonanno crime family \u2014 Wikipedia"
+      "title": "Bonanno crime family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Buffalo_crime_family",
-      "title": "Buffalo crime family \u2014 Wikipedia"
+      "title": "Buffalo crime family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/The_Commission_%28American_Mafia%29",
-      "title": "The Commission %28American Mafia%29 \u2014 Wikipedia"
+      "title": "The Commission %28American Mafia%29 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Pittsburgh_crime_family",
-      "title": "Pittsburgh crime family \u2014 Wikipedia"
+      "title": "Pittsburgh crime family — Wikipedia"
     }
   ],
   "founded_year_precision": "estimate",
-  "colors": []
+  "colors": [],
+  "disbanded_year": 1993
 }

@@ -216,8 +216,8 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         desc = org.get("description", "")
         if desc and desc[0].islower():
             warnings.append(f"{f}: description starts with lowercase")
-        if re.search(r'^(The |A |An )?[A-Z].*:\s', desc):
-            warnings.append(f"{f}: description starts with 'Name:' pattern (scrape junk)")
+        if re.search(r'^(Full Name|Also Known As|Name|Acronym|Founded|Origin|Founder|Videos|Territory|Ethnicity|Membership):', desc) or re.search(r'^[A-Z][^.]{0,30}(Also Known As|Founded|Acronym):', desc):
+            warnings.append(f"{f}: description starts with infobox pattern (scrape junk)")
 
         # Type/lane mismatch
         lane = org.get("lane", "")

@@ -15,19 +15,20 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Black_Mafia_Family",
-      "title": "Black Mafia Family \u2014 Wikipedia"
+      "title": "Black Mafia Family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/OutLaw_Gangster_Disciples",
-      "title": "OutLaw Gangster Disciples \u2014 Wikipedia"
+      "title": "OutLaw Gangster Disciples — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Zoe_Pound",
-      "title": "Zoe Pound \u2014 Wikipedia"
+      "title": "Zoe Pound — Wikipedia"
     }
   ],
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate"
+  "founded_year_precision": "estimate",
+  "disbanded_year": 2005
 }

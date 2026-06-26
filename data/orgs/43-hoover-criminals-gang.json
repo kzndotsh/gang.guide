@@ -3,17 +3,17 @@
   "name": "43 Hoover Criminals Gang",
   "lane": "california-crips-hoover",
   "metro": "Los Angeles",
-  "description": "Criminals Gang Also Known As: 4-Tray Hoover Criminals Gang; formerly 43 Hoover Crips Founded: 1970s Origin: South Los Angeles, California Primary Territory: 43rd Street & Hoover Street Ethnicity: African-American Affiliation: Hoover Criminals Gang Former Affiliation: Crips (Hoover Crips) Status: Inactive / Dormant The 43 Hoover Criminals Gang, also known as the 4-Tray Hoover Criminals Gang, is an African-American street gang located on the West Side of South Los Angeles, California.",
+  "description": "African-American Crip set founded in the 1970s on 43rd Street and Hoover Street in South Los Angeles. Originally known as the 43 Hoover Crips before splitting from the Crip alliance to become the Hoover Criminals Gang (4-Tray Hoover Criminals).",
   "type": "street_gang",
   "nation_affiliation": "org:crips",
   "sources": [
     {
       "url": "https://unitedgangs.com/43-hoover-criminals-gang/",
-      "title": "43 Hoover Criminals Gang \u2014 UnitedGangs"
+      "title": "43 Hoover Criminals Gang — UnitedGangs"
     },
     {
       "url": "https://www.streetgangs.com/crips/losangeles/43hoover/",
-      "title": "43 Hoover Criminals Gang \u2014 StreetGangs"
+      "title": "43 Hoover Criminals Gang — StreetGangs"
     }
   ],
   "founded_year": 1970,
