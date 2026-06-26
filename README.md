@@ -1,7 +1,7 @@
 <div align="center">
     <h1>gang.guide</h1>
     <p><strong>Evidence-backed US criminal organization history data platform</strong></p>
-    <p>Interactive timeline map visualization of 967 organizations, their relationships, and historical context.</p>
+    <p>Interactive timeline map visualization of US criminal organizations, their relationships, and historical context.</p>
     <p>
         <a href="https://gang.guide">🌐 Live Site</a> •
         <a href="#quick-start">🚀 Quick Start</a> •
@@ -67,16 +67,11 @@ No database. No pipeline. Flat JSON files are the source of truth.
 
 ## Data Stats
 
-| Metric | Count |
-|--------|-------|
-| Organizations | 967 |
-| Relationships | 1,147 |
-| Sources | 2,020 |
-| Lanes | 41 |
+Stats are computed at build time by `build.py` and embedded in `graph.json`.
 
 **Field coverage:** 100% descriptions, 100% founding years, 87% colors, 100% sources
 
-**Sources:** Wikipedia (855), StreetGangs.com (754), UnitedGangs.com (252), Chicago Gang History (112), DOJ/FBI (39)
+**Sources:** Wikipedia, StreetGangs.com, UnitedGangs.com, Chicago Gang History, DOJ/FBI
 
 ## Tech Stack
 
