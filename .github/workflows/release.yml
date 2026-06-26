@@ -33,6 +33,7 @@ jobs:
           ALCHEMY_PASSWORD: ${{ secrets.ALCHEMY_PASSWORD }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          ALCHEMY_CI_STATE_STORE_CHECK: "false"
         run: npx tsx alchemy.run.ts --stage production
 
       - name: Create GitHub Release
