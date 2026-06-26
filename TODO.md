@@ -225,18 +225,3 @@
 - Web Worker for layout computation — layout is instant (<50ms), no jank to offload
 
 ---
-
-## Principles
-
-1. **Data quality over quantity** — 980 well-sourced orgs beats 5,000 thin stubs
-2. **Evidence on everything** — every edge should trace back to a verbatim quote from a source
-3. **Multi-run consensus** — extract 3 times per page, keep only data that repeats across runs
-4. **Flat files forever** — the complexity lives in the data curation process, not the infrastructure
-
-## Non-goals
-
-- No database — flat files are correct for curated data at this scale
-- No CMS — the JSON files ARE the CMS
-- No user accounts — curated by maintainers, not crowdsourced
-- No real-time anything — rebuild on push, deploy static
-- No API — the static JSON files are the API
