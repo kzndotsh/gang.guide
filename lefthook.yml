@@ -1,3 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    ruff-check:
+      glob: "**/*.py"
+      run: ruff check --config apps/pipeline/pyproject.toml {staged_files}
+
 commit-msg:
   commands:
     commitlint:
