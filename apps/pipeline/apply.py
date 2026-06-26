@@ -126,8 +126,8 @@ def run_lint() -> bool:
 
 def main():
     parser = argparse.ArgumentParser(description="Apply extractions to org data")
-    parser.add_argument("--source", required=True)
-    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--source", required=True, help="Source to apply (e.g. chicago_history)")
+    parser.add_argument("--dry-run", action="store_true", help="Preview changes without writing files")
     args = parser.parse_args()
 
     source_dir = DATA_EXTRACTED / args.source

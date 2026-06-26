@@ -84,7 +84,7 @@ def merge_runs(runs: list[dict]) -> dict:
     }
 
 
-def process_source(source: str):
+def process_source(source: str, force: bool = False):
     """Merge all extracted pages for a source."""
     source_dir = DATA_EXTRACTED / source
     if not source_dir.exists():
@@ -92,8 +92,15 @@ def process_source(source: str):
         return
 
     merged_count = 0
+    skipped = 0
     for page_dir in sorted(source_dir.iterdir()):
         if not page_dir.is_dir():
+            continue
+
+        # Skip if already merged (unless --force)
+        out_path = page_dir / "consensus.json"
+        if not force and out_path.exists():
+            skipped += 1
             continue
 
         # Load runs
@@ -117,14 +124,15 @@ def process_source(source: str):
         edge_count = len(consensus.get("edges", []))
         print(f"  {page_dir.name}: {edge_count} edges, {len(consensus.get('colors', []))} colors")
 
-    print(f"\nMerged {merged_count} pages")
+    print(f"\nMerged {merged_count} pages" + (f", skipped {skipped} (already done)" if skipped else ""))
 
 
 def main():
     parser = argparse.ArgumentParser(description="Consensus merge of extraction runs")
-    parser.add_argument("--source", required=True, help="Source to merge")
+    parser.add_argument("--source", required=True, help="Source to merge (e.g. chicago_history)")
+    parser.add_argument("--force", action="store_true", help="Re-merge even if consensus.json exists")
     args = parser.parse_args()
-    process_source(args.source)
+    process_source(args.source, force=args.force)
 
 
 if __name__ == "__main__":

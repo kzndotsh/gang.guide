@@ -248,12 +248,17 @@ def ts() -> str:
 
 
 def main():
+    global MODEL
     parser = argparse.ArgumentParser(description="LLM extraction from raw pages")
     parser.add_argument("--source", required=True, help="Source directory in data/raw/")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process")
+    parser.add_argument("--model", default=None, help="Override model (default: claude-haiku-4.5 or EXTRACT_MODEL env)")
     parser.add_argument("--force", action="store_true", help="Re-extract even if done")
     parser.add_argument("--dry-run", action="store_true", help="Count pages without calling API")
     args = parser.parse_args()
+
+    if args.model:
+        MODEL = args.model
 
     if not KIRO_KEY and not args.dry_run:
         print("ERROR: Set KIRO_GATEWAY_API_KEY or PROXY_API_KEY")
