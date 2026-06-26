@@ -33,7 +33,7 @@ KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY"
 MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-4.5")
 TEMPERATURES = [0.1, 0.3, 0.7]  # conservative → balanced → creative
 RUNS_PER_PAGE = len(TEMPERATURES)
-MAX_CHUNK_WORDS = 2500
+MAX_CHUNK_WORDS = 50000  # sonnet 4.5 handles 1M context; only chunk truly massive docs
 
 PROMPT_VERSION = "v1"
 
