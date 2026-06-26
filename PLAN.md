@@ -253,7 +253,7 @@ apps/pipeline/
 ## Phase 3: Frontend improvements
 
 ### UX features
-- [ ] URL-driven state: `?lane=chicago&year=1970-1990&q=disciples`
+- [x] URL-driven state: `?lane=chicago&year=1970-1990&q=disciples`
 - [ ] Compare mode — select two orgs, highlight shared connections
 - [ ] Timeline scrubber — animate through decades using edge `period` data
 - [ ] Identity-colored node dots (use org's first color as circle fill)
@@ -335,7 +335,7 @@ apps/pipeline/
 - [x] Proper `.gitignore` — `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
 - [x] `.env.example` — document required env vars for deployment
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
-- [ ] Social media preview image (screenshot of the map)
+- [x] Social media preview image (screenshot of the map)
 - [x] Repository description + topics on GitHub
 
 ### Conventional commits & tooling ✅ DONE
