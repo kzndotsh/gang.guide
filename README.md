@@ -10,6 +10,8 @@
             <img alt="Cloudflare Workers" src="https://img.shields.io/badge/Cloudflare_Workers-f38020?logo=cloudflare&logoColor=white"></a>
         <a href="https://konvajs.org">
             <img alt="Konva.js" src="https://img.shields.io/badge/Konva.js-Canvas-0d83cd"></a>
+        <a href="https://python.org">
+            <img alt="Python" src="https://img.shields.io/badge/Python-3.12+-3776ab?logo=python&logoColor=white"></a>
     </p>
 </div>
 
