@@ -13,9 +13,12 @@
             <img alt="CI" src="https://github.com/kzndotsh/gang.guide/actions/workflows/ci.yml/badge.svg"></a>
         <a href="https://github.com/kzndotsh/gang.guide/releases">
             <img alt="Release" src="https://img.shields.io/github/v/release/kzndotsh/gang.guide?logo=github&logoColor=white"></a>
-        <img alt="Nodes" src="https://img.shields.io/badge/nodes-967-blue">
-        <img alt="Edges" src="https://img.shields.io/badge/edges-1147-green">
-        <img alt="Sources" src="https://img.shields.io/badge/sources-2020-orange">
+        <a href="https://svelte.dev">
+            <img alt="SvelteKit" src="https://img.shields.io/badge/SvelteKit-5-ff3e00?logo=svelte&logoColor=white"></a>
+        <a href="https://workers.cloudflare.com">
+            <img alt="Cloudflare Workers" src="https://img.shields.io/badge/Cloudflare_Workers-f38020?logo=cloudflare&logoColor=white"></a>
+        <a href="https://konvajs.org">
+            <img alt="Konva.js" src="https://img.shields.io/badge/Konva.js-Canvas-0d83cd"></a>
     </p>
 </div>
 
