@@ -19,7 +19,7 @@
 
 <div align="center">
     <h1>gang.guide</h1>
-    <p><strong>Evidence backed mapping of criminal organizations across the US, including alliances, rivalries, history, and culture.</strong></p>
+    <p><strong>Evidence backed mapping of criminal organizations across the US — alliances, rivalries, history, and culture.</strong></p>
     <p>
         <a href="https://gang.guide">🌐 Live Site</a> •
         <a href="#quick-start">🚀 Quick Start</a> •
