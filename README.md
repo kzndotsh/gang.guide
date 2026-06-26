@@ -70,32 +70,32 @@ just dev
 ## Project Structure
 
 ```
-├── build.py                  # Builds graph.json + details.json from flat data
+├── build.py                    # Builds graph.json + details.json from flat data
 ├── data/
-│   ├── orgs/                 # One JSON per org (967 files, source of truth)
-│   ├── edges.json            # Edge list (alliances, rivalries, affiliations)
-│   └── lanes.json            # Lane taxonomy + org anchors
+│   ├── orgs/                   # One JSON per org (967 files, source of truth)
+│   ├── edges.json              # Edge list (alliances, rivalries, affiliations)
+│   └── lanes.json              # Lane taxonomy + org anchors
 ├── apps/
-│   ├── web/                  # SvelteKit + Konva.js Canvas map viewer
-│   │   ├── src/routes/       # +page.svelte (main map), sitemap.xml
-│   │   ├── src/lib/map/      # KonvaMap.svelte, visibility.ts, scale.ts
-│   │   ├── src/lib/inspector/# Inspector panel components
-│   │   └── alchemy.run.ts   # Deployment config (Cloudflare Workers)
-│   └── pipeline/             # Python LLM extraction pipeline
-│       ├── extract.py        # Multi-temp extraction (sonnet 4.5)
-│       ├── adjudicate.py     # Conflict resolution (opus 4.6)
-│       ├── merge.py          # Consensus filtering
-│       ├── apply.py          # Conservative data upgrade
-│       ├── lint.py           # Data validation (runs in CI)
-│       └── tests/            # Unit tests + e2e + fixtures
-├── .ruler/                   # AI agent instructions (source of truth)
-├── .github/workflows/        # CI + release + PR title validation
-├── justfile                  # Task runner (just dev, just ci, just pipeline)
-├── pytest.ini                # Test config (strict markers, coverage)
-├── lefthook.yml              # Git hooks (ruff pre-commit, svelte-check pre-push)
-├── flake.nix                 # Nix dev shell
-├── TODO.md                   # Roadmap
-└── CONTRIBUTING.md           # Contributor guide
+│   ├── web/                    # SvelteKit + Konva.js Canvas map viewer
+│   │   ├── src/routes/         # +page.svelte (main map), sitemap.xml
+│   │   ├── src/lib/map/        # KonvaMap.svelte, visibility.ts, scale.ts
+│   │   ├── src/lib/inspector/  # Inspector panel components
+│   │   └── alchemy.run.ts     # Deployment config (Cloudflare Workers)
+│   └── pipeline/               # Python LLM extraction pipeline
+│       ├── extract.py          # Multi-temp extraction (sonnet 4.5)
+│       ├── adjudicate.py       # Conflict resolution (opus 4.6)
+│       ├── merge.py            # Consensus filtering
+│       ├── apply.py            # Conservative data upgrade
+│       ├── lint.py             # Data validation (runs in CI)
+│       └── tests/              # Unit tests + e2e + fixtures
+├── .ruler/                     # AI agent instructions (source of truth)
+├── .github/workflows/          # CI + release + PR title validation
+├── justfile                    # Task runner (just dev, just ci, just pipeline)
+├── pytest.ini                  # Test config (strict markers, coverage)
+├── lefthook.yml                # Git hooks (ruff pre-commit, svelte-check pre-push)
+├── flake.nix                   # Nix dev shell
+├── TODO.md                     # Roadmap
+└── CONTRIBUTING.md             # Contributor guide
 ```
 
 ## Data
