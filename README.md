@@ -52,28 +52,34 @@ just dev
 ## How It Works
 
 ```
-┌─────────────────────────────────────────────────────────────────────┐
-│                          DATA PIPELINE                              │
-│  SOURCES e.g:                                                       │
-│  Wikipedia ─┐                                                       │
-│  StreetGangs ─┼─→ scrape → clean HTML → LLM extract ×3              │
-│  DOJ/FBI ───┘                    │                                  │
-│                                  ▼                                  │
-│                         consensus filter (2/3 agree)                │
-│                                  │                                  │
-│                                  ▼                                  │
-│                         conservative merge                          │
-└──────────────────────────────────┼──────────────────────────────────┘
-                                   ▼
-┌─────────────────────────────────────────────────────────────────────┐
-│  data/orgs/*.json  →  build.py  →  graph.json  →  SvelteKit+Konva   │
-│     (967 files)       (compile)    (static)       (interactive map) │
-└─────────────────────────────────────────────────────────────────────┘
+SOURCES                    PIPELINE                         OUTPUT
+─────────                  ────────                         ──────
+Wikipedia ─┐
+StreetGangs ─┤  scrape    clean     extract ×3    adjudicate    merge
+DOJ/FBI ────┤  ──────→   ──────→   ──────────→   ──────────→  ──────→  data/orgs/*.json
+CGH ────────┘  (raw HTML) (text)   (sonnet 4.5)  (opus 4.6)   (2/3)   data/edges.json
+                                        │                                    │
+                                   3 temperatures                       build.py
+                                   0.1 / 0.3 / 0.7                          │
+                                                                             ▼
+                                                                      graph.json + details.json
+                                                                             │
+                                                                    SvelteKit + Konva.js Canvas
+                                                                             │
+                                                                      gang.guide (Cloudflare)
 ```
 
-- **No database** — flat JSON files are the source of truth
-- **No CMS** — edit org files directly, run `just build-data`
-- **No API** — static JSON files served from Cloudflare Workers edge
+**Pipeline** (`just pipeline chicago_history`):
+1. **Extract** — sends cleaned page text to sonnet 4.5 at 3 temperatures, gets structured JSON with edges + evidence quotes
+2. **Adjudicate** — opus 4.6 validates evidence, resolves conflicts, filters hallucinations
+3. **Merge** — algorithmic consensus (2/3 agreement) or uses adjudicated result
+4. **Apply** — conservative upgrade: only improves weaker fields, adds new edges, lint gates the result
+
+**Architecture**:
+- No database — flat JSON files are the source of truth
+- No CMS — edit org files directly, run `just build-data`
+- No API — static JSON files served from Cloudflare Workers edge
+- 129 unit tests, codecov coverage, conventional commits
 
 ## Project Structure
 
