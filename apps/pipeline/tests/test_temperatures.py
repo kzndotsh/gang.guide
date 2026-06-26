@@ -26,12 +26,13 @@ def ts():
 
 
 def call(text: str, temperature: float) -> tuple[dict | None, float]:
+    from apps.pipeline.extract import SYSTEM_PROMPT as SYS
     payload = {
         "model": MODEL,
         "max_tokens": 4096,
         "temperature": temperature,
-        "messages": [{"role": "user", "content": f"Extract gang data from this text:\n\n{text}"}],
-        "system": SYSTEM_PROMPT,
+        "messages": [{"role": "user", "content": f"Extract gang data from this text. Respond with ONLY a JSON object, no markdown fences, no explanation:\n\n{text}"}],
+        "system": SYS + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -46,8 +47,17 @@ def call(text: str, temperature: float) -> tuple[dict | None, float]:
         body = resp.json()
         text_out = "".join(p.get("text", "") for p in body.get("content", []) if p.get("type") == "text")
         text_out = text_out.strip()
-        if text_out.startswith("```"):
-            text_out = text_out.split("\n", 1)[1].rsplit("```", 1)[0]
+        if "```" in text_out:
+            parts = text_out.split("```")
+            for part in parts[1:]:
+                candidate = part.lstrip("json\n").strip()
+                if candidate.startswith("{"):
+                    text_out = candidate
+                    break
+        if not text_out.startswith("{"):
+            idx = text_out.find("{")
+            if idx != -1:
+                text_out = text_out[idx:]
         return json.loads(text_out), elapsed
     except Exception as e:
         return None, time.time() - start

@@ -115,21 +115,15 @@ EXTRACTION_SCHEMA = {
 
 
 def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> dict | None:
-    """Call kiro gateway with structured output (guaranteed valid JSON)."""
+    """Call kiro gateway and parse JSON response."""
     payload = {
         "model": MODEL,
         "max_tokens": 4096,
         "temperature": temperature,
         "messages": [
-            {"role": "user", "content": f"Extract gang data from this text:\n\n{text}"}
+            {"role": "user", "content": f"Extract gang data from this text. Respond with ONLY a JSON object, no markdown fences, no explanation:\n\n{text}"}
         ],
-        "system": SYSTEM_PROMPT,
-        "output_config": {
-            "format": {
-                "type": "json_schema",
-                "schema": EXTRACTION_SCHEMA,
-            }
-        },
+        "system": SYSTEM_PROMPT + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -151,7 +145,39 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> di
             text_out = "".join(
                 p.get("text", "") for p in body.get("content", []) if p.get("type") == "text"
             )
-            return json.loads(text_out)
+            # Strip any wrapping (markdown fences, preamble text)
+            text_out = text_out.strip()
+            if "```" in text_out:
+                # Extract content between first ``` and last ```
+                parts = text_out.split("```")
+                for part in parts[1:]:
+                    candidate = part.lstrip("json\n").strip()
+                    if candidate.startswith("{"):
+                        text_out = candidate
+                        break
+            # Find the JSON object even if there's preamble
+            if not text_out.startswith("{"):
+                start_idx = text_out.find("{")
+                if start_idx != -1:
+                    text_out = text_out[start_idx:]
+            # Trim trailing junk after the JSON
+            if text_out.startswith("{"):
+                depth = 0
+                end_idx = 0
+                for i, c in enumerate(text_out):
+                    if c == "{": depth += 1
+                    elif c == "}": depth -= 1
+                    if depth == 0:
+                        end_idx = i + 1
+                        break
+                if end_idx:
+                    text_out = text_out[:end_idx]
+            parsed = json.loads(text_out)
+            if not isinstance(parsed, dict) or "edges" not in parsed:
+                if attempt >= 2:
+                    return None
+                continue
+            return parsed
         except (httpx.HTTPStatusError, json.JSONDecodeError, httpx.TimeoutException) as e:
             if attempt >= 2:
                 print(f"    [{ts()}] FAIL after {attempt+1} attempts: {type(e).__name__}: {e}")

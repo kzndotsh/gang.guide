@@ -124,6 +124,7 @@ def call_adjudicator(runs: list[dict], timeout: float = 120.0) -> dict | None:
         runs_json = runs_json[:30000] + "\n... (truncated)"
 
     user_content = f"""Here are {len(runs)} extraction runs for the same org page. Resolve conflicts and produce the final record.
+Respond with ONLY a JSON object matching the expected schema. No markdown. No explanation. Start with {{ and end with }}.
 
 Extraction runs:
 {runs_json}"""
@@ -133,13 +134,7 @@ Extraction runs:
         "max_tokens": 4096,
         "temperature": 0.1,
         "messages": [{"role": "user", "content": user_content}],
-        "system": SYSTEM_PROMPT,
-        "output_config": {
-            "format": {
-                "type": "json_schema",
-                "schema": ADJUDICATION_SCHEMA,
-            }
-        },
+        "system": SYSTEM_PROMPT + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -155,6 +150,19 @@ Extraction runs:
             elapsed = time.time() - start
             body = resp.json()
             text_out = "".join(p.get("text", "") for p in body.get("content", []) if p.get("type") == "text")
+            text_out = text_out.strip()
+            # Extract JSON from markdown fences or preamble
+            if "```" in text_out:
+                parts = text_out.split("```")
+                for part in parts[1:]:
+                    candidate = part.lstrip("json\n").strip()
+                    if candidate.startswith("{"):
+                        text_out = candidate
+                        break
+            if not text_out.startswith("{"):
+                start_idx = text_out.find("{")
+                if start_idx != -1:
+                    text_out = text_out[start_idx:]
             result = json.loads(text_out)
             print(f"    [{ts()}] adjudicated in {elapsed:.1f}s")
             return result
