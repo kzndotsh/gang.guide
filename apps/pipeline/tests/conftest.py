@@ -7,6 +7,14 @@ from pathlib import Path
 FIXTURES_DIR = Path(__file__).parent / "fixtures"
 
 
+def pytest_configure(config):
+    """Configure test environment."""
+    # Ensure we're not accidentally hitting the network in unit tests
+    import os
+    os.environ.setdefault("KIRO_GATEWAY_URL", "http://localhost:99999")
+    os.environ.setdefault("KIRO_GATEWAY_API_KEY", "test-key-not-real")
+
+
 @pytest.fixture
 def org_index():
     """Mock org name → ID index for resolve tests."""
