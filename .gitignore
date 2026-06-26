@@ -8,6 +8,7 @@ data/raw/
 .env
 .cursor/
 .wrangler/
+apps/web/.vscode/
 
 # Alchemy state (contains API tokens in plaintext)
 .alchemy/
