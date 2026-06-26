@@ -52,12 +52,11 @@ just dev
 ## How It Works
 
 ```
-SOURCES                    PIPELINE                         OUTPUT
-─────────                  ────────                         ──────
-Wikipedia ─┐
-StreetGangs ─┤  scrape    clean     extract ×3    adjudicate    merge
-DOJ/FBI ────┤  ──────→   ──────→   ──────────→   ──────────→  ──────→  data/orgs/*.json
-CGH ────────┘  (raw HTML) (text)   (sonnet 4.5)  (opus 4.6)   (2/3)   data/edges.json
+DATA                       PIPELINE                         OUTPUT
+────                       ────────                         ──────
+data/raw/ ──→  scrape    clean     extract ×3    adjudicate    merge
+               ──────→   ──────→   ──────────→   ──────────→  ──────→  data/orgs/*.json
+               (raw HTML) (text)   (sonnet 4.5)  (opus 4.6)   (2/3)   data/edges.json
                                         │                                    │
                                    3 temperatures                       build.py
                                    0.1 / 0.3 / 0.7                          │
@@ -102,7 +101,7 @@ CGH ────────┘  (raw HTML) (text)   (sonnet 4.5)  (opus 4.6)   
 └── TODO.md                   # Roadmap
 ```
 
-## Data Stats
+## Data
 
 Stats are computed at build time by `build.py` and embedded in `graph.json`.
 
