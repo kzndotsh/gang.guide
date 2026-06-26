@@ -54,7 +54,7 @@ just dev
 ```
 DATA                       PIPELINE                                      OUTPUT
 ────                       ────────                                      ──────
-data/raw/ ─→ scrape → clean → extract ×3 → adjudicate → merge ─→ data/orgs/*.json
+data/raw/ → scrape → clean → extract ×3 → adjudicate → merge → data/orgs/*.json
              (HTML)   (text)  (sonnet 4.5)  (opus 4.6)   (2/3)   data/edges.json
                                │                                        │
                           3 temperatures                            build.py
