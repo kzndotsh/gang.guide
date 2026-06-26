@@ -1,6 +1,12 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
   import type { Graph, GraphEdge, GraphNode } from '$lib/types';
+  import Konva from 'konva/lib/Core';
+  import { Rect } from 'konva/lib/shapes/Rect';
+  import { Circle } from 'konva/lib/shapes/Circle';
+  import { Line } from 'konva/lib/shapes/Line';
+  import { Text } from 'konva/lib/shapes/Text';
+  import { Shape } from 'konva/lib/Shape';
   import { deriveClientLayout, laneLabel, laneSortOrder, shortLabel } from './layout';
   import { orgDisplayTitle } from '$lib/inspector/inspectorDisplay';
   import { nodeMatchesMetro } from './mapFilters';
@@ -71,7 +77,6 @@
   let edgeLayer: any = null;
   let nodeLayer: any = null;
   let labelLayer: any = null;
-  let Konva: any = null;
 
   // Track current zoom for LOD
   let currentZoom = 1;
@@ -200,7 +205,7 @@
   // --- Konva rendering ---
 
   function buildScene() {
-    if (!stage || !Konva) return;
+    if (!stage) return;
 
     bgLayer.destroyChildren();
     edgeLayer.destroyChildren();
@@ -543,7 +548,7 @@
     const count = visibleNodes.length;
     const sel = selectedId;
     const mode = edgeMode;
-    if (stage && Konva && (count !== prevVisibleCount || sel !== prevSelectedId || mode !== prevEdgeMode)) {
+    if (stage && (count !== prevVisibleCount || sel !== prevSelectedId || mode !== prevEdgeMode)) {
       prevVisibleCount = count;
       prevSelectedId = sel;
       prevEdgeMode = mode;
@@ -566,58 +571,53 @@
   onMount(() => {
     if (!containerEl) return;
 
-    // Dynamic import to avoid SSR issues
-    import('konva').then((konvaModule) => {
-      if (!containerEl) return;
-      Konva = konvaModule.default;
-      Konva.pixelRatio = 1;
+    Konva.pixelRatio = 1;
 
-      stage = new Konva.Stage({
-        container: containerEl,
-        width: containerEl.clientWidth,
-        height: containerEl.clientHeight,
-        draggable: true,
-      });
-
-      bgLayer = new Konva.Layer({ listening: false });
-      edgeLayer = new Konva.Layer({ listening: false });
-      nodeLayer = new Konva.Layer();
-      labelLayer = new Konva.Layer({ listening: false });
-
-      stage.add(bgLayer);
-      stage.add(edgeLayer);
-      stage.add(nodeLayer);
-      stage.add(labelLayer);
-
-      // Wheel zoom
-      stage.on('wheel', (e: any) => {
-        e.evt.preventDefault();
-        const factor = e.evt.deltaY > 0 ? 0.9 : 1.1;
-        const pointer = stage.getPointerPosition();
-        if (pointer) applyZoom(factor, pointer.x, pointer.y);
-      });
-
-      // Click on empty space = deselect
-      stage.on('click tap', (e: any) => {
-        if (e.target === stage) ondeselect?.();
-      });
-
-      // Resize observer
-      resizeObserver = new ResizeObserver(() => {
-        if (!containerEl || !stage) return;
-        stage.width(containerEl.clientWidth);
-        stage.height(containerEl.clientHeight);
-        if (!didInitialFit) {
-          fitToView();
-          didInitialFit = true;
-          mapReady = true; onready?.();
-        }
-      });
-      resizeObserver.observe(containerEl);
-
-      // Initial render
-      buildSceneAsync();
+    stage = new Konva.Stage({
+      container: containerEl,
+      width: containerEl.clientWidth,
+      height: containerEl.clientHeight,
+      draggable: true,
     });
+
+    bgLayer = new Konva.Layer({ listening: false });
+    edgeLayer = new Konva.Layer({ listening: false });
+    nodeLayer = new Konva.Layer();
+    labelLayer = new Konva.Layer({ listening: false });
+
+    stage.add(bgLayer);
+    stage.add(edgeLayer);
+    stage.add(nodeLayer);
+    stage.add(labelLayer);
+
+    // Wheel zoom
+    stage.on('wheel', (e: any) => {
+      e.evt.preventDefault();
+      const factor = e.evt.deltaY > 0 ? 0.9 : 1.1;
+      const pointer = stage.getPointerPosition();
+      if (pointer) applyZoom(factor, pointer.x, pointer.y);
+    });
+
+    // Click on empty space = deselect
+    stage.on('click tap', (e: any) => {
+      if (e.target === stage) ondeselect?.();
+    });
+
+    // Resize observer
+    resizeObserver = new ResizeObserver(() => {
+      if (!containerEl || !stage) return;
+      stage.width(containerEl.clientWidth);
+      stage.height(containerEl.clientHeight);
+      if (!didInitialFit) {
+        fitToView();
+        didInitialFit = true;
+        mapReady = true; onready?.();
+      }
+    });
+    resizeObserver.observe(containerEl);
+
+    // Initial render
+    buildSceneAsync();
 
     return () => {
       resizeObserver?.disconnect();
