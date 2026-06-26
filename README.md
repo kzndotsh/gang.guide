@@ -1,4 +1,5 @@
 <div align="center">
+    <img src=".github/assets/readme-header.png" alt="gang.guide" width="100%">
     <h1>gang.guide</h1>
     <p><strong>Evidence-backed US criminal organization history data platform</strong></p>
     <p>Interactive timeline map visualization of US criminal organizations, their relationships, and historical context.</p>
