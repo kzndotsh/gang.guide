@@ -52,20 +52,19 @@ just dev
 ## How It Works
 
 ```
-DATA                       PIPELINE                         OUTPUT
-────                       ────────                         ──────
-data/raw/ ──→  scrape    clean     extract ×3    adjudicate    merge
-               ──────→   ──────→   ──────────→   ──────────→  ──────→  data/orgs/*.json
-               (raw HTML) (text)   (sonnet 4.5)  (opus 4.6)   (2/3)   data/edges.json
-                                        │                                    │
-                                   3 temperatures                       build.py
-                                   0.1 / 0.3 / 0.7                          │
-                                                                             ▼
-                                                                      graph.json + details.json
-                                                                             │
-                                                                    SvelteKit + Konva.js Canvas
-                                                                             │
-                                                                      gang.guide (Cloudflare)
+DATA                       PIPELINE                                      OUTPUT
+────                       ────────                                      ──────
+data/raw/ ─→ scrape → clean → extract ×3 → adjudicate → merge ─→ data/orgs/*.json
+             (HTML)   (text)  (sonnet 4.5)  (opus 4.6)   (2/3)   data/edges.json
+                               │                                        │
+                          3 temperatures                            build.py
+                          0.1 / 0.3 / 0.7                               │
+                                                                        ▼
+                                                              graph.json + details.json
+                                                                        │
+                                                              SvelteKit + Konva Canvas
+                                                                        │
+                                                              gang.guide (Cloudflare)
 ```
 
 **Pipeline** (`just pipeline chicago_history`):
