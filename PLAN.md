@@ -333,10 +333,10 @@ apps/pipeline/
 - [x] `justfile` — task runner (`just dev`, `just deploy`, `just lint`, etc.)
 - [x] Root `package.json` — commitlint, lefthook, ruler as global devDeps
 - [x] Proper `.gitignore` — `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
-- [ ] `.env.example` — document required env vars for deployment
+- [x] `.env.example` — document required env vars for deployment
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
 - [ ] Social media preview image (screenshot of the map)
-- [ ] Repository description + topics on GitHub
+- [x] Repository description + topics on GitHub
 
 ### Conventional commits & tooling ✅ DONE
 - [x] Commitlint (`commitlint.config.js`) — enforces conventional commits
