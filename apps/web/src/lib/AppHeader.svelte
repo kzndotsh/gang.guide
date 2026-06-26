@@ -35,7 +35,7 @@
       </svg>
     </div>
     <div class="min-w-0 leading-none">
-      <h1 class="flex items-center gap-1.5 truncate text-sm font-semibold tracking-tight">gang.guide <span class="rounded bg-muted-foreground/10 px-1 py-0.5 text-[0.55rem] font-normal text-muted-foreground">{__APP_VERSION__}</span></h1>
+      <h1 class="flex items-center gap-1.5 truncate text-sm font-semibold tracking-tight">gang.guide <span class="rounded bg-muted-foreground/10 px-1 py-0.5 text-[0.55rem] font-normal text-muted-foreground"><a href="https://github.com/kzndotsh/gang.guide" target="_blank" rel="noopener">{__APP_VERSION__}</a></span></h1>
       <p class="hidden truncate text-[0.62rem] text-muted-foreground sm:block">
         Mapping criminal organizations across the US
       </p>
