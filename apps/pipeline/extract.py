@@ -30,7 +30,7 @@ DATA_EXTRACTED.mkdir(exist_ok=True)
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("EXTRACT_MODEL", "claude-haiku-4.5")
+MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-4.5")
 TEMPERATURES = [0.1, 0.3, 0.7]  # conservative → balanced → creative
 RUNS_PER_PAGE = len(TEMPERATURES)
 MAX_CHUNK_WORDS = 2500

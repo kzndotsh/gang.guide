@@ -26,7 +26,7 @@ DATA_EXTRACTED = ROOT / "data" / "extracted"
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("ADJUDICATE_MODEL", "claude-sonnet-4-20250514")
+MODEL = os.environ.get("ADJUDICATE_MODEL", "claude-opus-4.6")
 
 SYSTEM_PROMPT = """You are a data quality adjudicator for a criminal organizations database.
 
@@ -187,8 +187,8 @@ def process_source(source: str, dry_run: bool = False):
             continue
 
         if not needs_adjudication(runs):
-            auto_merged += 1
-            continue
+            # Still adjudicate everything — tokens are unlimited, quality wins
+            pass
 
         slug = page_dir.name
         if dry_run:
