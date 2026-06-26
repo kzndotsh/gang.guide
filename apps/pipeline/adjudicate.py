@@ -41,28 +41,7 @@ Rules:
 - For colors: only include colors explicitly stated as the org's colors, not colors mentioned in passing.
 - For descriptions: synthesize the best factual summary (2-3 sentences) from all inputs.
 - For orgs_mentioned: only include real criminal organizations, not neighborhoods or events.
-- Return ONLY valid JSON matching the schema below. No commentary."""
-
-OUTPUT_SCHEMA = """{
-  "subject_org": "string",
-  "founded_year": int_or_null,
-  "founded_year_precision": "exact|circa|decade",
-  "colors": ["string"],
-  "symbols": ["string"],
-  "membership_estimate": int_or_null,
-  "description": "2-3 sentence factual summary",
-  "edges": [
-    {
-      "target": "org name",
-      "type": "alliance|rivalry|parent|member_of|spin_off",
-      "evidence": "verbatim quote that proves this",
-      "start_year": int_or_null,
-      "end_year": int_or_null,
-      "confidence": "high|medium"
-    }
-  ],
-  "unresolved_names": ["names that might be orgs we don't have yet"]
-}"""
+- Set confidence to "high" if evidence is a direct quote naming both orgs, "medium" otherwise."""
 
 
 def ts() -> str:
@@ -99,8 +78,41 @@ def needs_adjudication(runs: list[dict]) -> bool:
     return False
 
 
+ADJUDICATION_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "subject_org": {"type": "string"},
+        "founded_year": {"type": ["integer", "null"]},
+        "founded_year_precision": {"type": "string"},
+        "colors": {"type": "array", "items": {"type": "string"}},
+        "symbols": {"type": "array", "items": {"type": "string"}},
+        "membership_estimate": {"type": ["integer", "null"]},
+        "description": {"type": "string"},
+        "edges": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "target": {"type": "string"},
+                    "type": {"type": "string"},
+                    "evidence": {"type": "string"},
+                    "start_year": {"type": ["integer", "null"]},
+                    "end_year": {"type": ["integer", "null"]},
+                    "confidence": {"type": "string"},
+                },
+                "required": ["target", "type", "evidence", "confidence"],
+                "additionalProperties": False,
+            },
+        },
+        "unresolved_names": {"type": "array", "items": {"type": "string"}},
+    },
+    "required": ["subject_org", "founded_year", "founded_year_precision", "colors", "symbols", "membership_estimate", "description", "edges", "unresolved_names"],
+    "additionalProperties": False,
+}
+
+
 def call_adjudicator(runs: list[dict], timeout: float = 120.0) -> dict | None:
-    """Send runs to adjudicator model."""
+    """Send runs to adjudicator model with structured output."""
     # Truncate to avoid token limits (keep edges + key fields, drop long descriptions)
     trimmed_runs = []
     for r in runs:
@@ -108,14 +120,10 @@ def call_adjudicator(runs: list[dict], timeout: float = 120.0) -> dict | None:
         trimmed["description"] = (r.get("description") or "")[:200]
         trimmed_runs.append(trimmed)
     runs_json = json.dumps(trimmed_runs, indent=2)
-    # Cap total input at ~30K chars
     if len(runs_json) > 30000:
         runs_json = runs_json[:30000] + "\n... (truncated)"
 
     user_content = f"""Here are {len(runs)} extraction runs for the same org page. Resolve conflicts and produce the final record.
-
-Schema for your response:
-{OUTPUT_SCHEMA}
 
 Extraction runs:
 {runs_json}"""
@@ -126,6 +134,12 @@ Extraction runs:
         "temperature": 0.1,
         "messages": [{"role": "user", "content": user_content}],
         "system": SYSTEM_PROMPT,
+        "output_config": {
+            "format": {
+                "type": "json_schema",
+                "schema": ADJUDICATION_SCHEMA,
+            }
+        },
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -141,9 +155,6 @@ Extraction runs:
             elapsed = time.time() - start
             body = resp.json()
             text_out = "".join(p.get("text", "") for p in body.get("content", []) if p.get("type") == "text")
-            text_out = text_out.strip()
-            if text_out.startswith("```"):
-                text_out = text_out.split("\n", 1)[1].rsplit("```", 1)[0]
             result = json.loads(text_out)
             print(f"    [{ts()}] adjudicated in {elapsed:.1f}s")
             return result

@@ -84,8 +84,38 @@ def chunk_text(text: str) -> list[str]:
     return chunks
 
 
-def call_kiro(text: str, temperature: float = 0.0, timeout: float = 90.0) -> dict | None:
-    """Call kiro gateway and parse JSON response."""
+EXTRACTION_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "subject_org": {"type": "string"},
+        "founded_year": {"type": ["integer", "null"]},
+        "colors": {"type": "array", "items": {"type": "string"}},
+        "symbols": {"type": "array", "items": {"type": "string"}},
+        "membership_estimate": {"type": ["integer", "null"]},
+        "description": {"type": "string"},
+        "edges": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "target": {"type": "string"},
+                    "type": {"type": "string"},
+                    "evidence": {"type": "string"},
+                    "period": {"type": ["string", "null"]},
+                },
+                "required": ["target", "type", "evidence"],
+                "additionalProperties": False,
+            },
+        },
+        "orgs_mentioned": {"type": "array", "items": {"type": "string"}},
+    },
+    "required": ["subject_org", "founded_year", "colors", "symbols", "membership_estimate", "description", "edges", "orgs_mentioned"],
+    "additionalProperties": False,
+}
+
+
+def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> dict | None:
+    """Call kiro gateway with structured output (guaranteed valid JSON)."""
     payload = {
         "model": MODEL,
         "max_tokens": 4096,
@@ -94,6 +124,12 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 90.0) -> dic
             {"role": "user", "content": f"Extract gang data from this text:\n\n{text}"}
         ],
         "system": SYSTEM_PROMPT,
+        "output_config": {
+            "format": {
+                "type": "json_schema",
+                "schema": EXTRACTION_SCHEMA,
+            }
+        },
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -111,20 +147,11 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 90.0) -> dic
                 timeout=timeout,
             )
             resp.raise_for_status()
-            call_elapsed = time.time() - call_start
             body = resp.json()
             text_out = "".join(
                 p.get("text", "") for p in body.get("content", []) if p.get("type") == "text"
             )
-            # Parse JSON from response (handle markdown code blocks)
-            text_out = text_out.strip()
-            if text_out.startswith("```"):
-                text_out = text_out.split("\n", 1)[1].rsplit("```", 1)[0]
-            parsed = json.loads(text_out)
-            # Validate minimal schema
-            if not isinstance(parsed, dict) or "edges" not in parsed:
-                return None
-            return parsed
+            return json.loads(text_out)
         except (httpx.HTTPStatusError, json.JSONDecodeError, httpx.TimeoutException) as e:
             if attempt >= 2:
                 print(f"    [{ts()}] FAIL after {attempt+1} attempts: {type(e).__name__}: {e}")
