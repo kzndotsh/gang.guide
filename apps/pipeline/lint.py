@@ -224,7 +224,8 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         if "prison" in lane and org.get("type", "") == "street_gang":
             warnings.append(f"{f}: street_gang in prison lane (should be prison_gang?)")
         if "motorcycle" in lane and org.get("type", "") != "motorcycle_club":
-            warnings.append(f"{f}: {org.get("type", "")} in motorcycle lane (should be motorcycle_club?)")
+            org_type = org.get('type', '')
+            warnings.append(f"{f}: {org_type} in motorcycle lane (should be motorcycle_club?)")
 
         # --- Info ---
         sources = org.get("sources") or []
@@ -303,7 +304,7 @@ def check_descriptions(orgs: dict[str, dict]):
             info.append(f"{f}: description has unbalanced quotes")
 
         # Descriptions that end abruptly (likely truncated)
-        if len(desc) > 100 and not desc[-1] in '.!?")\' ':
+        if len(desc) > 100 and desc[-1] not in '.!?")\' ':
             info.append(f"{f}: description may be truncated (ends with '{desc[-1]}')")
 
 
