@@ -5,6 +5,12 @@ pre-commit:
       glob: "**/*.py"
       run: ruff check --config apps/pipeline/pyproject.toml {staged_files}
 
+pre-push:
+  commands:
+    svelte-check:
+      glob: "apps/web/**/*.{svelte,ts}"
+      run: cd apps/web && npx svelte-kit sync && npm run check
+
 commit-msg:
   commands:
     commitlint:
