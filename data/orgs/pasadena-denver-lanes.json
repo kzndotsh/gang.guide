@@ -3,20 +3,20 @@
   "name": "Pasadena Denver Lanes",
   "type": "street_gang",
   "lane": "blood-nation",
-  "description": "Ls) are a predominately African-American street gang located in King\u2019s Manor Apartments in Pasadena, California.",
+  "description": "Ls) are a predominately African-American street gang located in King’s Manor Apartments in Pasadena, California.",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/pasadena/",
-      "title": "Pasadena Denver Lanes \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/pasadena",
+      "title": "Pasadena Denver Lanes — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/pasadena/",
-      "title": "Pasadena Denver Lanes \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/pasadena",
+      "title": "Pasadena Denver Lanes — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/hispanic/pasadena/",
-      "title": "Pasadena Denver Lanes \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/pasadena",
+      "title": "Pasadena Denver Lanes — StreetGangs"
     }
   ],
   "metro": "Los Angeles",

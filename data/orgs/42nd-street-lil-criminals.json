@@ -3,12 +3,12 @@
   "name": "42nd Street Lil Criminals",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Latino street gang based around 42nd Street in South Los Angeles, operating in an area contested by numerous Sure\u00f1o-affiliated gangs under Mexican Mafia influence.",
+  "description": "Latino street gang based around 42nd Street in South Los Angeles, operating in an area contested by numerous Sureño-affiliated gangs under Mexican Mafia influence.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/fslc/",
-      "title": "42nd Street Lil Criminals \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/fslc",
+      "title": "42nd Street Lil Criminals — StreetGangs"
     }
   ],
   "founded_year": 1965,

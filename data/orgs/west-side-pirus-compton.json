@@ -7,36 +7,36 @@
   "type": "street_gang",
   "lane": "california-bloods-compton",
   "metro": "Los Angeles",
-  "description": "West Side Pirus are a predominately African-American street gang located on the westside of Compton, CA. They were originally known as the Piru Street Boys founded around 1969 by Sylvester \u201cPuddin\u201d Scott, Vincent Owens, Lorenzo \u201cLB\u201d Benton, Larry \u201cTam\u201d Watts and A.C. Moses and others making them one of the oldest Black gangs in LA County. The founders named their gang, Piru, after the street they lived on in the western section of Compton.",
+  "description": "West Side Pirus are a predominately African-American street gang located on the westside of Compton, CA. They were originally known as the Piru Street Boys founded around 1969 by Sylvester “Puddin” Scott, Vincent Owens, Lorenzo “LB” Benton, Larry “Tam” Watts and A.C. Moses and others making them one of the oldest Black gangs in LA County. The founders named their gang, Piru, after the street they lived on in the western section of Compton.",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/West_Side_Piru",
-      "title": "West Side Piru \u2014 Wikipedia"
+      "title": "West Side Piru — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/West_Side_Pirus_Compton",
-      "title": "West Side Pirus Compton \u2014 Wikipedia"
+      "title": "West Side Pirus Compton — Wikipedia"
     },
     {
-      "url": "https://www.streetgangs.com/hispanic/bellgardens/wes/",
-      "title": "West Side Pirus (Compton) \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/bellgardens/wes",
+      "title": "West Side Pirus (Compton) — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/west-side-piru/",
-      "title": "West Side Piru \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/west-side-piru",
+      "title": "West Side Piru — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/carson/wsp/",
-      "title": "West Side Pirus (Compton) \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/carson/wsp",
+      "title": "West Side Pirus (Compton) — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/compton/wsp/",
-      "title": "West Side Pirus (Compton) \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/compton/wsp",
+      "title": "West Side Pirus (Compton) — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/hispanic/pomona/wsp/",
-      "title": "West Side Pirus (Compton) \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/pomona/wsp",
+      "title": "West Side Pirus (Compton) — StreetGangs"
     }
   ],
   "founded_year": 1972,

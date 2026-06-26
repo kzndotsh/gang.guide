@@ -12,12 +12,12 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://unitedgangs.com/gangster-crips/",
-      "title": "Gangster Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/gangster-crips",
+      "title": "Gangster Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/mvpgc/",
-      "title": "Most Valuable Pimp Gangster Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/mvpgc",
+      "title": "Most Valuable Pimp Gangster Crips — StreetGangs"
     }
   ],
   "type": "street_gang",

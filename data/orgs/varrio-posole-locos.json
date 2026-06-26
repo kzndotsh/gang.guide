@@ -7,12 +7,12 @@
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://unitedgangs.com/varrio-posole-locos/",
-      "title": "Varrio Posole Locos \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/varrio-posole-locos",
+      "title": "Varrio Posole Locos — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/posole/",
-      "title": "Varrio Posole Locos \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/posole",
+      "title": "Varrio Posole Locos — StreetGangs"
     }
   ],
   "founded_year": 1950,

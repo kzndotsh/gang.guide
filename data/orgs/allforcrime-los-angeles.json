@@ -9,12 +9,12 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/allforcrime/",
-      "title": "Allforcrime \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles/allforcrime",
+      "title": "Allforcrime — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/all-for-crime-bloods/",
-      "title": "All For Crime Bloods \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/all-for-crime-bloods",
+      "title": "All For Crime Bloods — UnitedGangs"
     }
   ],
   "colors": [

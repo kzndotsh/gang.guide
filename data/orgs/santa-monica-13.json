@@ -10,7 +10,7 @@
   "type": "street_gang",
   "lane": "california-latino-westside",
   "metro": "Los Angeles",
-  "description": "Santa Monica 13 (SMG) is one of the oldest gangs on LA's Westside, originating in the late 1920s as the 'Santa Monica Tomato Patch Gang' in the Pico neighborhood. Sure\u00f1o gang affiliated with the Mexican Mafia. Despite being Sure\u00f1o, they wear traditional black bandanas. The SM17 (17th Street) clique is their primary subset. Have had historical rivalries with Venice 13, Culver City Boys, 18th Street, and Venice Shoreline Crips, though a truce with Venice 13 was later established. Considered the first gang to originate on the Westside of Los Angeles.",
+  "description": "Santa Monica 13 (SMG) is one of the oldest gangs on LA's Westside, originating in the late 1920s as the 'Santa Monica Tomato Patch Gang' in the Pico neighborhood. Sureño gang affiliated with the Mexican Mafia. Despite being Sureño, they wear traditional black bandanas. The SM17 (17th Street) clique is their primary subset. Have had historical rivalries with Venice 13, Culver City Boys, 18th Street, and Venice Shoreline Crips, though a truce with Venice 13 was later established. Considered the first gang to originate on the Westside of Los Angeles.",
   "founded_year": 1925,
   "founded_year_precision": "circa",
   "colors": [
@@ -25,19 +25,19 @@
       "title": "Santa Monica 13 - Wikipedia"
     },
     {
-      "url": "http://www.streetgangs.com/features/012602_pico_family",
+      "url": "https://www.streetgangs.com/features/012602_pico_family",
       "title": "StreetGangs - Pico Youth and Family Center"
     },
     {
-      "url": "https://www.streetgangs.com/news/102798-two-killed-in-5th/",
-      "title": "102798 Two Killed In 5Th \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/news/102798-two-killed-in-5th",
+      "title": "102798 Two Killed In 5Th — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/news/102898-gang-violence/",
-      "title": "102898 Gang Violence \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/news/102898-gang-violence",
+      "title": "102898 Gang Violence — StreetGangs"
     },
     {
-      "url": "https://www.courtlistener.com/docket/4144842/763/united-states-v-pantoja/",
+      "url": "https://www.courtlistener.com/docket/4144842/763/united-states-v-pantoja",
       "title": "Courtlistener"
     }
   ]

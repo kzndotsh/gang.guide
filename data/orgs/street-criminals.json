@@ -3,12 +3,12 @@
   "name": "Street Criminals",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Latino street gang in Los Angeles, part of the wave of 'criminal'-named Sure\u00f1o cliques that proliferated in the 1980s\u201390s.",
+  "description": "Latino street gang in Los Angeles, part of the wave of 'criminal'-named Sureño cliques that proliferated in the 1980s–90s.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/sxc/",
-      "title": "Street Criminals \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/sxc",
+      "title": "Street Criminals — StreetGangs"
     }
   ],
   "founded_year": 1965,

@@ -3,12 +3,12 @@
   "name": "Flipside Trece",
   "lane": "asian-gangs",
   "metro": "Los Angeles",
-  "description": "Flipside Trece is a Filipino/Latino street gang in Los Angeles affiliated with the Sure\u00f1o (13) movement, part of a broader network of Filipino American gangs in Southern California.",
+  "description": "Flipside Trece is a Filipino/Latino street gang in Los Angeles affiliated with the Sureño (13) movement, part of a broader network of Filipino American gangs in Southern California.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/asian/southlosangeles/flipside/",
-      "title": "Flipside Trece \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/asian/southlosangeles/flipside",
+      "title": "Flipside Trece — StreetGangs"
     }
   ],
   "founded_year": 1980,

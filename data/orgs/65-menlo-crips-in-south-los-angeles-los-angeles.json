@@ -10,12 +10,12 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/65menlo/",
-      "title": "The 65 Menlo Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/65menlo",
+      "title": "The 65 Menlo Crips — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/menlo-crips/",
-      "title": "Menlo Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/menlo-crips",
+      "title": "Menlo Crips — UnitedGangs"
     }
   ],
   "colors": [

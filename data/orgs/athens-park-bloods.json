@@ -11,27 +11,27 @@
   "lane": "california-bloods-la-south-bay",
   "founded_year": 1973,
   "founded_year_precision": "decade",
-  "description": "The Athens Park Bloods (APB) are primarily a black criminal street gang located on the west side of Rosewood (also known as Athens), around the Rosedale community, region of Los Angeles, Ca. Their neighborhood stretches from Figueroa Ave to Avalon Blvd. They\u2019ve several cliques, but their main cliques are 124th Street and 127th Street.",
+  "description": "The Athens Park Bloods (APB) are primarily a black criminal street gang located on the west side of Rosewood (also known as Athens), around the Rosedale community, region of Los Angeles, Ca. Their neighborhood stretches from Figueroa Ave to Avalon Blvd. They’ve several cliques, but their main cliques are 124th Street and 127th Street.",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/rosewood/athenspark/",
-      "title": "Athenspark \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/rosewood/athenspark",
+      "title": "Athenspark — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/athens-park-bloods/",
-      "title": "Athens Park Bloods \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/athens-park-bloods",
+      "title": "Athens Park Bloods — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/athens/",
-      "title": "Athens Park Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/athens",
+      "title": "Athens Park Bloods — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/athens/",
-      "title": "Athens Park Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/athens",
+      "title": "Athens Park Bloods — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/hispanic/lacounty/athens/",
-      "title": "Athens Park Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/lacounty/athens",
+      "title": "Athens Park Bloods — StreetGangs"
     }
   ],
   "metro": "Los Angeles",

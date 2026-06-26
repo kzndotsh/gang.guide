@@ -3,12 +3,12 @@
   "name": "Lost Angeles (LOAS)",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Latino street gang in Los Angeles whose name references the city, part of the broader network of Sure\u00f1o-aligned cliques.",
+  "description": "Latino street gang in Los Angeles whose name references the city, part of the broader network of Sureño-aligned cliques.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/central/loas/",
-      "title": "LOAS (Lost Angeles) \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/loas",
+      "title": "LOAS (Lost Angeles) — StreetGangs"
     }
   ],
   "founded_year": 1965,

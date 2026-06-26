@@ -12,19 +12,15 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/",
-      "title": "Rollin 20s Outlaw Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods",
+      "title": "Rollin 20s Outlaw Bloods — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/outlaw20s/",
-      "title": "Rollin 20s Outlaw Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles/outlaw20s",
+      "title": "Rollin 20s Outlaw Bloods — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/outlaw20s/",
-      "title": "Team Eastside Rollin 20s Outlaw Bloods \u2014 StreetGangs"
-    },
-    {
-      "url": "https://chicagoganghistory.com/gang/outlaw-bloods/",
+      "url": "https://chicagoganghistory.com/gang/outlaw-bloods",
       "title": "Outlaw Bloods - Chicago Gang History"
     }
   ],

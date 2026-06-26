@@ -7,12 +7,12 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/dodgecitycrips/",
-      "title": "Dodgecitycrips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/dodgecitycrips",
+      "title": "Dodgecitycrips — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/dodge-city-crips/",
-      "title": "Dodge City Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/dodge-city-crips",
+      "title": "Dodge City Crips — UnitedGangs"
     }
   ],
   "type": "street_gang",

@@ -11,16 +11,16 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/pirus/",
-      "title": "Circle City Piru \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/pirus",
+      "title": "Circle City Piru — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/circle-city-piru/",
-      "title": "Circle City Piru \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/circle-city-piru",
+      "title": "Circle City Piru — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/ccp/",
-      "title": "Circle City Piru \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles/ccp",
+      "title": "Circle City Piru — StreetGangs"
     }
   ],
   "founded_year": 1974,

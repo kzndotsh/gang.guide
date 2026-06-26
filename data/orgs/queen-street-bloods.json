@@ -12,16 +12,16 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/",
-      "title": "Queen Street Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods",
+      "title": "Queen Street Bloods — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/queen-street-bloods/",
-      "title": "Queen Street Bloods \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/queen-street-bloods",
+      "title": "Queen Street Bloods — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/inglewood/qsb/",
-      "title": "Queen Street Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/inglewood/qsb",
+      "title": "Queen Street Bloods — StreetGangs"
     }
   ],
   "founded_year": 1969,

@@ -14,16 +14,16 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/ftb/",
-      "title": "Westside Fruit Town Brims \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles/ftb",
+      "title": "Westside Fruit Town Brims — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/fruit/town/brims/",
-      "title": "Westside Fruit Town Brims \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/fruit/town/brims",
+      "title": "Westside Fruit Town Brims — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/fruit-town-brims/",
-      "title": "Fruit Town Brims \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/fruit-town-brims",
+      "title": "Fruit Town Brims — UnitedGangs"
     }
   ],
   "colors": [

@@ -4,13 +4,13 @@
   "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
   "founded_year": 2001,
-  "description": "The East Side Pain gang was the target of a July 2007 multi-agency takedown involving more than 500 law enforcement officers which included 55 warrants executed simultaneously leading to multiple federal indictments, five federal forfeitures, more than 15 state violation arrests as well as five property nuisance abatement actions taken by the City Attorney\u2019s Safe Neighborhoods Division.",
+  "description": "The East Side Pain gang was the target of a July 2007 multi-agency takedown involving more than 500 law enforcement officers which included 55 warrants executed simultaneously leading to multiple federal indictments, five federal forfeitures, more than 15 state violation arrests as well as five property nuisance abatement actions taken by the City Attorney’s Safe Neighborhoods Division.",
   "type": "street_gang",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/",
-      "title": "East Side Pain gang \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles",
+      "title": "East Side Pain gang — StreetGangs"
     }
   ],
   "colors": [

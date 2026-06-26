@@ -10,12 +10,12 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/116agc/",
-      "title": "Avalon Ganster Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/116agc",
+      "title": "Avalon Ganster Crips — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/avalon-gangster-crips/",
-      "title": "Avalon Gangster Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/avalon-gangster-crips",
+      "title": "Avalon Gangster Crips — UnitedGangs"
     }
   ],
   "type": "street_gang",

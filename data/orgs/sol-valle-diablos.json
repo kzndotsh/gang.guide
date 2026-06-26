@@ -3,12 +3,12 @@
   "name": "Sol Valle Diablos",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "A Latino Sure\u00f1o-affiliated street gang based in the Sun Valley area of the San Fernando Valley, Los Angeles.",
+  "description": "A Latino Sureño-affiliated street gang based in the Sun Valley area of the San Fernando Valley, Los Angeles.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/solvalle/",
-      "title": "Sol Valle Diablos \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/solvalle",
+      "title": "Sol Valle Diablos — StreetGangs"
     }
   ],
   "founded_year": 1965,

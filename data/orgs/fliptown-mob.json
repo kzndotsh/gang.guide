@@ -3,12 +3,12 @@
   "name": "Fliptown Mob",
   "lane": "asian-gangs",
   "metro": "Los Angeles",
-  "description": "Fliptown Mob is a Filipino-American street gang based in the Los Angeles area, part of the network of Filipino gangs that emerged in the 1980s\u20131990s. The 'Flip' in their name references 'Filipino.'",
+  "description": "Fliptown Mob is a Filipino-American street gang based in the Los Angeles area, part of the network of Filipino gangs that emerged in the 1980s–1990s. The 'Flip' in their name references 'Filipino.'",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/asian/southlosangeles/ftm/",
-      "title": "Fliptown Mob \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/asian/southlosangeles/ftm",
+      "title": "Fliptown Mob — StreetGangs"
     }
   ],
   "founded_year": 1980,

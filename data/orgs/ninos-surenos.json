@@ -3,12 +3,12 @@
   "name": "Ninos Surenos",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "A Latino street gang affiliated with the Sure\u00f1os in Los Angeles. The name translates to 'Southern Children,' indicating allegiance to the Mexican Mafia.",
+  "description": "A Latino street gang affiliated with the Sureños in Los Angeles. The name translates to 'Southern Children,' indicating allegiance to the Mexican Mafia.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/southlaws/nsu/",
-      "title": "Ninos Surenos \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/southlaws/nsu",
+      "title": "Ninos Surenos — StreetGangs"
     }
   ],
   "founded_year": 1968,

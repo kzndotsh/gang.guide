@@ -1,15 +1,15 @@
 {
   "id": "org:rollin-90s-crips",
-  "name": "Rollin 90\u2019s Crips",
+  "name": "Rollin 90’s Crips",
   "lane": "california-crips-rollin",
   "metro": "Los Angeles",
-  "description": "The Rollin 90\u2019s Crips are Often confused with the Rollin 90\u2019s West Coast Crips, which is another street gang located around Vermont Ave and Manchester Blvd.",
+  "description": "The Rollin 90’s Crips are Often confused with the Rollin 90’s West Coast Crips, which is another street gang located around Vermont Ave and Manchester Blvd.",
   "type": "street_gang",
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://unitedgangs.com/rollin-90s-crips/",
-      "title": "Rollin 90\u2019s Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/rollin-90s-crips",
+      "title": "Rollin 90’s Crips — UnitedGangs"
     }
   ],
   "colors": [

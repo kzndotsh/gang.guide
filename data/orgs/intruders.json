@@ -3,12 +3,12 @@
   "name": "Intruders",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Latino street gang in the greater Los Angeles area, emerging during the 1980s\u201390s era of gang proliferation in Southern California.",
+  "description": "Latino street gang in the greater Los Angeles area, emerging during the 1980s–90s era of gang proliferation in Southern California.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/southlaws/ints/",
-      "title": "Intruders \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/southlaws/ints",
+      "title": "Intruders — StreetGangs"
     }
   ],
   "founded_year": 1965,

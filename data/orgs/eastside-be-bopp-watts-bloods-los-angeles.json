@@ -11,12 +11,12 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/",
-      "title": "Eastside Be-Bopp Watts Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside",
+      "title": "Eastside Be-Bopp Watts Bloods — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/beboppwatts/",
-      "title": "Beboppwatts \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles/beboppwatts",
+      "title": "Beboppwatts — StreetGangs"
     }
   ],
   "founded_year": 1969,

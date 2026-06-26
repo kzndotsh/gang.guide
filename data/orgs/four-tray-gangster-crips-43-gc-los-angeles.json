@@ -15,16 +15,12 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://unitedgangs.com/gangster-crips/",
-      "title": "Gangster Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/gangster-crips",
+      "title": "Gangster Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/43gc/",
-      "title": "Eastside Four Tray Gangster Crips \u2014 StreetGangs"
-    },
-    {
-      "url": "https://www.streetgangs.com/crips/losangeles/43gc/",
-      "title": "Team Four Tray Gangster Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/43gc",
+      "title": "Eastside Four Tray Gangster Crips — StreetGangs"
     }
   ],
   "colors": [

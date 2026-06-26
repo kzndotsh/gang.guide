@@ -5,7 +5,7 @@
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "Belmont \u2013 Cragin neighborhood 80s-present years Sections of Belmont-Cragin Palmer & Kilpatrick 80s-present years Diversey & Austin 80s, 90s",
+  "description": "Belmont – Cragin neighborhood 80s-present years Sections of Belmont-Cragin Palmer & Kilpatrick 80s-present years Diversey & Austin 80s, 90s",
   "founded_year": 1970,
   "founded_year_precision": "exact",
   "colors": [
@@ -16,7 +16,7 @@
   "status": "active",
   "sources": [
     {
-      "url": "https://chicagoganghistory.com/gang/insane-dragons/",
+      "url": "https://chicagoganghistory.com/gang/insane-dragons",
       "title": "Insane Dragons - Chicago Gang History"
     }
   ]

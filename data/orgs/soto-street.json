@@ -3,12 +3,12 @@
   "name": "Soto Street",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Latino street gang in the Boyle Heights neighborhood of East Los Angeles, named after Soto Street \u2014 a major corridor through one of LA's most historically gang-impacted barrios with gangs dating back to the 1940s.",
+  "description": "Latino street gang in the Boyle Heights neighborhood of East Los Angeles, named after Soto Street — a major corridor through one of LA's most historically gang-impacted barrios with gangs dating back to the 1940s.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/sotostreet/",
-      "title": "Soto Street \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/sotostreet",
+      "title": "Soto Street — StreetGangs"
     }
   ],
   "founded_year": 1965,

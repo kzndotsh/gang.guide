@@ -3,12 +3,12 @@
   "name": "The Mob Crew",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Los Angeles-area street gang that emerged from the party crew scene of the late 1980s\u2013early 1990s, part of the wave of social crews that transitioned into criminal street gangs.",
+  "description": "Los Angeles-area street gang that emerged from the party crew scene of the late 1980s–early 1990s, part of the wave of social crews that transitioned into criminal street gangs.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/themobcrew/",
-      "title": "The Mob Crew \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/themobcrew",
+      "title": "The Mob Crew — StreetGangs"
     }
   ],
   "founded_year": 1965,

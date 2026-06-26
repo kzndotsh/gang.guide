@@ -3,12 +3,12 @@
   "name": "Little Valley",
   "lane": "california-latino-sfv",
   "metro": "Los Angeles",
-  "description": "Latino street gang based in the San Fernando Valley, one of numerous SFV barrio gangs that emerged during the 1960s\u20131970s as the Valley's Latino population grew.",
+  "description": "Latino street gang based in the San Fernando Valley, one of numerous SFV barrio gangs that emerged during the 1960s–1970s as the Valley's Latino population grew.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/lvr/",
-      "title": "Little Valley \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/lvr",
+      "title": "Little Valley — StreetGangs"
     }
   ],
   "founded_year": 1965,

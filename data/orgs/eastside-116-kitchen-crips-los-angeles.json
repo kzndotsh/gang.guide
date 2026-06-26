@@ -6,16 +6,16 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/",
-      "title": "Eastside 116 Kitchen Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside",
+      "title": "Eastside 116 Kitchen Crips — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/kitchen-crips/",
-      "title": "Kitchen Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/kitchen-crips",
+      "title": "Kitchen Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/116kitchencrip/",
-      "title": "116Kitchencrip \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/116kitchencrip",
+      "title": "116Kitchencrip — StreetGangs"
     }
   ],
   "type": "street_gang",

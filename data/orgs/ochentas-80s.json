@@ -3,12 +3,12 @@
   "name": "Ochentas 80s",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "The Ochentas (Spanish for 'Eighties') are a Latino Sure\u00f1o street gang based in Los Angeles, operating under the Mexican Mafia-affiliated gang structure in Southern California.",
+  "description": "The Ochentas (Spanish for 'Eighties') are a Latino Sureño street gang based in Los Angeles, operating under the Mexican Mafia-affiliated gang structure in Southern California.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/80s/",
-      "title": "Ochentas 80s \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/80s",
+      "title": "Ochentas 80s — StreetGangs"
     }
   ],
   "founded_year": 1965,

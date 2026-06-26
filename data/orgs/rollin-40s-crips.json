@@ -3,21 +3,21 @@
   "name": "Rollin 40S Crips",
   "lane": "california-crips-neighborhood",
   "metro": "Los Angeles",
-  "description": "Ride\u201d (album) is a member of the 47th Street Rollin 40\u2019s Neighborhood Crips, in San Diego, California.",
+  "description": "Ride” (album) is a member of the 47th Street Rollin 40’s Neighborhood Crips, in San Diego, California.",
   "type": "street_gang",
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://unitedgangs.com/rollin-40s-crips/",
-      "title": "Rollin 40S Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/rollin-40s-crips",
+      "title": "Rollin 40S Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/rollin/40s/piru/",
-      "title": "Rollin 40S Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/rollin/40s/piru",
+      "title": "Rollin 40S Crips — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/rollin-40s-piru/",
-      "title": "Rollin 40S Piru \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/rollin-40s-piru",
+      "title": "Rollin 40S Piru — UnitedGangs"
     }
   ],
   "founded_year": 2000,

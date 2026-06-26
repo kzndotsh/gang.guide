@@ -3,12 +3,12 @@
   "name": "Tokers",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "A Latino Sure\u00f1o-affiliated street gang based in the East Los Angeles area, one of the older Chicano gangs with roots dating back to the 1950s-1960s.",
+  "description": "A Latino Sureño-affiliated street gang based in the East Los Angeles area, one of the older Chicano gangs with roots dating back to the 1950s-1960s.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/tokers/",
-      "title": "Tokers \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sfvalley/tokers",
+      "title": "Tokers — StreetGangs"
     }
   ],
   "founded_year": 1960,

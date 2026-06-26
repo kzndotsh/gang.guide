@@ -7,8 +7,8 @@
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/central/crs/",
-      "title": "Crazy Riders (CRS) \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/crs",
+      "title": "Crazy Riders (CRS) — StreetGangs"
     }
   ],
   "founded_year": 1965,

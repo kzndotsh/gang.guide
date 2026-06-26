@@ -3,17 +3,17 @@
   "name": "68 East Coast Crips",
   "lane": "california-crips-east-coast",
   "metro": "Los Angeles",
-  "description": "East Coast Crips are a predominately African-American street gang from South Los Angeles, that are part of the \u201cSix Pacc\u201d alliance of East Coast Crips sets including the 62, 66 and 69 ECCs.",
+  "description": "East Coast Crips are a predominately African-American street gang from South Los Angeles, that are part of the “Six Pacc” alliance of East Coast Crips sets including the 62, 66 and 69 ECCs.",
   "type": "street_gang",
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/68ecc/",
-      "title": "68 East Coast Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/68ecc",
+      "title": "68 East Coast Crips — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/east-coast-crips/",
-      "title": "East Coast Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/east-coast-crips",
+      "title": "East Coast Crips — UnitedGangs"
     }
   ],
   "founded_year": 1972,

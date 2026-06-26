@@ -1,14 +1,14 @@
 {
   "id": "org:vicky-s-town",
-  "name": "Vicky\u2019s Town",
+  "name": "Vicky’s Town",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
   "description": "Small Latino street gang in Los Angeles, named in the barrio tradition of claiming a specific neighborhood.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/vickystown/",
-      "title": "Vicky\u2019s Town \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/vickystown",
+      "title": "Vicky’s Town — StreetGangs"
     }
   ],
   "founded_year": 1965,

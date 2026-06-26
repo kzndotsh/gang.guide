@@ -12,20 +12,20 @@
   "metro": "Los Angeles",
   "founded_year": 2010,
   "founded_year_precision": "exact",
-  "description": "46 NeighborHood Crips are a predominately African-American street gang located in the area of 46th Street & Western Avenue. In 2010 the Los Angeles Unified School District built a new middle school, Barack Obama Global Preparation Academy right in the central location of 46 NHC\u2019s territory, between Western Avenue and St. Andrews Place along 46th Street.",
+  "description": "46 NeighborHood Crips are a predominately African-American street gang located in the area of 46th Street & Western Avenue. In 2010 the Los Angeles Unified School District built a new middle school, Barack Obama Global Preparation Academy right in the central location of 46 NHC’s territory, between Western Avenue and St. Andrews Place along 46th Street.",
   "nation_affiliation": "org:crips",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/46_Neighborhood_Crips",
-      "title": "46 Neighborhood Crips \u2014 Wikipedia"
+      "title": "46 Neighborhood Crips — Wikipedia"
     },
     {
-      "url": "https://unitedgangs.com/46-neighbor-hood-crips/",
-      "title": "46 Neighbor Hood Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/46-neighbor-hood-crips",
+      "title": "46 Neighbor Hood Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/46nhc/",
-      "title": "46 Neighborhood Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/46nhc",
+      "title": "46 Neighborhood Crips — StreetGangs"
     }
   ],
   "colors": [

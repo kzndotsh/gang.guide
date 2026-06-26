@@ -6,16 +6,16 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/twilightzone/",
-      "title": "Twilightzone \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/twilightzone",
+      "title": "Twilightzone — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/twilight-zone-compton-crips/",
-      "title": "Twilight Zone Compton Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/twilight-zone-compton-crips",
+      "title": "Twilight Zone Compton Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/rosewood/",
-      "title": "Twilight Zone Compton Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/rosewood",
+      "title": "Twilight Zone Compton Crips — StreetGangs"
     }
   ],
   "metro": "Los Angeles",

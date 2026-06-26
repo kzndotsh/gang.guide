@@ -3,12 +3,12 @@
   "name": "Sentinel Boys",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "A street gang based in the Los Angeles area, part of the numerous smaller sets that emerged during the 1980s\u20131990s gang proliferation era in Southern California.",
+  "description": "A street gang based in the Los Angeles area, part of the numerous smaller sets that emerged during the 1980s–1990s gang proliferation era in Southern California.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/sbs/",
-      "title": "Sentinel Boys \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/sbs",
+      "title": "Sentinel Boys — StreetGangs"
     }
   ],
   "founded_year": 1965,

@@ -13,12 +13,12 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/beachtownmafia/",
-      "title": "Beachtownmafia \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/beachtownmafia",
+      "title": "Beachtownmafia — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/mafia-crips-los-angeles/",
-      "title": "Mafia Crips Los Angeles \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/mafia-crips-los-angeles",
+      "title": "Mafia Crips Los Angeles — UnitedGangs"
     }
   ],
   "founded_year": 1980,

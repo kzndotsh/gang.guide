@@ -8,16 +8,16 @@
   "description": "The Varrio Norwalk stretches north from 166th Street to Hopland Street, between Pioneer Boulevard to Norwalk Boulevard.",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/norwalk/",
-      "title": "Varrio Norwalk \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/norwalk",
+      "title": "Varrio Norwalk — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/varrio-norwalk/",
-      "title": "Varrio Norwalk \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/varrio-norwalk",
+      "title": "Varrio Norwalk — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/hispanic/norwalk/varrionorwalk/",
-      "title": "Varrionorwalk \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/norwalk/varrionorwalk",
+      "title": "Varrionorwalk — StreetGangs"
     }
   ],
   "metro": "United States",

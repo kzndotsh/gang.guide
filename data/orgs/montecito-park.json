@@ -3,12 +3,12 @@
   "name": "Montecito Park",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "A Latino street gang based near Montecito Heights in Northeast Los Angeles, a Sure\u00f1o-affiliated barrio gang.",
+  "description": "A Latino street gang based near Montecito Heights in Northeast Los Angeles, a Sureño-affiliated barrio gang.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/northeast/montecitopark/",
-      "title": "Montecito Park \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/northeast/montecitopark",
+      "title": "Montecito Park — StreetGangs"
     }
   ],
   "founded_year": 1965,

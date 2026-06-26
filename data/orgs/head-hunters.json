@@ -3,12 +3,12 @@
   "name": "Head Hunters",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Varrio Head Hunters (HHS-13) are a Latino Sure\u00f1o street gang based in Los Angeles, subject to gang injunctions and documented by law enforcement including U.S. Customs and Border Protection.",
+  "description": "Varrio Head Hunters (HHS-13) are a Latino Sureño street gang based in Los Angeles, subject to gang injunctions and documented by law enforcement including U.S. Customs and Border Protection.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/central/headhunters/",
-      "title": "Head Hunters \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/headhunters",
+      "title": "Head Hunters — StreetGangs"
     }
   ],
   "founded_year": 1965,

@@ -4,15 +4,15 @@
   "type": "street_gang",
   "lane": "california-bloods-other",
   "founded_year": 1970,
-  "description": "Island Gang are primarily an African-American street gang founded in the 1970s, on the North Side of Pomona, California. They are called the \u201cIslands\u201d due to their area being isolated and surrounded by crips as well as being the only subset of the Bloods, located in the city of Pomona.",
+  "description": "Island Gang are primarily an African-American street gang founded in the 1970s, on the North Side of Pomona, California. They are called the “Islands” due to their area being isolated and surrounded by crips as well as being the only subset of the Bloods, located in the city of Pomona.",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/pomona/456island/",
-      "title": "456 Island Piru Pomona \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/pomona/456island",
+      "title": "456 Island Piru Pomona — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/456-island-piru-pomona/",
-      "title": "456 Island Piru Pomona \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/456-island-piru-pomona",
+      "title": "456 Island Piru Pomona — UnitedGangs"
     }
   ],
   "metro": "Los Angeles",

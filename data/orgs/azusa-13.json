@@ -5,28 +5,28 @@
   "lane": "california-latino-sgv",
   "founded_year": 1960,
   "founded_year_precision": "exact",
-  "description": "Azusa 13 is a Mexican American street gang based in Azusa, California, founded in the 1960s. It is one of the most aggressive Sure\u00f1o gangs, with around 400 active members. The gang is affiliated with the Mexican Mafia and engages in drug trafficking, extortion, and hate crimes, including a campaign of ethnic cleansing against African Americans.",
+  "description": "Azusa 13 is a Mexican American street gang based in Azusa, California, founded in the 1960s. It is one of the most aggressive Sureño gangs, with around 400 active members. The gang is affiliated with the Mexican Mafia and engages in drug trafficking, extortion, and hate crimes, including a campaign of ethnic cleansing against African Americans.",
   "metro": "Azusa",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/azusa/",
-      "title": "Azusa 13 \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/azusa",
+      "title": "Azusa 13 — StreetGangs"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Azusa_13",
-      "title": "Azusa 13 \u2014 Wikipedia"
+      "title": "Azusa 13 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/El_Monte_Flores",
-      "title": "El Monte Flores \u2014 Wikipedia"
+      "title": "El Monte Flores — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Mexican_Mafia",
-      "title": "Mexican Mafia \u2014 Wikipedia"
+      "title": "Mexican Mafia — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Puente_13",
-      "title": "Puente 13 \u2014 Wikipedia"
+      "title": "Puente 13 — Wikipedia"
     }
   ],
   "colors": [

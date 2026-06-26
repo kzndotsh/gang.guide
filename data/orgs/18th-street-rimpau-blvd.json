@@ -3,16 +3,16 @@
   "name": "18th Street (Rimpau Blvd)",
   "lane": "california-latino-westside",
   "metro": "Los Angeles",
-  "description": "18th Street \u2013 Rimpau Blvd is a predominately Latino street gang located in the Mid Town section of Los Angeles near 18th Street and South Rimpau between Venice and Washington Avenue.",
+  "description": "18th Street – Rimpau Blvd is a predominately Latino street gang located in the Mid Town section of Los Angeles near 18th Street and South Rimpau between Venice and Washington Avenue.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/central/18th-street-rimpau-blvd/",
-      "title": "18Th Street Rimpau Blvd \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/18th-street-rimpau-blvd",
+      "title": "18Th Street Rimpau Blvd — StreetGangs"
     },
     {
       "url": "https://www.justice.gov/usao-cdca/pr/18th-street-gangsters-associates-arrested-indictments-alleging-murder-extortion-drug",
-      "title": "18th Street Murder/Extortion \u2014 DOJ"
+      "title": "18th Street Murder/Extortion — DOJ"
     }
   ],
   "founded_year": 1975,

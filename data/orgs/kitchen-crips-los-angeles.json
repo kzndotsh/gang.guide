@@ -3,20 +3,20 @@
   "name": "Kitchen Crips",
   "lane": "california-crips-other",
   "metro": "Los Angeles",
-  "description": "The Kitchen Crips originated in the 1970\u2019s, with three sub-sets the 116 Kitchen Crips and 95 Kitchen Crips as well as the 87 Kitchen Crips.",
+  "description": "The Kitchen Crips originated in the 1970’s, with three sub-sets the 116 Kitchen Crips and 95 Kitchen Crips as well as the 87 Kitchen Crips.",
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/kitchen/crips/",
-      "title": "Kitchen Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/kitchen/crips",
+      "title": "Kitchen Crips — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/kitchen-crips/",
-      "title": "Kitchen Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/kitchen-crips",
+      "title": "Kitchen Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/95kitchencrips/",
-      "title": "95Kitchencrips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/95kitchencrips",
+      "title": "95Kitchencrips — StreetGangs"
     }
   ],
   "type": "street_gang",

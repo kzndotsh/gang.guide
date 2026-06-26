@@ -3,12 +3,12 @@
   "name": "Washington Locos aka Washington Boys",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "The Washington Locos (Washington Boys) are a Latino Sure\u00f1o-affiliated street gang based near Washington Boulevard in the Mid-City/West Adams area of Los Angeles.",
+  "description": "The Washington Locos (Washington Boys) are a Latino Sureño-affiliated street gang based near Washington Boulevard in the Mid-City/West Adams area of Los Angeles.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/washington/",
-      "title": "Washington Locos aka Washington Boys \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/washington",
+      "title": "Washington Locos aka Washington Boys — StreetGangs"
     }
   ],
   "founded_year": 1960,

@@ -3,12 +3,12 @@
   "name": "Straight Ballers Society",
   "lane": "california-crips",
   "metro": "Los Angeles",
-  "description": "A street gang active in the Los Angeles area during the 1990s\u20132000s, part of the party-crew-to-gang era in Southern California.",
+  "description": "A street gang active in the Los Angeles area during the 1990s–2000s, part of the party-crew-to-gang era in Southern California.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/gardena/sbs/",
-      "title": "Straight Ballers Society \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/gardena/sbs",
+      "title": "Straight Ballers Society — StreetGangs"
     }
   ],
   "founded_year": 1974,

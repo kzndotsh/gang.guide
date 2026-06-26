@@ -3,12 +3,12 @@
   "name": "Avenues",
   "lane": "california-latino-east-la",
   "metro": "Los Angeles",
-  "description": "The Avenues (Avenidas/AVEs) are a Mexican-American Sure\u00f1o street gang in Northeast Los Angeles with ~800 members covering Highland Park, Cypress Park, Glassell Park, and Eagle Rock \u2014 once nearly 6 square miles. Started as a social club in the 1940s by the Flores brothers, they turned criminal when heroin hit in the late 1960s. Under Mexican Mafia control. Notorious for hate crimes against African-Americans (described as 'ethnic cleansing' by SPLC). In 1995, members killed 3-year-old Stephanie Kuhen (prompting President Clinton to speak out). In 2006, 43rd Aves members were federally prosecuted for hate crimes. Connected to the Sinaloa Cartel for meth/heroin supply. Main cliques: 43rd, 57th, Cypress, Division, Drew Street.",
+  "description": "The Avenues (Avenidas/AVEs) are a Mexican-American Sureño street gang in Northeast Los Angeles with ~800 members covering Highland Park, Cypress Park, Glassell Park, and Eagle Rock — once nearly 6 square miles. Started as a social club in the 1940s by the Flores brothers, they turned criminal when heroin hit in the late 1960s. Under Mexican Mafia control. Notorious for hate crimes against African-Americans (described as 'ethnic cleansing' by SPLC). In 1995, members killed 3-year-old Stephanie Kuhen (prompting President Clinton to speak out). In 2006, 43rd Aves members were federally prosecuted for hate crimes. Connected to the Sinaloa Cartel for meth/heroin supply. Main cliques: 43rd, 57th, Cypress, Division, Drew Street.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/northeast/avenues_east/",
-      "title": "Varrio Avenues (43rd, 57th Cyclones) \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/northeast/avenues_east",
+      "title": "Varrio Avenues (43rd, 57th Cyclones) — StreetGangs"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Avenues_(gang)",

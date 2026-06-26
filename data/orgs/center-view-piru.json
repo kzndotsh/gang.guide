@@ -12,12 +12,12 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/carson/centerview/",
-      "title": "Centerview \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/carson/centerview",
+      "title": "Centerview — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/center-view-piru/",
-      "title": "Center View Piru \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/center-view-piru",
+      "title": "Center View Piru — UnitedGangs"
     }
   ],
   "founded_year": 1975,

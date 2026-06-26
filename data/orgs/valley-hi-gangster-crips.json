@@ -3,13 +3,13 @@
   "name": "Valley Hi Gangster Crips",
   "lane": "california-crips-gangster",
   "metro": "Los Angeles",
-  "description": "Valley Hi Crips (VHC) are a criminal street gang named after the \u201cValley Hi\u201d Community located in the Southern region of Sacramento, California.",
+  "description": "Valley Hi Crips (VHC) are a criminal street gang named after the “Valley Hi” Community located in the Southern region of Sacramento, California.",
   "type": "street_gang",
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://unitedgangs.com/valley-hi-gangster-crips/",
-      "title": "Valley Hi Gangster Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/valley-hi-gangster-crips",
+      "title": "Valley Hi Gangster Crips — UnitedGangs"
     }
   ],
   "colors": [

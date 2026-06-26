@@ -3,12 +3,12 @@
   "name": "Barrio Mojados",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "They are a Sure\u00f1o-affiliated barrio gang, with 'Mojados' being a Spanish term referencing immigrants.",
+  "description": "They are a Sureño-affiliated barrio gang, with 'Mojados' being a Spanish term referencing immigrants.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/bm/",
-      "title": "Barrio Mojados \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/bm",
+      "title": "Barrio Mojados — StreetGangs"
     }
   ],
   "founded_year": 1965,

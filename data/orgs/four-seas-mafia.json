@@ -3,12 +3,12 @@
   "name": "Four Seas Mafia",
   "lane": "asian-gangs",
   "metro": "Los Angeles",
-  "description": "The Four Seas Gang (\u56db\u6d77\u5e6b) is a Taiwanese triad organization founded in 1954, the second largest criminal organization in Taiwan with over 700 members and 46 branches. It has maintained an international presence including in Southern California.",
+  "description": "The Four Seas Gang (四海幫) is a Taiwanese triad organization founded in 1954, the second largest criminal organization in Taiwan with over 700 members and 46 branches. It has maintained an international presence including in Southern California.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/asian/arcadia/4seas/",
-      "title": "Four Seas Mafia \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/asian/arcadia/4seas",
+      "title": "Four Seas Mafia — StreetGangs"
     }
   ],
   "founded_year": 1954,

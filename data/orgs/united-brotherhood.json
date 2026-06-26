@@ -3,12 +3,12 @@
   "name": "United Brotherhood",
   "lane": "asian-gangs",
   "metro": "Los Angeles",
-  "description": "Multi-ethnic Asian-American street gang active in the Los Angeles area, part of the wave of Asian gang formation in Southern California during the 1980s\u201390s.",
+  "description": "Multi-ethnic Asian-American street gang active in the Los Angeles area, part of the wave of Asian gang formation in Southern California during the 1980s–90s.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/asian/carson/ub/",
-      "title": "United Brotherhood \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/asian/carson/ub",
+      "title": "United Brotherhood — StreetGangs"
     }
   ],
   "founded_year": 1980,

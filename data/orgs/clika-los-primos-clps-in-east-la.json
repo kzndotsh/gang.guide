@@ -3,12 +3,12 @@
   "name": "Clika Los Primos (CLPS)",
   "lane": "california-latino-east-la",
   "metro": "Los Angeles",
-  "description": "A Latino street gang based in East Los Angeles. 'Los Primos' means 'The Cousins' in Spanish, operating as a Sure\u00f1o-affiliated clique.",
+  "description": "A Latino street gang based in East Los Angeles. 'Los Primos' means 'The Cousins' in Spanish, operating as a Sureño-affiliated clique.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/clps/",
-      "title": "Clika Los Primos (CLPS) in East LA \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/clps",
+      "title": "Clika Los Primos (CLPS) in East LA — StreetGangs"
     }
   ],
   "founded_year": 1965,

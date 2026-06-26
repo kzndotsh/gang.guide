@@ -8,12 +8,12 @@
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/westblvdcrips/",
-      "title": "Westblvdcrips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/westblvdcrips",
+      "title": "Westblvdcrips — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/losangeles/64westblvdcrips/",
-      "title": "64Westblvdcrips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/losangeles/64westblvdcrips",
+      "title": "64Westblvdcrips — StreetGangs"
     }
   ],
   "founded_year": 1970,

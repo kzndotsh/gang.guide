@@ -3,12 +3,12 @@
   "name": "Unos Sin Verguenza",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "Latino street gang in Los Angeles whose Spanish name translates to 'Shameless Ones,' a Sure\u00f1o-affiliated clique.",
+  "description": "Latino street gang in Los Angeles whose Spanish name translates to 'Shameless Ones,' a Sureño-affiliated clique.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/central/usv/",
-      "title": "Unos Sin Verguenza \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/usv",
+      "title": "Unos Sin Verguenza — StreetGangs"
     }
   ],
   "founded_year": 1965,

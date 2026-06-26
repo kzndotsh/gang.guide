@@ -3,12 +3,12 @@
   "name": "Alley Tiny Criminals",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "The Alley Tiny Criminals (ATC) are a Latino street gang and tagging crew originating from the Exposition Park area of South Central Los Angeles, aligned with the Sure\u00f1o (13) structure.",
+  "description": "The Alley Tiny Criminals (ATC) are a Latino street gang and tagging crew originating from the Exposition Park area of South Central Los Angeles, aligned with the Sureño (13) structure.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/atc/",
-      "title": "Alley Tiny Criminals \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/atc",
+      "title": "Alley Tiny Criminals — StreetGangs"
     }
   ],
   "founded_year": 1965,

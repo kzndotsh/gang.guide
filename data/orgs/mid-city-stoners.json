@@ -7,16 +7,12 @@
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://unitedgangs.com/mid-city-stoners/",
-      "title": "Mid City Storners \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/mid-city-stoners",
+      "title": "Mid City Storners — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/hispanic/longbeach/midcitystoners/",
-      "title": "Midcitystoners \u2014 StreetGangs"
-    },
-    {
-      "url": "https://unitedgangs.com/mid-city-stoners/",
-      "title": "Mid City Stoners \u2014 UnitedGangs"
+      "url": "https://www.streetgangs.com/hispanic/longbeach/midcitystoners",
+      "title": "Midcitystoners — StreetGangs"
     }
   ],
   "founded_year": 1965,

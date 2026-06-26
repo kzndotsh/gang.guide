@@ -10,16 +10,16 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/",
-      "title": "Miller Gangster Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods",
+      "title": "Miller Gangster Bloods — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/miller-gangster-bloods/",
-      "title": "Miller Gangster Bloods \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/miller-gangster-bloods",
+      "title": "Miller Gangster Bloods — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/mgb/",
-      "title": "Miller Gangster Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles/mgb",
+      "title": "Miller Gangster Bloods — StreetGangs"
     }
   ],
   "type": "street_gang",

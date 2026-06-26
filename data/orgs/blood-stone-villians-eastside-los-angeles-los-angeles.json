@@ -9,24 +9,24 @@
   "type": "street_gang",
   "lane": "california-bloods-other",
   "metro": "Los Angeles",
-  "description": "Eastside Blood Stone Villians are a predominately African-American street gang located on the eastside of South Los Angeles in an area commonly referred to as the bottoms. They have two main clicks, 52nd & 56th Streets, but there are some newer clicks that have emerged in recent years. This neighborhood was founded by Michael \u201cIcey Jack\u201d Bowie.",
+  "description": "Eastside Blood Stone Villians are a predominately African-American street gang located on the eastside of South Los Angeles in an area commonly referred to as the bottoms. They have two main clicks, 52nd & 56th Streets, but there are some newer clicks that have emerged in recent years. This neighborhood was founded by Michael “Icey Jack” Bowie.",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/",
-      "title": "Blood Stone Villians Eastside \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods",
+      "title": "Blood Stone Villians Eastside — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/blood-stone-villians/",
-      "title": "Blood Stone Villians \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/blood-stone-villians",
+      "title": "Blood Stone Villians — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/bloods/losangeles/bsv/",
-      "title": "Blood Stone Villians Eastside \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/bloods/losangeles/bsv",
+      "title": "Blood Stone Villians Eastside — StreetGangs"
     },
     {
-      "url": "https://www.streetgangs.com/blood/stone/villians/",
-      "title": "Blood Stone Villians Eastside \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/blood/stone/villians",
+      "title": "Blood Stone Villians Eastside — StreetGangs"
     }
   ],
   "founded_year": 1969,

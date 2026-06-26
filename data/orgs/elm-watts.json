@@ -5,11 +5,11 @@
   "lane": "california-latino-south-la",
   "founded_year": 1965,
   "founded_year_precision": "decade",
-  "description": "The Elm Street Watts, 13 are a well-known Mexican-American street gang located in the Watts district of South Los Angeles, California. The Watts Elm Street have been active since the 1960s and has been around for over forty years or longer. They are named after a residential street called \u201cElm Street\u201d between Bandera Street and Fir Ave, from Firestone Blvd to 92nd Street.",
+  "description": "The Elm Street Watts, 13 are a well-known Mexican-American street gang located in the Watts district of South Los Angeles, California. The Watts Elm Street have been active since the 1960s and has been around for over forty years or longer. They are named after a residential street called “Elm Street” between Bandera Street and Fir Ave, from Firestone Blvd to 92nd Street.",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/elm/watts/",
-      "title": "Elm Watts \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/elm/watts",
+      "title": "Elm Watts — StreetGangs"
     }
   ],
   "metro": "Los Angeles",

@@ -3,15 +3,15 @@
   "name": "Rebels",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "A Latino Sure\u00f1o-affiliated street gang with cliques in multiple cities including Omaha and Los Angeles.",
+  "description": "A Latino Sureño-affiliated street gang with cliques in multiple cities including Omaha and Los Angeles.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/hollywood/rebels/",
-      "title": "Rebels \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/hollywood/rebels",
+      "title": "Rebels — StreetGangs"
     },
     {
-      "url": "https://chicagoganghistory.com/gang/uptown-rebels/",
+      "url": "https://chicagoganghistory.com/gang/uptown-rebels",
       "title": "Uptown Rebels - Chicago Gang History"
     }
   ],

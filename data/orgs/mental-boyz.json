@@ -3,12 +3,12 @@
   "name": "Mental BoyZ",
   "lane": "asian-gangs",
   "metro": "Los Angeles",
-  "description": "An Asian-American street gang based in the Los Angeles area, part of the network of Southeast Asian youth gangs that formed during the 1980s\u20131990s refugee and immigrant era in Southern California.",
+  "description": "An Asian-American street gang based in the Los Angeles area, part of the network of Southeast Asian youth gangs that formed during the 1980s–1990s refugee and immigrant era in Southern California.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/asian/southlosangeles/mb/",
-      "title": "Mental BoyZ \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/asian/southlosangeles/mb",
+      "title": "Mental BoyZ — StreetGangs"
     }
   ],
   "founded_year": 1980,

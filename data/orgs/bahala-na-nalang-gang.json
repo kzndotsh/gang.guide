@@ -3,12 +3,12 @@
   "name": "Bahala Na (Nalang) Gang",
   "lane": "asian-gangs",
   "metro": "Los Angeles",
-  "description": "The Bahala Na Gang (BNG) is a Filipino street gang founded in 1940 in Sampaloc, Manila, Philippines, by Divino Talastas. The name means 'come what may' in Filipino. It spread to Filipino immigrant communities in California \u2014 San Diego, Los Angeles, San Jose, San Francisco, Stockton, Sacramento \u2014 and Las Vegas. Members are involved in drug trafficking, weapons trafficking, murder, robbery, and kidnapping. In 1990, a gang fight at a Stockton taco stand involving a dozen BNG members killed two and injured five, resulting in 348 criminal counts.",
+  "description": "The Bahala Na Gang (BNG) is a Filipino street gang founded in 1940 in Sampaloc, Manila, Philippines, by Divino Talastas. The name means 'come what may' in Filipino. It spread to Filipino immigrant communities in California — San Diego, Los Angeles, San Jose, San Francisco, Stockton, Sacramento — and Las Vegas. Members are involved in drug trafficking, weapons trafficking, murder, robbery, and kidnapping. In 1990, a gang fight at a Stockton taco stand involving a dozen BNG members killed two and injured five, resulting in 348 criminal counts.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/asian/cerritos/bng/",
-      "title": "Bahala Na (Nalang) Gang \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/asian/cerritos/bng",
+      "title": "Bahala Na (Nalang) Gang — StreetGangs"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Bahala_Na_Gang",

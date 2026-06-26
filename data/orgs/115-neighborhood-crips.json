@@ -6,16 +6,16 @@
   ],
   "type": "street_gang",
   "lane": "california-crips-neighborhood",
-  "description": "115 Neighborhood Crips are a predominately African-American street gang partially located in the City of Hawthorne and Unincorporated Los Angeles County. Although small in geographic size, it\u2019s turf falls into two jurisdictions just west of Los Angeles Southwest College and adjacent to the 111 Neighborhood Crips and the Imperial Village Crips.",
+  "description": "115 Neighborhood Crips are a predominately African-American street gang partially located in the City of Hawthorne and Unincorporated Los Angeles County. Although small in geographic size, it’s turf falls into two jurisdictions just west of Los Angeles Southwest College and adjacent to the 111 Neighborhood Crips and the Imperial Village Crips.",
   "nation_affiliation": "org:crips",
   "sources": [
     {
-      "url": "https://unitedgangs.com/115-neighborhood-crips/",
-      "title": "115 Neighborhood Crips \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/115-neighborhood-crips",
+      "title": "115 Neighborhood Crips — UnitedGangs"
     },
     {
-      "url": "https://www.streetgangs.com/crips/hawthorne/115-nhc/",
-      "title": "115 Neighborhood Crips \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/crips/hawthorne/115-nhc",
+      "title": "115 Neighborhood Crips — StreetGangs"
     }
   ],
   "metro": "Los Angeles",

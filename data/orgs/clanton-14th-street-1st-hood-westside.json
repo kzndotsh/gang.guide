@@ -3,12 +3,12 @@
   "name": "Clanton 14th Street (1st Hood)",
   "lane": "california-latino-other",
   "metro": "Los Angeles",
-  "description": "The oldest clique of Clanton 14th Street, one of the oldest Hispanic street gangs in Los Angeles, founded in 1921. Clanton 14 are Sure\u00f1o-affiliated and were among the founders of the Mexican Mafia. The 18th Street Gang originally formed from members rejected by Clanton 14.",
+  "description": "The oldest clique of Clanton 14th Street, one of the oldest Hispanic street gangs in Los Angeles, founded in 1921. Clanton 14 are Sureño-affiliated and were among the founders of the Mexican Mafia. The 18th Street Gang originally formed from members rejected by Clanton 14.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/central/clanton14th_1st/",
-      "title": "Clanton 14th Street  1st Hood Westside \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/cityofla/central/clanton14th_1st",
+      "title": "Clanton 14th Street  1st Hood Westside — StreetGangs"
     }
   ],
   "founded_year": 1921,

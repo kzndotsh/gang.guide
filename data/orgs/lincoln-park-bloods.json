@@ -4,15 +4,15 @@
   "lane": "california-bloods-other",
   "founded_year": 1973,
   "founded_year_precision": "decade",
-  "description": "The Lincoln Park Bloods was originally known as \u201cPaul Lowe\u2019s Control\u201d, throughout the 1970s. However, this eventually changed to \u201cLincoln Park Piru/ Syndo Mob \u201d in the late 1970s.",
+  "description": "The Lincoln Park Bloods was originally known as “Paul Lowe’s Control”, throughout the 1970s. However, this eventually changed to “Lincoln Park Piru/ Syndo Mob ” in the late 1970s.",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/lincoln/park/bloods/",
-      "title": "Lincoln Park Bloods \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/lincoln/park/bloods",
+      "title": "Lincoln Park Bloods — StreetGangs"
     },
     {
-      "url": "https://unitedgangs.com/lincoln-park-bloods/",
-      "title": "Lincoln Park Bloods \u2014 UnitedGangs"
+      "url": "https://unitedgangs.com/lincoln-park-bloods",
+      "title": "Lincoln Park Bloods — UnitedGangs"
     }
   ],
   "metro": "Los Angeles",
@@ -22,7 +22,7 @@
   ],
   "aliases": [
     "LPB",
-    "\u201cPaul Lowe\u2019s Control\u201d"
+    "“Paul Lowe’s Control”"
   ],
   "nation_affiliation": "org:bloods",
   "status": "active"

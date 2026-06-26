@@ -5,7 +5,7 @@
   "nation_affiliation": "org:crips",
   "metro": "Los Angeles",
   "type": "street_gang",
-  "description": "The Criminal Class Locastas are a Hispanic Sure\u00f1o-affiliated street gang based in South Los Angeles, operating under Mexican Mafia authority.",
+  "description": "The Criminal Class Locastas are a Hispanic Sureño-affiliated street gang based in South Los Angeles, operating under Mexican Mafia authority.",
   "colors": [
     "blue"
   ],
@@ -13,8 +13,8 @@
   "founded_year_precision": "decade",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/criminal/class/locastas/",
-      "title": "Criminal Class Locastas \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/criminal/class/locastas",
+      "title": "Criminal Class Locastas — StreetGangs"
     }
   ],
   "aliases": [

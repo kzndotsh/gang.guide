@@ -3,12 +3,12 @@
   "name": "Clarence Street Locos",
   "lane": "california-latino-east-la",
   "metro": "Los Angeles",
-  "description": "A Latino Sure\u00f1o-affiliated street gang based near Clarence Street in Boyle Heights, East Los Angeles.",
+  "description": "A Latino Sureño-affiliated street gang based near Clarence Street in Boyle Heights, East Los Angeles.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/csl/",
-      "title": "Clarence Street Locos \u2014 StreetGangs"
+      "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/csl",
+      "title": "Clarence Street Locos — StreetGangs"
     }
   ],
   "founded_year": 1960,
