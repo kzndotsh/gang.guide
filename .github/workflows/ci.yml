@@ -36,6 +36,15 @@ jobs:
             --cov-report=xml:coverage.xml \
             --junitxml=junit.xml -o junit_family=legacy
 
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            coverage.xml
+            junit.xml
+
       - name: Build graph
         run: python3 build.py
 
