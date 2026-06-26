@@ -1,0 +1,14 @@
+{
+  "name": "gang-guide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ruler:apply": "ruler apply"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.1.0",
+    "@commitlint/config-conventional": "^21.1.0",
+    "@intellectronica/ruler": "^0.3.43",
+    "lefthook": "^2.1.9"
+  }
+}
