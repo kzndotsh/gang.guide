@@ -113,7 +113,7 @@ def main():
         return
 
     # Print run comparison
-    print(f"\n  Run comparison:")
+    print("\n  Run comparison:")
     print(f"  {'':20} {'Run 0':>8} {'Run 1':>8} {'Run 2':>8}")
     print(f"  {'Edges':20} {len(runs[0].get('edges',[])):>8} {len(runs[1].get('edges',[])):>8} {len(runs[2].get('edges',[])) if len(runs)>2 else '-':>8}")
     print(f"  {'Colors':20} {len(runs[0].get('colors',[])):>8} {len(runs[1].get('colors',[])):>8} {len(runs[2].get('colors',[])) if len(runs)>2 else '-':>8}")

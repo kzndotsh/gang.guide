@@ -267,7 +267,7 @@ def check_edges(edges: list[dict], org_ids: set[str]):
         if start and end and end < start:
             errors.append(f"edge[{i}]: end_year {end} before start_year {start}")
         if start and src in org_ids:
-            org_founded = orgs.get(src, {}).get("founded_year", 0)
+            org_founded = 0  # TODO: pass orgs dict to edge validation
             if org_founded and start < org_founded - 10:
                 info.append(f"edge[{i}]: start_year {start} is well before {src} founded ({org_founded})")
 

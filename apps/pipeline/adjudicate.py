@@ -72,10 +72,7 @@ def needs_adjudication(runs: list[dict]) -> bool:
 
     # Check color disagreement
     color_sets = [set(c.lower() for c in (r.get("colors") or [])) for r in runs]
-    if len(color_sets) >= 2 and color_sets[0] != color_sets[1]:
-        return True
-
-    return False
+    return len(color_sets) >= 2 and color_sets[0] != color_sets[1]
 
 
 ADJUDICATION_SCHEMA = {

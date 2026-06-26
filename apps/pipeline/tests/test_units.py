@@ -10,6 +10,10 @@ from pathlib import Path
 # === clean.py tests ===
 
 from apps.pipeline.parse.clean import clean_html, quality_score
+from apps.pipeline.lib.resolve import normalize, resolve, build_index
+from apps.pipeline.merge import merge_runs
+from apps.pipeline.extract import chunk_text, merge_chunks, prompt_hash
+from apps.pipeline.adjudicate import needs_adjudication
 
 
 class TestCleanHtml:
@@ -54,8 +58,6 @@ class TestQualityScore:
 
 
 # === resolve.py tests ===
-
-from apps.pipeline.lib.resolve import normalize, resolve, build_index
 
 
 class TestNormalize:
@@ -109,8 +111,6 @@ class TestResolve:
 
 
 # === merge.py tests ===
-
-from apps.pipeline.merge import merge_runs
 
 
 class TestMergeRuns:
@@ -187,8 +187,6 @@ class TestMergeRuns:
 
 # === extract.py tests ===
 
-from apps.pipeline.extract import chunk_text, merge_chunks, prompt_hash
-
 
 class TestChunkText:
     def test_small_text_single_chunk(self):
@@ -236,8 +234,6 @@ class TestPromptHash:
 
 
 # === adjudicate.py tests ===
-
-from apps.pipeline.adjudicate import needs_adjudication
 
 
 class TestNeedsAdjudication:

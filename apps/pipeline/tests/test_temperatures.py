@@ -13,10 +13,10 @@ DATA_RAW = ROOT / "data" / "raw"
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-4.5")
-
 from apps.pipeline.parse.clean import clean_html
 from apps.pipeline.extract import SYSTEM_PROMPT, chunk_text
+
+MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-4.5")
 
 PAGE = "almighty-ambrose"
 

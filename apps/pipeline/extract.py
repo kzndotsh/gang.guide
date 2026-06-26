@@ -166,8 +166,10 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> di
                 depth = 0
                 end_idx = 0
                 for i, c in enumerate(text_out):
-                    if c == "{": depth += 1
-                    elif c == "}": depth -= 1
+                    if c == "{":
+                        depth += 1
+                    elif c == "}":
+                        depth -= 1
                     if depth == 0:
                         end_idx = i + 1
                         break
