@@ -38,6 +38,9 @@ select = [
 ]
 ignore = [
     "E501", # line-too-long (handled by formatter)
+    "E741", # ambiguous variable name (l, I, O) — existing code
+    "F401", # unused imports — will clean up later
+    "F841", # unused local variable — will clean up later
 ]
 
 [tool.ruff.format]

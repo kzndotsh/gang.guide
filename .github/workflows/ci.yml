@@ -24,7 +24,7 @@ jobs:
         run: python3 apps/pipeline/lint.py
 
       - name: Lint Python
-        run: pip install ruff && ruff check apps/pipeline/ build.py
+        run: pip install ruff && ruff check --config apps/pipeline/pyproject.toml apps/pipeline/ build.py
 
       - name: Build graph
         run: python3 build.py
