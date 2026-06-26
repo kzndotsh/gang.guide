@@ -598,6 +598,17 @@
       if (pointer) applyZoom(factor, pointer.x, pointer.y);
     });
 
+    // Hide expensive layers during drag for smooth panning
+    stage.on('dragstart', () => {
+      labelLayer.visible(false);
+      edgeLayer.opacity(0.3);
+    });
+    stage.on('dragend', () => {
+      labelLayer.visible(currentZoom > 0.45);
+      edgeLayer.opacity(1);
+      stage.batchDraw();
+    });
+
     // Click on empty space = deselect
     stage.on('click tap', (e: any) => {
       if (e.target === stage) ondeselect?.();
