@@ -75,3 +75,28 @@ class TestNeedsAdjudicationEdgeCases:
             {"founded_year": 1958, "colors": ["blue", "black"], "edges": []},
         ]
         assert needs_adjudication(runs) is False
+
+
+class TestNeedsAdjudicationAdversarial:
+    def test_runs_with_no_edges_key(self):
+        """Missing edges key shouldn't crash."""
+        runs = [
+            {"founded_year": 1958, "colors": []},
+            {"founded_year": 1958, "colors": []},
+        ]
+        assert needs_adjudication(runs) is False
+
+    def test_very_many_runs(self):
+        """More than 3 runs (future-proofing)."""
+        runs = [{"founded_year": 1958, "colors": ["blue"], "edges": [{"target": "X", "type": "r"}]}] * 10
+        assert needs_adjudication(runs) is False
+
+    def test_mixed_empty_and_full(self):
+        """One run has 50 edges, others have 0."""
+        runs = [
+            {"founded_year": 1958, "colors": [], "edges": [{"target": f"O{i}", "type": "r"} for i in range(50)]},
+            {"founded_year": 1958, "colors": [], "edges": []},
+            {"founded_year": 1958, "colors": [], "edges": []},
+        ]
+        # 50 uncertain edges out of 50 total = 100% > 30%, and >= 3
+        assert needs_adjudication(runs) is True

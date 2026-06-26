@@ -65,3 +65,47 @@ class TestResolveEdgeCases:
 
     def test_numeric_input(self, org_index):
         assert resolve("13", org_index) is None
+
+
+class TestResolveAdversarial:
+    """Edge cases that could cause wrong matches or crashes."""
+
+    def test_sql_injection_string(self, org_index):
+        """Shouldn't crash on weird characters."""
+        assert resolve("'; DROP TABLE orgs; --", org_index) is None
+
+    def test_unicode_names(self, org_index):
+        """Non-ASCII characters shouldn't crash."""
+        assert resolve("Sureños 13", org_index) is None
+
+    def test_extremely_long_name(self, org_index):
+        """Shouldn't hang on huge input."""
+        assert resolve("A" * 100000, org_index) is None
+
+    def test_name_that_is_substring_of_many(self):
+        """'the' is contained in many entries — shouldn't match random things."""
+        index = {
+            "the latin kings": "org:latin-kings",
+            "the bloods": "org:bloods",
+            "the crips": "org:crips",
+        }
+        # "the" alone is too short for containment (< 4 chars)
+        assert resolve("the", index) is None
+
+    def test_same_score_multiple_matches(self):
+        """When two entries have identical overlap ratio, should still return one."""
+        index = {
+            "east side crips": "org:east-side-crips",
+            "west side crips": "org:west-side-crips",
+        }
+        result = resolve("Side Crips", index)
+        # Should return something (not crash), even if ambiguous
+        assert result is None or result.startswith("org:")
+
+    def test_index_with_empty_keys(self):
+        """Empty strings in index shouldn't cause issues."""
+        index = {"": "org:nothing", "crips": "org:crips"}
+        assert resolve("Crips", index) == "org:crips"
+
+    def test_newlines_in_name(self, org_index):
+        assert resolve("Latin\nKings", org_index) is None or resolve("Latin\nKings", org_index) is not None

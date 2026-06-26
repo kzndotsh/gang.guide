@@ -89,3 +89,37 @@ class TestMergeChunksEdgeCases:
         c2 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "membership_estimate": 8000}
         result = merge_chunks([c1, c2])
         assert result["membership_estimate"] == 8000
+
+
+class TestChunkTextAdversarial:
+    def test_single_word(self):
+        assert chunk_text("hello") == ["hello"]
+
+    def test_only_spaces(self):
+        result = chunk_text("     ")
+        assert result == ["     "] or result == [""]
+
+    def test_newlines_only(self):
+        result = chunk_text("\n\n\n")
+        assert isinstance(result, list)
+
+    def test_unicode_words(self):
+        text = "café " * 100
+        chunks = chunk_text(text)
+        assert len(chunks) == 1
+
+
+class TestMergeChunksAdversarial:
+    def test_chunks_with_none_fields(self):
+        chunks = [
+            {"subject_org": None, "founded_year": None, "edges": None, "colors": None, "symbols": None, "orgs_mentioned": None, "description": None, "membership_estimate": None},
+        ]
+        result = merge_chunks(chunks)
+        assert result["subject_org"] is None
+
+    def test_very_long_description(self):
+        chunks = [
+            {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "description": "x" * 100000},
+        ]
+        result = merge_chunks(chunks)
+        assert len(result["description"]) == 100000

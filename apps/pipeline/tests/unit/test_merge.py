@@ -136,3 +136,73 @@ class TestMergeEdgeCases:
         types = [e["type"] for e in result["edges"]]
         assert "alliance" in types
         assert "rivalry" not in types
+
+
+class TestMergeAdversarial:
+    """Test merge with broken/adversarial extraction outputs."""
+
+    def test_missing_fields(self):
+        """Runs with missing optional fields shouldn't crash."""
+        runs = [
+            {"subject_org": "X"},
+            {"subject_org": "X", "edges": []},
+            {},
+        ]
+        result = merge_runs(runs)
+        assert isinstance(result, dict)
+
+    def test_null_values_everywhere(self):
+        runs = [
+            {"subject_org": None, "founded_year": None, "colors": None, "edges": None, "description": None},
+            {"subject_org": None, "founded_year": None, "colors": None, "edges": None, "description": None},
+        ]
+        result = merge_runs(runs)
+        assert result.get("founded_year") is None
+        assert result.get("edges") == [] or result.get("edges") is not None
+
+    def test_extremely_many_edges(self):
+        """1000 edges per run shouldn't hang."""
+        edges = [{"target": f"Org{i}", "type": "alliance", "evidence": f"e{i}"} for i in range(1000)]
+        runs = [
+            {"subject_org": "X", "edges": edges, "colors": []},
+            {"subject_org": "X", "edges": edges, "colors": []},
+        ]
+        result = merge_runs(runs)
+        assert len(result["edges"]) == 1000  # all in consensus (2/2)
+
+    def test_edges_with_empty_target(self):
+        """Empty target shouldn't crash consensus logic."""
+        runs = [
+            {"subject_org": "X", "edges": [{"target": "", "type": "rivalry", "evidence": "x"}], "colors": []},
+            {"subject_org": "X", "edges": [{"target": "", "type": "rivalry", "evidence": "y"}], "colors": []},
+        ]
+        result = merge_runs(runs)
+        # Empty target edge exists in 2/2 runs — it passes consensus
+        assert len(result["edges"]) == 1
+
+    def test_unicode_in_edge_targets(self):
+        runs = [
+            {"subject_org": "X", "edges": [{"target": "Sureños", "type": "rivalry", "evidence": "x"}], "colors": []},
+            {"subject_org": "X", "edges": [{"target": "Sureños", "type": "rivalry", "evidence": "y"}], "colors": []},
+        ]
+        result = merge_runs(runs)
+        assert len(result["edges"]) == 1
+
+    def test_case_sensitivity_in_targets(self):
+        """'BLOODS' and 'bloods' should merge as same edge."""
+        runs = [
+            {"subject_org": "X", "edges": [{"target": "BLOODS", "type": "rivalry", "evidence": "x"}], "colors": []},
+            {"subject_org": "X", "edges": [{"target": "bloods", "type": "rivalry", "evidence": "y"}], "colors": []},
+        ]
+        result = merge_runs(runs)
+        assert len(result["edges"]) == 1
+
+    def test_two_runs_not_three(self):
+        """Only 2 runs (e.g., one failed) — 2/2 agreement = consensus."""
+        runs = [
+            {"subject_org": "X", "edges": [{"target": "A", "type": "r", "evidence": "x"}], "colors": ["blue"]},
+            {"subject_org": "X", "edges": [{"target": "A", "type": "r", "evidence": "y"}], "colors": ["blue"]},
+        ]
+        result = merge_runs(runs)
+        assert len(result["edges"]) == 1
+        assert "blue" in result["colors"]
