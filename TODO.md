@@ -1,17 +1,20 @@
-# PLAN.md — gang.guide roadmap
+# TODO.md — gang.guide roadmap
 
-## Current state (June 2025)
+## Current state (June 2026)
 
-- 967 orgs, 1,147 edges, 2,020 sources
+- 967 orgs, 1,147 edges, 2,020 sources, 82/82 inactive orgs have `disbanded_year`
 - 100% descriptions, 100% founding years, 87% colors
 - SvelteKit + Konva.js canvas map, **live on Cloudflare Workers** (gang.guide)
 - Flat JSON files, Python build script
 - Deployed via Alchemy IaC (`adapter-cloudflare`, prerendered)
-- Sources: Wikipedia (855), StreetGangs (754), UnitedGangs (252), Chicago Gang History (112), DOJ (39)
+- Sources: Wikipedia (852), StreetGangs (724), UnitedGangs (248), Chicago Gang History (108), DOJ (39)
 - Raw scraped data: 1,436 StreetGangs pages + 97 Chicago Gang History pages in `data/raw/`
-- Pipeline scaffold built: `apps/pipeline/` with lint, scrapers, parsers, LLM extraction, entity resolution
-- Lint passes clean (0 errors, ~70 warnings, ~1300 info items)
-- SEO: meta tags, OpenGraph, favicon, robots.txt, sitemap.xml
+- **Full LLM pipeline**: extract (sonnet 4.5) → adjudicate (opus 4.6) → merge → apply
+- **129 unit tests** with coverage (40%), codecov integration
+- CI: ruff lint, pytest + coverage, svelte-check, vite build, codecov upload
+- Lint passes clean (0 errors, 52 warnings, ~1305 info items)
+- SEO: meta tags, OpenGraph, OG image, favicon, robots.txt, sitemap.xml
+- URL-driven state (`?org=`, `?year=`, `?lane=`)
 - Custom cursor, error page, globe loader, window chrome on canvas
 
 ---
@@ -61,7 +64,7 @@
 - [ ] Timeline uses inferred dates (org founded/disbanded) as fallback when edge has no explicit period
 
 ### Org schema tightening
-- [ ] Add `disbanded_year` for inactive orgs
+- [x] Add `disbanded_year` for inactive orgs (82/82 done)
 - [ ] Add `membership_estimate` and `membership_year` for orgs where known
 - [x] Tighten `type` enum: `street_gang` (was set/faction), `organized_crime` (was crime_family/organization), `motorcycle_club`, `prison_gang`, `white_supremacist` (was hate_group), `alliance`, `nation`
 - [ ] Structured colors: `[{color, context}]` for gangs with subset-specific colors
@@ -87,8 +90,8 @@
 - [ ] Target: every description should contain founding context, notable incidents, or distinguishing characteristics
 
 ### Source hygiene
-- [ ] Deduplicate source URLs across orgs (normalize trailing slashes, http→https, www prefix)
-- [ ] Flag sources with slightly different titles pointing to same URL
+- [x] Deduplicate source URLs across orgs (normalize trailing slashes, http→https, www prefix)
+- [x] Flag sources with slightly different titles pointing to same URL
 - [ ] Remove dead domains (fandom.com wikis, expired news links) — replace with archive.org where possible
 
 ### schema.json ✅ BUILT
@@ -256,7 +259,7 @@ apps/pipeline/
 
 ### UX features
 - [x] URL-driven state: `?lane=chicago&year=1970-1990&q=disciples`
-- [ ] Compare mode — select two orgs, highlight shared connections
+- [ ] Compare mode — select two orgs, highlight shared connections — select two orgs, highlight shared connections
 - [ ] Timeline scrubber — animate through decades using edge `period` data
 - [ ] Identity-colored node dots (use org's first color as circle fill)
 - [ ] Color swatches in inspector panel
@@ -269,7 +272,7 @@ apps/pipeline/
 - [ ] Web Worker for layout computation
 
 ### SEO / sharing
-- [ ] Static org pages at `/org/crips` rendered at build time
+- [ ] Static org pages at `/org/crips` at `/org/crips` rendered at build time
 - [ ] OpenGraph meta tags per org
 - [ ] Sitemap generation in build.py
 
@@ -336,7 +339,7 @@ apps/pipeline/
 - [x] Root `package.json` — commitlint, lefthook, ruler as global devDeps
 - [x] Proper `.gitignore` — `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
 - [x] `.env.example` — document required env vars for deployment
-- [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
+- [ ] `LICENSE` (MIT + CC-BY-4.0 — decide when open-sourcing) — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
 - [x] Social media preview image (screenshot of the map)
 - [x] Repository description + topics on GitHub
 
@@ -361,7 +364,7 @@ apps/pipeline/
 - [x] `ALCHEMY_CI_STATE_STORE_CHECK=false` for CI deploys (no remote state store)
 
 ### GitHub settings (toggle when going public)
-- [ ] Enable Dependabot alerts + security updates (auto for public repos)
+- [ ] Enable Dependabot alerts + security updates + security updates (auto for public repos)
 - [ ] Enable secret scanning + push protection (auto for public repos)
 - [ ] Protect main branch (require PR for collaborators, allow maintainer direct push)
 - [ ] Enable Discussions (for questions/community, lighter than issues)
@@ -373,7 +376,7 @@ apps/pipeline/
 - [ ] `data/raw/` stays gitignored (682MB) — backed up separately or re-scrapeable
 
 ### Contributing (future)
-- [ ] CONTRIBUTING.md with org file format, quality standards, source requirements
+- [x] CONTRIBUTING.md with org file format, quality standards, source requirements
 - [ ] Issue templates: "Add new org", "Fix org data", "Report bad edge"
 - [ ] `schema.json` enables contributors to validate their additions locally
 - [ ] PR template with checklist: ran lint, ran build, verified on map

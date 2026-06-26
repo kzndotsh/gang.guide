@@ -26,7 +26,7 @@
         <a href="https://gang.guide">🌐 Live Site</a> •
         <a href="#quick-start">🚀 Quick Start</a> •
         <a href="#data-stats">📊 Stats</a> •
-        <a href="PLAN.md">🗺️ Roadmap</a>
+        <a href="TODO.md">🗺️ Roadmap</a>
     </p>
 </div>
 
@@ -93,7 +93,7 @@ just dev
 ├── justfile                  # Task runner commands
 ├── lefthook.yml              # Git hook config (commitlint)
 ├── commitlint.config.js      # Conventional commit enforcement
-└── PLAN.md                   # Roadmap
+└── TODO.md                   # Roadmap
 ```
 
 ## Data Stats
