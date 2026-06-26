@@ -16,5 +16,14 @@
     "delta_edges": 0,
     "delta_sources": -1,
     "built_at": "2026-06-26T00:00:08.233110+00:00"
+  },
+  {
+    "nodes": 967,
+    "edges": 1147,
+    "sources": 2018,
+    "delta_nodes": 0,
+    "delta_edges": 0,
+    "delta_sources": -2,
+    "built_at": "2026-06-26T03:37:24.672991+00:00"
   }
 ]
