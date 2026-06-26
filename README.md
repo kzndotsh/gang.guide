@@ -74,8 +74,6 @@ No database. No pipeline. Flat JSON files are the source of truth.
 
 Stats are computed at build time by `build.py` and embedded in `graph.json`.
 
-**Field coverage:** 100% descriptions, 100% founding years, 87% colors, 100% sources
-
 **Sources:** Wikipedia, StreetGangs.com, UnitedGangs.com, Chicago Gang History, DOJ/FBI
 
 ## Tech Stack
