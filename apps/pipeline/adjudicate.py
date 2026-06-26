@@ -88,7 +88,7 @@ def needs_adjudication(runs: list[dict]) -> bool:
     # If any edges only in 1 run, there's uncertainty
     uncertain_edges = sum(1 for count in edge_keys.values() if count == 1)
     total_edges = sum(edge_keys.values())
-    if uncertain_edges > 0 and uncertain_edges / max(total_edges, 1) > 0.3:
+    if uncertain_edges >= 3 and uncertain_edges / max(total_edges, 1) > 0.3:
         return True
 
     # Check color disagreement
@@ -101,13 +101,24 @@ def needs_adjudication(runs: list[dict]) -> bool:
 
 def call_adjudicator(runs: list[dict], timeout: float = 120.0) -> dict | None:
     """Send runs to adjudicator model."""
+    # Truncate to avoid token limits (keep edges + key fields, drop long descriptions)
+    trimmed_runs = []
+    for r in runs:
+        trimmed = {k: v for k, v in r.items() if k != "description"}
+        trimmed["description"] = (r.get("description") or "")[:200]
+        trimmed_runs.append(trimmed)
+    runs_json = json.dumps(trimmed_runs, indent=2)
+    # Cap total input at ~30K chars
+    if len(runs_json) > 30000:
+        runs_json = runs_json[:30000] + "\n... (truncated)"
+
     user_content = f"""Here are {len(runs)} extraction runs for the same org page. Resolve conflicts and produce the final record.
 
 Schema for your response:
 {OUTPUT_SCHEMA}
 
 Extraction runs:
-{json.dumps(runs, indent=2)}"""
+{runs_json}"""
 
     payload = {
         "model": MODEL,

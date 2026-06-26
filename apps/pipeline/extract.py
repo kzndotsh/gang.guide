@@ -120,7 +120,11 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 90.0) -> dic
             text_out = text_out.strip()
             if text_out.startswith("```"):
                 text_out = text_out.split("\n", 1)[1].rsplit("```", 1)[0]
-            return json.loads(text_out)
+            parsed = json.loads(text_out)
+            # Validate minimal schema
+            if not isinstance(parsed, dict) or "edges" not in parsed:
+                return None
+            return parsed
         except (httpx.HTTPStatusError, json.JSONDecodeError, httpx.TimeoutException) as e:
             if attempt >= 2:
                 print(f"    [{ts()}] FAIL after {attempt+1} attempts: {type(e).__name__}: {e}")

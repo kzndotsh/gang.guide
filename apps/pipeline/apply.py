@@ -50,7 +50,7 @@ def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run
     changes = []
 
     # Year: only if more precise
-    if consensus.get("founded_year") and org.get("founded_year_precision") in ("decade", "estimate"):
+    if consensus.get("founded_year") and org.get("founded_year_precision") in ("decade", "estimate", "circa"):
         if not dry_run:
             org["founded_year"] = consensus["founded_year"]
             org["founded_year_precision"] = "circa"
@@ -97,6 +97,8 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
             continue
 
         etype = edge.get("type", "alliance")
+        if target_id == org_id:
+            continue  # skip self-references
         key = (org_id, target_id, etype)
         if key in existing_keys:
             continue
