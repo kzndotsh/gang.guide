@@ -77,6 +77,9 @@ just dev
 │   └── lanes.json            # Lane taxonomy + org anchors
 ├── apps/
 │   ├── web/                  # SvelteKit + Konva.js Canvas map viewer
+│   │   ├── src/routes/       # +page.svelte (main map), sitemap.xml
+│   │   ├── src/lib/map/      # KonvaMap.svelte, visibility.ts, scale.ts
+│   │   ├── src/lib/inspector/# Inspector panel components
 │   │   └── alchemy.run.ts   # Deployment config (Cloudflare Workers)
 │   └── pipeline/             # Python LLM extraction pipeline
 │       ├── extract.py        # Multi-temp extraction (sonnet 4.5)
