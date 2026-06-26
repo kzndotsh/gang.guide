@@ -160,9 +160,14 @@ def extract_page(source: str, slug: str, force: bool = False) -> dict | None:
     # Chunk if needed
     chunks = chunk_text(text)
 
-    # Run extraction N times
+    # Run extraction N times (resume from existing runs)
     runs = []
     for run_idx, temp in enumerate(TEMPERATURES):
+        existing_run = out_dir / f"run_{run_idx}.json"
+        if not force and existing_run.exists():
+            runs.append(json.loads(existing_run.read_text(encoding="utf-8")))
+            continue
+
         run_results = []
         for chunk in chunks:
             result = call_kiro(chunk, temperature=temp)

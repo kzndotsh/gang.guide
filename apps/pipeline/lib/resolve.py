@@ -52,15 +52,29 @@ def resolve(name: str, index: dict[str, str] | None = None) -> str | None:
 
     # Try with common suffixes removed
     for suffix in (' gang', ' crips', ' bloods', ' piru', ' 13', ' nation', ' mc'):
-        stripped = norm.rstrip(suffix) if norm.endswith(suffix.strip()) else None
-        if stripped and stripped in index:
-            return index[stripped]
+        if norm.endswith(suffix):
+            stripped = norm[:-len(suffix)]
+            if stripped and stripped in index:
+                return index[stripped]
 
-    # Try containment (short name contained in longer indexed name)
+    # Try containment (require >60% overlap to avoid false matches)
     if len(norm) > 5:
+        best_match = None
+        best_ratio = 0.0
         for key, org_id in index.items():
-            if len(key) > 5 and (norm in key or key in norm):
-                return org_id
+            if len(key) < 4:
+                continue
+            if norm in key:
+                ratio = len(norm) / len(key)
+                if ratio > 0.6 and ratio > best_ratio:
+                    best_match = org_id
+                    best_ratio = ratio
+            elif key in norm:
+                ratio = len(key) / len(norm)
+                if ratio > 0.6 and ratio > best_ratio:
+                    best_match = org_id
+                    best_ratio = ratio
+        return best_match
 
     return None
 

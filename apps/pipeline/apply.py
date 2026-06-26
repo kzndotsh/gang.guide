@@ -22,20 +22,28 @@ DATA_ORGS = ROOT / "data" / "orgs"
 DATA_RELS = ROOT / "data" / "edges.json"
 
 
-def load_org_by_id(org_id: str) -> tuple[Path | None, dict | None]:
-    """Find and load an org file by ID."""
+def load_org_by_id(org_id: str, org_path_index: dict) -> tuple[Path | None, dict | None]:
+    """Find and load an org file by ID using prebuilt index."""
+    path = org_path_index.get(org_id)
+    if path and path.exists():
+        return path, json.loads(path.read_text(encoding="utf-8"))
+    return None, None
+
+
+def build_org_path_index() -> dict[str, Path]:
+    """Build org_id → file path index."""
+    index = {}
     for f in DATA_ORGS.iterdir():
         if f.suffix != ".json":
             continue
         d = json.loads(f.read_text(encoding="utf-8"))
-        if d.get("id") == org_id:
-            return f, d
-    return None, None
+        index[d.get("id", "")] = f
+    return index
 
 
-def apply_extraction(consensus: dict, org_id: str, dry_run: bool = False) -> list[str]:
+def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run: bool = False) -> list[str]:
     """Apply consensus extraction to an org. Returns list of changes made."""
-    path, org = load_org_by_id(org_id)
+    path, org = load_org_by_id(org_id, org_path_index)
     if not org:
         return []
 
@@ -78,11 +86,9 @@ def apply_extraction(consensus: dict, org_id: str, dry_run: bool = False) -> lis
     return changes
 
 
-def apply_edges(consensus: dict, org_id: str, org_index: dict, dry_run: bool = False) -> list[str]:
-    """Apply extracted edges to relationships.json."""
+def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False) -> list[str]:
+    """Apply extracted edges. Mutates edges_list and existing_keys in place."""
     edges_added = []
-    rels = json.loads(DATA_RELS.read_text(encoding="utf-8"))
-    existing = {(e["source"], e["target"], e["type"]) for e in rels}
 
     for edge in consensus.get("edges", []):
         target_name = edge.get("target", "")
@@ -92,7 +98,7 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, dry_run: bool = F
 
         etype = edge.get("type", "alliance")
         key = (org_id, target_id, etype)
-        if key in existing:
+        if key in existing_keys:
             continue
 
         new_edge = {"source": org_id, "target": target_id, "type": etype}
@@ -102,12 +108,9 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, dry_run: bool = F
             new_edge["period"] = edge["period"]
 
         if not dry_run:
-            rels.append(new_edge)
-            existing.add(key)
+            edges_list.append(new_edge)
+            existing_keys.add(key)
         edges_added.append(f"{etype}: {org_id} → {target_id}")
-
-    if edges_added and not dry_run:
-        DATA_RELS.write_text(json.dumps(rels, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     return edges_added
 
@@ -134,10 +137,15 @@ def main():
 
     # Build org index for entity resolution
     org_index = build_index()
+    org_path_index = build_org_path_index()
 
     # Load page→org mapping
     index_path = ROOT / "data" / "raw" / "index.json"
     page_map = json.loads(index_path.read_text()) if index_path.exists() else {}
+
+    # Load edges once
+    edges_list = json.loads(DATA_RELS.read_text(encoding="utf-8"))
+    existing_keys = {(e["source"], e["target"], e["type"]) for e in edges_list}
 
     total_changes = 0
     total_edges = 0
@@ -160,8 +168,8 @@ def main():
         if not org_id:
             continue
 
-        changes = apply_extraction(consensus, org_id, dry_run=args.dry_run)
-        edges = apply_edges(consensus, org_id, org_index, dry_run=args.dry_run)
+        changes = apply_extraction(consensus, org_id, org_path_index, dry_run=args.dry_run)
+        edges = apply_edges(consensus, org_id, org_index, edges_list, existing_keys, dry_run=args.dry_run)
 
         if changes or edges:
             prefix = "[DRY] " if args.dry_run else ""
@@ -172,6 +180,10 @@ def main():
                 print(f"    + {e}")
             total_changes += len(changes)
             total_edges += len(edges)
+
+    # Write edges once at end
+    if not args.dry_run and total_edges > 0:
+        DATA_RELS.write_text(json.dumps(edges_list, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Applied: {total_changes} field updates, {total_edges} new edges")
 
