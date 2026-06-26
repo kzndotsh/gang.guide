@@ -83,12 +83,17 @@ apply-preview source:
 apply source:
     python3 -m apps.pipeline.apply --source {{source}}
 
-# Full pipeline: extract → merge → apply (with preview)
+# Full pipeline: extract → adjudicate → merge → apply (with preview)
 pipeline source:
     python3 -m apps.pipeline.extract --source {{source}}
+    python3 -m apps.pipeline.adjudicate --source {{source}}
     python3 -m apps.pipeline.merge --source {{source}}
     python3 -m apps.pipeline.apply --source {{source}} --dry-run
     @echo "\nReview above. Run 'just apply {{source}}' to commit changes."
+
+# Adjudicate conflicting extractions (sonnet, only where needed)
+adjudicate source:
+    python3 -m apps.pipeline.adjudicate --source {{source}}
 
 # Build the page→org index from raw data
 index:

@@ -103,6 +103,16 @@ def process_source(source: str, force: bool = False):
             skipped += 1
             continue
 
+        # Prefer adjudicated.json (LLM-resolved conflicts) over algorithmic merge
+        adj_path = page_dir / "adjudicated.json"
+        if adj_path.exists():
+            consensus = json.loads(adj_path.read_text(encoding="utf-8"))
+            out_path.write_text(json.dumps(consensus, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+            merged_count += 1
+            edge_count = len(consensus.get("edges", []))
+            print(f"  {page_dir.name}: {edge_count} edges (adjudicated)")
+            continue
+
         # Load runs
         runs = []
         for i in range(3):
