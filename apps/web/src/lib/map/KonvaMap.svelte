@@ -600,11 +600,9 @@
 
     // Hide expensive layers during drag for smooth panning
     stage.on('dragstart', () => {
-      labelLayer.visible(false);
       edgeLayer.opacity(0.3);
     });
     stage.on('dragend', () => {
-      labelLayer.visible(currentZoom > 0.45);
       edgeLayer.opacity(1);
       stage.batchDraw();
     });
