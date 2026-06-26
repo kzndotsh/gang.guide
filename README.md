@@ -19,8 +19,7 @@
 
 <div align="center">
     <h1>gang.guide</h1>
-    <p><strong>Evidence-backed US criminal organization history data platform</strong></p>
-    <p>Interactive timeline map visualization of US criminal organizations, their relationships, and historical context.</p>
+    <p><strong>Evidence-backed US criminal organization history data platform. Curated org profiles → build script → interactive timeline map.</strong></p>
     <p>
         <a href="https://gang.guide">🌐 Live Site</a> •
         <a href="#quick-start">🚀 Quick Start</a> •
@@ -50,11 +49,14 @@ just dev
 
 ## How It Works
 
-1. Each organization is a single JSON file in `data/orgs/` — edit directly
-2. `python3 build.py` assembles them into `graph.json` + `details.json`
-3. The SvelteKit app renders an interactive Canvas timeline map
+```
+data/orgs/*.json  →  build.py  →  graph.json + details.json  →  SvelteKit + Konva.js
+   (source)          (compile)        (static assets)              (interactive map)
+```
 
-No database. No pipeline. Flat JSON files are the source of truth.
+- **No database** — ~980 flat JSON files are the source of truth
+- **No CMS** — edit org files directly, run `just build-data`
+- **No API** — static JSON files served from Cloudflare Workers edge
 
 ## Project Structure
 
