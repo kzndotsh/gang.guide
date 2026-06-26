@@ -13,89 +13,24 @@
 - [ ] Static org pages at `/org/crips` rendered at build time
 - [ ] OpenGraph meta tags per org
 - [ ] Sitemap generation in build.py
-- [ ] GangsterReport.com timelines
 
 ### Data
-- [ ] ID doesn't match name slug pattern (currently info-level, not error)
-- [ ] Asymmetric nation edges (org field vs edges.json mismatch)
-- [ ] Edges between orgs with non-overlapping time periods
-- [ ] Lanes with suspiciously few or many orgs
-- [ ] Completeness score per org
-- [ ] Existing edges stay sparse until organically enriched
-- [ ] Add `membership_estimate` and `membership_year` for orgs where known
-- [ ] Structured colors: `[{color, context}]` for gangs with subset-specific colors
-- [ ] Keep `symbols` field — expand coverage from 29 orgs via LLM extraction pipeline (CGH pages have symbols for all 97 gangs)
-- [ ] Merge `nation_affiliation` + `nation` edge types → single `nation` type
-- [ ] Identify thin descriptions (<100 chars or just "X is a Y gang founded in Z")
-- [ ] For orgs with raw pages in `data/raw/`, generate richer 2-3 sentence summaries via LLM
-- [ ] Priority: the ~75 CGH bulk-imports that got auto-generated one-liners
-- [ ] Target: every description should contain founding context, notable incidents, or distinguishing characteristics
-- [ ] IDE autocomplete for org editing (VSCode validates on save)
-- [ ] `lint.py` validates every org against schema before structural checks
-- [ ] Document all fields with descriptions and examples in the schema
-- [ ] `build.py` emits a `changelog.json` diff on each run: new orgs, removed orgs, changed fields
-- [ ] Cumulative changelog viewable in the coverage panel or a `/changelog` page
-- [ ] Extract: founding dates, territory claims, membership estimates from court filings
-- [ ] These are the most authoritative sources for verified data (sworn testimony, judicial findings)
-- [ ] Parsers are re-runnable without re-scraping (raw data is cached)
-- [ ] `parse_index.py` builds `data/raw/index.json` mapping pages → org IDs:
-- [ ] `lib/resolve.py` — entity resolution for LLM-extracted names → org IDs:
-- [ ] Strip HTML entities (`&amp;`, `&#8217;`, `&nbsp;`) → proper unicode
-- [ ] Remove navigation/footer/sidebar junk (CSS selectors for known source layouts)
-- [ ] Collapse whitespace (multiple newlines, tabs, trailing spaces)
-- [ ] Remove cookie banners, ad blocks, "related articles" sections
-- [ ] Detect and strip encoding errors (mojibake: `Ã©` → `é`)
-- [ ] Remove inline citations/reference markers (`[1]`, `[citation needed]`)
-- [ ] Detect pages that are mostly junk (>50% non-prose: tables, lists of links, nav) — flag as low-quality
-- [ ] Output quality score per page: word count, prose ratio, detected language
-- [ ] Runs as first step: `raw.html` → `content.txt` — all downstream scripts read `content.txt` only
-- [ ] Reads raw pages from `data/raw/`, sends each to LLM 3 times (different seeds)
-- [ ] Single prompt per page extracts everything: edges, colors, years, symbols, membership, description, orgs mentioned
-- [ ] Each run outputs structured JSON with evidence quotes for every edge
-- [ ] Prompt requires verbatim quote from source text — no quote means no edge
-- [ ] **Chunking**: pages >3,000 words split into chunks; infobox/header prepended to every chunk
-- [ ] **Prompt versioning**: prompt hash stored in output; `--force-version` re-extracts stale pages
-- [ ] **Idempotency**: skips pages with existing 3-run output unless `--force`
-- [ ] **Error handling**: retry with backoff (3 retries), partial results saved, resume on restart
-- [ ] **LLM backend**: Kiro gateway (Anthropic-compatible proxy at `KIRO_GATEWAY_URL`, default `http://127.0.0.1:9000`)
-- [ ] Cost estimate: ~$0.01/page × 1,500 pages × 3 runs = ~$45 total
-- [ ] Takes 3 extraction outputs per page, keeps only consistent data:
-- [ ] Dedupes edges across chunks from same page before cross-run consensus
-- [ ] Hallucinated edges get filtered automatically (rarely repeat across runs)
-- [ ] Output: `data/extracted/{page}.json` — one consensus result per page
-- [ ] Only overwrites fields that are currently weaker:
-- [ ] Resolves extracted org names → org IDs via entity resolution
-- [ ] Unresolved orgs mentioned in 2+ pages: auto-create with extracted fields
-- [ ] Idempotent: running twice produces same result
-- [ ] Writes changes to `data/orgs/` and `data/edges.json`
-- [ ] Runs automatically after apply — if lint fails, changes are rejected
-- [ ] Catches: impossible years (Crip before 1969), broken edge refs, junk descriptions, bad colors
-- [ ] Nothing reaches graph.json unless it passes all lint error-level checks
-- [ ] The LLM pipeline can propose anything — lint is the safety net
-- [ ] Blocklist: edges/data to always reject (known false positives)
-- [ ] Forcelist: data to always keep (manually verified facts the LLM might miss)
-- [ ] Split `chicago-sets` lane when too dense
-- [ ] `schema.json` enables contributors to validate their additions locally
+- [ ] Add `membership_estimate` for orgs where known (from pipeline output)
+- [ ] Expand `symbols` coverage via pipeline (CGH pages have symbols for 97 gangs)
+- [ ] Enrich thin descriptions (<100 chars) via LLM for ~75 CGH bulk-imports
+- [ ] Merge `nation_affiliation` field + `nation` edge type into single approach
+- [ ] `build.py` changelog: emit diff on each run (new orgs, changed fields)
+- [ ] Lint: add completeness score per org
+- [ ] Lint: detect edges between orgs with non-overlapping time periods
 
 ### Pipeline
-- [ ] All scrapers output to `data/raw/{source}/{slug}/` with `content.txt` + `url.txt` + `metadata.json`
-- [ ] **Politeness**:
-- [ ] **Error resilience**:
-- [ ] **Cache/dedup**:
-- [ ] Input: list of Wikipedia article URLs (from gang category pages + manual additions)
-- [ ] Uses MediaWiki API (not raw HTML scraping) for stable versioned content
-- [ ] Stores versioned URL (`oldid=`) so extractions are reproducible
-- [ ] Extracts: body text, infobox fields, categories, inter-article links
-- [ ] Auto-discovers new gang articles via Wikipedia category traversal (`Category:Street gangs`, `Category:Crips sets`, etc.)
-- [ ] Incremental mode: check for new pages since last scrape
-- [ ] Parse gang profile pages for structured data (name, colors, territory, allies/rivals from sidebars)
-- [ ] Search CourtListener for gang-enhancement cases mentioning orgs in our dataset
-- [ ] Every scraper stores raw HTML; `clean.py` produces `content.txt`; parsers extract structure from that
-- [ ] **Cost controls**: `--dry-run` for token estimate, `--limit N`, `--source streetgangs`, progress bar with running cost
-- [ ] Name map overrides: force specific name → org ID resolutions
-- [ ] Applied after merge, before lint — overrides always win
-- [ ] Court records (CourtListener) for verified dates/territories
-- [ ] DetroitStreetGangs.com
+- [ ] Run full pipeline on all 73 extracted CGH pages (merge → apply)
+- [ ] Run extraction on remaining sources (streetgangs, wikipedia)
+- [ ] Wire up Wikipedia scraper (MediaWiki API, category traversal)
+- [ ] Wire up CourtListener scraper (gang-enhancement cases)
+- [ ] Add `--dry-run` cost estimate to extract CLI
+- [ ] Curated overrides file (blocklist/forcelist for known bad/good edges)
+- [ ] Aggregate `unresolved_names` from adjudication into review queue
 
 ### Infrastructure
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data
@@ -115,6 +50,7 @@
 - [ ] East Coast (NYC Latin Kings, Trinitarios, DDP, more UBN sets)
 - [ ] Southeast (Atlanta sets, Memphis, New Orleans)
 - [ ] Pacific NW (Sureños/Norteños expansion)
+- [ ] GangsterReport.com timelines
 
 ---
 
