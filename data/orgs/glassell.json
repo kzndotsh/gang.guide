@@ -8,7 +8,7 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Glassell",
-      "title": "Glassell \u2014 Wikipedia"
+      "title": "Glassell — Wikipedia"
     }
   ],
   "status": "inactive",
@@ -17,5 +17,6 @@
   "aliases": null,
   "colors": [
     "blue"
-  ]
+  ],
+  "disbanded_year": 2000
 }

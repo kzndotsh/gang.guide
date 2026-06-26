@@ -13,27 +13,28 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Dirty_Dozen_Motorcycle_Club",
-      "title": "Dirty Dozen Motorcycle Club \u2014 Wikipedia"
+      "title": "Dirty Dozen Motorcycle Club — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Loners_Motorcycle_Club",
-      "title": "Loners Motorcycle Club \u2014 Wikipedia"
+      "title": "Loners Motorcycle Club — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Mongols_MC_criminal_allegations_and_incidents",
-      "title": "Mongols MC criminal allegations and incidents \u2014 Wikipedia"
+      "title": "Mongols MC criminal allegations and incidents — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Savage_Nomads",
-      "title": "Savage Nomads \u2014 Wikipedia"
+      "title": "Savage Nomads — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Savage_Skulls",
-      "title": "Savage Skulls \u2014 Wikipedia"
+      "title": "Savage Skulls — Wikipedia"
     }
   ],
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate"
+  "founded_year_precision": "estimate",
+  "disbanded_year": 2003
 }

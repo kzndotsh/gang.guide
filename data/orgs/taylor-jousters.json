@@ -14,7 +14,7 @@
   "sources": [
     {
       "url": "https://www.streetgangs.com/taylor/jousters/",
-      "title": "Taylor Jousters \u2014 StreetGangs"
+      "title": "Taylor Jousters — StreetGangs"
     },
     {
       "url": "https://chicagoganghistory.com/gang/taylor-jousters/",
@@ -30,5 +30,6 @@
     "navy blue",
     "light blue"
   ],
-  "status": "inactive"
+  "status": "inactive",
+  "disbanded_year": 1980
 }

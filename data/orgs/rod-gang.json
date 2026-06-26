@@ -13,13 +13,14 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/ROD_Gang",
-      "title": "ROD Gang \u2014 Wikipedia"
+      "title": "ROD Gang — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/110ers",
-      "title": "110ers \u2014 Wikipedia"
+      "title": "110ers — Wikipedia"
     }
   ],
   "founded_year_precision": "estimate",
-  "colors": []
+  "colors": [],
+  "disbanded_year": 2012
 }

@@ -3,13 +3,13 @@
   "name": "Mulberry Street Pirus",
   "lane": "california-bloods-compton",
   "metro": "Los Angeles",
-  "description": "African-American Piru Blood gang named after Mulberry Street in Compton, part of the Tree Top Piru lineage \u2014 Compton Piru sets named after tree-themed streets \u2014 emerged in the late 1970s\u2013early 1980s.",
+  "description": "African-American Piru Blood gang named after Mulberry Street in Compton, part of the Tree Top Piru lineage — Compton Piru sets named after tree-themed streets — emerged in the late 1970s–early 1980s.",
   "type": "street_gang",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
       "url": "https://www.streetgangs.com/bloods/compton/mulberry/",
-      "title": "Mulberry Street Pirus \u2014 StreetGangs"
+      "title": "Mulberry Street Pirus — StreetGangs"
     }
   ],
   "colors": [
@@ -18,5 +18,6 @@
   "status": "inactive",
   "founded_year": 1972,
   "founded_year_precision": "decade",
-  "aliases": null
+  "aliases": null,
+  "disbanded_year": 1985
 }

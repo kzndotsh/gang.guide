@@ -8,7 +8,7 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/El_Hoyo_Soto",
-      "title": "El Hoyo Soto \u2014 Wikipedia"
+      "title": "El Hoyo Soto — Wikipedia"
     }
   ],
   "status": "inactive",
@@ -19,5 +19,6 @@
   ],
   "colors": [
     "blue"
-  ]
+  ],
+  "disbanded_year": 1970
 }

@@ -13,14 +13,15 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Marginals",
-      "title": "Marginals \u2014 Wikipedia"
+      "title": "Marginals — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hudson_Dusters",
-      "title": "Hudson Dusters \u2014 Wikipedia"
+      "title": "Hudson Dusters — Wikipedia"
     }
   ],
   "founded_year": 1910,
   "founded_year_precision": "decade",
-  "colors": []
+  "colors": [],
+  "disbanded_year": 1920
 }

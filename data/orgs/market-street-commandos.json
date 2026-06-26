@@ -9,15 +9,15 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Market_Street_Commandos",
-      "title": "Market Street Commandos \u2014 Wikipedia"
+      "title": "Market Street Commandos — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hells_Angels",
-      "title": "Hells Angels \u2014 Wikipedia"
+      "title": "Hells Angels — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Pissed_Off_Bastards_of_Bloomington",
-      "title": "Pissed Off Bastards of Bloomington \u2014 Wikipedia"
+      "title": "Pissed Off Bastards of Bloomington — Wikipedia"
     }
   ],
   "colors": [
@@ -25,5 +25,6 @@
   ],
   "founded_year": 1940,
   "founded_year_precision": "decade",
-  "aliases": []
+  "aliases": [],
+  "disbanded_year": 1955
 }

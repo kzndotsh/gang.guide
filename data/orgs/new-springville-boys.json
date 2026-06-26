@@ -9,11 +9,11 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/New_Springville_Boys",
-      "title": "New Springville Boys \u2014 Wikipedia"
+      "title": "New Springville Boys — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Bonanno_crime_family",
-      "title": "Bonanno crime family \u2014 Wikipedia"
+      "title": "Bonanno crime family — Wikipedia"
     }
   ],
   "aliases": [
@@ -21,5 +21,6 @@
   ],
   "founded_year": 1980,
   "founded_year_precision": "decade",
-  "colors": []
+  "colors": [],
+  "disbanded_year": 2000
 }

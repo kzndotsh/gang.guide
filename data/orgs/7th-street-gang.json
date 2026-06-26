@@ -13,15 +13,16 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/7th_Street_Gang",
-      "title": "7th Street Gang \u2014 Wikipedia"
+      "title": "7th Street Gang — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/10th_Street_Gang",
-      "title": "10th Street Gang \u2014 Wikipedia"
+      "title": "10th Street Gang — Wikipedia"
     }
   ],
   "colors": [
     "blue"
   ],
-  "founded_year_precision": "estimate"
+  "founded_year_precision": "estimate",
+  "disbanded_year": 2010
 }
