@@ -315,9 +315,19 @@ def check_sources(orgs: dict[str, dict]):
     
     for org_id, org in orgs.items():
         f = org["_file"]
+        seen_urls = set()
         for s in (org.get("sources") or []):
             url = s.get("url", "")
             url_counts[url] += 1
+            
+            # Duplicate URL within same org
+            if url in seen_urls:
+                warnings.append(f"{f}: duplicate source URL: {url[:60]}")
+            seen_urls.add(url)
+            
+            # Non-https
+            if url.startswith("http://"):
+                info.append(f"{f}: source uses http (should be https): {url[:60]}")
             
             # Suspicious domains
             if any(d in url for d in ("fandom.com/wiki", "answers.yahoo", "quora.com")):
