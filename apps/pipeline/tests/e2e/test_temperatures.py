@@ -1,3 +1,7 @@
+import pytest
+
+pytestmark = [pytest.mark.slow, pytest.mark.api]
+
 """Test extraction at every temperature from 0.0 to 1.0 on a single CGH page."""
 
 import json

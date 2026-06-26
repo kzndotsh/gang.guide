@@ -1,3 +1,7 @@
+import pytest
+
+pytestmark = [pytest.mark.slow, pytest.mark.api]
+
 """End-to-end pipeline test on a single CGH page.
 
 Runs: clean → extract (3 temps) → adjudicate → merge → apply (dry-run)

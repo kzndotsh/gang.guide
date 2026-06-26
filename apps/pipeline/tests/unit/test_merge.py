@@ -72,3 +72,18 @@ class TestMergeRuns:
     def test_empty_runs(self):
         result = merge_runs([])
         assert result == {}
+
+
+class TestMergeRegression:
+    """Regression test against golden fixture — catches unintended merge logic changes."""
+
+    def test_merge_matches_golden(self, sample_runs, golden_consensus):
+        if golden_consensus is None:
+            pytest.skip("Golden fixture not generated yet")
+        result = merge_runs(sample_runs)
+        assert result["founded_year"] == golden_consensus["founded_year"]
+        assert set(result["colors"]) == set(golden_consensus["colors"])
+        assert len(result["edges"]) == len(golden_consensus["edges"])
+        result_targets = {(e["target"].lower(), e["type"]) for e in result["edges"]}
+        golden_targets = {(e["target"].lower(), e["type"]) for e in golden_consensus["edges"]}
+        assert result_targets == golden_targets
