@@ -42,3 +42,53 @@ class TestQualityScore:
     def test_nav_junk_fails(self):
         text = "Home\nAbout\nContact\nGangs\nNews\n" * 50
         assert quality_score(text)["is_low_quality"] is True
+
+
+class TestCleanHtmlEdgeCases:
+    def test_preserves_plain_text(self):
+        assert clean_html("Hello world") == "Hello world"
+
+    def test_handles_nested_tags(self):
+        result = clean_html("<div><p><b>bold</b> text</p></div>")
+        assert "bold" in result
+        assert "text" in result
+
+    def test_handles_empty_string(self):
+        assert clean_html("") == ""
+
+    def test_strips_comments(self):
+        assert "secret" not in clean_html("<!-- secret -->visible")
+        assert "visible" in clean_html("<!-- secret -->visible")
+
+    def test_handles_br_tags(self):
+        result = clean_html("line1<br>line2<br/>line3")
+        assert "line1" in result
+        assert "line2" in result
+
+    def test_strips_edit_markers(self):
+        assert "[edit]" not in clean_html("History[edit] of the gang")
+
+    def test_handles_unicode(self):
+        result = clean_html("<p>café résumé naïve</p>")
+        assert "café" in result or "caf" in result
+
+
+class TestQualityScoreEdgeCases:
+    def test_returns_word_count(self):
+        result = quality_score("one two three four five six seven")
+        assert result["word_count"] == 7
+
+    def test_prose_ratio_all_prose(self):
+        text = "This is a sentence with more than five words in it.\n" * 10
+        result = quality_score(text)
+        assert result["prose_ratio"] == 1.0
+
+    def test_prose_ratio_no_prose(self):
+        text = "One\nTwo\nThree\nFour\nFive\n"
+        result = quality_score(text)
+        assert result["prose_ratio"] == 0.0
+
+    def test_mixed_quality(self):
+        text = "Nav\nAbout\nHome\nThis is a real sentence about something important.\nContact\n"
+        result = quality_score(text)
+        assert 0 < result["prose_ratio"] < 1.0

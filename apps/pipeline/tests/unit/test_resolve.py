@@ -48,3 +48,20 @@ class TestResolve:
     ])
     def test_known_resolutions(self, org_index, name, expected_id):
         assert resolve(name, org_index) == expected_id
+
+
+class TestResolveEdgeCases:
+    def test_punctuation_stripped_before_match(self, org_index):
+        assert resolve("Crips!", org_index) == "org:crips"
+
+    def test_multiple_suffix_stripping(self, org_index):
+        assert resolve("Bloods Gang", org_index) == "org:bloods"
+
+    def test_very_long_name(self, org_index):
+        assert resolve("A" * 200, org_index) is None
+
+    def test_single_character(self, org_index):
+        assert resolve("X", org_index) is None
+
+    def test_numeric_input(self, org_index):
+        assert resolve("13", org_index) is None

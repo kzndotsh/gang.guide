@@ -46,3 +46,46 @@ class TestPromptHash:
     def test_returns_string(self):
         assert isinstance(prompt_hash(), str)
         assert len(prompt_hash()) == 8
+
+
+class TestChunkTextEdgeCases:
+    def test_exactly_at_limit(self):
+        text = "word " * 50000
+        chunks = chunk_text(text.strip())
+        assert len(chunks) == 1
+
+    def test_one_over_limit(self):
+        text = "word " * 50001
+        chunks = chunk_text(text.strip())
+        assert len(chunks) == 2
+
+    def test_preserves_all_words(self):
+        text = "word " * 100
+        chunks = chunk_text(text.strip())
+        total_words = sum(len(c.split()) for c in chunks)
+        assert total_words == 100
+
+
+class TestMergeChunksEdgeCases:
+    def test_empty_list(self):
+        result = merge_chunks([])
+        assert result["edges"] == []
+        assert result["subject_org"] is None
+
+    def test_dedupes_colors(self):
+        c1 = {"subject_org": "X", "edges": [], "colors": ["Blue"], "symbols": [], "orgs_mentioned": []}
+        c2 = {"subject_org": "X", "edges": [], "colors": ["BLUE", "black"], "symbols": [], "orgs_mentioned": []}
+        result = merge_chunks([c1, c2])
+        assert result["colors"].count("blue") == 1
+
+    def test_picks_longest_description(self):
+        c1 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "description": "Short."}
+        c2 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "description": "A much longer and more detailed description."}
+        result = merge_chunks([c1, c2])
+        assert "longer" in result["description"]
+
+    def test_membership_takes_last(self):
+        c1 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "membership_estimate": 5000}
+        c2 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "membership_estimate": 8000}
+        result = merge_chunks([c1, c2])
+        assert result["membership_estimate"] == 8000

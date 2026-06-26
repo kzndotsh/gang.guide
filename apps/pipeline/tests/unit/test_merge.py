@@ -87,3 +87,52 @@ class TestMergeRegression:
         result_targets = {(e["target"].lower(), e["type"]) for e in result["edges"]}
         golden_targets = {(e["target"].lower(), e["type"]) for e in golden_consensus["edges"]}
         assert result_targets == golden_targets
+
+
+class TestMergeEdgeCases:
+    def test_symbols_consensus(self):
+        runs = [
+            {"subject_org": "X", "symbols": ["star", "pitchfork"], "edges": [], "colors": []},
+            {"subject_org": "X", "symbols": ["star", "crown"], "edges": [], "colors": []},
+            {"subject_org": "X", "symbols": ["star"], "edges": [], "colors": []},
+        ]
+        result = merge_runs(runs)
+        assert "star" in result["symbols"]
+        assert "crown" not in result["symbols"]
+
+    def test_membership_median(self):
+        runs = [
+            {"subject_org": "X", "membership_estimate": 1000, "edges": [], "colors": []},
+            {"subject_org": "X", "membership_estimate": 5000, "edges": [], "colors": []},
+            {"subject_org": "X", "membership_estimate": 2000, "edges": [], "colors": []},
+        ]
+        result = merge_runs(runs)
+        assert result["membership_estimate"] == 2000
+
+    def test_orgs_mentioned_consensus(self):
+        runs = [
+            {"subject_org": "X", "orgs_mentioned": ["A", "B", "C"], "edges": [], "colors": []},
+            {"subject_org": "X", "orgs_mentioned": ["A", "B"], "edges": [], "colors": []},
+            {"subject_org": "X", "orgs_mentioned": ["A", "D"], "edges": [], "colors": []},
+        ]
+        result = merge_runs(runs)
+        assert "A" in result["orgs_mentioned"]
+        assert "B" in result["orgs_mentioned"]
+        assert "D" not in result["orgs_mentioned"]
+
+    def test_edge_type_matters(self):
+        """Same target but different type = different edges."""
+        runs = [
+            {"subject_org": "X", "edges": [
+                {"target": "Y", "type": "alliance", "evidence": "allies"},
+                {"target": "Y", "type": "rivalry", "evidence": "rivals"},
+            ], "colors": []},
+            {"subject_org": "X", "edges": [
+                {"target": "Y", "type": "alliance", "evidence": "friends"},
+            ], "colors": []},
+        ]
+        result = merge_runs(runs)
+        # Alliance appears in 2/2 runs, rivalry only in 1/2
+        types = [e["type"] for e in result["edges"]]
+        assert "alliance" in types
+        assert "rivalry" not in types
