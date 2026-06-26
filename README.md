@@ -92,7 +92,15 @@ just dev
 
 Stats are computed at build time by `build.py` and embedded in `graph.json`.
 
-**Sources:** Wikipedia, StreetGangs.com, UnitedGangs.com, Chicago Gang History, DOJ/FBI
+**Sources:**
+- [Wikipedia](https://en.wikipedia.org) — gang articles, infoboxes, category pages
+- [StreetGangs.com](https://www.streetgangs.com) — LA gang profiles, colors, territories
+- [UnitedGangs.com](https://unitedgangs.com) — org profiles, alliances, rivalries
+- [Chicago Gang History](https://chicagoganghistory.com) — detailed Chicago set histories
+- [DOJ / FBI](https://www.justice.gov) — gang threat assessments, RICO cases
+- [BlackPast.org](https://www.blackpast.org) — historical context, civil rights era gangs
+- [CourtListener](https://www.courtlistener.com) — gang-enhancement court filings
+- [NGCRC](https://www.ngcrc.com) — National Gang Crime Research Center
 
 ## Tech Stack
 
