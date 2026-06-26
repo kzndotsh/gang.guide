@@ -77,6 +77,10 @@ jobs:
         run: npx svelte-kit sync && npm run check
         working-directory: apps/web
 
+      - name: Web tests
+        run: npx vitest run
+        working-directory: apps/web
+
       - name: Build
         run: npx vite build
         working-directory: apps/web
