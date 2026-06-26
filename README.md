@@ -80,7 +80,7 @@ just dev
 │   │   ├── src/routes/         # +page.svelte (main map), sitemap.xml
 │   │   ├── src/lib/map/        # KonvaMap.svelte, visibility.ts, scale.ts
 │   │   ├── src/lib/inspector/  # Inspector panel components
-│   │   └── alchemy.run.ts     # Deployment config (Cloudflare Workers)
+│   │   └── alchemy.run.ts      # Deployment config (Cloudflare Workers)
 │   └── pipeline/               # Python LLM extraction pipeline
 │       ├── extract.py          # Multi-temp extraction (sonnet 4.5)
 │       ├── adjudicate.py       # Conflict resolution (opus 4.6)
