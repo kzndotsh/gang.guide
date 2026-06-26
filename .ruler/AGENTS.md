@@ -75,6 +75,27 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 - All descriptions must be factual, no scrape junk, no slurs, no HTML entities
 - Node IDs use format `org:slug-name`
 
+## Code Style
+
+**Python** (pipeline):
+- Ruff enforced (config in `apps/pipeline/pyproject.toml`)
+- 4-space indent, 120 char line limit
+- Type hints on function signatures
+- Docstrings on modules and public functions
+- No bare `except:` — always specify exception type
+
+**TypeScript/Svelte** (web):
+- Svelte 5 runes: `$state`, `$derived`, `$effect`, `$props`
+- Tailwind for styling, shadcn-svelte for UI components
+- No `any` — use proper types or `unknown`
+- Prefer `const` over `let`
+
+**Git workflow**:
+- Conventional commits: `type(scope): description` (lowercase, imperative)
+- Never push directly to main without CI passing
+- Run `just ci` before pushing if unsure
+- Keep commits atomic — one logical change per commit
+
 ## Constraints
 
 - Never commit `data/raw/` (682MB, gitignored)
