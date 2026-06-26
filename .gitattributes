@@ -1,0 +1,17 @@
+# Line ending normalization
+* text=auto eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.svg binary
+*.ico binary
+
+# Lock files — generated, don't diff
+apps/web/package-lock.json linguist-generated
+apps/web/static/graph.json linguist-generated
+apps/web/static/details.json linguist-generated
+
+# Data files — detect as JSON
+data/orgs/*.json linguist-language=JSON
+data/edges.json linguist-language=JSON
