@@ -1,3 +1,4 @@
+import pytest
 """Tests for apps/pipeline/merge.py"""
 
 from apps.pipeline.merge import merge_runs
