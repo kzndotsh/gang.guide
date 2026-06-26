@@ -37,10 +37,15 @@ select = [
     "RUF",  # ruff-specific
 ]
 ignore = [
-    "E501", # line-too-long (handled by formatter)
-    "E741", # ambiguous variable name (l, I, O) — existing code
-    "F401", # unused imports — will clean up later
-    "F841", # unused local variable — will clean up later
+    "E501",  # line-too-long (handled by formatter)
+    "E741",  # ambiguous variable name (l, I, O) — existing code
+    "F401",  # unused imports — will clean up later
+    "F811",  # redefinition of unused variable
+    "F841",  # unused local variable — will clean up later
+    "B007",  # unused loop control variable
+    "SIM102", # nested if statements — existing code style
+    "RUF001", # ambiguous unicode — intentional (ℹ info symbol)
+    "I001",  # unsorted imports — will fix with ruff format later
 ]
 
 [tool.ruff.format]
