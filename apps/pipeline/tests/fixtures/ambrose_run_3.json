@@ -1,0 +1,301 @@
+{
+  "subject_org": "Ambrose",
+  "founded_year": 1958,
+  "colors": [
+    "black",
+    "blue",
+    "columbia blue",
+    "light blue"
+  ],
+  "symbols": [
+    "A",
+    "knight's helmet",
+    "spear"
+  ],
+  "membership_estimate": null,
+  "description": "18th Street Ambrose was a major Chicago gang established in Pilsen in 1964 that expanded throughout the city and suburbs with peak power in the 1990s. The organization was heavily involved in PCP distribution and became one of the biggest drug distributors in Chicago before federal Operation Blue Water shut down their operation in 2001. Despite the devastating 2001 raid, Ambrose maintained a presence in certain Chicago neighborhoods including Marquette Park.",
+  "edges": [
+    {
+      "target": "Folk Nation",
+      "type": "member_of",
+      "evidence": "Folk Nation \u2014 c. 1979 \u2013 2000 or later",
+      "period": "1979-2000"
+    },
+    {
+      "target": "Taylor Street Dukes",
+      "type": "rivalry",
+      "evidence": "One of Ambrose main reasons for coming together was because the Taylor Street Dukes were harassing them",
+      "period": null
+    },
+    {
+      "target": "Rampants",
+      "type": "alliance",
+      "evidence": "Ambrose had no war with Rampants or Spartans and were close allies",
+      "period": null
+    },
+    {
+      "target": "Spartans",
+      "type": "alliance",
+      "evidence": "Ambrose had no war with Rampants or Spartans and were close allies",
+      "period": "1960s"
+    },
+    {
+      "target": "Latin Kings",
+      "type": "rivalry",
+      "evidence": "Ambrose would clash heavily with Latin Kings from West Pilsen",
+      "period": null
+    },
+    {
+      "target": "Bishops",
+      "type": "rivalry",
+      "evidence": "eventually Ambrose of 21st was at war with Bishops",
+      "period": null
+    },
+    {
+      "target": "Satan Disciples",
+      "type": "rivalry",
+      "evidence": "In 1986 Ambrose was at war with Satan Disciples and since then the war has been violent",
+      "period": "1986"
+    },
+    {
+      "target": "Spanish Skulls",
+      "type": "alliance",
+      "evidence": "Ambrose and the Skulls were good friends until the Vietnam War destroyed the Skulls and caused them to go extinct in 1971, the rest of the Skulls flipped to Ambrose",
+      "period": "1964-1971"
+    },
+    {
+      "target": "Latin Counts",
+      "type": "rivalry",
+      "evidence": "Ambrose had wars with Latin Counts",
+      "period": null
+    },
+    {
+      "target": "Morgan Deuces",
+      "type": "rivalry",
+      "evidence": "Ambrose had wars with Latin Counts, Morgan Deuces, Latin Kings",
+      "period": null
+    },
+    {
+      "target": "Two Six",
+      "type": "rivalry",
+      "evidence": "on and off conflicts with Two Six until the mid-90s when Ambrose left the area",
+      "period": "1977-1990s"
+    },
+    {
+      "target": "Morgan Boys",
+      "type": "alliance",
+      "evidence": "Ambrose did not have many allies in the 70s through the 90s in Pilsen besides the Morgan Boys and Racine Boys by the early 80s",
+      "period": "1970s-1990s"
+    },
+    {
+      "target": "Gangster Disciples",
+      "type": "alliance",
+      "evidence": "Black Gangster Disciples connected with the Ashland Vikings, a mostly Puerto Rican group, the Simon City Royals, a mostly white group and Ambrose, a mostly Mexican group. Black Gangster Disciples would pay Ambrose members to go out and kill one of their enemies... The gangs also trafficked weapons and drugs together and this built a deep connection between Ambrose, Gangster Disciples and Simon City Royals.",
+      "period": "1973-2000s"
+    },
+    {
+      "target": "Simon City Royals",
+      "type": "alliance",
+      "evidence": "Black Gangster Disciples connected with the Ashland Vikings, a mostly Puerto Rican group, the Simon City Royals, a mostly white group and Ambrose, a mostly Mexican group... The gangs also trafficked weapons and drugs together and this built a deep connection between Ambrose, Gangster Disciples and Simon City Royals.",
+      "period": "1973-1980s"
+    },
+    {
+      "target": "Ashland Vikings",
+      "type": "alliance",
+      "evidence": "Black Gangster Disciples connected with the Ashland Vikings, a mostly Puerto Rican group, the Simon City Royals, a mostly white group and Ambrose, a mostly Mexican group.",
+      "period": "1973"
+    },
+    {
+      "target": "Satan Disciples",
+      "type": "rivalry",
+      "evidence": "In the year 1974, the first incident of violence erupted between the two groups... According to court documents in the case of the People vs. Rodriguez, Joyce Rodriguez was convicted of driving a car used in a shooting at 16th and Fairfield in the North Lawndale neighborhood against the Satan Disciples.",
+      "period": "1974-1980s"
+    },
+    {
+      "target": "Satan Disciples",
+      "type": "alliance",
+      "evidence": "Both Ambrose and Satan Disciples would become part of the Folks alliance in the late 70s/early 80s and would even form the 'ATSD' which stood for 'Ambrose Two Six and Satan Disciples.'",
+      "period": "1978-1990s"
+    },
+    {
+      "target": "Two Six",
+      "type": "alliance",
+      "evidence": "Ambrose and Two Six became great allies when Two Six formed in 1970 and this alliance would continue into the 80s when both gangs joined Folks and the ATSD was effective.",
+      "period": "1970-1986"
+    },
+    {
+      "target": "Two Six",
+      "type": "rivalry",
+      "evidence": "War broke out in 1986 when Two Six gunned down Two Two Boys and Satan Disciples at a Ambrose party even though Ambrose was the target.",
+      "period": "1986-1990s"
+    },
+    {
+      "target": "Two Two Boys",
+      "type": "alliance",
+      "evidence": "Two Two Boys and Ambrose became very close in the midst of all this which turned them into 'cousins' on the streets. They remained tight through the 2000s.",
+      "period": "1976-2000s"
+    },
+    {
+      "target": "Latin Counts",
+      "type": "rivalry",
+      "evidence": "Reno 'Maniac Mouse' Enriquez of the Latin Counts from address 1619 S. Loomis (17th and Loomis) shot Louie Limas to death when Enriquez was only 17 years old. The death of Louie Limas was devastating and caused a lot of anger from Ambrose toward Latin Counts, the war intensified since Limas' death.",
+      "period": "1979-1980s"
+    },
+    {
+      "target": "Rec City Gangster Disciples",
+      "type": "rivalry",
+      "evidence": "Ambrose would go to war with the \"Rec City\" Gangster Disciples in the 2000s because Rec City at 63 rd & Albany is in Ambrose hood, this brought a violent gang war.",
+      "period": "2000s"
+    },
+    {
+      "target": "Krazy Getdown Boys",
+      "type": "rivalry",
+      "evidence": "Ambrose and KGBs went to war in the 2000s and the war was too costly for KGBs so they withdrew",
+      "period": "2000s"
+    },
+    {
+      "target": "Party People",
+      "type": "rivalry",
+      "evidence": "No war would start until 1981 when Ambrose stabbed the Party People founder to death. ... Ambrose and Party People have remained arch enemies since the early 80s",
+      "period": "1981-present"
+    },
+    {
+      "target": "La Raza",
+      "type": "alliance",
+      "evidence": "Ambrose and La Raza called a truce because of their mutual hate for Party People and both gangs have been on good terms since 1995.",
+      "period": "1995-present"
+    },
+    {
+      "target": "Black Gangster Disciples",
+      "type": "alliance",
+      "evidence": "BGDs picked Ambrose because they were a south side gang that was Mexican. These groups then worked together moving guns between each other and carrying out murders for each other",
+      "period": "1973-1970s"
+    },
+    {
+      "target": "Simon City Royals",
+      "type": "alliance",
+      "evidence": "In the late 80s Ambrose and Simon City Royals became even tighter and were hanging out and partying together.",
+      "period": "late 1980s"
+    },
+    {
+      "target": "Folks",
+      "type": "member_of",
+      "evidence": "the Simon City Royals offered Ambrose to join the north side Folks alliance in 1994, this is when Ambrose became \"Almighty Ambrose.\"",
+      "period": "1994-present"
+    },
+    {
+      "target": "Very Mellow People",
+      "type": "spin_off",
+      "evidence": "some Ambrose moved to South Chicago from 18th Street. Instead of starting a chapter of Ambrose in the neighborhood these Ambrose started their own crew called the \"Very Mellow People.\"",
+      "period": "1979"
+    },
+    {
+      "target": "Chicago Gangsters",
+      "type": "member_of",
+      "evidence": "Ambrose and Two Six broke away from the Chicago Gangsters and because the Cano brothers were the founders and leaders the organization went defunct in 1992 and Ambrose became independent in this city for the first time in 1992.",
+      "period": "late 1980s-1992"
+    },
+    {
+      "target": "Simon City Royals",
+      "type": "alliance",
+      "evidence": "business reasons which was a connection with Simon City Royals, Imperial Gangsters, and Latin Eagles",
+      "period": null
+    },
+    {
+      "target": "Imperial Gangsters",
+      "type": "alliance",
+      "evidence": "business reasons which was a connection with Simon City Royals, Imperial Gangsters, and Latin Eagles",
+      "period": null
+    },
+    {
+      "target": "Latin Eagles",
+      "type": "alliance",
+      "evidence": "business reasons which was a connection with Simon City Royals, Imperial Gangsters, and Latin Eagles",
+      "period": null
+    },
+    {
+      "target": "Two Six",
+      "type": "rivalry",
+      "evidence": "Ambrose battled Two Six and Satan Disciples heavily which ended being a costly war",
+      "period": null
+    },
+    {
+      "target": "Satan Disciples",
+      "type": "rivalry",
+      "evidence": "Ambrose battled Two Six and Satan Disciples heavily which ended being a costly war",
+      "period": null
+    },
+    {
+      "target": "La Raza",
+      "type": "rivalry",
+      "evidence": "Before Blue Water Ambrose was engaging in a violent war with La Raza, a gang that resided on another side of Pilsen to the south",
+      "period": null
+    },
+    {
+      "target": "Two Two Boys",
+      "type": "alliance",
+      "evidence": "The PCP operation expanded to allies like the Two Two Boys and both gangs were using it and selling it heavily",
+      "period": null
+    }
+  ],
+  "orgs_mentioned": [
+    "Akrohs",
+    "Ambrose",
+    "Arcons",
+    "Ashland Vikings",
+    "Bishops",
+    "Black Disciples",
+    "Black Gangster Disciples",
+    "Bloods",
+    "Boulevard Latin Kings",
+    "Chicago Gangsters",
+    "City Knights",
+    "Crown Town",
+    "Cullerton Deuces",
+    "Folk Nation",
+    "Folks",
+    "Gangster Disciples",
+    "Imperial Gangsters",
+    "Imperials",
+    "Insane Popes",
+    "Insane Unknowns",
+    "KGBs",
+    "Kents",
+    "Kings",
+    "Krazy Get Down Boys",
+    "Krazy Getdown Boys",
+    "La Raza",
+    "Laflin Lovers",
+    "Latin Brothers",
+    "Latin Counts",
+    "Latin Dragons",
+    "Latin Eagles",
+    "Latin Kings",
+    "Latin Souls",
+    "MS-13",
+    "Morgan Boys",
+    "Morgan Deuces",
+    "Party People",
+    "Party Players",
+    "Racine Boys",
+    "Rampants",
+    "Rec City Gangster Disciples",
+    "Satan Disciples",
+    "Simon City Royals",
+    "South side Heads",
+    "Spanish Gangster Disciples",
+    "Spanish Skulls",
+    "Spanish Vice Lords",
+    "Spartans",
+    "TAP Boyz",
+    "Taylor Bishops",
+    "Taylor Street Dukes",
+    "Two Ones",
+    "Two Six",
+    "Two Two Boys",
+    "Vega Klik",
+    "Very Mellow People",
+    "Vice Lords",
+    "Villa Lobos"
+  ]
+}

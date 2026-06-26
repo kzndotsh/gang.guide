@@ -223,7 +223,7 @@ def extract_page(source: str, slug: str, force: bool = False) -> dict | None:
     # Run extraction N times (resume from existing runs)
     runs = []
     for run_idx, temp in enumerate(TEMPERATURES):
-        existing_run = out_dir / f"run_{run_idx}.json"
+        existing_run = out_dir / f"run_{run_idx + 1}.json"
         if not force and existing_run.exists():
             runs.append(json.loads(existing_run.read_text(encoding="utf-8")))
             continue
@@ -238,7 +238,7 @@ def extract_page(source: str, slug: str, force: bool = False) -> dict | None:
         # Merge chunks within a single run
         merged_run = merge_chunks(run_results)
         runs.append(merged_run)
-        (out_dir / f"run_{run_idx}.json").write_text(json.dumps(merged_run, indent=2), encoding="utf-8")
+        (out_dir / f"run_{run_idx + 1}.json").write_text(json.dumps(merged_run, indent=2), encoding="utf-8")
 
     # Save metadata
     meta = {

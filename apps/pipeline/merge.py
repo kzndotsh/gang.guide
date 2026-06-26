@@ -115,8 +115,8 @@ def process_source(source: str, force: bool = False):
 
         # Load runs
         runs = []
-        for i in range(3):
-            run_path = page_dir / f"run_{i}.json"
+        for i in range(1, 4):
+            run_path = page_dir / f"run_{i + 1}.json"
             if run_path.exists():
                 runs.append(json.loads(run_path.read_text(encoding="utf-8")))
 

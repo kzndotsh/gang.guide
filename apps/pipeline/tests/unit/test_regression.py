@@ -20,7 +20,7 @@ def load_fixture(name):
 
 @pytest.fixture
 def real_runs():
-    return [load_fixture(f"ambrose_run_{i}.json") for i in range(3)]
+    return [load_fixture(f"ambrose_run_{i}.json") for i in range(1, 4)]
 
 
 @pytest.fixture
