@@ -15,6 +15,7 @@ import json
 import os
 import time
 import random
+from datetime import datetime
 from pathlib import Path
 
 import httpx
@@ -87,7 +88,7 @@ def call_kiro(text: str, timeout: float = 90.0) -> dict | None:
     payload = {
         "model": MODEL,
         "max_tokens": 4096,
-        "temperature": 0.7,
+        "temperature": 0.3,
         "messages": [
             {"role": "user", "content": f"Extract gang data from this text:\n\n{text}"}
         ],
@@ -101,6 +102,7 @@ def call_kiro(text: str, timeout: float = 90.0) -> dict | None:
 
     for attempt in range(3):
         try:
+            call_start = time.time()
             resp = httpx.post(
                 f"{KIRO_URL}/v1/messages",
                 headers=headers,
@@ -108,6 +110,7 @@ def call_kiro(text: str, timeout: float = 90.0) -> dict | None:
                 timeout=timeout,
             )
             resp.raise_for_status()
+            call_elapsed = time.time() - call_start
             body = resp.json()
             text_out = "".join(
                 p.get("text", "") for p in body.get("content", []) if p.get("type") == "text"
@@ -119,8 +122,10 @@ def call_kiro(text: str, timeout: float = 90.0) -> dict | None:
             return json.loads(text_out)
         except (httpx.HTTPStatusError, json.JSONDecodeError, httpx.TimeoutException) as e:
             if attempt >= 2:
+                print(f"    [{ts()}] FAIL after {attempt+1} attempts: {type(e).__name__}: {e}")
                 return None
             wait = min(2 ** attempt, 8)
+            print(f"    [{ts()}] retry {attempt+1} ({type(e).__name__}), waiting {wait}s")
             time.sleep(wait)
     return None
 
@@ -232,6 +237,10 @@ def merge_chunks(chunk_results: list[dict]) -> dict:
     return merged
 
 
+def ts() -> str:
+    return datetime.now().strftime("%H:%M:%S")
+
+
 def main():
     parser = argparse.ArgumentParser(description="LLM extraction from raw pages")
     parser.add_argument("--source", required=True, help="Source directory in data/raw/")
@@ -266,17 +275,23 @@ def main():
         print(f"Estimated cost: ~${len(pages) * 0.01 * RUNS_PER_PAGE:.2f}")
         return
 
-    print(f"Extracting {len(pages)} pages from {args.source} ({RUNS_PER_PAGE} runs each)")
+    start_time = time.time()
+    print(f"[{ts()}] Extracting {len(pages)} pages from {args.source} ({RUNS_PER_PAGE} runs each)")
     processed = 0
-    for slug in pages:
+    skipped = 0
+    for i, slug in enumerate(pages):
+        page_start = time.time()
         result = extract_page(args.source, slug, force=args.force)
+        elapsed = time.time() - page_start
         if result:
             processed += 1
-            print(f"  [{processed}/{len(pages)}] {slug}")
+            print(f"  [{ts()}] [{processed}/{len(pages)}] {slug} ({elapsed:.1f}s)")
         else:
-            print(f"  [skip] {slug}")
+            skipped += 1
+            print(f"  [{ts()}] [skip] {slug}")
 
-    print(f"\nDone: {processed} pages extracted")
+    total_elapsed = time.time() - start_time
+    print(f"\n[{ts()}] Done: {processed} extracted, {skipped} skipped in {total_elapsed:.0f}s ({total_elapsed/60:.1f}m)")
 
 
 if __name__ == "__main__":
