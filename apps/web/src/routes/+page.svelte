@@ -132,17 +132,53 @@
 
   onMount(() => {
     if (!browser) return;
-    const org = new URL(window.location.href).searchParams.get('org');
+    const params = new URL(window.location.href).searchParams;
+
+    // Restore org from URL
+    const org = params.get('org');
     if (org && graph.nodes.some((n) => n.id === org)) {
       selectFromSearch(org);
     }
+
+    // Restore year range from URL
+    const y = params.get('year');
+    if (y && y.includes('-')) {
+      const [min, max] = y.split('-').map(Number);
+      if (min >= 1800 && max <= 2030) { yearMin = min; yearMax = max; }
+    }
+
+    // Restore hidden lanes from URL
+    const lane = params.get('lane');
+    if (lane) {
+      const allLanes = graph.meta?.lanes?.map((l: any) => l.id) ?? [];
+      const showLanes = new Set(lane.split(','));
+      hiddenLanes = new Set(allLanes.filter((l: string) => !showLanes.has(l)));
+    }
   });
 
+  // Sync state → URL
   $effect(() => {
     if (!browser) return;
     const url = new URL(window.location.href);
+
     if (selectedId) url.searchParams.set('org', selectedId);
     else url.searchParams.delete('org');
+
+    if (yearMin !== 1930 || yearMax !== 2025) {
+      url.searchParams.set('year', `${yearMin}-${yearMax}`);
+    } else {
+      url.searchParams.delete('year');
+    }
+
+    // Only set lane param if something is hidden
+    if (hiddenLanes.size > 0) {
+      const allLanes = graph.meta?.lanes?.map((l: any) => l.id) ?? [];
+      const visible = allLanes.filter((l: string) => !hiddenLanes.has(l));
+      url.searchParams.set('lane', visible.join(','));
+    } else {
+      url.searchParams.delete('lane');
+    }
+
     history.replaceState({}, '', url);
   });
 
