@@ -10,6 +10,9 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://gang.guide
     steps:
       - uses: actions/checkout@v4
         with:
