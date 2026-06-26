@@ -12,11 +12,13 @@
     "test:watch": "vitest",
     "deploy": "vite build && tsx alchemy.run.ts --stage production",
     "deploy:preview": "vite build && tsx alchemy.run.ts",
-    "destroy": "tsx alchemy.run.ts --stage production --destroy"
+    "destroy": "tsx alchemy.run.ts --stage production --destroy",
+    "ruler:apply": "ruler apply --project-root ../.."
   },
   "devDependencies": {
     "@commitlint/cli": "^21.1.0",
     "@commitlint/config-conventional": "^21.1.0",
+    "@intellectronica/ruler": "^0.3.43",
     "@internationalized/date": "^3.12.2",
     "@lucide/svelte": "^1.21.0",
     "@sveltejs/adapter-cloudflare": "^7.2.9",

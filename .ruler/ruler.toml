@@ -1,0 +1,26 @@
+# Ruler configuration — single source of truth for AI agent instructions.
+# Run `npx --prefix apps/web ruler apply` to distribute to all configured agents.
+# See https://github.com/intellectronica/ruler for docs.
+
+default_agents = ["claude", "copilot", "cursor", "kiro"]
+
+[gitignore]
+enabled = true
+
+[backup]
+enabled = false
+
+[skills]
+enabled = false
+
+[agents.claude]
+enabled = true
+
+[agents.copilot]
+enabled = true
+
+[agents.cursor]
+enabled = true
+
+[agents.kiro]
+enabled = true

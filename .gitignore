@@ -7,9 +7,20 @@ data/raw/
 .venv/
 .env
 .cursor/
+.wrangler/
 
 # Alchemy state (contains API tokens in plaintext)
 .alchemy/
 
 # Old build output (now using adapter-cloudflare)
 apps/web/build/
+
+# Ruler backups
+*.bak
+
+
+# START Ruler Generated Files
+/.kiro/steering/ruler_kiro_instructions.md
+/AGENTS.md
+/CLAUDE.md
+# END Ruler Generated Files
