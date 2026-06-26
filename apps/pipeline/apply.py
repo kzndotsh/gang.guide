@@ -105,7 +105,13 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
         if edge.get("evidence"):
             new_edge["evidence"] = edge["evidence"]
         if edge.get("period"):
-            new_edge["period"] = edge["period"]
+            # Convert "1977-1992" string to start_year/end_year ints
+            import re as _re
+            m = _re.match(r"(\d{4})\s*[-–]\s*(\d{4}|present)", edge["period"])
+            if m:
+                new_edge["start_year"] = int(m.group(1))
+                if m.group(2) != "present":
+                    new_edge["end_year"] = int(m.group(2))
 
         if not dry_run:
             edges_list.append(new_edge)

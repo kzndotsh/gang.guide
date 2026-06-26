@@ -64,3 +64,32 @@ ruler:
 # Install git hooks
 hooks:
     npx lefthook install
+
+# ── Pipeline ───────────────────────────────────────────────────────────────────
+
+# Run LLM extraction on a source (requires nix develop + API key)
+extract source:
+    python3 -m apps.pipeline.extract --source {{source}}
+
+# Run consensus merge on extracted data
+merge source:
+    python3 -m apps.pipeline.merge --source {{source}}
+
+# Preview what apply would change (dry run)
+apply-preview source:
+    python3 -m apps.pipeline.apply --source {{source}} --dry-run
+
+# Apply extracted data to orgs + edges
+apply source:
+    python3 -m apps.pipeline.apply --source {{source}}
+
+# Full pipeline: extract → merge → apply (with preview)
+pipeline source:
+    python3 -m apps.pipeline.extract --source {{source}}
+    python3 -m apps.pipeline.merge --source {{source}}
+    python3 -m apps.pipeline.apply --source {{source}} --dry-run
+    @echo "\nReview above. Run 'just apply {{source}}' to commit changes."
+
+# Build the page→org index from raw data
+index:
+    python3 -m apps.pipeline.parse.parse_index
