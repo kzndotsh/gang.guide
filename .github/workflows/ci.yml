@@ -27,7 +27,7 @@ jobs:
         run: pip install ruff && ruff check --config apps/pipeline/pyproject.toml apps/pipeline/ build.py
 
       - name: Run pipeline tests
-        run: pip install pytest httpx && python -m pytest --tb=short -q
+        run: pip install pytest httpx pytest-cov && python -m pytest --cov=apps/pipeline --cov-report=term-missing --tb=short -q
 
       - name: Build graph
         run: python3 build.py
