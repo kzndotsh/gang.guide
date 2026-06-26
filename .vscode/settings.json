@@ -16,6 +16,9 @@
 
   // ── Svelte ──────────────────────────────────────────────────────────────────
   "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
 
   // ── Python ──────────────────────────────────────────────────────────────────
   "[python]": {
