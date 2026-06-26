@@ -61,7 +61,7 @@
 ### Org schema tightening
 - [ ] Add `disbanded_year` for inactive orgs
 - [ ] Add `membership_estimate` and `membership_year` for orgs where known
-- [ ] Tighten `type` enum: `street_gang` (was set/faction), `organized_crime` (was crime_family/organization), `motorcycle_club`, `prison_gang`, `white_supremacist` (was hate_group), `alliance`, `nation`
+- [x] Tighten `type` enum: `street_gang` (was set/faction), `organized_crime` (was crime_family/organization), `motorcycle_club`, `prison_gang`, `white_supremacist` (was hate_group), `alliance`, `nation`
 - [ ] Structured colors: `[{color, context}]` for gangs with subset-specific colors
 - [ ] Keep `symbols` field — expand coverage from 29 orgs via LLM extraction pipeline (CGH pages have symbols for all 97 gangs)
 
