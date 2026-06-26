@@ -216,10 +216,18 @@
 <div class="fixed inset-0 overflow-hidden bg-background">
   <!-- Desktop: full-height sidebar on right, everything else on left -->
   <!-- Mobile fallback -->
-  <div class="flex h-full flex-col items-center justify-center gap-4 px-6 text-center md:hidden">
-    <p class="text-xs tracking-widest text-muted-foreground/50 font-mono">GANG.GUIDE</p>
-    <p class="text-sm text-foreground/80">This app is built for desktop.</p>
-    <p class="text-xs text-muted-foreground">A mobile experience is coming soon. For now, visit on a larger screen.</p>
+  <div class="flex h-full flex-col items-center justify-center gap-6 px-8 text-center md:hidden bg-[#0d1117] [background-image:linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] [background-size:40px_40px]">
+    <svg class="size-16 text-muted-foreground/20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4">
+      <circle cx="50" cy="50" r="45"/>
+      <ellipse cx="50" cy="50" rx="45" ry="12"/>
+      <ellipse cx="50" cy="50" rx="20" ry="45"/>
+      <ellipse cx="50" cy="50" rx="35" ry="45"/>
+    </svg>
+    <div class="space-y-2">
+      <p class="text-[0.6rem] tracking-[0.3em] text-muted-foreground/40 font-mono uppercase">gang.guide</p>
+      <p class="text-lg font-semibold text-foreground/90">Desktop only</p>
+      <p class="text-xs text-muted-foreground/60 max-w-[240px] mx-auto leading-relaxed">This interactive map requires a larger screen. Mobile is coming.</p>
+    </div>
   </div>
   <PaneGroup autoSaveId={INSPECTOR_LAYOUT_KEY}
     direction="horizontal"
