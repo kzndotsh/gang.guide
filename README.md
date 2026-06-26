@@ -65,27 +65,34 @@ just dev
 - No database — flat JSON files are the source of truth
 - No CMS — edit org files directly, run `just build-data`
 - No API — static JSON files served from Cloudflare Workers edge
-- 129 unit tests, codecov coverage, conventional commits
+- Unit tests with coverage, codecov integration, conventional commits
 
 ## Project Structure
 
 ```
 ├── build.py                  # Builds graph.json + details.json from flat data
 ├── data/
-│   ├── orgs/                 # One JSON per org (~980 files, source of truth)
+│   ├── orgs/                 # One JSON per org (967 files, source of truth)
 │   ├── edges.json            # Edge list (alliances, rivalries, affiliations)
 │   └── lanes.json            # Lane taxonomy + org anchors
 ├── apps/
 │   ├── web/                  # SvelteKit + Konva.js Canvas map viewer
 │   │   └── alchemy.run.ts   # Deployment config (Cloudflare Workers)
-│   └── pipeline/             # Python scraping, parsing, LLM extraction
+│   └── pipeline/             # Python LLM extraction pipeline
+│       ├── extract.py        # Multi-temp extraction (sonnet 4.5)
+│       ├── adjudicate.py     # Conflict resolution (opus 4.6)
+│       ├── merge.py          # Consensus filtering
+│       ├── apply.py          # Conservative data upgrade
+│       ├── lint.py           # Data validation (runs in CI)
+│       └── tests/            # Unit tests + e2e + fixtures
 ├── .ruler/                   # AI agent instructions (source of truth)
-├── .github/workflows/        # CI + release workflows
-├── .vscode/                  # Shared editor settings + recommended extensions
-├── justfile                  # Task runner commands
-├── lefthook.yml              # Git hook config (commitlint)
-├── commitlint.config.js      # Conventional commit enforcement
-└── TODO.md                   # Roadmap
+├── .github/workflows/        # CI + release + PR title validation
+├── justfile                  # Task runner (just dev, just ci, just pipeline)
+├── pytest.ini                # Test config (strict markers, coverage)
+├── lefthook.yml              # Git hooks (ruff pre-commit, svelte-check pre-push)
+├── flake.nix                 # Nix dev shell
+├── TODO.md                   # Roadmap
+└── CONTRIBUTING.md           # Contributor guide
 ```
 
 ## Data
