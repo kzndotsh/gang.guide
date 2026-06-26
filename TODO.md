@@ -22,6 +22,10 @@
 - [ ] `build.py` changelog: emit diff on each run (new orgs, changed fields)
 - [ ] Lint: add completeness score per org
 - [ ] Lint: detect edges between orgs with non-overlapping time periods
+- [ ] Merge 4 duplicate org pairs (gangster-crips-47/96/97/98)
+- [ ] Resolve ~30 contradictory edges (alliance + rivalry) with temporal data
+- [ ] Apply CGH extraction results (run merge → apply on 73 extracted pages)
+- [ ] Validate orgs against `schema.json` in lint.py
 
 ### Pipeline
 - [ ] Run full pipeline on all 73 extracted CGH pages (merge → apply)
@@ -31,6 +35,7 @@
 - [ ] Add `--dry-run` cost estimate to extract CLI
 - [ ] Curated overrides file (blocklist/forcelist for known bad/good edges)
 - [ ] Aggregate `unresolved_names` from adjudication into review queue
+- [ ] Add async/concurrent extraction (run 3 temps in parallel for 3x speedup)
 
 ### Infrastructure
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data
