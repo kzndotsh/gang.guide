@@ -26,3 +26,10 @@ apps/web/build/
 /CLAUDE.md
 # END Ruler Generated Files
 data/extracted/
+
+# Test/coverage artifacts
+coverage.xml
+junit.xml
+.coverage
+htmlcov/
+.pytest_cache/

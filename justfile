@@ -25,6 +25,19 @@ lint:
 test:
     cd apps/web && npm run test
 
+# Run all tests (pipeline + web)
+test-all:
+    python -m pytest
+    cd apps/web && npm run test
+
+# Format Python code
+fmt:
+    ruff format apps/pipeline/ build.py
+    ruff check --fix apps/pipeline/ build.py
+
+# Run CI checks locally
+ci: lint fmt test-all build-data check build
+
 # Type-check the frontend
 check:
     cd apps/web && npx svelte-kit sync && npm run check
