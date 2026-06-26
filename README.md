@@ -1,14 +1,4 @@
 <div align="center">
-    <img src=".github/assets/readme-header.png" alt="gang.guide" width="100%">
-    <h1>gang.guide</h1>
-    <p><strong>Evidence-backed US criminal organization history data platform</strong></p>
-    <p>Interactive timeline map visualization of US criminal organizations, their relationships, and historical context.</p>
-    <p>
-        <a href="https://gang.guide">🌐 Live Site</a> •
-        <a href="#quick-start">🚀 Quick Start</a> •
-        <a href="#data-stats">📊 Stats</a> •
-        <a href="PLAN.md">🗺️ Roadmap</a>
-    </p>
     <p>
         <a href="https://github.com/kzndotsh/gang.guide/actions/workflows/ci.yml">
             <img alt="CI" src="https://github.com/kzndotsh/gang.guide/actions/workflows/ci.yml/badge.svg"></a>
@@ -20,6 +10,20 @@
             <img alt="Cloudflare Workers" src="https://img.shields.io/badge/Cloudflare_Workers-f38020?logo=cloudflare&logoColor=white"></a>
         <a href="https://konvajs.org">
             <img alt="Konva.js" src="https://img.shields.io/badge/Konva.js-Canvas-0d83cd"></a>
+    </p>
+</div>
+
+<img src=".github/assets/readme-header.png" alt="gang.guide" width="100%">
+
+<div align="center">
+    <h1>gang.guide</h1>
+    <p><strong>Evidence-backed US criminal organization history data platform</strong></p>
+    <p>Interactive timeline map visualization of US criminal organizations, their relationships, and historical context.</p>
+    <p>
+        <a href="https://gang.guide">🌐 Live Site</a> •
+        <a href="#quick-start">🚀 Quick Start</a> •
+        <a href="#data-stats">📊 Stats</a> •
+        <a href="PLAN.md">🗺️ Roadmap</a>
     </p>
 </div>
 
