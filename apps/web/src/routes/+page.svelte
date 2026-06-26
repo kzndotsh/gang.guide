@@ -244,7 +244,7 @@
 </script>
 
 <svelte:head>
-  <title>gang.guide — US street gang history map</title>
+  <title>gang.guide</title>
 </svelte:head>
 
 <svelte:window onkeydown={onKeydown} />
