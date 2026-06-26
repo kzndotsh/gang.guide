@@ -1,16 +1,5 @@
 # TODO.md — gang.guide roadmap
 
-## Current state (June 2026)
-
-- 967 orgs, 1,147 edges, 2,020 sources, 82/82 inactive orgs have `disbanded_year`
-- 100% descriptions, 100% founding years, 87% colors
-- SvelteKit + Konva.js canvas map, **live on Cloudflare Workers** (gang.guide)
-- Full LLM pipeline: extract (sonnet 4.5) → adjudicate (opus 4.6) → merge → apply
-- 129 unit tests with coverage (40%), codecov integration
-- CI: ruff lint, pytest + coverage, svelte-check, vite build, codecov upload
-
----
-
 ## Pending
 
 ### Frontend
@@ -109,16 +98,12 @@
 - [ ] DetroitStreetGangs.com
 
 ### Infrastructure
-- [ ] Tag git releases after major enrichment batches (v0.1 = 900 nodes, v0.2 = 980 nodes, etc.)
-- [ ] Enables future server routes if needed (SSR org pages, `/api/search`, edge caching)
-- [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
-- [ ] Enable Dependabot alerts + security updates (auto for public repos)
-- [ ] Enable secret scanning + push protection (auto for public repos)
-- [ ] Protect main branch (require PR for collaborators, allow maintainer direct push)
-- [ ] Enable Discussions (for questions/community, lighter than issues)
-- [ ] Tag git releases after major milestones (v1.1=1200 nodes, v2.0=2000+)
+- [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data
+- [ ] Tag v1.1.0 release when pipeline enrichment is applied at scale
 - [ ] Issue templates: "Add new org", "Fix org data", "Report bad edge"
-- [ ] PR template with checklist: ran lint, ran build, verified on map
+- [ ] PR template with checklist (lint, build, map verification)
+- [ ] Protect main branch when collaborators join
+- [ ] Enable Dependabot + secret scanning (toggle when public)
 
 ### Scale (Phase 4)
 - [ ] Gangland (History Channel) episode transcripts
