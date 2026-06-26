@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Lint data
+        run: python3 apps/pipeline/lint.py
+
+      - name: Build graph
+        run: python3 build.py
+
+      - name: Install web dependencies
+        run: npm ci
+        working-directory: apps/web
+
+      - name: Type check
+        run: npm run check
+        working-directory: apps/web
+
+      - name: Build
+        run: npx vite build
+        working-directory: apps/web

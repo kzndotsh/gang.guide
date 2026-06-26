@@ -1,0 +1,8 @@
+commit-msg:
+  commands:
+    commitlint:
+      run: >
+        NODE_PATH=apps/web/node_modules
+        npx --prefix apps/web commitlint
+        --config apps/web/commitlint.config.js
+        --edit {1}
