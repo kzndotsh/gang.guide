@@ -311,27 +311,52 @@ apps/pipeline/
 
 ## Infrastructure
 
-### Deployment ✅ CONFIGURED
+### Deployment ✅ LIVE
 - [x] Deploy via [Alchemy](https://github.com/alchemy-run/alchemy) (TypeScript IaC) to Cloudflare Workers
 - [x] `alchemy.run.ts` config using `SvelteKit` resource from `alchemy/cloudflare`
 - [x] Swap `adapter-static` → `@sveltejs/adapter-cloudflare` in `svelte.config.js`
-- [x] Custom domain: `gang.guide` via `domains` prop (requires domain added to Cloudflare)
+- [x] Custom domain: `gang.guide` via `domains` prop
 - [x] `.env` with `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
 - [x] Package scripts: `npm run deploy`, `deploy:preview`, `destroy`
-- [ ] Add domain to Cloudflare account (nameservers)
-- [ ] First deploy: `cd apps/web && npm run deploy`
-- [ ] Commit `.alchemy/` state files after first successful deploy
-- [ ] Add `export const prerender = true` to `src/routes/+layout.ts` (static asset serving, faster)
+- [x] Add domain to Cloudflare account (nameservers)
+- [x] First deploy to production (live at gang.guide)
+- [x] Add `export const prerender = true` to `src/routes/+layout.ts` (static asset serving)
+- [x] `prerender.handleHttpError: 'warn'` for missing favicon during build
 - [ ] Enables future server routes if needed (SSR org pages, `/api/search`, edge caching)
 
-### Repo health
+### Repo health ✅ DONE
+- [x] `.nvmrc` — pin Node version (22)
+- [x] `.editorconfig` — consistent formatting across editors
+- [x] `.gitattributes` — line ending normalization, linguist hints
+- [x] `.vscode/settings.json` — Svelte, Tailwind, Ruff, performance exclusions
+- [x] `.vscode/extensions.json` — recommended extensions
+- [x] `justfile` — task runner (`just dev`, `just deploy`, `just lint`, etc.)
+- [x] Root `package.json` — commitlint, lefthook, ruler as global devDeps
+- [x] Proper `.gitignore` — `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
 - [ ] `.env.example` — document required env vars for deployment
-- [ ] `.nvmrc` — pin Node version (22)
-- [ ] `apps/web/.gitignore` — ignore `.svelte-kit/`, `build/`, `.alchemy/*.sqlite`
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data (decide when open-sourcing)
 - [ ] Social media preview image (screenshot of the map)
-- [ ] Repository description: "Evidence-backed US street gang history data platform. Interactive timeline map of 980 organizations."
-- [ ] Topics: `data-visualization`, `history`, `sveltekit`, `open-data`, `konva`, `cloudflare-workers`
+- [ ] Repository description + topics on GitHub
+
+### Conventional commits & tooling ✅ DONE
+- [x] Commitlint (`commitlint.config.js`) — enforces conventional commits
+- [x] Lefthook (`lefthook.yml`) — runs commitlint on commit-msg hook
+- [x] Scopes: `web`, `data`, `pipeline`, `infra`, `deps`, `ci`, `release`
+- [x] Ruler (`.ruler/`) — single source of truth for AI agent instructions
+- [x] Generated agent configs (`AGENTS.md`, `CLAUDE.md`, `.kiro/steering/`) are gitignored
+
+### CI/CD ✅ DONE
+- [x] CI workflow (`.github/workflows/ci.yml`) on push/PR to main:
+  1. `python3 apps/pipeline/lint.py` — fail if errors
+  2. `python3 build.py` — regenerate graph.json + details.json
+  3. `npx svelte-kit sync && npm run check` — type-check frontend
+  4. `npx vite build` — production build
+- [x] Release workflow (`.github/workflows/release.yml`) on `v*` tags:
+  1. Build + deploy to Cloudflare Workers via Alchemy
+  2. Create GitHub Release with auto-generated release notes
+  3. GitHub Deployments integration (production environment)
+- [x] Secrets in GitHub: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
+- [x] `ALCHEMY_CI_STATE_STORE_CHECK=false` for CI deploys (no remote state store)
 
 ### GitHub settings (toggle when going public)
 - [ ] Enable Dependabot alerts + security updates (auto for public repos)
@@ -339,19 +364,9 @@ apps/pipeline/
 - [ ] Protect main branch (require PR for collaborators, allow maintainer direct push)
 - [ ] Enable Discussions (for questions/community, lighter than issues)
 
-### CI/CD
-- [ ] GitHub Actions workflow on every push:
-  1. `python3 apps/pipeline/lint.py` — fail if errors
-  2. `python3 build.py` — regenerate graph.json + details.json
-  3. `cd apps/web && npm run check` — type-check frontend
-  4. `cd apps/web && npm run deploy` — build + deploy via Alchemy
-- [ ] Secrets in GitHub: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
-- [ ] Lint runs in <5 seconds (no LLM calls in CI)
-- [ ] Alchemy handles resource lifecycle (create/update/delete workers, routes, DNS)
-
 ### Releases & backup
-- [ ] Tag git releases after major milestones (v0.1=900 nodes, v0.2=980, v0.3=1500+)
-- [ ] Each release includes a CHANGELOG.md entry with stats delta
+- [x] v1.0.0 tagged and released
+- [ ] Tag git releases after major milestones (v1.1=1200 nodes, v2.0=2000+)
 - [ ] Git IS the backup — force-push protection on main branch
 - [ ] `data/raw/` stays gitignored (682MB) — backed up separately or re-scrapeable
 
