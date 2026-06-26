@@ -31,7 +31,7 @@ jobs:
         working-directory: apps/web
 
       - name: Type check
-        run: npm run check
+        run: npx svelte-kit sync && npm run check
         working-directory: apps/web
 
       - name: Build
