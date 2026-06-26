@@ -217,7 +217,7 @@
   <!-- Desktop: full-height sidebar on right, everything else on left -->
   <!-- Mobile fallback -->
   <div class="flex h-full flex-col items-center justify-center gap-6 px-8 text-center md:hidden bg-[#0d1117] [background-image:linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] [background-size:40px_40px]">
-    <svg class="size-16 text-muted-foreground/20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4">
+    <svg class="size-16 animate-[spin_6s_linear_infinite] text-muted-foreground/20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4">
       <circle cx="50" cy="50" r="45"/>
       <ellipse cx="50" cy="50" rx="45" ry="12"/>
       <ellipse cx="50" cy="50" rx="20" ry="45"/>
