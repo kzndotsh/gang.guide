@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "svelte.svelte-vscode",
+    "bradlc.vscode-tailwindcss",
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig",
+    "mikestead.dotenv",
+    "usernamehw.errorlens",
+    "redhat.vscode-yaml",
+    "tamasfe.even-better-toml"
+  ]
+}

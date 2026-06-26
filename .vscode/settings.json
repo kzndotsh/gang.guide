@@ -1,0 +1,70 @@
+{
+  // ── Editor ──────────────────────────────────────────────────────────────────
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlayHints.enabled": "onUnlessPressed",
+  "files.insertFinalNewline": true,
+
+  // ── TypeScript ──────────────────────────────────────────────────────────────
+  "typescript.tsdk": "apps/web/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+
+  // ── Svelte ──────────────────────────────────────────────────────────────────
+  "svelte.enable-ts-plugin": true,
+
+  // ── Python ──────────────────────────────────────────────────────────────────
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+
+  // ── Tailwind CSS ────────────────────────────────────────────────────────────
+  "tailwindCSS.classFunctions": ["cn", "cva", "clsx", "twMerge"],
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^;]*)[\\);]", "`'\"`[`'\"`]"],
+    ["(?:twMerge|twJoin)\\(([^;]*)[\\);]", "`'\"`[`'\"`]"]
+  ],
+
+  // ── Performance: file watching ──────────────────────────────────────────────
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.svelte-kit/**": true,
+    "**/.alchemy/**": true,
+    "**/.wrangler/**": true,
+    "**/.git/objects/**": true,
+    "**/data/raw/**": true,
+    "**/__pycache__/**": true
+  },
+
+  // ── Performance: search ─────────────────────────────────────────────────────
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.svelte-kit": true,
+    "**/data/raw": true,
+    "**/package-lock.json": true,
+    "**/apps/web/static/graph.json": true,
+    "**/apps/web/static/details.json": true
+  },
+
+  // ── Performance: explorer ───────────────────────────────────────────────────
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.svelte-kit": true,
+    "**/.alchemy": true,
+    "**/.wrangler": true
+  },
+
+  // ── File associations ───────────────────────────────────────────────────────
+  "files.associations": {
+    ".env": "dotenv",
+    ".env.*": "dotenv"
+  }
+}

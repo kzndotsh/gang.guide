@@ -7,7 +7,6 @@ data/raw/
 .venv/
 .env
 .cursor/
-.vscode/
 .wrangler/
 
 # Alchemy state (contains API tokens in plaintext)

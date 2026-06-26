@@ -215,6 +215,12 @@
 
 <div class="fixed inset-0 overflow-hidden bg-background">
   <!-- Desktop: full-height sidebar on right, everything else on left -->
+  <!-- Mobile fallback -->
+  <div class="flex h-full flex-col items-center justify-center gap-4 px-6 text-center md:hidden">
+    <p class="text-xs tracking-widest text-muted-foreground/50 font-mono">GANG.GUIDE</p>
+    <p class="text-sm text-foreground/80">This app is built for desktop.</p>
+    <p class="text-xs text-muted-foreground">A mobile experience is coming soon. For now, visit on a larger screen.</p>
+  </div>
   <PaneGroup autoSaveId={INSPECTOR_LAYOUT_KEY}
     direction="horizontal"
     class="hidden h-full md:flex "
