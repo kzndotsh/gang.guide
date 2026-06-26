@@ -120,6 +120,7 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> di
         "model": MODEL,
         "max_tokens": 4096,
         "temperature": temperature,
+        "thinking": {"type": "disabled"},
         "messages": [
             {"role": "user", "content": f"Extract gang data from this text. Respond with ONLY a JSON object, no markdown fences, no explanation:\n\n{text}"}
         ],

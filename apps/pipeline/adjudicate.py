@@ -133,6 +133,7 @@ Extraction runs:
         "model": MODEL,
         "max_tokens": 4096,
         "temperature": 0.1,
+        "thinking": {"type": "disabled"},
         "messages": [{"role": "user", "content": user_content}],
         "system": SYSTEM_PROMPT + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
     }
