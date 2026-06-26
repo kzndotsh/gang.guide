@@ -51,21 +51,20 @@ just dev
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                          DATA PIPELINE                               │
-│                                                                     │
+│                          DATA PIPELINE                              │
+│  SOURCES e.g:                                                       │
 │  Wikipedia ─┐                                                       │
-│  StreetGangs ─┼─→ scrape → clean HTML → LLM extract ×3             │
+│  StreetGangs ─┼─→ scrape → clean HTML → LLM extract ×3              │
 │  DOJ/FBI ───┘                    │                                  │
 │                                  ▼                                  │
 │                         consensus filter (2/3 agree)                │
 │                                  │                                  │
 │                                  ▼                                  │
 │                         conservative merge                          │
-│                                  │                                  │
 └──────────────────────────────────┼──────────────────────────────────┘
                                    ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│  data/orgs/*.json  →  build.py  →  graph.json  →  SvelteKit+Konva  │
+│  data/orgs/*.json  →  build.py  →  graph.json  →  SvelteKit+Konva   │
 │     (967 files)       (compile)    (static)       (interactive map) │
 └─────────────────────────────────────────────────────────────────────┘
 ```

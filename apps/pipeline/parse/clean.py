@@ -54,7 +54,7 @@ def clean_html(raw: str) -> str:
 def quality_score(text: str) -> dict:
     """Compute quality metrics for cleaned text."""
     words = text.split()
-    lines = text.split('\n')
+    lines = [l for l in text.split('\n') if l.strip()]
     prose_lines = [l for l in lines if len(l.split()) > 5]
     return {
         "word_count": len(words),
