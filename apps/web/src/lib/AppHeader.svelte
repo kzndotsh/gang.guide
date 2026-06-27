@@ -83,7 +83,7 @@
               <div class="mt-0.5 flex gap-3 tabular-nums">
                 <span class="text-foreground">{entry.nodes} nodes{#if entry.delta_nodes} <span class="{entry.delta_nodes > 0 ? 'text-green-500' : 'text-red-400'}">({entry.delta_nodes > 0 ? '+' : ''}{entry.delta_nodes})</span>{/if}</span>
                 <span class="text-foreground">{entry.edges} edges{#if entry.delta_edges} <span class="{entry.delta_edges > 0 ? 'text-green-500' : 'text-red-400'}">({entry.delta_edges > 0 ? '+' : ''}{entry.delta_edges})</span>{/if}</span>
-                <span class="text-foreground">{entry.sources} src</span>
+                <span class="text-foreground">{entry.sources} src{#if entry.delta_sources} <span class="{entry.delta_sources > 0 ? 'text-green-500' : 'text-red-400'}">({entry.delta_sources > 0 ? '+' : ''}{entry.delta_sources})</span>{/if}</span>
               </div>
             </div>
           {/each}
