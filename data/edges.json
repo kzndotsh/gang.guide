@@ -10915,5 +10915,138 @@
     "type": "alliance",
     "evidence": "Current war sweater with Imperial Gangster patch showing the recent allegiance",
     "source_url": "https://chicagoganghistory.com/gang/warlords-wicker-park-la-familia-warlords/"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:bloods",
+    "type": "member_of",
+    "evidence": "represent one of Michigan's longest-standing Blood-affiliated criminal street gangs"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:people-nation",
+    "type": "member_of",
+    "evidence": "BPSN continues to operate as a People Nation-aligned Blood set"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:folk-nation",
+    "type": "rivalry",
+    "evidence": "conflicts centered around Crip sets and Folk-affiliated rivals"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "member_of",
+    "evidence": "The Rollin' 60s Crips is a national street gang founded in Los Angeles, California, in the mid-1970s. In approximately 2006, Jerome Hamilton started a Detroit set of the Rollin' 60s",
+    "start_year": 2006
+  },
+  {
+    "source": "org:crips",
+    "target": "org:black-p-stones",
+    "type": "rivalry",
+    "evidence": "most Crip-identified sets historically maintain adversarial relationships with several Blood-affiliated groups. Longstanding conflicts have been documented between Crip sets and organizations such as the Black P. Stones"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:bounty-hunter-watts-bloods",
+    "type": "rivalry",
+    "evidence": "Longstanding conflicts have been documented between Crip sets and organizations such as the Black P. Stones, Bounty Hunter Bloods"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "rivalry",
+    "evidence": "Longstanding conflicts have been documented between Crip sets and organizations such as the Black P. Stones, Bounty Hunter Bloods, the 55 Seven Mile Bloods/RedZone Bloods, as well as various Vice Lord factions"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:bloods",
+    "type": "rivalry",
+    "evidence": "most Crip-identified sets historically maintain adversarial relationships with several Blood-affiliated groups"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:gangster-crips",
+    "type": "member_of",
+    "evidence": "Crip-affiliated sets are active across multiple Detroit neighborhoods, including: • Northwest Detroit: Rollin 20s, Rollin 40s, Rollin 60s, Rollin 100s, Playboy Gangster Crips"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:rollin-40s-crips",
+    "type": "member_of",
+    "evidence": "Affiliation referenced in reporting or public records have included: Crips (Detroit-born), Rollin Neighborhood Crips (2X/Rollin)"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:hoover-criminals",
+    "type": "member_of",
+    "evidence": "Affiliation referenced in reporting or public records have included: Hoover Criminals Gang (Detroit-born), Crips (Detroit-born), Gangster Crips (3X / Movin' Gang)"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:latin-counts-chicago",
+    "type": "rivalry",
+    "evidence": "Rivals referenced in reporting or public records have included: Latin Counts, Vice Lords, People Nation (5X), Bloods"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:suren-os-united-states",
+    "type": "alliance",
+    "evidence": "in Southwest Detroit various GD-aligned sets (particularly predominately Latino sets) have mutual relations with Sureños (SUR-13) gangs"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:people-nation",
+    "type": "member_of",
+    "evidence": "Multiple branches—Including Traveling Vice Lords (TVL), Insane Vice Lords (IVL), Conservative Vice Lords (CVL), Ebony Vice Lords (EVL), Unknown Vice Lords, Imperial Insane Vice Lords (IIVL), Cicero Insane Vice Lords (CIVL), and Mafia Insane Vice Lords (MIVL) —all operating under the People Nation (5X) banner."
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:folk-nation",
+    "type": "rivalry",
+    "evidence": "Rivals referenced in reporting or public records have included: Gangster Disciples , Folk Nation, Crips , Various other block-level street cliques"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "rivalry",
+    "evidence": "Known for conflicts with Rollin' 60s Neighborhood Crips and a strong CK/GDK posture."
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "rivalry",
+    "evidence": "Primary Rivalries: Rollin/Neighborhood (2X) Crips, Blood sets, Vice Lords"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "rivalry",
+    "evidence": "7 Mile Playboy Gangster Crips vs. 7 Mile Rollin 60s — One of Detroit's most documented Crip-on-Crip feuds. Resulted in multiple shootings and large federal cases: 16 PBGC members convicted, 12 R60s members convicted"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:rollin-40s-crips",
+    "type": "rivalry",
+    "evidence": "Paybacc Crips vs. Rollin 40s (7-Tel RFC) — Publicly reported mainly as intermittent street disputes, locals cite street fights and verbal online banter."
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance",
+    "evidence": "Available sources and graffiti documentation indicate long-standing alliances and associations with local Gangster Disciples–aligned groups, including BMG"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:crips",
+    "type": "member_of",
+    "evidence": "The Rollin 60s Crips in Detroit are documented as a predominantly African American, local chapter of the nationwide Crip alliance"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:gangster-crips",
+    "type": "rivalry",
+    "evidence": "The organization became the subject of a major federal investigation in the late 2010s, centered on an extended violent conflict with the 7 Mile Playboy Gangster Crips, a feud that resulted in multiple deaths, including bystanders."
   }
 ]

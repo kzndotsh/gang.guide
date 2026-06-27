@@ -14,6 +14,8 @@ NAME_MAP_PATH = DATA_DIR / "name_map.json"
 
 def normalize(name: str) -> str:
     """Normalize a name for fuzzy matching."""
+    if not name:
+        return ""
     s = name.lower().strip()
     s = re.sub(r'[^a-z0-9\s]', '', s)
     s = re.sub(r'\s+', ' ', s)

@@ -105,7 +105,7 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
 
         # Skip member_of edges that contradict the org's nation_affiliation
         if etype == "member_of":
-            org_data = load_org_by_id(org_id, org_path_index)[1]
+            org_data = load_org_by_id(org_id, org_index)[1]
             if org_data:
                 affiliation = (org_data.get("nation_affiliation") or "").lower()
                 if "folk" in affiliation and "people" in target_id.lower():
