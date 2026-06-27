@@ -13,6 +13,9 @@ ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 SVG_PATH = ROOT / ".github" / "assets" / "stats.svg"
 
+W = 780
+PAD = 20
+
 
 def compute_stats():
     edges = json.loads((ROOT / "data/edges.json").read_text())
@@ -31,71 +34,78 @@ def compute_stats():
     }
 
 
-def generate_svg(stats: dict) -> str:
-    evidence_pct = stats["evidence"] * 100 // stats["edges"]
-    bar_w = 160
-    evidence_bar = bar_w * evidence_pct // 100
-    rivalry_bar = bar_w * stats["rivalry"] // stats["edges"]
-    alliance_bar = bar_w * stats["alliance"] // stats["edges"]
+def generate_svg(s: dict) -> str:
+    evidence_pct = s["evidence"] * 100 // s["edges"]
+    # Bar widths (max 200px)
+    bar_max = 200
+    rivalry_w = bar_max * s["rivalry"] // s["edges"]
+    alliance_w = bar_max * s["alliance"] // s["edges"]
+    evidence_w = bar_max * evidence_pct // 100
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="840" height="200" viewBox="0 0 840 200" fill="none">
+    return f"""<svg width="{W}" height="170" viewBox="0 0 {W} 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .bg {{ fill: #0d1117; rx: 8; }}
-    .card {{ fill: #161b22; rx: 6; }}
-    .title {{ fill: #e6edf3; font: 600 13px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }}
-    .value {{ fill: #e6edf3; font: 700 22px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }}
-    .label {{ fill: #7d8590; font: 400 11px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }}
-    .bar-bg {{ fill: #21262d; rx: 3; }}
-    .bar-evidence {{ fill: #3fb950; rx: 3; }}
-    .bar-rivalry {{ fill: #f85149; rx: 3; }}
-    .bar-alliance {{ fill: #58a6ff; rx: 3; }}
+    .label {{ font: 400 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; fill: #57606a; }}
+    .value {{ font: 600 20px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; fill: #24292f; }}
+    .small {{ font: 400 11px -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; fill: #57606a; }}
+    .bar-bg {{ fill: #eaeef2; rx: 3; }}
+    .bar-red {{ fill: #cf222e; rx: 3; }}
+    .bar-blue {{ fill: #0969da; rx: 3; }}
+    .bar-green {{ fill: #1a7f37; rx: 3; }}
+    @media (prefers-color-scheme: dark) {{
+      .label {{ fill: #7d8590; }}
+      .value {{ fill: #e6edf3; }}
+      .small {{ fill: #7d8590; }}
+      .bar-bg {{ fill: #21262d; }}
+    }}
   </style>
 
-  <!-- Background -->
-  <rect class="bg" width="840" height="200" viewBox="0 0 840 200"/>
+  <!-- Border -->
+  <rect x="0.5" y="0.5" width="{W-1}" height="169" rx="6" stroke="#d0d7de" stroke-opacity="0.4"/>
 
-  <!-- Row 1: Big numbers -->
-  <rect class="card" x="16" y="16" width="150" height="70"/>
-  <text class="value" x="91" y="50" text-anchor="middle">{stats['orgs']:,}</text>
-  <text class="label" x="91" y="68" text-anchor="middle">Organizations</text>
+  <!-- Row 1: Stats -->
+  <text class="value" x="{PAD}" y="42">{s['orgs']:,}</text>
+  <text class="label" x="{PAD}" y="60">Organizations</text>
 
-  <rect class="card" x="182" y="16" width="150" height="70"/>
-  <text class="value" x="257" y="50" text-anchor="middle">{stats['edges']:,}</text>
-  <text class="label" x="257" y="68" text-anchor="middle">Relationships</text>
+  <text class="value" x="180" y="42">{s['edges']:,}</text>
+  <text class="label" x="180" y="60">Edges</text>
 
-  <rect class="card" x="348" y="16" width="150" height="70"/>
-  <text class="value" x="423" y="50" text-anchor="middle">{stats['active']:,}</text>
-  <text class="label" x="423" y="68" text-anchor="middle">Active</text>
+  <text class="value" x="320" y="42">{evidence_pct}%</text>
+  <text class="label" x="320" y="60">Evidence-backed</text>
 
-  <rect class="card" x="514" y="16" width="150" height="70"/>
-  <text class="value" x="589" y="50" text-anchor="middle">{stats['inactive']}</text>
-  <text class="label" x="589" y="68" text-anchor="middle">Inactive</text>
+  <text class="value" x="500" y="42">{s['active']:,}</text>
+  <text class="label" x="500" y="60">Active</text>
 
-  <rect class="card" x="680" y="16" width="124" height="70"/>
-  <text class="value" x="742" y="50" text-anchor="middle">{evidence_pct}%</text>
-  <text class="label" x="742" y="68" text-anchor="middle">Evidence-backed</text>
+  <text class="value" x="620" y="42">{s['inactive']}</text>
+  <text class="label" x="620" y="60">Inactive</text>
+
+  <!-- Divider -->
+  <line x1="{PAD}" y1="76" x2="{W-PAD}" y2="76" stroke="#d0d7de" stroke-opacity="0.3"/>
 
   <!-- Row 2: Bars -->
-  <rect class="card" x="16" y="102" width="388" height="62"/>
-  <text class="title" x="32" y="124">Edge Types</text>
-  <rect class="bar-bg" x="32" y="134" width="{bar_w}" height="8"/>
-  <rect class="bar-rivalry" x="32" y="134" width="{rivalry_bar}" height="8"/>
-  <text class="label" x="{32 + bar_w + 8}" y="142">Rivalry {stats['rivalry']}</text>
-  <rect class="bar-bg" x="32" y="150" width="{bar_w}" height="8"/>
-  <rect class="bar-alliance" x="32" y="150" width="{alliance_bar}" height="8"/>
-  <text class="label" x="{32 + bar_w + 8}" y="158">Alliance {stats['alliance']}</text>
+  <text class="small" x="{PAD}" y="100">Rivalry</text>
+  <rect class="bar-bg" x="80" y="91" width="{bar_max}" height="10"/>
+  <rect class="bar-red" x="80" y="91" width="{rivalry_w}" height="10"/>
+  <text class="small" x="{80+bar_max+8}" y="100">{s['rivalry']:,}</text>
 
-  <rect class="card" x="420" y="102" width="370" height="62"/>
-  <text class="title" x="436" y="124">Evidence Coverage</text>
-  <rect class="bar-bg" x="436" y="138" width="{bar_w}" height="12"/>
-  <rect class="bar-evidence" x="436" y="138" width="{evidence_bar}" height="12"/>
-  <text class="label" x="{436 + bar_w + 8}" y="149">{stats['evidence']:,} / {stats['edges']:,} with quotes</text>
+  <text class="small" x="{PAD}" y="120">Alliance</text>
+  <rect class="bar-bg" x="80" y="111" width="{bar_max}" height="10"/>
+  <rect class="bar-blue" x="80" y="111" width="{alliance_w}" height="10"/>
+  <text class="small" x="{80+bar_max+8}" y="120">{s['alliance']:,}</text>
+
+  <text class="small" x="{PAD}" y="140">Evidence</text>
+  <rect class="bar-bg" x="80" y="131" width="{bar_max}" height="10"/>
+  <rect class="bar-green" x="80" y="131" width="{evidence_w}" height="10"/>
+  <text class="small" x="{80+bar_max+8}" y="140">{s['evidence']:,} / {s['edges']:,}</text>
+
+  <!-- Right side mini stats -->
+  <text class="small" x="450" y="100">Member of: {s['member_of']}</text>
+  <text class="small" x="450" y="120">Spin-off: {s['spin_off']}</text>
+  <text class="small" x="450" y="140">Sources: 5 domains</text>
 </svg>"""
 
 
 def update_readme():
     content = README.read_text()
-    # Replace STATS section with SVG embed
     stats_block = """<!-- STATS:START - Auto-generated by scripts/update-readme-stats.py -->
 <img src=".github/assets/stats.svg" alt="Data Stats" width="100%">
 <!-- STATS:END -->"""
@@ -111,4 +121,4 @@ if __name__ == "__main__":
     SVG_PATH.parent.mkdir(parents=True, exist_ok=True)
     SVG_PATH.write_text(generate_svg(stats))
     update_readme()
-    print(f"Generated {SVG_PATH} and updated README.md")
+    print(f"Generated {SVG_PATH}")
