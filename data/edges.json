@@ -11541,13 +11541,6 @@
     "source_url": "https://www.justice.gov/usao-edmi/pr/detroit-one-collaboration-leads-gang-leader-sentenced-nearly-20-years-prison-gang"
   },
   {
-    "source": "org:black-disciples-chicago",
-    "target": "org:black-gangster-disciples-nation",
-    "type": "spin_off",
-    "evidence": "in 1978 three groups splintered off from the BGDs all having their origins from the original Devils Disciples (BGs, GDs, and BDs)",
-    "source_url": "https://www.ngcrc.com/ngcrc/bdprofile.html"
-  },
-  {
     "source": "org:black-p-stone-nation",
     "target": "org:mickey-cobras-chicago",
     "type": "spin_off",
@@ -11559,13 +11552,6 @@
     "target": "org:black-gangster-disciples-nation",
     "type": "rivalry",
     "evidence": "But for all practical purposes, the main day to day enemy or rival of the BPSN are members of the Gangster Disciples gang.",
-    "source_url": "https://www.ngcrc.com/ngcrc/bpsn2003.htm"
-  },
-  {
-    "source": "org:black-p-stone-nation",
-    "target": "org:devils-diciples-motorcycle-club",
-    "type": "rivalry",
-    "evidence": "Rather the main enemy of the BPSN was the Devil's Disciples, who existed in closer proximity and competed for gang loyalty among disaffected southside youths.",
     "source_url": "https://www.ngcrc.com/ngcrc/bpsn2003.htm"
   },
   {
@@ -11584,15 +11570,8 @@
     "source_url": "https://www.ngcrc.com/ngcrc/page14.htm"
   },
   {
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:breed-motorcycle-club",
-    "type": "rivalry",
-    "evidence": "Two gangs stand to benefit directly from the effects of putting the GD leadership into disarray: (1) the Black P. Stone Nation (BPSN), and (2) The New Breed (or B.G.'s).",
-    "source_url": "https://www.ngcrc.com/ngcrc/page14.htm"
-  },
-  {
-    "source": "org:latin-kings",
-    "target": "org:noble-knights",
+    "source": "org:noble-knights",
+    "target": "org:latin-kings",
     "type": "spin_off",
     "evidence": "The first chapter of the LKs on the Northside is said have grown out of the Noble Knights",
     "source_url": "https://www.ngcrc.com/ngcrc/page15.htm"
