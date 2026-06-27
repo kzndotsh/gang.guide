@@ -11542,5 +11542,12 @@
     "type": "rivalry",
     "evidence": "Historical tension with Rollin 60s Neighborhood Crips and Rollin Neighborhood Crips (2X/Rollin)-aligned crews",
     "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:cmh",
+    "target": "org:bandgang",
+    "type": "member_of",
+    "evidence": "Band Crew was an association comprised of smaller gangs, including Constantly Making Hundreds (CMH), Young N Crispy (YNC), Pushit Boy Family (PBF), and Family Over Everything Love is Forever (FOE Life).",
+    "source_url": "https://www.justice.gov/usao-edmi/pr/detroit-one-collaboration-leads-gang-leader-sentenced-nearly-20-years-prison-gang"
   }
 ]

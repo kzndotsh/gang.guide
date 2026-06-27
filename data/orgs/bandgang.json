@@ -1,19 +1,29 @@
 {
   "id": "org:bandgang",
   "name": "BandGang",
-  "aliases": [],
+  "aliases": [
+    "Band Crew"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "BandGang is a street gang based in Detroit.",
+  "description": "BandGang (also known as Band Crew) is a Detroit west side street gang and rap collective formed in 2008. The association comprises smaller gangs including CMH, YNC, PBF, and FOE Life. Members have been federally convicted of attempted murder and drive-by shootings.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
-      "url": "https://detroitstreetgangs.com/detroit-gangster-disciples/",
+      "url": "https://www.fbi.gov/contact-us/field-offices/detroit/news/press-releases/two-gang-members-convicted-of-attempted-murder-in-drive-by-shooting",
+      "title": "FBI - BandGang convictions"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edmi/pr/detroit-one-collaboration-leads-gang-leader-sentenced-nearly-20-years-prison-gang",
+      "title": "DOJ - Band Crew sentencing"
+    },
+    {
+      "url": "https://detroitstreetgangs.com/",
       "title": "detroitstreetgangs.com"
     }
   ]

@@ -1,13 +1,15 @@
 {
   "id": "org:cmh",
   "name": "CMH",
-  "aliases": [],
+  "aliases": [
+    "Constantly Making Hundreds"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "CMH is a street gang based in Detroit.",
+  "description": "CMH (Constantly Making Hundreds) is a Detroit street gang operating as a subset of the BandGang/Band Crew alliance on Detroit's northwest side.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",

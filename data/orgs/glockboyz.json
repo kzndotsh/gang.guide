@@ -1,19 +1,27 @@
 {
   "id": "org:glockboyz",
-  "name": "Glockboyz",
-  "aliases": [],
+  "name": "Glock Boyz TMC",
+  "aliases": [
+    "Glockboyz",
+    "Too Much Cash",
+    "TMC"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Glockboyz is a street gang based in Detroit.",
+  "description": "Glock Boyz TMC (Too Much Cash) is a violent street gang operating on the west side of Detroit. Members have been federally prosecuted for firearms offenses, identity theft, and wire fraud.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
-      "url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/",
+      "url": "https://www.justice.gov/usao-edmi/pr/glock-boyz-gang-member-sentenced-60-months-prison-aggravated-identity-theft-and",
+      "title": "DOJ - Glock Boyz sentencing"
+    },
+    {
+      "url": "https://detroitstreetgangs.com/",
       "title": "detroitstreetgangs.com"
     }
   ]
