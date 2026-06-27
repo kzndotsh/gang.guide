@@ -6474,16 +6474,6 @@
     "source_url": "https://chicagoganghistory.com/gang/black-disciples/"
   },
   {
-    "id": "6ca66b316014",
-    "source": "org:black-disciples-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "On April 18, 1978, Larry Hoover and several Chicago gang leaders of all races and different mobs got together...This was the foundation and the beginning of Folks and Peoples",
-    "source_url": "https://chicagoganghistory.com/gang/black-disciples/"
-  },
-  {
     "id": "629002242095",
     "source": "org:black-disciples-chicago",
     "target": "org:lynwood-vikings",
