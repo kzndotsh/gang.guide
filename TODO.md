@@ -68,6 +68,14 @@
 - [ ] **NYPL Digital Collections** — NYC gang history archives for East Coast expansion
 - [ ] **DEA Cartels page** — If we expand scope to cartel-street gang connections
 - [ ] **DetroitStreetGangs.com** — Detroit-specific sets
+- [ ] **ADL white supremacist prison gang inventory** (2022 assessment) — State-by-state AB variants, Aryan Circle, etc.
+- [ ] **START.umd Tracking Cartels** — Infographics + data on cartel operational zones (territorial edges)
+- [ ] **OCVED** (ocved.mx) — Organized crime violence event data, Mexico 2000-2019+. Territorial presence dataset.
+- [ ] **ACLED Mexico data** — Criminal group violence, downloadable CSV datasets
+- [ ] **GI-TOC Global Organized Crime Index** (ocindex.net) — Country-level metrics, regional observatories
+- [ ] **UNODC SHERLOC** — Transnational organized crime case law + legislation
+- [ ] **Journal of Gang Research (NGCRC)** — Peer-reviewed, special reports on prison gangs, federal legislation
+- [ ] **Europol criminal network reports** — 821+ groups analyzed, good for international expansion if scope widens
 
 ### Schema improvements
 - [ ] Add `tier` field to sources: 1=legal/court, 2=academic, 3=news/wiki, 4=community. Lets adjudicate.py weigh conflicts.
