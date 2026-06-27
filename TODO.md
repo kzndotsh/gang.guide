@@ -57,6 +57,23 @@
 - [ ] Pacific NW (Sureños/Norteños expansion)
 - [ ] GangsterReport.com timelines
 
+### New Sources (researched)
+- [ ] **InSight Crime** (insightcrime.org) — MS-13, Tren de Aragua, cartel profiles. Structured pages, good for pipeline extraction. Fills our transnational/Latino gap.
+- [ ] **SPLC/ADL profiles** — Prison gang + white supremacist detailed profiles (AB, Nazi Lowriders, PEN1). Clean HTML, low effort.
+- [ ] **FBI National Gang Threat Assessment (2015)** — Single PDF, confirms memberships/territories/threat levels for top orgs. Validation source.
+- [ ] **State AG press releases** (CA, IL, NY) — RICO cases explicitly name sets + relationships in legal filings. Gold for edges.
+- [ ] **PACER/CourtListener RICO filings** — Legal factual basis for edges (already in plan but worth prioritizing)
+- [ ] **National Gang Center (NGC/OJJDP)** — Gang surveys, risk factors, legislation database. More stats than entities but useful for validation.
+- [ ] **Chronicling America (LOC)** — Historic newspapers for pre-1960 org founding dates
+- [ ] **NYPL Digital Collections** — NYC gang history archives for East Coast expansion
+- [ ] **DEA Cartels page** — If we expand scope to cartel-street gang connections
+- [ ] **DetroitStreetGangs.com** — Detroit-specific sets
+
+### Schema improvements
+- [ ] Add `tier` field to sources: 1=legal/court, 2=academic, 3=news/wiki, 4=community. Lets adjudicate.py weigh conflicts.
+- [ ] Add `evidence` field to edges (verbatim quote proving the relationship)
+- [ ] Add `source_url` to edges (where the evidence came from)
+
 ---
 
 ## Done

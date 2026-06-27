@@ -172,7 +172,7 @@ Extraction runs:
     return None
 
 
-def process_source(source: str, dry_run: bool = False):
+def process_source(source: str, dry_run: bool = False, force: bool = False):
     """Adjudicate conflicting extractions for a source."""
     source_dir = DATA_EXTRACTED / source
     if not source_dir.exists():
@@ -189,7 +189,7 @@ def process_source(source: str, dry_run: bool = False):
 
         # Skip if already adjudicated
         adj_path = page_dir / "adjudicated.json"
-        if not dry_run and adj_path.exists():
+        if not force and not dry_run and adj_path.exists():
             skipped += 1
             continue
 
@@ -237,7 +237,7 @@ def main():
         print("ERROR: Set KIRO_GATEWAY_API_KEY or PROXY_API_KEY")
         return
 
-    process_source(args.source, dry_run=args.dry_run)
+    process_source(args.source, dry_run=args.dry_run, force=args.force)
 
 
 if __name__ == "__main__":
