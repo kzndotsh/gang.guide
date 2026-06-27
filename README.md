@@ -53,15 +53,17 @@ just dev
 
 ## How It Works
 
-**Pipeline**:
-1. **Scrape** — raw HTML from sources into `data/raw/`
-2. **Clean** — strip HTML to plaintext
-3. **Extract** — sonnet 4.5 at 3 temperatures (0.1, 0.3, 0.7) produces structured JSON with edges + evidence quotes
-4. **Adjudicate** — opus 4.6 validates evidence, resolves conflicts, filters hallucinations
-5. **Merge** — algorithmic consensus (2/3 agreement) or adjudicated result
-6. **Apply** — conservative upgrade to `data/orgs/*.json` + `data/edges.json`, lint gates the result
-7. **Build** — `build.py` compiles flat files into `graph.json` + `details.json`
-8. **Serve** — SvelteKit + Konva.js canvas, deployed to Cloudflare Workers
+```
+Scrape → Clean → Extract (sonnet 4.5 × 3 temps) → Adjudicate (opus 4.6) → Merge → Apply → Build → Serve
+```
+
+1. **Scrape** raw HTML from sources into `data/raw/`
+2. **Extract** structured JSON via sonnet 4.5 at 3 temperatures — edges require verbatim evidence quotes
+3. **Adjudicate** with opus 4.6 — validates evidence, rejects co-mentions, resolves conflicts
+4. **Merge** via algorithmic consensus (2/3 agreement) or adjudicated result
+5. **Apply** conservative upgrade to `data/orgs/*.json` + `data/edges.json` — lint gates the result
+6. **Build** compiles flat files into `graph.json` + `details.json`
+7. **Serve** on Cloudflare Workers via SvelteKit + Konva.js canvas
 
 ## Data
 
