@@ -11111,13 +11111,6 @@
   },
   {
     "source": "org:6-mile-greenguyz",
-    "target": "org:shotgun-crips",
-    "type": "member_of",
-    "evidence": "Available sources describe the GreenGuyz as operating as a localized Detroit set within a wider ShotGun Crips framework",
-    "source_url": "https://detroitstreetgangs.com/6-mile-greenguyz-sgc-shotgun-crips/"
-  },
-  {
-    "source": "org:6-mile-greenguyz",
     "target": "org:gangster-crips",
     "type": "member_of",
     "evidence": "frequently described as part of a Gangster Crips (3X / Movin' Gang)–influenced tradition",
@@ -11173,13 +11166,6 @@
     "source_url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/"
   },
   {
-    "source": "org:black-p-stone-nation",
-    "target": "org:crip",
-    "type": "rivalry",
-    "evidence": "maintaining a steady presence through narcotics activity and long-running conflicts with Crip and Folk-aligned groups",
-    "source_url": "https://detroitstreetgangs.com/black-p-stone-nation-jungle-stone-bloods-detroit-lansing-mi/"
-  },
-  {
     "source": "org:crips",
     "target": "org:55-seven-mile-bloods",
     "type": "rivalry",
@@ -11223,7 +11209,7 @@
   },
   {
     "source": "org:crips",
-    "target": "org:shotgun-crips",
+    "target": "org:6-mile-greenguyz",
     "type": "member_of",
     "evidence": "Affiliation referenced in reporting or public records have included: Crips (Detroit-born), Gangster Crips (3X/Movin Gang)",
     "source_url": "https://detroitstreetgangs.com/detroit-crips/"
@@ -11279,13 +11265,6 @@
   },
   {
     "source": "org:almighty-vice-lord-nation",
-    "target": "org:detroit-blood-sets",
-    "type": "alliance",
-    "evidence": "Multiple local cliques (Bronco Boyz, Skoni Skams, 72 IWL, Imperial Insanes) strengthen the Westside VL network, forming alliances with Detroit-born Blood sets.",
-    "source_url": "https://detroitstreetgangs.com/detroit-vice-lords/"
-  },
-  {
-    "source": "org:almighty-vice-lord-nation",
     "target": "org:44-trey-mafia",
     "type": "alliance",
     "evidence": "The clique has longstanding ties to 44 Trey Mafia (TMF Bloods) and Chicago's Glo Gang.",
@@ -11331,13 +11310,6 @@
     "target": "org:7-mile-rollin-60s-crips",
     "type": "rivalry",
     "evidence": "Detroit's Gangster Crip (3X / Movin Gang) sets traditionally maintain opposition toward Rollin/Neighborhood (2X) Crips sets",
-    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
-  },
-  {
-    "source": "org:gangster-crips",
-    "target": "org:blood-sets",
-    "type": "rivalry",
-    "evidence": "Detroit's Gangster Crip (\"3X / Movin Gang\") sets traditionally maintain opposition toward Rollin/Neighborhood (\"2X\") Crips sets and various Blood-affiliated crews.",
     "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
   },
   {

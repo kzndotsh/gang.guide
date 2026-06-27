@@ -3,7 +3,7 @@
   "name": "Rollin 20s Crips",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "california-crips-neighborhood",
   "metro": "Los Angeles",
   "founded_year": null,
   "founded_year_precision": "estimate",
