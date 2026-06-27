@@ -208,21 +208,19 @@
         </Tabs.Trigger>
         <Tabs.Trigger value="identity" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
           <Palette class="size-3 shrink-0" />
-          <span class="inline-flex min-w-0 max-w-full items-baseline">
+          <span class="inline-flex min-w-0 max-w-full items-baseline gap-1">
             <span class="truncate">Identity</span>
             {#if identityCount}
-              <span class="mx-1 shrink-0 text-[0.55rem] text-muted-foreground/50">·</span>
-              <span class="shrink-0 tabular-nums text-[0.6rem] text-muted-foreground">{identityCount}</span>
+              <span class="text-[0.6rem] tabular-nums text-muted-foreground">({identityCount})</span>
             {/if}
           </span>
         </Tabs.Trigger>
         <Tabs.Trigger value="sources" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
           <ExternalLink class="size-3 shrink-0" />
-          <span class="inline-flex min-w-0 max-w-full items-baseline">
+          <span class="inline-flex min-w-0 max-w-full items-baseline gap-1">
             <span class="truncate">Sources</span>
             {#if node?.data?.sources?.length}
-              <span class="mx-1 shrink-0 text-[0.55rem] text-muted-foreground/50">·</span>
-              <span class="shrink-0 tabular-nums text-[0.6rem] text-muted-foreground">{node.data.sources.length}</span>
+              <span class="text-[0.6rem] tabular-nums text-muted-foreground">({node.data.sources.length})</span>
             {/if}
           </span>
         </Tabs.Trigger>
