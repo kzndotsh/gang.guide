@@ -1,0 +1,20 @@
+{
+  "id": "org:fulton-rockaway-gang",
+  "name": "Fulton-Rockaway gang",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "New York",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Fulton-Rockaway gang is a street gang based in New York.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.stonegreasers.com/greaser/halsey_bops.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

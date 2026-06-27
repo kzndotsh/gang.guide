@@ -1,0 +1,20 @@
+{
+  "id": "org:bayside-west-junior-zombies",
+  "name": "Bayside West Junior Zombies",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "New York",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Bayside West Junior Zombies is a street gang based in New York.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.stonegreasers.com/greaser/west-zombies-gang.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

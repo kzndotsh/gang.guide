@@ -1,0 +1,26 @@
+{
+  "id": "org:imperial-spanish-gangsters",
+  "name": "Imperial Spanish Gangsters",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": 1969,
+  "founded_year_precision": "circa",
+  "description": "The Imperial Spanish Gangsters formed in 1969 in Chicago as a defense against white street gangs, initially with a section at Armitage and Drake, followed by a second section at Division and Grand (Cameron Gangsters). The organization expanded to multiple sections and spawned factions including the Continental Gangsters and Ghetto Gangsters. In 1976, members forged alliances in jail with other Folk-aligned gangs they had cooperated with on the streets.",
+  "colors": [
+    "black",
+    "pink"
+  ],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html",
+      "title": "www.stonegreasers.com"
+    }
+  ],
+  "symbols": [
+    "Imperial crown"
+  ]
+}

@@ -7,8 +7,11 @@
   "metro": "New York",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "CORP is a street gang based in Unknown.",
-  "colors": [],
+  "description": "The CORP formed from a merger of three gangs in the early to mid 1960s: Mohawk Street (Mohawks), Hudson Street (Hudson's), and the Cleveland Jammers. The name was derived from members of the St. Michael's church parish. By 1970-71, the CORP considered themselves one of the most formidable gangs in their territory, with an estimated 200 members.",
+  "colors": [
+    "maroon",
+    "white"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
@@ -16,5 +19,9 @@
       "url": "http://www.stonegreasers.com/greaser/aristocrats.html",
       "title": "www.stonegreasers.com"
     }
-  ]
+  ],
+  "symbols": [
+    "cross with three points above it"
+  ],
+  "membership_estimate": 200
 }

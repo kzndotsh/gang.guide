@@ -12845,5 +12845,299 @@
     "type": "alliance",
     "evidence": "They were close friends of the 'Corona Dukes' after a 1955 rumble on 32nd Avenue in Bayside.",
     "source_url": "http://www.stonegreasers.com/greaser/west-zombies-gang.html"
+  },
+  {
+    "source": "org:12th-street-players",
+    "target": "org:people-nation",
+    "type": "member_of",
+    "evidence": "The Countryside crew, started in 1987, was the only People gang being represented in the area",
+    "source_url": "https://www.stonegreasers.com/greaser/12th_street_players.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:black-saints",
+    "type": "spin_off",
+    "evidence": "Around 1965 they opted for a name change (due to people thinking that we were a Black club)",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:latin-eagles-chicago",
+    "type": "rivalry",
+    "evidence": "During the 60's and early 70's The Latin Eagles were the Aristocrats main rivals!",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance",
+    "evidence": "There was an effort to get alliances during the 70's The Aristocrats had an alliance with the Royals and Corp, It was called RCA!",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:corp",
+    "type": "alliance",
+    "evidence": "There was an effort to get alliances during the 70's The Aristocrats had an alliance with the Royals and Corp, It was called RCA!",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:deuces",
+    "type": "rivalry",
+    "evidence": "Aristocrats, already fighting with the Deuces joined with the Royals on raids against them after that.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:young-lords",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:black-p-stone-nation",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:taylor-street-jousters",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:p-b-c",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:bel-airs",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:seminary-and-barry-aristocrats",
+    "target": "org:d-c-eagles",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:harrison-gents",
+    "type": "rivalry",
+    "evidence": "this caused friction with The Harrison Gents who tried to say they couldn't use the top hat and cane, Aristocrats told them to get lost and it led to fights and shootings",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats_Simoncityroyals_deuces_rebels.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:palmer-gaylords",
+    "type": "rivalry",
+    "evidence": "some friction happened between Seminary and Barry and The old Palmer Boys who came to Seminary and Barry afterwards for an old fashion Greaser humbug",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats_Simoncityroyals_deuces_rebels.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:core",
+    "type": "alliance",
+    "evidence": "A lot of these guys were people that I hung around with during and after high school, and through me, we allied with them",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats_Simoncityroyals_deuces_rebels.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:the-rebels",
+    "type": "alliance",
+    "evidence": "J.P. mentions an old Greaser Club called \"The Rebels\" that hung out along Lincoln Ave. and allied or joined the Aristocrats",
+    "source_url": "https://www.stonegreasers.com/greaser/aristocrats_Simoncityroyals_deuces_rebels.html"
+  },
+  {
+    "source": "org:latin-counts-chicago",
+    "target": "org:bagley-boys",
+    "type": "spin_off",
+    "evidence": "The current \"Latin Counts\" of today is a spinoff from the Bagley Boys.",
+    "source_url": "https://www.stonegreasers.com/greaser/detroit_gangs.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:fulton-rockaway-gang",
+    "type": "alliance",
+    "evidence": "The Seniors Halsey Bops were friends with the Rockaway and Fulton gang and a lot of them hung out at the Sportsman's Cafe on Fulton and Rockaway.",
+    "source_url": "https://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:jackson-gents",
+    "type": "rivalry",
+    "evidence": "Their rivals were the Saints, the El Quintos, the Phantom Lords the Halsy Bops and the Chaplains.",
+    "source_url": "https://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:dukanes",
+    "type": "rivalry",
+    "evidence": "Their rivals were the Saints, the El Quintos, the Phantom Lords the Halsy Bops and the Chaplains.",
+    "source_url": "https://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:reinberg-gaylords",
+    "target": "org:kilbourn-gaylords",
+    "type": "alliance",
+    "evidence": "Lil Mike and went in said some of the guys from Kilbourn were in there, but the meeting was breaking up.",
+    "source_url": "https://www.stonegreasers.com/greaser/harpos_story.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "shooting against a street gang of Latinos who wanted all Latinos to become Latin Kings. But the two sections of Imperial Gangster's held their ground and kept what was theirs.",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:continental-gangsters",
+    "type": "spin_off",
+    "evidence": "as for other factions of Gangster's, there were – Continental Gangsters- originated by the Minister",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:ghetto-gangsters",
+    "type": "spin_off",
+    "evidence": "as for other factions of Gangster's, there were – Continental Gangsters- originated by the Minister, Ghetto Gangsters originated by Mijo",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "alliance",
+    "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:satans-disciples",
+    "type": "alliance",
+    "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's, Satin's Disciples",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:latin-eagles-chicago",
+    "type": "alliance",
+    "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's, Satin's Disciples, Latin Eagle's",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:spanish-cobras-chicago",
+    "type": "alliance",
+    "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's, Satin's Disciples, Latin Eagle's, Spanish Cobra's",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:o-as",
+    "type": "alliance",
+    "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's, Satin's Disciples, Latin Eagle's, Spanish Cobra's, O-A'S",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:milwaukee-kings",
+    "type": "alliance",
+    "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's, Satin's Disciples, Latin Eagle's, Spanish Cobra's, O-A'S, Milwaukee Kings",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:imperial-spanish-gangsters",
+    "target": "org:ylo-disciples",
+    "type": "alliance",
+    "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's, Satin's Disciples, Latin Eagle's, Spanish Cobra's, O-A'S, Milwaukee Kings, and the Y.L.O. DISCIPLE'S",
+    "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:simon-city-royals-chicago",
+    "type": "member_of",
+    "evidence": "So the Insane Popes not even in existence for very long had to become Simon City Royals.",
+    "source_url": "https://www.stonegreasers.com/greaser/insanepopes.html"
+  },
+  {
+    "source": "org:baker-street-vice-lords",
+    "target": "org:concrete-money-gang",
+    "type": "rivalry",
+    "evidence": "Another crew claims the Vice Lords Turf on Baker Street, today, the Concrete Money Gang.",
+    "source_url": "https://www.stonegreasers.com/greaser/lansing_vicelords_crips.html"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:latin-deuces",
+    "type": "rivalry",
+    "evidence": "When it was Gaylords/Pope Nation, the Deuces and Latin Kings hid and trembled",
+    "source_url": "https://www.stonegreasers.com/greaser/larkin_popes_by_his_brother.html"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:insane-popes-south-side",
+    "type": "spin_off",
+    "evidence": "My brother had a big influence on starting the South Side Popes along with some white power greasers from Marquette Park",
+    "source_url": "https://www.stonegreasers.com/greaser/larkin_popes_by_his_brother.html"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:niles-popes",
+    "type": "spin_off",
+    "evidence": "My brother had a big influence on starting the South Side Popes along with some white power greasers from Marquette Park, who became Niles Stone Greasers, and later became known as the Niles Popes",
+    "source_url": "https://www.stonegreasers.com/greaser/larkin_popes_by_his_brother.html"
+  },
+  {
+    "source": "org:little-hell-sharks",
+    "target": "org:corp",
+    "type": "spin_off",
+    "evidence": "The Mohawk's, Hudson's, and Cleveland Jammers would eventually unite in the early 70s under the CORP gang becoming the third generation of gangs spawned off of the Little Hell Sharks.",
+    "source_url": "https://www.stonegreasers.com/greaser/little_hell_sharks.html"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:simon-city",
+    "type": "spin_off",
+    "evidence": "A spin-off of the much older Simon’s City name originating from Simons Park, the Royals recruited new members from the area as well as from local gangs who were attending Lakeview high school.",
+    "source_url": "https://www.stonegreasers.com/greaser/scr.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry",
+    "evidence": "Wee Wee and Capone made secret agreements that night. Folks started to camp in the alley at daybreak and they would disappear during a meeting... Capone then told the young one of his intention to turn the Warlords Folk!",
+    "source_url": "https://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:hooterville-unknowns",
+    "type": "alliance",
+    "evidence": "My brother Tic became the war council for Hooterville Unknowns.",
+    "source_url": "https://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:bayside-west-zombies",
+    "target": "org:bayside-west-junior-zombies",
+    "type": "parent",
+    "evidence": "In the early 60s the Bayside West Junior Zombies were formed.",
+    "source_url": "https://www.stonegreasers.com/greaser/west-zombies-gang.html"
   }
 ]
