@@ -5,7 +5,7 @@ All gang data lives here as flat JSON files. No database.
 ## Structure
 
 ```
-├── orgs/               # 980 JSON files, one per organization
+├── orgs/               # One JSON file per organization
 ├── edges.json  # Edge list (1,561 edges)
 ├── lanes.json          # Lane definitions + sort order
 └── raw/                # Scraped source material (gitignored, 682MB)

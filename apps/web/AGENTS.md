@@ -1,6 +1,6 @@
 99;6u# apps/web — SvelteKit Canvas Map Viewer
 
-Interactive timeline map of 968 gang organizations rendered on HTML5 Canvas via Konva.js.
+Interactive timeline map of US criminal organizations rendered on HTML5 Canvas via Konva.js.
 
 ## Commands
 
