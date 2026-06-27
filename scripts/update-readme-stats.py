@@ -38,7 +38,7 @@ def generate_svg(stats: dict) -> str:
     rivalry_bar = bar_w * stats["rivalry"] // stats["edges"]
     alliance_bar = bar_w * stats["alliance"] // stats["edges"]
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="820" height="190" viewBox="0 0 820 190" fill="none">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="840" height="180" viewBox="0 0 840 180" fill="none">
   <style>
     .bg {{ fill: #0d1117; rx: 8; }}
     .card {{ fill: #161b22; rx: 6; }}
@@ -52,7 +52,7 @@ def generate_svg(stats: dict) -> str:
   </style>
 
   <!-- Background -->
-  <rect class="bg" width="820" height="190" viewBox="0 0 820 190"/>
+  <rect class="bg" width="840" height="180" viewBox="0 0 840 180"/>
 
   <!-- Row 1: Big numbers -->
   <rect class="card" x="16" y="16" width="150" height="70"/>
@@ -89,7 +89,7 @@ def generate_svg(stats: dict) -> str:
   <text class="title" x="436" y="124">Evidence Coverage</text>
   <rect class="bar-bg" x="436" y="138" width="{bar_w}" height="12"/>
   <rect class="bar-evidence" x="436" y="138" width="{evidence_bar}" height="12"/>
-  <text class="label" x="{436 + bar_w + 8}" y="149">{stats['evidence']:,} / {stats['edges']:,} edges have source quotes</text>
+  <text class="label" x="{436 + bar_w + 8}" y="149">{stats['evidence']:,} / {stats['edges']:,} with quotes</text>
 </svg>"""
 
 

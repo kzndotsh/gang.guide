@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="190" viewBox="0 0 820 190" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="180" viewBox="0 0 840 180" fill="none">
   <style>
     .bg { fill: #0d1117; rx: 8; }
     .card { fill: #161b22; rx: 6; }
@@ -12,7 +12,7 @@
   </style>
 
   <!-- Background -->
-  <rect class="bg" width="820" height="190" viewBox="0 0 820 190"/>
+  <rect class="bg" width="840" height="180" viewBox="0 0 840 180"/>
 
   <!-- Row 1: Big numbers -->
   <rect class="card" x="16" y="16" width="150" height="70"/>
@@ -49,5 +49,5 @@
   <text class="title" x="436" y="124">Evidence Coverage</text>
   <rect class="bar-bg" x="436" y="138" width="160" height="12"/>
   <rect class="bar-evidence" x="436" y="138" width="86" height="12"/>
-  <text class="label" x="604" y="149">788 / 1,439 edges have source quotes</text>
+  <text class="label" x="604" y="149">788 / 1,439 with quotes</text>
 </svg>
