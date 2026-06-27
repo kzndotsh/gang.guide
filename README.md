@@ -95,6 +95,7 @@ just dev
     ├── ARCHITECTURE.md         # System design
     ├── PIPELINE.md             # LLM extraction pipeline
     ├── SCHEMA.md               # Data schema reference
+    ├── STANDARDS.md            # Data quality rules & lint checks
     ├── TERMINOLOGY.md          # Glossary
     ├── USER.md                 # User guide
     └── CONTRIBUTING.md         # Contributor guide
@@ -102,7 +103,7 @@ just dev
 
 ## Data
 
-Stats are computed at build time by `build.py` and embedded in `graph.json`. All relationships are evidence-backed with verbatim quotes from source material.
+Stats are computed at build time by `build.py` and embedded in `graph.json`. All relationships are evidence-backed with verbatim quotes from source material. Data quality is enforced by [lint rules](docs/STANDARDS.md) that run in CI and gate every pipeline application.
 
 **Sources:**
 
