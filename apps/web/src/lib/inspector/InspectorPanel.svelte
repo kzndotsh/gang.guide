@@ -331,7 +331,7 @@
                               <p class="text-[0.68rem] leading-relaxed text-muted-foreground">
                                 <span class="italic">"{evidence.evidence}"</span>
                                 {#if evidence.source_url}
-                                  <span class="not-italic">&nbsp;— </span><a href={evidence.source_url} target="_blank" rel="noopener" class="not-italic text-primary/70 hover:text-primary hover:underline">{evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}</a>
+                                  <span class="not-italic"> &mdash; </span><a href={evidence.source_url} target="_blank" rel="noopener" class="not-italic text-primary/70 hover:text-primary hover:underline">{evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}</a>
                                 {/if}
                               </p>
                             </div>
