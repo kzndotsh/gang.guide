@@ -129,6 +129,12 @@ def build_graph(out_path=None):
                     edge["sources"] = e["sources"]
                 edges.append(edge)
 
+    # Generate nation edges from nation_affiliation field (field is source of truth)
+    for n in nodes:
+        affiliation = n.get("data", {}).get("nation_affiliation")
+        if affiliation and affiliation in node_ids:
+            edges.append({"source": n["id"], "target": affiliation, "type": "nation"})
+
     # Split into slim graph (for rendering) and details (loaded on demand)
     details = {"nodes": {}}
     slim_nodes = []
