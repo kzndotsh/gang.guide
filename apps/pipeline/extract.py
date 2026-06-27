@@ -35,39 +35,55 @@ TEMPERATURES = [0.1, 0.3, 0.7]  # conservative → balanced → creative
 RUNS_PER_PAGE = len(TEMPERATURES)
 MAX_CHUNK_WORDS = 50000  # sonnet 4.5 handles 1M context; only chunk truly massive docs
 
-PROMPT_VERSION = "v1"
+PROMPT_VERSION = "v2"
 
-SYSTEM_PROMPT = """You are an expert on US street gangs. Extract structured data from the provided text about a criminal organization.
+SYSTEM_PROMPT = """You extract structured relationship data from source text about US criminal organizations. Your output feeds a knowledge graph where accuracy matters more than completeness — a missed edge is fine, a wrong edge corrupts the dataset.
 
-Return ONLY valid JSON with this exact schema:
+Return ONLY valid JSON matching this schema:
 {
-  "subject_org": "Name of the main org this page is about",
+  "subject_org": "Full proper name of the main organization this page is about",
   "founded_year": 1972 or null,
   "colors": ["blue", "black"] or [],
   "symbols": ["pitchfork", "six-point star"] or [],
   "membership_estimate": 5000 or null,
-  "description": "2-3 sentence factual summary of the org",
+  "description": "2-3 sentence factual summary of the org based only on what the text says",
   "edges": [
     {
-      "target": "Name of related org",
+      "target": "Full proper name of related org",
       "type": "alliance|rivalry|parent|member_of|spin_off",
-      "evidence": "Verbatim quote from text proving this relationship",
+      "evidence": "Exact verbatim quote from the source text proving this relationship",
       "period": "1977-1992" or null
     }
   ],
   "orgs_mentioned": ["Other Org 1", "Other Org 2"]
 }
 
-RULES:
-- founded_year: only if explicitly stated in text. Never guess.
-- colors: only if explicitly stated. Not from context.
-- edges: ONLY real direct relationships between two orgs. NOT co-mentions.
-- evidence: MUST be a verbatim quote from the text. If you can't quote it, don't emit the edge.
-- edges.target: Use the MOST SPECIFIC local name. If the text discusses "Rollin 60s" in Detroit, use "7 Mile Rollin 60s Crips" (the local set), NOT "Rollin 60s Neighborhood Crips" (the national parent). Prefer the local set name over the generic/national org name when the context is clearly local.
-- edges.type: alliance (work together), rivalry (fight each other), parent (umbrella org), member_of (belongs to nation), spin_off (formed from another)
-- orgs_mentioned: every named criminal organization in the text, even without a relationship
-- description: factual, no speculation, based only on what the text says
-- If the text is too short or uninformative, return empty arrays and null fields."""
+<rules>
+EDGE QUALITY (most important):
+- Only emit an edge when the text contains an explicit statement of relationship between two named organizations. The evidence quote must contain a clear relationship verb (allied, fought, split from, joined, warred with, formed from, etc.).
+- A co-mention is NOT an edge. Two orgs appearing in the same sentence, list, or location does NOT prove a relationship.
+- The evidence field must be a verbatim quote you can point to in the source text. If you cannot quote a specific sentence proving the relationship, do not emit the edge.
+
+NAMING:
+- subject_org: Use the full proper name as written in the text (e.g. "7 Mile Rollin 60s Crips" not just "Rollin 60s").
+- edges.target: Always use the MOST SPECIFIC name from the text. If the source discusses local sets in Detroit and mentions "Rollin 60s", use the local set name that appears in the text (e.g. "7 Mile Rollin 60s Crips"), not the generic national org name. This prevents duplicates in the knowledge graph.
+
+FIELDS:
+- founded_year: Only if the text explicitly states a year. "Founded in the early 2000s" = null.
+- colors: Only if explicitly stated as the org's colors. Not colors mentioned in other contexts.
+- membership_estimate: Only if a number is given. Ranges like "200-300" → use the midpoint.
+- description: Factual, based only on what the text says. No speculation or external knowledge.
+- orgs_mentioned: Every named criminal organization in the text, even those without a relationship edge.
+
+EDGE TYPES:
+- alliance: explicitly work together, share territory peacefully, mutual aid
+- rivalry: fight each other, documented conflict, war, beef
+- parent: umbrella organization (e.g. Folk Nation is parent of Gangster Disciples)
+- member_of: the subject belongs to a larger alliance/nation
+- spin_off: the target org formed from/splintered off the subject org
+
+If the text is too short or uninformative, return empty arrays and null fields. Returning nothing is better than guessing.
+</rules>"""
 
 
 def prompt_hash() -> str:

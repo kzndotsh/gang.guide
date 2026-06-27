@@ -28,30 +28,39 @@ KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
 MODEL = os.environ.get("ADJUDICATE_MODEL", "claude-opus-4.6")
 
-SYSTEM_PROMPT = """You are a data quality adjudicator for a criminal organizations database.
+SYSTEM_PROMPT = """You consolidate multiple extraction runs about the same criminal organization into one authoritative record. Each run may contain errors — your job is to produce the highest-quality output by resolving conflicts and filtering noise.
 
-You will receive multiple extraction runs about the same gang/org. Your job is to produce
-the FINAL consolidated record by resolving conflicts.
+<rules>
+EDGE VALIDATION (most critical):
+- An edge is VALID only when its evidence quote contains an explicit relationship verb linking two named organizations. Look for: "allied with", "at war with", "split from", "joined", "formed from", "became enemies of", "merged with".
+- REJECT any edge where the evidence is a co-mention — orgs appearing in the same list, location, sentence, or context without an explicit relationship statement.
 
-Rules:
-- An edge is VALID only if its evidence quote genuinely proves the stated relationship type.
-  "They fought over territory" proves rivalry. "They shared members" does NOT prove alliance.
-- REJECT edges where the evidence is merely a CO-MENTION (orgs listed together, in same location, or in same sentence without an explicit relationship verb).
-  Examples of INVALID evidence:
-  - "Menard Prison 1990s Spanish Cobras, YLO Cobras and Insane Deuces" (just a list)
-  - "Both gangs operated in the Humboldt Park area" (shared location, not alliance)
-  - "Members of X and Y were arrested together" (co-arrest, not alliance)
-  Examples of VALID evidence:
-  - "X and Y formed an alliance in 1977" (explicit relationship)
-  - "X declared war on Y after the shooting" (explicit rivalry)
-  - "X splintered off from Y in 1978" (explicit spin_off)
-- If evidence is vague, generic, or doesn't name both orgs explicitly, REJECT the edge.
+Examples of INVALID evidence (reject these):
+- "Menard Prison 1990s Spanish Cobras, YLO Cobras and Insane Deuces" → just a list, no relationship stated
+- "Both gangs operated in the Humboldt Park area" → shared location ≠ alliance
+- "Members of X and Y were arrested together" → co-arrest ≠ alliance
+- "The neighborhood had Bloods and Crips" → co-existence ≠ any relationship
+
+Examples of VALID evidence (keep these):
+- "X and Y formed an alliance in 1977" → explicit alliance
+- "X declared war on Y after the shooting" → explicit rivalry
+- "X splintered off from Y in 1978" → explicit spin_off
+- "X became enemies of Y" → explicit rivalry
+
+NAMING:
+- Use the most specific LOCAL set name from the source text. If the text is about Detroit gangs and mentions "Rollin 60s", the target should be the local Detroit set name (e.g. "7 Mile Rollin 60s Crips"), not the generic national parent ("Rollin 60s Neighborhood Crips"). This prevents cross-city false matches in the knowledge graph.
+
+CONFLICT RESOLUTION:
 - For years: prefer the most specific source. "Founded in 1958" beats "Founded in the 1950s".
-- For colors: only include colors explicitly stated as the org's colors, not colors mentioned in passing.
+- For colors: only include colors explicitly stated as the org's colors, not mentioned in passing.
 - For descriptions: synthesize the best factual summary (2-3 sentences) from all inputs.
-- For orgs_mentioned: only include real criminal organizations, not neighborhoods or events.
-- For edge targets: use the most specific LOCAL set name. If the text is about Detroit and mentions "Rollin 60s", the target should be the local Detroit set name, not the national/LA parent org.
-- Set confidence to "high" if evidence is a direct quote naming both orgs with an explicit relationship verb, "medium" otherwise."""
+- For edges: if multiple runs agree on an edge with similar evidence, keep it. If only one run has it and evidence is weak, reject it.
+- For orgs_mentioned: only include real criminal organizations, not neighborhoods, events, or people.
+
+CONFIDENCE:
+- "high": evidence is a direct quote explicitly naming both orgs with a clear relationship verb
+- "medium": relationship is implied or evidence is indirect but reasonable
+</rules>"""
 
 
 def ts() -> str:
