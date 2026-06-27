@@ -62,12 +62,6 @@ just dev
 7. **Build** — `build.py` compiles flat files into `graph.json` + `details.json`
 8. **Serve** — SvelteKit + Konva.js canvas, deployed to Cloudflare Workers
 
-**Architecture**:
-- No database — flat JSON files are the source of truth
-- No CMS — edit org files directly, run `just build-data`
-- No API — static JSON files served from Cloudflare Workers edge
-- Unit tests with coverage, codecov integration, conventional commits
-
 ## Project Structure
 
 ```
@@ -132,7 +126,9 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`.
 | **Frontend** | SvelteKit 5, Konva.js, Tailwind CSS, shadcn-svelte |
 | **Rendering** | Raw Konva Canvas API (4-layer architecture) |
 | **Deployment** | Cloudflare Workers via Alchemy IaC |
+| **Pipeline** | Python, sonnet 4.5 + opus 4.6 (LLM extraction) |
 | **Linting** | Ruff (Python), svelte-check (frontend) |
+| **Testing** | pytest + vitest, codecov coverage |
 | **CI/CD** | GitHub Actions, conventional commits, lefthook |
 
 ## Commands
