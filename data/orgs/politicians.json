@@ -1,0 +1,20 @@
+{
+  "id": "org:politicians",
+  "name": "Politicians",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Politicians were a Harlem youth gang active in the 1950s with a war counselor leadership structure. In summer 1956, members stabbed and killed Alfred McMullen outside the Mona Lisa bar on Lexington Avenue between 127th and 128th Streets.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2266",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

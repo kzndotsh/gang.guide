@@ -1,0 +1,20 @@
+{
+  "id": "org:cortland-stacies",
+  "name": "Cortland Stacies",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Cortland Stacies is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://stonegreasers.com/greaser/Chicago_Bel-Airs_gangs.html",
+      "title": "stonegreasers.com"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "org:python-knights",
+  "name": "Python Knights",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Python Knights were a Black gang from East Harlem in the 1950s whose turf was in the area around Park Avenue in Manhattan. They fought their enemies the Noble Englishmen and the Enchanters. Their president RC controlled the gang, telling members what to do and acting as a general instigator.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=1120",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

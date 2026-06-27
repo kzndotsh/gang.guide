@@ -1,0 +1,20 @@
+{
+  "id": "org:bumtown-gents",
+  "name": "Bumtown Gents",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Bumtown Gents were a white gang active in the Pullman, Roseland, and Burnside areas of Chicago's South Side, with their de facto hangout at 111th Street & Michigan Avenue. They were most active fighting over territory alongside smaller groups in the area.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/chicago-pullman-gangs.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

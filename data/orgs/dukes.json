@@ -1,0 +1,20 @@
+{
+  "id": "org:dukes",
+  "name": "Dukes",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Dukes were an Italian gang from East Harlem. They were involved in fights and gang violence with rival gangs in the area during the 1950s, most notably the Dragons. On June 11, 1956, the Dukes were involved in a gang shooting against the Dragons.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=1596",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

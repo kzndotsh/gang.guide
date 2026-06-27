@@ -1,0 +1,20 @@
+{
+  "id": "org:northern-boulevard-boys",
+  "name": "Northern Boulevard Boys",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Northern Boulevard Boys were a greaser gang from North Queens, New York, active in the 1950s. A play titled 'The Northern Boulevard Boys' was written by Frank Bauer, who drew from his teenage years in the neighborhood to depict the gang's story and real relationships.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/northern_boulevard_boys.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

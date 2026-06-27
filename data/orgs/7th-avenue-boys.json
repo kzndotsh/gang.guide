@@ -1,0 +1,20 @@
+{
+  "id": "org:7th-avenue-boys",
+  "name": "7th Avenue Boys",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The 7th Avenue Boys were a group from Dyker Heights, Brooklyn, whose territory centered around Frank's Candy Store on 7th Avenue during the 1970s and early 1980s. The text describes them as Brooklyn hoods active in the neighborhood during that era.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/brooklyn_7th_avenue_boys.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

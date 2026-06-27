@@ -1,0 +1,23 @@
+{
+  "id": "org:wicker-park-warlords",
+  "name": "Wicker Park Warlords",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Wicker Park Warlords were a Chicago street gang operating in the Wicker Park and West Town areas from the 1970s through the 2000s. The organization had multiple sections including La Familia Warlords, Spaulding Warlords, Clemente Warlords, Bucktown Warlords, and Anderson Warlords. They were members of the United Neighborhoods alliance and engaged in territorial conflicts with rival organizations including the Latin Kings and Vice Lords.",
+  "colors": [
+    "orange",
+    "black"
+  ],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/warlords.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

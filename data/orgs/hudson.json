@@ -1,0 +1,20 @@
+{
+  "id": "org:hudson",
+  "name": "Hudson",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Hudson is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

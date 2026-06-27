@@ -1,0 +1,20 @@
+{
+  "id": "org:ditmas-dukes",
+  "name": "Ditmas Dukes",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Ditmas Dukes were a white gang of Italian and Irish extraction that staked out turf in the Park Slope and Flatbush area of Brooklyn during the 1950s. The gang was both active and violent, warranting attention from a New York City Youth Board street worker assigned to monitor their activities.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=1145",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

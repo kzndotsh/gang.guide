@@ -1,0 +1,20 @@
+{
+  "id": "org:jr-bachelors",
+  "name": "Jr. Bachelors",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Jr. Bachelors were a gang in Jackson Heights, Queens active in the 1950s and early 1960s. They operated in the area from 82nd Street to 69th Street, hanging around PS 69 on 37th Avenue and 78th Street. They were described as being 'one of the same' as the Braghans.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/jackson-heights-queens-gangs.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

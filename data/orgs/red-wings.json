@@ -1,0 +1,20 @@
+{
+  "id": "org:red-wings",
+  "name": "Red Wings",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Red Wings were a New York City youth gang active in the 1950s. In 1958, seven members were charged with murder for the fatal beating of a Cuban man in Jefferson Park on Memorial Day.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2094",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

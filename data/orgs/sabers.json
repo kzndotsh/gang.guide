@@ -1,0 +1,20 @@
+{
+  "id": "org:sabers",
+  "name": "Sabers",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Sabers were a Harlem-based teenage gang active in the 1940s. According to police, they frequently engaged in gun and knife battles. In May 1944, police intercepted gang members at a house party at 206 West 146th Street where they confiscated weapons.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=3855",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

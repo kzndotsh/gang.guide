@@ -1,0 +1,20 @@
+{
+  "id": "org:sons-of-italy",
+  "name": "Sons of Italy",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Sons of Italy is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/cornell_square_rebels.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

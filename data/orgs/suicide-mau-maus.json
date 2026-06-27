@@ -1,0 +1,21 @@
+{
+  "id": "org:suicide-mau-maus",
+  "name": "Suicide Mau Maus",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Suicide Mau Maus, who later called themselves the 'Suicides,' were a Puerto Rican youth gang based in the Farragut Projects in Brooklyn during the 1950s and early 1960s. The gang had about a dozen members and was much smaller than the Mau Maus, with whom they had a violent rivalry.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2167",
+      "title": "newyorkcitygangs.com"
+    }
+  ],
+  "membership_estimate": 12
+}

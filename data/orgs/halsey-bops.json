@@ -1,0 +1,20 @@
+{
+  "id": "org:halsey-bops",
+  "name": "Halsey Bops",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": 1954,
+  "founded_year_precision": "circa",
+  "description": "The Halsey Bops were a gang based in Bushwick, Brooklyn that hung out at Halsey Park and Putnam Park from 1957-1962. The name was coined by Louie Giglia in summer 1954, and they were well known at Bushwick High School.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/halsey_bops.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

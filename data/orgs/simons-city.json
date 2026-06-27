@@ -1,0 +1,20 @@
+{
+  "id": "org:simons-city",
+  "name": "Simon's City",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Chicago",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Simon's City is a street gang based in Chicago.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/scr.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

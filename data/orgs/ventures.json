@@ -1,0 +1,20 @@
+{
+  "id": "org:ventures",
+  "name": "Ventures",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Ventures were a Chicago gang with a clubhouse on North and Paulina in 1972. In 1972, three members including Desi (also known as Doc) were ambushed with shotguns in a setup attack that resulted in Desi's death and injuries to his brother and another member.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/venturers.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

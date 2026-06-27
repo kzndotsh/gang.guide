@@ -1,0 +1,20 @@
+{
+  "id": "org:little-people-suicides",
+  "name": "Little People Suicides",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Little People Suicides were an offshoot of the older Suicides gang, operating near the Brooklyn Navy Yard and Farragut Houses during the late 1950s. Most members were students at Sands Junior High School.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/brooklyn_suicides.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

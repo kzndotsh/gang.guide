@@ -1,0 +1,20 @@
+{
+  "id": "org:noble-englishmen",
+  "name": "Noble Englishmen",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Noble Englishmen is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=1120",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

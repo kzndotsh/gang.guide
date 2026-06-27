@@ -1,0 +1,20 @@
+{
+  "id": "org:fort-greene-chaplains",
+  "name": "Fort Greene Chaplains",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Fort Greene Chaplains is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2167",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

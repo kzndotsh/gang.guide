@@ -1,0 +1,23 @@
+{
+  "id": "org:little-hell-sharks",
+  "name": "Little Hell Sharks",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Sharks were an Italian gang that started out in the Little Hell area of Chicago in the 1940s and ended up around Mohawk Street and Chicago Avenue in the early 1950s. They started out as a defensive neighborhood gang whose cousins and nephews later spun off to form the Mohawks, Hudson, and Cleveland Jammers.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html",
+      "title": "www.stonegreasers.com"
+    }
+  ],
+  "symbols": [
+    "shark standing up with a cigarette in his mouth"
+  ]
+}

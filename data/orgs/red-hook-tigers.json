@@ -1,0 +1,20 @@
+{
+  "id": "org:red-hook-tigers",
+  "name": "Red Hook Tigers",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "New York",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Red Hook Tigers is a street gang based in New York.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/sbb.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

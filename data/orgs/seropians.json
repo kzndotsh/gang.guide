@@ -1,0 +1,20 @@
+{
+  "id": "org:seropians",
+  "name": "Seropians",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Seropians were a social athletic club from Prospect Heights, Brooklyn active in the 1950s-1960s. Member James Horton was involved in a violent shooting incident in August 1960, in which he shot James Bryant in the back with a sawed-off weapon. The club existed during an era when social athletic clubs in New York City often served as fronts for fighting gangs.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=1464",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

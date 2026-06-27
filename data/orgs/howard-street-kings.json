@@ -1,0 +1,20 @@
+{
+  "id": "org:howard-street-kings",
+  "name": "Howard Street Kings",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Howard Street Kings is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

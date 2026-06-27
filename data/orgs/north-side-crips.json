@@ -1,0 +1,20 @@
+{
+  "id": "org:north-side-crips",
+  "name": "North Side Crips",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "North Side Crips is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/lansing_vicelords_crips.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

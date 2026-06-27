@@ -1,0 +1,20 @@
+{
+  "id": "org:hudson-street",
+  "name": "Hudson Street",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Hudson Street is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/corp.html",
+      "title": "www.stonegreasers.com"
+    }
+  ]
+}

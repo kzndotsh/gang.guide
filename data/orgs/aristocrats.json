@@ -1,0 +1,30 @@
+{
+  "id": "org:aristocrats",
+  "name": "Aristocrats",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": 1965,
+  "founded_year_precision": "circa",
+  "description": "The Aristocrats originated as the Black Saints, a street corner greaser gang based at Seminary and Barry in Chicago that had existed since the 1950s. They changed their name around 1965 due to confusion about being a Black club. They were a multiethnic gang, mostly white but including Puerto Ricans, Mexicans, Irish, and Italians, and were active in turf conflicts throughout the 1960s and 1970s.",
+  "colors": [
+    "black",
+    "white",
+    "red"
+  ],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/aristocrats.html",
+      "title": "www.stonegreasers.com"
+    }
+  ],
+  "symbols": [
+    "top hat",
+    "cane",
+    "gloves",
+    "dice"
+  ]
+}

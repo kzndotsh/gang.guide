@@ -1,0 +1,21 @@
+{
+  "id": "org:thorndale-jarvis-organization",
+  "name": "Thorndale Jarvis Organization",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Thorndale Jarvis Organization (TJO), also called Thorndale Jag Offs, was a white North Side Chicago gang active in the Edgewater/Uptown area, composed primarily of Swedes, Germans, Irish, and Appalachian whites. The gang was involved in racial conflicts and claimed approximately 200 members.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "http://www.stonegreasers.com/greaser/thorndale_javis_organization.html",
+      "title": "www.stonegreasers.com"
+    }
+  ],
+  "membership_estimate": 200
+}

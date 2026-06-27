@@ -1,0 +1,20 @@
+{
+  "id": "org:scotchmen",
+  "name": "Scotchmen",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Scotchmen were a black gang from Harlem that controlled turf on East 129th Street between Park and Madison and the nearby Lincoln Houses. A detective from the 25th Squad described them as an aggressive gang.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2044",
+      "title": "newyorkcitygangs.com"
+    }
+  ]
+}

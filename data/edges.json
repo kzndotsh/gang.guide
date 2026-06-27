@@ -11583,5 +11583,1267 @@
     "evidence": "the 'Latin Kings' (People) continued a pattern of enmity with the Ambrose (Folks) up to the present day",
     "source_url": "https://www.ngcrc.com/ngcrc/page15.htm",
     "start_year": 1960
+  },
+  {
+    "source": "org:python-knights",
+    "target": "org:noble-englishmen",
+    "type": "rivalry",
+    "evidence": "a Black gang that fought it's enemies the Noble Englishmen and the Enchanters",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1120"
+  },
+  {
+    "source": "org:python-knights",
+    "target": "org:enchanters",
+    "type": "rivalry",
+    "evidence": "a Black gang that fought it's enemies the Noble Englishmen and the Enchanters",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1120"
+  },
+  {
+    "source": "org:ditmas-dukes",
+    "target": "org:gremlins",
+    "type": "rivalry",
+    "evidence": "On January 27, 1958, some members of the Gremlins took matters into their own hands, stalking some Ditmas Dukes, their bitter rivals.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1145"
+  },
+  {
+    "source": "org:east-harlem-red-wings",
+    "target": "org:fordham-baldies",
+    "type": "rivalry",
+    "evidence": "some Red Wings shooting and killing a Fordham Baldie in the Bronx in June 1954",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1208"
+  },
+  {
+    "source": "org:jackson-gents",
+    "target": "org:gambino-crime",
+    "type": "alliance",
+    "evidence": "The Gambino and Genovese families were the main families in our neighborhood... They looked at us as a kind of recruiting ground and approved of our conduct... Some of our guys ended up with them",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1336"
+  },
+  {
+    "source": "org:jackson-gents",
+    "target": "org:genovese-crime",
+    "type": "alliance",
+    "evidence": "The Gambino and Genovese families were the main families in our neighborhood... They looked at us as a kind of recruiting ground and approved of our conduct",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1336"
+  },
+  {
+    "source": "org:young-turks",
+    "target": "org:dark-angels",
+    "type": "rivalry",
+    "evidence": "The Turks were turbulent youngsters, constantly fighting a neighboring gang called the Dark Angels.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1356"
+  },
+  {
+    "source": "org:dukes",
+    "target": "org:dragons",
+    "type": "rivalry",
+    "evidence": "The Dukes were an Italian gang who got into fights with the Dragons another gang from East Harlem.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1596"
+  },
+  {
+    "source": "org:east-harlem-dukes",
+    "target": "org:dragons",
+    "type": "rivalry",
+    "evidence": "On June 11, 1956, there was an Harlem gang fight that involved the shooting of Victor Serrano, a member of the Dragons. The gang that attacked him was called the 'Dukes.'",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1605"
+  },
+  {
+    "source": "org:jesters",
+    "target": "org:phantom-lords",
+    "type": "rivalry",
+    "evidence": "They had many enemies including the Phantom Lords, Hellburners, Roman Lords and Buccaneers.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1817"
+  },
+  {
+    "source": "org:jesters",
+    "target": "org:hellburners",
+    "type": "rivalry",
+    "evidence": "They had many enemies including the Phantom Lords, Hellburners, Roman Lords and Buccaneers.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1817"
+  },
+  {
+    "source": "org:jesters",
+    "target": "org:roman-lords",
+    "type": "rivalry",
+    "evidence": "They had many enemies including the Phantom Lords, Hellburners, Roman Lords and Buccaneers.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1817"
+  },
+  {
+    "source": "org:jesters",
+    "target": "org:buccaneers",
+    "type": "rivalry",
+    "evidence": "They had many enemies including the Phantom Lords, Hellburners, Roman Lords and Buccaneers.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1817"
+  },
+  {
+    "source": "org:jesters",
+    "target": "org:marcy-chaplains",
+    "type": "rivalry",
+    "evidence": "Tough Jesters such as 'Papo,' 'Pelu,' 'Little Joe,' and 'Black Patch,' also fought the Marcy Chaplains, a gang of boys who made their turf in the Marcy Projects not too far from where the Jesters hung out.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=1817"
+  },
+  {
+    "source": "org:scotchmen",
+    "target": "org:assassins",
+    "type": "rivalry",
+    "evidence": "One of the gangs that the Scotchmen fought were the Assassins.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2044"
+  },
+  {
+    "source": "org:roman-lords",
+    "target": "org:frenchmen",
+    "type": "rivalry",
+    "evidence": "The Roman Lords were a Puerto Rican gang that counted the Frenchmen as bitter enemies",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2101"
+  },
+  {
+    "source": "org:roman-lords",
+    "target": "org:liberty-boys",
+    "type": "rivalry",
+    "evidence": "The Roman Lords were a Puerto Rican gang that counted the Frenchmen as bitter enemies as well as the Liberty Boys and the Bishops.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2101"
+  },
+  {
+    "source": "org:roman-lords",
+    "target": "org:bishops",
+    "type": "rivalry",
+    "evidence": "The Roman Lords were a Puerto Rican gang that counted the Frenchmen as bitter enemies as well as the Liberty Boys and the Bishops.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2101"
+  },
+  {
+    "source": "org:assassins",
+    "target": "org:sinners",
+    "type": "rivalry",
+    "evidence": "The Assassins in West Harlem were mortal enemies with the Sinners (sometimes referred to as Young Sinners) also from West Harlem.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2156"
+  },
+  {
+    "source": "org:suicide-mau-maus",
+    "target": "org:mau-maus",
+    "type": "rivalry",
+    "evidence": "The two groups hated each other and engaged in gang fights, using whatever weapons they could lay their hands on.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2167"
+  },
+  {
+    "source": "org:suicide-mau-maus",
+    "target": "org:fort-greene-chaplains",
+    "type": "rivalry",
+    "evidence": "The Suicide Mau Maus who later just called themselves the 'Suicides,' dropping the 'Mau Maus' from their name, also fought against the powerful Fort Greene Chaplains, a black gang who shared their turf with the Mau Maus in the Fort Greene projects",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2167"
+  },
+  {
+    "source": "org:bishops",
+    "target": "org:chaplains",
+    "type": "rivalry",
+    "evidence": "they waged vicious battles with their arch nemesis, the Chaplains gang",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2178"
+  },
+  {
+    "source": "org:politicians",
+    "target": "org:sportsmen",
+    "type": "alliance",
+    "evidence": "Dutch was supposedly a member of the Sportsmen, a brother club with the Politicians.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2266"
+  },
+  {
+    "source": "org:buccaneers",
+    "target": "org:marcy-chaplains",
+    "type": "rivalry",
+    "evidence": "Up to September 1960, the Buccaneers and Marcy Chaplains had fought each other for years.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2277"
+  },
+  {
+    "source": "org:buccaneers",
+    "target": "org:stompers",
+    "type": "rivalry",
+    "evidence": "the Buccaneers were getting sick and tired of the shenanigans of the Stompers and Medallion Lords... The three gangs didn't like this very much and became violent with the Buccaneers, who only became more violent with them in return. This was war.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2277"
+  },
+  {
+    "source": "org:buccaneers",
+    "target": "org:medallion-lords",
+    "type": "rivalry",
+    "evidence": "the Buccaneers were getting sick and tired of the shenanigans of the Stompers and Medallion Lords... The three gangs didn't like this very much and became violent with the Buccaneers, who only became more violent with them in return. This was war.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2277"
+  },
+  {
+    "source": "org:buccaneers",
+    "target": "org:imperial-lords",
+    "type": "rivalry",
+    "evidence": "Keno set the tone and he and the Buccaneers, who were younger, mostly in the ages of 12-17, began to push back against the much older Stompers, Medallion Lords and Imperial Lords... The three gangs didn't like this very much and became violent with the Buccaneers, who only became more violent with them in return. This was war.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2277"
+  },
+  {
+    "source": "org:buccaneers",
+    "target": "org:tiny-tims",
+    "type": "alliance",
+    "evidence": "Some of them were friendly with each other such as the Tiny Tims and Buccaneers, so friendly in fact that most outsiders – including the police – looked at them as one gang and called them Buccaneers.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2277"
+  },
+  {
+    "source": "org:socialistic-dukes",
+    "target": "org:comanches",
+    "type": "rivalry",
+    "evidence": "this third boy was suffering from a gun shot wound of the upper left arm which was inflicted by an east side gang called the Comanches who had shot him on November 6, 1943",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2300"
+  },
+  {
+    "source": "org:mau-maus",
+    "target": "org:sand-street-angels",
+    "type": "rivalry",
+    "evidence": "a gang killing that happened in February 1959 in front of the iconic Brooklyn Paramount Theater",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2532"
+  },
+  {
+    "source": "org:collegiate-crowns",
+    "target": "org:egyptian-crowns",
+    "type": "member_of",
+    "evidence": "they were a mostly black gang and were part of 'Crown nation,' several Bronx gangs with the word 'Crowns' in their name. The two main Crown gangs were the Egyptian Crowns and the Valiant Crowns.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2948"
+  },
+  {
+    "source": "org:collegiate-crowns",
+    "target": "org:valiant-crowns",
+    "type": "member_of",
+    "evidence": "they were a mostly black gang and were part of 'Crown nation,' several Bronx gangs with the word 'Crowns' in their name. The two main Crown gangs were the Egyptian Crowns and the Valiant Crowns.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2948"
+  },
+  {
+    "source": "org:collegiate-crowns",
+    "target": "org:sportsmen",
+    "type": "rivalry",
+    "evidence": "The 1957 article is entitled '2 Teeners Wounded as Feud Flares.' It described two shootings in which a member of the Sportsmen and a member of the Collegiate Crowns were wounded by an automatic pistol.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=2948"
+  },
+  {
+    "source": "org:copians",
+    "target": "org:dragons",
+    "type": "rivalry",
+    "evidence": "four members of the Copians gang – who had been having trouble with the Dragons for some time – found a Dragon near Lexington Avenue and chased him",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3034"
+  },
+  {
+    "source": "org:viceroys",
+    "target": "org:enchanters",
+    "type": "rivalry",
+    "evidence": "Feliciano and his Viceroy posse were looking for members of the Enchanters, an enemy gang with a notorious history.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3148"
+  },
+  {
+    "source": "org:phantom-lords",
+    "target": "org:jesters",
+    "type": "rivalry",
+    "evidence": "Little Davie had once been a member of the Phantom Lords and wanted to let the Jesters know he was no longer in the gang. He wanted Hector to come along so he wouldn't get 'jumped' by the Jesters.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3173"
+  },
+  {
+    "source": "org:bronx-rockets",
+    "target": "org:lightnings",
+    "type": "rivalry",
+    "evidence": "Apparently, there was a 'period of savage feuding' between the two gangs prior to May 25.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3231"
+  },
+  {
+    "source": "org:bronx-rockets",
+    "target": "org:hurricanes",
+    "type": "alliance",
+    "evidence": "Amidst the hostilities between the Rockets and Lightnings, the Hurricanes joined in as allies of the Rockets.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3231"
+  },
+  {
+    "source": "org:bronx-rockets",
+    "target": "org:bronx-dragons",
+    "type": "rivalry",
+    "evidence": "As for the Rockets, by 1952 there were 7-10 of them left when they again became involved in a shooting, this time with the Bronx Dragons.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3231"
+  },
+  {
+    "source": "org:apaches",
+    "target": "org:mau-maus",
+    "type": "alliance",
+    "evidence": "Papo said that for that situation the Mau Maus were meeting with the Apaches to fight a third gang.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3391"
+  },
+  {
+    "source": "org:apaches",
+    "target": "org:south-brooklyn-boys",
+    "type": "rivalry",
+    "evidence": "Most likely this would have been the group the Apaches would have ended up fighting if they didn't get pinched by the police.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3391"
+  },
+  {
+    "source": "org:noble-dukes",
+    "target": "org:mysterious-five",
+    "type": "rivalry",
+    "evidence": "The Noble Dukes and the Mysterious Five were two rival gangs from the East Bronx and leading up to the shooting on Saturday, November 16, there had been 'many' altercations between the two gangs.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3692"
+  },
+  {
+    "source": "org:sabers",
+    "target": "org:chancellors",
+    "type": "rivalry",
+    "evidence": "The Patrolman said Daniel was 'an aggressive individual' who had the gun for rumbles between the Sabers and their enemies, a gang called the Chancellors.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=3855"
+  },
+  {
+    "source": "org:red-wings",
+    "target": "org:viceroys",
+    "type": "rivalry",
+    "evidence": "Throughout the 1950s, these East Harlem gangs battled each other, with fights and rumbles sometimes ending in death for young victims",
+    "source_url": "https://newyorkcitygangs.com/?page_id=493"
+  },
+  {
+    "source": "org:red-wings",
+    "target": "org:dragons",
+    "type": "rivalry",
+    "evidence": "Throughout the 1950s, these East Harlem gangs battled each other, with fights and rumbles sometimes ending in death for young victims",
+    "source_url": "https://newyorkcitygangs.com/?page_id=493"
+  },
+  {
+    "source": "org:harlem-lords",
+    "target": "org:egyptian-kings",
+    "type": "rivalry",
+    "evidence": "The Egyptian Kings had a boxer. They came down, I think it was July 3 or 4 and wanted their guy to fight anybody in the Harlem Lords... Marcus hit him and I had to swing on the guy next to me even though we were friends. The s**t was on.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=510"
+  },
+  {
+    "source": "org:harlem-lords",
+    "target": "org:fort-greene-chaplains",
+    "type": "rivalry",
+    "evidence": "One time there was a dance over at the Rockland palace, and a lot of the Chaplains came over there... They got into an argument with us, we had a fist fight",
+    "source_url": "https://newyorkcitygangs.com/?page_id=510"
+  },
+  {
+    "source": "org:harlem-lords",
+    "target": "org:fordham-baldies",
+    "type": "rivalry",
+    "evidence": "In '53, '54 even 55 there was gang wars and we would fight different gangs like the Fordham Baldies, the Dragons, the Chaplains.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=510",
+    "start_year": 1953,
+    "end_year": 1955
+  },
+  {
+    "source": "org:harlem-lords",
+    "target": "org:dragons",
+    "type": "rivalry",
+    "evidence": "In '53, '54 even 55 there was gang wars and we would fight different gangs like the Fordham Baldies, the Dragons, the Chaplains.",
+    "source_url": "https://newyorkcitygangs.com/?page_id=510",
+    "start_year": 1953,
+    "end_year": 1955
+  },
+  {
+    "source": "org:sinners",
+    "target": "org:assassins",
+    "type": "rivalry",
+    "evidence": "two bitter enemies from West Harlem: The Sinners (sometimes referred to as the Young Sinners) and the Assassins",
+    "source_url": "https://newyorkcitygangs.com/?page_id=982"
+  },
+  {
+    "source": "org:12th-street-players",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "Extreme warfare between the 12th Street Players and various Folk gangs and former allies, the Latin Kings, and Latin Counts in the Grant Works and The Island (Roosevelt Rd. and Austin Ave.) sections of Cicero",
+    "source_url": "http://www.stonegreasers.com/greaser/12th_street_players.html"
+  },
+  {
+    "source": "org:12th-street-players",
+    "target": "org:latin-counts-chicago",
+    "type": "rivalry",
+    "evidence": "Extreme warfare between the 12th Street Players and various Folk gangs and former allies, the Latin Kings, and Latin Counts in the Grant Works and The Island (Roosevelt Rd. and Austin Ave.) sections of Cicero",
+    "source_url": "http://www.stonegreasers.com/greaser/12th_street_players.html"
+  },
+  {
+    "source": "org:12th-street-players",
+    "target": "org:gangsta-2-6",
+    "type": "rivalry",
+    "evidence": "The primary focus of the Players in Brookfield, Lagrange, and Countryside was the contention with overwhelming Folks Alliance member gangs; 2-6 (now Gangsta 2-6), 2-2 Boys, Black Gangster Disciples (now Gangsta Disciples), and a few Simon City Royals.",
+    "source_url": "http://www.stonegreasers.com/greaser/12th_street_players.html"
+  },
+  {
+    "source": "org:12th-street-players",
+    "target": "org:2-2-boys",
+    "type": "rivalry",
+    "evidence": "The primary focus of the Players in Brookfield, Lagrange, and Countryside was the contention with overwhelming Folks Alliance member gangs; 2-6 (now Gangsta 2-6), 2-2 Boys, Black Gangster Disciples (now Gangsta Disciples), and a few Simon City Royals.",
+    "source_url": "http://www.stonegreasers.com/greaser/12th_street_players.html"
+  },
+  {
+    "source": "org:12th-street-players",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry",
+    "evidence": "The primary focus of the Players in Brookfield, Lagrange, and Countryside was the contention with overwhelming Folks Alliance member gangs; 2-6 (now Gangsta 2-6), 2-2 Boys, Black Gangster Disciples (now Gangsta Disciples), and a few Simon City Royals.",
+    "source_url": "http://www.stonegreasers.com/greaser/12th_street_players.html"
+  },
+  {
+    "source": "org:12th-street-players",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry",
+    "evidence": "The primary focus of the Players in Brookfield, Lagrange, and Countryside was the contention with overwhelming Folks Alliance member gangs; 2-6 (now Gangsta 2-6), 2-2 Boys, Black Gangster Disciples (now Gangsta Disciples), and a few Simon City Royals.",
+    "source_url": "http://www.stonegreasers.com/greaser/12th_street_players.html"
+  },
+  {
+    "source": "org:69th-street-loafers",
+    "target": "org:68th-and-wood-street-lil-loafers",
+    "type": "parent",
+    "evidence": "This includes: 68th and Wood Street Lil Loafers and 68th and Damen Lil Loafers.",
+    "source_url": "http://www.stonegreasers.com/greaser/69th_street_loafers.html"
+  },
+  {
+    "source": "org:69th-street-loafers",
+    "target": "org:68th-and-damen-lil-loafers",
+    "type": "parent",
+    "evidence": "This includes: 68th and Wood Street Lil Loafers and 68th and Damen Lil Loafers.",
+    "source_url": "http://www.stonegreasers.com/greaser/69th_street_loafers.html"
+  },
+  {
+    "source": "org:69th-street-loafers",
+    "target": "org:sawyer-boys",
+    "type": "rivalry",
+    "evidence": "In the early 60's they would go to the In-Motion on 57th s Kedzie where dances and live bands where at and fights would break out with dudes from Westlawn, Sawyer Boys & Muscaduddlers.",
+    "source_url": "http://www.stonegreasers.com/greaser/69th_street_loafers.html"
+  },
+  {
+    "source": "org:69th-street-loafers",
+    "target": "org:muscaduddlers",
+    "type": "rivalry",
+    "evidence": "In the early 60's they would go to the In-Motion on 57th s Kedzie where dances and live bands where at and fights would break out with dudes from Westlawn, Sawyer Boys & Muscaduddlers.",
+    "source_url": "http://www.stonegreasers.com/greaser/69th_street_loafers.html"
+  },
+  {
+    "source": "org:bel-aires",
+    "target": "org:cortland-stacies",
+    "type": "rivalry",
+    "evidence": "Their Main Rivals were the Cortland Stacies who hung out on Moffat and Campbell Ave.",
+    "source_url": "http://stonegreasers.com/greaser/Chicago_Bel-Airs_gangs.html"
+  },
+  {
+    "source": "org:bel-aires",
+    "target": "org:dc-eagles-motorcycle-club",
+    "type": "alliance",
+    "evidence": "Many Bel-Airs felt out outnumbered and later joined the DC Eagles Motorcycle Club.",
+    "source_url": "http://stonegreasers.com/greaser/Chicago_Bel-Airs_gangs.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:black-saints",
+    "type": "spin_off",
+    "evidence": "Around 1965 they opted for a name change (due to people thinking that we were a Black club)",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance",
+    "evidence": "The Aristocrats had an alliance with the Royals and Corp, It was called RCA!",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:corp",
+    "type": "alliance",
+    "evidence": "The Aristocrats had an alliance with the Royals and Corp, It was called RCA!",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:latin-eagles-chicago",
+    "type": "rivalry",
+    "evidence": "During the 60's and early 70's The Latin Eagles were the Aristocrats main rivals!",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:deuces",
+    "type": "rivalry",
+    "evidence": "Aristocrats, already fighting with the Deuces joined with the Royals on raids against them after that.",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "Something happened and war erupted again, lasting a few years... This was the second war with The Kings!",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:black-p-stone-nation",
+    "type": "rivalry",
+    "evidence": "We allowed them to grow at the School (68,69) and later battled with them!... The war ended with the P.R. Stones",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:p-b-c",
+    "type": "rivalry",
+    "evidence": "Joe Pop and G had a fight with a couple of guys from PBC and lost, ending the feud with them",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:young-lords",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:taylor-street-jousters",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:bel-airs",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:aristocrats",
+    "target": "org:d-c-eagles",
+    "type": "rivalry",
+    "evidence": "Aristocrats fought with The Latin Eagles, Young Lords, P.R. Stones, Latin Kings, Taylor Street Jousters, Deuces, P.B.C., Bel Airs, D.C. Eagles, along with many others.",
+    "source_url": "http://www.stonegreasers.com/greaser/aristocrats.html"
+  },
+  {
+    "source": "org:little-people-suicides",
+    "target": "org:suicides",
+    "type": "spin_off",
+    "evidence": "They we were an offshoot of the older Suicides who eventfully would go on to ominous notoriety and an infamous status by murder.",
+    "source_url": "http://www.stonegreasers.com/greaser/brooklyn_suicides.html"
+  },
+  {
+    "source": "org:little-people-suicides",
+    "target": "org:mau-maus",
+    "type": "rivalry",
+    "evidence": "The 'Little People' where often the victims of predation from such gangs as the MAU MAUS from Ft. Greene Houses and the Chaplains.",
+    "source_url": "http://www.stonegreasers.com/greaser/brooklyn_suicides.html"
+  },
+  {
+    "source": "org:little-people-suicides",
+    "target": "org:chaplains",
+    "type": "rivalry",
+    "evidence": "The 'Little People' where often the victims of predation from such gangs as the MAU MAUS from Ft. Greene Houses and the Chaplains.",
+    "source_url": "http://www.stonegreasers.com/greaser/brooklyn_suicides.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:latin-angels",
+    "type": "rivalry",
+    "evidence": "Chi-West rumbled against Latino gang rivals like Latin Angels and the Spanish Kings. December 4th, 1962, Chicago Police broke up a rumble between Chi-West, the Latin Angels, and the Spanish Kings in the Chopin School Playground.",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:spanish-kings",
+    "type": "rivalry",
+    "evidence": "Chi-West rumbled against Latino gang rivals like Latin Angels and the Spanish Kings. December 4th, 1962, Chicago Police broke up a rumble between Chi-West, the Latin Angels, and the Spanish Kings in the Chopin School Playground.",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:haddon-boys",
+    "type": "rivalry",
+    "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:dragons",
+    "type": "rivalry",
+    "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:young-lords",
+    "type": "rivalry",
+    "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:unknowns",
+    "type": "rivalry",
+    "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:warlords",
+    "type": "rivalry",
+    "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
+  },
+  {
+    "source": "org:chiwest",
+    "target": "org:sabin-boys",
+    "type": "rivalry",
+    "evidence": "We did rumble with the Spanish Lords daily for months at a time during the school year during the mid 60's through 70-71 as they and the LD's, Haddon Boys, Sabin Boys, UK's, Dragons etc would group together",
+    "source_url": "http://www.stonegreasers.com/greaser/chi_west.html",
+    "start_year": 1965,
+    "end_year": 1971
+  },
+  {
+    "source": "org:cornell-square-rebels",
+    "target": "org:spartans",
+    "type": "alliance",
+    "evidence": "That never happened, instead we merged with the Rebels sometime in early 1956.",
+    "source_url": "http://www.stonegreasers.com/greaser/cornell_square_rebels.html"
+  },
+  {
+    "source": "org:cornell-square-rebels",
+    "target": "org:sons-of-italy",
+    "type": "rivalry",
+    "evidence": "Their rivals were the Sons of Italy, Sons of Chinatown, and the Cavaliers. In 1956, a group of Rebels were arrested for a shooting death which was the result of a fight between the Rebels and the Sons of Italy, Sons of Chinatown, and the Cavaliers.",
+    "source_url": "http://www.stonegreasers.com/greaser/cornell_square_rebels.html"
+  },
+  {
+    "source": "org:cornell-square-rebels",
+    "target": "org:sons-of-chinatown",
+    "type": "rivalry",
+    "evidence": "Their rivals were the Sons of Italy, Sons of Chinatown, and the Cavaliers. In 1956, a group of Rebels were arrested for a shooting death which was the result of a fight between the Rebels and the Sons of Italy, Sons of Chinatown, and the Cavaliers.",
+    "source_url": "http://www.stonegreasers.com/greaser/cornell_square_rebels.html"
+  },
+  {
+    "source": "org:cornell-square-rebels",
+    "target": "org:cavaliers",
+    "type": "rivalry",
+    "evidence": "Their rivals were the Sons of Italy, Sons of Chinatown, and the Cavaliers. In 1956, a group of Rebels were arrested for a shooting death which was the result of a fight between the Rebels and the Sons of Italy, Sons of Chinatown, and the Cavaliers.",
+    "source_url": "http://www.stonegreasers.com/greaser/cornell_square_rebels.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:mohawk-street",
+    "type": "spin_off",
+    "evidence": "The CORP started out as a merger of three gangs from the early to mid 1960s: Mohawk Street (Mohawks), Hudson Street (Hudson's), and the Cleveland Jammers.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:hudson-street",
+    "type": "spin_off",
+    "evidence": "The CORP started out as a merger of three gangs from the early to mid 1960s: Mohawk Street (Mohawks), Hudson Street (Hudson's), and the Cleveland Jammers.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:cleveland-jammers",
+    "type": "spin_off",
+    "evidence": "The CORP started out as a merger of three gangs from the early to mid 1960s: Mohawk Street (Mohawks), Hudson Street (Hudson's), and the Cleveland Jammers.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:dayton-and-armitage-latin-kings",
+    "type": "rivalry",
+    "evidence": "Their biggest rivals were the Dayton and Armitage Latin Kings and the Young Lords.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:young-lords",
+    "type": "rivalry",
+    "evidence": "Their biggest rivals were the Dayton and Armitage Latin Kings and the Young Lords.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:mickey-cobras-chicago",
+    "type": "rivalry",
+    "evidence": "The CORP fought many fights against the Cobra Stones and the Deuces Wild gangs from the Cabrini Green Projects.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:clybourn-corrupters",
+    "type": "rivalry",
+    "evidence": "They also fought the Cobra Stones, Clybourn Corrupters, Disciples, Black Deuces aka Deuces Wild, Black Angels",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:ylo-disciples",
+    "type": "rivalry",
+    "evidence": "They also fought the Cobra Stones, Clybourn Corrupters, Disciples, Black Deuces aka Deuces Wild, Black Angels",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:black-deuces",
+    "type": "rivalry",
+    "evidence": "The CORP fought many fights against the Cobra Stones and the Deuces Wild gangs from the Cabrini Green Projects.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:ovs",
+    "type": "rivalry",
+    "evidence": "They also fought the Cobra Stones, Clybourn Corrupters, Disciples, Black Deuces aka Deuces Wild, Black Angels",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:simon-city-royals-chicago",
+    "type": "rivalry",
+    "evidence": "had some minor humbugs with the newly emerging Simon City Royals who were allied with the Harrison Gents.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:harrison-gents",
+    "type": "rivalry",
+    "evidence": "Constant alliance issues with Unknowns and PBC's fighting and CORP as mediator, and alliance regular violence with Harrison Gents, Deuces, Kings, Royals.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:insane-unknowns",
+    "type": "alliance",
+    "evidence": "The CORP - Unknowns alliance became a merger in 1974-75, and created a significant undisputed territorial presence, North Ave to Diversey, the lake to Racine.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html",
+    "start_year": 1974,
+    "end_year": 1975
+  },
+  {
+    "source": "org:corp",
+    "target": "org:almighty-insane-popes-nation",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:patch",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:chiwest",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:aristocrats",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:bel-aires",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:howard-street-greasers",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:tjo",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:hidden-valley-kings",
+    "type": "alliance",
+    "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:night-riders",
+    "type": "alliance",
+    "evidence": "Also, they had two MC Club affiliations: Night Riders and the American Outlaws.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:american-outlaws",
+    "type": "alliance",
+    "evidence": "Also, they had two MC Club affiliations: Night Riders and the American Outlaws.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:latin-saints",
+    "type": "alliance",
+    "evidence": "Latin Saints - Indisputable... as I was there and in.",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:corp",
+    "target": "org:black-disciples-chicago",
+    "type": "rivalry",
+    "evidence": "I worked with an old Black Disciple years later who told me the story from their side, he said they had balls to come into the projects, and they stood and fought too!",
+    "source_url": "http://www.stonegreasers.com/greaser/corp.html"
+  },
+  {
+    "source": "org:jans-boys",
+    "target": "org:warrendale-gang",
+    "type": "alliance",
+    "evidence": "At times we joined forces with the Warrendale crowd to fight other gangs.",
+    "source_url": "http://www.stonegreasers.com/greaser/detroit_jans_gang.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:ellery-bops",
+    "type": "alliance",
+    "evidence": "many Ellery Bops started to hang with the Halsey Bops too",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:rockaway-and-fulton-gang",
+    "type": "alliance",
+    "evidence": "The Seniors Halsey Bops were friends with the Rockaway and Fulton gang and a lot of them hung out at the Sportsman's Cafe on Fulton and Rockaway.",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:corsair-lords",
+    "type": "rivalry",
+    "evidence": "There eventually were well over 100 Corsair Lords. Rockaway & Fulton called and truckloads (John Gotti was there) first of guys showed up. The Lords ran down Central Ave. and back to Bed Sty. Along the way the real old HalseyBops came out of their clubs and were kicking ass on the Lords real bad",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:flaming-satans",
+    "type": "rivalry",
+    "evidence": "They fought the Halsey Tots at the time because the Halsey Bop Seniors were gone.",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:the-saints",
+    "type": "rivalry",
+    "evidence": "The Saints near the Queens-Brooklyn border were in constant clashes with the Brooklyn gangs, among them the Halsey Bops and Tots",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:junior-saints",
+    "type": "rivalry",
+    "evidence": "They were enemies with the Halsey Bops and had them in their sights for a big ambush only to have it broken up by the cops.",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:junior-sinner",
+    "type": "rivalry",
+    "evidence": "Halsey Bop Rivals Black gangs - Junior Sinner and the Jefferson Stumpers.",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:halsey-bops",
+    "target": "org:jefferson-stumpers",
+    "type": "rivalry",
+    "evidence": "Halsey Bop Rivals Black gangs - Junior Sinner and the Jefferson Stumpers.",
+    "source_url": "http://www.stonegreasers.com/greaser/halsey_bops.html"
+  },
+  {
+    "source": "org:reinberg-gaylords",
+    "target": "org:palmer-gaylords",
+    "type": "alliance",
+    "evidence": "He bought it from Lil Mike. He sold it to me because now that he was out of high school, and out of the house, working full time sweating rent, he said he wasn't going to be able to be an active participant in the club. He had got the sweater from the Palmer Gaylords who had burned it off a Pope.",
+    "source_url": "http://www.stonegreasers.com/greaser/harpos_story.html"
+  },
+  {
+    "source": "org:reinberg-gaylords",
+    "target": "org:almighty-insane-popes-nation",
+    "type": "rivalry",
+    "evidence": "He had got the sweater from the Palmer Gaylords who had burned it off a Pope.",
+    "source_url": "http://www.stonegreasers.com/greaser/harpos_story.html"
+  },
+  {
+    "source": "org:reinberg-gaylords",
+    "target": "org:k-town-lords",
+    "type": "rivalry",
+    "evidence": "Woody and Harpo were attacked by a group of punks in a station wagon on their way home. Harpo was stabbed to death, December 26th. 1972.",
+    "source_url": "http://www.stonegreasers.com/greaser/harpos_story.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:simon-city-royals-chicago",
+    "type": "alliance",
+    "evidence": "we were united with the Royals, Popes, Palmer Gaylords, Jousters, Satans Disciples and the Belairs",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:almighty-insane-popes-nation",
+    "type": "alliance",
+    "evidence": "we were united with the Royals, Popes, Palmer Gaylords, Jousters, Satans Disciples and the Belairs",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:palmer-gaylords",
+    "type": "alliance",
+    "evidence": "we were united with the Royals, Popes, Palmer Gaylords, Jousters, Satans Disciples and the Belairs",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:taylor-jousters",
+    "type": "alliance",
+    "evidence": "we were united with the Royals, Popes, Palmer Gaylords, Jousters, Satans Disciples and the Belairs",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:satans-disciples",
+    "type": "alliance",
+    "evidence": "we were united with the Royals, Popes, Palmer Gaylords, Jousters, Satans Disciples and the Belairs",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:belairs",
+    "type": "alliance",
+    "evidence": "we were united with the Royals, Popes, Palmer Gaylords, Jousters, Satans Disciples and the Belairs",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "All that mattered was keeping the hood free of the Latin Kings",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html",
+    "start_year": 1977,
+    "end_year": 1978
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:howard-street-kings",
+    "type": "rivalry",
+    "evidence": "There was a rumble with the Howard Street Greasers and the Howard Street Kings on Ashland next to Gale School in the park",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:harrison-gents",
+    "type": "rivalry",
+    "evidence": "The fight started when the Harrison Gents were at the Howard Bowl and they were disrespected by a Howard Street Greaser. The Harrison Gents left the Bowling alley and lit up the neighborhod where Gooch got shot in the back.",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:hollywood-street-greasers",
+    "type": "spin_off",
+    "evidence": "In '77 '78', I found a crew on Sheridan & Hollywood who were calling themselves Hollywood St. Greasers. They were reppin Greasers, and wearing Black & White. We gave some advice and our Blessing.",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html",
+    "start_year": 1977,
+    "end_year": 1978
+  },
+  {
+    "source": "org:howard-street-greasers",
+    "target": "org:thorndale-jagoffs",
+    "type": "alliance",
+    "evidence": "We fought along side of what was left of TJO (THORNDALE JAGOFFS)",
+    "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
+  },
+  {
+    "source": "org:insane-deuces",
+    "target": "org:junior-barons",
+    "type": "rivalry",
+    "evidence": "the up and coming Deuces respectfully, but forcefully, asked the Barons to step down, in return the Deuces would take care of them",
+    "source_url": "http://www.stonegreasers.com/greaser/insane_deuces.html"
+  },
+  {
+    "source": "org:insane-deuces",
+    "target": "org:p-b-c",
+    "type": "rivalry",
+    "evidence": "Their main enemies were the PBC and the Simon City Royals",
+    "source_url": "http://www.stonegreasers.com/greaser/insane_deuces.html"
+  },
+  {
+    "source": "org:insane-unknowns",
+    "target": "org:latin-kings",
+    "type": "spin_off",
+    "evidence": "The Insane Unknowns started on Leavitt & Schiller and were an off shoot of the Latin Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/insane_unknowns.html"
+  },
+  {
+    "source": "org:insane-unknowns",
+    "target": "org:chicago-players",
+    "type": "alliance",
+    "evidence": "The UPK was formed in K-Town and it was a Unity between the LK/IUK and the Chicago Players not 12th Street Players.",
+    "source_url": "http://www.stonegreasers.com/greaser/insane_unknowns.html"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:black-gents",
+    "type": "rivalry",
+    "evidence": "Sick of Latin Kings Two-six Satan and Maniac Disiples, Black Gents and Gangsta Disciples",
+    "source_url": "http://www.stonegreasers.com/greaser/insanepopes.html"
+  },
+  {
+    "source": "org:jr-bachelors",
+    "target": "org:braghans",
+    "type": "alliance",
+    "evidence": "In the 50's there were the Jr Bachelors and Braghans (spelling not sure) who were one of the same",
+    "source_url": "http://www.stonegreasers.com/greaser/jackson-heights-queens-gangs.html"
+  },
+  {
+    "source": "org:baker-street-vice-lords",
+    "target": "org:chicago-vice-lords",
+    "type": "spin_off",
+    "evidence": "Two Chicago Vice Lords are responsible for starting the Baker Street Vice Lords, Eight-Ball and Ice.",
+    "source_url": "http://www.stonegreasers.com/greaser/lansing_vicelords_crips.html"
+  },
+  {
+    "source": "org:baker-street-vice-lords",
+    "target": "org:north-side-crips",
+    "type": "alliance",
+    "evidence": "The North Side Crips controlled the North Side of Lansing and were allied with the Baker Street Vice Lords.",
+    "source_url": "http://www.stonegreasers.com/greaser/lansing_vicelords_crips.html"
+  },
+  {
+    "source": "org:little-hell-sharks",
+    "target": "org:mohawks",
+    "type": "spin_off",
+    "evidence": "A few years after this migration, the cousins and nephews of the original Sharks started their own gangs: Mohawks, Hudson, and the Cleveland Jammers.",
+    "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
+  },
+  {
+    "source": "org:little-hell-sharks",
+    "target": "org:hudson",
+    "type": "spin_off",
+    "evidence": "A few years after this migration, the cousins and nephews of the original Sharks started their own gangs: Mohawks, Hudson, and the Cleveland Jammers.",
+    "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
+  },
+  {
+    "source": "org:little-hell-sharks",
+    "target": "org:cleveland-jammers",
+    "type": "spin_off",
+    "evidence": "A few years after this migration, the cousins and nephews of the original Sharks started their own gangs: Mohawks, Hudson, and the Cleveland Jammers.",
+    "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
+  },
+  {
+    "source": "org:morgan-deuces",
+    "target": "org:cullerton-deuces",
+    "type": "parent",
+    "evidence": "the Cullerton Deuces were under the Morgan Deuces protection",
+    "source_url": "http://www.stonegreasers.com/greaser/morgan_deuces.html"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:almighty-gaylords-nation",
+    "type": "rivalry",
+    "evidence": "The Pope/Gaylord's war of the early seventies divided the White greaser gangs in Chicago at a time when minority gang memberships were on the rise.",
+    "source_url": "http://www.stonegreasers.com/greaser/popes_gaylords_war.html"
+  },
+  {
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:chiwest",
+    "type": "rivalry",
+    "evidence": "When the Gaylords went to war with the Royals and Popes so did Chi West.",
+    "source_url": "http://www.stonegreasers.com/greaser/popes_gaylords_war.html"
+  },
+  {
+    "source": "org:tjo",
+    "target": "org:c-d",
+    "type": "alliance",
+    "evidence": "TJO wanted us to join in with them and we said no problem as some guys were in both already. This added about another 35 members to TJO.",
+    "source_url": "http://stonegreasers.com/greaser/risingupangry.html",
+    "start_year": 1967,
+    "end_year": 1971
+  },
+  {
+    "source": "org:tjo",
+    "target": "org:turf",
+    "type": "rivalry",
+    "evidence": "Turf and TJO would fight in the alleys.",
+    "source_url": "http://stonegreasers.com/greaser/risingupangry.html"
+  },
+  {
+    "source": "org:south-brooklyn-boys",
+    "target": "org:untouchable-bishops",
+    "type": "rivalry",
+    "evidence": "They all considered themselves part of SBB, but only came together in big gangfights against the Untouchable Bishops(Latino)",
+    "source_url": "http://www.stonegreasers.com/greaser/sbb.html"
+  },
+  {
+    "source": "org:south-brooklyn-boys",
+    "target": "org:mau-maus",
+    "type": "rivalry",
+    "evidence": "They all considered themselves part of SBB, but only came together in big gangfights against the Untouchable Bishops(Latino) or the The Mau Mau Chaplains (Black)",
+    "source_url": "http://www.stonegreasers.com/greaser/sbb.html"
+  },
+  {
+    "source": "org:south-brooklyn-boys",
+    "target": "org:red-hook-tigers",
+    "type": "rivalry",
+    "evidence": "In 1950, the South Brooklyn Boys had many rumbles in Prospect Park against the Red Hook Tigers gang",
+    "source_url": "http://www.stonegreasers.com/greaser/sbb.html"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:simons-city",
+    "type": "spin_off",
+    "evidence": "A spin-off of the much older Simon's City name originating from Simons Park, the Royals recruited new members from the area",
+    "source_url": "http://www.stonegreasers.com/greaser/scr.html"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:north-side-aces",
+    "type": "parent",
+    "evidence": "The smaller corner gangs of the area were approached and formed into a confederation to become known as the North Side Aces... affiliation to the Simon City Royals was automatic... When that war resumed, the Aces were officially absorbed into the Royals fold. Overnight the Aces were no more.",
+    "source_url": "http://www.stonegreasers.com/greaser/scr.html",
+    "start_year": 1972,
+    "end_year": 1973
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:almighty-insane-popes-nation",
+    "type": "alliance",
+    "evidence": "The Royals had officially unified with the Popes",
+    "source_url": "http://www.stonegreasers.com/greaser/scr.html"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:deuces",
+    "type": "rivalry",
+    "evidence": "a three week old ceasefire treaty was violated by the Deuces. When that war resumed, the Aces were officially absorbed into the Royals fold.",
+    "source_url": "http://www.stonegreasers.com/greaser/scr.html"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "All that ended in early 1975 following the shooting death of Bimbo at the hands of the Latin Kings.",
+    "source_url": "http://www.stonegreasers.com/greaser/scr.html"
+  },
+  {
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:latin-eagles-chicago",
+    "type": "rivalry",
+    "evidence": "The Royals grew fast in the Lakeview area, especially since the Latin Eagles of the time had a habit of attacking white non-gang members.",
+    "source_url": "http://www.stonegreasers.com/greaser/scr.html"
+  },
+  {
+    "source": "org:stoned-freaks",
+    "target": "org:latin-kings",
+    "type": "alliance",
+    "evidence": "He quickly established a relationship with the Latin Kings street gang on the inside, and the Stoned Freaks joined the 'People Alliance.'",
+    "source_url": "http://www.stonegreasers.com/greaser/stoned_freaks.html"
+  },
+  {
+    "source": "org:stoned-freaks",
+    "target": "org:people-alliance",
+    "type": "member_of",
+    "evidence": "He quickly established a relationship with the Latin Kings street gang on the inside, and the Stoned Freaks joined the 'People Alliance.'",
+    "source_url": "http://www.stonegreasers.com/greaser/stoned_freaks.html"
+  },
+  {
+    "source": "org:stoned-freaks",
+    "target": "org:spanish-cobras-chicago",
+    "type": "rivalry",
+    "evidence": "During this time, the gang fought a vicious war with the Spanish Cobras for control of Kelvyn Park.",
+    "source_url": "http://www.stonegreasers.com/greaser/stoned_freaks.html"
+  },
+  {
+    "source": "org:stoned-freaks",
+    "target": "org:latin-eagles-chicago",
+    "type": "rivalry",
+    "evidence": "The SF's would fight vicious wars with all of the aforementioned gangs, especially the Cobras.",
+    "source_url": "http://www.stonegreasers.com/greaser/stoned_freaks.html"
+  },
+  {
+    "source": "org:stoned-freaks",
+    "target": "org:maniac-latin-disciples-chicago",
+    "type": "rivalry",
+    "evidence": "The SF's would fight vicious wars with all of the aforementioned gangs, especially the Cobras.",
+    "source_url": "http://www.stonegreasers.com/greaser/stoned_freaks.html"
+  },
+  {
+    "source": "org:thorndale-jarvis-organization",
+    "target": "org:north-siders",
+    "type": "spin_off",
+    "evidence": "His natural leadership qualities prevailed, and he became leader of a prison gang called the North Siders.",
+    "source_url": "http://www.stonegreasers.com/greaser/thorndale_javis_organization.html"
+  },
+  {
+    "source": "org:thorndale-jarvis-organization",
+    "target": "org:almighty-black-p-stone-nation",
+    "type": "rivalry",
+    "evidence": "The TJO claimed that they were not fighting with black students, but Blackstone Ranger members who came from as far as 103rd Street.",
+    "source_url": "http://www.stonegreasers.com/greaser/thorndale_javis_organization.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:united-neighborhoods",
+    "type": "member_of",
+    "evidence": "He asked as United Neighborhoods 'were we going to be there?' I didn't have to answer since Kiki from the YBO ( Yates Boys ) and the Clemente Warlords yelled 'hell yeah ! We'll be there !'",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:spanish-lords",
+    "type": "alliance",
+    "evidence": "Lord Flaco leader of the pee wee Spanish lords in formed me that the Stylers were moving into North Ave. between Clairmont and Bell. This is the buffer zone between the Lords. There was going to be a meeting at the Spanish Lord court yard at 5:00 pm. He asked as United Neighborhoods 'were we going to be there?'",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:latino-stylers",
+    "type": "rivalry",
+    "evidence": "The Spanish Lords and the Latino Stylers had a territorial dispute... The Latino Stylers run by Sammy moved out of Wicker park and turned Folk.",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:insane-2-nation",
+    "type": "alliance",
+    "evidence": "When the Project Kings started a war with the i2n for control of Hamlin Park, Capone and Elvis backed up the i2n- cobras Alliance.",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:spanish-cobras-chicago",
+    "type": "alliance",
+    "evidence": "When the Project Kings started a war with the i2n for control of Hamlin Park, Capone and Elvis backed up the i2n- cobras Alliance.",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "rivalry",
+    "evidence": "He was a coward like his brother Elvis, who is responsible for Edwards death by the Vice Lords in 93.",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:latin-kings",
+    "type": "alliance",
+    "evidence": "In the 80's, the Latin Kings started to grow with the alliance to the United Neighborhoods... the Kings wanted hoods in allies hoods",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:wicker-park-warlords",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "the Kings wanted hoods in allies hoods, so they sent other Kings to cause trouble than say 'they weren't from here'. They took the YBO-GBO hood on Armitage, declared war on the Insane 2 Nation for Hamlin Park, fought Unknowns for Bucktown, we were next.",
+    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
+  },
+  {
+    "source": "org:bayside-west-zombies",
+    "target": "org:corona-dukes",
+    "type": "alliance",
+    "evidence": "They were close friends of the 'Corona Dukes' after a 1955 rumble on 32nd Avenue in Bayside.",
+    "source_url": "http://www.stonegreasers.com/greaser/west-zombies-gang.html"
   }
 ]
