@@ -114,6 +114,45 @@
 - [ ] Edge weight computation from co-offending/co-membership evidence strength
 - [ ] Spatial validation: cross-reference org metro with Chicago GIS boundaries where available
 
+### Unchecked Sources (need manual review → keep or discard)
+- [ ] CalGang database (CA DOJ) — restricted access, privacy concerns, but public annual reports have stats
+- [ ] CRDCN Canada — Criminal Organization and Street Gang Offences files (2016-2021 cohort)
+- [ ] Data.gov "gangs" search — federal datasets, "Five Gang Structures in 201 Cities" (1992)
+- [ ] Reddit r/gangs, r/Chiraqology — community intel on aliases, beefs (Tier 4 reliability)
+- [ ] Kaggle/UCI crime datasets — quantitative crime stats, gang affiliation by arrest
+- [ ] OpenStreetMap territory/neighborhood tags — spatial anchors for metro/lane
+- [ ] RISSGang (Regional Info Sharing Systems) — LE-only, check for public summaries
+- [ ] INTERPOL Project Millennium — major criminal groups/networks intel
+- [ ] Europol "Decoding EU Criminal Networks" (821+ groups) — non-US but methodology reference
+- [ ] OCCRP (Organized Crime and Corruption Reporting Project) — global investigations, sanctions databases
+- [ ] Public Intelligence leaked LE manuals — gang intel docs, legal gray area
+- [ ] Digital/social media gang studies — research on online presence (YouTube, IG beefs)
+- [ ] Stratfor cartel territory maps — paywalled, possibly archived
+- [ ] GIJN crime/organized crime resource links — meta-resource of datasets
+- [ ] CGI (Civil Gang Injunction) safety zone shapefiles — LA geocoded injunction boundaries
+- [ ] Bakersfield PD gang map server (Esri REST API) — single city, split by demographic
+- [ ] Oregon DOC SMarT tattoo database — automated tattoo classification for affiliations
+- [ ] NYPD Street Gang Manual — leaked, detailed coalition symbols/rules (Folk/People Nation)
+- [ ] Eurogang Program methodology — operational definitions, durability thresholds
+- [ ] USC Center for Research on Crime — gang affiliation factors (social identity studies)
+- [ ] John Jay College research centers — Extremist Crime Consortium, Data Collaborative
+- [ ] NIJ/OJP "Organized Crime in the US" publications — history 1950-1980, Mafia era
+- [ ] Prison Policy Initiative reports (Tracked and Trapped, Guilt by Association) — database critiques + data
+- [ ] NCJRS Virtual Library — 225,000+ records on criminology, gang intervention (since 1972)
+- [ ] Sudhir Venkatesh ethnographies — granular Chicago gang internal politics
+- [ ] Frederic Thrasher "The Gang" (1920s Chicago) — historical academic foundation
+- [ ] James C. Howell "History of Street Gangs in US" — origins to transformations
+- [ ] NYPL Digital Collections — digitized historical NYC gang accounts (20th century)
+- [ ] Chronicling America (LOC) — historic newspapers, "first mentioned" dates for old orgs
+- [ ] Local Historical Societies — newspaper archives 1940s-80s for regional gang emergence
+- [ ] WA DOC STG validation criteria (form DOC 21-881) — suspect/affiliate/member scale
+- [ ] AZ DOC DO 806 — STG validation evidence requirements (tattoos, mail, hit lists)
+- [ ] Everett PD Gang Recognition Guide — symbols, colors, identifiers reference
+- [ ] OCVED (ocved.mx) — organized crime violence event data, Mexico 2000-2019+
+- [ ] GI-TOC Global Organized Crime Index (ocindex.net) — country metrics, resilience scores
+- [ ] Borderland Beat — cartel maps, profiles, translated docs (contributor-led)
+- [ ] UNODC SHERLOC case law database — 192 countries, TOC court filings
+
 ---
 
 ## Done
