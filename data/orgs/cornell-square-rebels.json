@@ -5,8 +5,8 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1958,
+  "founded_year_precision": "circa",
   "description": "Starting out as the Rebels Social and Athletic Club, the Rebels became very street active and made the newspapers numerous times for about ten years in the 1950s. Their headquarters was at the candy store on 51st Street and Wolcott Avenue across from Cornell Square Park. They merged with the Spartans in early 1956 and had rivalries with the Sons of Italy, Sons of Chinatown, and the Cavaliers.",
   "colors": [
     "red",
@@ -14,7 +14,7 @@
     "white"
   ],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "http://www.stonegreasers.com/greaser/cornell_square_rebels.html",

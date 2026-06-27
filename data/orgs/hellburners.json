@@ -5,12 +5,12 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1955,
+  "founded_year_precision": "circa",
   "description": "Hellburners is a street gang based in Unknown.",
   "colors": [],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=1817",

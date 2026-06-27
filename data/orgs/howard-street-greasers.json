@@ -5,15 +5,15 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1955,
+  "founded_year_precision": "circa",
   "description": "The Howard Street Greasers were a white ethnic gang primarily composed of Polish, Italian, and Irish members active in Chicago's Rogers Park neighborhood during the 1970s. They maintained territory west and south of the Howard Street L tracks and were involved in conflicts with rival gangs seeking to encroach on their turf. They were allied with several other white street gangs of the era.",
   "colors": [
     "black",
     "white"
   ],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "http://www.stonegreasers.com/greaser/corp.html",

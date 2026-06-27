@@ -5,12 +5,12 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1950,
+  "founded_year_precision": "circa",
   "description": "The El Kovans (also spelled Elkovans or El Kovons) were a youth gang based in the Red Hook Houses housing project in Brooklyn during the 1950s and early 1960s. Members were involved in various crimes including loitering, theft, break and enter, and assault.",
   "colors": [],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=3074",

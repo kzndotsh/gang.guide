@@ -5,12 +5,12 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1943,
+  "founded_year_precision": "exact",
   "description": "The Socialistic Dukes were a Harlem youth gang considered troublesome by police as of 1943. In November 1943, three members were arrested at 54 West 114th Street after harassing a female student and were found in possession of hunting knives.",
   "colors": [],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=2300",

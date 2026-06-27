@@ -5,12 +5,12 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1955,
+  "founded_year_precision": "circa",
   "description": "The Seven Saints were a gang from East Harlem that existed at least from spring through fall of 1947, with possible activity as early as 1946. Members were arrested in May 1947 with firearms, and the DA described them as having terrorized the neighborhood.",
   "colors": [],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=1280",

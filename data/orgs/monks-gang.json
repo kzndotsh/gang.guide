@@ -5,14 +5,14 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1955,
+  "founded_year_precision": "circa",
   "description": "The Monks were one of the most hated South Side Chicago crews of the 1970s, active in the Back of the Yards area near railroad tracks at 2200 West, between 55th and 49th streets. They were known for sniffing glue and allegedly dabbling in other illicit activities.",
   "colors": [
     "black"
   ],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "http://www.stonegreasers.com/greaser/monks-gang.html",
