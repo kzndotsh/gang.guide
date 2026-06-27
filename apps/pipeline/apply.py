@@ -103,6 +103,17 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
         if key in existing_keys:
             continue
 
+        # Skip contradictions without temporal data
+        # (alliance where rivalry exists, or vice versa)
+        if etype in ("alliance", "rivalry"):
+            opposite = "rivalry" if etype == "alliance" else "alliance"
+            has_contradiction = (
+                (org_id, target_id, opposite) in existing_keys
+                or (target_id, org_id, opposite) in existing_keys
+            )
+            if has_contradiction and not edge.get("start_year") and not edge.get("period"):
+                continue
+
         new_edge = {"source": org_id, "target": target_id, "type": etype}
         if edge.get("evidence"):
             new_edge["evidence"] = edge["evidence"]
