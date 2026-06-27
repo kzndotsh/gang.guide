@@ -24,11 +24,9 @@
 - [ ] Lint: detect edges between orgs with non-overlapping time periods
 - [ ] Merge 4 duplicate org pairs (gangster-crips-47/96/97/98)
 - [ ] Resolve ~30 contradictory edges (alliance + rivalry) with temporal data
-- [ ] Apply CGH extraction results (run merge → apply on 73 extracted pages)
 - [ ] Validate orgs against `schema.json` in lint.py
 
 ### Pipeline
-- [ ] Run full pipeline on all 73 extracted CGH pages (merge → apply)
 - [ ] Run extraction on remaining sources (streetgangs, wikipedia)
 - [ ] Wire up Wikipedia scraper (MediaWiki API, category traversal)
 - [ ] Wire up CourtListener scraper (gang-enhancement cases)
@@ -156,6 +154,12 @@
 ---
 
 ## Done
+- [x] Run full pipeline on 93 CGH pages (extract → adjudicate → merge → apply)
+- [x] Normalize edge schema: add IDs, deduplicate, fix direction
+- [x] Remove nation edges from file (field is source of truth, build.py generates)
+- [x] Add contradiction gate to apply.py (skip without temporal data)
+- [x] Lower quality threshold to 10% (extracted 20 more pages)
+- [x] Write docs: USER.md, ARCHITECTURE.md, TERMINOLOGY.md, PIPELINE.md, SCHEMA.md
 - [x] Duplicate org IDs
 - [x] Edges pointing to non-existent org IDs
 - [x] Self-referencing edges (org allied with itself)
