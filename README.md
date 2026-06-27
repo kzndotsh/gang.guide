@@ -27,6 +27,7 @@
         <a href="#quick-start">🚀 Quick Start</a> •
         <a href="docs/ARCHITECTURE.md">🏗️ Architecture</a> •
         <a href="docs/PIPELINE.md">⚙️ Pipeline</a> •
+        <a href="docs/STANDARDS.md">✅ Standards</a> •
         <a href="TODO.md">🗺️ Roadmap</a>
     </p>
 </div>
