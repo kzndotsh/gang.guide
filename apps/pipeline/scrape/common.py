@@ -9,7 +9,7 @@ from pathlib import Path
 
 import httpx
 
-USER_AGENT = "GangGuideBot/1.0 (+mailto:admin@kzn.sh)"
+USER_AGENT = "GangGuideBot/1.0 (+https://gang.guide)"
 DEFAULT_TIMEOUT = 30.0
 MAX_RETRIES = 5
 
