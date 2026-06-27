@@ -127,6 +127,10 @@ def build_graph(out_path=None):
                     edge["end_year"] = e["end_year"]
                 if e.get("sources"):
                     edge["sources"] = e["sources"]
+                if e.get("evidence"):
+                    edge["evidence"] = e["evidence"]
+                if e.get("source_url"):
+                    edge["source_url"] = e["source_url"]
                 edges.append(edge)
 
     # Generate nation edges from nation_affiliation field (field is source of truth)
@@ -138,13 +142,36 @@ def build_graph(out_path=None):
     # Split into slim graph (for rendering) and details (loaded on demand)
     details = {"nodes": {}}
     slim_nodes = []
+
+    # Build edge evidence lookup (org_id → list of edge details)
+    edge_evidence = {}
+    for e in edges:
+        if e.get("evidence") or e.get("source_url"):
+            detail = {"target": e["target"], "type": e["type"]}
+            if e.get("evidence"):
+                detail["evidence"] = e["evidence"]
+            if e.get("source_url"):
+                detail["source_url"] = e["source_url"]
+            if e.get("start_year"):
+                detail["start_year"] = e["start_year"]
+            if e.get("end_year"):
+                detail["end_year"] = e["end_year"]
+            edge_evidence.setdefault(e["source"], []).append(detail)
+            # Also add reverse for undirected types
+            if e["type"] in ("alliance", "rivalry"):
+                rev = {**detail, "target": e["source"]}
+                edge_evidence.setdefault(e["target"], []).append(rev)
+
     for n in nodes:
         data = n.get("data", {})
         # Extract heavy fields
-        details["nodes"][n["id"]] = {
+        node_detail = {
             "description": data.get("description"),
             "sources": data.get("sources", []),
         }
+        if n["id"] in edge_evidence:
+            node_detail["edges"] = edge_evidence[n["id"]]
+        details["nodes"][n["id"]] = node_detail
         # Keep only rendering fields
         slim_data = {k: v for k, v in data.items() if k not in ("description", "sources") and v is not None}
         slim_nodes.append({**n, "data": slim_data})
@@ -185,9 +212,19 @@ def build_graph(out_path=None):
         lid = n.get("data", {}).get("layout", {}).get("lane", "unplaced")
         lane_counts[lid] = lane_counts.get(lid, 0) + 1
 
+    # Strip heavy fields from edges for graph.json (evidence goes in details.json)
+    slim_edges = []
+    for e in edges:
+        slim_e = {"source": e["source"], "target": e["target"], "type": e["type"]}
+        if e.get("start_year"):
+            slim_e["start_year"] = e["start_year"]
+        if e.get("end_year"):
+            slim_e["end_year"] = e["end_year"]
+        slim_edges.append(slim_e)
+
     graph = {
         "nodes": slim_nodes,
-        "edges": edges,
+        "edges": slim_edges,
         "meta": {
             "node_count": len(nodes),
             "edge_count": len(edges),
