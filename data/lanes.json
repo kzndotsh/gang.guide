@@ -223,6 +223,12 @@
       "order": 82
     },
     {
+      "id": "detroit",
+      "label": "Detroit",
+      "group": "Regional",
+      "order": 83
+    },
+    {
       "id": "southeast-southwest",
       "label": "South / Southwest",
       "group": "Regional",

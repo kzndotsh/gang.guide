@@ -3,7 +3,7 @@
   "name": "Toledo Mafia Counts",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",

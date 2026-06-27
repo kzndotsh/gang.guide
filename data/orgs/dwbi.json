@@ -3,7 +3,7 @@
   "name": "DWBI",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "detroit",
   "metro": "Detroit",
   "founded_year": 2014,
   "founded_year_precision": "circa",
