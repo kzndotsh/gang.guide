@@ -49,5 +49,17 @@
   ],
   "founded_year_precision": "exact",
   "status": "active",
-  "nation_affiliation": "org:folk-nation"
+  "nation_affiliation": "org:folk-nation",
+  "symbols": [
+    "skull",
+    "top hat",
+    "cane",
+    "dice",
+    "whiskey bottle",
+    "Ku Klux Klansman",
+    "swastika",
+    "Celtic cross",
+    "embroidered G"
+  ],
+  "membership_estimate": 6000
 }

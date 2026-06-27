@@ -46,5 +46,10 @@
       "title": "Imperial Gangsters - Chicago Gang History"
     }
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Pink Panther",
+    "Shotgun",
+    "7 Point Crown"
+  ]
 }

@@ -48,5 +48,12 @@
     "red"
   ],
   "founded_year_precision": "exact",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Playboy Bunny",
+    "Cane",
+    "Top Hat",
+    "Martini Glass",
+    "Pyramid"
+  ]
 }

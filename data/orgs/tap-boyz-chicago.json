@@ -36,5 +36,9 @@
   ],
   "status": "inactive",
   "nation_affiliation": null,
-  "disbanded_year": 1999
+  "disbanded_year": 1999,
+  "symbols": [
+    "Diamond",
+    "4 Point Star"
+  ]
 }

@@ -33,5 +33,6 @@
     "bull head"
   ],
   "status": "active",
-  "nation_affiliation": "org:people-nation"
+  "nation_affiliation": "org:people-nation",
+  "membership_estimate": 4000
 }

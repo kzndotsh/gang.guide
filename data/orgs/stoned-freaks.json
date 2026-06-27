@@ -21,5 +21,10 @@
       "title": "Stoned Freaks - Chicago Gang History"
     }
   ],
-  "disbanded_year": 2000
+  "disbanded_year": 2000,
+  "symbols": [
+    "skull",
+    "top hat",
+    "cross"
+  ]
 }

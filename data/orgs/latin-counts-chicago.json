@@ -46,5 +46,10 @@
     "black"
   ],
   "status": "active",
-  "nation_affiliation": "org:people-nation"
+  "nation_affiliation": "org:people-nation",
+  "symbols": [
+    "Count Dracula",
+    "Knight's Helmet",
+    "Cross"
+  ]
 }

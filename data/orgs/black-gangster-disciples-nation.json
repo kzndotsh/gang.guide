@@ -60,5 +60,13 @@
     "blue",
     "black"
   ],
-  "founded_year_precision": "exact"
+  "founded_year_precision": "exact",
+  "symbols": [
+    "Winged Heart",
+    "Devil Horns",
+    "Devil Tail",
+    "pitchfork",
+    "six-point star"
+  ],
+  "membership_estimate": 40000
 }

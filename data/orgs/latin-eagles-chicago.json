@@ -38,5 +38,9 @@
     "gray"
   ],
   "status": "active",
-  "nation_affiliation": "org:folk-nation"
+  "nation_affiliation": "org:folk-nation",
+  "symbols": [
+    "Eagle's Head",
+    "E"
+  ]
 }

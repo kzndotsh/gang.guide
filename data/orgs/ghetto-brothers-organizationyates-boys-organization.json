@@ -21,5 +21,11 @@
       "title": "Ghetto Brothers Organization/Yates Boys Organization - Chicago Gang History"
     }
   ],
-  "disbanded_year": 1980
+  "disbanded_year": 1980,
+  "symbols": [
+    "skull",
+    "crossbones",
+    "torch"
+  ],
+  "membership_estimate": 300
 }

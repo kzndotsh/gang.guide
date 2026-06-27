@@ -21,5 +21,12 @@
       "url": "https://chicagoganghistory.com/gang/almighty-brazers",
       "title": "Brazers - Chicago Gang History"
     }
-  ]
+  ],
+  "symbols": [
+    "Mexican Flag",
+    "Eagle's Head",
+    "Spear",
+    "pitchfork"
+  ],
+  "membership_estimate": 80
 }

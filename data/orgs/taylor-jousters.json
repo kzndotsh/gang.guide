@@ -31,5 +31,12 @@
     "light blue"
   ],
   "status": "inactive",
-  "disbanded_year": 1980
+  "disbanded_year": 1980,
+  "symbols": [
+    "Knight's Helmet",
+    "Cross",
+    "3 Slashes",
+    "Ku Klux Klansman",
+    "Swastika"
+  ]
 }
