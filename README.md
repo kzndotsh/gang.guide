@@ -210,6 +210,12 @@ This generates config files for Claude, Copilot, Cursor, and Kiro from `.ruler/A
 
 TBD
 
----
+## Contributors
+
+![Contributors](https://contrib.rocks/image?repo=kzndotsh/gang.guide)
 
 Created by [@kzndotsh](https://github.com/kzndotsh)
+
+## Project Stats
+
+![Project Stats](https://repobeats.axiom.co/api/embed/9da041285ec9bd9c7a612bc4443dba787c3d595b.svg)
