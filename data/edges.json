@@ -11439,13 +11439,6 @@
     "source_url": "https://detroitstreetgangs.com/playboy-gangster-crips-pbgc-33rd-gangsters/"
   },
   {
-    "source": "org:rollin-60s-neighborhood-crips",
-    "target": "org:7-mile-playboy-gangster-crips",
-    "type": "rivalry",
-    "evidence": "The organization became the subject of a major federal investigation in the late 2010s, centered on an extended violent conflict with the 7 Mile Playboy Gangster Crips, a feud that resulted in multiple deaths, including bystanders.",
-    "source_url": "https://detroitstreetgangs.com/rollin-60s-crips-detroit-mi/"
-  },
-  {
     "source": "org:7-mile-rollin-60s-crips",
     "target": "org:gangster-crips",
     "type": "rivalry",
