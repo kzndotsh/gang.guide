@@ -290,40 +290,51 @@
                       {#each group.items as conn (conn.peerId + conn.type)}
                         {@const evidence = (node?.data as any)?.edgeEvidence?.find((e: any) => e.target === conn.peerId && e.type === conn.type)}
                         <li>
-                          <button
-                            type="button"
-                            class={cn(
-                              'flex w-full items-center justify-between gap-2 rounded-md border border-border/50 border-l-2 bg-background/40 px-3 py-2 text-left transition-colors hover:bg-accent/30',
-                              GROUP_ACCENT[group.id],
-                            )}
-                            onclick={() => pickNode(conn.peerId)}
-                          >
-                            <span class="min-w-0 truncate text-sm font-normal leading-snug">
-                              {labelFor(conn.peerId)}
-                            </span>
-                            {#if (group.id === 'structure' || group.id === 'other') || conn.confidenceScore != null}
-                              <span class="inline-flex shrink-0 items-center gap-1.5">
-                                {#if group.id === 'structure' || group.id === 'other'}
-                                  <Badge variant="outline" class="text-[0.58rem] font-normal uppercase">
-                                    {relTypeLabel(conn.type)}
-                                  </Badge>
-                                {/if}
-                                {#if conn.confidenceScore != null}
-                                  <span class="text-[0.62rem] tabular-nums text-muted-foreground">
-                                    {confidencePct(conn.confidenceScore)}
+                          <div class="flex items-center gap-1">
+                            <button
+                              type="button"
+                              class={cn(
+                                'flex flex-1 items-center justify-between gap-2 rounded-md border border-border/50 border-l-2 bg-background/40 px-3 py-2 text-left transition-colors hover:bg-accent/30',
+                                GROUP_ACCENT[group.id],
+                              )}
+                              onclick={() => pickNode(conn.peerId)}
+                            >
+                              <span class="min-w-0 truncate text-sm font-normal leading-snug">
+                                {labelFor(conn.peerId)}
+                              </span>
+                              {#if (group.id === 'structure' || group.id === 'other') || conn.confidenceScore != null}
+                                <span class="inline-flex shrink-0 items-center gap-1.5">
+                                  {#if group.id === 'structure' || group.id === 'other'}
+                                    <Badge variant="outline" class="text-[0.58rem] font-normal uppercase">
+                                      {relTypeLabel(conn.type)}
+                                    </Badge>
+                                  {/if}
+                                  {#if conn.confidenceScore != null}
+                                    <span class="text-[0.62rem] tabular-nums text-muted-foreground">
+                                      {confidencePct(conn.confidenceScore)}
                                   </span>
                                 {/if}
                               </span>
                             {/if}
                           </button>
                           {#if evidence?.evidence}
-                            <p class="mt-1 px-3 text-[0.68rem] italic leading-tight text-muted-foreground/80">
-                              "{evidence.evidence}"
-                              {#if evidence.source_url}
-                                <a href={evidence.source_url} target="_blank" rel="noopener" class="ml-1 not-italic text-primary/60 hover:text-primary">↗</a>
-                              {/if}
-                            </p>
+                            <details class="group">
+                              <summary class="flex h-8 w-8 shrink-0 cursor-pointer items-center justify-center rounded-md border border-border/50 bg-background/40 text-muted-foreground transition-colors hover:bg-accent/30 hover:text-foreground">
+                                <Quote class="size-3" />
+                              </summary>
+                              <div class="col-span-2 mt-1 rounded-md border border-border/30 bg-background/60 px-3 py-2">
+                                <p class="text-[0.68rem] italic leading-relaxed text-muted-foreground">
+                                  "{evidence.evidence}"
+                                </p>
+                                {#if evidence.source_url}
+                                  <a href={evidence.source_url} target="_blank" rel="noopener" class="mt-1 inline-block text-[0.62rem] text-primary/70 hover:text-primary">
+                                    {evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]} ↗
+                                  </a>
+                                {/if}
+                              </div>
+                            </details>
                           {/if}
+                          </div>
                         </li>
                       {/each}
                     </ul>
