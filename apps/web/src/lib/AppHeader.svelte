@@ -68,7 +68,7 @@
             </button>
       {/snippet}
     </Dialog.Trigger>
-    <Dialog.Content class="sm:max-w-lg">
+    <Dialog.Content class="sm:max-w-md">
       <Dialog.Header>
         <Dialog.Title>Build history</Dialog.Title>
       </Dialog.Header>
@@ -76,17 +76,15 @@
         <p class="text-xs text-muted-foreground">Loading...</p>
       {:then entries}
         {@const last = entries[entries.length - 1]}
-        <div class="max-h-72 overflow-y-auto font-mono text-[0.65rem]">
+        <div class="max-h-80 overflow-y-auto pr-2 font-mono text-[0.65rem]">
           {#each [...entries].reverse() as entry, i}
-            <div class="flex items-center gap-2 border-b border-border/30 py-1.5">
-              <span class="shrink-0 mr-2 text-muted-foreground">{new Date(entry.built_at).toLocaleString(undefined, {month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"})}</span>
-              {#if entry.delta_nodes || entry.delta_edges || entry.delta_sources}
-                <span class="flex gap-1.5 tabular-nums">
-                  {#if entry.delta_nodes}<span class="{entry.delta_nodes > 0 ? 'text-green-500' : 'text-red-400'}">{entry.delta_nodes > 0 ? '+' : ''}{entry.delta_nodes}n</span>{/if}
-                  {#if entry.delta_edges}<span class="{entry.delta_edges > 0 ? 'text-green-500' : 'text-red-400'}">{entry.delta_edges > 0 ? '+' : ''}{entry.delta_edges}e</span>{/if}
-                </span>
-              {/if}
-              <span class="ml-auto tabular-nums text-foreground">{entry.nodes} nodes · {entry.edges} edges · {entry.sources} sources</span>
+            <div class="border-b border-border/30 py-2">
+              <div class="text-muted-foreground">{new Date(entry.built_at).toLocaleString(undefined, {month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"})}</div>
+              <div class="mt-0.5 flex gap-3 tabular-nums">
+                <span class="text-foreground">{entry.nodes} nodes{#if entry.delta_nodes} <span class="{entry.delta_nodes > 0 ? 'text-green-500' : 'text-red-400'}">({entry.delta_nodes > 0 ? '+' : ''}{entry.delta_nodes})</span>{/if}</span>
+                <span class="text-foreground">{entry.edges} edges{#if entry.delta_edges} <span class="{entry.delta_edges > 0 ? 'text-green-500' : 'text-red-400'}">({entry.delta_edges > 0 ? '+' : ''}{entry.delta_edges})</span>{/if}</span>
+                <span class="text-foreground">{entry.sources} src</span>
+              </div>
             </div>
           {/each}
         </div>
