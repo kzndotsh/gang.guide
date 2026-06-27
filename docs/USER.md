@@ -28,6 +28,29 @@ Share specific views by copying the URL:
 - **Blue** — nation/member_of
 - **Gray** — spin-off/parent
 
+## Lanes
+
+Orgs are grouped into lanes (vertical rows) by geography and affiliation:
+
+- Chicago (Folk, People, Folk-People, Independent)
+- California (Bloods, Crips, Latino)
+- Blood Nation / Crip Nation
+- New York, Midwest, Detroit, Southeast-Southwest, Historical East
+- Prison, White Supremacist, Motorcycle Clubs, Organized Crime, Asian Gangs
+- Other National
+
 ## Data Sources
 
-Every org and relationship is backed by at least one source. Sources include Wikipedia, StreetGangs.com, UnitedGangs.com, Chicago Gang History, DOJ/FBI reports, and court records.
+Every org and relationship is backed by at least one source. Sources include:
+
+- Wikipedia
+- StreetGangs.com
+- UnitedGangs.com
+- Chicago Gang History
+- Detroit Street Gangs
+- NGCRC (National Gang Crime Research Center)
+- New York City Gangs
+- StoneGreasers
+- DOJ/FBI reports
+- Court records (CourtListener)
+- BlackPast.org

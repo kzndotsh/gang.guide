@@ -10,6 +10,7 @@
 | **Nation** | An umbrella alliance (Crips, Bloods, Folk Nation, People Nation) |
 | **Set** | A local chapter of a larger gang (e.g. "Rollin 60s" is a Crip set) |
 | **Metro** | The city/area where an org primarily operates |
+| **Stub** | A minimal org file created by `apply.py --create-orgs`, needs enrichment |
 
 ## Edge Types
 
@@ -18,7 +19,7 @@
 | `alliance` | Two orgs that cooperate/support each other |
 | `rivalry` | Two orgs in active conflict |
 | `member_of` | Org belongs to a larger coalition (not a nation) |
-| `nation` | Org is affiliated with a nation (auto-generated from field) |
+| `nation` | Org is affiliated with a nation (auto-generated from `nation_affiliation` field at build time) |
 | `spin_off` | Org was formed from another org |
 | `parent` | Org is the parent/umbrella of another |
 
@@ -54,3 +55,16 @@
 | **Consensus** | Data point that appeared in 2+ extraction runs |
 | **Evidence** | Verbatim quote from source proving a relationship |
 | **Temperature** | LLM randomness parameter (0.1 = conservative, 0.7 = creative) |
+| **Scraper** | Script that downloads and cleans raw HTML into text files |
+| **Slug** | Kebab-case identifier derived from org name (used as filename and in ID) |
+| **Display year** | The year shown on the canvas; uses lane-aware fallback if `founded_year` is null |
+
+## Source Keys
+
+| Key | Scraper | Site |
+|-----|---------|------|
+| `chicago_history` | `cgh.py` | chicagoganghistory.com |
+| `detroit_dsg` | `dsg.py` | detroitstreetgangs.com |
+| `ngcrc` | `ngcrc.py` | ngcrc.com |
+| `nyc_historical` | `nyc.py` | newyorkcitygangs.com |
+| `stonegreasers` | `stonegreasers.py` | stonegreasers.com |

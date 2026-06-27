@@ -10,11 +10,23 @@ data/raw/{source}/*.txt → extract → adjudicate → merge → apply → data/
 
 Run the full pipeline: `just pipeline chicago_history`
 
+## Sources Processed
+
+| Source Key | Scraper | Site |
+|-----------|---------|------|
+| `chicago_history` | `cgh.py` | Chicago Gang History |
+| `detroit_dsg` | `dsg.py` | Detroit Street Gangs |
+| `ngcrc` | `ngcrc.py` | National Gang Crime Research Center |
+| `nyc_historical` | `nyc.py` | New York City Gangs |
+| `stonegreasers` | `stonegreasers.py` | StoneGreasers |
+
+Additional scraper: `wikipedia.py` (general-purpose Wikipedia scraping).
+
 ## Stages
 
 ### 1. Extract (`apps/pipeline/extract.py`)
 
-Sends cleaned page text to **sonnet 4.5** at 3 temperatures (0.1, 0.3, 0.7).
+Sends cleaned page text to **sonnet 4.5** at 3 temperatures (0.1, 0.3, 0.7). Uses v2 prompt.
 
 - Input: `data/raw/{source}/{slug}.txt`
 - Output: `data/extracted/{source}/{slug}/run_1.json`, `run_2.json`, `run_3.json`
@@ -36,7 +48,7 @@ Each run produces:
 
 ### 2. Adjudicate (`apps/pipeline/adjudicate.py`)
 
-Sends all 3 runs to **opus 4.6** which validates each edge's evidence quote.
+Sends all 3 runs to **opus 4.6** which validates each edge's evidence quote. Uses v2 prompt.
 
 - Checks: does the quote actually prove the claimed relationship type?
 - Resolves: conflicting years, ambiguous names
@@ -58,6 +70,10 @@ Conservative upgrade of the actual data files.
 
 - Only upgrades weaker fields (empty colors, thin descriptions, imprecise years)
 - Adds new edges that don't already exist
+- `--create-orgs` flag creates stub org files for newly-mentioned orgs
+- Guards against page titles (rejects names like "History of..." or "Groups in...")
+- LA org metro inheritance (Piru, Compton, etc. → "Los Angeles")
+- Slug collision check prevents overwriting existing files
 - Skips contradictory edges unless temporal data disambiguates them
 - Skips self-referencing edges
 - Converts `period` strings ("1977-1992") to `start_year`/`end_year` integers
@@ -78,8 +94,8 @@ just pipeline chicago_history         # all of the above
 
 | Stage | Model | Temperature | Purpose |
 |-------|-------|-------------|---------|
-| Extract | claude-sonnet-4.5 | 0.1, 0.3, 0.7 | Structured data extraction |
-| Adjudicate | claude-opus-4.6 | 0.1 | Evidence validation |
+| Extract | claude-sonnet-4.5 | 0.1, 0.3, 0.7 | Structured data extraction (v2 prompt) |
+| Adjudicate | claude-opus-4.6 | 0.1 | Evidence validation (v2 prompt) |
 
 Override via env: `EXTRACT_MODEL`, `ADJUDICATE_MODEL`
 
@@ -98,4 +114,6 @@ Safe to re-run at any time.
 2. **Opus adjudication** — validates evidence quotes prove claimed relationships
 3. **Contradiction check** — won't add alliance where rivalry exists (without dates)
 4. **Self-reference check** — won't create org→itself edges
-5. **Lint gate** — rejects apply if lint errors increase
+5. **Page title guard** — rejects generic/navigational names from becoming orgs
+6. **Slug collision check** — prevents overwriting existing org files
+7. **Lint gate** — rejects apply if lint errors increase
