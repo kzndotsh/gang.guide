@@ -38,7 +38,7 @@ def generate_svg(stats: dict) -> str:
     rivalry_bar = bar_w * stats["rivalry"] // stats["edges"]
     alliance_bar = bar_w * stats["alliance"] // stats["edges"]
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="840" height="180" viewBox="0 0 840 180" fill="none">
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="840" height="200" viewBox="0 0 840 200" fill="none">
   <style>
     .bg {{ fill: #0d1117; rx: 8; }}
     .card {{ fill: #161b22; rx: 6; }}
@@ -52,7 +52,7 @@ def generate_svg(stats: dict) -> str:
   </style>
 
   <!-- Background -->
-  <rect class="bg" width="840" height="180" viewBox="0 0 840 180"/>
+  <rect class="bg" width="840" height="200" viewBox="0 0 840 200"/>
 
   <!-- Row 1: Big numbers -->
   <rect class="card" x="16" y="16" width="150" height="70"/>
