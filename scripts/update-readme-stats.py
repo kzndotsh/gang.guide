@@ -40,6 +40,9 @@ def compute_stats():
         "metros": metros,
         "with_colors": with_colors,
         "with_symbols": with_symbols,
+        "multi_source": sum(1 for o in orgs if len(o.get("sources") or []) > 1),
+        "with_aliases": sum(1 for o in orgs if o.get("aliases")),
+        "year_exact": sum(1 for o in orgs if o.get("founded_year_precision") in ("exact", "circa")),
     }
 
 
@@ -107,12 +110,12 @@ def generate_svg(s: dict) -> str:
   <text class="small" x="{80+bar_max+8}" y="140">{s['evidence']:,} / {s['edges']:,}</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="420" y="100">{s['sources']:,} sources</text>
-  <text class="small" x="420" y="120">{s['metros']} metros</text>
-  <text class="small" x="420" y="140">{s['with_colors']} with colors</text>
-  <text class="small" x="560" y="100">{s['member_of']} member_of</text>
-  <text class="small" x="560" y="120">{s['spin_off']} spin-offs</text>
-  <text class="small" x="560" y="140">{s['with_symbols']} with symbols</text>
+  <text class="small" x="420" y="100">{s['sources']:,} citations</text>
+  <text class="small" x="420" y="120">{s['multi_source']} multi-sourced</text>
+  <text class="small" x="420" y="140">{s['with_aliases']} have aliases</text>
+  <text class="small" x="580" y="100">{s['with_colors']} with colors</text>
+  <text class="small" x="580" y="120">{s['with_symbols']} with symbols</text>
+  <text class="small" x="580" y="140">{s['year_exact']} exact/circa years</text>
 </svg>"""
 
 
