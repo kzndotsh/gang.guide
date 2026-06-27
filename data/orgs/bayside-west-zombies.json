@@ -5,12 +5,12 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1955,
+  "founded_year_precision": "circa",
   "description": "The Bayside West Zombies were a mixed gang of Italian and Irish members active in Bayside and Corona, Queens, New York during the 1950s and early 1960s. They hung out in an alley on 32nd Avenue and 200th Street in Bayside and were considered by some to be the toughest gang in New York City.",
   "colors": [],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "http://www.stonegreasers.com/greaser/west-zombies-gang.html",

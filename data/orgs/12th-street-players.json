@@ -5,15 +5,15 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1960,
+  "founded_year_precision": "circa",
   "description": "The 12th Street Players were formed in the late 1960s in Cicero, Illinois, on the corners of Roosevelt Road and Austin Avenue, comprised mostly of Italian-Americans and later Slavic-Americans. They expanded into surrounding western suburbs and engaged in territorial warfare with Folk Nation gangs and former People Nation allies throughout the 1980s and 1990s.",
   "colors": [
     "black",
     "white"
   ],
   "nation_affiliation": null,
-  "status": "active",
+  "status": "inactive",
   "sources": [
     {
       "url": "http://www.stonegreasers.com/greaser/12th_street_players.html",
