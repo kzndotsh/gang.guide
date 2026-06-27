@@ -19,7 +19,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 ```
 ├── build.py              # Generates graph.json + details.json from flat files
 ├── data/
-│   ├── orgs/             # One JSON file per org (source of truth, 967 files)
+│   ├── orgs/             # One JSON file per org (source of truth, source of truth)
 │   ├── edges.json        # Edge list (alliances, rivalries, affiliations)
 │   ├── lanes.json        # Lane taxonomy + org anchors + metro defaults
 │   └── raw/              # 682MB scraped source material (gitignored)
@@ -31,7 +31,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 │       ├── merge.py      # Consensus filtering
 │       ├── apply.py      # Conservative data upgrade
 │       ├── lint.py       # Data validation
-│       └── tests/        # 129 unit tests + e2e
+│       └── tests/        # Unit tests + e2e + fixtures
 ├── .ruler/               # AI agent instructions (source of truth)
 ├── justfile              # Task runner
 ├── pytest.ini            # Test config
@@ -109,10 +109,10 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 
 ## Testing
 
-- `pytest` — 129 unit tests (0.3s, no API calls, runs in CI)
+- `pytest` — unit tests (no API calls, runs in CI)
 - `pytest -m slow` — e2e tests (needs API key)
 - `cd apps/web && npx vitest run` — web tests
-- Coverage: 40%, codecov integration, badge in README
+- Coverage tracked via codecov, badge in README
 - Golden fixtures in `apps/pipeline/tests/fixtures/` for regression detection
 
 ## Current Stats
