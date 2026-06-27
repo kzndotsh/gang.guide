@@ -9100,16 +9100,6 @@
     "source_url": "https://chicagoganghistory.com/gang/la-raza/"
   },
   {
-    "id": "762ecd174421",
-    "source": "org:latin-dragons",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1983,
-    "end_year": 1996,
-    "evidence": "The Latin Dragons backup Latin Kings and Latin Counts in fights and this led to the Latin Dragons joining the People alliance in 1983.",
-    "source_url": "https://chicagoganghistory.com/gang/latin-dragons/"
-  },
-  {
     "id": "98b4f098a99f",
     "source": "org:latin-dragons",
     "target": "org:latin-kings",
@@ -9179,16 +9169,6 @@
     "target": "org:spanish-gangster-disciples-chicago",
     "type": "alliance",
     "start_year": 1997,
-    "evidence": "Dragons also united with the Spanish Gangster Disciples and then joined the Folk alliance both in prison and on the streets.",
-    "source_url": "https://chicagoganghistory.com/gang/latin-dragons/"
-  },
-  {
-    "id": "c8b6365dd8ad",
-    "source": "org:latin-dragons",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1997,
-    "end_year": 2000,
     "evidence": "Dragons also united with the Spanish Gangster Disciples and then joined the Folk alliance both in prison and on the streets.",
     "source_url": "https://chicagoganghistory.com/gang/latin-dragons/"
   },
