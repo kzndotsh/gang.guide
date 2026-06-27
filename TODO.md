@@ -16,9 +16,7 @@
 
 ### Data
 - [ ] Add `membership_estimate` for orgs where known (from pipeline output)
-- [ ] Expand `symbols` coverage via pipeline (CGH pages have symbols for 97 gangs)
 - [ ] Enrich thin descriptions (<100 chars) via LLM for ~75 CGH bulk-imports
-- [ ] Merge `nation_affiliation` field + `nation` edge type into single approach
 - [ ] `build.py` changelog: emit diff on each run (new orgs, changed fields)
 - [ ] Lint: add completeness score per org
 - [ ] Lint: detect edges between orgs with non-overlapping time periods
@@ -37,7 +35,6 @@
 
 ### Infrastructure
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data
-- [ ] Tag v1.1.0 release when pipeline enrichment is applied at scale
 - [ ] Issue templates: "Add new org", "Fix org data", "Report bad edge"
 - [ ] PR template with checklist (lint, build, map verification)
 - [ ] Protect main branch when collaborators join
@@ -85,8 +82,6 @@
 
 ### Schema improvements
 - [ ] Add `tier` field to sources: 1=legal/court, 2=academic, 3=news/wiki, 4=community. Lets adjudicate.py weigh conflicts.
-- [ ] Add `evidence` field to edges (verbatim quote proving the relationship)
-- [ ] Add `source_url` to edges (where the evidence came from)
 - [ ] Add `membership_estimate` + `membership_year` fields to org schema
 - [ ] Add `structure_type` field (traditional/compressed/specialty/hybrid per Klein-Maxson typology)
 - [ ] Add `territory` GeoJSON field (optional, for orgs with known boundaries)
@@ -154,6 +149,9 @@
 ---
 
 ## Done
+- [x] Merge nation_affiliation + nation edge type (field is source of truth, build.py generates)
+- [x] Add evidence field to edges (from pipeline adjudication)
+- [x] Expand symbols coverage via CGH pipeline (110 field upgrades)
 - [x] Run full pipeline on 93 CGH pages (extract → adjudicate → merge → apply)
 - [x] Normalize edge schema: add IDs, deduplicate, fix direction
 - [x] Remove nation edges from file (field is source of truth, build.py generates)
