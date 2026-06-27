@@ -32,6 +32,7 @@
 - [ ] Curated overrides file (blocklist/forcelist for known bad/good edges)
 - [ ] Aggregate `unresolved_names` from adjudication into review queue
 - [ ] Add async/concurrent extraction (run 3 temps in parallel for 3x speedup)
+- [ ] Backfill evidence on 651 old edges (run pipeline on StreetGangs + Wikipedia sources, upgrade existing edges)
 
 ### Infrastructure
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data
