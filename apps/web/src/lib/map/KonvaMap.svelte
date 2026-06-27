@@ -600,13 +600,6 @@
     });
 
     // Hide expensive layers during drag for smooth panning
-    stage.on('dragstart', () => {
-      edgeLayer.opacity(0.3);
-    });
-    stage.on('dragend', () => {
-      edgeLayer.opacity(1);
-      stage.batchDraw();
-    });
 
     // Click on empty space = deselect
     stage.on('click tap', (e: any) => {
