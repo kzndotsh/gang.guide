@@ -36,12 +36,21 @@ the FINAL consolidated record by resolving conflicts.
 Rules:
 - An edge is VALID only if its evidence quote genuinely proves the stated relationship type.
   "They fought over territory" proves rivalry. "They shared members" does NOT prove alliance.
+- REJECT edges where the evidence is merely a CO-MENTION (orgs listed together, in same location, or in same sentence without an explicit relationship verb).
+  Examples of INVALID evidence:
+  - "Menard Prison 1990s Spanish Cobras, YLO Cobras and Insane Deuces" (just a list)
+  - "Both gangs operated in the Humboldt Park area" (shared location, not alliance)
+  - "Members of X and Y were arrested together" (co-arrest, not alliance)
+  Examples of VALID evidence:
+  - "X and Y formed an alliance in 1977" (explicit relationship)
+  - "X declared war on Y after the shooting" (explicit rivalry)
+  - "X splintered off from Y in 1978" (explicit spin_off)
 - If evidence is vague, generic, or doesn't name both orgs explicitly, REJECT the edge.
 - For years: prefer the most specific source. "Founded in 1958" beats "Founded in the 1950s".
 - For colors: only include colors explicitly stated as the org's colors, not colors mentioned in passing.
 - For descriptions: synthesize the best factual summary (2-3 sentences) from all inputs.
 - For orgs_mentioned: only include real criminal organizations, not neighborhoods or events.
-- Set confidence to "high" if evidence is a direct quote naming both orgs, "medium" otherwise."""
+- Set confidence to "high" if evidence is a direct quote naming both orgs with an explicit relationship verb, "medium" otherwise."""
 
 
 def ts() -> str:
