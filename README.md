@@ -110,6 +110,7 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`.
 | [UnitedGangs.com](https://unitedgangs.com) | Org profiles, alliances, rivalries |
 | [Chicago Gang History](https://chicagoganghistory.com) | Detailed Chicago set histories |
 | [DetroitStreetGangs](https://detroitstreetgangs.com) | Detroit gang profiles, rivalries, affiliations |
+| [NGCRC](https://www.ngcrc.com) | Academic gang profiles, threat analysis research |
 | [DOJ / FBI](https://www.justice.gov) | Gang threat assessments, RICO cases |
 | [BlackPast.org](https://www.blackpast.org) | Historical context, civil rights era gangs |
 | [CourtListener](https://www.courtlistener.com) | Gang-enhancement court filings |
