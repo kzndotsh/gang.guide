@@ -4,6 +4,9 @@ pre-commit:
     ruff-check:
       glob: "**/*.py"
       run: ruff check --config apps/pipeline/pyproject.toml {staged_files}
+    update-stats:
+      glob: "data/**/*.json"
+      run: python3 scripts/update-readme-stats.py && git add README.md
 
 pre-push:
   commands:
