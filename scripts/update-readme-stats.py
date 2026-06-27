@@ -21,6 +21,11 @@ def compute_stats():
     edges = json.loads((ROOT / "data/edges.json").read_text())
     orgs = [json.loads(f.read_text()) for f in (ROOT / "data/orgs").glob("*.json")]
 
+    sources = sum(len(o.get("sources") or []) for o in orgs)
+    metros = len(set(o.get("metro", "") for o in orgs if o.get("metro")))
+    with_colors = sum(1 for o in orgs if o.get("colors"))
+    with_symbols = sum(1 for o in orgs if o.get("symbols"))
+
     return {
         "orgs": len(orgs),
         "edges": len(edges),
@@ -31,6 +36,10 @@ def compute_stats():
         "alliance": sum(1 for e in edges if e["type"] == "alliance"),
         "member_of": sum(1 for e in edges if e["type"] == "member_of"),
         "spin_off": sum(1 for e in edges if e["type"] == "spin_off"),
+        "sources": sources,
+        "metros": metros,
+        "with_colors": with_colors,
+        "with_symbols": with_symbols,
     }
 
 
@@ -98,9 +107,12 @@ def generate_svg(s: dict) -> str:
   <text class="small" x="{80+bar_max+8}" y="140">{s['evidence']:,} / {s['edges']:,}</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="450" y="100">Member of: {s['member_of']}</text>
-  <text class="small" x="450" y="120">Spin-off: {s['spin_off']}</text>
-  <text class="small" x="450" y="140">Sources: 5 domains</text>
+  <text class="small" x="420" y="100">{s['sources']:,} sources</text>
+  <text class="small" x="420" y="120">{s['metros']} metros</text>
+  <text class="small" x="420" y="140">{s['with_colors']} with colors</text>
+  <text class="small" x="560" y="100">{s['member_of']} member_of</text>
+  <text class="small" x="560" y="120">{s['spin_off']} spin-offs</text>
+  <text class="small" x="560" y="140">{s['with_symbols']} with symbols</text>
 </svg>"""
 
 

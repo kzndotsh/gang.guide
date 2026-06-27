@@ -54,7 +54,10 @@
   <text class="small" x="288" y="140">788 / 1,439</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="450" y="100">Member of: 85</text>
-  <text class="small" x="450" y="120">Spin-off: 21</text>
-  <text class="small" x="450" y="140">Sources: 5 domains</text>
+  <text class="small" x="420" y="100">2,013 sources</text>
+  <text class="small" x="420" y="120">39 metros</text>
+  <text class="small" x="420" y="140">841 with colors</text>
+  <text class="small" x="560" y="100">85 member_of</text>
+  <text class="small" x="560" y="120">21 spin-offs</text>
+  <text class="small" x="560" y="140">102 with symbols</text>
 </svg>
