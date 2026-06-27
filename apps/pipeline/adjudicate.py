@@ -50,6 +50,7 @@ Rules:
 - For colors: only include colors explicitly stated as the org's colors, not colors mentioned in passing.
 - For descriptions: synthesize the best factual summary (2-3 sentences) from all inputs.
 - For orgs_mentioned: only include real criminal organizations, not neighborhoods or events.
+- For edge targets: use the most specific LOCAL set name. If the text is about Detroit and mentions "Rollin 60s", the target should be the local Detroit set name, not the national/LA parent org.
 - Set confidence to "high" if evidence is a direct quote naming both orgs with an explicit relationship verb, "medium" otherwise."""
 
 

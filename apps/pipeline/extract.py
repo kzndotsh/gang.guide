@@ -63,6 +63,7 @@ RULES:
 - colors: only if explicitly stated. Not from context.
 - edges: ONLY real direct relationships between two orgs. NOT co-mentions.
 - evidence: MUST be a verbatim quote from the text. If you can't quote it, don't emit the edge.
+- edges.target: Use the MOST SPECIFIC local name. If the text discusses "Rollin 60s" in Detroit, use "7 Mile Rollin 60s Crips" (the local set), NOT "Rollin 60s Neighborhood Crips" (the national parent). Prefer the local set name over the generic/national org name when the context is clearly local.
 - edges.type: alliance (work together), rivalry (fight each other), parent (umbrella org), member_of (belongs to nation), spin_off (formed from another)
 - orgs_mentioned: every named criminal organization in the text, even without a relationship
 - description: factual, no speculation, based only on what the text says
