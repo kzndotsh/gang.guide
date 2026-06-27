@@ -45,7 +45,7 @@
   <rect class="bar-alliance" x="32" y="150" width="60" height="8"/>
   <text class="label" x="200" y="158">Alliance 548</text>
 
-  <rect class="card" x="420" y="102" width="384" height="62"/>
+  <rect class="card" x="420" y="102" width="370" height="62"/>
   <text class="title" x="436" y="124">Evidence Coverage</text>
   <rect class="bar-bg" x="436" y="138" width="160" height="12"/>
   <rect class="bar-evidence" x="436" y="138" width="86" height="12"/>

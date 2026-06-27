@@ -85,7 +85,7 @@ def generate_svg(stats: dict) -> str:
   <rect class="bar-alliance" x="32" y="150" width="{alliance_bar}" height="8"/>
   <text class="label" x="{32 + bar_w + 8}" y="158">Alliance {stats['alliance']}</text>
 
-  <rect class="card" x="420" y="102" width="384" height="62"/>
+  <rect class="card" x="420" y="102" width="370" height="62"/>
   <text class="title" x="436" y="124">Evidence Coverage</text>
   <rect class="bar-bg" x="436" y="138" width="{bar_w}" height="12"/>
   <rect class="bar-evidence" x="436" y="138" width="{evidence_bar}" height="12"/>
