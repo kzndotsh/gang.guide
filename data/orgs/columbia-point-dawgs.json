@@ -5,22 +5,22 @@
     "CPD"
   ],
   "type": "street_gang",
-  "lane": "historical-east",
+  "lane": "other-national",
   "founded_year": 1988,
   "founded_year_precision": "exact",
   "description": "Criminal organization and street gang based in Boston, Massachusetts, founded in 1988. Involved in murder, drug trafficking, and violence, with one of the largest drug operations in New England. Known for wearing Philadelphia Phillies or Pittsburgh Pirates hats and driving expensive vehicles. In 2015, 48 members were arrested in a major gang takedown.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Columbia_Point_Dawgs",
-      "title": "Columbia Point Dawgs \u2014 Wikipedia"
+      "title": "Columbia Point Dawgs — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Lenox_Street_Boys",
-      "title": "Lenox Street Boys \u2014 Wikipedia"
+      "title": "Lenox Street Boys — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Orchard_Park_Trailblazers",
-      "title": "Orchard Park Trailblazers \u2014 Wikipedia"
+      "title": "Orchard Park Trailblazers — Wikipedia"
     }
   ],
   "metro": "Philadelphia",
