@@ -25,7 +25,8 @@
     <p>
         <a href="https://gang.guide">🌐 Live Site</a> •
         <a href="#quick-start">🚀 Quick Start</a> •
-        <a href="#data-stats">📊 Stats</a> •
+        <a href="docs/ARCHITECTURE.md">🏗️ Architecture</a> •
+        <a href="docs/PIPELINE.md">⚙️ Pipeline</a> •
         <a href="TODO.md">🗺️ Roadmap</a>
     </p>
 </div>
@@ -72,7 +73,7 @@ just dev
 ```
 ├── build.py                    # Builds graph.json + details.json from flat data
 ├── data/
-│   ├── orgs/                   # One JSON per org (967 files, source of truth)
+│   ├── orgs/                   # One JSON per org (source of truth)
 │   ├── edges.json              # Edge list (alliances, rivalries, affiliations)
 │   └── lanes.json              # Lane taxonomy + org anchors
 ├── apps/
@@ -95,7 +96,13 @@ just dev
 ├── lefthook.yml                # Git hooks (ruff pre-commit, svelte-check pre-push)
 ├── flake.nix                   # Nix dev shell
 ├── TODO.md                     # Roadmap
-└── CONTRIBUTING.md             # Contributor guide
+└── docs/                       # Documentation
+    ├── ARCHITECTURE.md         # System design
+    ├── PIPELINE.md             # LLM extraction pipeline
+    ├── SCHEMA.md               # Data schema reference
+    ├── TERMINOLOGY.md          # Glossary
+    ├── USER.md                 # User guide
+    └── CONTRIBUTING.md         # Contributor guide
 ```
 
 ## Data
