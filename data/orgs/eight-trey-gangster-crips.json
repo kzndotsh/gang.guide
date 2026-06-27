@@ -3,7 +3,7 @@
   "name": "Eight Trey Gangster Crips",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "california-crips-other",
   "metro": "Los Angeles",
   "founded_year": null,
   "founded_year_precision": "estimate",

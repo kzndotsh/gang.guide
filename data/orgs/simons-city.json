@@ -3,7 +3,7 @@
   "name": "Simon's City",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "chicago-independent",
   "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",
