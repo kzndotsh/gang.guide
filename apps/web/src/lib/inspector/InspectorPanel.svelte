@@ -201,8 +201,9 @@
         </Tabs.Trigger>
         <Tabs.Trigger value="network" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
           <Crosshair class="size-3 shrink-0" />
-          <span class="inline-flex min-w-0 max-w-full items-baseline">
+          <span class="inline-flex min-w-0 max-w-full items-baseline gap-1">
             <span class="truncate">Network</span>
+            <span class="text-[0.6rem] tabular-nums text-muted-foreground">({connectionCount})</span>
           </span>
         </Tabs.Trigger>
         <Tabs.Trigger value="identity" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
