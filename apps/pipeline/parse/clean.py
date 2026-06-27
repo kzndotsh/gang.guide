@@ -60,5 +60,5 @@ def quality_score(text: str) -> dict:
         "word_count": len(words),
         "line_count": len(lines),
         "prose_ratio": len(prose_lines) / max(len(lines), 1),
-        "is_low_quality": len(words) < 50 or (len(prose_lines) < 3 and len(words) < 200),
+        "is_low_quality": len(words) < 50 or len(prose_lines) == 0 or (len(prose_lines) < 3 and len(words) < 200),
     }
