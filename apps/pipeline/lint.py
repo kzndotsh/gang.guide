@@ -289,6 +289,61 @@ def check_edges(edges: list[dict], org_ids: set[str]):
         warnings.append(f"contradictory edges: {src} ↔ {tgt} has both alliance AND rivalry")
 
 
+def check_cross_metro(orgs: dict[str, dict], edges: list[dict]):
+    """Flag edges between orgs in different metros that are likely resolution errors."""
+    for i, e in enumerate(edges):
+        src_org = orgs.get(e.get("source", ""), {})
+        tgt_org = orgs.get(e.get("target", ""), {})
+        src_metro = src_org.get("metro", "")
+        tgt_metro = tgt_org.get("metro", "")
+        etype = e.get("type", "")
+
+        if not src_metro or not tgt_metro:
+            continue
+
+        # Rivalries between orgs in completely different cities are suspicious
+        # (alliances and member_of can be cross-city)
+        if etype == "rivalry" and src_metro != tgt_metro:
+            # Allow national orgs (Bloods/Crips/Folk/People) to have cross-metro rivalries
+            national = {"United States", "National", ""}
+            if src_metro not in national and tgt_metro not in national:
+                info.append(f"edge[{i}]: cross-metro rivalry {src_org.get('name','')} ({src_metro}) → {tgt_org.get('name','')} ({tgt_metro})")
+
+
+def check_page_title_orgs(orgs: dict[str, dict]):
+    """Flag orgs that look like page titles rather than real organizations."""
+    page_patterns = ["history of", "groups in", "street groups", "defunct",
+                     "affiliated groups", "overview", "map review"]
+    for org_id, org in orgs.items():
+        name = org.get("name", "").lower()
+        if any(p in name for p in page_patterns):
+            errors.append(f"{org['_file']}: org name looks like a page title, not a real org: '{org['name']}'")
+
+
+def check_stub_quality(orgs: dict[str, dict]):
+    """Flag stub orgs that need enrichment."""
+    for org_id, org in orgs.items():
+        f = org["_file"]
+        desc = org.get("description", "")
+        # Generic placeholder descriptions
+        if re.match(r"^.+ is a street gang based in .+\.$", desc) and len(desc) < 60:
+            info.append(f"{f}: stub org needs enrichment")
+
+
+def check_nation_consistency(orgs: dict[str, dict], edges: list[dict]):
+    """Flag member_of edges that contradict nation_affiliation field."""
+    for i, e in enumerate(edges):
+        if e.get("type") != "member_of":
+            continue
+        src_org = orgs.get(e.get("source", ""), {})
+        affiliation = (src_org.get("nation_affiliation") or "").lower()
+        target = e.get("target", "").lower()
+        if "folk" in affiliation and "people" in target:
+            errors.append(f"edge[{i}]: {e['source']} is Folk Nation but has member_of → People Nation")
+        if "people" in affiliation and "folk" in target:
+            errors.append(f"edge[{i}]: {e['source']} is People Nation but has member_of → Folk Nation")
+
+
 def check_isolated(orgs: dict[str, dict], edges: list[dict]):
     connected = set()
     for e in edges:
@@ -410,6 +465,10 @@ def main():
     check_sources(orgs)
     check_id_consistency(orgs)
     check_temporal_logic(orgs, edges)
+    check_cross_metro(orgs, edges)
+    check_page_title_orgs(orgs)
+    check_stub_quality(orgs)
+    check_nation_consistency(orgs, edges)
 
     # Print results
     if info:
