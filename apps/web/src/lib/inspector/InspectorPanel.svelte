@@ -289,7 +289,7 @@
                     <ul class="flex list-none flex-col gap-1 p-0">
                       {#each group.items as conn (conn.peerId + conn.type)}
                         {@const evidence = (node?.data as any)?.edgeEvidence?.find((e: any) => e.target === conn.peerId && e.type === conn.type)}
-                        <li>
+                        <li class="flex flex-col gap-1">
                           <div class="flex items-center gap-1">
                             <button
                               type="button"
@@ -318,23 +318,27 @@
                             {/if}
                           </button>
                           {#if evidence?.evidence}
-                            <details class="group">
-                              <summary class="flex h-8 w-8 shrink-0 cursor-pointer items-center justify-center rounded-md border border-border/50 bg-background/40 text-muted-foreground transition-colors hover:bg-accent/30 hover:text-foreground">
-                                <Quote class="size-3" />
-                              </summary>
-                              <div class="col-span-2 mt-1 rounded-md border border-border/30 bg-background/60 px-3 py-2">
-                                <p class="text-[0.68rem] italic leading-relaxed text-muted-foreground">
-                                  "{evidence.evidence}"
-                                </p>
-                                {#if evidence.source_url}
-                                  <a href={evidence.source_url} target="_blank" rel="noopener" class="mt-1 inline-block text-[0.62rem] text-primary/70 hover:text-primary">
-                                    {evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]} ↗
-                                  </a>
-                                {/if}
-                              </div>
-                            </details>
+                            <button
+                              type="button"
+                              class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-border/50 bg-background/40 text-muted-foreground transition-colors hover:bg-accent/30 hover:text-foreground"
+                              onclick={(e) => { e.stopPropagation(); const el = (e.currentTarget as HTMLElement).closest('li')?.querySelector('[data-evidence]'); if (el) el.classList.toggle('hidden'); }}
+                            >
+                              <Quote class="size-3" />
+                            </button>
                           {/if}
                           </div>
+                          {#if evidence?.evidence}
+                            <div data-evidence class="hidden rounded-md border border-border/30 bg-background/60 px-3 py-2 ml-1">
+                              <p class="text-[0.68rem] italic leading-relaxed text-muted-foreground">
+                                "{evidence.evidence}"
+                              </p>
+                              {#if evidence.source_url}
+                                <a href={evidence.source_url} target="_blank" rel="noopener" class="mt-1 inline-block text-[0.62rem] text-primary/70 hover:text-primary">
+                                  {evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]} ↗
+                                </a>
+                              {/if}
+                            </div>
+                          {/if}
                         </li>
                       {/each}
                     </ul>
