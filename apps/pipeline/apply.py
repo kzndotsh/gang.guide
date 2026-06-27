@@ -86,7 +86,7 @@ def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run
     return changes
 
 
-def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False) -> list[str]:
+def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False, source_url: str = None) -> list[str]:
     """Apply extracted edges. Mutates edges_list and existing_keys in place."""
     edges_added = []
 
@@ -117,6 +117,8 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
         new_edge = {"source": org_id, "target": target_id, "type": etype}
         if edge.get("evidence"):
             new_edge["evidence"] = edge["evidence"]
+        if source_url:
+            new_edge["source_url"] = source_url
         if edge.get("period"):
             # Convert "1977-1992" string to start_year/end_year ints
             import re as _re
@@ -188,7 +190,18 @@ def main():
             continue
 
         changes = apply_extraction(consensus, org_id, org_path_index, dry_run=args.dry_run)
-        edges = apply_edges(consensus, org_id, org_index, edges_list, existing_keys, dry_run=args.dry_run)
+
+        # Extract source URL from raw page HTML
+        source_url = None
+        raw_path = ROOT / "data" / "raw" / args.source / f"{slug}.txt"
+        if raw_path.exists():
+            import re as _re
+            raw_head = raw_path.read_text(encoding="utf-8")[:5000]
+            m = _re.search(r'<link rel="canonical" href="([^"]+)"', raw_head)
+            if m:
+                source_url = m.group(1)
+
+        edges = apply_edges(consensus, org_id, org_index, edges_list, existing_keys, dry_run=args.dry_run, source_url=source_url)
 
         if changes or edges:
             prefix = "[DRY] " if args.dry_run else ""
