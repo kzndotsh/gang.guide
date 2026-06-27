@@ -4718,16 +4718,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-gaylords/"
   },
   {
-    "id": "2b011a82f0b5",
-    "source": "org:almighty-gaylords-nation",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "In 1981, the Gaylords and the Insane Deuces felt it was time to choose an alliance. They went with the lessor of the evils which was the People Nation",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-gaylords/"
-  },
-  {
     "id": "c927cb27ae22",
     "source": "org:almighty-gaylords-nation",
     "target": "org:almighty-insane-popes-nation",
@@ -6124,16 +6114,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-popes/"
   },
   {
-    "id": "e11944f3d83b",
-    "source": "org:almighty-saints",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1980,
-    "end_year": 1989,
-    "evidence": "The Saints decided to join the Folk alliance which was very hard to decide because some of their worst enemies were Folks like Latin Souls, Satan Disciples, Two Six and Two Two Boys.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-saints/"
-  },
-  {
     "id": "120d55bfe226",
     "source": "org:almighty-saints",
     "target": "org:people-nation",
@@ -7513,14 +7493,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-cullerton-deuces/"
   },
   {
-    "id": "d6f134f849db",
-    "source": "org:cullerton-deuces",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "evidence": "In 1994, the Cullerton Deuces were officially a part of the Folk nation",
-    "source_url": "https://chicagoganghistory.com/gang/insane-cullerton-deuces/"
-  },
-  {
     "id": "d3574f68061f",
     "source": "org:cullerton-deuces",
     "target": "org:insane-deuces",
@@ -7622,15 +7594,6 @@
     "start_year": 1981,
     "end_year": 1992,
     "evidence": "The Insane Deuces were with the People alliance as of 1981.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-deuces/"
-  },
-  {
-    "id": "aae370ccab38",
-    "source": "org:insane-deuces",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1992,
-    "evidence": "In February of 1992, the Insane Deuces officially switched alliances from People to Folk and became part of the Spanish Cobra led 'Insane Family' which meant the Deuces were 'Insane Folks' now.",
     "source_url": "https://chicagoganghistory.com/gang/insane-deuces/"
   },
   {
@@ -10194,15 +10157,6 @@
     "type": "rivalry",
     "start_year": 1974,
     "evidence": "The Popes were quick not to tolerate this and fought the BGDs almost daily to the point that Chicago police needed to sweep the hallways with police dogs. These fights with the BGDs would start a permanent war with the Gangster Disciples for several decades to come.",
-    "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
-  },
-  {
-    "id": "fb6c18eaf9f4",
-    "source": "org:almighty-insane-popes-nation",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "evidence": "The Popes discovered the Vice Lords were cool guys and had no issue joining the People alliance after meeting the Vice Lords.",
     "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
   },
   {
