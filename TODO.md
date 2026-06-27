@@ -77,6 +77,14 @@
 - [ ] **Journal of Gang Research (NGCRC)** — Peer-reviewed, special reports on prison gangs, federal legislation
 - [ ] **Europol criminal network reports** — 821+ groups analyzed, good for international expansion if scope widens
 
+### Geographic Expansion Sources
+- [ ] **OJJDP "History of Street Gangs in the United States"** — Regional breakdowns (Northeast, South, Midwest). Scrape-friendly historical overview.
+- [ ] **TDCJ Security Threat Groups reports** — Texas Syndicate, Mexikanemi, Tango Blast (Houstone, D-Town), Barrio Azteca. Structures, histories, tattoos.
+- [ ] **FBI East Coast gang cases** — Trinitarios, UBN (Rikers origin), Bronx sets, Boston initiatives. RICO filings with named sets.
+- [ ] **DetroitStreetGangs.com** — Detroit-specific sets and profiles
+- [ ] **Purple Gang (Detroit)** — Prohibition-era, well-documented on Wikipedia + academic sources
+- [ ] **Oxford Research Encyclopedia** — "Street Gangs in the 20th-Century American City" (Northeast/Mid-Atlantic emphasis)
+
 ### Schema improvements
 - [ ] Add `tier` field to sources: 1=legal/court, 2=academic, 3=news/wiki, 4=community. Lets adjudicate.py weigh conflicts.
 - [ ] Add `evidence` field to edges (verbatim quote proving the relationship)
