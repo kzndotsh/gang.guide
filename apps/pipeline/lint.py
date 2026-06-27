@@ -216,8 +216,12 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         desc = org.get("description", "")
         if desc and desc[0].islower():
             warnings.append(f"{f}: description starts with lowercase")
+        if desc and not desc[0].isalnum():
+            warnings.append(f"{f}: description starts with non-alphanumeric '{desc[0]}' (likely scrape junk)")
         if re.search(r'^(Full Name|Also Known As|Name|Acronym|Founded|Origin|Founder|Videos|Territory|Ethnicity|Membership):', desc) or re.search(r'^[A-Z][^.]{0,30}(Also Known As|Founded|Acronym):', desc):
             warnings.append(f"{f}: description starts with infobox pattern (scrape junk)")
+        if "Search for:" in desc or "Recent Posts" in desc or "Other gangs nearby" in desc:
+            errors.append(f"{f}: description contains navigation/sidebar junk")
 
         # Type/lane mismatch
         lane = org.get("lane", "")
