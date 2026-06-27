@@ -329,14 +329,12 @@
                           </div>
                           {#if evidence?.evidence}
                             <div data-evidence class="hidden rounded-md border border-border/30 bg-background/60 px-3 py-2 ml-1">
-                              <p class="text-[0.68rem] italic leading-relaxed text-muted-foreground">
-                                "{evidence.evidence}"
+                              <p class="text-[0.68rem] leading-relaxed text-muted-foreground">
+                                <span class="italic">"{evidence.evidence}"</span>
+                                {#if evidence.source_url}
+                                  <span class="not-italic"> — </span><a href={evidence.source_url} target="_blank" rel="noopener" class="not-italic text-primary/70 hover:text-primary hover:underline">{evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}</a>
+                                {/if}
                               </p>
-                              {#if evidence.source_url}
-                                <a href={evidence.source_url} target="_blank" rel="noopener" class="mt-1 inline-block text-[0.62rem] text-primary/70 hover:text-primary">
-                                  {evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]} ↗
-                                </a>
-                              {/if}
                             </div>
                           {/if}
                         </li>
