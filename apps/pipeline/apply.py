@@ -86,7 +86,7 @@ def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run
     return changes
 
 
-def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False, source_url: str = None) -> list[str]:
+def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False, source_url: str | None = None) -> list[str]:
     """Apply extracted edges. Mutates edges_list and existing_keys in place."""
     edges_added = []
 
