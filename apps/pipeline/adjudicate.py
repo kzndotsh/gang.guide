@@ -40,6 +40,7 @@ Examples of INVALID evidence (reject these):
 - "Both gangs operated in the Humboldt Park area" → shared location ≠ alliance
 - "Members of X and Y were arrested together" → co-arrest ≠ alliance
 - "The neighborhood had Bloods and Crips" → co-existence ≠ any relationship
+- "X stands to benefit from Y's disarray" → opportunism ≠ rivalry
 
 Examples of VALID evidence (keep these):
 - "X and Y formed an alliance in 1977" → explicit alliance

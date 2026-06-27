@@ -344,6 +344,19 @@ def check_nation_consistency(orgs: dict[str, dict], edges: list[dict]):
             errors.append(f"edge[{i}]: {e['source']} is People Nation but has member_of → Folk Nation")
 
 
+def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
+    """Flag spin_off edges where the target is older than the source (likely reversed)."""
+    for i, e in enumerate(edges):
+        if e.get("type") != "spin_off":
+            continue
+        src_org = orgs.get(e.get("source", ""), {})
+        tgt_org = orgs.get(e.get("target", ""), {})
+        src_year = src_org.get("founded_year")
+        tgt_year = tgt_org.get("founded_year")
+        if src_year and tgt_year and tgt_year < src_year - 5:
+            warnings.append(f"edge[{i}]: spin_off direction suspect — {tgt_org.get('name','')} (founded {tgt_year}) is older than {src_org.get('name','')} (founded {src_year})")
+
+
 def check_isolated(orgs: dict[str, dict], edges: list[dict]):
     connected = set()
     for e in edges:
@@ -469,6 +482,7 @@ def main():
     check_page_title_orgs(orgs)
     check_stub_quality(orgs)
     check_nation_consistency(orgs, edges)
+    check_spinoff_direction(orgs, edges)
 
     # Print results
     if info:

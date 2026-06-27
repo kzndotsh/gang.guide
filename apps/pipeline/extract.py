@@ -80,7 +80,7 @@ EDGE TYPES:
 - rivalry: fight each other, documented conflict, war, beef
 - parent: umbrella organization (e.g. Folk Nation is parent of Gangster Disciples)
 - member_of: the subject belongs to a larger alliance/nation
-- spin_off: the target org formed from/splintered off the subject org
+- spin_off: the target org formed from/splintered off the subject org (A → spin_off → B means "B came from A")
 
 If the text is too short or uninformative, return empty arrays and null fields. Returning nothing is better than guessing.
 </rules>"""
