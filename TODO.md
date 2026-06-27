@@ -89,6 +89,30 @@
 - [ ] Add `tier` field to sources: 1=legal/court, 2=academic, 3=news/wiki, 4=community. Lets adjudicate.py weigh conflicts.
 - [ ] Add `evidence` field to edges (verbatim quote proving the relationship)
 - [ ] Add `source_url` to edges (where the evidence came from)
+- [ ] Add `membership_estimate` + `membership_year` fields to org schema
+- [ ] Add `structure_type` field (traditional/compressed/specialty/hybrid per Klein-Maxson typology)
+- [ ] Add `territory` GeoJSON field (optional, for orgs with known boundaries)
+- [ ] Add edge `weight` field (1-4 scale: 1=seen together, 2=co-offending, 3=co-membership, 4=co-leadership)
+
+### Datasets & Structured Sources (high pipeline value)
+- [ ] **Chicago PD Gang Boundaries GIS** (gis.chicagopolice.org) — Polygonal shapefiles with GANG_NAME attribute. Direct geo-join for territory data.
+- [ ] **ICPSR 2792** (Klein/Maxson) — Prevalence of 5 gang structures in 201 cities. Structured CSV with ethnic distributions, sizes.
+- [ ] **ICPSR 36787** (NYGS 2002-2012) — 2,388 cases, 606 variables. Gang presence, demographics, homicides, migration.
+- [ ] **TxDPS Gang Threat Assessment** — Tier 1/2/3 orgs with membership counts (Tango Blast 22-25K, Texas Mexican Mafia 4-6K, Barrio Azteca 1-2.5K).
+- [ ] **NJ State Police Gang Survey** (2007/2010) — Gang density across 21 counties, top orgs by prevalence.
+- [ ] **BOP National Gang Unit** — 82 active prison gangs, 17,029 validated inmates (2022). STG classifications.
+- [ ] **Stanford Mapping Militants Project** — Organizational lineage, splits, alliances for non-state armed groups. Cartel network evolution.
+- [ ] **UNODC SHERLOC** — Case law database, 192 countries, transnational organized crime filings.
+- [ ] **ACLED Mexico** — Downloadable CSV of criminal group violence events with geo coordinates.
+- [ ] **Borderland Beat** — Cartel maps, profiles, translated intel docs. Contributor-led.
+- [ ] **Densley/Grund co-offending network dataset** (GitHub) — Weighted tie-strength matrix. Reference model for edge weights.
+
+### Pipeline methodology improvements
+- [ ] Implement Eurogang durability filter (org must persist >= 3 months to be a valid node)
+- [ ] Klein-Maxson structural typology assignment in extract.py (traditional/compressed/specialty/collective/neotraditional)
+- [ ] Source reliability weighting in adjudicate.py (Tier 1 court > Tier 2 academic > Tier 3 news > Tier 4 community)
+- [ ] Edge weight computation from co-offending/co-membership evidence strength
+- [ ] Spatial validation: cross-reference org metro with Chicago GIS boundaries where available
 
 ---
 
