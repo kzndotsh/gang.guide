@@ -19,19 +19,19 @@
   <rect x="0.5" y="0.5" width="779" height="169" rx="6" stroke="#d0d7de" stroke-opacity="0.4"/>
 
   <!-- Row 1: Stats -->
-  <text class="value" x="20" y="42">967</text>
+  <text class="value" x="20" y="42">1,206</text>
   <text class="label" x="20" y="60">Organizations</text>
 
-  <text class="value" x="180" y="42">1,439</text>
+  <text class="value" x="180" y="42">1,750</text>
   <text class="label" x="180" y="60">Edges</text>
 
-  <text class="value" x="320" y="42">54%</text>
+  <text class="value" x="320" y="42">62%</text>
   <text class="label" x="320" y="60">Evidence-backed</text>
 
-  <text class="value" x="500" y="42">885</text>
+  <text class="value" x="500" y="42">1,014</text>
   <text class="label" x="500" y="60">Active</text>
 
-  <text class="value" x="620" y="42">82</text>
+  <text class="value" x="620" y="42">192</text>
   <text class="label" x="620" y="60">Inactive</text>
 
   <!-- Divider -->
@@ -40,24 +40,24 @@
   <!-- Row 2: Bars -->
   <text class="small" x="20" y="100">Rivalry</text>
   <rect class="bar-bg" x="80" y="91" width="200" height="10"/>
-  <rect class="bar-red" x="80" y="91" width="107" height="10"/>
-  <text class="small" x="288" y="100">777</text>
+  <rect class="bar-red" x="80" y="91" width="109" height="10"/>
+  <text class="small" x="288" y="100">955</text>
 
   <text class="small" x="20" y="120">Alliance</text>
   <rect class="bar-bg" x="80" y="111" width="200" height="10"/>
-  <rect class="bar-blue" x="80" y="111" width="76" height="10"/>
-  <text class="small" x="288" y="120">548</text>
+  <rect class="bar-blue" x="80" y="111" width="70" height="10"/>
+  <text class="small" x="288" y="120">615</text>
 
   <text class="small" x="20" y="140">Evidence</text>
   <rect class="bar-bg" x="80" y="131" width="200" height="10"/>
-  <rect class="bar-green" x="80" y="131" width="108" height="10"/>
-  <text class="small" x="288" y="140">788 / 1,439</text>
+  <rect class="bar-green" x="80" y="131" width="124" height="10"/>
+  <text class="small" x="288" y="140">1,099 / 1,750</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="420" y="100">2,013 citations</text>
-  <text class="small" x="420" y="120">378 multi-sourced</text>
-  <text class="small" x="420" y="140">569 have aliases</text>
-  <text class="small" x="580" y="100">841 with colors</text>
-  <text class="small" x="580" y="120">102 with symbols</text>
-  <text class="small" x="580" y="140">319 exact/circa years</text>
+  <text class="small" x="420" y="100">2,255 citations</text>
+  <text class="small" x="420" y="120">380 multi-sourced</text>
+  <text class="small" x="420" y="140">573 have aliases</text>
+  <text class="small" x="580" y="100">857 with colors</text>
+  <text class="small" x="580" y="120">114 with symbols</text>
+  <text class="small" x="580" y="140">437 exact/circa years</text>
 </svg>
