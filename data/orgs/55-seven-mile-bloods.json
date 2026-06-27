@@ -1,7 +1,12 @@
 {
   "id": "org:55-seven-mile-bloods",
   "name": "55 Seven Mile Bloods",
-  "aliases": [],
+  "aliases": [
+    "55 SMB",
+    "RedZone Bloods",
+    "55 SMB/RedZone",
+    "Seven Mile Bloods"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",

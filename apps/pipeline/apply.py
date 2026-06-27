@@ -55,11 +55,27 @@ def create_org(name: str, consensus: dict | None = None, metro: str = "Unknown",
     slug = slugify(name)
     if not slug or len(slug) < 3:
         return None
+
+    # Reject page titles and generic concepts
+    name_lower = name.lower()
+    if any(x in name_lower for x in [
+        "history of", "groups in", "street groups", "defunct",
+        "hybrid", "glossary", "overview", "map review", "tagger crews",
+    ]):
+        return None
+
     org_id = f"org:{slug}"
     path = DATA_ORGS / f"{slug}.json"
 
     if path.exists():
         return org_id
+
+    # Don't inherit metro for orgs with known non-local identifiers
+    if metro != "Unknown" and any(x in name_lower for x in [
+        "piru", "inglewood", "compton", "watts", "centinela",
+        "campanella", "skyline", "avalon",
+    ]):
+        metro = "Los Angeles"
 
     org = {
         "id": org_id,
@@ -70,7 +86,7 @@ def create_org(name: str, consensus: dict | None = None, metro: str = "Unknown",
         "metro": metro,
         "founded_year": None,
         "founded_year_precision": "estimate",
-        "description": f"Criminal organization based in {metro}.",
+        "description": f"{name} is a street gang based in {metro}.",
         "colors": [],
         "nation_affiliation": None,
         "status": "active",
@@ -149,7 +165,13 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
         target_id = resolve(target_name, org_index)
         if not target_id:
             if create_orgs and target_name:
-                target_id = create_org(target_name, metro=metro, source_url=source_url, dry_run=dry_run)
+                # Check if slug already exists (catches near-duplicates)
+                slug = slugify(target_name)
+                existing_path = DATA_ORGS / f"{slug}.json"
+                if existing_path.exists():
+                    target_id = f"org:{slug}"
+                else:
+                    target_id = create_org(target_name, metro=metro, source_url=source_url, dry_run=dry_run)
                 if target_id and not dry_run:
                     # Add to index so subsequent edges can resolve
                     from .lib.resolve import normalize
