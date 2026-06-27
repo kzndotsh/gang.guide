@@ -15,24 +15,24 @@
 - [ ] Sitemap generation in build.py
 
 ### Data
-- [ ] Add `membership_estimate` for orgs where known (from pipeline output)
-- [ ] Enrich thin descriptions (<100 chars) via LLM for ~75 CGH bulk-imports
+- [ ] Enrich thin descriptions (<100 chars) via LLM for stub orgs (~200 remaining)
 - [ ] `build.py` changelog: emit diff on each run (new orgs, changed fields)
-- [ ] Lint: add completeness score per org
 - [ ] Lint: detect edges between orgs with non-overlapping time periods
 - [ ] Merge 4 duplicate org pairs (gangster-crips-47/96/97/98)
 - [ ] Resolve ~30 contradictory edges (alliance + rivalry) with temporal data
-- [ ] Validate orgs against `schema.json` in lint.py
+- [ ] Audit 101 cross-metro rivalry edges (from lint check_cross_metro)
+- [ ] Backfill founded_year on remaining 29 historical-east stubs
 
 ### Pipeline
-- [ ] Run extraction on remaining sources (streetgangs, wikipedia)
+- [ ] Run extraction on remaining sources (streetgangs, prisongang, SPLC/ADL)
 - [ ] Wire up Wikipedia scraper (MediaWiki API, category traversal)
 - [ ] Wire up CourtListener scraper (gang-enhancement cases)
 - [ ] Add `--dry-run` cost estimate to extract CLI
 - [ ] Curated overrides file (blocklist/forcelist for known bad/good edges)
 - [ ] Aggregate `unresolved_names` from adjudication into review queue
 - [ ] Add async/concurrent extraction (run 3 temps in parallel for 3x speedup)
-- [ ] Backfill evidence on 651 old edges (run pipeline on StreetGangs + Wikipedia sources, upgrade existing edges)
+- [ ] Metro-aware resolve() — prefer same-city match for ambiguous names
+- [ ] Enrichment pass: backfill thin descriptions on stub orgs via LLM
 
 ### Infrastructure
 - [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data
@@ -44,6 +44,24 @@
 ---
 
 ## Done
+- [x] Run full pipeline on Detroit (25 pages, +78 orgs, +127 edges)
+- [x] Run full pipeline on NGCRC (6 academic profiles, +9 edges)
+- [x] Run full pipeline on NYC Historical (115 pages, +156 orgs, +178 edges)
+- [x] Run full pipeline on StoneGreasers (42 pages, +17 orgs, +42 edges)
+- [x] Auto-create org files from pipeline (`apply.py --create-orgs`)
+- [x] Backfill source_url on 788 CGH edges
+- [x] Backfill founded_year on 110 historical NYC/Chicago orgs (manual research)
+- [x] Lane-aware display_year fallback in build.py (historical orgs placed in correct era)
+- [x] Detroit lane created, 65 orgs assigned
+- [x] Scrapers: dsg.py, ngcrc.py, nyc.py, stonegreasers.py
+- [x] Prompt v2: extraction + adjudication rewritten with Anthropic best practices
+- [x] Lint: check_cross_metro, check_page_title_orgs, check_stub_quality, check_nation_consistency, check_spinoff_direction
+- [x] Pipeline guards: reject page titles, LA identifier detection, slug collision check, nation contradiction gate
+- [x] Evidence UI: toggle button with "quote — source" format, spacing fix
+- [x] Inspector tabs: consistent (#) count format
+- [x] Changelog modal: redesigned with inline diffs
+- [x] Network tab: connection count in header
+- [x] README: sources table, architecture in tech stack, stats SVG
 - [x] Merge nation_affiliation + nation edge type (field is source of truth, build.py generates)
 - [x] Add evidence field to edges (from pipeline adjudication)
 - [x] Expand symbols coverage via CGH pipeline (110 field upgrades)
