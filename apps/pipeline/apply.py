@@ -100,12 +100,7 @@ def create_org(name: str, consensus: dict | None = None, metro: str = "Unknown",
         if consensus.get("colors"):
             org["colors"] = consensus["colors"]
         if consensus.get("description"):
-            # Truncate at sentence boundary, max 500 chars
-            desc = consensus["description"]
-            if len(desc) > 500:
-                cut = desc[:500].rfind(".")
-                desc = desc[: cut + 1] if cut > 100 else desc[:500]
-            org["description"] = desc
+            org["description"] = consensus["description"]
 
     if source_url:
         org["sources"] = [{"url": source_url, "title": source_url.split("/")[2]}]
