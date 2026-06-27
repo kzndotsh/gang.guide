@@ -1,0 +1,20 @@
+{
+  "id": "org:bmg",
+  "name": "BMG",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Los Angeles",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Criminal organization based in Los Angeles.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

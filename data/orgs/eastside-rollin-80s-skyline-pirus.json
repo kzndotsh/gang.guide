@@ -1,0 +1,20 @@
+{
+  "id": "org:eastside-rollin-80s-skyline-pirus",
+  "name": "Eastside Rollin' 80s Skyline Pirus",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Criminal organization based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

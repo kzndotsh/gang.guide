@@ -1,0 +1,20 @@
+{
+  "id": "org:55-smb-redzone",
+  "name": "55 SMB/RedZone",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Criminal organization based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

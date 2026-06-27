@@ -1,0 +1,20 @@
+{
+  "id": "org:north-side-soldiers",
+  "name": "North Side Soldiers",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Criminal organization based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

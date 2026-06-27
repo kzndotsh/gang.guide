@@ -1,0 +1,23 @@
+{
+  "id": "org:dwbi",
+  "name": "DWBI",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": 2014,
+  "founded_year_precision": "circa",
+  "description": "DWBI ('Don't Worry Bout It') is a citywide street gang alliance in Metro Detroit comprising multiple independent cliques that broadly identify under the local Blood umbrella. The network began consolidating around 2014 and operates through numerous affiliated sub-groups spread across Detroit's east ",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
+      "title": "detroitstreetgangs.com"
+    }
+  ],
+  "symbols": [
+    "thumbs down"
+  ]
+}

@@ -11048,5 +11048,898 @@
     "target": "org:gangster-crips",
     "type": "rivalry",
     "evidence": "The organization became the subject of a major federal investigation in the late 2010s, centered on an extended violent conflict with the 7 Mile Playboy Gangster Crips, a feud that resulted in multiple deaths, including bystanders."
+  },
+  {
+    "source": "org:42-hustle-boyz",
+    "target": "org:crips",
+    "type": "member_of",
+    "evidence": "They are locally identified as an east-side Crip-aligned set",
+    "source_url": "https://detroitstreetgangs.com/42-hustle-boyz-detroit-mi/"
+  },
+  {
+    "source": "org:42-hustle-boyz",
+    "target": "org:55-seven-mile-bloods",
+    "type": "rivalry",
+    "evidence": "The gang gained broader notoriety during the 2010s following a series of violent conflicts with the 55 Seven Mile Bloods (55 SMB)",
+    "source_url": "https://detroitstreetgangs.com/42-hustle-boyz-detroit-mi/"
+  },
+  {
+    "source": "org:42-hustle-boyz",
+    "target": "org:redzone-bloods",
+    "type": "rivalry",
+    "evidence": "Their profile expanded through ongoing territorial conflicts with the 55 SMB (RedZone Bloods)",
+    "source_url": "https://detroitstreetgangs.com/42-hustle-boyz-detroit-mi/"
+  },
+  {
+    "source": "org:55-seven-mile-bloods",
+    "target": "org:bloods",
+    "type": "member_of",
+    "evidence": "The 55 Seven Mile Bloods —widely recognized as 'RedZone Bloods' —are documented as predominantly African American, and are one of Detroit's most entrenched and influential Blood-affiliated criminal street gangs",
+    "source_url": "https://detroitstreetgangs.com/55-seven-mile-bloods-detroit-mi/"
+  },
+  {
+    "source": "org:5point-nation-crips",
+    "target": "org:bloc-side-soldiers",
+    "type": "spin_off",
+    "evidence": "The gang traces its origins to two youth graffiti crews—the Bloc Side Soldiers (B.S.S.), which was founded by Zahid Sekou (a/k/a 'Tiny Joker'), and the North Side Soldiers (N.S.S.), which was founded by Tiny Joker's younger cousin known by the street moniker 'Syxx'—whose overlap in membership and territory gradually led to the development of a broader neighborhood identity.",
+    "source_url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/",
+    "start_year": 2015,
+    "end_year": 2016
+  },
+  {
+    "source": "org:5point-nation-crips",
+    "target": "org:north-side-soldiers",
+    "type": "spin_off",
+    "evidence": "The gang traces its origins to two youth graffiti crews—the Bloc Side Soldiers (B.S.S.), which was founded by Zahid Sekou (a/k/a 'Tiny Joker'), and the North Side Soldiers (N.S.S.), which was founded by Tiny Joker's younger cousin known by the street moniker 'Syxx'—whose overlap in membership and territory gradually led to the development of a broader neighborhood identity.",
+    "source_url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/",
+    "start_year": 2015,
+    "end_year": 2016
+  },
+  {
+    "source": "org:5point-nation-crips",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "rivalry",
+    "evidence": "Reported rivalries include: Neighborhood Crip sets, primarily the Rollin 60s",
+    "source_url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/"
+  },
+  {
+    "source": "org:5point-nation-crips",
+    "target": "org:black-p-stones",
+    "type": "rivalry",
+    "evidence": "Blood-affiliated gangs, mainly Black P. Stones / Jungle Stone Bloods",
+    "source_url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/"
+  },
+  {
+    "source": "org:5point-nation-crips",
+    "target": "org:jungle-stone-bloods",
+    "type": "rivalry",
+    "evidence": "Blood-affiliated gangs, mainly Black P. Stones / Jungle Stone Bloods",
+    "source_url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/"
+  },
+  {
+    "source": "org:6-mile-greenguyz",
+    "target": "org:shotgun-crips",
+    "type": "member_of",
+    "evidence": "Available sources describe the GreenGuyz as operating as a localized Detroit set within a wider ShotGun Crips framework",
+    "source_url": "https://detroitstreetgangs.com/6-mile-greenguyz-sgc-shotgun-crips/"
+  },
+  {
+    "source": "org:6-mile-greenguyz",
+    "target": "org:gangster-crips",
+    "type": "member_of",
+    "evidence": "frequently described as part of a Gangster Crips (3X / Movin' Gang)–influenced tradition",
+    "source_url": "https://detroitstreetgangs.com/6-mile-greenguyz-sgc-shotgun-crips/"
+  },
+  {
+    "source": "org:6-mile-greenguyz",
+    "target": "org:crips",
+    "type": "member_of",
+    "evidence": "The 6 Mile GreenGuyz, also known as ShotGun Crips (SGC), are documented as a predominantly African American, Crip-affiliated street gang",
+    "source_url": "https://detroitstreetgangs.com/6-mile-greenguyz-sgc-shotgun-crips/"
+  },
+  {
+    "source": "org:7-mile-playboy-gangster-crips",
+    "target": "org:gangster-crips",
+    "type": "member_of",
+    "evidence": "The 7 Mile Playboy Gangster Crips (7M PBGC) emerged in northwest Detroit in the early 2000s as a locally organized set affiliated with the Gangster Crips (3X/Movin')",
+    "source_url": "https://detroitstreetgangs.com/7-mile-playboy-gangster-crips-detroit-mi/"
+  },
+  {
+    "source": "org:7-mile-playboy-gangster-crips",
+    "target": "org:7-mile-rollin-60s-crips",
+    "type": "rivalry",
+    "evidence": "Their long-term feud with the 7 Mile Rollin 60s Crips remains a significant component of Detroit's Crip-affiliated history",
+    "source_url": "https://detroitstreetgangs.com/7-mile-playboy-gangster-crips-detroit-mi/"
+  },
+  {
+    "source": "org:7-mile-rollin-60s-crips",
+    "target": "org:7-mile-playboy-gangster-crips",
+    "type": "rivalry",
+    "evidence": "A prolonged conflict with the Playboy Gangster Crips/TTG culminated in an ATF-led RICO case that removed much of the leadership and destabilized the set.",
+    "source_url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/"
+  },
+  {
+    "source": "org:7-mile-rollin-60s-crips",
+    "target": "org:eastside-rollin-80s-skyline-pirus",
+    "type": "rivalry",
+    "evidence": "The gang maintains active conflicts with Eastside Rollin' 80s Skyline Pirus",
+    "source_url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/"
+  },
+  {
+    "source": "org:7-mile-rollin-60s-crips",
+    "target": "org:6-mile-bounty-hunna-watts-bloods",
+    "type": "rivalry",
+    "evidence": "The gang maintains active conflicts with Eastside Rollin' 80s Skyline Pirus and the 6 Mile Bounty Hunna Watts Bloods (6M BHB)",
+    "source_url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/"
+  },
+  {
+    "source": "org:7-mile-rollin-60s-crips",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "member_of",
+    "evidence": "the broader Detroit R60s identity includes smaller affiliated gangs such as PBF (Pusha/Push-It Boy Family), FOE-LIFE (Family Over Everything – Love Is Forever), and 7M R$C cliques",
+    "source_url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/"
+  },
+  {
+    "source": "org:7-mile-rollin-60s-crips",
+    "target": "org:rollin-neighborhood-crips",
+    "type": "member_of",
+    "evidence": "they remain one of the most established Crip presences on Detroit's Westside and retain influence within the larger Detroit Rollin Neighborhood Crips (2X/Rollin) structure",
+    "source_url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/"
+  },
+  {
+    "source": "org:black-p-stone-nation",
+    "target": "org:crip",
+    "type": "rivalry",
+    "evidence": "maintaining a steady presence through narcotics activity and long-running conflicts with Crip and Folk-aligned groups",
+    "source_url": "https://detroitstreetgangs.com/black-p-stone-nation-jungle-stone-bloods-detroit-lansing-mi/"
+  },
+  {
+    "source": "org:blood-affiliated-groups-in-detroit",
+    "target": "org:campanella-park-piru",
+    "type": "alliance",
+    "evidence": "55 Seven Mile Bloods (RedZone Bloods) grew into one of Detroit's most recognized Blood organizations, maintaining ties to Campanella Park Piru.",
+    "source_url": "https://detroitstreetgangs.com/detroit-bloods/"
+  },
+  {
+    "source": "org:blood-affiliated-groups-in-detroit",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "rivalry",
+    "evidence": "Longstanding conflicts have been documented between Crip—affiliated sets and major local criminal street gang organizations such as the Rollin 60s Neighborhood Crips",
+    "source_url": "https://detroitstreetgangs.com/detroit-bloods/"
+  },
+  {
+    "source": "org:blood-affiliated-groups-in-detroit",
+    "target": "org:7-mile-playboy-gangster-crips",
+    "type": "rivalry",
+    "evidence": "Longstanding conflicts have been documented between Crip—affiliated sets and major local criminal street gang organizations such as the Rollin 60s Neighborhood Crips , Playboy Gangster Crips",
+    "source_url": "https://detroitstreetgangs.com/detroit-bloods/"
+  },
+  {
+    "source": "org:blood-affiliated-groups-in-detroit",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry",
+    "evidence": "Longstanding conflicts have been documented between Crip—affiliated sets and major local criminal street gang organizations such as the Rollin 60s Neighborhood Crips , Playboy Gangster Crips , as well as various Gangster Disciple factions",
+    "source_url": "https://detroitstreetgangs.com/detroit-bloods/"
+  },
+  {
+    "source": "org:blood-affiliated-groups-in-detroit",
+    "target": "org:42-hustle-boyz",
+    "type": "rivalry",
+    "evidence": "Rivals referenced in reporting or public records have included: 42 Hustle Boyz , Crips , Rollin 60s Crips , select Bloods-gangs",
+    "source_url": "https://detroitstreetgangs.com/detroit-bloods/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:55-seven-mile-bloods",
+    "type": "rivalry",
+    "evidence": "Longstanding conflicts have been documented between Crip sets and organizations such as the Black P. Stones, Bounty Hunter Bloods, the 55 Seven Mile Bloods/RedZone Bloods",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:redzone-bloods",
+    "type": "rivalry",
+    "evidence": "Longstanding conflicts have been documented between Crip sets and organizations such as the Black P. Stones, Bounty Hunter Bloods, the 55 Seven Mile Bloods/RedZone Bloods",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:7-mile-playboy-gangster-crips",
+    "type": "member_of",
+    "evidence": "Crip-affiliated sets are active across multiple Detroit neighborhoods, including: • Northwest Detroit: Rollin 20s, Rollin 40s, Rollin 60s, Rollin 100s, Playboy Gangster Crips",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:5point-nation-crips",
+    "type": "member_of",
+    "evidence": "Crip-affiliated sets are active across multiple Detroit neighborhoods, including: • Northwest Detroit: Rollin 20s, Rollin 40s, Rollin 60s, Rollin 100s, Playboy Gangster Crips, 5Point Nation Crips (5PN)",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:4-gang",
+    "type": "member_of",
+    "evidence": "Crip-affiliated sets are active across multiple Detroit neighborhoods, including: • Eastside Detroit: 4 Gang",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:east-warren-crips",
+    "type": "member_of",
+    "evidence": "Crip-affiliated sets are active across multiple Detroit neighborhoods, including: • Eastside Detroit: 4 Gang, East Warren Crips",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:7-mile-rollin-60s-crips",
+    "type": "member_of",
+    "evidence": "According to a 2018 indictment involving a gang war between the 7 Mile Rollin' 60s Crips and the 7 Mile Playboy Gangster Crips",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:shotgun-crips",
+    "type": "member_of",
+    "evidence": "Affiliation referenced in reporting or public records have included: Crips (Detroit-born), Gangster Crips (3X/Movin Gang)",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:42-hustle-boyz",
+    "type": "member_of",
+    "evidence": "Affiliation referenced in reporting or public records have included: Crips (Detroit-born), 4s (Detroit-born)",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:rollin-20s-crips",
+    "type": "member_of",
+    "evidence": "Affiliation referenced in reporting or public records have included: Crips (Detroit-born), Rollin Crips (2X)",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:brightmoor-gangster-crips",
+    "type": "member_of",
+    "evidence": "Affiliation referenced in reporting or public records have included: Crips (Detroit-born), Grape Street Watts Crips (Detroit-born)",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:crips",
+    "target": "org:paybacc-crips",
+    "type": "member_of",
+    "evidence": "Affiliation referenced in reporting or public records have included: Crips (Gardena-lineage), Gangster Crips (3X / Movin Gang)",
+    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:22-bandcrew",
+    "type": "rivalry",
+    "evidence": "several Detroit GD street gangs gained visibility in drill music, federal indictments, and rivalries with Bloods, Vice Lords, 22 BandCrew, and other factions.",
+    "source_url": "https://detroitstreetgangs.com/detroit-gangster-disciples/"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:bandgang",
+    "type": "rivalry",
+    "evidence": "Rivals referenced in reporting or public records have included: TTO/886, BandGang/ShredGang, some Bloods",
+    "source_url": "https://detroitstreetgangs.com/detroit-gangster-disciples/"
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:shredgang",
+    "type": "rivalry",
+    "evidence": "Rivals referenced in reporting or public records have included: TTO/886, BandGang/ShredGang, some Bloods",
+    "source_url": "https://detroitstreetgangs.com/detroit-gangster-disciples/"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:detroit-blood-sets",
+    "type": "alliance",
+    "evidence": "Multiple local cliques (Bronco Boyz, Skoni Skams, 72 IWL, Imperial Insanes) strengthen the Westside VL network, forming alliances with Detroit-born Blood sets.",
+    "source_url": "https://detroitstreetgangs.com/detroit-vice-lords/"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:44-trey-mafia",
+    "type": "alliance",
+    "evidence": "The clique has longstanding ties to 44 Trey Mafia (TMF Bloods) and Chicago's Glo Gang.",
+    "source_url": "https://detroitstreetgangs.com/detroit-vice-lords/"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:glo-gang",
+    "type": "alliance",
+    "evidence": "The clique has longstanding ties to 44 Trey Mafia (TMF Bloods) and Chicago's Glo Gang.",
+    "source_url": "https://detroitstreetgangs.com/detroit-vice-lords/"
+  },
+  {
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:headbanger-bloods",
+    "type": "alliance",
+    "evidence": "Affiliation referenced in reporting or public records have included: Mafia Insane Vice Lords, People Nation (5X), Headbanger Bloods (Detroit-born)",
+    "source_url": "https://detroitstreetgangs.com/detroit-vice-lords/"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:5point-nation-crips",
+    "type": "member_of",
+    "evidence": "The organization is active within the broader 5Point Nation (5PN) and Movin Gang (3X) alliance structure",
+    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:eight-trey-gangster-crips",
+    "type": "spin_off",
+    "evidence": "W7M ETGC is generally understood to be a localized adaptation of the Eight Trey ('8Tray') Gangster Crips, a well-known Gangster Crip identity that originated in Los Angeles",
+    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:paybacc-crips",
+    "type": "spin_off",
+    "evidence": "The W/S Paybacc Crips (PBC) are a Gangster Crip–aligned street gang originating from Gardena, California, where they are more formally known as the Gardena Paybacc Crips (GPBC)",
+    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:rollin-neighborhood-crips",
+    "type": "rivalry",
+    "evidence": "Detroit's Gangster Crip (3X / Movin Gang) sets traditionally maintain opposition toward Rollin/Neighborhood (2X) Crips sets",
+    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:blood-sets",
+    "type": "rivalry",
+    "evidence": "Detroit's Gangster Crip (\"3X / Movin Gang\") sets traditionally maintain opposition toward Rollin/Neighborhood (\"2X\") Crips sets and various Blood-affiliated crews.",
+    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
+  },
+  {
+    "source": "org:gangster-crips",
+    "target": "org:bmg",
+    "type": "alliance",
+    "evidence": "Available sources and graffiti documentation indicate long-standing alliances and associations with local Gangster Disciples–aligned groups, including BMG",
+    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
+  },
+  {
+    "source": "org:headbanger-bloods",
+    "target": "org:bloods",
+    "type": "member_of",
+    "evidence": "Bloods (Detroit-born lineage)",
+    "source_url": "https://detroitstreetgangs.com/headbanger-bloods-detroit-mi/"
+  },
+  {
+    "source": "org:headbanger-bloods",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry",
+    "evidence": "documented conflicts with Crip- and Gangster Disciples–affiliated rivals",
+    "source_url": "https://detroitstreetgangs.com/headbanger-bloods-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:errol-flynns",
+    "type": "rivalry",
+    "evidence": "The gang's conflicts with the Errol Flynns defined much of the era's gang landscape.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:latin-counts-chicago",
+    "type": "alliance",
+    "evidence": "the MadDawg Bloods were sometimes called the Black Counts due to close ties with the Latin Counts.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:toledo-mafia-counts",
+    "type": "rivalry",
+    "evidence": "They maintained a rivalry with the Toledo Mafia Counts (TMC), which eventually overpowered and eliminated the Detroit set.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:22-bandcrew",
+    "type": "rivalry",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:tsn",
+    "type": "rivalry",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:rtm",
+    "type": "rivalry",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:cmh",
+    "type": "rivalry",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:hoodrich",
+    "type": "rivalry",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:wildlife",
+    "type": "rivalry",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:ygb",
+    "type": "alliance",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:ltc",
+    "type": "alliance",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:ctm",
+    "type": "alliance",
+    "evidence": "they maintained alliances with YGB, LTC, and CTM and rivalries with Bandcrew, TSN, RTM, CMH, HoodRich, and WildLife.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:suren-os-united-states",
+    "type": "rivalry",
+    "evidence": "this Latin Counts set feuded with Sur 13 and the Gangster Disciples.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry",
+    "evidence": "this Latin Counts set feuded with Sur 13 and the Gangster Disciples.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:jokers",
+    "type": "rivalry",
+    "evidence": "Known for large brawls—including a notable rumble with the Jokers at Berry School Playground",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:lover-boys",
+    "type": "parent",
+    "evidence": "The gang absorbed several smaller crews (Lover Boys, Kings' Men, Seven Crowns, Chilli-Macs).",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:kings-men",
+    "type": "parent",
+    "evidence": "The gang absorbed several smaller crews (Lover Boys, Kings' Men, Seven Crowns, Chilli-Macs).",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:seven-crowns",
+    "type": "parent",
+    "evidence": "The gang absorbed several smaller crews (Lover Boys, Kings' Men, Seven Crowns, Chilli-Macs).",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:chilli-macs",
+    "type": "parent",
+    "evidence": "The gang absorbed several smaller crews (Lover Boys, Kings' Men, Seven Crowns, Chilli-Macs).",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:famgoon",
+    "type": "spin_off",
+    "evidence": "BMF maintained ties to Detroit's street scene and Atlanta's rap industry before its collapse, with remnants later appearing in groups like Famgoon/Famerica.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:historical-and-defunct-street-groups-in-detroit",
+    "target": "org:famerica",
+    "type": "spin_off",
+    "evidence": "BMF maintained ties to Detroit's street scene and Atlanta's rap industry before its collapse, with remnants later appearing in groups like Famgoon/Famerica.",
+    "source_url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:bloods",
+    "type": "member_of",
+    "evidence": "DWBI ('Don't Worry Bout It') is a citywide street gang alliance comprising multiple independent cliques that broadly identify under Detroit's local Blood umbrella",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:50z",
+    "type": "rivalry",
+    "evidence": "Internal tensions exist, including longstanding disputes with certain Eastside 5s such as the 50z and 55.",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:tmcne",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:24cashgang",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC)",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:murdaville",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC), Murdaville/SellGang (9's)",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:sellgang",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC), Murdaville/SellGang (9's)",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:ricomafia",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC), Murdaville/SellGang (9's), RicoMafia/0430",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:a-block",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC), Murdaville/SellGang (9's), RicoMafia/0430, A-Block/Avon Gangsters",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:avon-gangsters",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC), Murdaville/SellGang (9's), RicoMafia/0430, A-Block/Avon Gangsters",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:purple-heart-vets",
+    "type": "rivalry",
+    "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC), Murdaville/SellGang (9's), RicoMafia/0430, A-Block/Avon Gangsters , 43/Purple Heart Vets",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:btd",
+    "type": "alliance",
+    "evidence": "Allies: DWBI, 1229, MurdaGang, other mixed-affiliation cliques",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:dwbi",
+    "target": "org:574-swipegang",
+    "type": "alliance",
+    "evidence": "SwipeGang has significant alliances with TOB, DWBI, and GMO",
+    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "alliance",
+    "evidence": "PBF, has been identified in community and public reporting as Crip-aligned through association with the Rollin 60s Neighborhood Crips",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:inglewood-family-gangster-bloods",
+    "type": "alliance",
+    "evidence": "BandGang/ShredGang (BGSG), which has been described as maintaining loose affiliations with West Coast–based Blood–affiliated sets such as the Inglewood Family Gangster Bloods (IFGB)",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:fruit-town-piru",
+    "type": "alliance",
+    "evidence": "BandGang/ShredGang (BGSG), which has been described as maintaining loose affiliations with West Coast–based Blood–affiliated sets such as the Inglewood Family Gangster Bloods (IFGB), Neighborhood Pirus (NHP), and the Centinela Park Family Gangster Bloods (CPFGB)",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:centinela-park-family-gangster-bloods",
+    "type": "alliance",
+    "evidence": "BandGang/ShredGang (BGSG), which has been described as maintaining loose affiliations with West Coast–based Blood–affiliated sets such as the Inglewood Family Gangster Bloods (IFGB), Neighborhood Pirus (NHP), and the Centinela Park Family Gangster Bloods (CPFGB)",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:cash-flow-posse",
+    "type": "alliance",
+    "evidence": "Incarcerated members often link with Cash Flow Posse (CFP) to form CountCash.",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:spanish-gangster-disciples-chicago",
+    "type": "alliance",
+    "evidence": "Maintain working relationships with select Gangster Disciple subsets, particularly Spanish Gangster Disciple (SGD) sets.",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:latin-counts-chicago",
+    "type": "member_of",
+    "evidence": "Operates as the Southwest Detroit set of the Latin Counts (active since the 1980s).",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:latin-counts-chicago",
+    "type": "rivalry",
+    "evidence": "sporadic conflicts with groups like the Latin Counts (5600 TMC)",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:24cashgang",
+    "type": "rivalry",
+    "evidence": "Conflicts with 24CashGang and other Westside rivals.",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:statemafiaboyz",
+    "type": "rivalry",
+    "evidence": "contributing to tensions with rival groups such as StateMafiaBoyz.",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "rivalry",
+    "evidence": "Rivals: GDs, Latin Kings, SUR-13, Crips, Folk Nation-aligned crews",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:latin-kings",
+    "type": "rivalry",
+    "evidence": "Rivals: GDs, Latin Kings, SUR-13, Crips, Folk Nation-aligned crews",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:sur-13",
+    "type": "rivalry",
+    "evidence": "Rivals: GDs, Latin Kings, SUR-13, Crips, Folk Nation-aligned crews",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:crips",
+    "type": "rivalry",
+    "evidence": "Rivals: GDs, Latin Kings, SUR-13, Crips, Folk Nation-aligned crews",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:folk-nation",
+    "type": "rivalry",
+    "evidence": "Rivals: GDs, Latin Kings, SUR-13, Crips, Folk Nation-aligned crews",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:55-seven-mile-bloods",
+    "type": "rivalry",
+    "evidence": "Rivals: Seven Mile Bloods, ABM.",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:abm",
+    "type": "rivalry",
+    "evidence": "Rivals: Seven Mile Bloods, ABM.",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:22-bandcrew",
+    "type": "rivalry",
+    "evidence": "Rivals include 22 BandCrew and other Crips-affiliated sets.",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:trust-no-one",
+    "type": "rivalry",
+    "evidence": "Court records indicate that the case stemmed from disputes with rival criminal street gangs, known as Trust No One (TNO) and Too Much Cash (TMC), driven in part by competition over credit card fraud activity",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:too-much-cash",
+    "type": "rivalry",
+    "evidence": "Court records indicate that the case stemmed from disputes with rival criminal street gangs, known as Trust No One (TNO) and Too Much Cash (TMC), driven in part by competition over credit card fraud activity",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:bounty-hunna-bloods",
+    "type": "rivalry",
+    "evidence": "Cited as a targeted rival in a Bounty Hunna Bloods indictment",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:major-neighborhood-street-groups-in-detroit",
+    "target": "org:glockboyz",
+    "type": "rivalry",
+    "evidence": "Rivals include Blood-affiliated sets and local cliques such as Glockboyz",
+    "source_url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/"
+  },
+  {
+    "source": "org:7-mile-playboy-gangster-crips",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance",
+    "evidence": "The Playboy Gangster Crips maintain strong ties with the Brightmoor Gangster Disciples and have notable overlap with local IGD members, a relationship that has shaped alliances on the city's Westside.",
+    "source_url": "https://detroitstreetgangs.com/playboy-gangster-crips-pbgc-33rd-gangsters/"
+  },
+  {
+    "source": "org:7-mile-playboy-gangster-crips",
+    "target": "org:east-warren-crips",
+    "type": "parent",
+    "evidence": "There are multiple Playboy Gangster Crip–aligned factions across Detroit, including the East Warren Crips",
+    "source_url": "https://detroitstreetgangs.com/playboy-gangster-crips-pbgc-33rd-gangsters/"
+  },
+  {
+    "source": "org:7-mile-playboy-gangster-crips",
+    "target": "org:eastside-playboy-gangster-crips",
+    "type": "parent",
+    "evidence": "There are multiple Playboy Gangster Crip–aligned factions across Detroit, including the East Warren Crips and the Eastside Playboy Gangster Crips",
+    "source_url": "https://detroitstreetgangs.com/playboy-gangster-crips-pbgc-33rd-gangsters/"
+  },
+  {
+    "source": "org:rollin-60s-neighborhood-crips",
+    "target": "org:7-mile-playboy-gangster-crips",
+    "type": "rivalry",
+    "evidence": "The organization became the subject of a major federal investigation in the late 2010s, centered on an extended violent conflict with the 7 Mile Playboy Gangster Crips, a feud that resulted in multiple deaths, including bystanders.",
+    "source_url": "https://detroitstreetgangs.com/rollin-60s-crips-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:gangster-crips",
+    "type": "rivalry",
+    "evidence": "Detroit's Rollin/Neighborhood (2X) Crips traditionally maintain opposition toward Gangster Crip (3X / Movin Gang) sets",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:55-smb-redzone",
+    "type": "rivalry",
+    "evidence": "Primary Rivalries: Blood sets ( 55 SMB/RedZone , Black P. Stones , Bounty Hunters, Head Bangers)",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:black-p-stones",
+    "type": "rivalry",
+    "evidence": "Primary Rivalries: Blood sets ( 55 SMB/RedZone , Black P. Stones , Bounty Hunters, Head Bangers)",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:bounty-hunter-watts-bloods",
+    "type": "rivalry",
+    "evidence": "Primary Rivalries: Blood sets ( 55 SMB/RedZone , Black P. Stones , Bounty Hunters, Head Bangers)",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:head-bangers",
+    "type": "rivalry",
+    "evidence": "Primary Rivalries: Blood sets ( 55 SMB/RedZone , Black P. Stones , Bounty Hunters, Head Bangers)",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "rivalry",
+    "evidence": "Primary Rivalries: Gangster Crips / 3X (Movin Gang), Blood sets ( 55 SMB/RedZone , Black P. Stones , Bounty Hunters, Head Bangers), Vice Lords",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:7-mile-playboy-gangster-crips",
+    "type": "rivalry",
+    "evidence": "7 Mile Rollin 60s vs 7 Mile Playboy Gangster Crips — One of Detroit's most documented Crip-on-Crip feuds. Resulted in multiple shootings and large federal cases: 12 R60s members convicted, 16 PBGC members convicted",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:rollin-neighborhood-crips",
+    "target": "org:paybacc-crips",
+    "type": "rivalry",
+    "evidence": "Paybacc Crips vs. Rollin 40s (7-Tel RFC) — Publicly reported mainly as intermittent street disputes, locals cite street fights and verbal online banter.",
+    "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:crips",
+    "type": "member_of",
+    "evidence": "the group has been identified as a 'subset of the Crips' active within the Five Points neighborhood of Detroit's 48219 ZIP code",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:gangster-crips",
+    "type": "member_of",
+    "evidence": "The set reflects a fusion of local Detroit gang structures with elements of Gangster Crip (3X/Movin Gang) self-identification.",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:5point-nation-crips",
+    "type": "member_of",
+    "evidence": "Within Detroit's west-side gang landscape, W7M ScoreGang is commonly described as a prominent faction within the broader 5Point Nation (5PN) alliance",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:bloc-side-soldiers",
+    "type": "spin_off",
+    "evidence": "Early roots trace to the tagger crew B.S.S. (Bloc Side Soldiers), which was founded by Zahid Sekou (a/k/a 'Tiny Joker') and later affiliated with smaller Five Points–area cliques as portions of the neighborhood adopted 5Point Nation (5PN) symbolism and terminology beginning around 2015.",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:eight-trey-gangster-crips",
+    "type": "spin_off",
+    "evidence": "W7M ETGC is widely understood to be influenced by the broader Eight Trey ('8Tray') Gangster Crip tradition... the group is generally viewed as a localized offshoot or adaptation of the Eight Trey tradition",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:7-mile-playboy-gangster-crips",
+    "type": "spin_off",
+    "evidence": "The phrasing also serves as a nod to the historical operating area of the 7 Mile Playboy Gangster Crips, who—according to the United States Department of Justice—were active along West Seven Mile Road between Lahser and Evergreen. The addition of 'Telegraph' by newer generations of Gangster Crips (3X / Movin' Gang) signals a westward expansion of that identity",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:black-p-stones-jungles",
+    "type": "rivalry",
+    "evidence": "Blood-affiliated sets on the Westside (notably 'Tag Wars' against Jungle Stones)",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
+  },
+  {
+    "source": "org:w7m-evergreen-telegraph-gangster-crips",
+    "target": "org:rollin-60s-neighborhood-crips",
+    "type": "rivalry",
+    "evidence": "Historical tension with Rollin 60s Neighborhood Crips and Rollin Neighborhood Crips (2X/Rollin)-aligned crews",
+    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
   }
 ]

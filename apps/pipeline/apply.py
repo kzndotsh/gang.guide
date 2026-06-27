@@ -10,6 +10,7 @@ Usage:
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -39,6 +40,59 @@ def build_org_path_index() -> dict[str, Path]:
         d = json.loads(f.read_text(encoding="utf-8"))
         index[d.get("id", "")] = f
     return index
+
+
+def slugify(name: str) -> str:
+    """Convert org name to a file-safe slug."""
+    s = name.lower().strip()
+    s = re.sub(r"[''']s\b", "s", s)  # possessives
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return s.strip("-")
+
+
+def create_org(name: str, consensus: dict | None = None, metro: str = "Unknown", source_url: str | None = None, dry_run: bool = False) -> str | None:
+    """Create a minimal org file from extracted data. Returns org_id or None."""
+    slug = slugify(name)
+    if not slug or len(slug) < 3:
+        return None
+    org_id = f"org:{slug}"
+    path = DATA_ORGS / f"{slug}.json"
+
+    if path.exists():
+        return org_id
+
+    org = {
+        "id": org_id,
+        "name": name,
+        "aliases": [],
+        "type": "street_gang",
+        "lane": None,
+        "metro": metro,
+        "founded_year": None,
+        "founded_year_precision": "estimate",
+        "description": f"Criminal organization based in {metro}.",
+        "colors": [],
+        "nation_affiliation": None,
+        "status": "active",
+        "sources": [],
+    }
+
+    # Enrich from consensus if this is the subject org
+    if consensus:
+        if consensus.get("founded_year"):
+            org["founded_year"] = consensus["founded_year"]
+        if consensus.get("colors"):
+            org["colors"] = consensus["colors"]
+        if consensus.get("description"):
+            org["description"] = consensus["description"][:300]
+
+    if source_url:
+        org["sources"] = [{"url": source_url, "title": source_url.split("/")[2]}]
+
+    if not dry_run:
+        path.write_text(json.dumps(org, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    return org_id
 
 
 def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run: bool = False) -> list[str]:
@@ -86,7 +140,7 @@ def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run
     return changes
 
 
-def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False, source_url: str | None = None) -> list[str]:
+def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False, source_url: str | None = None, create_orgs: bool = False, metro: str = "Unknown") -> list[str]:
     """Apply extracted edges. Mutates edges_list and existing_keys in place."""
     edges_added = []
 
@@ -94,7 +148,14 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
         target_name = edge.get("target", "")
         target_id = resolve(target_name, org_index)
         if not target_id:
-            continue
+            if create_orgs and target_name:
+                target_id = create_org(target_name, metro=metro, source_url=source_url, dry_run=dry_run)
+                if target_id and not dry_run:
+                    # Add to index so subsequent edges can resolve
+                    from .lib.resolve import normalize
+                    org_index[normalize(target_name)] = target_id
+            if not target_id:
+                continue
 
         etype = edge.get("type", "alliance")
         if target_id == org_id:
@@ -159,6 +220,7 @@ def main():
     parser = argparse.ArgumentParser(description="Apply extractions to org data")
     parser.add_argument("--source", required=True, help="Source to apply (e.g. chicago_history)")
     parser.add_argument("--dry-run", action="store_true", help="Preview changes without writing files")
+    parser.add_argument("--create-orgs", action="store_true", help="Auto-create org files for unresolved entities")
     args = parser.parse_args()
 
     source_dir = DATA_EXTRACTED / args.source
@@ -190,6 +252,19 @@ def main():
 
         consensus = json.loads(consensus_path.read_text(encoding="utf-8"))
         slug = page_dir.name
+
+        # Extract source URL from raw page
+        source_url = None
+        raw_path = ROOT / "data" / "raw" / args.source / f"{slug}.txt"
+        url_path = ROOT / "data" / "raw" / args.source / slug / "url.txt"
+        if url_path.exists():
+            source_url = url_path.read_text(encoding="utf-8").strip()
+        elif raw_path.exists():
+            raw_head = raw_path.read_text(encoding="utf-8")[:5000]
+            m = re.search(r'<link rel="canonical" href="([^"]+)"', raw_head)
+            if m:
+                source_url = m.group(1)
+
         org_id = page_map.get(f"{args.source}/{slug}")
 
         if not org_id:
@@ -197,21 +272,27 @@ def main():
             org_id = resolve(consensus.get("subject_org", ""), org_index)
 
         if not org_id:
-            continue
+            if args.create_orgs and consensus.get("subject_org"):
+                org_id = create_org(
+                    consensus["subject_org"],
+                    consensus=consensus,
+                    source_url=source_url,
+                    dry_run=args.dry_run,
+                )
+                if org_id and not args.dry_run:
+                    from .lib.resolve import normalize
+                    org_index[normalize(consensus["subject_org"])] = org_id
+                    org_path_index[org_id] = DATA_ORGS / f"{slugify(consensus['subject_org'])}.json"
+            if not org_id:
+                continue
 
         changes = apply_extraction(consensus, org_id, org_path_index, dry_run=args.dry_run)
 
-        # Extract source URL from raw page HTML
-        source_url = None
-        raw_path = ROOT / "data" / "raw" / args.source / f"{slug}.txt"
-        if raw_path.exists():
-            import re as _re
-            raw_head = raw_path.read_text(encoding="utf-8")[:5000]
-            m = _re.search(r'<link rel="canonical" href="([^"]+)"', raw_head)
-            if m:
-                source_url = m.group(1)
+        # Derive metro from subject org for new org creation
+        _, subject_data = load_org_by_id(org_id, org_path_index)
+        metro = (subject_data or {}).get("metro", "Unknown")
 
-        edges = apply_edges(consensus, org_id, org_index, edges_list, existing_keys, dry_run=args.dry_run, source_url=source_url)
+        edges = apply_edges(consensus, org_id, org_index, edges_list, existing_keys, dry_run=args.dry_run, source_url=source_url, create_orgs=args.create_orgs, metro=metro)
 
         if changes or edges:
             prefix = "[DRY] " if args.dry_run else ""

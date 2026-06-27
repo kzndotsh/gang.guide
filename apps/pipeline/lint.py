@@ -18,7 +18,8 @@ ORGS_DIR = ROOT / "data" / "orgs"
 RELS_FILE = ROOT / "data" / "edges.json"
 LANES_FILE = ROOT / "data" / "lanes.json"
 
-REQUIRED_FIELDS = {"id", "name", "lane", "description", "founded_year", "sources"}
+REQUIRED_FIELDS = {"id", "name", "description", "sources"}
+RECOMMENDED_FIELDS = {"lane", "founded_year"}
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -146,8 +147,13 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             if not org.get(field):
                 errors.append(f"{f}: missing required field '{field}'")
 
+        # Recommended fields (warning)
+        for field in RECOMMENDED_FIELDS:
+            if not org.get(field):
+                warnings.append(f"{f}: missing recommended field '{field}'")
+
         # Lane valid
-        lane = org.get("lane", "")
+        lane = org.get("lane") or ""
         if lane and lane_ids and lane not in lane_ids:
             errors.append(f"{f}: lane '{lane}' not in lanes.json")
 
@@ -224,7 +230,7 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             errors.append(f"{f}: description contains navigation/sidebar junk")
 
         # Type/lane mismatch
-        lane = org.get("lane", "")
+        lane = org.get("lane") or ""
         if "prison" in lane and org.get("type", "") == "street_gang":
             warnings.append(f"{f}: street_gang in prison lane (should be prison_gang?)")
         if "motorcycle" in lane and org.get("type", "") != "motorcycle_club":

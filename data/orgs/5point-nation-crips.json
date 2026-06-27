@@ -1,0 +1,28 @@
+{
+  "id": "org:5point-nation-crips",
+  "name": "5Point Nation Crips",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The 5Point Nation Crips (5PN) is a neighborhood-based Crip-affiliated street gang alliance operating in Detroit's Five Points area on the city's far northwest side, documented as beginning to form between 2015 and 2016. Rather than functioning as a single centralized gang, it operates as a loose coa",
+  "colors": [
+    "blue"
+  ],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/",
+      "title": "detroitstreetgangs.com"
+    }
+  ],
+  "symbols": [
+    "three fingers",
+    "six-point star",
+    "seven",
+    "pitchfork"
+  ]
+}

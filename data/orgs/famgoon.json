@@ -1,0 +1,20 @@
+{
+  "id": "org:famgoon",
+  "name": "Famgoon",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Criminal organization based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

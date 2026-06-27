@@ -1,0 +1,20 @@
+{
+  "id": "org:tck-crew",
+  "name": "TCK Crew",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "TCK Crew is a tagger crew historically identified by Detroit Police for widespread tagging across commercial and public structures. Multiple members were arrested in 2014 during coordinated anti-graffiti operations. The crew is tracked alongside numerous Detroit street gangs and sets.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/tagger-crews-street-groups-in-detroit/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

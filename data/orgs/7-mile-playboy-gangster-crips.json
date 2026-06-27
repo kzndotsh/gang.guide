@@ -1,0 +1,31 @@
+{
+  "id": "org:7-mile-playboy-gangster-crips",
+  "name": "7 Mile Playboy Gangster Crips",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The 7 Mile Playboy Gangster Crips (7M PBGC) emerged in northwest Detroit in the early 2000s as a locally organized set affiliated with the Gangster Crips (3X/Movin'). The group was the subject of a 2019 federal investigation. They maintain a long-term feud with the 7 Mile Rollin 60s Crips, which rem",
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/7-mile-playboy-gangster-crips-detroit-mi/",
+      "title": "detroitstreetgangs.com"
+    }
+  ],
+  "symbols": [
+    "rabbit ears",
+    "number 7",
+    "letter G",
+    "letter C",
+    "PBGC",
+    "33rd Gangster"
+  ]
+}

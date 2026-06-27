@@ -1,0 +1,20 @@
+{
+  "id": "org:ricomafia",
+  "name": "RicoMafia",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Criminal organization based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

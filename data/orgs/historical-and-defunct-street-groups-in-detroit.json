@@ -1,0 +1,20 @@
+{
+  "id": "org:historical-and-defunct-street-groups-in-detroit",
+  "name": "Historical and Defunct Street Groups in Detroit",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "A compilation page documenting multiple historical and defunct criminal street gangs and drug trafficking enterprises that operated in Detroit from the Prohibition era through the 2010s. These organizations ranged from bootlegging operations like the Purple Gang and Sugar House Gang to modern drug t",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

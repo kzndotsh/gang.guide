@@ -1,0 +1,20 @@
+{
+  "id": "org:glockboyz",
+  "name": "Glockboyz",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Criminal organization based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/",
+      "title": "detroitstreetgangs.com"
+    }
+  ]
+}

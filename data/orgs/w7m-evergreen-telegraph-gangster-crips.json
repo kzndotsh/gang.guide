@@ -1,0 +1,29 @@
+{
+  "id": "org:w7m-evergreen-telegraph-gangster-crips",
+  "name": "W7M Evergreen Telegraph Gangster Crips",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Detroit",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The W7M Evergreen Telegraph Gangster Crips (W7M ETGC), commonly referred to as W7M ScoreGang (SCRG), are a predominantly African American, Detroit-based Crip-affiliated street gang operating on Detroit's far northwest side. They are a prominent faction within the 5Point Nation alliance and reflect a",
+  "colors": [
+    "blue",
+    "black"
+  ],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/",
+      "title": "detroitstreetgangs.com"
+    }
+  ],
+  "symbols": [
+    "six-pointed stars",
+    "three-finger hand signs",
+    "Star of David",
+    "three-point crown"
+  ]
+}
