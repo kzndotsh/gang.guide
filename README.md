@@ -101,7 +101,9 @@ just dev
 
 ## Data
 
-Stats are computed at build time by `build.py` and embedded in `graph.json`.
+Stats are computed at build time by `build.py` and embedded in `graph.json`. All relationships are evidence-backed with verbatim quotes from source material.
+
+**Sources:**
 
 | | | |
 |---|---|---|
