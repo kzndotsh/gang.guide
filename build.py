@@ -32,9 +32,15 @@ def build_layout(org, lane_meta, slot):
     precision = org.get("founded_year_precision")
 
     if not year:
-        # No year: deterministic spread across 1965-2005 based on org id
+        # No year: deterministic spread based on lane era
         h = hash(org["id"]) & 0xFFFF
-        display_year = 1965 + (h % 40)
+        lane_id = org.get("lane", "")
+        if lane_id == "historical-east":
+            display_year = 1948 + (h % 15)  # 1948-1963
+        elif lane_id == "chicago-independent":
+            display_year = 1955 + (h % 20)  # 1955-1975
+        else:
+            display_year = 1965 + (h % 40)  # 1965-2005
     elif precision in ("decade", "circa") or year % 10 == 0:
         # Round/imprecise year: jitter within ±4 years
         h = hash(org["id"]) & 0xFF
