@@ -288,6 +288,7 @@
                   <Accordion.Content class="px-2 pb-2 pt-0">
                     <ul class="flex list-none flex-col gap-1 p-0">
                       {#each group.items as conn (conn.peerId + conn.type)}
+                        {@const evidence = (node?.data as any)?.edgeEvidence?.find((e: any) => e.target === conn.peerId && e.type === conn.type)}
                         <li>
                           <button
                             type="button"
@@ -315,6 +316,14 @@
                               </span>
                             {/if}
                           </button>
+                          {#if evidence?.evidence}
+                            <p class="mt-1 px-3 text-[0.68rem] italic leading-tight text-muted-foreground/80">
+                              "{evidence.evidence}"
+                              {#if evidence.source_url}
+                                <a href={evidence.source_url} target="_blank" rel="noopener" class="ml-1 not-italic text-primary/60 hover:text-primary">↗</a>
+                              {/if}
+                            </p>
+                          {/if}
                         </li>
                       {/each}
                     </ul>

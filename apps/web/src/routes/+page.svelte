@@ -91,7 +91,7 @@
   );
 
   // Lazy-load details (descriptions, sources) on demand
-  let detailsCache = $state<Record<string, { description?: string; sources?: any[] }>>({});
+  let detailsCache = $state<Record<string, { description?: string; sources?: any[]; edges?: any[] }>>({});
   let detailsLoaded = $state(false);
 
   async function loadDetails() {
@@ -122,6 +122,7 @@
         ...selectedNode.data,
         description: details.description ?? selectedNode.data?.description,
         sources: details.sources ?? selectedNode.data?.sources,
+        edgeEvidence: details.edges ?? [],
       },
     };
   });
