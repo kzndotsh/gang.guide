@@ -9,31 +9,32 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Texas_Syndicate",
-      "title": "Texas Syndicate \u2014 Wikipedia"
+      "title": "Texas Syndicate — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hermandad_Aria_de_Texas",
-      "title": "Hermandad Aria de Texas \u2014 Wikipedia"
+      "title": "Hermandad Aria de Texas — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Black_Guerrilla_Family",
-      "title": "Black Guerrilla Family \u2014 Wikipedia"
+      "title": "Black Guerrilla Family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Gulf_Cartel",
-      "title": "Gulf Cartel \u2014 Wikipedia"
+      "title": "Gulf Cartel — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/C%C3%A1rtel_del_Golfo",
-      "title": "C%C3%A1rtel del Golfo \u2014 Wikipedia"
+      "title": "C%C3%A1rtel del Golfo — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Los_Zetas",
-      "title": "Los Zetas \u2014 Wikipedia"
+      "title": "Los Zetas — Wikipedia"
     }
   ],
   "description": "The Texas Syndicate is a criminal prison gang that originated in Folsom State Prison, California in the early 1970s. Predominantly Hispanic, it was formed to protect Texas-born inmates from other prison gangs.",
   "status": "active",
   "aliases": [],
-  "colors": []
+  "colors": [],
+  "membership_estimate": 4000
 }

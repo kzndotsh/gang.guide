@@ -24,5 +24,6 @@
     "Rollin 30s"
   ],
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 850
 }

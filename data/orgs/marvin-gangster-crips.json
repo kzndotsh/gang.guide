@@ -27,5 +27,8 @@
     "gray"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "three golf balls"
+  ]
 }

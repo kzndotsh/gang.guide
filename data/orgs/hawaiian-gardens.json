@@ -31,5 +31,9 @@
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Hawaiian Punch (Punchy)"
+  ],
+  "membership_estimate": 2000
 }

@@ -20,5 +20,9 @@
     "Opal Street Locos",
     "OSL"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "XV",
+    "fg15"
+  ]
 }

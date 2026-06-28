@@ -72,5 +72,6 @@
     "white"
   ],
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 50000
 }

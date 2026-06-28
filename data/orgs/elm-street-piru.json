@@ -12,15 +12,15 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Elm_Street_Piru",
-      "title": "Elm Street Piru \u2014 Wikipedia"
+      "title": "Elm Street Piru — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Kelly_Park_Compton_Crips",
-      "title": "Kelly Park Compton Crips \u2014 Wikipedia"
+      "title": "Kelly Park Compton Crips — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Mob_Piru",
-      "title": "Mob Piru \u2014 Wikipedia"
+      "title": "Mob Piru — Wikipedia"
     }
   ],
   "colors": [
@@ -28,5 +28,8 @@
   ],
   "nation_affiliation": "org:bloods",
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "356%"
+  ]
 }

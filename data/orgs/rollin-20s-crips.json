@@ -7,8 +7,11 @@
   "metro": "Los Angeles",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Rollin 20s Crips is a street gang based in Los Angeles.",
-  "colors": [],
+  "description": "The Rollin 20s Crips are a Crip subset based in Long Beach, California. They are known for wearing black and gold and using the Pittsburgh Steelers logo as a gang identifier.",
+  "colors": [
+    "black",
+    "gold"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
@@ -16,5 +19,8 @@
       "url": "https://detroitstreetgangs.com/detroit-crips/",
       "title": "detroitstreetgangs.com"
     }
+  ],
+  "symbols": [
+    "Pittsburgh Steelers emblem"
   ]
 }

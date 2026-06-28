@@ -22,5 +22,9 @@
     "76ECG"
   ],
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "76 Gas Station logo",
+    "Philadelphia 76ers"
+  ]
 }

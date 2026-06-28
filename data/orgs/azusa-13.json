@@ -33,5 +33,6 @@
     "blue"
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [],
+  "membership_estimate": 250
 }

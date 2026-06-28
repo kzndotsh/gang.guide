@@ -1,15 +1,15 @@
 {
   "id": "org:suren-os-united-states",
-  "name": "Sure\u00f1os",
+  "name": "Sureños",
   "lane": "other-national",
   "metro": "United States",
   "founded_year": 1968,
   "founded_year_precision": "range",
-  "description": "The Sure\u00f1os are a large network of loosely affiliated Mexican-American and Central American street gangs in Southern California that pay tribute to the Mexican Mafia (La Eme) prison gang. The Sure\u00f1o identity spread from California prisons in the 1960s\u201370s and now encompasses thousands of cliques across the US.",
+  "description": "The Sureños are a large network of loosely affiliated Mexican-American and Central American street gangs in Southern California that pay tribute to the Mexican Mafia (La Eme) prison gang. The Sureño identity spread from California prisons in the 1960s–70s and now encompasses thousands of cliques across the US.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Surenos",
-      "title": "Surenos \u2014 Wikipedia"
+      "title": "Surenos — Wikipedia"
     }
   ],
   "colors": [
@@ -21,5 +21,9 @@
     "Sur 13"
   ],
   "type": "street_gang",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "13"
+  ],
+  "membership_estimate": 20000
 }

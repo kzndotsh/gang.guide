@@ -15,12 +15,17 @@
   "colors": [
     "blue"
   ],
-  "founded_year": 1974,
-  "founded_year_precision": "decade",
+  "founded_year": 1981,
+  "founded_year_precision": "circa",
   "aliases": [
     "Five Time Hometown Gangster Crips (HTGC",
     "HTGC",
     "Five Time Hometown Gangster Crips"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "5x",
+    "V"
+  ],
+  "membership_estimate": 90
 }

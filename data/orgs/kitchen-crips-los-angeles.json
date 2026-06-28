@@ -27,5 +27,8 @@
   ],
   "founded_year_precision": "estimate",
   "status": "active",
-  "aliases": []
+  "aliases": [],
+  "symbols": [
+    "KC"
+  ]
 }

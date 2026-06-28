@@ -24,6 +24,6 @@
     "red"
   ],
   "nation_affiliation": "org:bloods",
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "circa",
   "status": "active"
 }

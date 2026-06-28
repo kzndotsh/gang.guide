@@ -20,5 +20,8 @@
   "aliases": [
     "WBC"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "WB"
+  ]
 }

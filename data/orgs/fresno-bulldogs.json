@@ -12,32 +12,36 @@
   "lane": "california-latino-inland",
   "founded_year": 1984,
   "founded_year_precision": "exact",
-  "description": "Primarily Mexican American criminal street and prison gang based in Fresno, California, founded in 1984. One of the biggest drug gangs in Central California with an estimated 12,000 members. Engaged in drug trafficking, human trafficking, murder, and other crimes. Unaffiliated with Sure\u00f1os or Norte\u00f1os, and rivals with multiple prison gangs.",
+  "description": "Primarily Mexican American criminal street and prison gang based in Fresno, California, founded in 1984. One of the biggest drug gangs in Central California with an estimated 12,000 members. Engaged in drug trafficking, human trafficking, murder, and other crimes. Unaffiliated with Sureños or Norteños, and rivals with multiple prison gangs.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Fresno_Bulldogs",
-      "title": "Fresno Bulldogs \u2014 Wikipedia"
+      "title": "Fresno Bulldogs — Wikipedia"
     },
     {
       "url": "https://www.justice.gov/usao-edca/pr/38-gang-members-and-associates-charged-federal-complaint-result-operation-shock-collar",
-      "title": "Fresno Bulldogs Operation Shock Collar \u2014 DOJ"
+      "title": "Fresno Bulldogs Operation Shock Collar — DOJ"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Asian_Boyz",
-      "title": "Asian Boyz \u2014 Wikipedia"
+      "title": "Asian Boyz — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Menace_of_Destruction",
-      "title": "Menace of Destruction \u2014 Wikipedia"
+      "title": "Menace of Destruction — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Norte%C3%B1os",
-      "title": "Norte%C3%B1os \u2014 Wikipedia"
+      "title": "Norte%C3%B1os — Wikipedia"
     }
   ],
   "metro": "Fresno",
   "colors": [
     "red"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 6000,
+  "symbols": [
+    "bulldog"
+  ]
 }

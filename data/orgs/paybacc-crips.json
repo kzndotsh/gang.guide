@@ -7,8 +7,10 @@
   "metro": "Los Angeles",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Paybacc Crips is a street gang based in Los Angeles.",
-  "colors": [],
+  "description": "The Gardena Paybacc Crips (GPBC) are located on the West Side of Gardena, California, with territory stretching from El Segundo Ave to Redondo Beach Blvd between Normandie Ave and Vermont Ave. They are a Crip subset that identifies with the color green. The gang has a notable history of conflict with the Gardena Cycos 13 spanning over twenty years, and a former rivalry with the Mad Ass Gangster Crips that was eventually resolved through an alliance.",
+  "colors": [
+    "green"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [

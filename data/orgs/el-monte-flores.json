@@ -54,5 +54,6 @@
     "blue",
     "gray"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 3000
 }

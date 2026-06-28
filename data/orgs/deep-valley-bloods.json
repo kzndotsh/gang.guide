@@ -28,5 +28,6 @@
     "DVB"
   ],
   "nation_affiliation": "org:bloods",
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 85
 }

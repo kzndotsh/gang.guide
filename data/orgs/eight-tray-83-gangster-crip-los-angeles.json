@@ -19,5 +19,10 @@
   ],
   "nation_affiliation": "org:crips",
   "status": "active",
-  "aliases": []
+  "aliases": [],
+  "symbols": [
+    "83",
+    "T",
+    "3x"
+  ]
 }

@@ -3,16 +3,16 @@
   "name": "Sotel 13",
   "lane": "california-latino-westside",
   "metro": "Los Angeles",
-  "description": "West Los Angeles Sotel 13 is a predominately Latino street gang located near Stoner Park and named after the street \u201cSawtelle\u201d in West Los Angeles.",
+  "description": "West Los Angeles Sotel 13 is a predominately Latino street gang located near Stoner Park and named after the street “Sawtelle” in West Los Angeles.",
   "type": "street_gang",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Sotel_13",
-      "title": "Sotel 13 \u2014 Wikipedia"
+      "title": "Sotel 13 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Santa_Monica_13",
-      "title": "Santa Monica 13 \u2014 Wikipedia"
+      "title": "Santa Monica 13 — Wikipedia"
     }
   ],
   "founded_year": 1968,
@@ -21,5 +21,6 @@
     "blue"
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [],
+  "membership_estimate": 62
 }

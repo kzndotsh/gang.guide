@@ -20,5 +20,6 @@
     "blue"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 55
 }

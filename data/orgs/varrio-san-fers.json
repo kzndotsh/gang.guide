@@ -23,5 +23,6 @@
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 500
 }

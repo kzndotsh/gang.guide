@@ -9,7 +9,7 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/5_9_Brims_San_Diego",
-      "title": "5 9 Brims San Diego \u2014 Wikipedia"
+      "title": "5 9 Brims San Diego — Wikipedia"
     }
   ],
   "metro": "San Diego",
@@ -22,5 +22,6 @@
     "red"
   ],
   "nation_affiliation": "org:bloods",
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 100
 }
