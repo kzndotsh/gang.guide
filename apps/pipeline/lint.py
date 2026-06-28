@@ -185,12 +185,16 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             if c.lower() in ("give details", "unknown", ""):
                 warnings.append(f"{f}: invalid color value '{c}'")
 
-        # Crip set before 1969
+        # Crip/Blood/Piru set before parent movement existed
         y = org.get("founded_year")
-        if y and y < 1969 and "crip" in org.get("name", "").lower() and "crip" in (org.get("lane") or ""):
-            warnings.append(f"{f}: Crip set founded {y} (Crips started 1969)")
-        if y and y < 1972 and "piru" in org.get("name", "").lower():
-            warnings.append(f"{f}: Piru set founded {y} (Pirus started 1972)")
+        name_lower = org.get("name", "").lower()
+        lane_lower = (org.get("lane") or "").lower()
+        if y and y < 1969 and "crip" in name_lower and "crip" in lane_lower:
+            errors.append(f"{f}: Crip set founded {y} (Crips started 1969)")
+        if y and y < 1969 and "piru" in name_lower:
+            errors.append(f"{f}: Piru set founded {y} (Piru Street Boys started 1969)")
+        if y and y < 1969 and "blood" in name_lower and "blood" in lane_lower:
+            errors.append(f"{f}: Bloods set founded {y} (earliest Blood sets ~1969)")
 
         # Duplicate names
         name = org.get("name", "")

@@ -83,7 +83,7 @@ def needs_adjudication(runs: list[dict]) -> bool:
     edge_keys = Counter()
     for r in runs:
         for e in (r.get("edges") or []):
-            edge_keys[(e.get("target", "").lower(), e.get("type", ""))] += 1
+            edge_keys[((e.get("target") or "").lower(), (e.get("type") or ""))] += 1
     # If any edges only in 1 run, there's uncertainty
     uncertain_edges = sum(1 for count in edge_keys.values() if count == 1)
     total_edges = sum(edge_keys.values())
