@@ -184,6 +184,15 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
             continue  # skip self-references
         key = (org_id, target_id, etype)
         if key in existing_keys:
+            # Enrich existing edge if it lacks evidence
+            if edge.get("evidence") and not dry_run:
+                for e in edges_list:
+                    if (e["source"], e["target"], e["type"]) == key and not e.get("evidence"):
+                        e["evidence"] = edge["evidence"]
+                        if source_url:
+                            e["source_url"] = source_url
+                        edges_added.append(f"enriched: {etype}: {org_id} → {target_id}")
+                        break
             continue
 
         # Skip member_of edges that contradict the org's nation_affiliation
