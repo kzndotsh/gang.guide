@@ -1,7 +1,7 @@
 {
   "id": "org:project-gangster-bloods-in-pasadena",
   "name": "Project Gangster Bloods",
-  "lane": "california-bloods",
+  "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
   "description": "An African-American Blood gang set based in housing projects in the Riverside/Inland Empire area of Southern California.",
   "type": "street_gang",

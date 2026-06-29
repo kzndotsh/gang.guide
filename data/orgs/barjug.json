@@ -1,7 +1,7 @@
 {
   "id": "org:barjug",
   "name": "Barjug",
-  "lane": "california-bloods",
+  "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
   "description": "An Asian-American street gang active in the greater Los Angeles area, composed primarily of Southeast Asian youth.",
   "type": "street_gang",

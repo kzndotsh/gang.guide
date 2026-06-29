@@ -1,7 +1,7 @@
 {
   "id": "org:mid-wilshire-bloods",
   "name": "Mid Wilshire Bloods",
-  "lane": "california-bloods",
+  "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
   "description": "The Mid Wilshire Bloods are a predominantly African-American Blood gang based in the Mid-Wilshire area of Los Angeles, operating in the neighborhood between Western Avenue and La Brea Avenue along Wilshire Boulevard.",
   "type": "street_gang",

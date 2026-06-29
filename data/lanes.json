@@ -55,12 +55,6 @@
       "order": 35
     },
     {
-      "id": "california-bloods",
-      "label": "California · Bloods sets",
-      "group": "Bloods",
-      "order": 37
-    },
-    {
       "id": "california-bloods-compton",
       "label": "California · Bloods · Compton",
       "group": "Bloods",
