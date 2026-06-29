@@ -19,6 +19,7 @@ Run the full pipeline: `just pipeline chicago_history`
 | `ngcrc` | `ngcrc.py` | National Gang Crime Research Center |
 | `nyc_historical` | `nyc.py` | New York City Gangs |
 | `stonegreasers` | `stonegreasers.py` | StoneGreasers |
+| `unitedgangs` | `unitedgangs.py` | UnitedGangs.com |
 
 Additional scraper: `wikipedia.py` (general-purpose Wikipedia scraping).
 

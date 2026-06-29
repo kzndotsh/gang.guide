@@ -44,6 +44,7 @@
 ---
 
 ## Done
+- [x] Run full pipeline on UnitedGangs (1400+ edges, largest single-source extraction)
 - [x] Run full pipeline on Detroit (25 pages, +78 orgs, +127 edges)
 - [x] Run full pipeline on NGCRC (6 academic profiles, +9 edges)
 - [x] Run full pipeline on NYC Historical (115 pages, +156 orgs, +178 edges)
@@ -60,6 +61,13 @@
 - [x] Evidence UI: toggle button with "quote — source" format, spacing fix
 - [x] Inspector tabs: consistent (#) count format
 - [x] Changelog modal: redesigned with inline diffs
+- [x] Persistent nodes architecture (never destroyed on hover/select)
+- [x] Edge-index based rendering for O(1) edge lookup
+- [x] Edge modes: 'on hover' and 'all links' toggle
+- [x] Edge legend overlay (color-coded by type)
+- [x] Directional arrows on nation/spin-off/member_of/parent edges
+- [x] Unified top bar layout with pill-styled controls (zoom, search, year slider)
+- [x] Spelling variant duplicate detection in lint (Gangster/Gangsta, etc.)
 - [x] Network tab: connection count in header
 - [x] README: sources table, architecture in tech stack, stats SVG
 - [x] Merge nation_affiliation + nation edge type (field is source of truth, build.py generates)
@@ -155,9 +163,9 @@
 ---
 
 ## Discarded
-- JSONL for edges — JSON array works fine at 1,147 edges, JSONL adds complexity for no benefit at this scale
+- JSONL for edges — JSON array works fine at 3,152 edges, JSONL adds complexity for no benefit at this scale
 - Dynamic lane assignment based on filter state — lanes are a fixed taxonomy, not user-configurable; URL params handle filtering
-- Evaluate pixi.js / WebGL — Konva handles 967 nodes smoothly, no perf issues to solve yet
+- Evaluate pixi.js / WebGL — Konva handles 1,201 nodes smoothly, no perf issues to solve yet
 - Virtual rendering (only draw nodes in viewport) — all nodes render fine without virtualization at current scale
 - Web Worker for layout computation — layout is instant (<50ms), no jank to offload
 

@@ -148,7 +148,7 @@ The linter (`apps/pipeline/lint.py`) runs as a gate before build. Key checks:
 
 - **check_orgs** — required/recommended fields, valid lanes, source URLs, temporal logic
 - **check_edges** — valid org references, no self-refs, no dupes, valid types
-- **check_fuzzy_dupes** — word overlap + edit distance to detect duplicate orgs
+- **check_fuzzy_dupes** — word overlap + edit distance to detect duplicate orgs + cross-lane spelling variant detection
 - **check_cross_metro** — flags alliances between orgs in different metros
 - **check_page_title_orgs** — detects orgs that are actually page titles (not real gangs)
 - **check_stub_quality** — flags stub orgs with generic descriptions

@@ -19,7 +19,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 ```
 ├── build.py              # Generates graph.json + details.json from flat files
 ├── data/
-│   ├── orgs/             # One JSON file per org (source of truth, source of truth)
+│   ├── orgs/             # One JSON file per org (source of truth)
 │   ├── edges.json        # Edge list (alliances, rivalries, affiliations)
 │   ├── lanes.json        # Lane taxonomy + org anchors + metro defaults
 │   └── raw/              # 682MB scraped source material (gitignored)
@@ -119,5 +119,5 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 
 Stats are computed at build time and embedded in `graph.json` meta. Run `just build-data` to see current counts.
 
-- Edge types: nation, rivalry, alliance, spin-off
+- Edge types: nation, rivalry, alliance, member_of, spin-off, parent
 - Top sources: Wikipedia, StreetGangs, UnitedGangs, Chicago Gang History, DOJ

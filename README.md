@@ -88,7 +88,7 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 |-----------|------------|
 | **Data** | Flat JSON files, Python build script |
 | **Frontend** | SvelteKit 5, Konva.js, Tailwind CSS, shadcn-svelte |
-| **Rendering** | Raw Konva Canvas API (4-layer architecture) |
+| **Rendering** | Raw Konva Canvas API (persistent nodes, edge-index, directional arrows) |
 | **Deployment** | Cloudflare Workers via Alchemy IaC |
 | **Pipeline** | Python, sonnet 4.5 + opus 4.6 (LLM extraction) |
 | **Linting** | Ruff (Python), svelte-check (frontend) |

@@ -23,7 +23,7 @@ This document describes how gang.guide maintains data quality. All checks are en
 | HTML entities in description | Warning | Scrape junk (`&amp;`, `&#39;`) |
 | Alias > 50 chars | Warning | Likely scrape junk |
 | Invalid color value | Warning | Must be recognizable color names |
-| Crip before 1969, Piru before 1972 | Warning | Impossible founding date |
+| Crip/Blood before 1969, Piru before 1969 | Error | Impossible founding date |
 | Type/lane mismatch | Warning | e.g. `street_gang` in `prison` lane |
 | Name has whitespace/punctuation issues | Warning | Double spaces, colon, trailing space |
 | Description starts with non-alpha | Warning | Likely scrape junk |
@@ -51,6 +51,7 @@ This document describes how gang.guide maintains data quality. All checks are en
 | `check_stub_quality` | Info | Generic placeholder description, needs enrichment |
 | `check_isolated` | Info | Org has zero edges and no nation affiliation |
 | `check_fuzzy_dupes` | Warning | Two orgs with >90% name similarity |
+| `check_fuzzy_dupes` | Error | Cross-lane spelling variant duplicates (e.g. Gangster/Gangsta) |
 | `check_temporal_logic` | Warning | Org older than its affiliated nation |
 
 ## Description Quality (`check_descriptions`)

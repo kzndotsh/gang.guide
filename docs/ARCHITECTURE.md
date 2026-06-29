@@ -49,9 +49,13 @@ Also:
 
 SvelteKit prerendered to static HTML, deployed to Cloudflare Workers via Alchemy IaC.
 
-- **KonvaMap.svelte** — 4-layer canvas (background, edges, nodes, labels)
+- **KonvaMap.svelte** — persistent node architecture (nodes never destroyed on hover/select), edge-index based rendering
+- **Edge modes** — 'on hover' (show edges for hovered/selected node) and 'all links' (show every edge)
+- **Directional arrows** — nation/spin-off/member_of/parent edges rendered with arrowheads
+- **Edge legend overlay** — color-coded legend for edge types
 - **Inspector panel** — details view when a node is selected
 - **URL state** — `?org=`, `?year=`, `?lane=` sync bidirectionally
+- **Unified top bar** — zoom, search, and year slider styled as pills
 
 ### Deployment
 
