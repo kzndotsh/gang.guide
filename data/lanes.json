@@ -74,7 +74,7 @@
     },
     {
       "id": "california-bloods-other",
-      "label": "California · Bloods · other",
+      "label": "California · Bloods · Other",
       "group": "Bloods",
       "order": 41
     },
@@ -134,7 +134,7 @@
     },
     {
       "id": "california-crips-other",
-      "label": "California · Crips · other sets",
+      "label": "California · Crips · Other",
       "group": "Crips",
       "order": 56
     },
@@ -182,7 +182,7 @@
     },
     {
       "id": "california-latino-other",
-      "label": "California · Latino · other",
+      "label": "California · Latino · Other",
       "group": "Latino",
       "order": 69
     },
@@ -224,7 +224,7 @@
     },
     {
       "id": "other-national",
-      "label": "Other / National",
+      "label": "Other",
       "group": "Regional",
       "order": 90
     },
