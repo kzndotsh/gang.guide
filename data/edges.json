@@ -20461,7 +20461,7 @@
   {
     "source": "org:pirus",
     "target": "org:bloods",
-    "type": "member_of",
+    "type": "parent",
     "evidence": "The Pirus is an umbrella street gang alliance (under the larger alliance, Bloods)",
     "source_url": "https://unitedgangs.com/bloods-2/pirus/"
   },
