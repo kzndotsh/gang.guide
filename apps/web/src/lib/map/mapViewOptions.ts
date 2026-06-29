@@ -9,20 +9,14 @@ export type EdgeOption = {
 
 export const EDGE_OPTIONS: EdgeOption[] = [
   {
-    value: 'nation',
-    label: 'Nation ties',
-    hint: 'Only nation-affiliation lines (set → Folk/People/Bloods/Crips, etc.).',
-  },
-  {
-    value: 'focus',
-    label: 'Selected',
-    hint: 'All connection types for the org you clicked.',
-    needsSelection: true,
+    value: 'hover',
+    label: 'On hover',
+    hint: 'Edges appear only when hovering or selecting a node.',
   },
   {
     value: 'all',
     label: 'All links',
-    hint: 'Every alliance, rivalry, and affiliation on the map (default).',
+    hint: 'Every alliance, rivalry, and affiliation on the map.',
   },
 ];
 

@@ -3,7 +3,7 @@
   "name": "Latin Deuces",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "chicago-folk",
   "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",

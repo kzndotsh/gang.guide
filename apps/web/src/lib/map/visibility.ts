@@ -15,7 +15,7 @@ export function visibleEdgeCount(
   return graph.edges.filter((e) => {
     if (!nodeIds.has(e.source) || !nodeIds.has(e.target)) return false;
     if (edgeMode === 'all') return true;
-    if (edgeMode === 'focus' && selectedId) {
+    if (edgeMode === 'hover' && selectedId) {
       return e.source === selectedId || e.target === selectedId;
     }
     return e.type === 'nation_affiliation';

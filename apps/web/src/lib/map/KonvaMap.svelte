@@ -26,7 +26,7 @@
   import { Badge } from '$lib/components/ui/badge/index.js';
   import { cn } from '$lib/utils.js';
 
-  export type EdgeMode = 'nation' | 'focus' | 'all';
+  export type EdgeMode = 'hover' | 'all';
 
   interface Props {
     graph: Graph;
@@ -47,7 +47,7 @@
   let {
     graph,
     selectedId,
-    edgeMode = 'all',
+    edgeMode = 'hover',
     metroFilter = null,
     yearMin = 1930,
     yearMax = 2025,
@@ -195,114 +195,85 @@
 
   function edgeStroke(edge: GraphEdge): string {
     switch (edge.type) {
-      case 'nation_affiliation': return '#a371f7';
-      case 'alliance': return '#4ade80';
-      case 'rivalry': return '#dc2626';
-      case 'parent_set': case 'spin_off': return '#d29922';
+      case 'nation': case 'member_of': return '#b87fff';
+      case 'alliance': return '#3fff8a';
+      case 'rivalry': return '#ff4444';
+      case 'parent': case 'spin_off': return '#ffb938';
       default: return '#8b949e';
     }
   }
 
-  function edgeVisible(edge: GraphEdge): boolean {
-    if (!visibleIds.has(edge.source) || !visibleIds.has(edge.target)) return false;
-    if (edgeMode === 'all') return true;
-    if (edgeMode === 'focus' && selectedId) {
-      return edge.source === selectedId || edge.target === selectedId;
-    }
-    return edge.type === 'nation_affiliation';
-  }
-
-  function edgeOpacity(edge: GraphEdge): number {
-    const focusId = selectedId ?? hoveredId;
-    if (focusId) {
-      const focused = edge.source === focusId || edge.target === focusId;
-      if (!focused) return edge.type === 'nation_affiliation' ? 0.08 : 0.14;
-      return 1;
-    }
-    if (edgeMode === 'all' && edge.type === 'nation_affiliation') return 0.08;
-    return 0.45;
-  }
-
   // --- Konva rendering ---
 
-  function buildScene() {
-    if (!stage) return;
+  let bgBuilt = false;
+  let prevLaneCount = 0;
+  let nodesBuilt = false;
 
+  // Edge index for fast lookup by node id
+  let edgeIndex = new Map<string, GraphEdge[]>();
+
+  function rebuildEdgeIndex() {
+    edgeIndex.clear();
+    for (const edge of graph.edges) {
+      if (!visibleIds.has(edge.source) || !visibleIds.has(edge.target)) continue;
+      if (!edgeIndex.has(edge.source)) edgeIndex.set(edge.source, []);
+      if (!edgeIndex.has(edge.target)) edgeIndex.set(edge.target, []);
+      edgeIndex.get(edge.source)!.push(edge);
+      edgeIndex.get(edge.target)!.push(edge);
+    }
+  }
+
+  function buildBackground() {
+    if (!stage) return;
     bgLayer.destroyChildren();
-    edgeLayer.destroyChildren();
-    nodeLayer.destroyChildren();
-    labelLayer.destroyChildren();
-    nodePositions.clear();
-    nodeShapes.clear();
 
     const labelStep = labeledYearStep(yearDomain.maxYear - yearDomain.minYear);
     const majorYears = labeledYears(yearDomain.minYear, yearDomain.maxYear, labelStep);
     const majorYearSet = new Set(majorYears);
     const minorYears = yearTicks(yearDomain.minYear, yearDomain.maxYear);
 
-    // Background layer: chart backdrop, grid, lane bands
     const chartX = -CHART_PAD;
     const chartY = scale.pad - 24 - CHART_PAD;
     const chartW = contentWidth + CHART_PAD * 2;
     const chartH = contentHeight - (scale.pad - 24) + CHART_PAD * 2;
     const barH = 24;
 
-    // Window chrome title bar
     bgLayer.add(new Konva.Rect({
       x: chartX, y: chartY - barH + 1,
       width: chartW, height: barH,
-      fill: '#1c2128',
-      cornerRadius: [6, 6, 0, 0],
-      listening: false,
+      fill: '#1c2128', cornerRadius: [6, 6, 0, 0], listening: false,
     }));
-    // Traffic light dots
     [0, 1, 2].forEach((i) => {
       bgLayer.add(new Konva.Circle({
         x: chartX + 16 + i * 14, y: chartY - barH / 2,
         radius: 4, fill: '#30363d', listening: false,
       }));
     });
-
-    // Main chart area
     bgLayer.add(new Konva.Rect({
       x: chartX, y: chartY,
       width: chartW, height: chartH,
-      fill: '#161b22',
-      
-      
-      cornerRadius: [0, 0, 6, 6],
-      listening: false,
+      fill: '#161b22', cornerRadius: [0, 0, 6, 6], listening: false,
     }));
 
-    // Grid lines
     for (const year of minorYears) {
       const x = scale.xForYear(year);
       const isMajor = majorYearSet.has(year);
       bgLayer.add(new Konva.Line({
         points: [x, scale.pad - 12, x, contentHeight - scale.pad],
         stroke: isMajor ? '#30363d' : '#21262d',
-        
-        dash: isMajor ? undefined : [2, 6],
-        listening: false,
+        dash: isMajor ? undefined : [2, 6], listening: false,
       }));
     }
 
-    // Year labels
     for (const year of majorYears) {
       bgLayer.add(new Konva.Text({
-        x: scale.xForYear(year),
-        y: scale.pad - 34,
+        x: scale.xForYear(year), y: scale.pad - 34,
         text: String(year),
         fontSize: labelStep === 1 ? 9 : 11,
-        fill: '#b1bac4',
-        align: 'center',
-        offsetX: 15,
-        width: 30,
-        listening: false,
+        fill: '#b1bac4', align: 'center', offsetX: 15, width: 30, listening: false,
       }));
     }
 
-    // Lane bands + labels
     for (const lane of lanes) {
       const top = laneY(lane) - 20;
       const bc = bandColor(lane);
@@ -314,7 +285,7 @@
       }
       bgLayer.add(new Konva.Line({
         points: [scale.pad, top + 36, contentWidth - scale.pad, top + 36],
-        stroke: '#21262d',  listening: false,
+        stroke: '#21262d', listening: false,
       }));
       bgLayer.add(new Konva.Text({
         x: 10, y: top + 2,
@@ -323,115 +294,24 @@
       }));
     }
 
-    // Compute all node positions first
+    bgLayer.draw();
+    bgBuilt = true;
+    prevLaneCount = lanes.length;
+  }
+
+  /** Build nodes once. Never destroy unless filters change. */
+  function buildNodes() {
+    nodeLayer.destroyChildren();
+    nodePositions.clear();
+    nodeShapes.clear();
+
     for (const node of visibleNodes) {
-      nodePositions.set(node.id, nodePos(node));
-    }
-
-    // Viewport culling — only render nodes in view
-    const vb = getViewportBounds();
-    const viewportNodeIds = new Set<string>();
-    for (const [id, pos] of nodePositions) {
-      if (isInViewport(pos.x, pos.y, vb)) viewportNodeIds.add(id);
-    }
-    // Always include selected/hovered
-    if (selectedId && nodePositions.has(selectedId)) viewportNodeIds.add(selectedId);
-    if (hoveredId && nodePositions.has(hoveredId)) viewportNodeIds.add(hoveredId);
-
-    // Edges — batched by type for performance
-    const focusId = selectedId ?? hoveredId;
-    const edgeBuckets = new Map<string, GraphEdge[]>();
-    const focusedEdges: GraphEdge[] = [];
-
-    for (const edge of graph.edges) {
-      if (!edgeVisible(edge)) continue;
-      if (!nodePositions.has(edge.source) || !nodePositions.has(edge.target)) continue;
-      // Viewport cull: skip edges where neither endpoint is visible
-      const srcInView = viewportNodeIds.has(edge.source);
-      const tgtInView = viewportNodeIds.has(edge.target);
-      if (!srcInView && !tgtInView) continue;
-
-      if (focusId && (edge.source === focusId || edge.target === focusId)) {
-        focusedEdges.push(edge);
-      } else {
-        const bucket = edge.type;
-        if (!edgeBuckets.has(bucket)) edgeBuckets.set(bucket, []);
-        edgeBuckets.get(bucket)!.push(edge);
-      }
-    }
-
-    // Draw unfocused edges as batched single shapes per type
-    for (const [type, edges] of edgeBuckets) {
-      const sample = edges[0];
-      const opacity = edgeOpacity(sample);
-      if (opacity < 0.02) continue; // skip invisible batches
-
-      edgeLayer.add(new Konva.Shape({
-        sceneFunc: (ctx: any, shape: any) => {
-          ctx.beginPath();
-          for (const edge of edges) {
-            const srcPos = nodePositions.get(edge.source)!;
-            const tgtPos = nodePositions.get(edge.target)!;
-            const midX = (srcPos.x + tgtPos.x) / 2;
-            const midY = (srcPos.y + tgtPos.y) / 2;
-            const dx = tgtPos.x - srcPos.x;
-            const dy = tgtPos.y - srcPos.y;
-            const cx = midX - dy * 0.08;
-            const cy = midY + dx * 0.08;
-            ctx.moveTo(srcPos.x, srcPos.y);
-            ctx.quadraticCurveTo(cx, cy, tgtPos.x, tgtPos.y);
-          }
-          ctx.fillStrokeShape(shape);
-        },
-        stroke: edgeStroke(sample),
-        strokeWidth: type === 'nation_affiliation' ? 1.5 : 1,
-        opacity,
-        dash: type === 'rivalry' ? [4, 3] : undefined,
-        listening: false,
-        perfectDrawEnabled: false,
-      }));
-    }
-
-    // Draw focused edges individually on top
-    for (const edge of focusedEdges) {
-      const srcPos = nodePositions.get(edge.source)!;
-      const tgtPos = nodePositions.get(edge.target)!;
-      const midX = (srcPos.x + tgtPos.x) / 2;
-      const midY = (srcPos.y + tgtPos.y) / 2;
-      const dx = tgtPos.x - srcPos.x;
-      const dy = tgtPos.y - srcPos.y;
-      const cx = midX - dy * 0.08;
-      const cy = midY + dx * 0.08;
-
-      edgeLayer.add(new Konva.Shape({
-        sceneFunc: (ctx: any, shape: any) => {
-          ctx.beginPath();
-          ctx.moveTo(srcPos.x, srcPos.y);
-          ctx.quadraticCurveTo(cx, cy, tgtPos.x, tgtPos.y);
-          ctx.fillStrokeShape(shape);
-        },
-        stroke: edgeStroke(edge),
-        strokeWidth: 2,
-        opacity: 1,
-        dash: edge.type === 'rivalry' ? [4, 3] : undefined,
-        listening: false,
-        perfectDrawEnabled: false,
-      }));
-    }
-
-    // Nodes — only render those in viewport
-    for (const node of visibleNodes) {
-      if (!viewportNodeIds.has(node.id)) continue;
-      const pos = nodePositions.get(node.id)!;
-      const isSelected = selectedId === node.id;
-      const isHovered = hoveredId === node.id;
-      const r = isSelected ? 10 : isHovered ? 9 : 6;
+      const pos = nodePos(node);
+      nodePositions.set(node.id, pos);
 
       const circle = new Konva.Circle({
-        x: pos.x, y: pos.y, radius: r,
-        fill: isSelected ? '#f78166' : nodeColor(node),
-        stroke: isSelected ? '#fff' : isHovered ? '#58a6ff' : undefined,
-        strokeWidth: (isSelected || isHovered) ? 2 : 0,
+        x: pos.x, y: pos.y, radius: 6,
+        fill: nodeColor(node),
         id: node.id,
         hitStrokeWidth: 12, perfectDrawEnabled: false,
       });
@@ -444,75 +324,308 @@
       nodeShapes.set(node.id, circle);
     }
 
-    // Labels (only at sufficient zoom)
-    if (currentZoom > 0.45) {
-      const placed: Array<{ x1: number; y1: number; x2: number; y2: number }> = [];
-
-      for (const node of visibleNodes) {
-        const pos = nodePositions.get(node.id)!;
-        const isActive = selectedId === node.id || hoveredId === node.id;
-        if (isActive) continue; // render active labels last
-        const text = shortLabel(orgDisplayTitle(node), 22);
-        const w = text.length * 5.6;
-        const h = 12;
-        const x1 = pos.x - w / 2;
-        const y1 = pos.y + 12;
-        const x2 = x1 + w;
-        const y2 = y1 + h;
-
-        // Skip if overlaps any already-placed label
-        const overlaps = placed.some(r => x1 < r.x2 && x2 > r.x1 && y1 < r.y2 && y2 > r.y1);
-        if (overlaps) continue;
-        placed.push({ x1, y1, x2, y2 });
-
-        labelLayer.add(new Konva.Text({
-          x: pos.x, y: pos.y + 12,
-          text,
-          fontSize: 10,
-          fill: resolveNodeYearSpan(node.data) ? '#c9d1d9' : '#e3b341',
-          stroke: '#0d1117',
-          strokeWidth: 3,
-          fillAfterStrokeEnabled: true,
-          align: 'center',
-          offsetX: w / 2,
-          listening: false,
-        }));
-      }
-      // Active (selected/hovered) label always on top
-      for (const node of visibleNodes) {
-        const pos = nodePositions.get(node.id)!;
-        if (selectedId !== node.id && hoveredId !== node.id) continue;
-        const text = orgDisplayTitle(node);
-        const w = text.length * 7;
-
-        labelLayer.add(new Konva.Text({
-          x: pos.x, y: pos.y + 12,
-          text,
-          fontSize: 12,
-          fontStyle: 'bold',
-          fill: '#ffffff',
-          stroke: '#0d1117',
-          strokeWidth: 4,
-          fillAfterStrokeEnabled: true,
-          align: 'center',
-          offsetX: w / 2,
-          listening: false,
-        }));
-      }
-    }
-
-    bgLayer.draw();
-    edgeLayer.draw();
     nodeLayer.draw();
-    labelLayer.draw();
+    nodesBuilt = true;
+    rebuildEdgeIndex();
+  }
 
-    // Cache layers as bitmaps for smooth panning (skip if content is huge to avoid memory issues)
-    const cacheThreshold = 8000 * 6000; // ~48MP max
-    const area = contentWidth * contentHeight;
-    if (area < cacheThreshold) {
-      edgeLayer.cache();
-      if (labelLayer.visible()) labelLayer.cache();
+  /** Update node appearance for selection/hover without recreating */
+  function updateNodeAppearance() {
+    for (const [id, circle] of nodeShapes) {
+      const isSelected = selectedId === id;
+      const isHovered = hoveredId === id;
+      const node = graph.nodes.find(n => n.id === id);
+      circle.radius(isSelected ? 10 : isHovered ? 9 : 6);
+      circle.fill(isSelected ? '#f78166' : nodeColor(node!));
+      circle.stroke(isSelected ? '#fff' : isHovered ? '#58a6ff' : null);
+      circle.strokeWidth((isSelected || isHovered) ? 2 : 0);
     }
+    nodeLayer.batchDraw();
+  }
+
+  /** Draw edges based on current mode */
+  function drawEdges(focusNodeId: string | null) {
+    edgeLayer.destroyChildren();
+
+    let edgesToDraw: GraphEdge[] = [];
+
+    if (edgeMode === 'all') {
+      // Draw all edges
+      for (const edge of graph.edges) {
+        if (!visibleIds.has(edge.source) || !visibleIds.has(edge.target)) continue;
+        if (!nodePositions.has(edge.source) || !nodePositions.has(edge.target)) continue;
+        edgesToDraw.push(edge);
+      }
+    } else {
+      // 'hover' mode: only show focused node's edges
+      if (focusNodeId) {
+        edgesToDraw.push(...(edgeIndex.get(focusNodeId) ?? []));
+      }
+    }
+
+    if (edgesToDraw.length === 0) {
+      edgeLayer.draw();
+      return;
+    }
+
+    // Filter to edges with valid positions
+    edgesToDraw = edgesToDraw.filter(e => nodePositions.has(e.source) && nodePositions.has(e.target));
+
+    // Filter out directional edges from batches — they'll be drawn separately with arrows
+    const directionalTypes = new Set(['spin_off', 'parent', 'member_of', 'nation']);
+    const batchEdges: GraphEdge[] = [];
+    const arrowEdges: GraphEdge[] = [];
+    for (const edge of edgesToDraw) {
+      if (directionalTypes.has(edge.type)) {
+        arrowEdges.push(edge);
+      } else {
+        batchEdges.push(edge);
+      }
+    }
+
+    // Batch non-directional edges by type
+    const buckets = new Map<string, GraphEdge[]>();
+    for (const edge of batchEdges) {
+      const t = edge.type;
+      if (!buckets.has(t)) buckets.set(t, []);
+      buckets.get(t)!.push(edge);
+    }
+
+    for (const [type, batch] of buckets) {
+      const isFocusBatch = edgeMode !== 'all';
+      const hasFocus = !!selectedId;
+      const bgOpacity = isFocusBatch ? 1 : hasFocus ? 0.12 : 0.35;
+      edgeLayer.add(new Konva.Shape({
+        sceneFunc: (ctx: any, shape: any) => {
+          ctx.beginPath();
+          for (const edge of batch) {
+            const srcPos = nodePositions.get(edge.source)!;
+            const tgtPos = nodePositions.get(edge.target)!;
+            const midX = (srcPos.x + tgtPos.x) / 2;
+            const midY = (srcPos.y + tgtPos.y) / 2;
+            const dx = tgtPos.x - srcPos.x;
+            const dy = tgtPos.y - srcPos.y;
+            ctx.moveTo(srcPos.x, srcPos.y);
+            ctx.quadraticCurveTo(midX - dy * 0.08, midY + dx * 0.08, tgtPos.x, tgtPos.y);
+          }
+          ctx.fillStrokeShape(shape);
+        },
+        stroke: edgeStroke(batch[0]),
+        strokeWidth: isFocusBatch ? 2 : 1,
+        opacity: bgOpacity,
+        dash: type === 'rivalry' ? [6, 3] : type === 'alliance' ? [0.5, 4] : undefined,
+        lineCap: type === 'alliance' ? 'round' : undefined,
+        listening: false,
+        perfectDrawEnabled: false,
+      }));
+    }
+
+    // Draw directional edges with shortened line + arrowhead
+    const directionalBuckets = new Map<string, GraphEdge[]>();
+    for (const edge of arrowEdges) {
+      const t = edge.type;
+      if (!directionalBuckets.has(t)) directionalBuckets.set(t, []);
+      directionalBuckets.get(t)!.push(edge);
+    }
+
+    // Draw directional edges with line stopping at arrow
+    for (const [type, batch] of directionalBuckets) {
+      const isFocusBatch = edgeMode !== 'all';
+
+      // Track edges per target to offset parallel arrows
+      const targetCount = new Map<string, number>();
+
+      for (const edge of batch) {
+        let srcPos = nodePositions.get(edge.source)!;
+        let tgtPos = nodePositions.get(edge.target)!;
+        // For member_of/nation: flip so arrow goes from nation → org
+        if (edge.type === 'member_of' || edge.type === 'nation') {
+          [srcPos, tgtPos] = [tgtPos, srcPos];
+        }
+        const dx = tgtPos.x - srcPos.x;
+        const dy = tgtPos.y - srcPos.y;
+        const len = Math.sqrt(dx * dx + dy * dy);
+        if (len < 20) continue;
+
+        // Offset curve to spread parallel edges
+        const tgtKey = `${tgtPos.x},${tgtPos.y}`;
+        const idx = targetCount.get(tgtKey) ?? 0;
+        targetCount.set(tgtKey, idx + 1);
+        const spread = (idx - 0.5) * 0.12;
+
+        const midX = (srcPos.x + tgtPos.x) / 2;
+        const midY = (srcPos.y + tgtPos.y) / 2;
+        const ctrlX = midX - dy * (0.08 + spread);
+        const ctrlY = midY + dx * (0.08 + spread);
+
+        // Tangent direction at target
+        const tx = tgtPos.x - ctrlX;
+        const ty = tgtPos.y - ctrlY;
+        const tlen = Math.sqrt(tx * tx + ty * ty);
+        const nx = tx / tlen;
+        const ny = ty / tlen;
+
+        // Arrow at end, gap before node. Line stops at arrow base.
+        const tanX = tgtPos.x - ctrlX;
+        const tanY = tgtPos.y - ctrlY;
+        const tanLen = Math.sqrt(tanX * tanX + tanY * tanY);
+        const mnx = tanX / tanLen;
+        const mny = tanY / tanLen;
+
+        // Arrow tip is 10px from node, base is 20px from node
+        const tipX = tgtPos.x - mnx * 10;
+        const tipY = tgtPos.y - mny * 10;
+        const baseX = tgtPos.x - mnx * 20;
+        const baseY = tgtPos.y - mny * 20;
+
+        // Draw curve stopping at arrow base
+        edgeLayer.add(new Konva.Shape({
+          sceneFunc: (ctx: any, shape: any) => {
+            ctx.beginPath();
+            ctx.moveTo(srcPos.x, srcPos.y);
+            ctx.quadraticCurveTo(ctrlX, ctrlY, baseX, baseY);
+            ctx.fillStrokeShape(shape);
+          },
+          stroke: edgeStroke(edge),
+          strokeWidth: isFocusBatch ? 2 : 1,
+          opacity: isFocusBatch ? 1 : (selectedId ? 0.12 : 0.35),
+          listening: false,
+          perfectDrawEnabled: false,
+        }));
+
+        // Arrow triangle pointing at node
+        const sz = 6;
+        edgeLayer.add(new Konva.Shape({
+          sceneFunc: (ctx: any, shape: any) => {
+            ctx.beginPath();
+            ctx.moveTo(tipX, tipY);
+            ctx.lineTo(baseX - mny * sz, baseY + mnx * sz);
+            ctx.lineTo(baseX + mny * sz, baseY - mnx * sz);
+            ctx.closePath();
+            ctx.fillStrokeShape(shape);
+          },
+          fill: edgeStroke(edge),
+          opacity: isFocusBatch ? 1 : (selectedId ? 0.12 : 0.35),
+          listening: false,
+          perfectDrawEnabled: false,
+        }));
+      }
+    }
+
+    // In 'all' mode, draw focused node's edges on top at full opacity
+    if (edgeMode === 'all') {
+      const focusId = selectedId;
+      if (focusId) {
+        const focusEdges = (edgeIndex.get(focusId) ?? []).filter(
+          e => nodePositions.has(e.source) && nodePositions.has(e.target)
+        );
+        const fBuckets = new Map<string, GraphEdge[]>();
+        for (const e of focusEdges) {
+          if (!fBuckets.has(e.type)) fBuckets.set(e.type, []);
+          fBuckets.get(e.type)!.push(e);
+        }
+        for (const [ftype, fbatch] of fBuckets) {
+          edgeLayer.add(new Konva.Shape({
+            sceneFunc: (ctx: any, shape: any) => {
+              ctx.beginPath();
+              for (const edge of fbatch) {
+                const s = nodePositions.get(edge.source)!;
+                const t = nodePositions.get(edge.target)!;
+                const mx = (s.x + t.x) / 2;
+                const my = (s.y + t.y) / 2;
+                const ddx = t.x - s.x;
+                const ddy = t.y - s.y;
+                ctx.moveTo(s.x, s.y);
+                ctx.quadraticCurveTo(mx - ddy * 0.08, my + ddx * 0.08, t.x, t.y);
+              }
+              ctx.fillStrokeShape(shape);
+            },
+            stroke: edgeStroke(fbatch[0]),
+            strokeWidth: 2.5,
+            opacity: 1,
+            dash: ftype === 'rivalry' ? [6, 3] : ftype === 'alliance' ? [0.5, 4] : undefined,
+            lineCap: ftype === 'alliance' ? 'round' : undefined,
+            listening: false,
+            perfectDrawEnabled: false,
+          }));
+        }
+      }
+    }
+
+    edgeLayer.draw();
+  }
+
+  /** Lightweight label update */
+  function drawLabels() {
+    labelLayer.destroyChildren();
+
+    if (currentZoom <= 0.25) {
+      labelLayer.draw();
+      return;
+    }
+
+    const placed: Array<{ x1: number; y1: number; x2: number; y2: number }> = [];
+
+    // Get viewport bounds for label culling
+    const vb = getViewportBounds();
+
+    for (const node of visibleNodes) {
+      const pos = nodePositions.get(node.id);
+      if (!pos) continue;
+      if (!isInViewport(pos.x, pos.y, vb)) continue;
+
+      const isActive = selectedId === node.id || hoveredId === node.id;
+      if (isActive) continue;
+
+      const text = shortLabel(orgDisplayTitle(node), 22);
+      const w = text.length * 5.6;
+      const h = 12;
+      const x1 = pos.x - w / 2;
+      const y1 = pos.y + 12;
+      const x2 = x1 + w;
+      const y2 = y1 + h;
+
+      const overlaps = placed.some(r => x1 < r.x2 && x2 > r.x1 && y1 < r.y2 && y2 > r.y1);
+      if (overlaps) continue;
+      placed.push({ x1, y1, x2, y2 });
+
+      labelLayer.add(new Konva.Text({
+        x: pos.x, y: pos.y + 12, text,
+        fontSize: 10,
+        fill: resolveNodeYearSpan(node.data) ? '#c9d1d9' : '#e3b341',
+        stroke: '#0d1117', strokeWidth: 3,
+        fillAfterStrokeEnabled: true,
+        align: 'center', offsetX: w / 2, listening: false,
+      }));
+    }
+
+    // Active labels on top (both selected and hovered)
+    for (const activeId of [selectedId, hoveredId]) {
+      if (!activeId) continue;
+      const node = graph.nodes.find(n => n.id === activeId);
+      const pos = nodePositions.get(activeId);
+      if (node && pos) {
+        const text = orgDisplayTitle(node);
+        labelLayer.add(new Konva.Text({
+          x: pos.x, y: pos.y + 12, text,
+          fontSize: 12, fontStyle: 'bold',
+          fill: '#ffffff', stroke: '#0d1117', strokeWidth: 4,
+          fillAfterStrokeEnabled: true,
+          align: 'center', offsetX: text.length * 7 / 2, listening: false,
+        }));
+      }
+    }
+
+    labelLayer.draw();
+  }
+
+  /** Full rebuild — only on filter/data changes */
+  function buildScene() {
+    if (!stage) return;
+    if (!bgBuilt || lanes.length !== prevLaneCount) buildBackground();
+    buildNodes();
+    drawEdges(selectedId ?? hoveredId);
+    drawLabels();
   }
 
   function buildSceneAsync() {
@@ -615,14 +728,11 @@
     stage.batchDraw();
     onzoom?.(currentZoom / baseZoom);
     updateLOD();
-    // Debounced rebuild for viewport culling
-    if (rebuildTimer) clearTimeout(rebuildTimer);
-    rebuildTimer = setTimeout(() => buildScene(), 150);
   }
 
   function updateLOD() {
     if (!labelLayer) return;
-    const showLabels = currentZoom > 0.45;
+    const showLabels = currentZoom > 0.25;
     if (labelLayer.visible() !== showLabels) {
       labelLayer.visible(showLabels);
       labelLayer.batchDraw();
@@ -633,19 +743,40 @@
   let rebuildTimer: ReturnType<typeof setTimeout> | null = null;
   let prevVisibleCount = 0;
   let prevSelectedId: string | null = null;
-  let prevEdgeMode: EdgeMode = 'all';
+  let prevEdgeMode: EdgeMode = 'hover';
+  let prevHoveredId: string | null = null;
 
   $effect(() => {
-    // Track only structural changes
     const count = visibleNodes.length;
     const sel = selectedId;
     const mode = edgeMode;
-    if (stage && (count !== prevVisibleCount || sel !== prevSelectedId || mode !== prevEdgeMode)) {
+    // Full rebuild only when filters change node set
+    if (stage && count !== prevVisibleCount) {
       prevVisibleCount = count;
       prevSelectedId = sel;
       prevEdgeMode = mode;
       if (rebuildTimer) clearTimeout(rebuildTimer);
       rebuildTimer = setTimeout(() => buildScene(), 16);
+    }
+    // Selection or mode change: update appearance + edges (no node rebuild)
+    else if (stage && nodesBuilt && (sel !== prevSelectedId || mode !== prevEdgeMode)) {
+      prevSelectedId = sel;
+      prevEdgeMode = mode;
+      updateNodeAppearance();
+      drawEdges(sel ?? hoveredId);
+      drawLabels();
+    }
+  });
+
+  // Hover: just update edges + node appearance (very cheap)
+  $effect(() => {
+    const hov = hoveredId;
+    if (!stage || !nodesBuilt) return;
+    if (hov !== prevHoveredId) {
+      prevHoveredId = hov;
+      updateNodeAppearance();
+      drawEdges(selectedId ?? hov);
+      drawLabels();
     }
   });
 
@@ -690,10 +821,10 @@
       if (pointer) applyZoom(factor, pointer.x, pointer.y);
     });
 
-    // Rebuild on pan end for viewport culling
+    // Rebuild labels on pan end (viewport-dependent)
     stage.on('dragend', () => {
       if (rebuildTimer) clearTimeout(rebuildTimer);
-      rebuildTimer = setTimeout(() => buildScene(), 150);
+      rebuildTimer = setTimeout(() => drawLabels(), 150);
     });
 
     // Click on empty space = deselect

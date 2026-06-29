@@ -3,7 +3,7 @@
   "name": "Niles Popes",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "chicago-people",
   "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",

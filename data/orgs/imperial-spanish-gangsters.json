@@ -3,7 +3,7 @@
   "name": "Imperial Spanish Gangsters",
   "aliases": [],
   "type": "street_gang",
-  "lane": null,
+  "lane": "chicago-folk",
   "metro": "Unknown",
   "founded_year": 1969,
   "founded_year_precision": "circa",

@@ -12,6 +12,7 @@
   import * as Kbd from '$lib/components/ui/kbd/index.js';
   import LaneFilter from '$lib/overlays/LaneFilter.svelte';
   import EdgeModeToggle from '$lib/overlays/EdgeModeToggle.svelte';
+  import EdgeLegend from '$lib/overlays/EdgeLegend.svelte';
   import type { Graph } from '$lib/types';
   import { visibleEdgeCount } from '$lib/map/visibility';
   import { PaneGroup, Pane, Handle } from '$lib/components/ui/resizable/index.js';
@@ -24,7 +25,7 @@
   let { data } = $props();
 
   let selectedId = $state<string | null>(null);
-  let edgeMode = $state<EdgeMode>('all');
+  let edgeMode = $state<EdgeMode>('hover');
   let zoomCmd = $state<{ action: 'in' | 'out' | 'fit' | 'focus'; target?: string; seq: number } | null>(null);
   let zoomSeq = 0;
   function sendZoom(action: 'in' | 'out' | 'fit' | 'focus', target?: string) {
@@ -189,9 +190,6 @@
       return;
     }
     selectedId = id;
-    if (edgeMode === 'all') {
-      edgeMode = 'focus';
-    }
   }
 
   function selectFromSearch(id: string) {
@@ -200,17 +198,11 @@
       return;
     }
     selectedId = id;
-    if (edgeMode === 'all') {
-      edgeMode = 'focus';
-    }
     sendZoom("focus", id);
   }
 
   function deselect() {
     selectedId = null;
-    if (edgeMode === 'focus') {
-      edgeMode = 'all';
-    }
   }
 
   function onKeydown(e: KeyboardEvent) {
@@ -293,9 +285,22 @@
             ondeselect={deselect}
             onzoom={(z) => (zoomPct = Math.round(z * 100))}
           />
+          <div class="absolute top-3 left-3 right-3 z-[2] flex items-center justify-between">
+            <button
+              class="flex h-7 min-w-36 items-center gap-1.5 rounded-full bg-muted px-3 text-muted-foreground hover:text-foreground active:scale-[0.97]"
+              onclick={() => searchRef?.focusSearch()}
+              title="Search (⌘K)"
+            >
+              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <span class="text-[0.65rem]">Search…</span>
+              <Kbd.Root class="ml-auto">⌘K</Kbd.Root>
+            </button>
+            <EdgeModeToggle bind:edgeMode {selectedId} />
+            <YearSlider bind:yearMin bind:yearMax />
+          </div>
           <MapOverlay position="bottom-left">
             <div class="flex flex-col gap-1">
-              <EdgeModeToggle bind:edgeMode {selectedId} />
+              <EdgeLegend />
               <LaneFilter
                 groups={laneGroups}
                 {hiddenLanes}
@@ -303,20 +308,6 @@
                 onShowAll={() => { if (hiddenLanes.size === 0) { hiddenLanes = new Set(Object.values(laneGroups).flat()); } else { hiddenLanes = new Set(); } }}
               />
             </div>
-          </MapOverlay>
-          <MapOverlay position="top-right">
-            <YearSlider bind:yearMin bind:yearMax />
-          </MapOverlay>
-          <MapOverlay position="top-left">
-            <button
-              class="flex h-6 min-w-36 items-center gap-1.5 px-2 py-0.5 text-foreground/60 hover:text-foreground drop-shadow-[0_1px_1px_rgba(0,0,0,0.3)] active:scale-[0.97]"
-              onclick={() => searchRef?.focusSearch()}
-              title="Search (⌘K)"
-            >
-              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-              <span class="text-[0.7rem]">Search…</span>
-              <Kbd.Root class="ml-auto">⌘K</Kbd.Root>
-            </button>
           </MapOverlay>
           <OrgSearch bind:this={searchRef} {graph} onselect={selectFromSearch} />
           <MapOverlay position="bottom-right">

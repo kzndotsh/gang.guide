@@ -4,7 +4,7 @@
    * Use position prop: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'top-right'
    */
   interface Props {
-    position?: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left';
+    position?: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left' | 'top-center';
     class?: string;
     children: any;
   }
@@ -17,9 +17,10 @@
     'bottom-left': 'bottom-3 left-3',
     'top-right': 'top-3 right-3',
     'top-left': 'top-3 left-3',
+    'top-center': 'top-3 left-1/2 -translate-x-1/2',
   };
 </script>
 
-<div class="absolute z-[2] px-1 py-0.5 {positionClasses[position]} {className}">
+<div class="absolute z-[2] {positionClasses[position]} {className}">
   {@render children()}
 </div>
