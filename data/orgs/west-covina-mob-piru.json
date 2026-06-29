@@ -2,7 +2,7 @@
   "id": "org:west-covina-mob-piru",
   "name": "West Covina Mob Piru",
   "type": "street_gang",
-  "lane": "blood-nation",
+  "lane": "california-bloods-other",
   "description": "West Covina Mob Piru is a predominately African-American street gang in the city of West Covina in Los Angeles County.",
   "nation_affiliation": "org:bloods",
   "sources": [
