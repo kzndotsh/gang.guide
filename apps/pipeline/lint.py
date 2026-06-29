@@ -72,6 +72,34 @@ def check_fuzzy_dupes(orgs: dict[str, dict]):
     """Detect potential duplicate orgs via word overlap + edit distance."""
     from collections import defaultdict
 
+    # Common spelling variants that should be treated as identical
+    SPELLING_VARIANTS = [
+        ('tray', 'trey'), ('grey', 'gray'), ('honour', 'honor'),
+        ('neighbourhood', 'neighborhood'), ('centre', 'center'),
+        ('organisation', 'organization'), ('defence', 'defense'),
+        ('colour', 'color'), ('favour', 'favor'), ('harbour', 'harbor'),
+        ('gangsta', 'gangster'), ('blocc', 'block'), ('boyz', 'boys'),
+        ('niggaz', 'niggas'), ('loc', 'loco'), ('clicc', 'click'),
+        ('macc', 'mac'),
+    ]
+
+    def normalize_spelling(name: str) -> str:
+        """Normalize common spelling variants to canonical form."""
+        s = name.lower()
+        for a, b in SPELLING_VARIANTS:
+            s = s.replace(a, b)
+        return s
+
+    # Cross-lane spelling variant check
+    norm_map: dict[str, list[tuple[str, str]]] = defaultdict(list)
+    for org_id, org in orgs.items():
+        canon = normalize_spelling(re.sub(r'[^a-z0-9 ]', '', org.get("name", "").lower()).strip())
+        norm_map[canon].append((org["_file"], org.get("name", "")))
+    for canon, entries in norm_map.items():
+        if len(entries) > 1:
+            names = [f"{n} ({f})" for f, n in entries]
+            errors.append(f"spelling variant dupe: {' ↔ '.join(names)}")
+
     def norm(name: str) -> str:
         return re.sub(r'[^a-z0-9 ]', '', name.lower()).strip()
 

@@ -702,7 +702,7 @@
   },
   {
     "id": "dfde5050e729",
-    "source": "org:96-gangster-crips",
+    "source": "org:gangster-crips-96",
     "target": "org:elm-street-piru",
     "type": "rivalry"
   },
@@ -11395,7 +11395,7 @@
   },
   {
     "source": "org:gangster-crips",
-    "target": "org:eight-trey-gangster-crips",
+    "target": "org:eight-tray-83-gangster-crip-los-angeles",
     "type": "spin_off",
     "evidence": "W7M ETGC is generally understood to be a localized adaptation of the Eight Trey ('8Tray') Gangster Crips, a well-known Gangster Crip identity that originated in Los Angeles",
     "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
@@ -11619,7 +11619,7 @@
   },
   {
     "source": "org:w7m-evergreen-telegraph-gangster-crips",
-    "target": "org:eight-trey-gangster-crips",
+    "target": "org:eight-tray-83-gangster-crip-los-angeles",
     "type": "spin_off",
     "evidence": "W7M ETGC is widely understood to be influenced by the broader Eight Trey ('8Tray') Gangster Crip tradition... the group is generally viewed as a localized offshoot or adaptation of the Eight Trey tradition",
     "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
@@ -13863,13 +13863,6 @@
   },
   {
     "source": "org:gangster-crips",
-    "target": "org:eight-tray-83-gangster-crip-los-angeles",
-    "type": "spin_off",
-    "evidence": "originated from the Eight Tray Gangster Crips in the 1970's",
-    "source_url": "https://unitedgangs.com/43-gangster-crips/"
-  },
-  {
-    "source": "org:gangster-crips",
     "target": "org:avalon-40s-crips",
     "type": "rivalry",
     "evidence": "The 4-Tray Gangster Crips and the Avalon 40s Crips , have one of the longest standing feud in the history of gangs",
@@ -14695,13 +14688,6 @@
     "type": "rivalry",
     "evidence": "They also feud with East Coast Crips and Neighborhood Crips.",
     "source_url": "https://unitedgangs.com/94-hoover-criminals-gang/"
-  },
-  {
-    "source": "org:gangster-crips-96",
-    "target": "org:elm-street-piru",
-    "type": "rivalry",
-    "evidence": "Their rivals include the Be-Bopp Watts Bishops , 92 Elm Street Pirus and the 99 Watts Mafia Crips",
-    "source_url": "https://unitedgangs.com/96-gangster-crips/"
   },
   {
     "source": "org:gangster-crips-96",
