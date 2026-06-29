@@ -1,7 +1,7 @@
 {
   "id": "org:east-side-ridas-64",
   "name": "64 East Side Ridas",
-  "lane": "california-crips",
+  "lane": "california-crips-other",
   "metro": "Los Angeles",
   "description": "African-American Crip-affiliated gang based on the East Side of South Los Angeles around 64th Street, part of the East Side Crip tradition tracing back to Raymond Washington's original East Side Crips.",
   "type": "street_gang",

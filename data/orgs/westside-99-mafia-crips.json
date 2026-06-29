@@ -2,7 +2,7 @@
   "id": "org:westside-99-mafia-crips",
   "name": "Westside 99 Mafia Crips",
   "type": "street_gang",
-  "lane": "crip-nation",
+  "lane": "california-crips-other",
   "description": "Westside 99 Mafia Crips are a predominately African-American street gang located near Normandie & Century in Unincorporated Los Angeles County.",
   "nation_affiliation": "org:crips",
   "sources": [

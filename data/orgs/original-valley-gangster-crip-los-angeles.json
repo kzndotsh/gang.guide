@@ -1,7 +1,7 @@
 {
   "id": "org:original-valley-gangster-crip-los-angeles",
   "name": "Original Valley Gangster Crip",
-  "lane": "california-crips-other",
+  "lane": "california-crips-gangster",
   "metro": "Los Angeles",
   "nation_affiliation": "org:crips",
   "type": "street_gang",
@@ -17,7 +17,7 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Original_Valley_Gangster_Crip",
-      "title": "Original Valley Gangster Crip \u2014 Wikipedia"
+      "title": "Original Valley Gangster Crip — Wikipedia"
     }
   ],
   "founded_year_precision": "estimate",

@@ -1,7 +1,7 @@
 {
   "id": "org:bible-crips",
   "name": "Bible Crips",
-  "lane": "california-crips",
+  "lane": "california-crips-other",
   "metro": "Los Angeles",
   "description": "The Bible Crips are an African-American Crip set based on the East Side of South Los Angeles, operating within LAPD's 77th Street Division. They emerged in the 1970s-1980s as the Crips expanded across South Central into a network of autonomous sets.",
   "type": "street_gang",

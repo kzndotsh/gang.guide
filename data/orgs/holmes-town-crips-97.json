@@ -1,7 +1,7 @@
 {
   "id": "org:holmes-town-crips-97",
   "name": "97 Holmes Town Crips",
-  "lane": "california-crips",
+  "lane": "california-crips-other",
   "metro": "Los Angeles",
   "description": "A subset of the Holmes Town Crips operating around 97th Street in the Watts area of South Los Angeles.",
   "type": "street_gang",

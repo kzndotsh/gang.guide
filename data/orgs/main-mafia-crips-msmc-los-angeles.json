@@ -7,14 +7,14 @@
     "msmc"
   ],
   "type": "street_gang",
-  "lane": "california-crips-other",
+  "lane": "california-crips-south-la",
   "metro": "Los Angeles",
   "description": "The Main Street Mafia Crips are a predominately African-American street gang located on the eastside of South Los Angeles. This particular faction includes the 98 and 104th Street Main Street Crip. There is another faction of Main Street Crips, located 0.5 miles north of this section.",
   "nation_affiliation": "org:crips",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Main_Mafia_Crips_Msmc",
-      "title": "Main Mafia Crips Msmc \u2014 Wikipedia"
+      "title": "Main Mafia Crips Msmc — Wikipedia"
     }
   ],
   "founded_year": 1970,

@@ -85,12 +85,6 @@
       "order": 45
     },
     {
-      "id": "california-crips",
-      "label": "California · Crips sets",
-      "group": "Crips",
-      "order": 46
-    },
-    {
       "id": "california-crips-hoover",
       "label": "California · Crips · Hoover",
       "group": "Crips",
@@ -113,12 +107,6 @@
       "label": "California · Crips · Gangster",
       "group": "Crips",
       "order": 50
-    },
-    {
-      "id": "california-crips-rollin",
-      "label": "California · Crips · Rollin sets",
-      "group": "Crips",
-      "order": 51
     },
     {
       "id": "california-crips-hustler",

@@ -1,7 +1,7 @@
 {
   "id": "org:east-side-hustler-crips-115-118",
   "name": "115/118 East Side Hustler Crips",
-  "lane": "california-crips",
+  "lane": "california-crips-hustler",
   "metro": "Los Angeles",
   "description": "A subset of the Hustler Crips operating along 115th and 118th Streets on the East Side of South Los Angeles.",
   "type": "street_gang",

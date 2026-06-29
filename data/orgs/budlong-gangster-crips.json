@@ -2,7 +2,7 @@
   "id": "org:budlong-gangster-crips",
   "name": "BudLong Gangster Crips",
   "type": "street_gang",
-  "lane": "crip-nation",
+  "lane": "california-crips-other",
   "description": "Long Gangster Crip are a predominately African-American street gang located in unincorporated South Los Angeles County and are part of the Rollin 100s Crips alliance.",
   "nation_affiliation": "org:crips",
   "sources": [

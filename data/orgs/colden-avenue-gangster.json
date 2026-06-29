@@ -1,7 +1,7 @@
 {
   "id": "org:colden-avenue-gangster",
   "name": "Colden Avenue Gangster",
-  "lane": "california-crips",
+  "lane": "california-crips-gangster",
   "metro": "Los Angeles",
   "description": "A street gang based near Colden Avenue in Los Angeles, claiming territory in the surrounding neighborhoods.",
   "type": "street_gang",

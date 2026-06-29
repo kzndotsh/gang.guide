@@ -1,7 +1,7 @@
 {
   "id": "org:hawthorne-thug-family-htf",
   "name": "Hawthorne Thug Family (HTF)",
-  "lane": "california-crips",
+  "lane": "california-crips-other",
   "metro": "Los Angeles",
   "description": "The Hawthorne Thug Family (HTF) are a street gang based in the city of Hawthorne in the South Bay area of Los Angeles County.",
   "type": "street_gang",

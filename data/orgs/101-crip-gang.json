@@ -1,7 +1,7 @@
 {
   "id": "org:101-crip-gang",
   "name": "101 Crip Gang",
-  "lane": "california-crips",
+  "lane": "california-crips-other",
   "metro": "Los Angeles",
   "description": "African-American Crip set based on the East Side of South Los Angeles near 101st Street, emerged in the late 1970s as part of the broader Crip expansion across South Central LA.",
   "type": "street_gang",

@@ -1,7 +1,7 @@
 {
   "id": "org:105th-street-gangster-crips",
   "name": "105th Street Gangster Crips",
-  "lane": "california-crips",
+  "lane": "california-crips-gangster",
   "metro": "Los Angeles",
   "description": "Street Gangster Crips are a predominately African-American street gang located near 105th Street and Western in unincorporated Los Angeles County.",
   "type": "street_gang",
