@@ -87,6 +87,26 @@
   let nodePositions = new Map<string, { x: number; y: number }>();
   let nodeShapes = new Map<string, any>();
 
+  // Viewport culling bounds (in content coordinates)
+  function getViewportBounds(): { x1: number; y1: number; x2: number; y2: number } {
+    if (!stage || !containerEl) return { x1: -Infinity, y1: -Infinity, x2: Infinity, y2: Infinity };
+    const scale = stage.scaleX();
+    const pos = stage.position();
+    const w = containerEl.clientWidth;
+    const h = containerEl.clientHeight;
+    const buffer = 200; // px buffer outside viewport
+    return {
+      x1: (-pos.x - buffer) / scale,
+      y1: (-pos.y - buffer) / scale,
+      x2: (w - pos.x + buffer) / scale,
+      y2: (h - pos.y + buffer) / scale,
+    };
+  }
+
+  function isInViewport(x: number, y: number, bounds: ReturnType<typeof getViewportBounds>): boolean {
+    return x >= bounds.x1 && x <= bounds.x2 && y >= bounds.y1 && y <= bounds.y2;
+  }
+
   const visibleNodes = $derived(
     graph.nodes.filter((node) => {
       if (!nodeMatchesMetro(node, metroFilter)) return false;
@@ -308,22 +328,80 @@
       nodePositions.set(node.id, nodePos(node));
     }
 
-    // Edges
+    // Viewport culling — only render nodes in view
+    const vb = getViewportBounds();
+    const viewportNodeIds = new Set<string>();
+    for (const [id, pos] of nodePositions) {
+      if (isInViewport(pos.x, pos.y, vb)) viewportNodeIds.add(id);
+    }
+    // Always include selected/hovered
+    if (selectedId && nodePositions.has(selectedId)) viewportNodeIds.add(selectedId);
+    if (hoveredId && nodePositions.has(hoveredId)) viewportNodeIds.add(hoveredId);
+
+    // Edges — batched by type for performance
+    const focusId = selectedId ?? hoveredId;
+    const edgeBuckets = new Map<string, GraphEdge[]>();
+    const focusedEdges: GraphEdge[] = [];
+
     for (const edge of graph.edges) {
       if (!edgeVisible(edge)) continue;
-      const srcPos = nodePositions.get(edge.source);
-      const tgtPos = nodePositions.get(edge.target);
-      if (!srcPos || !tgtPos) continue;
+      if (!nodePositions.has(edge.source) || !nodePositions.has(edge.target)) continue;
+      // Viewport cull: skip edges where neither endpoint is visible
+      const srcInView = viewportNodeIds.has(edge.source);
+      const tgtInView = viewportNodeIds.has(edge.target);
+      if (!srcInView && !tgtInView) continue;
 
+      if (focusId && (edge.source === focusId || edge.target === focusId)) {
+        focusedEdges.push(edge);
+      } else {
+        const bucket = edge.type;
+        if (!edgeBuckets.has(bucket)) edgeBuckets.set(bucket, []);
+        edgeBuckets.get(bucket)!.push(edge);
+      }
+    }
+
+    // Draw unfocused edges as batched single shapes per type
+    for (const [type, edges] of edgeBuckets) {
+      const sample = edges[0];
+      const opacity = edgeOpacity(sample);
+      if (opacity < 0.02) continue; // skip invisible batches
+
+      edgeLayer.add(new Konva.Shape({
+        sceneFunc: (ctx: any, shape: any) => {
+          ctx.beginPath();
+          for (const edge of edges) {
+            const srcPos = nodePositions.get(edge.source)!;
+            const tgtPos = nodePositions.get(edge.target)!;
+            const midX = (srcPos.x + tgtPos.x) / 2;
+            const midY = (srcPos.y + tgtPos.y) / 2;
+            const dx = tgtPos.x - srcPos.x;
+            const dy = tgtPos.y - srcPos.y;
+            const cx = midX - dy * 0.08;
+            const cy = midY + dx * 0.08;
+            ctx.moveTo(srcPos.x, srcPos.y);
+            ctx.quadraticCurveTo(cx, cy, tgtPos.x, tgtPos.y);
+          }
+          ctx.fillStrokeShape(shape);
+        },
+        stroke: edgeStroke(sample),
+        strokeWidth: type === 'nation_affiliation' ? 1.5 : 1,
+        opacity,
+        dash: type === 'rivalry' ? [4, 3] : undefined,
+        listening: false,
+        perfectDrawEnabled: false,
+      }));
+    }
+
+    // Draw focused edges individually on top
+    for (const edge of focusedEdges) {
+      const srcPos = nodePositions.get(edge.source)!;
+      const tgtPos = nodePositions.get(edge.target)!;
       const midX = (srcPos.x + tgtPos.x) / 2;
       const midY = (srcPos.y + tgtPos.y) / 2;
       const dx = tgtPos.x - srcPos.x;
       const dy = tgtPos.y - srcPos.y;
       const cx = midX - dy * 0.08;
       const cy = midY + dx * 0.08;
-
-      const focusId = selectedId ?? hoveredId;
-      const isFocused = focusId ? (edge.source === focusId || edge.target === focusId) : false;
 
       edgeLayer.add(new Konva.Shape({
         sceneFunc: (ctx: any, shape: any) => {
@@ -333,15 +411,17 @@
           ctx.fillStrokeShape(shape);
         },
         stroke: edgeStroke(edge),
-        strokeWidth: isFocused ? 2 : (edge.type === 'nation_affiliation' ? 1.5 : 1),
-        opacity: edgeOpacity(edge),
+        strokeWidth: 2,
+        opacity: 1,
         dash: edge.type === 'rivalry' ? [4, 3] : undefined,
         listening: false,
+        perfectDrawEnabled: false,
       }));
     }
 
-    // Nodes
+    // Nodes — only render those in viewport
     for (const node of visibleNodes) {
+      if (!viewportNodeIds.has(node.id)) continue;
       const pos = nodePositions.get(node.id)!;
       const isSelected = selectedId === node.id;
       const isHovered = hoveredId === node.id;
@@ -425,6 +505,14 @@
     edgeLayer.draw();
     nodeLayer.draw();
     labelLayer.draw();
+
+    // Cache layers as bitmaps for smooth panning (skip if content is huge to avoid memory issues)
+    const cacheThreshold = 8000 * 6000; // ~48MP max
+    const area = contentWidth * contentHeight;
+    if (area < cacheThreshold) {
+      edgeLayer.cache();
+      if (labelLayer.visible()) labelLayer.cache();
+    }
   }
 
   function buildSceneAsync() {
@@ -527,6 +615,9 @@
     stage.batchDraw();
     onzoom?.(currentZoom / baseZoom);
     updateLOD();
+    // Debounced rebuild for viewport culling
+    if (rebuildTimer) clearTimeout(rebuildTimer);
+    rebuildTimer = setTimeout(() => buildScene(), 150);
   }
 
   function updateLOD() {
@@ -599,7 +690,11 @@
       if (pointer) applyZoom(factor, pointer.x, pointer.y);
     });
 
-    // Hide expensive layers during drag for smooth panning
+    // Rebuild on pan end for viewport culling
+    stage.on('dragend', () => {
+      if (rebuildTimer) clearTimeout(rebuildTimer);
+      rebuildTimer = setTimeout(() => buildScene(), 150);
+    });
 
     // Click on empty space = deselect
     stage.on('click tap', (e: any) => {
