@@ -64,7 +64,10 @@ When you have gathered enough information, respond with ONLY valid JSON matching
   "founded_year_precision": "exact|circa|decade|estimate" or null,
   "colors": ["red", "black"] or null,
   "aliases": ["Alias 1", "Alias 2"] or null,
-  "membership_estimate": 5000 or null
+  "membership_estimate": 5000 or null,
+  "symbols": ["six-point star", "pitchfork"] or null,
+  "metro": "Los Angeles" or null,
+  "sources": [{"url": "https://...", "title": "Page Title"}] or null
 }
 
 Return null for any field you cannot confidently fill. Better to leave a gap than provide wrong data."""
@@ -209,6 +212,11 @@ def score_org(org: dict, edge_count: int) -> tuple[float, list[str]]:
         issues.append("no_aliases")
     if not org.get("membership_estimate"):
         issues.append("no_membership")
+    if not (org.get("symbols") or []):
+        issues.append("no_symbols")
+    sources = org.get("sources") or []
+    if len(sources) <= 1:
+        issues.append("single_source")
 
     if not issues:
         return 0.0, []
@@ -235,6 +243,8 @@ def build_prompt(org: dict, issues: list[str], edge_count: int, raw_context: str
         existing.append(f"Membership estimate: {org['membership_estimate']}")
     if org.get("nation_affiliation"):
         existing.append(f"Nation affiliation: {org['nation_affiliation']}")
+    if org.get("symbols"):
+        existing.append(f"Symbols: {', '.join(org['symbols'])}")
 
     sources = org.get("sources") or []
     if sources:
@@ -251,6 +261,10 @@ def build_prompt(org: dict, issues: list[str], edge_count: int, raw_context: str
         missing.append("aliases (alternative names, abbreviations)")
     if "no_membership" in issues:
         missing.append("membership_estimate")
+    if "no_symbols" in issues:
+        missing.append("symbols (gang identifiers: logos, hand signs, sports team apparel, numbers)")
+    if "single_source" in issues:
+        missing.append("sources (additional URLs with titles — Wikipedia, DOJ, news articles)")
 
     prompt = f"""Enrich this organization's profile:
 
@@ -572,6 +586,38 @@ def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
         est = enrichment["membership_estimate"]
         if isinstance(est, (int, float)) and 5 <= est <= 100000:
             changes["membership_estimate"] = int(est)
+
+    # Symbols: only fill if empty
+    if "no_symbols" in issues and enrichment.get("symbols"):
+        symbols = [s.strip() for s in enrichment["symbols"] if s and 2 < len(s) < 80]
+        if symbols:
+            changes["symbols"] = symbols
+
+    # Metro: only correct if LLM found a more specific/accurate one
+    if enrichment.get("metro"):
+        new_metro = enrichment["metro"].strip()
+        old_metro = org.get("metro", "")
+        # Only accept if old metro is generic/wrong (Unknown, United States)
+        if old_metro in ("Unknown", "United States", "") and new_metro and new_metro != old_metro:
+            changes["metro"] = new_metro
+
+    # Sources: append new sources (never remove existing)
+    if "single_source" in issues and enrichment.get("sources"):
+        existing_urls = {s.get("url", "").rstrip("/").lower() for s in (org.get("sources") or [])}
+        new_sources = []
+        for s in enrichment["sources"]:
+            if not isinstance(s, dict):
+                continue
+            url = (s.get("url") or "").strip()
+            title = (s.get("title") or "").strip()
+            if not url or not url.startswith("https://"):
+                continue
+            if url.rstrip("/").lower() in existing_urls:
+                continue
+            if title and len(title) < 200:
+                new_sources.append({"url": url, "title": title})
+        if new_sources:
+            changes["sources"] = (org.get("sources") or []) + new_sources
 
     return changes
 
