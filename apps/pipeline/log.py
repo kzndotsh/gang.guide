@@ -30,7 +30,7 @@ Usage:
 
 import json
 import time
-from datetime import datetime
+from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -52,7 +52,7 @@ class PipelineLogger:
         self.step = step
         self.source = source
         self.start_time = time.time()
-        self.run_id = datetime.now(datetime.UTC).strftime("%Y%m%d_%H%M%S")
+        self.run_id = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
 
         # Create log file: data/logs/{step}_{source}_{timestamp}.jsonl
         safe_source = source.replace("/", "_").replace(":", "_") if source else "global"
@@ -72,7 +72,7 @@ class PipelineLogger:
         self._write("info", "run_started", **metadata)
 
     def _ts(self) -> str:
-        return datetime.now(datetime.UTC).isoformat(timespec="seconds")
+        return datetime.now(UTC).isoformat(timespec="seconds")
 
     def _elapsed(self) -> float:
         return round(time.time() - self.start_time, 2)
