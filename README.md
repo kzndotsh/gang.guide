@@ -55,6 +55,8 @@ just dev
 
 ```
 Scrape → Clean → Extract (sonnet 4.5 × 3 temps) → Adjudicate (opus 4.6) → Verify (haiku) → Merge → Apply → Build → Serve
+                                                                                                              ↑
+                                                                                              Enrich (optional, post-processing)
 ```
 
 1. **Scrape** raw HTML from sources into `data/raw/`
@@ -65,6 +67,8 @@ Scrape → Clean → Extract (sonnet 4.5 × 3 temps) → Adjudicate (opus 4.6) �
 6. **Apply** conservative upgrade to `data/orgs/*.json` + `data/edges.json` — lint gates the result
 7. **Build** compiles flat files into `graph.json` + `details.json`
 8. **Serve** on Cloudflare Workers via SvelteKit + Konva.js canvas
+
+**Optional:** **Enrich** — agentic post-processing of weak org profiles. Scores orgs by weakness × connectivity, gathers context from `data/raw/` via ripgrep, then uses LLM with web search (DuckDuckGo) and URL fetching to fill missing fields (descriptions, founding years, colors, aliases, membership estimates). Run manually via `just enrich`.
 
 ## Data
 
