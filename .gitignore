@@ -33,3 +33,4 @@ junit.xml
 .coverage
 htmlcov/
 .pytest_cache/
+data/enrichment_log.json

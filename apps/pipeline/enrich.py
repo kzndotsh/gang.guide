@@ -120,9 +120,9 @@ def gather_raw_context(org: dict) -> str:
     total_chars = 0
 
     try:
-        # Use ripgrep for speed
+        # Use ripgrep for speed (case-insensitive)
         result = subprocess.run(
-            ["rg", "-il", "--max-count=1", pattern, str(DATA_RAW)],
+            ["rg", "-il", "-i", "--max-count=1", pattern, str(DATA_RAW)],
             capture_output=True, text=True, timeout=10,
         )
         matching_files = result.stdout.strip().split("\n") if result.stdout.strip() else []
@@ -503,38 +503,70 @@ def _parse_json_response(text_out: str) -> dict | None:
 
 
 def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
-    """Apply LLM enrichment to org, only upgrading weak fields."""
+    """Apply LLM enrichment to org, only upgrading weak fields.
+
+    Validates each field before accepting to prevent bad data.
+    """
     changes = {}
+
+    VALID_COLORS = {
+        "red", "blue", "green", "black", "white", "yellow", "orange", "purple",
+        "brown", "gold", "silver", "gray", "grey", "pink", "maroon", "burgundy",
+        "tan", "beige", "khaki", "navy", "teal", "crimson",
+    }
 
     # Description: only upgrade if it was a stub/short
     if ("stub_desc" in issues or "short_desc" in issues) and enrichment.get("description"):
         new_desc = enrichment["description"]
         old_desc = org.get("description", "")
-        if len(new_desc) > len(old_desc) + 20:  # meaningful improvement
+        # Validate: meaningful improvement, no HTML, no scrape junk
+        if (
+            len(new_desc) > len(old_desc) + 20
+            and "<" not in new_desc
+            and "&amp;" not in new_desc
+            and not new_desc.startswith("Full Name")
+            and len(new_desc) < 500
+        ):
             changes["description"] = new_desc
 
-    # Founded year: only fill if missing
+    # Founded year: only fill if missing, validate range
     if "no_year" in issues and enrichment.get("founded_year"):
-        changes["founded_year"] = enrichment["founded_year"]
-        if enrichment.get("founded_year_precision"):
-            changes["founded_year_precision"] = enrichment["founded_year_precision"]
+        year = enrichment["founded_year"]
+        if isinstance(year, (int, float)) and 1850 <= year <= 2025:
+            # Check against org type constraints
+            name_lower = org.get("name", "").lower()
+            lane = org.get("lane", "")
+            if "crip" in name_lower and "crip" in lane and year < 1969:
+                pass  # reject pre-Crip dates
+            elif "piru" in name_lower and year < 1969:
+                pass  # reject pre-Piru dates
+            elif "blood" in name_lower and "blood" in lane and year < 1969:
+                pass  # reject pre-Blood dates
+            else:
+                changes["founded_year"] = int(year)
+                if enrichment.get("founded_year_precision"):
+                    changes["founded_year_precision"] = enrichment["founded_year_precision"]
 
-    # Colors: only fill if empty
+    # Colors: only fill if empty, validate each color
     if "no_colors" in issues and enrichment.get("colors"):
         colors = [c.lower().strip() for c in enrichment["colors"] if c]
-        if colors:
-            changes["colors"] = colors
+        valid = [c for c in colors if c in VALID_COLORS]
+        if valid:
+            changes["colors"] = valid
 
-    # Aliases: only fill if empty
+    # Aliases: only fill if empty, validate length and content
     if "no_aliases" in issues and enrichment.get("aliases"):
-        aliases = [a.strip() for a in enrichment["aliases"] if a and len(a) < 60]
+        aliases = [a.strip() for a in enrichment["aliases"] if a and 2 < len(a) < 60]
+        # Reject aliases that are just the org name
+        org_name = org.get("name", "").lower()
+        aliases = [a for a in aliases if a.lower() != org_name]
         if aliases:
             changes["aliases"] = aliases
 
-    # Membership: only fill if missing
+    # Membership: only fill if missing, validate range
     if "no_membership" in issues and enrichment.get("membership_estimate"):
         est = enrichment["membership_estimate"]
-        if isinstance(est, (int, float)) and est > 0:
+        if isinstance(est, (int, float)) and 5 <= est <= 100000:
             changes["membership_estimate"] = int(est)
 
     return changes
@@ -599,6 +631,7 @@ def main():
 
     enriched = 0
     skipped = 0
+    log_entries = []
     for i, (priority, org, issues, ec) in enumerate(batch):
         print(f"  [{i+1}/{len(batch)}] {org['name']} ({ec} edges, {len(issues)} issues)")
 
@@ -626,12 +659,21 @@ def main():
         enriched += 1
         fields = ", ".join(changes.keys())
         print(f"    ✓ enriched: {fields}")
+        log_entries.append({"org": org["id"], "fields": list(changes.keys()), "changes": changes})
 
         # Small delay between calls
         if i < len(batch) - 1:
             time.sleep(0.5)
 
     print(f"\nDone: {enriched} enriched, {skipped} skipped")
+
+    # Write enrichment log for auditing
+    if log_entries:
+        log_path = ROOT / "data" / "enrichment_log.json"
+        existing_log = json.loads(log_path.read_text()) if log_path.exists() else []
+        existing_log.extend(log_entries)
+        log_path.write_text(json.dumps(existing_log, indent=2, ensure_ascii=False) + "\n")
+        print(f"Log: {log_path} ({len(log_entries)} entries appended)")
 
 
 if __name__ == "__main__":
