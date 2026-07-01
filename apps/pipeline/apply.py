@@ -15,6 +15,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from apps.pipeline.log import PipelineLogger
+
 from .lib.resolve import build_index, resolve
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -340,6 +342,13 @@ def main():
         DATA_RELS.write_text(json.dumps(edges_list, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Applied: {total_changes} field updates, {total_edges} new edges")
+
+    # Log the application
+    if not args.dry_run:
+        with PipelineLogger("apply", source=args.source) as log:
+            log.info("Apply complete", field_updates=total_changes, new_edges=total_edges)
+            if total_changes > 0 or total_edges > 0:
+                log.action("apply_data", source=args.source, field_updates=total_changes, new_edges=total_edges)
 
     # Run lint as final gate
     if not args.dry_run and (total_changes > 0 or total_edges > 0):

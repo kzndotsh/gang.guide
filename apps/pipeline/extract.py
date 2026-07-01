@@ -20,6 +20,8 @@ from pathlib import Path
 
 import httpx
 
+from apps.pipeline.log import PipelineLogger
+
 from .parse.clean import clean_html, quality_score
 from .lib.resolve import build_index, resolve
 
@@ -367,18 +369,26 @@ def main():
     print(f"[{ts()}] Extracting {len(pages)} pages from {args.source} ({RUNS_PER_PAGE} runs each)")
     processed = 0
     skipped = 0
-    for i, slug in enumerate(pages):
-        page_start = time.time()
-        result = extract_page(args.source, slug, force=args.force)
-        elapsed = time.time() - page_start
-        if result:
-            processed += 1
-            print(f"  [{ts()}] [{processed}/{len(pages)}] {slug} ({elapsed:.1f}s)")
-        else:
-            skipped += 1
-            print(f"  [{ts()}] [skip] {slug}")
 
-    total_elapsed = time.time() - start_time
+    with PipelineLogger("extract", source=args.source, model=MODEL, page_count=len(pages)) as log:
+        log.info("Starting extraction", pages=len(pages), runs_per_page=RUNS_PER_PAGE)
+
+        for i, slug in enumerate(pages):
+            page_start = time.time()
+            result = extract_page(args.source, slug, force=args.force)
+            elapsed = time.time() - page_start
+            if result:
+                processed += 1
+                print(f"  [{ts()}] [{processed}/{len(pages)}] {slug} ({elapsed:.1f}s)")
+                log.action("extract_page", slug=slug, elapsed=round(elapsed, 1))
+            else:
+                skipped += 1
+                print(f"  [{ts()}] [skip] {slug}")
+                log.info("skip_page", slug=slug)
+
+        total_elapsed = time.time() - start_time
+        log.info("Extraction complete", processed=processed, skipped=skipped, elapsed=round(total_elapsed, 1))
+
     print(f"\n[{ts()}] Done: {processed} extracted, {skipped} skipped in {total_elapsed:.0f}s ({total_elapsed/60:.1f}m)")
 
 

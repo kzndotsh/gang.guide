@@ -21,6 +21,8 @@ from pathlib import Path
 
 import httpx
 
+from apps.pipeline.log import PipelineLogger
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_EXTRACTED = ROOT / "data" / "extracted"
 
@@ -203,45 +205,53 @@ def process_source(source: str, dry_run: bool = False, force: bool = False):
     skipped = 0
     auto_merged = 0
 
-    for page_dir in sorted(source_dir.iterdir()):
-        if not page_dir.is_dir():
-            continue
+    with PipelineLogger("adjudicate", source=source, model=MODEL) as log:
+        log.info("Starting adjudication", source=source, force=force)
 
-        # Skip if already adjudicated
-        adj_path = page_dir / "adjudicated.json"
-        if not force and not dry_run and adj_path.exists():
-            skipped += 1
-            continue
+        for page_dir in sorted(source_dir.iterdir()):
+            if not page_dir.is_dir():
+                continue
 
-        # Load runs
-        runs = []
-        for i in range(1, 4):
-            run_path = page_dir / f"run_{i}.json"
-            if run_path.exists():
-                runs.append(json.loads(run_path.read_text(encoding="utf-8")))
+            # Skip if already adjudicated
+            adj_path = page_dir / "adjudicated.json"
+            if not force and not dry_run and adj_path.exists():
+                skipped += 1
+                continue
 
-        if len(runs) < 2:
-            continue
+            # Load runs
+            runs = []
+            for i in range(1, 4):
+                run_path = page_dir / f"run_{i}.json"
+                if run_path.exists():
+                    runs.append(json.loads(run_path.read_text(encoding="utf-8")))
 
-        if not needs_adjudication(runs):
-            # Still adjudicate everything — tokens are unlimited, quality wins
-            pass
+            if len(runs) < 2:
+                continue
 
-        slug = page_dir.name
-        if dry_run:
-            print(f"  [needs adjudication] {slug}")
-            adjudicated += 1
-            continue
+            if not needs_adjudication(runs):
+                # Still adjudicate everything — tokens are unlimited, quality wins
+                pass
 
-        print(f"  [{ts()}] adjudicating {slug}...")
-        result = call_adjudicator(runs)
-        if result:
-            adj_path.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-            edges = len(result.get("edges", []))
-            unresolved = len(result.get("unresolved_names", []))
-            print(f"    → {edges} edges, {unresolved} unresolved names")
-            adjudicated += 1
-        time.sleep(1.0)
+            slug = page_dir.name
+            if dry_run:
+                print(f"  [needs adjudication] {slug}")
+                adjudicated += 1
+                continue
+
+            print(f"  [{ts()}] adjudicating {slug}...")
+            result = call_adjudicator(runs)
+            if result:
+                adj_path.write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                edges = len(result.get("edges", []))
+                unresolved = len(result.get("unresolved_names", []))
+                print(f"    → {edges} edges, {unresolved} unresolved names")
+                log.action("adjudicate_page", slug=slug, edges=edges, unresolved=unresolved)
+                adjudicated += 1
+            else:
+                log.error("Adjudication failed", slug=slug)
+            time.sleep(1.0)
+
+        log.info("Adjudication complete", adjudicated=adjudicated, auto_merged=auto_merged, skipped=skipped)
 
     print(f"\n[{ts()}] Done: {adjudicated} adjudicated, {auto_merged} auto-merged (no conflicts), {skipped} already done")
 

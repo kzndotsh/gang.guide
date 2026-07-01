@@ -11,6 +11,8 @@ import json
 from collections import Counter
 from pathlib import Path
 
+from apps.pipeline.log import PipelineLogger
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_EXTRACTED = ROOT / "data" / "extracted"
 
@@ -93,46 +95,54 @@ def process_source(source: str, force: bool = False):
 
     merged_count = 0
     skipped = 0
-    for page_dir in sorted(source_dir.iterdir()):
-        if not page_dir.is_dir():
-            continue
 
-        # Skip if already merged (unless --force)
-        out_path = page_dir / "consensus.json"
-        if not force and out_path.exists():
-            skipped += 1
-            continue
+    with PipelineLogger("merge", source=source) as log:
+        log.info("Starting merge", source=source, force=force)
 
-        # Prefer adjudicated.json (LLM-resolved conflicts) over algorithmic merge
-        adj_path = page_dir / "adjudicated.json"
-        if adj_path.exists():
-            consensus = json.loads(adj_path.read_text(encoding="utf-8"))
+        for page_dir in sorted(source_dir.iterdir()):
+            if not page_dir.is_dir():
+                continue
+
+            # Skip if already merged (unless --force)
+            out_path = page_dir / "consensus.json"
+            if not force and out_path.exists():
+                skipped += 1
+                continue
+
+            # Prefer adjudicated.json (LLM-resolved conflicts) over algorithmic merge
+            adj_path = page_dir / "adjudicated.json"
+            if adj_path.exists():
+                consensus = json.loads(adj_path.read_text(encoding="utf-8"))
+                out_path.write_text(json.dumps(consensus, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                merged_count += 1
+                edge_count = len(consensus.get("edges", []))
+                print(f"  {page_dir.name}: {edge_count} edges (adjudicated)")
+                log.action("merge_page", slug=page_dir.name, edges=edge_count, method="adjudicated")
+                continue
+
+            # Load runs
+            runs = []
+            for i in range(1, 4):
+                run_path = page_dir / f"run_{i + 1}.json"
+                if run_path.exists():
+                    runs.append(json.loads(run_path.read_text(encoding="utf-8")))
+
+            if len(runs) < 2:
+                continue
+
+            # Merge
+            consensus = merge_runs(runs)
+
+            # Save
+            out_path = page_dir / "consensus.json"
             out_path.write_text(json.dumps(consensus, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
             merged_count += 1
+
             edge_count = len(consensus.get("edges", []))
-            print(f"  {page_dir.name}: {edge_count} edges (adjudicated)")
-            continue
+            print(f"  {page_dir.name}: {edge_count} edges, {len(consensus.get('colors', []))} colors")
+            log.action("merge_page", slug=page_dir.name, edges=edge_count, method="consensus")
 
-        # Load runs
-        runs = []
-        for i in range(1, 4):
-            run_path = page_dir / f"run_{i + 1}.json"
-            if run_path.exists():
-                runs.append(json.loads(run_path.read_text(encoding="utf-8")))
-
-        if len(runs) < 2:
-            continue
-
-        # Merge
-        consensus = merge_runs(runs)
-
-        # Save
-        out_path = page_dir / "consensus.json"
-        out_path.write_text(json.dumps(consensus, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-        merged_count += 1
-
-        edge_count = len(consensus.get("edges", []))
-        print(f"  {page_dir.name}: {edge_count} edges, {len(consensus.get('colors', []))} colors")
+        log.info("Merge complete", merged=merged_count, skipped=skipped)
 
     print(f"\nMerged {merged_count} pages" + (f", skipped {skipped} (already done)" if skipped else ""))
 

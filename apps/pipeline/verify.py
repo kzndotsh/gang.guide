@@ -18,6 +18,8 @@ from pathlib import Path
 
 import httpx
 
+from apps.pipeline.log import PipelineLogger
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_EXTRACTED = ROOT / "data" / "extracted"
 
@@ -55,6 +57,20 @@ TOOLS = [
             "required": ["query"],
         },
     },
+    {
+        "name": "fetch_url",
+        "description": "Fetch and read a specific URL to check its content for verification.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "description": "URL to fetch and read",
+                }
+            },
+            "required": ["url"],
+        },
+    },
 ]
 
 
@@ -85,6 +101,35 @@ def execute_web_search(query: str) -> str:
         return "\n".join(results) if results else "No results found."
     except Exception as e:
         return f"Search failed: {e}"
+
+
+def execute_fetch_url(url: str) -> str:
+    """Fetch a URL and extract readable text content."""
+    try:
+        resp = httpx.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-verify/1.0)"},
+            timeout=15.0,
+            follow_redirects=True,
+        )
+        resp.raise_for_status()
+        content = resp.text
+        content = re.sub(r"<script[^>]*>.*?</script>", " ", content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r"<style[^>]*>.*?</style>", " ", content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r"<[^>]+>", " ", content)
+        content = re.sub(r"\s+", " ", content).strip()
+        return content[:5000]
+    except Exception as e:
+        return f"Fetch failed: {e}"
+
+
+def execute_tool(tool_name: str, tool_input: dict) -> str:
+    """Execute a tool call."""
+    if tool_name == "web_search":
+        return execute_web_search(tool_input.get("query", ""))
+    elif tool_name == "fetch_url":
+        return execute_fetch_url(tool_input.get("url", ""))
+    return f"Unknown tool: {tool_name}"
 
 
 def identify_suspicious_edges(adjudicated: dict) -> list[dict]:
@@ -184,9 +229,10 @@ Then give your verdict."""
             tool_results = []
             for block in content_blocks:
                 if block.get("type") == "tool_use":
-                    query = block.get("input", {}).get("query", "")
-                    print(f"      🔍 searching: {query[:60]}")
-                    result = execute_web_search(query)
+                    tool_name = block["name"]
+                    tool_input = block.get("input", {})
+                    print(f"      🔍 {tool_name}: {json.dumps(tool_input)[:60]}")
+                    result = execute_tool(tool_name, tool_input)
                     tool_results.append({
                         "type": "tool_result",
                         "tool_use_id": block["id"],
@@ -223,81 +269,107 @@ Then give your verdict."""
     return None
 
 
-def process_source(source: str, limit: int = 50, dry_run: bool = False):
+def process_source(source: str, limit: int = 50, dry_run: bool = False, min_confidence: float = 0.7):
     """Verify suspicious edges in adjudicated results for a source."""
     source_dir = DATA_EXTRACTED / source
     if not source_dir.exists():
         print(f"No extractions for {source}")
         return
 
-    total_suspicious = 0
+    total_checked = 0
     total_verified = 0
     total_rejected = 0
     total_uncertain = 0
+    verification_log = []
 
-    for page_dir in sorted(source_dir.iterdir()):
-        if not page_dir.is_dir():
-            continue
+    with PipelineLogger("verify", source=source, limit=limit, min_confidence=min_confidence, model=MODEL) as log:
+        log.info("Starting verification", source=source, limit=limit)
 
-        adj_path = page_dir / "adjudicated.json"
-        if not adj_path.exists():
-            continue
-
-        adjudicated = json.loads(adj_path.read_text(encoding="utf-8"))
-        suspicious = identify_suspicious_edges(adjudicated)
-
-        if not suspicious:
-            continue
-
-        if dry_run:
-            subject = adjudicated.get("subject_org", page_dir.name)
-            for s in suspicious[:3]:
-                edge = s["edge"]
-                print(f"  [{subject}] {edge.get('type', '?')} → {edge.get('target', '?')} ({', '.join(s['reasons'])})")
-            total_suspicious += len(suspicious)
-            continue
-
-        subject = adjudicated.get("subject_org", page_dir.name)
-        modified = False
-
-        for s in suspicious[:limit]:
-            edge = s["edge"]
-            print(f"  [{subject}] verifying: {edge.get('type', '')} → {edge.get('target', '')}")
-
-            verdict = verify_edge(edge, subject)
-            if not verdict:
+        for page_dir in sorted(source_dir.iterdir()):
+            if not page_dir.is_dir():
                 continue
 
-            v = verdict.get("verdict", "uncertain")
-            conf = verdict.get("confidence", 0.5)
-            reason = verdict.get("reason", "")
+            adj_path = page_dir / "adjudicated.json"
+            if not adj_path.exists():
+                continue
 
-            if v == "supported":
-                total_verified += 1
-                print(f"    ✓ supported ({conf:.0%}): {reason[:60]}")
-            elif v == "unsupported" and conf >= 0.7:
-                total_rejected += 1
-                # Remove the edge from adjudicated results
-                adjudicated["edges"] = [e for e in adjudicated["edges"] if e != edge]
-                modified = True
-                print(f"    ✗ rejected ({conf:.0%}): {reason[:60]}")
-            else:
-                total_uncertain += 1
-                print(f"    ? uncertain ({conf:.0%}): {reason[:60]}")
+            adjudicated = json.loads(adj_path.read_text(encoding="utf-8"))
+            suspicious = identify_suspicious_edges(adjudicated)
 
-            time.sleep(0.5)
+            if not suspicious:
+                continue
 
-            total_suspicious += 1
-            if total_suspicious >= limit:
+            if dry_run:
+                subject = adjudicated.get("subject_org", page_dir.name)
+                for s in suspicious[:3]:
+                    edge = s["edge"]
+                    print(f"  [{subject}] {edge.get('type', '?')} → {edge.get('target', '?')} ({', '.join(s['reasons'])})")
+                total_checked += len(suspicious)
+                continue
+
+            subject = adjudicated.get("subject_org", page_dir.name)
+            modified = False
+
+            for s in suspicious:
+                if total_checked >= limit:
+                    break
+
+                edge = s["edge"]
+                print(f"  [{subject}] verifying: {edge.get('type', '')} → {edge.get('target', '')}")
+
+                verdict = verify_edge(edge, subject)
+                if not verdict:
+                    total_checked += 1
+                    log.warning("No verdict returned", subject=subject, target=edge.get("target", ""))
+                    continue
+
+                v = verdict.get("verdict", "uncertain")
+                conf = verdict.get("confidence", 0.5)
+                reason = verdict.get("reason", "")
+
+                log_entry = {
+                    "subject": subject,
+                    "target": edge.get("target", ""),
+                    "type": edge.get("type", ""),
+                    "evidence": edge.get("evidence", "")[:100],
+                    "verdict": v,
+                    "confidence": conf,
+                    "reason": reason,
+                }
+
+                if v == "supported":
+                    total_verified += 1
+                    log.decision("supported", **log_entry)
+                    print(f"    ✓ supported ({conf:.0%}): {reason[:60]}")
+                elif v == "unsupported" and conf >= min_confidence:
+                    total_rejected += 1
+                    adjudicated["edges"] = [
+                        e for e in adjudicated["edges"]
+                        if not (e.get("target") == edge.get("target") and e.get("type") == edge.get("type"))
+                    ]
+                    modified = True
+                    log_entry["action"] = "removed"
+                    log.action("reject_edge", **log_entry)
+                    print(f"    ✗ rejected ({conf:.0%}): {reason[:60]}")
+                else:
+                    total_uncertain += 1
+                    log.decision("uncertain", **log_entry)
+                    print(f"    ? uncertain ({conf:.0%}): {reason[:60]}")
+
+                verification_log.append(log_entry)
+                total_checked += 1
+                time.sleep(1.0)
+
+            if modified:
+                adj_path.write_text(json.dumps(adjudicated, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                log.action("write_adjudicated", path=str(adj_path))
+
+            if total_checked >= limit:
                 break
 
-        if modified:
-            adj_path.write_text(json.dumps(adjudicated, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        log.info("Verification complete", checked=total_checked, supported=total_verified, rejected=total_rejected, uncertain=total_uncertain)
 
-        if total_suspicious >= limit:
-            break
-
-    print(f"\nDone: {total_suspicious} checked, {total_verified} supported, {total_rejected} rejected, {total_uncertain} uncertain")
+    print(f"\nDone: {total_checked} checked, {total_verified} supported, {total_rejected} rejected, {total_uncertain} uncertain")
 
 
 def main():
@@ -305,6 +377,7 @@ def main():
     parser.add_argument("--source", required=True, help="Source to verify (e.g. unitedgangs)")
     parser.add_argument("--limit", type=int, default=50, help="Max edges to verify (default: 50)")
     parser.add_argument("--dry-run", action="store_true", help="Identify suspicious edges without verifying")
+    parser.add_argument("--confidence", type=float, default=0.7, help="Min confidence to reject (default: 0.7)")
     parser.add_argument("--model", type=str, default=None, help="Override model")
     args = parser.parse_args()
 
@@ -316,7 +389,7 @@ def main():
         print("ERROR: Set KIRO_GATEWAY_API_KEY or PROXY_API_KEY")
         raise SystemExit(1)
 
-    process_source(args.source, limit=args.limit, dry_run=args.dry_run)
+    process_source(args.source, limit=args.limit, dry_run=args.dry_run, min_confidence=args.confidence)
 
 
 if __name__ == "__main__":

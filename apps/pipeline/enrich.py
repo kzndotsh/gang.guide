@@ -21,6 +21,8 @@ from pathlib import Path
 
 import httpx
 
+from apps.pipeline.log import PipelineLogger
+
 ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_ORGS = ROOT / "data" / "orgs"
 DATA_EDGES = ROOT / "data" / "edges.json"
@@ -632,48 +634,51 @@ def main():
     enriched = 0
     skipped = 0
     log_entries = []
-    for i, (priority, org, issues, ec) in enumerate(batch):
-        print(f"  [{i+1}/{len(batch)}] {org['name']} ({ec} edges, {len(issues)} issues)")
 
-        # Gather context from raw scraped data
-        raw_context = gather_raw_context(org)
-        if raw_context:
-            print(f"    → found {len(raw_context)} chars of source context")
-        else:
-            print("    → no raw context found (using LLM knowledge only)")
+    with PipelineLogger("enrich", source=args.org or "batch", limit=args.limit, model=MODEL) as log:
+        log.info("Starting enrichment", batch_size=len(batch), total_enrichable=len(scored))
 
-        prompt = build_prompt(org, issues, ec, raw_context)
-        result = call_llm(prompt, use_tools=not args.no_tools)
+        for i, (priority, org, issues, ec) in enumerate(batch):
+            print(f"  [{i+1}/{len(batch)}] {org['name']} ({ec} edges, {len(issues)} issues)")
 
-        if not result:
-            skipped += 1
-            continue
+            # Gather context from raw scraped data
+            raw_context = gather_raw_context(org)
+            if raw_context:
+                print(f"    → found {len(raw_context)} chars of source context")
+                log.info("Raw context found", org=org["id"], chars=len(raw_context))
+            else:
+                print("    → no raw context found (using LLM knowledge only)")
+                log.info("No raw context", org=org["id"])
 
-        changes = apply_enrichment(org, result, issues)
-        if not changes:
-            print("    → no improvements (LLM returned nulls)")
-            skipped += 1
-            continue
+            prompt = build_prompt(org, issues, ec, raw_context)
+            result = call_llm(prompt, use_tools=not args.no_tools)
 
-        save_org(org, changes)
-        enriched += 1
-        fields = ", ".join(changes.keys())
-        print(f"    ✓ enriched: {fields}")
-        log_entries.append({"org": org["id"], "fields": list(changes.keys()), "changes": changes})
+            if not result:
+                skipped += 1
+                log.warning("LLM returned no result", org=org["id"])
+                continue
 
-        # Small delay between calls
-        if i < len(batch) - 1:
-            time.sleep(0.5)
+            changes = apply_enrichment(org, result, issues)
+            if not changes:
+                print("    → no improvements (LLM returned nulls)")
+                skipped += 1
+                log.decision("skip", org=org["id"], reason="no valid improvements from LLM")
+                continue
+
+            save_org(org, changes)
+            enriched += 1
+            fields = ", ".join(changes.keys())
+            print(f"    ✓ enriched: {fields}")
+            log.action("enrich_org", org=org["id"], fields=list(changes.keys()), changes=changes)
+            log_entries.append({"org": org["id"], "fields": list(changes.keys()), "changes": changes})
+
+            # Small delay between calls
+            if i < len(batch) - 1:
+                time.sleep(0.5)
+
+        log.info("Enrichment complete", enriched=enriched, skipped=skipped)
 
     print(f"\nDone: {enriched} enriched, {skipped} skipped")
-
-    # Write enrichment log for auditing
-    if log_entries:
-        log_path = ROOT / "data" / "enrichment_log.json"
-        existing_log = json.loads(log_path.read_text()) if log_path.exists() else []
-        existing_log.extend(log_entries)
-        log_path.write_text(json.dumps(existing_log, indent=2, ensure_ascii=False) + "\n")
-        print(f"Log: {log_path} ({len(log_entries)} entries appended)")
 
 
 if __name__ == "__main__":
