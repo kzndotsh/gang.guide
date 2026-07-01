@@ -51,15 +51,15 @@
   "status": "active",
   "nation_affiliation": "org:folk-nation",
   "symbols": [
-    "skull",
-    "top hat",
-    "cane",
-    "dice",
-    "whiskey bottle",
+    "Skull",
+    "Top Hat",
+    "Cane",
+    "Dice",
+    "Whiskey Bottle",
     "Ku Klux Klansman",
-    "swastika",
-    "Celtic cross",
-    "embroidered G"
+    "Swastika",
+    "Celtic Cross",
+    "Embroidered G"
   ],
   "membership_estimate": 6000
 }

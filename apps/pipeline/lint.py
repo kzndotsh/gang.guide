@@ -208,6 +208,11 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             if len(alias) > 60:
                 warnings.append(f"{f}: alias too long ({len(alias)} chars): '{alias[:50]}...'")
 
+        # Symbols must be title case
+        for sym in (org.get("symbols") or []):
+            if sym != sym.title():
+                errors.append(f"{f}: symbol not title case: '{sym}' → '{sym.title()}'")
+
         colors = org.get("colors") or []
         for c in colors:
             if c.lower() in ("give details", "unknown", ""):
