@@ -402,7 +402,7 @@ def call_llm(prompt: str, use_tools: bool = True, timeout: float = 90.0) -> dict
         "content-type": "application/json",
     }
 
-    max_turns = 6  # safety cap on tool-use turns
+    max_turns = 8  # safety cap on tool-use turns
 
     for turn in range(max_turns):
         payload = {
