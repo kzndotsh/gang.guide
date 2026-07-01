@@ -66,7 +66,6 @@ When you have gathered enough information, respond with ONLY valid JSON matching
   "aliases": ["Alias 1", "Alias 2"] or null,
   "membership_estimate": 5000 or null,
   "symbols": ["six-point star", "pitchfork"] or null,
-  "metro": "Los Angeles" or null,
   "sources": [{"url": "https://...", "title": "Page Title"}] or null
 }
 
@@ -592,14 +591,6 @@ def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
         symbols = [s.strip() for s in enrichment["symbols"] if s and 2 < len(s) < 80]
         if symbols:
             changes["symbols"] = symbols
-
-    # Metro: only correct if LLM found a more specific/accurate one
-    if enrichment.get("metro"):
-        new_metro = enrichment["metro"].strip()
-        old_metro = org.get("metro", "")
-        # Only accept if old metro is generic/wrong (Unknown, United States)
-        if old_metro in ("Unknown", "United States", "") and new_metro and new_metro != old_metro:
-            changes["metro"] = new_metro
 
     # Sources: append new sources (never remove existing)
     if "single_source" in issues and enrichment.get("sources"):
