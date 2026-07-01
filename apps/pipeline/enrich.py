@@ -636,7 +636,7 @@ def main():
     log_entries = []
 
     with PipelineLogger("enrich", source=args.org or "batch", limit=args.limit, model=MODEL) as log:
-        log.info("Starting enrichment", batch_size=len(batch), total_enrichable=len(scored))
+        log.info("enrichment_started", batch_size=len(batch), total_enrichable=len(scored))
 
         for i, (priority, org, issues, ec) in enumerate(batch):
             print(f"  [{i+1}/{len(batch)}] {org['name']} ({ec} edges, {len(issues)} issues)")
@@ -645,38 +645,38 @@ def main():
             raw_context = gather_raw_context(org)
             if raw_context:
                 print(f"    → found {len(raw_context)} chars of source context")
-                log.info("Raw context found", org=org["id"], chars=len(raw_context))
+                log.info("context_gathered", org=org["id"], chars=len(raw_context))
             else:
                 print("    → no raw context found (using LLM knowledge only)")
-                log.info("No raw context", org=org["id"])
+                log.info("context_empty", org=org["id"])
 
             prompt = build_prompt(org, issues, ec, raw_context)
             result = call_llm(prompt, use_tools=not args.no_tools)
 
             if not result:
                 skipped += 1
-                log.warn("LLM returned no result", org=org["id"])
+                log.warn("llm_no_result", org=org["id"])
                 continue
 
             changes = apply_enrichment(org, result, issues)
             if not changes:
                 print("    → no improvements (LLM returned nulls)")
                 skipped += 1
-                log.decision("skip", org=org["id"], reason="no valid improvements from LLM")
+                log.decision("enrichment_skipped", org=org["id"], reason="no valid improvements from LLM")
                 continue
 
             save_org(org, changes)
             enriched += 1
             fields = ", ".join(changes.keys())
             print(f"    ✓ enriched: {fields}")
-            log.action("enrich_org", org=org["id"], fields=list(changes.keys()), changes=changes)
+            log.action("org_enriched", org=org["id"], fields=list(changes.keys()), changes=changes)
             log_entries.append({"org": org["id"], "fields": list(changes.keys()), "changes": changes})
 
             # Small delay between calls
             if i < len(batch) - 1:
                 time.sleep(0.5)
 
-        log.info("Enrichment complete", enriched=enriched, skipped=skipped)
+        log.info("enrichment_completed", enriched=enriched, skipped=skipped)
 
     print(f"\nDone: {enriched} enriched, {skipped} skipped")
 

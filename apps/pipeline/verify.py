@@ -283,7 +283,7 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
     verification_log = []
 
     with PipelineLogger("verify", source=source, limit=limit, min_confidence=min_confidence, model=MODEL) as log:
-        log.info("Starting verification", source=source, limit=limit)
+        log.info("verification_started", source=source, limit=limit)
 
         for page_dir in sorted(source_dir.iterdir()):
             if not page_dir.is_dir():
@@ -320,7 +320,7 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
                 verdict = verify_edge(edge, subject)
                 if not verdict:
                     total_checked += 1
-                    log.warn("No verdict returned", subject=subject, target=edge.get("target", ""))
+                    log.warn("verdict_missing", subject=subject, target=edge.get("target", ""))
                     continue
 
                 v = verdict.get("verdict", "uncertain")
@@ -339,7 +339,7 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
 
                 if v == "supported":
                     total_verified += 1
-                    log.decision("supported", **log_entry)
+                    log.decision("edge_supported", **log_entry)
                     print(f"    ✓ supported ({conf:.0%}): {reason[:60]}")
                 elif v == "unsupported" and conf >= min_confidence:
                     total_rejected += 1
@@ -349,11 +349,11 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
                     ]
                     modified = True
                     log_entry["action"] = "removed"
-                    log.action("reject_edge", **log_entry)
+                    log.action("edge_rejected", **log_entry)
                     print(f"    ✗ rejected ({conf:.0%}): {reason[:60]}")
                 else:
                     total_uncertain += 1
-                    log.decision("uncertain", **log_entry)
+                    log.decision("edge_uncertain", **log_entry)
                     print(f"    ? uncertain ({conf:.0%}): {reason[:60]}")
 
                 verification_log.append(log_entry)
@@ -362,12 +362,12 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
 
             if modified:
                 adj_path.write_text(json.dumps(adjudicated, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-                log.action("write_adjudicated", path=str(adj_path))
+                log.action("file_written", path=str(adj_path))
 
             if total_checked >= limit:
                 break
 
-        log.info("Verification complete", checked=total_checked, supported=total_verified, rejected=total_rejected, uncertain=total_uncertain)
+        log.info("verification_completed", checked=total_checked, supported=total_verified, rejected=total_rejected, uncertain=total_uncertain)
 
     print(f"\nDone: {total_checked} checked, {total_verified} supported, {total_rejected} rejected, {total_uncertain} uncertain")
 

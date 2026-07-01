@@ -206,7 +206,7 @@ def process_source(source: str, dry_run: bool = False, force: bool = False):
     auto_merged = 0
 
     with PipelineLogger("adjudicate", source=source, model=MODEL) as log:
-        log.info("Starting adjudication", source=source, force=force)
+        log.info("adjudication_started", source=source, force=force)
 
         for page_dir in sorted(source_dir.iterdir()):
             if not page_dir.is_dir():
@@ -245,13 +245,13 @@ def process_source(source: str, dry_run: bool = False, force: bool = False):
                 edges = len(result.get("edges", []))
                 unresolved = len(result.get("unresolved_names", []))
                 print(f"    → {edges} edges, {unresolved} unresolved names")
-                log.action("adjudicate_page", slug=slug, edges=edges, unresolved=unresolved)
+                log.action("page_adjudicated", slug=slug, edges=edges, unresolved=unresolved)
                 adjudicated += 1
             else:
-                log.error("Adjudication failed", slug=slug)
+                log.error("adjudication_failed", slug=slug)
             time.sleep(1.0)
 
-        log.info("Adjudication complete", adjudicated=adjudicated, auto_merged=auto_merged, skipped=skipped)
+        log.info("adjudication_completed", adjudicated=adjudicated, auto_merged=auto_merged, skipped=skipped)
 
     print(f"\n[{ts()}] Done: {adjudicated} adjudicated, {auto_merged} auto-merged (no conflicts), {skipped} already done")
 

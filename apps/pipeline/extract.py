@@ -371,7 +371,7 @@ def main():
     skipped = 0
 
     with PipelineLogger("extract", source=args.source, model=MODEL, page_count=len(pages)) as log:
-        log.info("Starting extraction", pages=len(pages), runs_per_page=RUNS_PER_PAGE)
+        log.info("extraction_started", pages=len(pages), runs_per_page=RUNS_PER_PAGE)
 
         for i, slug in enumerate(pages):
             page_start = time.time()
@@ -380,14 +380,14 @@ def main():
             if result:
                 processed += 1
                 print(f"  [{ts()}] [{processed}/{len(pages)}] {slug} ({elapsed:.1f}s)")
-                log.action("extract_page", slug=slug, elapsed=round(elapsed, 1))
+                log.action("page_extracted", slug=slug, elapsed=round(elapsed, 1))
             else:
                 skipped += 1
                 print(f"  [{ts()}] [skip] {slug}")
-                log.info("skip_page", slug=slug)
+                log.info("page_skipped", slug=slug)
 
         total_elapsed = time.time() - start_time
-        log.info("Extraction complete", processed=processed, skipped=skipped, elapsed=round(total_elapsed, 1))
+        log.info("extraction_completed", processed=processed, skipped=skipped, elapsed=round(total_elapsed, 1))
 
     print(f"\n[{ts()}] Done: {processed} extracted, {skipped} skipped in {total_elapsed:.0f}s ({total_elapsed/60:.1f}m)")
 

@@ -276,6 +276,8 @@ def main():
     total_changes = 0
     total_edges = 0
 
+    log = PipelineLogger("apply", source=args.source, dry_run=args.dry_run) if not args.dry_run else None
+
     for page_dir in sorted(source_dir.iterdir()):
         if not page_dir.is_dir():
             continue
@@ -343,12 +345,10 @@ def main():
 
     print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Applied: {total_changes} field updates, {total_edges} new edges")
 
-    # Log the application
-    if not args.dry_run:
-        with PipelineLogger("apply", source=args.source) as log:
-            log.info("Apply complete", field_updates=total_changes, new_edges=total_edges)
-            if total_changes > 0 or total_edges > 0:
-                log.action("apply_data", source=args.source, field_updates=total_changes, new_edges=total_edges)
+    # Close the logger
+    if log:
+        log.info("apply_completed", field_updates=total_changes, new_edges=total_edges)
+        log.close()
 
     # Run lint as final gate
     if not args.dry_run and (total_changes > 0 or total_edges > 0):

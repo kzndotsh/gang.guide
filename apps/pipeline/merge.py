@@ -97,7 +97,7 @@ def process_source(source: str, force: bool = False):
     skipped = 0
 
     with PipelineLogger("merge", source=source) as log:
-        log.info("Starting merge", source=source, force=force)
+        log.info("merge_started", source=source, force=force)
 
         for page_dir in sorted(source_dir.iterdir()):
             if not page_dir.is_dir():
@@ -117,7 +117,7 @@ def process_source(source: str, force: bool = False):
                 merged_count += 1
                 edge_count = len(consensus.get("edges", []))
                 print(f"  {page_dir.name}: {edge_count} edges (adjudicated)")
-                log.action("merge_page", slug=page_dir.name, edges=edge_count, method="adjudicated")
+                log.action("page_merged", slug=page_dir.name, edges=edge_count, method="adjudicated")
                 continue
 
             # Load runs
@@ -140,9 +140,9 @@ def process_source(source: str, force: bool = False):
 
             edge_count = len(consensus.get("edges", []))
             print(f"  {page_dir.name}: {edge_count} edges, {len(consensus.get('colors', []))} colors")
-            log.action("merge_page", slug=page_dir.name, edges=edge_count, method="consensus")
+            log.action("page_merged", slug=page_dir.name, edges=edge_count, method="consensus")
 
-        log.info("Merge complete", merged=merged_count, skipped=skipped)
+        log.info("merge_completed", merged=merged_count, skipped=skipped)
 
     print(f"\nMerged {merged_count} pages" + (f", skipped {skipped} (already done)" if skipped else ""))
 
