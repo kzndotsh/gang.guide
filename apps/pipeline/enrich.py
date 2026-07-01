@@ -389,7 +389,7 @@ def execute_tool(tool_name: str, tool_input: dict) -> str:
         return f"Unknown tool: {tool_name}"
 
 
-def call_llm(prompt: str, use_tools: bool = True, timeout: float = 90.0) -> dict | None:
+def call_llm(prompt: str, use_tools: bool = True, timeout: float = 90.0, logger: "PipelineLogger | None" = None) -> dict | None:
     """Call the Kiro gateway with agentic tool-use loop.
 
     The LLM can request web searches and URL fetches to gather information.
@@ -446,6 +446,8 @@ def call_llm(prompt: str, use_tools: bool = True, timeout: float = 90.0) -> dict
                     tool_id = block["id"]
                     print(f"    🔧 {tool_name}({json.dumps(tool_input)[:80]})")
                     result = execute_tool(tool_name, tool_input)
+                    if logger:
+                        logger.tool_call(tool_name, tool_input, len(result))
                     tool_results.append({
                         "type": "tool_result",
                         "tool_use_id": tool_id,
@@ -651,7 +653,7 @@ def main():
                 log.info("context_empty", org=org["id"])
 
             prompt = build_prompt(org, issues, ec, raw_context)
-            result = call_llm(prompt, use_tools=not args.no_tools)
+            result = call_llm(prompt, use_tools=not args.no_tools, logger=log)
 
             if not result:
                 skipped += 1
