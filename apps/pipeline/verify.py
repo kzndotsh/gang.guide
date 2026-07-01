@@ -320,7 +320,7 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
                 verdict = verify_edge(edge, subject)
                 if not verdict:
                     total_checked += 1
-                    log.warning("No verdict returned", subject=subject, target=edge.get("target", ""))
+                    log.warn("No verdict returned", subject=subject, target=edge.get("target", ""))
                     continue
 
                 v = verdict.get("verdict", "uncertain")

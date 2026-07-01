@@ -655,7 +655,7 @@ def main():
 
             if not result:
                 skipped += 1
-                log.warning("LLM returned no result", org=org["id"])
+                log.warn("LLM returned no result", org=org["id"])
                 continue
 
             changes = apply_enrichment(org, result, issues)
