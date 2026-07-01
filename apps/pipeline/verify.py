@@ -23,7 +23,7 @@ DATA_EXTRACTED = ROOT / "data" / "extracted"
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("VERIFY_MODEL", "claude-haiku-4.5")  # haiku for speed — verification is simple
+MODEL = os.environ.get("VERIFY_MODEL", "claude-sonnet-4.5")  # sonnet for better reasoning on ambiguous claims
 
 SYSTEM_PROMPT = """You are a fact-checker for a criminal organization knowledge graph. You verify claims about gang relationships using web search results.
 
