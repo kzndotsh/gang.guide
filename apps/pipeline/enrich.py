@@ -35,20 +35,27 @@ MAX_CONTEXT_CHARS = 8000
 
 SYSTEM_PROMPT = """You are a research assistant specializing in US criminal organizations. Given an org's name, location, and existing data, fill in missing fields.
 
-CRITICAL: If source material is provided, base your answers ONLY on that material. Do not invent information.
-If no source material is provided, you may use your training knowledge but must be conservative — only provide facts you are highly confident about.
+You have access to tools:
+- web_search: Search the web for information about the org (founding dates, membership, colors, etc.)
+- fetch_url: Read a specific URL for detailed information
+
+WORKFLOW:
+1. If source material is provided in the prompt, check it first for answers.
+2. If you still need information, use web_search to find it.
+3. If a search result points to a useful page, use fetch_url to read it.
+4. Once you have enough information, respond with the final JSON.
 
 Rules:
-- Only provide information you are confident about. Use null for uncertain fields.
+- Base answers on source material and web search results. Do NOT guess from training data alone.
+- Only provide information supported by evidence you found. Use null for uncertain fields.
 - Descriptions must be factual, 2-3 sentences, with founding context and notable characteristics.
 - Do NOT fabricate relationships, membership numbers, or founding dates you aren't sure about.
 - Colors must be real color words (red, blue, green, etc.)
 - Aliases must be names the org is actually known by (abbreviations, street names, alternative spellings)
 - Founded year should be the year the org was established, not when it joined a larger alliance.
 - Membership estimates should reflect peak or current membership; use null if unknown.
-- If the source material contradicts what you think you know, trust the source material.
 
-Respond with ONLY valid JSON matching this schema:
+When you have gathered enough information, respond with ONLY valid JSON matching this schema:
 {
   "description": "2-3 sentence factual description or null if you cannot improve on existing",
   "founded_year": 1972 or null,
@@ -271,23 +278,142 @@ Only use your own knowledge to fill gaps the source material doesn't cover.
     return prompt
 
 
-def call_llm(prompt: str, timeout: float = 60.0) -> dict | None:
-    """Call the Kiro gateway for enrichment."""
-    payload = {
-        "model": MODEL,
-        "max_tokens": 1024,
-        "temperature": 0.1,
-        "thinking": {"type": "disabled"},
-        "messages": [{"role": "user", "content": prompt}],
-        "system": SYSTEM_PROMPT,
-    }
+# --- Tool definitions for the agentic loop ---
+
+TOOLS = [
+    {
+        "name": "web_search",
+        "description": "Search the web for information about a gang/organization. Use this to find founding dates, membership estimates, colors, aliases, and history.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "Search query (e.g. 'Latin Kings gang founded year membership')",
+                }
+            },
+            "required": ["query"],
+        },
+    },
+    {
+        "name": "fetch_url",
+        "description": "Fetch and read the text content of a specific URL. Use this to read source pages that might have information about the org.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "url": {
+                    "type": "string",
+                    "description": "URL to fetch (e.g. 'https://en.wikipedia.org/wiki/Latin_Kings')",
+                }
+            },
+            "required": ["url"],
+        },
+    },
+]
+
+
+def execute_web_search(query: str) -> str:
+    """Execute a web search via DuckDuckGo HTML (no API key needed)."""
+    try:
+        resp = httpx.get(
+            "https://html.duckduckgo.com/html/",
+            params={"q": query},
+            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-research/1.0)"},
+            timeout=10.0,
+            follow_redirects=True,
+        )
+        resp.raise_for_status()
+        # Extract result snippets from HTML
+        results = []
+        for match in re.finditer(
+            r'<a[^>]*class="result__a"[^>]*href="([^"]*)"[^>]*>(.*?)</a>.*?'
+            r'<a[^>]*class="result__snippet"[^>]*>(.*?)</a>',
+            resp.text,
+            re.DOTALL,
+        ):
+            url = match.group(1)
+            title = re.sub(r"<[^>]+>", "", match.group(2)).strip()
+            snippet = re.sub(r"<[^>]+>", "", match.group(3)).strip()
+            if title and snippet:
+                results.append(f"[{title}]({url})\n{snippet}")
+            if len(results) >= 8:
+                break
+
+        if not results:
+            # Fallback: try simpler extraction
+            snippets = re.findall(r'class="result__snippet"[^>]*>(.*?)</a>', resp.text, re.DOTALL)
+            for s in snippets[:8]:
+                clean = re.sub(r"<[^>]+>", "", s).strip()
+                if clean:
+                    results.append(clean)
+
+        return "\n\n".join(results) if results else "No results found."
+    except Exception as e:
+        return f"Search failed: {e}"
+
+
+def execute_fetch_url(url: str) -> str:
+    """Fetch a URL and extract readable text content."""
+    try:
+        resp = httpx.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-research/1.0)"},
+            timeout=15.0,
+            follow_redirects=True,
+        )
+        resp.raise_for_status()
+        content = resp.text
+
+        # Strip script/style
+        content = re.sub(r"<script[^>]*>.*?</script>", " ", content, flags=re.DOTALL | re.IGNORECASE)
+        content = re.sub(r"<style[^>]*>.*?</style>", " ", content, flags=re.DOTALL | re.IGNORECASE)
+        # Strip HTML tags
+        content = re.sub(r"<[^>]+>", " ", content)
+        # Normalize whitespace
+        content = re.sub(r"\s+", " ", content).strip()
+        # Truncate to reasonable size
+        return content[:6000] if len(content) > 6000 else content
+    except Exception as e:
+        return f"Fetch failed: {e}"
+
+
+def execute_tool(tool_name: str, tool_input: dict) -> str:
+    """Execute a tool call and return the result."""
+    if tool_name == "web_search":
+        return execute_web_search(tool_input.get("query", ""))
+    elif tool_name == "fetch_url":
+        return execute_fetch_url(tool_input.get("url", ""))
+    else:
+        return f"Unknown tool: {tool_name}"
+
+
+def call_llm(prompt: str, use_tools: bool = True, timeout: float = 90.0) -> dict | None:
+    """Call the Kiro gateway with agentic tool-use loop.
+
+    The LLM can request web searches and URL fetches to gather information.
+    We execute the tools and feed results back until the LLM produces its final JSON answer.
+    """
+    messages = [{"role": "user", "content": prompt}]
     headers = {
         "x-api-key": KIRO_KEY,
         "anthropic-version": "2023-06-01",
         "content-type": "application/json",
     }
 
-    for attempt in range(3):
+    max_turns = 6  # safety cap on tool-use turns
+
+    for turn in range(max_turns):
+        payload = {
+            "model": MODEL,
+            "max_tokens": 2048,
+            "temperature": 0.1,
+            "thinking": {"type": "disabled"},
+            "messages": messages,
+            "system": SYSTEM_PROMPT,
+        }
+        if use_tools and turn < max_turns - 1:
+            payload["tools"] = TOOLS
+
         try:
             resp = httpx.post(
                 f"{KIRO_URL}/v1/messages",
@@ -297,46 +423,83 @@ def call_llm(prompt: str, timeout: float = 60.0) -> dict | None:
             )
             resp.raise_for_status()
             body = resp.json()
-            text_out = "".join(
-                p.get("text", "") for p in body.get("content", []) if p.get("type") == "text"
-            )
-            text_out = text_out.strip()
-            # Strip markdown fences if present
-            if "```" in text_out:
-                parts = text_out.split("```")
-                for part in parts[1:]:
-                    candidate = part.lstrip("json\n").strip()
-                    if candidate.startswith("{"):
-                        text_out = candidate
-                        break
-            if not text_out.startswith("{"):
-                start_idx = text_out.find("{")
-                if start_idx != -1:
-                    text_out = text_out[start_idx:]
-            # Find closing brace
-            depth = 0
-            for i, ch in enumerate(text_out):
-                if ch == "{":
-                    depth += 1
-                elif ch == "}":
-                    depth -= 1
-                    if depth == 0:
-                        text_out = text_out[: i + 1]
-                        break
-
-            return json.loads(text_out)
-
-        except (httpx.HTTPStatusError, json.JSONDecodeError, httpx.TimeoutException) as e:
-            if attempt < 2:
-                time.sleep(2 ** attempt)
-                continue
-            print(f"    ✗ LLM call failed after 3 attempts: {e}")
-            return None
-        except Exception as e:
-            print(f"    ✗ Unexpected error: {e}")
+        except (httpx.HTTPStatusError, httpx.TimeoutException) as e:
+            print(f"    ✗ API error on turn {turn + 1}: {e}")
             return None
 
+        stop_reason = body.get("stop_reason", "")
+        content_blocks = body.get("content", [])
+
+        # Check if the model wants to use a tool
+        if stop_reason == "tool_use":
+            # Add assistant message with all content blocks
+            messages.append({"role": "assistant", "content": content_blocks})
+
+            # Execute each tool call
+            tool_results = []
+            for block in content_blocks:
+                if block.get("type") == "tool_use":
+                    tool_name = block["name"]
+                    tool_input = block.get("input", {})
+                    tool_id = block["id"]
+                    print(f"    🔧 {tool_name}({json.dumps(tool_input)[:80]})")
+                    result = execute_tool(tool_name, tool_input)
+                    tool_results.append({
+                        "type": "tool_result",
+                        "tool_use_id": tool_id,
+                        "content": result[:4000],  # cap result size
+                    })
+
+            messages.append({"role": "user", "content": tool_results})
+            continue
+
+        # Model produced a final text response
+        text_out = "".join(
+            p.get("text", "") for p in content_blocks if p.get("type") == "text"
+        )
+        return _parse_json_response(text_out)
+
+    print(f"    ✗ Exceeded max tool-use turns ({max_turns})")
     return None
+
+
+def _parse_json_response(text_out: str) -> dict | None:
+    """Parse a JSON response from LLM output, handling markdown fences etc."""
+    text_out = text_out.strip()
+    if not text_out:
+        return None
+
+    # Strip markdown fences if present
+    if "```" in text_out:
+        parts = text_out.split("```")
+        for part in parts[1:]:
+            candidate = part.lstrip("json\n").strip()
+            if candidate.startswith("{"):
+                text_out = candidate
+                break
+
+    if not text_out.startswith("{"):
+        start_idx = text_out.find("{")
+        if start_idx != -1:
+            text_out = text_out[start_idx:]
+        else:
+            return None
+
+    # Find closing brace
+    depth = 0
+    for i, ch in enumerate(text_out):
+        if ch == "{":
+            depth += 1
+        elif ch == "}":
+            depth -= 1
+            if depth == 0:
+                text_out = text_out[: i + 1]
+                break
+
+    try:
+        return json.loads(text_out)
+    except json.JSONDecodeError:
+        return None
 
 
 def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
@@ -393,6 +556,7 @@ def main():
     parser.add_argument("--org", type=str, default=None, help="Enrich a specific org by ID")
     parser.add_argument("--min-edges", type=int, default=0, help="Only enrich orgs with >= N edges")
     parser.add_argument("--model", type=str, default=None, help="Override model")
+    parser.add_argument("--no-tools", action="store_true", help="Disable agentic tool use (no web search)")
     args = parser.parse_args()
 
     global MODEL
@@ -446,7 +610,7 @@ def main():
             print(f"    → no raw context found (using LLM knowledge only)")
 
         prompt = build_prompt(org, issues, ec, raw_context)
-        result = call_llm(prompt)
+        result = call_llm(prompt, use_tools=not args.no_tools)
 
         if not result:
             skipped += 1
