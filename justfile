@@ -116,6 +116,10 @@ enrich *args:
 enrich-rank:
     python3 -m apps.pipeline.enrich --dry-run --limit 50
 
+# Verify suspicious edges via web search (post-adjudication)
+verify source *args:
+    python3 -m apps.pipeline.verify --source {{source}} {{args}}
+
 # Build the page→org index from raw data
 index:
     python3 -m apps.pipeline.parse.parse_index
