@@ -607,7 +607,7 @@ def main():
         if raw_context:
             print(f"    → found {len(raw_context)} chars of source context")
         else:
-            print(f"    → no raw context found (using LLM knowledge only)")
+            print("    → no raw context found (using LLM knowledge only)")
 
         prompt = build_prompt(org, issues, ec, raw_context)
         result = call_llm(prompt, use_tools=not args.no_tools)
@@ -618,7 +618,7 @@ def main():
 
         changes = apply_enrichment(org, result, issues)
         if not changes:
-            print(f"    → no improvements (LLM returned nulls)")
+            print("    → no improvements (LLM returned nulls)")
             skipped += 1
             continue
 

@@ -20,8 +20,8 @@ DEFAULT_OUT = ROOT / "apps" / "web" / "static" / "graph.json"
 
 def load_lanes():
     cfg = json.loads(LANES_CONFIG.read_text(encoding="utf-8"))
-    lanes = sorted(cfg.get("lanes", []), key=lambda l: l.get("order", 999))
-    return {l["id"]: l for l in lanes}, lanes
+    lanes = sorted(cfg.get("lanes", []), key=lambda ln: ln.get("order", 999))
+    return {ln["id"]: ln for ln in lanes}, lanes
 
 
 def build_layout(org, lane_meta, slot):
@@ -234,7 +234,7 @@ def build_graph(out_path=None):
         "meta": {
             "node_count": len(nodes),
             "edge_count": len(edges),
-            "lanes": [{"id": l["id"], "label": l["label"], "order": l.get("order"), "group": l.get("group", "Other")} for l in lanes_list],
+            "lanes": [{"id": ln["id"], "label": ln["label"], "order": ln.get("order"), "group": ln.get("group", "Other")} for ln in lanes_list],
             "visibility": {
                 "exported": {
                     "nodes": len(nodes),

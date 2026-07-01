@@ -7,7 +7,6 @@ Outputs: .github/assets/stats.svg + updates README.md embed
 import json
 import re
 from pathlib import Path
-from collections import Counter
 
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
