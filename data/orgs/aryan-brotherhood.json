@@ -43,5 +43,6 @@
     "white",
     "green"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 20000
 }

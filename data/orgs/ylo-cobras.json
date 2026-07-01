@@ -1,7 +1,11 @@
 {
   "id": "org:ylo-cobras",
   "name": "YLO Cobras",
-  "aliases": [],
+  "aliases": [
+    "YLOC",
+    "YLO",
+    "Insane YLO Cobras"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",

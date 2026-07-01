@@ -1,7 +1,9 @@
 {
   "id": "org:harrison-gents",
   "name": "Harrison Gents",
-  "aliases": [],
+  "aliases": [
+    "HGs"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -18,6 +20,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-harrison-gents",
       "title": "Harrison Gents - Chicago Gang History"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gangs_in_Chicago",
+      "title": "Gangs in Chicago - Wikipedia"
     }
   ],
   "symbols": [

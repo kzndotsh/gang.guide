@@ -1,7 +1,10 @@
 {
   "id": "org:insane-deuces",
   "name": "Insane Deuces",
-  "aliases": [],
+  "aliases": [
+    "Young Deuces",
+    "Project Insane Deuces"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +21,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/insane-deuces",
       "title": "Insane Deuces - Chicago Gang History"
+    },
+    {
+      "url": "https://stonegreasers.com/greaser/insane_deuces.html",
+      "title": "Chicago Insane Deuces, Morgan Deuces, Jahn Deuces"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-ilnd-1_03-cr-00090/pdf/USCOURTS-ilnd-1_03-cr-00090-10.pdf",
+      "title": "United States v. Delatorre - U.S. District Court Northern District of Illinois"
     }
   ],
   "symbols": [

@@ -1,7 +1,9 @@
 {
   "id": "org:ridgeway-lords",
   "name": "Ridgeway Lords",
-  "aliases": [],
+  "aliases": [
+    "RLs"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",

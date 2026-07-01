@@ -1,11 +1,14 @@
 {
   "id": "org:party-people",
   "name": "Party People",
-  "aliases": [],
+  "aliases": [
+    "Gangster Party People",
+    "GPP"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "Party People is a Folk Nation street gang founded 1980 in Chicago.",
+  "description": "Party People began in 1980 in Chicago's Pilsen neighborhood as a party crew focused on socializing rather than gangbanging, but was forced to become a full street gang by 1981 after founder Michael was stabbed to death by Ambrose. The organization joined the Folk Nation alliance under Two Six sponsorship, adopting the moniker \"Gangster\" and expanding throughout Pilsen and later into Gage Park in 1989, where they fought rivals including Latin Kings, Black P Stones, and Insane Guess Boys.",
   "founded_year": 1980,
   "founded_year_precision": "exact",
   "colors": [

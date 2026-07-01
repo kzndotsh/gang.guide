@@ -1,7 +1,12 @@
 {
   "id": "org:milwaukee-kings",
   "name": "Milwaukee Kings",
-  "aliases": [],
+  "aliases": [
+    "MKs",
+    "M.K.'s",
+    "Maniac Milwaukee Kings",
+    "Maniac MK's"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",

@@ -1,7 +1,10 @@
 {
   "id": "org:spanish-lords",
   "name": "Spanish Lords",
-  "aliases": [],
+  "aliases": [
+    "S/L",
+    "Lords"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",

@@ -1,7 +1,12 @@
 {
   "id": "org:latin-brothers",
   "name": "Latin Brothers",
-  "aliases": [],
+  "aliases": [
+    "Insane Latin Brothers",
+    "ILB",
+    "LBN",
+    "Unicorns"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",

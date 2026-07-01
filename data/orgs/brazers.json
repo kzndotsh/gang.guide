@@ -1,7 +1,9 @@
 {
   "id": "org:brazers",
   "name": "Brazers",
-  "aliases": [],
+  "aliases": [
+    "Almighty Brazers"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -19,6 +21,10 @@
   "sources": [
     {
       "url": "https://chicagoganghistory.com/gang/almighty-brazers",
+      "title": "Brazers - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/brazers/",
       "title": "Brazers - Chicago Gang History"
     }
   ],

@@ -208,8 +208,10 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             if len(alias) > 60:
                 warnings.append(f"{f}: alias too long ({len(alias)} chars): '{alias[:50]}...'")
 
-        # Symbols must be title case
+        # Symbols must be title case (allow ALL CAPS abbreviations ≤6 chars)
         for sym in (org.get("symbols") or []):
+            if sym.isupper() and len(sym) <= 6:
+                continue  # abbreviations like PIRU, DAMU, IV
             if sym != sym.title():
                 errors.append(f"{f}: symbol not title case: '{sym}' → '{sym.title()}'")
 

@@ -1,7 +1,11 @@
 {
   "id": "org:bishops",
   "name": "Bishops",
-  "aliases": [],
+  "aliases": [
+    "Almighty Bishops",
+    "Almighty Bishops Nation",
+    "BCN"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +22,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-bishops",
       "title": "Bishops - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gang/almighty-twelfth-street-players/",
+      "title": "Twelfth Street Players - Chicago Gang History"
     }
   ],
   "symbols": [

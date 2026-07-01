@@ -1,11 +1,14 @@
 {
   "id": "org:ashland-vikings",
   "name": "Ashland Vikings",
-  "aliases": [],
+  "aliases": [
+    "Insane Ashland Vikings",
+    "Maniac Ashland Vikings"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "Ashland Vikings is a Folk Nation street gang founded circa 1963 in Chicago.",
+  "description": "The Ashland Vikings originated in 1963 as a Puerto Rican football team in Chicago's Noble Square/East Village area, converting to a street gang by 1967 under founder \"Puncher\" after facing intimidation from Latin Kings and Playboys. The gang became an early Folk Nation ally in 1978 due to their prior connection with the Black Gangster Disciples, and later split into Maniac and Insane factions in 1979.",
   "founded_year": 1963,
   "founded_year_precision": "circa",
   "colors": [

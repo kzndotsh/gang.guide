@@ -1,7 +1,11 @@
 {
   "id": "org:two-two-boys",
   "name": "Two Two Boys",
-  "aliases": [],
+  "aliases": [
+    "22 Boys",
+    "Insane Two Two Boys",
+    "Almighty 22nd Boys"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -20,6 +24,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/insane-two-two-boys",
       "title": "Two Two Boys - Chicago Gang History"
+    },
+    {
+      "url": "https://www.kentucky.com/news/local/counties/woodford-county/article73163762.html",
+      "title": "Rival street gangs were involved in two shootings in Versailles"
     }
   ],
   "symbols": [

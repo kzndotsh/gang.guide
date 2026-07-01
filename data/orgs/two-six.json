@@ -22,6 +22,18 @@
     {
       "url": "https://chicagoganghistory.com/gang/gangster-two-six",
       "title": "Two Six - Chicago Gang History"
+    },
+    {
+      "url": "https://www.justice.gov/archives/opa/pr/eight-alleged-members-and-associates-two-six-nation-street-gang-indicted-racketeering",
+      "title": "Eight Alleged Members and Associates of the Two Six Nation Street Gang Indicted for Racketeering"
+    },
+    {
+      "url": "https://nationalgangcenter.ojp.gov/spt/Programs/71",
+      "title": "Little Village Gang Violence Reduction Project - National Gang Center"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Folk_Nation",
+      "title": "Folk Nation - Wikipedia"
     }
   ],
   "symbols": [
@@ -31,5 +43,6 @@
     "Diamond",
     "3 Lines With 3 Dots",
     "Pitchfork"
-  ]
+  ],
+  "membership_estimate": 10000
 }

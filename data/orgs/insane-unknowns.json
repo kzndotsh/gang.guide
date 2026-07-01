@@ -1,7 +1,11 @@
 {
   "id": "org:insane-unknowns",
   "name": "Insane Unknowns",
-  "aliases": [],
+  "aliases": [
+    "Un-K",
+    "IUKN",
+    "IUK"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +22,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/insane-unknowns",
       "title": "Insane Unknowns - Chicago Gang History"
+    },
+    {
+      "url": "https://onchicago.blogspot.com/p/iuk.html",
+      "title": "Original Northside - Chicago: Insane Unknowns"
+    },
+    {
+      "url": "https://www.stonegreasers.com/greaser/insane_unknowns.html",
+      "title": "Chicago Insane Unknowns - Division Skulls and Unknown Souls"
     }
   ],
   "symbols": [
