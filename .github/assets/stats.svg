@@ -19,16 +19,16 @@
   <rect x="0.5" y="0.5" width="779" height="169" rx="6" stroke="#d0d7de" stroke-opacity="0.4"/>
 
   <!-- Row 1: Stats -->
-  <text class="value" x="20" y="42">1,201</text>
+  <text class="value" x="20" y="42">1,200</text>
   <text class="label" x="20" y="60">Organizations</text>
 
-  <text class="value" x="180" y="42">3,152</text>
+  <text class="value" x="180" y="42">3,146</text>
   <text class="label" x="180" y="60">Edges</text>
 
   <text class="value" x="320" y="42">81%</text>
   <text class="label" x="320" y="60">Evidence-backed</text>
 
-  <text class="value" x="500" y="42">1,009</text>
+  <text class="value" x="500" y="42">1,008</text>
   <text class="label" x="500" y="60">Active</text>
 
   <text class="value" x="620" y="42">192</text>
@@ -40,8 +40,8 @@
   <!-- Row 2: Bars -->
   <text class="small" x="20" y="100">Rivalry</text>
   <rect class="bar-bg" x="80" y="91" width="200" height="10"/>
-  <rect class="bar-red" x="80" y="91" width="114" height="10"/>
-  <text class="small" x="288" y="100">1,797</text>
+  <rect class="bar-red" x="80" y="91" width="113" height="10"/>
+  <text class="small" x="288" y="100">1,791</text>
 
   <text class="small" x="20" y="120">Alliance</text>
   <rect class="bar-bg" x="80" y="111" width="200" height="10"/>
@@ -51,13 +51,13 @@
   <text class="small" x="20" y="140">Evidence</text>
   <rect class="bar-bg" x="80" y="131" width="200" height="10"/>
   <rect class="bar-green" x="80" y="131" width="162" height="10"/>
-  <text class="small" x="288" y="140">2,557 / 3,152</text>
+  <text class="small" x="288" y="140">2,551 / 3,146</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="420" y="100">2,249 citations</text>
-  <text class="small" x="420" y="120">379 multi-sourced</text>
-  <text class="small" x="420" y="140">571 have aliases</text>
+  <text class="small" x="420" y="100">2,251 citations</text>
+  <text class="small" x="420" y="120">380 multi-sourced</text>
+  <text class="small" x="420" y="140">574 have aliases</text>
   <text class="small" x="580" y="100">855 with colors</text>
-  <text class="small" x="580" y="120">137 with symbols</text>
+  <text class="small" x="580" y="120">136 with symbols</text>
   <text class="small" x="580" y="140">444 exact/circa years</text>
 </svg>
