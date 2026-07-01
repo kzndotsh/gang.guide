@@ -108,6 +108,14 @@ pipeline source:
 adjudicate source:
     python3 -m apps.pipeline.adjudicate --source {{source}}
 
+# Enrich weak org profiles (scores, gathers context from raw data, calls LLM)
+enrich *args:
+    python3 -m apps.pipeline.enrich {{args}}
+
+# Enrich dry-run: show priority ranking without calling LLM
+enrich-rank:
+    python3 -m apps.pipeline.enrich --dry-run --limit 50
+
 # Build the page→org index from raw data
 index:
     python3 -m apps.pipeline.parse.parse_index
