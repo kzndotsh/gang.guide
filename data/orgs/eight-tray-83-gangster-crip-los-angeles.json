@@ -9,6 +9,18 @@
     {
       "url": "https://www.streetgangs.com/crips/83gc",
       "title": "Eight Tray (83) Gangster Crip  Los Angeles — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/83-gangster-crips/",
+      "title": "Eight Tray Gangster Crips - United Gangs"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-1992-05-13-mn-1663-story.html",
+      "title": "8-Trey Crips Have Chilling Crime Record - Los Angeles Times"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Sanyika_Shakur",
+      "title": "Sanyika Shakur - Wikipedia"
     }
   ],
   "founded_year": 1973,
@@ -19,10 +31,18 @@
   ],
   "nation_affiliation": "org:crips",
   "status": "active",
-  "aliases": [],
+  "aliases": [
+    "83 Gangster Crips",
+    "ETGC",
+    "Eight-Tray Crips",
+    "8-Tray Gangster Crips",
+    "Trays",
+    "Movin' Gang"
+  ],
   "symbols": [
     "83",
     "T",
     "3x"
-  ]
+  ],
+  "membership_estimate": 350
 }
