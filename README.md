@@ -52,12 +52,7 @@ just dev
 ```
 
 ## How It Works
-
-```
-Scrape → Clean → Extract (sonnet 4.5 × 3 temps) → Adjudicate (opus 4.6) → Verify (haiku) → Merge → Apply → Build → Serve
-                                                                                                              ↑
-                                                                                              Enrich (optional, post-processing)
-```
+Scrape → Clean → Extract (sonnet 4.5 × 3 temps) → Adjudicate (opus 4.6) → Verify (sonnet 4.5) → Merge → Apply → Build → Serve
 
 1. **Scrape** raw HTML from sources into `data/raw/`
 2. **Extract** structured JSON via sonnet 4.5 at 3 temperatures — edges require verbatim evidence quotes
