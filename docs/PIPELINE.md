@@ -141,6 +141,23 @@ Safe to re-run at any time.
 
 Standalone LLM enrichment of weak org profiles — not part of the source pipeline flow.
 
+### Logging
+
+All pipeline steps emit structured JSONL logs to `data/logs/`.
+
+- **Logger**: `apps/pipeline/log.py` — `PipelineLogger` class
+- **Output**: `data/logs/{step}_{source}_{timestamp}.jsonl`
+- **Schema** (per line): `ts`, `elapsed`, `level`, `event`, `run_id`, `step`, `source` + context fields
+- **Levels**: `debug`, `info`, `warn`, `error`
+- **Events**: past-tense verbs — `edge_rejected`, `file_written`, `run_started`, etc.
+
+Query logs with jq:
+
+```bash
+jq 'select(.level=="error")' data/logs/*.jsonl
+jq 'select(.event=="edge_rejected")' data/logs/adjudicate_*.jsonl
+```
+
 ### How It Works
 
 1. **Rank** orgs by weakness × connectivity (orgs with many edges but thin profiles are prioritized)

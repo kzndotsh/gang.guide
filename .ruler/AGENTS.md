@@ -25,6 +25,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 │   ├── orgs/             # One JSON file per org (source of truth)
 │   ├── edges.json        # Edge list (alliances, rivalries, affiliations)
 │   ├── lanes.json        # Lane taxonomy + org anchors + metro defaults
+│   ├── logs/             # Pipeline structured logs (JSONL, gitignored)
 │   └── raw/              # 682MB scraped source material (gitignored)
 ├── apps/
 │   ├── web/              # SvelteKit + Konva.js Canvas map viewer
@@ -35,6 +36,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 │       ├── merge.py      # Consensus filtering
 │       ├── apply.py      # Conservative data upgrade
 │       ├── enrich.py     # LLM enrichment of weak org profiles
+│       ├── log.py        # Centralized structured logging (PipelineLogger)
 │       ├── lint.py       # Data validation
 │       └── tests/        # Unit tests + e2e + fixtures
 ├── .ruler/               # AI agent instructions (source of truth)
@@ -61,6 +63,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 - **Merge**: algorithmic consensus (2/3 agreement) or adjudicated result
 - **Apply**: conservative upgrade — only improves weaker fields, lint gates result
 - **Enrich**: standalone LLM enrichment of weak org profiles (`just enrich`); scores orgs by weakness × connectivity, gathers context via ripgrep + agentic web search
+- **Logging**: all steps emit structured JSONL to `data/logs/{step}_{source}_{timestamp}.jsonl` — queryable with `jq`
 - **Thinking disabled** on gateway for faster/cleaner responses
 
 ## Deployment

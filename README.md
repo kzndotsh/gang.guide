@@ -102,7 +102,8 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 ├── data/
 │   ├── orgs/                   # One JSON per org (source of truth)
 │   ├── edges.json              # Edge list (alliances, rivalries, affiliations)
-│   └── lanes.json              # Lane taxonomy + org anchors
+│   ├── lanes.json              # Lane taxonomy + org anchors
+│   └── logs/                   # Pipeline structured logs (JSONL)
 ├── apps/
 │   ├── web/                    # SvelteKit + Konva.js Canvas map viewer
 │   │   ├── src/routes/         # +page.svelte (main map), sitemap.xml
@@ -116,6 +117,7 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 │       ├── merge.py            # Consensus filtering
 │       ├── apply.py            # Conservative data upgrade
 │       ├── enrich.py           # LLM enrichment of weak org profiles
+│       ├── log.py              # Centralized structured logging (PipelineLogger)
 │       ├── lint.py             # Data validation (runs in CI)
 │       └── tests/              # Unit tests + e2e + fixtures
 ├── .ruler/                     # AI agent instructions (source of truth)
