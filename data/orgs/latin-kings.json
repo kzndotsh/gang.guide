@@ -1,13 +1,19 @@
 {
   "id": "org:latin-kings",
   "name": "Latin Kings",
-  "aliases": [],
+  "aliases": [
+    "ALKQN",
+    "ALKN",
+    "LKN",
+    "Latin Kings",
+    "Almighty Latin King and Queen Nation"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
-  "description": "The Latin Kings (Almighty Latin King and Queen Nation) are a Latino People Nation street gang founded circa 1964 in Humboldt Park, Chicago. One of the largest Hispanic gangs in the US with chapters nationwide. Colors are black and gold; symbol is the five-point crown. Originally formed by Puerto Rican youths for community protection.",
-  "founded_year": 1964,
-  "founded_year_precision": "circa",
+  "description": "The Almighty Latin King and Queen Nation (ALKQN) was founded in 1954 in Chicago's Humboldt Park by Ramon Santos as the Imperials, a Puerto Rican progress movement. They merged with other gangs facing violence from Italian and Greek greasers. Now one of the largest Hispanic gangs worldwide with 20,000-35,000 in the KMC faction (31 states) and 2,000-7,500 in the NYC Bloodline faction (5 states). Colors are black and gold. Members of the People Nation alliance. Their symbols include the five-point sacred crown and the Lion. They maintain links with Mexican cartels (Sinaloa) and American Mafia families. Notable prosecutions include 'King Blood' Luis Felipe (250 years) and 'Corona' Augustin Zambrano (60 years).",
+  "founded_year": 1954,
+  "founded_year_precision": "exact",
   "colors": [
     "black",
     "gold"
@@ -15,6 +21,22 @@
   "nation_affiliation": "org:people-nation",
   "status": "active",
   "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Kings_Chicago",
+      "title": "Latin Kings Chicago — Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/latin-kings",
+      "title": "Latin Kings — UnitedGangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ndil/pr/latin-kings-members-charged",
+      "title": "Latin Kings Charged — DOJ"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Kings",
+      "title": "Latin Kings - Wikipedia"
+    },
     {
       "url": "https://chicagoganghistory.com/gang/almighty-latin-kings",
       "title": "Latin Kings - Chicago Gang History"
@@ -26,5 +48,5 @@
     "Lion",
     "King Head"
   ],
-  "membership_estimate": 18000
+  "membership_estimate": 27500
 }

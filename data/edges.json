@@ -196,7 +196,7 @@
   {
     "id": "c435aa5c82f9",
     "source": "org:crips",
-    "target": "org:latin-kings-chicago",
+    "target": "org:latin-kings",
     "type": "rivalry"
   },
   {
@@ -324,7 +324,7 @@
   {
     "id": "02c42be7af96",
     "source": "org:la-raza-chicago",
-    "target": "org:latin-kings-chicago",
+    "target": "org:latin-kings",
     "type": "rivalry"
   },
   {
@@ -357,7 +357,7 @@
   {
     "id": "c0ef68ab2f35",
     "source": "org:latin-counts-chicago",
-    "target": "org:latin-kings-chicago",
+    "target": "org:latin-kings",
     "type": "rivalry"
   },
   {
@@ -375,7 +375,7 @@
   {
     "id": "408530ac2b79",
     "source": "org:latin-eagles-chicago",
-    "target": "org:latin-kings-chicago",
+    "target": "org:latin-kings",
     "type": "rivalry"
   },
   {
@@ -407,25 +407,25 @@
   },
   {
     "id": "653efbb0df42",
-    "source": "org:latin-kings-chicago",
+    "source": "org:latin-kings",
     "target": "org:maniac-latin-disciples-chicago",
     "type": "rivalry"
   },
   {
     "id": "c8ea3ab235f0",
-    "source": "org:latin-kings-chicago",
+    "source": "org:latin-kings",
     "target": "org:simon-city-royals-chicago",
     "type": "rivalry"
   },
   {
     "id": "06dc6e2b44e4",
-    "source": "org:latin-kings-chicago",
+    "source": "org:latin-kings",
     "target": "org:spanish-cobras-chicago",
     "type": "rivalry"
   },
   {
     "id": "1cf67d9174cc",
-    "source": "org:latin-kings-chicago",
+    "source": "org:latin-kings",
     "target": "org:united-blood-nation",
     "type": "rivalry"
   },
@@ -634,7 +634,7 @@
   },
   {
     "id": "ebe462fab1bf",
-    "source": "org:latin-kings-chicago",
+    "source": "org:latin-kings",
     "target": "org:spanish-gangster-disciples-chicago",
     "type": "rivalry"
   },
@@ -5226,14 +5226,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-imperial-gangsters/"
   },
   {
-    "id": "ff3872fc3089",
-    "source": "org:latin-counts-chicago",
-    "target": "org:latin-kings",
-    "type": "rivalry",
-    "evidence": "The counts also had rivalry with the Latin Kings after they moved to Coulter and Damen in 1966.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-insane-latin-counts/"
-  },
-  {
     "id": "0e3c28febd0f",
     "source": "org:latin-brothers",
     "target": "org:latin-counts-chicago",
@@ -5479,16 +5471,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-latin-angels/"
   },
   {
-    "id": "2e7f6b62e546",
-    "source": "org:latin-eagles-chicago",
-    "target": "org:latin-kings",
-    "type": "rivalry",
-    "start_year": 1966,
-    "end_year": 1979,
-    "evidence": "Latin Eagles began to have conflicts with Harrison Gents and Latin Kings attending Lake View High",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-eagles/"
-  },
-  {
     "id": "dcfc2df0d9e5",
     "source": "org:latin-eagles-chicago",
     "target": "org:puerto-rican-stones",
@@ -5583,14 +5565,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-latin-kings/"
   },
   {
-    "id": "49ef81c41af5",
-    "source": "org:latin-kings",
-    "target": "org:simon-city-royals-chicago",
-    "type": "rivalry",
-    "evidence": "Latin Kings were very close to the Deuces as they fought Simon City Royals and Paulina Barry Community viciously.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-kings/"
-  },
-  {
     "id": "79e7405cf840",
     "source": "org:latin-kings",
     "target": "org:two-six",
@@ -5607,24 +5581,6 @@
     "start_year": 1978,
     "evidence": "On the streets, these future Folks came together on the streets to team up against the much larger Latin Kings and their allies the Cullerton Deuces and Kents",
     "source_url": "https://chicagoganghistory.com/gang/insane-gangster-satan-disciples/"
-  },
-  {
-    "id": "8faab61c73fb",
-    "source": "org:latin-kings",
-    "target": "org:spanish-cobras-chicago",
-    "type": "rivalry",
-    "start_year": 1976,
-    "evidence": "Under Y.L.O the Cobras and Disciples teamed up on the much larger Latin Kings in East Humboldt Park and against white gangs like C-Notes, Taylor Jousters and Chi-West.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/"
-  },
-  {
-    "id": "00d47d61f452",
-    "source": "org:latin-kings",
-    "target": "org:maniac-latin-disciples-chicago",
-    "type": "rivalry",
-    "start_year": 1972,
-    "evidence": "On the fateful day of January 18, 1972, Hernandez was working all day and then headed home to Rockwell and Potomac. When he arrived he walked into a scuffle between Latin Kings and Disciples...a member drew a knife and stabbed Hernandez to death at Rockwell and Potomac...this started a full fledge war with Latin Kings",
-    "source_url": "https://chicagoganghistory.com/gang/maniac-latin-disciples/"
   },
   {
     "id": "eebec13c14b7",
@@ -10320,14 +10276,6 @@
     "target": "org:almighty-saints",
     "type": "spin_off",
     "evidence": "The Saints ran 87th and Houston while Royal Knights ran 88th to 89th and Commercial area, these groups were neighbors to each other... because the Saints previously ran 87th and Houston for decades and because the last remnant of their members were involved, they wanted their name as part of this. The new group was initially called \"Saint Disciples.\"",
-    "source_url": "https://chicagoganghistory.com/gang/spanish-gangster-disciples/"
-  },
-  {
-    "id": "181f454e8c63",
-    "source": "org:latin-kings",
-    "target": "org:spanish-gangster-disciples-chicago",
-    "type": "rivalry",
-    "evidence": "In all these neighborhoods the SGDs found intense rivalry with the Latin Kings making them one of their first enemies up north.",
     "source_url": "https://chicagoganghistory.com/gang/spanish-gangster-disciples/"
   },
   {
@@ -18538,14 +18486,14 @@
     "source_url": "https://unitedgangs.com/lantana-blocc-compton-crips/"
   },
   {
-    "source": "org:latin-kings-chicago",
+    "source": "org:latin-kings",
     "target": "org:people-nation",
     "type": "alliance",
     "evidence": "Allies: People Nation",
     "source_url": "https://unitedgangs.com/latin-kings/"
   },
   {
-    "source": "org:latin-kings-chicago",
+    "source": "org:latin-kings",
     "target": "org:folk-nation",
     "type": "rivalry",
     "evidence": "Rivals: Folk Nation",
