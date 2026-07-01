@@ -12,6 +12,9 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 - `just ci` — run full CI locally
 - `just deploy` — deploy to production
 - `just pipeline chicago_history` — run full LLM pipeline on a source
+- `just enrich` — LLM enrichment of weak org profiles
+- `just enrich-rank` — show org weakness × connectivity ranking
+- `just verify <source>` — post-adjudication web-search fact-checking
 - `just ruler` — regenerate AI agent configs
 
 ## Project Layout
@@ -28,8 +31,10 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 │   └── pipeline/         # Python LLM extraction pipeline
 │       ├── extract.py    # Multi-temp extraction (sonnet 4.5)
 │       ├── adjudicate.py # Conflict resolution (opus 4.6)
+│       ├── verify.py     # Post-adjudication web-search fact-checking (haiku)
 │       ├── merge.py      # Consensus filtering
 │       ├── apply.py      # Conservative data upgrade
+│       ├── enrich.py     # LLM enrichment of weak org profiles
 │       ├── lint.py       # Data validation
 │       └── tests/        # Unit tests + e2e + fixtures
 ├── .ruler/               # AI agent instructions (source of truth)
@@ -48,12 +53,14 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 
 ## Pipeline
 
-`just pipeline <source>` runs: extract → adjudicate → merge → apply (dry-run)
+`just pipeline <source>` runs: extract → adjudicate → verify → merge → apply (dry-run)
 
 - **Extract**: sonnet 4.5 at temps 0.1/0.3/0.7, structured JSON output with evidence quotes
 - **Adjudicate**: opus 4.6 validates evidence, resolves conflicts (always runs)
+- **Verify**: haiku web-search fact-checking of suspicious edges (weak evidence, spin_off claims, hearsay); removes unsupported claims
 - **Merge**: algorithmic consensus (2/3 agreement) or adjudicated result
 - **Apply**: conservative upgrade — only improves weaker fields, lint gates result
+- **Enrich**: standalone LLM enrichment of weak org profiles (`just enrich`); scores orgs by weakness × connectivity, gathers context via ripgrep + agentic web search
 - **Thinking disabled** on gateway for faster/cleaner responses
 
 ## Deployment

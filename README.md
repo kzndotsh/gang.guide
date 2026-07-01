@@ -54,16 +54,17 @@ just dev
 ## How It Works
 
 ```
-Scrape → Clean → Extract (sonnet 4.5 × 3 temps) → Adjudicate (opus 4.6) → Merge → Apply → Build → Serve
+Scrape → Clean → Extract (sonnet 4.5 × 3 temps) → Adjudicate (opus 4.6) → Verify (haiku) → Merge → Apply → Build → Serve
 ```
 
 1. **Scrape** raw HTML from sources into `data/raw/`
 2. **Extract** structured JSON via sonnet 4.5 at 3 temperatures — edges require verbatim evidence quotes
 3. **Adjudicate** with opus 4.6 — validates evidence, rejects co-mentions, resolves conflicts
-4. **Merge** via algorithmic consensus (2/3 agreement) or adjudicated result
-5. **Apply** conservative upgrade to `data/orgs/*.json` + `data/edges.json` — lint gates the result
-6. **Build** compiles flat files into `graph.json` + `details.json`
-7. **Serve** on Cloudflare Workers via SvelteKit + Konva.js canvas
+4. **Verify** with haiku — web-search fact-checking of suspicious edges, removes unsupported claims
+5. **Merge** via algorithmic consensus (2/3 agreement) or adjudicated result
+6. **Apply** conservative upgrade to `data/orgs/*.json` + `data/edges.json` — lint gates the result
+7. **Build** compiles flat files into `graph.json` + `details.json`
+8. **Serve** on Cloudflare Workers via SvelteKit + Konva.js canvas
 
 ## Data
 
@@ -112,8 +113,10 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 │   └── pipeline/               # Python LLM extraction pipeline
 │       ├── extract.py          # Multi-temp extraction (sonnet 4.5)
 │       ├── adjudicate.py       # Conflict resolution (opus 4.6)
+│       ├── verify.py           # Post-adjudication web-search fact-checking (haiku)
 │       ├── merge.py            # Consensus filtering
 │       ├── apply.py            # Conservative data upgrade
+│       ├── enrich.py           # LLM enrichment of weak org profiles
 │       ├── lint.py             # Data validation (runs in CI)
 │       └── tests/              # Unit tests + e2e + fixtures
 ├── .ruler/                     # AI agent instructions (source of truth)
@@ -143,6 +146,9 @@ just build-data   # rebuild graph.json from org files
 just lint         # lint data integrity
 just check        # type-check frontend
 just deploy       # deploy to production
+just enrich       # LLM enrichment of weak org profiles
+just enrich-rank  # show org weakness × connectivity ranking
+just verify       # post-adjudication web-search fact-checking
 just ruler        # regenerate AI agent configs
 ```
 

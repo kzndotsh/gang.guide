@@ -5,7 +5,7 @@
 The pipeline extracts structured data from raw HTML pages using LLMs, then merges it into the dataset.
 
 ```
-data/raw/{source}/*.txt → extract → adjudicate → merge → apply → data/orgs/ + edges.json
+data/raw/{source}/*.txt → extract → adjudicate → verify → merge → apply → data/orgs/ + edges.json
 ```
 
 Run the full pipeline: `just pipeline chicago_history`
@@ -57,7 +57,18 @@ Sends all 3 runs to **opus 4.6** which validates each edge's evidence quote. Use
 - Assigns: `confidence: "high"` or `"medium"` per edge
 - Output: `data/extracted/{source}/{slug}/adjudicated.json`
 
-### 3. Merge (`apps/pipeline/merge.py`)
+### 3. Verify (`apps/pipeline/verify.py`)
+
+Post-adjudication web-search fact-checking using **haiku** for speed.
+
+- Runs between adjudicate and merge — filters suspicious edges before consensus
+- Identifies suspicious edges: weak evidence, spin_off claims, mafia membership, hearsay language
+- Uses an agentic tool-use loop with `web_search` (DuckDuckGo) to verify claims
+- Produces a verdict for each edge: `supported`, `unsupported`, or `uncertain`
+- Removes high-confidence unsupported edges from the adjudicated result
+- Output: `data/extracted/{source}/{slug}/verified.json`
+
+### 4. Merge (`apps/pipeline/merge.py`)
 
 Produces `consensus.json` — the final record that apply reads.
 
@@ -65,7 +76,7 @@ Produces `consensus.json` — the final record that apply reads.
 - If not: algorithmic consensus (keep data appearing in 2/3 runs)
 - Output: `data/extracted/{source}/{slug}/consensus.json`
 
-### 4. Apply (`apps/pipeline/apply.py`)
+### 5. Apply (`apps/pipeline/apply.py`)
 
 Conservative upgrade of the actual data files.
 
@@ -85,10 +96,13 @@ Conservative upgrade of the actual data files.
 ```bash
 just extract chicago_history          # extract from raw pages
 just adjudicate chicago_history       # resolve conflicts (opus)
+just verify chicago_history           # web-search fact-checking (haiku)
 just merge chicago_history            # consensus filtering
 just apply-preview chicago_history    # preview changes (dry run)
 just apply chicago_history            # commit changes
 just pipeline chicago_history         # all of the above
+just enrich                           # LLM enrichment of weak org profiles
+just enrich-rank                      # show org weakness × connectivity ranking
 ```
 
 ## Models
@@ -97,6 +111,8 @@ just pipeline chicago_history         # all of the above
 |-------|-------|-------------|---------|
 | Extract | claude-sonnet-4.5 | 0.1, 0.3, 0.7 | Structured data extraction (v2 prompt) |
 | Adjudicate | claude-opus-4.6 | 0.1 | Evidence validation (v2 prompt) |
+| Verify | claude-haiku | 0.1 | Web-search fact-checking of suspicious edges |
+| Enrich | configurable (--model) | — | Agentic enrichment of weak org profiles |
 
 Override via env: `EXTRACT_MODEL`, `ADJUDICATE_MODEL`
 
@@ -104,6 +120,7 @@ Override via env: `EXTRACT_MODEL`, `ADJUDICATE_MODEL`
 
 - Extract: skips pages with existing runs (unless `--force`)
 - Adjudicate: skips pages with existing `adjudicated.json` (unless `--force`)
+- Verify: skips pages with existing `verified.json` (unless `--force`)
 - Merge: skips pages with existing `consensus.json` (unless `--force`)
 - Apply: skips fields already strong, edges already existing
 
@@ -113,8 +130,35 @@ Safe to re-run at any time.
 
 1. **Multi-temperature consensus** — hallucinations don't repeat across 3 temps
 2. **Opus adjudication** — validates evidence quotes prove claimed relationships
-3. **Contradiction check** — won't add alliance where rivalry exists (without dates)
-4. **Self-reference check** — won't create org→itself edges
-5. **Page title guard** — rejects generic/navigational names from becoming orgs
-6. **Slug collision check** — prevents overwriting existing org files
-7. **Lint gate** — rejects apply if lint errors increase
+3. **Web-search verification** — haiku fact-checks suspicious edges via DuckDuckGo, removes unsupported claims
+4. **Contradiction check** — won't add alliance where rivalry exists (without dates)
+5. **Self-reference check** — won't create org→itself edges
+6. **Page title guard** — rejects generic/navigational names from becoming orgs
+7. **Slug collision check** — prevents overwriting existing org files
+8. **Lint gate** — rejects apply if lint errors increase
+
+## Enrich (`apps/pipeline/enrich.py`)
+
+Standalone LLM enrichment of weak org profiles — not part of the source pipeline flow.
+
+### How It Works
+
+1. **Rank** orgs by weakness × connectivity (orgs with many edges but thin profiles are prioritized)
+2. **Gather context** from `data/raw/` (3794 scraped files) via ripgrep search
+3. **Agentic loop** — the LLM can call `web_search` (DuckDuckGo) and `fetch_url` tools to find additional information
+4. **Conservative upgrade** — only fills gaps (empty colors, missing descriptions, imprecise years); never overwrites strong existing data
+
+### CLI Options
+
+```bash
+just enrich                           # enrich top-ranked weak orgs
+just enrich-rank                      # show weakness × connectivity ranking (no changes)
+```
+
+Flags:
+- `--dry-run` — preview changes without writing
+- `--limit N` — max orgs to enrich per run
+- `--org ID` — enrich a specific org by ID
+- `--min-edges N` — minimum edge count to consider
+- `--no-tools` — disable web_search/fetch_url tools
+- `--model` — override the LLM model used
