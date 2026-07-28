@@ -15,7 +15,7 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             nodejs_22
-            (python312.withPackages (ps: [ ps.httpx ps.pytest ps.pytest-cov ]))
+            (python312.withPackages (ps: [ ps.httpx ps.pytest ps.pytest-cov ps.pypdf ]))
             ruff
             just
             lefthook
