@@ -25,7 +25,7 @@ DATA_EXTRACTED = ROOT / "data" / "extracted"
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("VERIFY_MODEL", "claude-sonnet-4.5")  # sonnet for better reasoning on ambiguous claims
+MODEL = os.environ.get("VERIFY_MODEL", "claude-sonnet-4.6")  # sonnet for better reasoning on ambiguous claims
 
 SYSTEM_PROMPT = """You are a fact-checker for a criminal organization knowledge graph. You verify claims about gang relationships using web search results.
 
@@ -161,12 +161,14 @@ def identify_suspicious_edges(adjudicated: dict) -> list[dict]:
             reasons.append("hearsay_language")
 
         if reasons:
-            suspicious.append({
-                "edge": edge,
-                "subject": subject,
-                "reasons": reasons,
-                "priority": len(reasons),
-            })
+            suspicious.append(
+                {
+                    "edge": edge,
+                    "subject": subject,
+                    "reasons": reasons,
+                    "priority": len(reasons),
+                }
+            )
 
     suspicious.sort(key=lambda x: -x["priority"])
     return suspicious
@@ -233,18 +235,18 @@ Then give your verdict."""
                     tool_input = block.get("input", {})
                     print(f"      🔍 {tool_name}: {json.dumps(tool_input)[:60]}")
                     result = execute_tool(tool_name, tool_input)
-                    tool_results.append({
-                        "type": "tool_result",
-                        "tool_use_id": block["id"],
-                        "content": result[:3000],
-                    })
+                    tool_results.append(
+                        {
+                            "type": "tool_result",
+                            "tool_use_id": block["id"],
+                            "content": result[:3000],
+                        }
+                    )
             messages.append({"role": "user", "content": tool_results})
             continue
 
         # Final text response
-        text_out = "".join(
-            p.get("text", "") for p in content_blocks if p.get("type") == "text"
-        ).strip()
+        text_out = "".join(p.get("text", "") for p in content_blocks if p.get("type") == "text").strip()
 
         # Parse JSON verdict
         try:
@@ -303,7 +305,9 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
                 subject = adjudicated.get("subject_org", page_dir.name)
                 for s in suspicious[:3]:
                     edge = s["edge"]
-                    print(f"  [{subject}] {edge.get('type', '?')} → {edge.get('target', '?')} ({', '.join(s['reasons'])})")
+                    print(
+                        f"  [{subject}] {edge.get('type', '?')} → {edge.get('target', '?')} ({', '.join(s['reasons'])})"
+                    )
                 total_checked += len(suspicious)
                 continue
 
@@ -344,7 +348,8 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
                 elif v == "unsupported" and conf >= min_confidence:
                     total_rejected += 1
                     adjudicated["edges"] = [
-                        e for e in adjudicated["edges"]
+                        e
+                        for e in adjudicated["edges"]
                         if not (e.get("target") == edge.get("target") and e.get("type") == edge.get("type"))
                     ]
                     modified = True
@@ -367,9 +372,17 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
             if total_checked >= limit:
                 break
 
-        log.info("verification_completed", checked=total_checked, supported=total_verified, rejected=total_rejected, uncertain=total_uncertain)
+        log.info(
+            "verification_completed",
+            checked=total_checked,
+            supported=total_verified,
+            rejected=total_rejected,
+            uncertain=total_uncertain,
+        )
 
-    print(f"\nDone: {total_checked} checked, {total_verified} supported, {total_rejected} rejected, {total_uncertain} uncertain")
+    print(
+        f"\nDone: {total_checked} checked, {total_verified} supported, {total_rejected} rejected, {total_uncertain} uncertain"
+    )
 
 
 def main():

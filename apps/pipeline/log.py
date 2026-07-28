@@ -25,7 +25,7 @@ Usage:
         log.info("extraction_started", pages=42)
         log.decision("edge_accepted", org="org:foo", target="org:bar", reason="2/3 agreement")
         log.action("file_written", path="data/orgs/foo.json", fields_changed=["description"])
-        log.error("llm_timeout", attempt=3, model="claude-sonnet-4.5")
+        log.error("llm_timeout", attempt=3, model="claude-sonnet-4.6")
 """
 
 import json

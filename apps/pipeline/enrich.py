@@ -30,7 +30,7 @@ DATA_RAW = ROOT / "data" / "raw"
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("ENRICH_MODEL", "claude-sonnet-4.5")
+MODEL = os.environ.get("ENRICH_MODEL", "claude-sonnet-4.6")
 
 # Max chars of raw context to include in the prompt
 MAX_CONTEXT_CHARS = 8000
@@ -127,7 +127,9 @@ def gather_raw_context(org: dict) -> str:
         # Use ripgrep for speed (case-insensitive)
         result = subprocess.run(
             ["rg", "-il", "-i", "--max-count=1", pattern, str(DATA_RAW)],
-            capture_output=True, text=True, timeout=10,
+            capture_output=True,
+            text=True,
+            timeout=10,
         )
         matching_files = result.stdout.strip().split("\n") if result.stdout.strip() else []
     except (FileNotFoundError, subprocess.TimeoutExpired):
@@ -135,7 +137,9 @@ def gather_raw_context(org: dict) -> str:
         try:
             result = subprocess.run(
                 ["grep", "-ril", "--include=*.txt", "--include=*.html", pattern, str(DATA_RAW)],
-                capture_output=True, text=True, timeout=15,
+                capture_output=True,
+                text=True,
+                timeout=15,
             )
             matching_files = result.stdout.strip().split("\n") if result.stdout.strip() else []
         except (FileNotFoundError, subprocess.TimeoutExpired):
@@ -159,7 +163,20 @@ def gather_raw_context(org: dict) -> str:
                     clean = re.sub(r"<[^>]+>", " ", para).strip()
                     clean = re.sub(r"\s+", " ", clean)
                     # Skip if it looks like code/CSS/JS
-                    if any(junk in clean for junk in ["{", "}", "function(", "var ", "const ", "sourceURL=", "font-", "margin:", "padding:"]):
+                    if any(
+                        junk in clean
+                        for junk in [
+                            "{",
+                            "}",
+                            "function(",
+                            "var ",
+                            "const ",
+                            "sourceURL=",
+                            "font-",
+                            "margin:",
+                            "padding:",
+                        ]
+                    ):
                         continue
                     if len(clean) > 50 and len(clean) < 2000:
                         snippets.append(clean)
@@ -267,15 +284,15 @@ def build_prompt(org: dict, issues: list[str], edge_count: int, raw_context: str
 
     prompt = f"""Enrich this organization's profile:
 
-Name: {org.get('name', '')}
-Metro: {org.get('metro', 'Unknown')}
-Lane: {org.get('lane', 'Unknown')}
-Type: {org.get('type', 'street_gang')}
+Name: {org.get("name", "")}
+Metro: {org.get("metro", "Unknown")}
+Lane: {org.get("lane", "Unknown")}
+Type: {org.get("type", "street_gang")}
 Edge count: {edge_count} connections in our graph
 
-{chr(10).join(existing) if existing else 'No existing data.'}
+{chr(10).join(existing) if existing else "No existing data."}
 
-Fields needed: {', '.join(missing)}
+Fields needed: {", ".join(missing)}
 """
 
     if raw_context:
@@ -402,7 +419,9 @@ def execute_tool(tool_name: str, tool_input: dict) -> str:
         return f"Unknown tool: {tool_name}"
 
 
-def call_llm(prompt: str, use_tools: bool = True, timeout: float = 90.0, logger: "PipelineLogger | None" = None) -> dict | None:
+def call_llm(
+    prompt: str, use_tools: bool = True, timeout: float = 90.0, logger: "PipelineLogger | None" = None
+) -> dict | None:
     """Call the Kiro gateway with agentic tool-use loop.
 
     The LLM can request web searches and URL fetches to gather information.
@@ -461,19 +480,19 @@ def call_llm(prompt: str, use_tools: bool = True, timeout: float = 90.0, logger:
                     result = execute_tool(tool_name, tool_input)
                     if logger:
                         logger.tool_call(tool_name, tool_input, len(result))
-                    tool_results.append({
-                        "type": "tool_result",
-                        "tool_use_id": tool_id,
-                        "content": result[:4000],  # cap result size
-                    })
+                    tool_results.append(
+                        {
+                            "type": "tool_result",
+                            "tool_use_id": tool_id,
+                            "content": result[:4000],  # cap result size
+                        }
+                    )
 
             messages.append({"role": "user", "content": tool_results})
             continue
 
         # Model produced a final text response
-        text_out = "".join(
-            p.get("text", "") for p in content_blocks if p.get("type") == "text"
-        )
+        text_out = "".join(p.get("text", "") for p in content_blocks if p.get("type") == "text")
         return _parse_json_response(text_out)
 
     print(f"    ✗ Exceeded max tool-use turns ({max_turns})")
@@ -527,9 +546,28 @@ def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
     changes = {}
 
     VALID_COLORS = {
-        "red", "blue", "green", "black", "white", "yellow", "orange", "purple",
-        "brown", "gold", "silver", "gray", "grey", "pink", "maroon", "burgundy",
-        "tan", "beige", "khaki", "navy", "teal", "crimson",
+        "red",
+        "blue",
+        "green",
+        "black",
+        "white",
+        "yellow",
+        "orange",
+        "purple",
+        "brown",
+        "gold",
+        "silver",
+        "gray",
+        "grey",
+        "pink",
+        "maroon",
+        "burgundy",
+        "tan",
+        "beige",
+        "khaki",
+        "navy",
+        "teal",
+        "crimson",
     }
 
     # Description: only upgrade if it was a stub/short
@@ -678,7 +716,7 @@ def main():
         log.info("enrichment_started", batch_size=len(batch), total_enrichable=len(scored))
 
         for i, (priority, org, issues, ec) in enumerate(batch):
-            print(f"  [{i+1}/{len(batch)}] {org['name']} ({ec} edges, {len(issues)} issues)")
+            print(f"  [{i + 1}/{len(batch)}] {org['name']} ({ec} edges, {len(issues)} issues)")
 
             # Gather context from raw scraped data
             raw_context = gather_raw_context(org)

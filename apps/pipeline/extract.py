@@ -32,10 +32,10 @@ DATA_EXTRACTED.mkdir(exist_ok=True)
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-4.5")
+MODEL = os.environ.get("EXTRACT_MODEL", "claude-sonnet-4.6")
 TEMPERATURES = [0.1, 0.3, 0.7]  # conservative → balanced → creative
 RUNS_PER_PAGE = len(TEMPERATURES)
-MAX_CHUNK_WORDS = 50000  # sonnet 4.5 handles 1M context; only chunk truly massive docs
+MAX_CHUNK_WORDS = 50000  # sonnet 4.6 handles 1M context; only chunk truly massive docs
 
 PROMPT_VERSION = "v2"
 
@@ -99,7 +99,7 @@ def chunk_text(text: str) -> list[str]:
         return [text]
     chunks = []
     for i in range(0, len(words), MAX_CHUNK_WORDS):
-        chunks.append(" ".join(words[i:i + MAX_CHUNK_WORDS]))
+        chunks.append(" ".join(words[i : i + MAX_CHUNK_WORDS]))
     return chunks
 
 
@@ -128,7 +128,16 @@ EXTRACTION_SCHEMA = {
         },
         "orgs_mentioned": {"type": "array", "items": {"type": "string"}},
     },
-    "required": ["subject_org", "founded_year", "colors", "symbols", "membership_estimate", "description", "edges", "orgs_mentioned"],
+    "required": [
+        "subject_org",
+        "founded_year",
+        "colors",
+        "symbols",
+        "membership_estimate",
+        "description",
+        "edges",
+        "orgs_mentioned",
+    ],
     "additionalProperties": False,
 }
 
@@ -141,9 +150,13 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> di
         "temperature": temperature,
         "thinking": {"type": "disabled"},
         "messages": [
-            {"role": "user", "content": f"Extract gang data from this text. Respond with ONLY a JSON object, no markdown fences, no explanation:\n\n{text}"}
+            {
+                "role": "user",
+                "content": f"Extract gang data from this text. Respond with ONLY a JSON object, no markdown fences, no explanation:\n\n{text}",
+            }
         ],
-        "system": SYSTEM_PROMPT + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
+        "system": SYSTEM_PROMPT
+        + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -162,9 +175,7 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> di
             )
             resp.raise_for_status()
             body = resp.json()
-            text_out = "".join(
-                p.get("text", "") for p in body.get("content", []) if p.get("type") == "text"
-            )
+            text_out = "".join(p.get("text", "") for p in body.get("content", []) if p.get("type") == "text")
             # Strip any wrapping (markdown fences, preamble text)
             text_out = text_out.strip()
             if "```" in text_out:
@@ -202,10 +213,10 @@ def call_kiro(text: str, temperature: float = 0.0, timeout: float = 120.0) -> di
             return parsed
         except (httpx.HTTPStatusError, json.JSONDecodeError, httpx.TimeoutException) as e:
             if attempt >= 2:
-                print(f"    [{ts()}] FAIL after {attempt+1} attempts: {type(e).__name__}: {e}")
+                print(f"    [{ts()}] FAIL after {attempt + 1} attempts: {type(e).__name__}: {e}")
                 return None
-            wait = min(2 ** attempt, 8)
-            print(f"    [{ts()}] retry {attempt+1} ({type(e).__name__}), waiting {wait}s")
+            wait = min(2**attempt, 8)
+            print(f"    [{ts()}] retry {attempt + 1} ({type(e).__name__}), waiting {wait}s")
             time.sleep(wait)
     return None
 
@@ -301,16 +312,16 @@ def merge_chunks(chunk_results: list[dict]) -> dict:
     for r in chunk_results:
         if r.get("founded_year") and not merged["founded_year"]:
             merged["founded_year"] = r["founded_year"]
-        for c in (r.get("colors") or []):
+        for c in r.get("colors") or []:
             all_colors.add(c.lower())
-        for s in (r.get("symbols") or []):
+        for s in r.get("symbols") or []:
             all_symbols.add(s)
         if r.get("membership_estimate"):
             merged["membership_estimate"] = r["membership_estimate"]
         if r.get("description"):
             descriptions.append(r["description"])
         all_edges.extend(r.get("edges") or [])
-        for o in (r.get("orgs_mentioned") or []):
+        for o in r.get("orgs_mentioned") or []:
             all_orgs.add(o)
 
     merged["colors"] = sorted(all_colors)
@@ -331,7 +342,9 @@ def main():
     parser = argparse.ArgumentParser(description="LLM extraction from raw pages")
     parser.add_argument("--source", required=True, help="Source directory in data/raw/")
     parser.add_argument("--limit", type=int, default=0, help="Max pages to process")
-    parser.add_argument("--model", default=None, help="Override model (default: claude-haiku-4.5 or EXTRACT_MODEL env)")
+    parser.add_argument(
+        "--model", default=None, help="Override model (default: claude-sonnet-4.6 or EXTRACT_MODEL env)"
+    )
     parser.add_argument("--force", action="store_true", help="Re-extract even if done")
     parser.add_argument("--dry-run", action="store_true", help="Count pages without calling API")
     args = parser.parse_args()
@@ -357,7 +370,7 @@ def main():
             pages.append(f.name)
 
     if args.limit:
-        pages = pages[:args.limit]
+        pages = pages[: args.limit]
 
     if args.dry_run:
         print(f"Would process {len(pages)} pages from {args.source}")
@@ -389,7 +402,9 @@ def main():
         total_elapsed = time.time() - start_time
         log.info("extraction_completed", processed=processed, skipped=skipped, elapsed=round(total_elapsed, 1))
 
-    print(f"\n[{ts()}] Done: {processed} extracted, {skipped} skipped in {total_elapsed:.0f}s ({total_elapsed/60:.1f}m)")
+    print(
+        f"\n[{ts()}] Done: {processed} extracted, {skipped} skipped in {total_elapsed:.0f}s ({total_elapsed / 60:.1f}m)"
+    )
 
 
 if __name__ == "__main__":

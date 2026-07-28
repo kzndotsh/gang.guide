@@ -28,7 +28,7 @@ DATA_EXTRACTED = ROOT / "data" / "extracted"
 
 KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
-MODEL = os.environ.get("ADJUDICATE_MODEL", "claude-opus-4.6")
+MODEL = os.environ.get("ADJUDICATE_MODEL", "claude-sonnet-4.6")
 
 SYSTEM_PROMPT = """You consolidate multiple extraction runs about the same criminal organization into one authoritative record. Each run may contain errors — your job is to produce the highest-quality output by resolving conflicts and filtering noise.
 
@@ -82,9 +82,10 @@ def needs_adjudication(runs: list[dict]) -> bool:
 
     # Check for edges that only appear in 1 run (uncertain)
     from collections import Counter
+
     edge_keys = Counter()
     for r in runs:
-        for e in (r.get("edges") or []):
+        for e in r.get("edges") or []:
             edge_keys[((e.get("target") or "").lower(), (e.get("type") or ""))] += 1
     # If any edges only in 1 run, there's uncertainty
     uncertain_edges = sum(1 for count in edge_keys.values() if count == 1)
@@ -125,7 +126,17 @@ ADJUDICATION_SCHEMA = {
         },
         "unresolved_names": {"type": "array", "items": {"type": "string"}},
     },
-    "required": ["subject_org", "founded_year", "founded_year_precision", "colors", "symbols", "membership_estimate", "description", "edges", "unresolved_names"],
+    "required": [
+        "subject_org",
+        "founded_year",
+        "founded_year_precision",
+        "colors",
+        "symbols",
+        "membership_estimate",
+        "description",
+        "edges",
+        "unresolved_names",
+    ],
     "additionalProperties": False,
 }
 
@@ -154,7 +165,8 @@ Extraction runs:
         "temperature": 0.1,
         "thinking": {"type": "disabled"},
         "messages": [{"role": "user", "content": user_content}],
-        "system": SYSTEM_PROMPT + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
+        "system": SYSTEM_PROMPT
+        + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -190,7 +202,7 @@ Extraction runs:
             if attempt >= 2:
                 print(f"    [{ts()}] FAIL: {type(e).__name__}: {e}")
                 return None
-            time.sleep(min(2 ** attempt, 8))
+            time.sleep(min(2**attempt, 8))
     return None
 
 
@@ -253,7 +265,9 @@ def process_source(source: str, dry_run: bool = False, force: bool = False):
 
         log.info("adjudication_completed", adjudicated=adjudicated, auto_merged=auto_merged, skipped=skipped)
 
-    print(f"\n[{ts()}] Done: {adjudicated} adjudicated, {auto_merged} auto-merged (no conflicts), {skipped} already done")
+    print(
+        f"\n[{ts()}] Done: {adjudicated} adjudicated, {auto_merged} auto-merged (no conflicts), {skipped} already done"
+    )
 
 
 def main():
