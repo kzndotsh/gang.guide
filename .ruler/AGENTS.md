@@ -30,9 +30,9 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 ├── apps/
 │   ├── web/              # SvelteKit + Konva.js Canvas map viewer
 │   └── pipeline/         # Python LLM extraction pipeline
-│       ├── extract.py    # Multi-temp extraction (sonnet 4.5)
-│       ├── adjudicate.py # Conflict resolution (opus 4.6)
-│       ├── verify.py     # Post-adjudication web-search fact-checking (haiku)
+│       ├── extract.py    # Multi-temp extraction (sonnet 4.6)
+│       ├── adjudicate.py # Conflict resolution (sonnet 4.6)
+│       ├── verify.py     # Post-adjudication web-search fact-checking (sonnet 4.6)
 │       ├── merge.py      # Consensus filtering
 │       ├── apply.py      # Conservative data upgrade
 │       ├── enrich.py     # LLM enrichment of weak org profiles
@@ -57,9 +57,9 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 
 `just pipeline <source>` runs: extract → adjudicate → verify → merge → apply (dry-run)
 
-- **Extract**: sonnet 4.5 at temps 0.1/0.3/0.7, structured JSON output with evidence quotes
-- **Adjudicate**: opus 4.6 validates evidence, resolves conflicts (always runs)
-- **Verify**: haiku web-search fact-checking of suspicious edges (weak evidence, spin_off claims, hearsay); removes unsupported claims
+- **Extract**: sonnet 4.6 at temps 0.1/0.3/0.7, structured JSON output with evidence quotes
+- **Adjudicate**: sonnet 4.6 validates evidence, resolves conflicts (always runs)
+- **Verify**: sonnet 4.6 web-search fact-checking of suspicious edges (weak evidence, spin_off claims, hearsay); removes unsupported claims
 - **Merge**: algorithmic consensus (2/3 agreement) or adjudicated result
 - **Apply**: conservative upgrade — only improves weaker fields, lint gates result
 - **Enrich**: standalone LLM enrichment of weak org profiles (`just enrich`); scores orgs by weakness × connectivity, gathers context via ripgrep + agentic web search
@@ -130,4 +130,4 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 Stats are computed at build time and embedded in `graph.json` meta. Run `just build-data` to see current counts.
 
 - Edge types: nation, rivalry, alliance, member_of, spin-off, parent
-- Top sources: Wikipedia, StreetGangs, UnitedGangs, Chicago Gang History, DOJ
+- Top sources: Wikipedia, StreetGangs, UnitedGangs, Chicago Gang History, DOJ, StopHoustonGangs

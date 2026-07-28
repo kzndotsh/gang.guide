@@ -27,7 +27,7 @@ Additional scraper: `wikipedia.py` (general-purpose Wikipedia scraping).
 
 ### 1. Extract (`apps/pipeline/extract.py`)
 
-Sends cleaned page text to **sonnet 4.5** at 3 temperatures (0.1, 0.3, 0.7). Uses v2 prompt.
+Sends cleaned page text to **sonnet 4.6** at 3 temperatures (0.1, 0.3, 0.7). Uses v2 prompt.
 
 - Input: `data/raw/{source}/{slug}.txt`
 - Output: `data/extracted/{source}/{slug}/run_1.json`, `run_2.json`, `run_3.json`
@@ -49,7 +49,7 @@ Each run produces:
 
 ### 2. Adjudicate (`apps/pipeline/adjudicate.py`)
 
-Sends all 3 runs to **opus 4.6** which validates each edge's evidence quote. Uses v2 prompt.
+Sends all 3 runs to **sonnet 4.6** which validates each edge's evidence quote. Uses v2 prompt.
 
 - Checks: does the quote actually prove the claimed relationship type?
 - Resolves: conflicting years, ambiguous names
@@ -59,7 +59,7 @@ Sends all 3 runs to **opus 4.6** which validates each edge's evidence quote. Use
 
 ### 3. Verify (`apps/pipeline/verify.py`)
 
-Post-adjudication web-search fact-checking using **haiku** for speed.
+Post-adjudication web-search fact-checking using **sonnet 4.6**.
 
 - Runs between adjudicate and merge — filters suspicious edges before consensus
 - Identifies suspicious edges: weak evidence, spin_off claims, mafia membership, hearsay language
@@ -96,7 +96,7 @@ Conservative upgrade of the actual data files.
 ```bash
 just extract chicago_history          # extract from raw pages
 just adjudicate chicago_history       # resolve conflicts (opus)
-just verify chicago_history           # web-search fact-checking (haiku)
+just verify chicago_history           # web-search fact-checking (sonnet 4.6)
 just merge chicago_history            # consensus filtering
 just apply-preview chicago_history    # preview changes (dry run)
 just apply chicago_history            # commit changes
@@ -109,9 +109,9 @@ just enrich-rank                      # show org weakness × connectivity rankin
 
 | Stage | Model | Temperature | Purpose |
 |-------|-------|-------------|---------|
-| Extract | claude-sonnet-4.5 | 0.1, 0.3, 0.7 | Structured data extraction (v2 prompt) |
-| Adjudicate | claude-opus-4.6 | 0.1 | Evidence validation (v2 prompt) |
-| Verify | claude-haiku | 0.1 | Web-search fact-checking of suspicious edges |
+| Extract | claude-sonnet-4.6 | 0.1, 0.3, 0.7 | Structured data extraction (v2 prompt) |
+| Adjudicate | claude-sonnet-4.6 | 0.1 | Evidence validation (v2 prompt) |
+| Verify | claude-sonnet-4.6 | 0.1 | Web-search fact-checking of suspicious edges |
 | Enrich | configurable (--model) | — | Agentic enrichment of weak org profiles |
 
 Override via env: `EXTRACT_MODEL`, `ADJUDICATE_MODEL`
@@ -130,7 +130,7 @@ Safe to re-run at any time.
 
 1. **Multi-temperature consensus** — hallucinations don't repeat across 3 temps
 2. **Opus adjudication** — validates evidence quotes prove claimed relationships
-3. **Web-search verification** — haiku fact-checks suspicious edges via DuckDuckGo, removes unsupported claims
+3. **Web-search verification** — sonnet 4.6 fact-checks suspicious edges via DuckDuckGo, removes unsupported claims
 4. **Contradiction check** — won't add alliance where rivalry exists (without dates)
 5. **Self-reference check** — won't create org→itself edges
 6. **Page title guard** — rejects generic/navigational names from becoming orgs
