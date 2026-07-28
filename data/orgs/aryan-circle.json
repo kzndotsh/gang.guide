@@ -36,5 +36,17 @@
   "colors": [
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Neo-Nazi Symbols",
+    "Circle Shielded By A Diamond",
+    "Diamonds Shielded By A Swastika",
+    "AC",
+    "Ace Tray",
+    "Silence Is Golden",
+    "1",
+    "3",
+    "I",
+    "III"
+  ]
 }

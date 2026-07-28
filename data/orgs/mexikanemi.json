@@ -12,24 +12,36 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Mexikanemi",
-      "title": "Mexikanemi \u2014 Wikipedia"
+      "title": "Mexikanemi — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Mexican_Mafia",
-      "title": "Mexican Mafia \u2014 Wikipedia"
+      "title": "Mexican Mafia — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Nuestra_Familia",
-      "title": "Nuestra Familia \u2014 Wikipedia"
+      "title": "Nuestra Familia — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Puro_Tango_Blast",
-      "title": "Puro Tango Blast \u2014 Wikipedia"
+      "title": "Puro Tango Blast — Wikipedia"
     }
   ],
   "metro": "San Antonio",
   "colors": [
     "orange"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "TMM",
+    "TM",
+    "MM",
+    "EMI",
+    "Aztlan",
+    "Mexican Eagle War Shield And 2 Machetes",
+    "XX",
+    "XIII",
+    "20",
+    "13"
+  ]
 }

@@ -13,22 +13,31 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Puro_Tango_Blast",
-      "title": "Puro Tango Blast \u2014 Wikipedia"
+      "title": "Puro Tango Blast — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Gulf_Cartel",
-      "title": "Gulf Cartel \u2014 Wikipedia"
+      "title": "Gulf Cartel — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Texas_Syndicate",
-      "title": "Texas Syndicate \u2014 Wikipedia"
+      "title": "Texas Syndicate — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Sindicato_de_Texas",
-      "title": "Sindicato de Texas \u2014 Wikipedia"
+      "title": "Sindicato de Texas — Wikipedia"
     }
   ],
   "metro": "Houston",
   "status": "active",
-  "colors": []
+  "colors": [],
+  "symbols": [
+    "Capitol Building",
+    "La Capirucha",
+    "3 D Star With Atx",
+    "PTB",
+    "16",
+    "20",
+    "2"
+  ]
 }

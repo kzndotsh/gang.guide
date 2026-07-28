@@ -38,5 +38,13 @@
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "BA",
+    "21",
+    "XXI",
+    "Fletchas Indios",
+    "EPT",
+    "Chuco Town"
+  ]
 }

@@ -44,5 +44,16 @@
     "green"
   ],
   "status": "active",
-  "membership_estimate": 20000
+  "membership_estimate": 20000,
+  "symbols": [
+    "ABT",
+    "TAB",
+    "I",
+    "II",
+    "XXX",
+    "HH",
+    "Swastika",
+    "Double Lightning Bolts",
+    "Shield With Sword"
+  ]
 }

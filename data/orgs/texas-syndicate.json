@@ -36,5 +36,13 @@
   "status": "active",
   "aliases": [],
   "colors": [],
-  "membership_estimate": 4000
+  "membership_estimate": 4000,
+  "symbols": [
+    "TS",
+    "S Superimposed Over A T",
+    "Longhorn Symbol",
+    "Longhorn Head",
+    "ESE TE",
+    "20 19"
+  ]
 }
