@@ -145,7 +145,10 @@
   const contentHeight = $derived(scale.pad * 2 + lanes.length * LANE_HEIGHT + 56);
 
   function laneY(lane: string): number {
-    return scale.pad + lanes.indexOf(lane) * LANE_HEIGHT + 100;
+    // Guard against null/unrecognized lanes (indexOf returns -1 → renders at top)
+    const idx = lanes.indexOf(lane);
+    const safeIdx = idx >= 0 ? idx : lanes.indexOf('unplaced');
+    return scale.pad + Math.max(0, safeIdx) * LANE_HEIGHT + 100;
   }
 
   function nodeMidX(node: GraphNode): number {
