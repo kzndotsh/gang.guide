@@ -1,0 +1,30 @@
+{
+  "id": "org:southern-brotherhood",
+  "name": "Southern Brotherhood",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": 1995,
+  "founded_year_precision": "circa",
+  "description": "The Southern Brotherhood is a white supremacist prison gang founded in 1995 in the Alabama prison system. It is classified as large in size and operates primarily in Alabama. It is considered a significant white supremacist organization within the state's correctional facilities.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf",
+      "title": "web.archive.org"
+    }
+  ],
+  "symbols": [
+    "Shield Tattoo",
+    "Sb Letters",
+    "Swastika",
+    "Ss Lightning Bolts",
+    "14/23",
+    "Confederate Flag",
+    "Axes",
+    "Swords"
+  ]
+}

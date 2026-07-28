@@ -15,16 +15,22 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/211_Crew",
-      "title": "211 Crew \u2014 Wikipedia"
+      "title": "211 Crew — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Big_Circle_Gang",
-      "title": "Big Circle Gang \u2014 Wikipedia"
+      "title": "Big Circle Gang — Wikipedia"
     }
   ],
   "colors": [
     "white"
   ],
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "NAE",
+    "2",
+    "3",
+    "4"
+  ]
 }

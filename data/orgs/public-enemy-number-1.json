@@ -1,0 +1,21 @@
+{
+  "id": "org:public-enemy-number-1",
+  "name": "Public Enemy Number 1",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Public Enemy Number 1 (PENI) is a hybrid racist skinhead gang, street gang, and prison gang that originated in Southern California in the mid-1980s among white youths active in the punk music subculture. The group is heavily involved in methamphetamine trafficking, identity theft, counterfeiting, and violent crimes including assault and murder. PENI operates both on the streets and in California's prison system, where it functions as foot soldiers for more established white supremacist prison gangs.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/profiles/public-enemy-number-1-peni",
+      "title": "www.adl.org"
+    }
+  ],
+  "membership_estimate": 375
+}

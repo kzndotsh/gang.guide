@@ -1058,7 +1058,9 @@
     "id": "c76e1e98a24c",
     "source": "org:aryan-brotherhood-of-texas",
     "target": "org:aryan-circle",
-    "type": "rivalry"
+    "type": "rivalry",
+    "evidence": "A federal judge sentenced ABT member John Oliver Manning to nearly 30 years in prison following his conviction on racketeering and firearms charges in connection with the shooting of a member of the rival Aryan Circle gang.",
+    "source_url": "https://www.adl.org/resources/profiles/aryan-brotherhood-texas"
   },
   {
     "id": "fe5b69d32a50",
@@ -23034,5 +23036,168 @@
     "type": "rivalry",
     "evidence": "The Wilmas are bitter rivals of gangs in the Harbor City and San Pedro, such as the Harbor City Boys/Rifas , Habor City Crips , Dodge City Crips and the Rancho San Pedro Gang",
     "source_url": "https://unitedgangs.com/wilmas-gangs/"
+  },
+  {
+    "source": "org:psychotic-soldiers",
+    "target": "org:aryan-knights",
+    "type": "alliance",
+    "evidence": "Said to be allied with the much larger Aryan Knights.",
+    "source_url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf"
+  },
+  {
+    "source": "org:aryan-brotherhood-of-texas",
+    "target": "org:aryan-brotherhood",
+    "type": "spin_off",
+    "evidence": "New Mexico in particular has a strong ABT presence, as its dominant racist prison gang, the New Mexico Aryan Brotherhood, is actually an offshoot or colony of the ABT.",
+    "source_url": "https://www.adl.org/resources/profiles/aryan-brotherhood-texas"
+  },
+  {
+    "source": "org:aryan-nations-church-of-jesus-christ-christian",
+    "target": "org:the-order",
+    "type": "alliance",
+    "evidence": "Butler followers joined with members of the neo-Nazi National Alliance and Ku Klux Klan splinter groups to form The Silent Brotherhood, known more widely as The Order",
+    "source_url": "https://www.adl.org/resources/profile/aryan-nationschurch-jesus-christ-christian",
+    "start_year": 1983,
+    "end_year": 1984
+  },
+  {
+    "source": "org:aryan-nations-church-of-jesus-christ-christian",
+    "target": "org:church-of-jesus-christ-christian-of-montana",
+    "type": "spin_off",
+    "evidence": "They and two other members moved to western Montana to form their own white supremacist group ­ the Church of Jesus Christ Christian of Montana.",
+    "source_url": "https://www.adl.org/resources/profile/aryan-nationschurch-jesus-christ-christian"
+  },
+  {
+    "source": "org:aryan-nations-church-of-jesus-christ-christian",
+    "target": "org:church-of-true-israel",
+    "type": "spin_off",
+    "evidence": "two of the failed mutineers, John Burke and Charles Mangels, left Aryan Nations and founded the new church",
+    "source_url": "https://www.adl.org/resources/profile/aryan-nationschurch-jesus-christ-christian"
+  },
+  {
+    "source": "org:hammerskins",
+    "target": "org:panzerfaust-records",
+    "type": "alliance",
+    "evidence": "the Vinland Tour 2000, featuring Swedish group Pluton Svea, was presented by the Hammerskin Nation and Panzerfaust Records in cities including Detroit and Cleveland, Texas.",
+    "source_url": "https://www.adl.org/resources/profile/hammerskin-nation"
+  },
+  {
+    "source": "org:mississippi-aryan-brotherhood",
+    "target": "org:aryan-brotherhood",
+    "type": "rivalry",
+    "evidence": "Despite the similarity of its name, it has no connection to the \"original\" Aryan Brotherhood , based in California and the federal prison systems.",
+    "source_url": "https://www.adl.org/resources/hate-symbol/mississippi-aryan-brotherhood"
+  },
+  {
+    "source": "org:sadistic-souls-motorcycle-club",
+    "target": "org:aryan-nations",
+    "type": "member_of",
+    "evidence": "It is also a faction of the neo-Nazi group Aryan Nations",
+    "source_url": "https://www.adl.org/resources/hate-symbol/sadistic-souls"
+  },
+  {
+    "source": "org:nation-of-islam",
+    "target": "org:church-of-scientology",
+    "type": "alliance",
+    "evidence": "Since the mid-2000s, the Nation of Islam has forged an unlikely alliance with the Church of Scientology.",
+    "source_url": "https://www.adl.org/resources/profile/nation-islam",
+    "start_year": 2005
+  },
+  {
+    "source": "org:national-socialist-movement",
+    "target": "org:nationalist-socialist-freedom-movement",
+    "type": "spin_off",
+    "evidence": "By the end of 2010, however, Herrington was back promoting the Nationalist Socialist Freedom Movement, a group he had formed in 2006 when he first left the NSM.",
+    "source_url": "https://www.adl.org/resources/profile/national-socialist-movement",
+    "start_year": 2006,
+    "end_year": 2010
+  },
+  {
+    "source": "org:national-socialist-movement",
+    "target": "org:illinois-national-socialist-front",
+    "type": "alliance",
+    "evidence": "the NSM collaborated with the Illinois National Socialist Front (INSF) to protest the opening of the Illinois Holocaust Museum in Skokie, Illinois.",
+    "source_url": "https://www.adl.org/resources/profile/national-socialist-movement"
+  },
+  {
+    "source": "org:national-socialist-movement",
+    "target": "org:american-thule-society",
+    "type": "alliance",
+    "evidence": "At a June 2005 rally in Yorktown, Virginia, the NSM teamed up with the American Thule Society, a white supremacist group, in an event to 'honor our brave American forefathers.' Speakers included representatives from both groups.",
+    "source_url": "https://www.adl.org/resources/profile/national-socialist-movement"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:hammerskins",
+    "type": "alliance",
+    "evidence": "Volksfront is closely associated with the Hammerskins, Aryan Nations, Golden State Skinheads, American Front, Women for Aryan Unity, and Free Your Mind Productions.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:aryan-nations",
+    "type": "alliance",
+    "evidence": "Volksfront is closely associated with the Hammerskins, Aryan Nations, Golden State Skinheads, American Front, Women for Aryan Unity, and Free Your Mind Productions.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:golden-state-skinheads",
+    "type": "alliance",
+    "evidence": "Volksfront is closely associated with the Hammerskins, Aryan Nations, Golden State Skinheads, American Front, Women for Aryan Unity, and Free Your Mind Productions.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:american-front",
+    "type": "alliance",
+    "evidence": "Volksfront is closely associated with the Hammerskins, Aryan Nations, Golden State Skinheads, American Front, Women for Aryan Unity, and Free Your Mind Productions.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:women-for-aryan-unity",
+    "type": "alliance",
+    "evidence": "Volksfront is closely associated with the Hammerskins, Aryan Nations, Golden State Skinheads, American Front, Women for Aryan Unity, and Free Your Mind Productions.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:blood-honour",
+    "type": "alliance",
+    "evidence": "Attendees at the event also received Volksfront literature, white power rock CDs and the latest issue of Blood & Honour magazine, published by the British racist skinhead group of the same name with which Volksfront is affiliated.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:christian-guard",
+    "type": "alliance",
+    "evidence": "In fall 2005, Krager announced that four groups were unifying under an umbrella organization called Blood and Honour American Division: Volksfront, the Hammerskins, Women for Aryan Unity, and the Florida-based Christian Guard.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:northern-california-aryan-volk",
+    "type": "spin_off",
+    "evidence": "In 2005, Volksfront also absorbed a racist skinhead group, Northern California Aryan Volk (NCAV), to create a northern California chapter",
+    "source_url": "https://www.adl.org/resources/profile/volksfront",
+    "start_year": 2005,
+    "end_year": 2005
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:retaliator-skinhead-nation",
+    "type": "spin_off",
+    "evidence": "In March 2007, another racist skinhead group, the Midwest-based Retaliator Skinhead Nation, disbanded and joined Volksfront.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront",
+    "start_year": 2007,
+    "end_year": 2007
+  },
+  {
+    "source": "org:volksfront",
+    "target": "org:vinlanders-social-club",
+    "type": "rivalry",
+    "evidence": "The rivalry between Volksfront/Hammerskin Nation and the Vinlanders remains high. An Internet exchange at the racist online forum Stormfront indicated that a prominent Vinlander even cut off the ear of a Volksfront member in St. Louis.",
+    "source_url": "https://www.adl.org/resources/profile/volksfront"
   }
 ]

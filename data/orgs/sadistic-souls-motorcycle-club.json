@@ -20,8 +20,12 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Sadistic_Souls_Motorcycle_Club",
-      "title": "Sadistic Souls Motorcycle Club \u2014 Wikipedia"
+      "title": "Sadistic Souls Motorcycle Club — Wikipedia"
     }
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Totenkopf",
+    "Lightning Bolts"
+  ]
 }

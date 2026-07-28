@@ -1,0 +1,20 @@
+{
+  "id": "org:crazy-white-boy",
+  "name": "Crazy White Boy",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Crazy White Boy (CWB) is a term used generically by some white supremacists, often in tattoo form, to identify themselves, and also commonly used as a name for white gangs across the United States. There have been a number of groups using this name.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/crazy-white-boy",
+      "title": "www.adl.org"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "org:panzerfaust-records",
+  "name": "Panzerfaust Records",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Dallas",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Panzerfaust Records is a street gang based in Dallas.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/profile/hammerskin-nation",
+      "title": "www.adl.org"
+    }
+  ]
+}

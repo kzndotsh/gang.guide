@@ -1,0 +1,20 @@
+{
+  "id": "org:nationalist-socialist-freedom-movement",
+  "name": "Nationalist Socialist Freedom Movement",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Nationalist Socialist Freedom Movement is a street gang based in Unknown.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/profile/national-socialist-movement",
+      "title": "www.adl.org"
+    }
+  ]
+}

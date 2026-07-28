@@ -1,0 +1,20 @@
+{
+  "id": "org:prison-motorcycle-brotherhood",
+  "name": "Prison Motorcycle Brotherhood",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Prison Motorcycle Brotherhood is a medium-sized white supremacist prison gang formed within the Minnesota prison system, with Minnesota as its primary state of operation. It is included in the ADL's inventory of white supremacist prison gangs alongside groups such as the Aryan Brotherhood of Texas, Aryan Circle, European Kindred, and Ku Klux Klan.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf",
+      "title": "web.archive.org"
+    }
+  ]
+}

@@ -24,5 +24,9 @@
   "colors": [
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Pitbull Head",
+    "Keystone"
+  ]
 }

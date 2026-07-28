@@ -1,0 +1,25 @@
+{
+  "id": "org:peckerwood-midwest",
+  "name": "Peckerwood Midwest",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "Peckerwood Midwest is a white supremacist gang based primarily in Missouri, active both in prisons and on the streets. The gang's patch tattoo consists of a diamond-shaped swastika inside a larger Iron Cross, with SS bolts also used as identifying symbols.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/peckerwood-midwest",
+      "title": "www.adl.org"
+    }
+  ],
+  "symbols": [
+    "Diamond-Shaped Swastika",
+    "Iron Cross",
+    "Ss Bolts"
+  ]
+}

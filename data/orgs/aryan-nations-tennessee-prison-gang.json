@@ -1,0 +1,30 @@
+{
+  "id": "org:aryan-nations-tennessee-prison-gang",
+  "name": "Aryan Nations (Tennessee prison gang)",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Aryan Nations is the largest white supremacist prison gang in Tennessee. It is active and distinct from the older neo-Nazi organization that shares its name, with few connections between the two.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/aryan-nations-tennessee-prison-gang",
+      "title": "www.adl.org"
+    }
+  ],
+  "symbols": [
+    "Celtic Cross",
+    "An Initials",
+    "14/88",
+    "Ss Lightning Bolts",
+    "Prison Bars",
+    "Confederate Flag Stars",
+    "Swastika",
+    "114"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "org:aryan-renaissance-society",
+  "name": "Aryan Renaissance Society",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Aryan Renaissance Society is a small but long-lived white supremacist group that has resembled both a racist skinhead group and a prison clique at times. Its members have come from a variety of places.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/aryan-renaissance-society",
+      "title": "www.adl.org"
+    }
+  ],
+  "symbols": [
+    "Phoenix",
+    "Lightning Bolt",
+    "Runic Symbol"
+  ]
+}

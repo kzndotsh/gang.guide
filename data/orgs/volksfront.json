@@ -16,7 +16,15 @@
       "title": "Volksfront — Wikipedia"
     }
   ],
-  "founded_year_precision": "estimate",
-  "colors": [],
-  "disbanded_year": 2012
+  "founded_year_precision": "circa",
+  "colors": [
+    "black",
+    "red",
+    "white"
+  ],
+  "disbanded_year": 2012,
+  "symbols": [
+    "Life Rune (Algiz)",
+    "Vf Acronym Bisected By Rune"
+  ]
 }

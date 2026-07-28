@@ -1,0 +1,25 @@
+{
+  "id": "org:sacred-separatist-group",
+  "name": "Sacred Separatist Group",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Sacred Separatist Group (SSG) is a Missouri-based white supremacist prison gang. The group's patch tattoo consists of a shield over a crossed sword and battleaxe with the initials SSG inside, with the S's styled as SS lightning bolts.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/sacred-separatist-group",
+      "title": "www.adl.org"
+    }
+  ],
+  "symbols": [
+    "Shield",
+    "Crossed Sword And Battleaxe",
+    "Ss Lightning Bolts"
+  ]
+}

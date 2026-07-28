@@ -15,23 +15,26 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Hammerskins",
-      "title": "Neo-Nazi group formed \u2014 Wikipedia"
+      "title": "Neo-Nazi group formed — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Keystone_United",
-      "title": "Keystone United \u2014 Wikipedia"
+      "title": "Keystone United — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Outlaws_MC_criminal_allegations_and_incidents",
-      "title": "Outlaws MC criminal allegations and incidents \u2014 Wikipedia"
+      "title": "Outlaws MC criminal allegations and incidents — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Volksfront",
-      "title": "Volksfront \u2014 Wikipedia"
+      "title": "Volksfront — Wikipedia"
     }
   ],
   "colors": [
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Crossed Hammers"
+  ]
 }

@@ -1,0 +1,25 @@
+{
+  "id": "org:mississippi-aryan-brotherhood",
+  "name": "Mississippi Aryan Brotherhood",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": null,
+  "founded_year_precision": "estimate",
+  "description": "The Mississippi Aryan Brotherhood is a large white supremacist prison gang based in the Mississippi state prison system. Its logo features a stylized combined A and B with SS bolts, a swastika, and the number 13 representing Mississippi. Despite its name, it has no connection to the original Aryan Brotherhood based in California and the federal prison systems.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/mississippi-aryan-brotherhood",
+      "title": "www.adl.org"
+    }
+  ],
+  "symbols": [
+    "Ss Bolts",
+    "Number 13",
+    "Swastika"
+  ]
+}

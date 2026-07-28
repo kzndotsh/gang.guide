@@ -28,5 +28,9 @@
   "colors": [
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Sac Initials",
+    "Swastika Interwoven With An Iron Cross"
+  ]
 }

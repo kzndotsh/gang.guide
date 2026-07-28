@@ -1,0 +1,20 @@
+{
+  "id": "org:saxon-knights",
+  "name": "Saxon Knights",
+  "aliases": [],
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Unknown",
+  "founded_year": 1995,
+  "founded_year_precision": "circa",
+  "description": "The Saxon Knights are a small white supremacist prison gang formed in 1995. They are based primarily in the Indiana prison system, with additional presence noted in Michigan.",
+  "colors": [],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf",
+      "title": "web.archive.org"
+    }
+  ]
+}

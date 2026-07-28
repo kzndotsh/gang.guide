@@ -13,12 +13,21 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Solid_Wood_Soldiers",
-      "title": "Solid Wood Soldiers \u2014 Wikipedia"
+      "title": "Solid Wood Soldiers — Wikipedia"
     }
   ],
   "metro": "United States",
   "colors": [
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Sws Initials",
+    "Lightning Bolts",
+    "Bear Claw",
+    "Number 4",
+    "HCRL",
+    "14/10",
+    "W Handsign"
+  ]
 }

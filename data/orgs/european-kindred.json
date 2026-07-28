@@ -12,12 +12,17 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/European_Kindred",
-      "title": "European Kindred \u2014 Wikipedia"
+      "title": "European Kindred — Wikipedia"
     }
   ],
   "metro": "Portland",
   "colors": [
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 200,
+  "symbols": [
+    "Ek Shield Tattoo",
+    "511"
+  ]
 }

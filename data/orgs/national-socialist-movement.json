@@ -1,0 +1,26 @@
+{
+  "id": "org:national-socialist-movement",
+  "name": "National Socialist Movement",
+  "aliases": [],
+  "type": "street_gang",
+  "lane": null,
+  "metro": "Unknown",
+  "founded_year": 1974,
+  "founded_year_precision": "circa",
+  "description": "The National Socialist Movement (NSM) is described as the largest neo-Nazi group in the United States at the time of writing, founded in 1974 by Robert Brannen and Clifford Herrington as the National Socialist American Workers Freedom Movement. Led by Jeff Schoep since 1994, the group promotes a virulently anti-Semitic and racist neo-Nazi ideology calling for an all-white 'greater America' that would deny citizenship to Jews, non-whites, and homosexuals. The NSM has a paramilitary structure with military ranks, maintains a white power music label (NSM88 Records), and has consistently maintained a membership of several hundred members.",
+  "colors": [
+    "black"
+  ],
+  "nation_affiliation": null,
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.adl.org/resources/profile/national-socialist-movement",
+      "title": "www.adl.org"
+    }
+  ],
+  "symbols": [
+    "Swastika"
+  ],
+  "membership_estimate": 300
+}
