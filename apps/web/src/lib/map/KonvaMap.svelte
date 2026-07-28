@@ -134,7 +134,7 @@
     }
     const result = new Map<string, number>();
     for (const [lane, count] of counts) {
-      result.set(lane, Math.min(12, Math.max(BASE_ROW_COUNT, Math.ceil(count / 10))));
+      result.set(lane, Math.min(16, Math.max(BASE_ROW_COUNT, Math.ceil(count / 10))));
     }
     return result;
   });
@@ -162,7 +162,10 @@
     const rowCount = laneRowCount.get(layout.lane) ?? BASE_ROW_COUNT;
     const row = slot % rowCount;
     const center = (rowCount - 1) / 2;
-    const y = base + (row - center) * LANE_ROW_OFFSET;
+    // Clamp row offset so nodes stay within lane bounds even for dense lanes
+    const maxSpread = LANE_HEIGHT - 32;
+    const rowOffset = rowCount > 1 ? Math.min(LANE_ROW_OFFSET, maxSpread / (rowCount - 1)) : LANE_ROW_OFFSET;
+    const y = base + (row - center) * rowOffset;
     return y;
   }
 
