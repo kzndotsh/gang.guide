@@ -44,6 +44,7 @@
 ---
 
 ## Done
+- [x] Run full pipeline on StopHoustonGangs (30 profiles, +7 org symbol enrichments, Houston/Texas gangs)
 - [x] Run full pipeline on UnitedGangs (1400+ edges, largest single-source extraction)
 - [x] Run full pipeline on Detroit (25 pages, +78 orgs, +127 edges)
 - [x] Run full pipeline on NGCRC (6 academic profiles, +9 edges)
