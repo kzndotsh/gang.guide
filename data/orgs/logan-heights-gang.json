@@ -1,9 +1,9 @@
 {
   "id": "org:logan-heights-gang",
   "name": "Logan Heights Gang",
-  "type": "organized_crime",
-  "lane": "organized-crime",
-  "metro": "United States",
+  "type": "street_gang",
+  "lane": "california-latino-inland",
+  "metro": "San Diego",
   "description": "The Logan Heights Gang is a Sureño street gang based in Southeast San Diego, California, founded in the 1970s from the unification of several Mexican-American gangs. It is composed of five main subsets and has spread to other U.S. cities and Tijuana, Mexico. The gang is involved in drug trafficking, murder, kidnapping, and human smuggling, and has alliances with the Tijuana Cartel and Mexican Mafia.",
   "founded_year": 1960,
   "aliases": [
