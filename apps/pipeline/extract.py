@@ -44,6 +44,8 @@ SYSTEM_PROMPT = """You extract structured relationship data from source text abo
 Return ONLY valid JSON matching this schema:
 {
   "subject_org": "Full proper name of the main organization this page is about",
+  "org_type": "street_gang|prison_gang|white_supremacist|motorcycle_club|organized_crime|alliance|nation",
+  "org_lane": "lane id or null",
   "founded_year": 1972 or null,
   "colors": ["blue", "black"] or [],
   "symbols": ["pitchfork", "six-point star"] or [],
@@ -71,6 +73,48 @@ NAMING:
 - edges.target: Always use the MOST SPECIFIC name from the text. If the source discusses local sets in Detroit and mentions "Rollin 60s", use the local set name that appears in the text (e.g. "7 Mile Rollin 60s Crips"), not the generic national org name. This prevents duplicates in the knowledge graph.
 
 FIELDS:
+- org_type: Classify the subject org. Use "white_supremacist" for white supremacist prison/street gangs (Aryan Brotherhood, Nazi Low Riders, etc.). Use "prison_gang" for non-white-supremacist prison gangs. Use "motorcycle_club" for OMGs. Use "organized_crime" for mafias/cartels. Use "street_gang" for standard street gangs. Use "alliance" or "nation" for umbrella coalitions (Folk Nation, etc.). Default to "street_gang" if unclear.
+- org_lane: The lane ID this org belongs to. Must be one of these exact values or null:
+    "prison" — Prison gangs (non-white-supremacist)
+    "white-supremacist" — White supremacist gangs/orgs (Aryan Brotherhood, Nazi Low Riders, skinheads, etc.)
+    "motorcycle-clubs" — Outlaw motorcycle clubs (Hells Angels, Bandidos, etc.)
+    "organized-crime" — Mafias, cartels, organized crime families
+    "chicago-folk" — Chicago Folk Nation gangs (Gangster Disciples, etc.)
+    "chicago-people" — Chicago People Nation gangs (Vice Lords, Latin Kings, etc.)
+    "chicago-folk-people" — Chicago gangs spanning both Folk and People
+    "chicago-independent" — Chicago gangs not in Folk/People
+    "blood-nation" — Bloods alliance (national/umbrella)
+    "california-bloods-compton" — Compton Bloods/Pirus
+    "california-bloods-carson" — Carson area Bloods
+    "california-bloods-la-south-bay" — LA/Inglewood Bloods
+    "california-bloods-other" — Other California Bloods
+    "crip-nation" — Crips alliance (national/umbrella)
+    "california-crips-hoover" — Hoover Criminals
+    "california-crips-neighborhood" — Neighborhood Crips
+    "california-crips-east-coast" — East Coast Crips
+    "california-crips-gangster" — Gangster Crips
+    "california-crips-hustler" — Hustler Crips
+    "california-crips-south-la" — Watts/South LA Crips
+    "california-crips-long-beach" — Long Beach Crips
+    "california-crips-inglewood" — Inglewood Crips
+    "california-crips-other" — Other California Crips
+    "california-latino-east-la" — East LA Latino gangs
+    "california-latino-south-la" — South LA Latino gangs
+    "california-latino-sfv" — SF Valley Latino gangs
+    "california-latino-sgv" — SG Valley Latino gangs
+    "california-latino-westside" — Westside LA Latino gangs
+    "california-latino-harbor" — Harbor/Long Beach Latino gangs
+    "california-latino-inland" — Inland Empire/San Diego Latino gangs
+    "california-latino-other" — Other California Latino gangs
+    "asian-gangs" — Asian gangs
+    "new-york" — New York gangs
+    "midwest" — Midwest gangs (outside Chicago)
+    "detroit" — Detroit gangs
+    "southeast-southwest" — Southern/Southwest US gangs
+    "historical-east" — Historical East Coast gangs
+    "other-national" — National orgs not fitting other lanes
+    "unplaced" — Cannot determine lane
+    null — Genuinely unknown or multi-regional umbrella
 - founded_year: Only if the text explicitly states a year. "Founded in the early 2000s" = null.
 - colors: Only if explicitly stated as the org's colors. Not colors mentioned in other contexts.
 - membership_estimate: Only if a number is given. Ranges like "200-300" → use the midpoint.

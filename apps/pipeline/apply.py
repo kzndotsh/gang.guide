@@ -52,7 +52,13 @@ def slugify(name: str) -> str:
     return s.strip("-")
 
 
-def create_org(name: str, consensus: dict | None = None, metro: str = "Unknown", source_url: str | None = None, dry_run: bool = False) -> str | None:
+def create_org(
+    name: str,
+    consensus: dict | None = None,
+    metro: str = "Unknown",
+    source_url: str | None = None,
+    dry_run: bool = False,
+) -> str | None:
     """Create a minimal org file from extracted data. Returns org_id or None."""
     slug = slugify(name)
     if not slug or len(slug) < 3:
@@ -60,10 +66,20 @@ def create_org(name: str, consensus: dict | None = None, metro: str = "Unknown",
 
     # Reject page titles and generic concepts
     name_lower = name.lower()
-    if any(x in name_lower for x in [
-        "history of", "groups in", "street groups", "defunct",
-        "hybrid", "glossary", "overview", "map review", "tagger crews",
-    ]):
+    if any(
+        x in name_lower
+        for x in [
+            "history of",
+            "groups in",
+            "street groups",
+            "defunct",
+            "hybrid",
+            "glossary",
+            "overview",
+            "map review",
+            "tagger crews",
+        ]
+    ):
         return None
 
     org_id = f"org:{slug}"
@@ -73,22 +89,57 @@ def create_org(name: str, consensus: dict | None = None, metro: str = "Unknown",
         return org_id
 
     # Don't inherit metro for orgs with known non-local identifiers
-    if metro != "Unknown" and any(x in name_lower for x in [
-        "piru", "inglewood", "compton", "watts", "centinela",
-        "campanella", "skyline", "avalon",
-    ]):
+    if metro != "Unknown" and any(
+        x in name_lower
+        for x in [
+            "piru",
+            "inglewood",
+            "compton",
+            "watts",
+            "centinela",
+            "campanella",
+            "skyline",
+            "avalon",
+        ]
+    ):
         metro = "Los Angeles"
+
+    # Use org_type/org_lane from LLM extraction if available, else defaults
+    org_type = (consensus or {}).get("org_type") or "street_gang"
+    org_lane = (consensus or {}).get("org_lane") or None
+
+    # Validate org_type against known values
+    valid_types = {
+        "street_gang",
+        "prison_gang",
+        "white_supremacist",
+        "motorcycle_club",
+        "organized_crime",
+        "alliance",
+        "nation",
+    }
+    if org_type not in valid_types:
+        org_type = "street_gang"
+
+    # Default description varies by type
+    type_desc = {
+        "white_supremacist": f"{name} is a white supremacist organization.",
+        "prison_gang": f"{name} is a prison gang.",
+        "motorcycle_club": f"{name} is an outlaw motorcycle club.",
+        "organized_crime": f"{name} is an organized crime group.",
+    }
+    default_desc = type_desc.get(org_type, f"{name} is a street gang based in {metro}.")
 
     org = {
         "id": org_id,
         "name": name,
         "aliases": [],
-        "type": "street_gang",
-        "lane": None,
+        "type": org_type,
+        "lane": org_lane,
         "metro": metro,
         "founded_year": None,
         "founded_year_precision": "estimate",
-        "description": f"{name} is a street gang based in {metro}.",
+        "description": default_desc,
         "colors": [],
         "nation_affiliation": None,
         "status": "active",
@@ -152,13 +203,51 @@ def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run
             org["membership_estimate"] = consensus["membership_estimate"]
         changes.append(f"membership: {consensus['membership_estimate']}")
 
+    # Type: upgrade from street_gang default if LLM has a more specific classification
+    extracted_type = consensus.get("org_type")
+    valid_types = {
+        "street_gang",
+        "prison_gang",
+        "white_supremacist",
+        "motorcycle_club",
+        "organized_crime",
+        "alliance",
+        "nation",
+    }
+    if (
+        extracted_type
+        and extracted_type in valid_types
+        and org.get("type") == "street_gang"
+        and extracted_type != "street_gang"
+    ):
+        if not dry_run:
+            org["type"] = extracted_type
+        changes.append(f"type: street_gang → {extracted_type}")
+
+    # Lane: fill in if currently null and LLM has a confident lane
+    extracted_lane = consensus.get("org_lane")
+    if extracted_lane and not org.get("lane"):
+        if not dry_run:
+            org["lane"] = extracted_lane
+        changes.append(f"lane: null → {extracted_lane}")
+
     if changes and not dry_run and path:
         path.write_text(json.dumps(org, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
     return changes
 
 
-def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list, existing_keys: set, dry_run: bool = False, source_url: str | None = None, create_orgs: bool = False, metro: str = "Unknown") -> list[str]:
+def apply_edges(
+    consensus: dict,
+    org_id: str,
+    org_index: dict,
+    edges_list: list,
+    existing_keys: set,
+    dry_run: bool = False,
+    source_url: str | None = None,
+    create_orgs: bool = False,
+    metro: str = "Unknown",
+) -> list[str]:
     """Apply extracted edges. Mutates edges_list and existing_keys in place."""
     edges_added = []
 
@@ -177,6 +266,7 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
                 if target_id and not dry_run:
                     # Add to index so subsequent edges can resolve
                     from .lib.resolve import normalize
+
                     org_index[normalize(target_name)] = target_id
             if not target_id:
                 continue
@@ -211,10 +301,11 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
         # (alliance where rivalry exists, or vice versa)
         if etype in ("alliance", "rivalry"):
             opposite = "rivalry" if etype == "alliance" else "alliance"
-            has_contradiction = (
-                (org_id, target_id, opposite) in existing_keys
-                or (target_id, org_id, opposite) in existing_keys
-            )
+            has_contradiction = (org_id, target_id, opposite) in existing_keys or (
+                target_id,
+                org_id,
+                opposite,
+            ) in existing_keys
             if has_contradiction and not edge.get("start_year") and not edge.get("period"):
                 continue
 
@@ -226,6 +317,7 @@ def apply_edges(consensus: dict, org_id: str, org_index: dict, edges_list: list,
         if edge.get("period"):
             # Convert "1977-1992" string to start_year/end_year ints
             import re as _re
+
             m = _re.match(r"(\d{4})\s*[-–]\s*(\d{4}|present)", edge["period"])
             if m:
                 new_edge["start_year"] = int(m.group(1))
@@ -244,7 +336,8 @@ def run_lint() -> bool:
     """Run lint.py and return True if it passes."""
     result = subprocess.run(
         [sys.executable, str(ROOT / "apps" / "pipeline" / "lint.py")],
-        capture_output=True, text=True,
+        capture_output=True,
+        text=True,
     )
     return result.returncode == 0
 
@@ -316,6 +409,7 @@ def main():
                 )
                 if org_id and not args.dry_run:
                     from .lib.resolve import normalize
+
                     org_index[normalize(consensus["subject_org"])] = org_id
                     org_path_index[org_id] = DATA_ORGS / f"{slugify(consensus['subject_org'])}.json"
             if not org_id:
@@ -327,7 +421,17 @@ def main():
         _, subject_data = load_org_by_id(org_id, org_path_index)
         metro = (subject_data or {}).get("metro", "Unknown")
 
-        edges = apply_edges(consensus, org_id, org_index, edges_list, existing_keys, dry_run=args.dry_run, source_url=source_url, create_orgs=args.create_orgs, metro=metro)
+        edges = apply_edges(
+            consensus,
+            org_id,
+            org_index,
+            edges_list,
+            existing_keys,
+            dry_run=args.dry_run,
+            source_url=source_url,
+            create_orgs=args.create_orgs,
+            metro=metro,
+        )
 
         if changes or edges:
             prefix = "[DRY] " if args.dry_run else ""
