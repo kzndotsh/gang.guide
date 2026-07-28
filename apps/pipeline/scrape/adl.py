@@ -289,18 +289,31 @@ def clean_state_text(text: str) -> str:
     return "\n".join(out)
 
 
-def split_by_state(pages: list[str], title: str) -> dict[str, str]:
-    """Split PDF text into per-state chunks.
+def split_into_gang_files(pages: list[str], title: str) -> dict[str, str]:
+    """Split PDF text into one file per gang entry.
 
-    Each state section becomes one pipeline file. The column header noise
-    (GANG NAME / OVERALL SIZE / etc.) is stripped for cleaner LLM input.
+    After clean_state_text(), each entry looks like:
 
-    Returns {slug: content} mapping.
+        Gang Name [possibly multi-word on one line after joining]
+        Large STATE_ABBREVS notes text...
+        continuation of notes...
+
+    OR (when name+size on same line):
+        Gang Name Large STATE_ABBREVS notes...
+        continuation...
+
+    Strategy: scan cleaned lines. A new gang starts when we see a name line
+    (title-case, short) followed by a size keyword either on the next line or
+    inline on the same line. Accumulate notes until next gang entry.
+
+    Returns {slug: content} mapping — one entry per gang.
     """
+    SIZE_RE = re.compile(r"\b(Large|Medium|Small)\b")
+
     full_text = "\n".join(pages)
     lines = full_text.split("\n")
 
-    # Find state header line indices
+    # Find state header boundaries
     state_boundaries: list[tuple[int, str]] = []
     for i, line in enumerate(lines):
         stripped = line.strip()
@@ -308,24 +321,162 @@ def split_by_state(pages: list[str], title: str) -> dict[str, str]:
             state_boundaries.append((i, stripped))
 
     if not state_boundaries:
-        return {"adl-ws-gangs-full": f"{title}\n\n{full_text}"}
+        return {}
 
     chunks: dict[str, str] = {}
 
-    # Intro = everything before first state header
-    intro_text = "\n".join(lines[: state_boundaries[0][0]]).strip()
-    if intro_text:
-        chunks["adl-ws-gangs-intro"] = f"{title} — Introduction\n\n{intro_text}"
+    # Intro file (context for all entries)
+    intro_lines = lines[: state_boundaries[0][0]]
+    intro_text = clean_state_text("\n".join(intro_lines)).strip()
 
     for state_idx, (state_line, state_name) in enumerate(state_boundaries):
         end_line = state_boundaries[state_idx + 1][0] if state_idx + 1 < len(state_boundaries) else len(lines)
 
-        # Strip column header noise, keep gang content
+        # Clean the state section
         section_lines = [ln for ln in lines[state_line + 1 : end_line] if ln.strip() and ln.strip() not in STRIP_LINES]
         section_text = clean_state_text("\n".join(section_lines))
+        cleaned_lines = section_text.split("\n")
 
-        slug = "adl-ws-gangs-" + state_name.lower().replace(" ", "-")
-        chunks[slug] = f"{title} — {state_name}\n\nState: {state_name}\n\n{section_text}"
+        # Parse into (name, size, notes) entries
+        entries: list[tuple[str, str, str]] = []
+        i = 0
+        while i < len(cleaned_lines):
+            line = cleaned_lines[i].strip()
+            if not line:
+                i += 1
+                continue
+
+            # Pattern A: size keyword is INLINE on this line
+            # e.g. "Aryan Circle Large TX MO, OK notes..."
+            inline = SIZE_RE.search(line)
+            if inline:
+                size_pos = inline.start()
+                name_part = line[:size_pos].strip()
+                size = inline.group(1)
+                notes_part = line[size_pos + len(size) :].strip()
+
+                # Accumulate continuation lines as notes
+                j = i + 1
+                while j < len(cleaned_lines):
+                    next_line = cleaned_lines[j].strip()
+                    if not next_line:
+                        j += 1
+                        continue
+                    # Stop at next entry (size keyword or short name line followed by size)
+                    if SIZE_RE.search(next_line):
+                        break
+                    # State abbreviation continuation lines (e.g. "NM, TN, IN,")
+                    if re.match(r"^[A-Z]{2}(?:,\s*[A-Z]{2,3})*,?\s*$", next_line):
+                        j += 1
+                        continue
+                    notes_part += " " + next_line
+                    j += 1
+
+                if name_part and len(name_part) > 2:
+                    entries.append((name_part, size, notes_part.strip()))
+                i = j
+                continue
+
+            # Pattern B: name on this line, size+notes on NEXT line
+            # e.g. line[i] = "Aryan Brotherhood of Texas"
+            #      line[i+1] = "Large TX NM, OK, BOP Started in 1984..."
+            if i + 1 < len(cleaned_lines):
+                next_line = cleaned_lines[i + 1].strip()
+                next_match = re.match(r"^(Large|Medium|Small)\b(.*)$", next_line)
+                if next_match:
+                    name_part = line
+                    size = next_match.group(1)
+                    notes_part = next_match.group(2).strip()
+
+                    # Accumulate continuation notes
+                    j = i + 2
+                    while j < len(cleaned_lines):
+                        cont = cleaned_lines[j].strip()
+                        if not cont:
+                            j += 1
+                            continue
+                        # Stop at next entry
+                        if SIZE_RE.search(cont):
+                            break
+                        if re.match(r"^[A-Z]{2}(?:,\s*[A-Z]{2,3})*,?\s*$", cont):
+                            j += 1
+                            continue
+                        # Check if it's a new name line (next line after has a size keyword)
+                        if (
+                            len(cont) <= 50
+                            and j + 1 < len(cleaned_lines)
+                            and re.match(
+                                r"^(Large|Medium|Small)\b",
+                                cleaned_lines[j + 1].strip() if j + 1 < len(cleaned_lines) else "",
+                            )
+                        ):
+                            break
+                        notes_part += " " + cont
+                        j += 1
+
+                    if name_part and len(name_part) > 2:
+                        entries.append((name_part, size, notes_part.strip()))
+                    i = j
+                    continue
+
+            i += 1
+
+        # Save one file per unique gang name
+        seen: set[str] = set()
+        for gang_name, size, notes in entries:
+            # Clean up state abbreviations from notes start
+            # e.g. "TX NM, OK, BOP Started in 1984..." → "Started in 1984..."
+            notes_clean = re.sub(r"^[A-Z]{2,3}(?:,\s*[A-Z]{2,3})*\s*", "", notes).strip()
+            notes_clean = re.sub(r"^(BOP\s*,?\s*)*", "", notes_clean).strip()
+
+            # Validate gang name — reject obvious garbage
+            # Real gang names: title-case words, no verbs, no sentences
+            name_lower = gang_name.lower()
+            is_garbage = (
+                len(gang_name) > 60  # too long
+                or gang_name.endswith(".")  # sentence fragment
+                or gang_name.endswith(",")  # list fragment
+                or any(
+                    w in name_lower
+                    for w in [
+                        "has broken",
+                        "have killed",
+                        "today ",
+                        "white supremacist gangs are",
+                        "prison systems",
+                        "in the federal",
+                        "as well as",
+                    ]
+                )
+            )
+            if is_garbage:
+                continue
+                # Skip entries with no meaningful notes (just size/state data)
+                continue
+
+            slug = "adl-ws-gang-" + re.sub(r"[^a-z0-9]+", "-", gang_name.lower()).strip("-")
+
+            content = (
+                f"{title} — {gang_name}\n\n"
+                f"Gang: {gang_name}\n"
+                f"Size: {size}\n"
+                f"Primary State: {state_name}\n\n"
+                f"{notes_clean}\n\n"
+                f"--- Source context ---\n"
+                f"{intro_text[:800]}"
+            )
+
+            if slug in seen:
+                # Same gang appears multiple times in this state (e.g. BOP section)
+                slug = slug + "-" + state_name.lower().replace(" ", "-")
+            elif slug in chunks:
+                # Same gang in multiple states — append
+                chunks[slug] += f"\n\n--- Also active in {state_name} ---\n{notes_clean}"
+                seen.add(slug)
+                continue
+
+            chunks[slug] = content
+            seen.add(slug)
 
     return chunks
 
@@ -360,7 +511,7 @@ def scrape_pdfs(force: bool = False) -> None:
             continue
 
         if doc.get("split_by_state"):
-            chunks = split_by_state(pages, doc["title"])
+            chunks = split_into_gang_files(pages, doc["title"])
             saved = 0
             for slug, content in chunks.items():
                 if not force and page_exists(SOURCE, slug):
