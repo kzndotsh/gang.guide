@@ -9,9 +9,15 @@ Sources:
   2. "Bigotry Behind Bars" (ADL, 1998) — archived overview of racist prison gangs
      covering Aryan Brotherhood, Nazi Low Riders. Single file.
 
-  3. Individual ADL profile pages at adl.org/resources/profiles/{slug} — deep
+  3. Hate symbol pages at adl.org/resources/hate-symbol/{slug} — 44 gang/prison gang
+     entries (state AB chapters, Aryan Circle, Nazi Low Riders, peckerwoods, skinhead
+     gangs, etc.) with symbols, tattoo descriptions, and founding context. Fetched via
+     Wayback Machine since ADL pages are JS-rendered.
+
+  4. Individual ADL profile pages at adl.org/resources/profiles/{slug} — deep
      narrative profiles with explicit rival/ally sections. Requires FlareSolverr
-     (ADL is behind Cloudflare).
+     (ADL is behind Cloudflare). Note: these are JS-rendered and may return empty
+     shells; content quality varies.
 
 Usage:
     python -m apps.pipeline.scrape.adl
@@ -124,18 +130,24 @@ PDF_SOURCES = [
     },
 ]
 
-# Individual ADL profile pages (requires FlareSolverr)
+# Individual ADL profile pages — slugs verified via Wayback CDX API.
+# URL pattern varies: some use /profile/{slug}, others /profiles/{slug}.
+# scrape_profiles() tries both variants via Wayback Machine.
 PROFILE_SLUGS = [
-    "aryan-brotherhood",
-    "aryan-brotherhood-of-texas",
-    "aryan-circle",
-    "nazi-low-riders",
-    "public-enemy-no-1",
-    "european-kindred",
-    "dead-man-incorporated",
-    "soldiers-of-aryan-culture",
-    "universal-aryan-brotherhood",
-    "white-aryan-resistance",
+    # White supremacist prison gangs
+    "aryan-brotherhood-texas",  # CDX confirmed (not -of-texas)
+    "aryan-circle",  # CDX confirmed
+    "nazi-low-riders",  # CDX confirmed
+    "public-enemy-number-1-peni",  # CDX confirmed (not public-enemy-no-1)
+    "hammerskin-nation",  # CDX confirmed
+    "volksfront",  # CDX confirmed
+    # White supremacist orgs with street/prison presence
+    "national-alliance",  # CDX confirmed
+    "national-socialist-movement",  # CDX confirmed
+    "creativity-movement-formerly-world-church-creator",  # CDX confirmed
+    "aryan-nationschurch-jesus-christ-christian",  # CDX confirmed (Aryan Nations)
+    # Other
+    "nation-islam",  # CDX confirmed
 ]
 
 # Hate symbol pages — gang/prison gang specific entries.
@@ -310,28 +322,44 @@ def scrape_pdfs(force: bool = False) -> None:
 
 
 def scrape_profiles(force: bool = False) -> None:
+    """Scrape ADL profile pages via Wayback Machine.
+
+    ADL profile pages are JS-rendered and return empty shells via FlareSolverr.
+    Wayback Machine snapshots (2024) contain the full static HTML for most profiles.
+    Profiles that have no archived content are skipped silently.
+    """
+    client = get_client()
     scraped = 0
     skipped = 0
+    empty = 0
 
     for slug in PROFILE_SLUGS:
         if not force and page_exists(SOURCE, slug):
             skipped += 1
             continue
 
-        # Try both URL variants (ADL uses both /profiles/ and /profile/)
+        # Try both URL variants via Wayback Machine
         html = None
         url = None
         for path in [f"/resources/profiles/{slug}", f"/resources/profile/{slug}"]:
-            candidate = BASE_URL + path
-            fetched = fetch_via_flaresolverr(candidate)
-            if fetched and len(fetched) > 10000 and "adl.org" in fetched:
-                html = fetched
-                url = candidate
-                break
+            adl_url = f"{BASE_URL}{path}"
+            wayback_url = f"https://web.archive.org/web/2024/{adl_url}"
+            resp = fetch_with_retry(client, wayback_url)
+            if resp and len(resp.text) > 5000:
+                # Check for real content (not just nav/footer)
+                clean = re.sub(r"<[^>]+>", " ", resp.text)
+                clean = re.sub(r"\s+", " ", clean).strip()
+                has_content = any(
+                    clean.find(kw) > 100 for kw in ["founded", "prison", "originated", "California", "members", "gang"]
+                )
+                if has_content:
+                    html = resp.text
+                    url = adl_url
+                    break
+            jitter()
 
         if not html or not url:
-            print(f"  [fail] {slug}")
-            jitter()
+            empty += 1
             continue
 
         save_page(source=SOURCE, slug=slug, url=url, content=html)
@@ -339,10 +367,12 @@ def scrape_profiles(force: bool = False) -> None:
         print(f"  [{scraped}] {slug}")
         jitter()
 
+    msg = f"  Profiles: {scraped} scraped"
     if skipped:
-        print(f"  Profiles: {scraped} scraped, {skipped} skipped")
-    elif scraped:
-        print(f"  Profiles: {scraped} scraped")
+        msg += f", {skipped} skipped"
+    if empty:
+        msg += f", {empty} no archive"
+    print(msg)
 
 
 def scrape_hate_symbols(force: bool = False) -> None:
