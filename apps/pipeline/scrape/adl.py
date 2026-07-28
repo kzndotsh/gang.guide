@@ -231,6 +231,64 @@ def extract_pdf_text(pdf_path: str) -> list[str]:
         return []
 
 
+def clean_state_text(text: str) -> str:
+    """Clean PDF-extracted state section text for better LLM parsing.
+
+    pypdf splits gang names across lines (e.g. 'Aryan \\nBrotherhood \\nof Texas')
+    and leaves table noise. This joins name fragments and produces readable prose.
+    """
+    lines = text.split("\n")
+    out = []
+    i = 0
+    while i < len(lines):
+        line = lines[i].rstrip()
+        stripped = line.strip()
+
+        # Skip empty lines and column header noise
+        if not stripped:
+            i += 1
+            continue
+
+        # A line is a "name fragment" if it's short (<= 20 chars), title-case-ish,
+        # ends with a trailing space (from PDF), and the next line continues it
+        is_name_frag = (
+            len(stripped) <= 25
+            and not stripped[0].isdigit()
+            and stripped not in {"See Notes", "BOP"}
+            and not re.match(r"^(Large|Medium|Small|[A-Z]{2}(?:,\s*[A-Z]{2,3})*)\b", stripped)
+        )
+
+        # Peek ahead: join consecutive name fragments into one line
+        if is_name_frag and i + 1 < len(lines):
+            next_stripped = lines[i + 1].strip()
+            next_is_frag = (
+                len(next_stripped) <= 25
+                and next_stripped not in {"See Notes", "BOP", ""}
+                and not re.match(r"^(Large|Medium|Small|[A-Z]{2}(?:,\s*[A-Z]{2,3})*)\b", next_stripped)
+            )
+            if next_is_frag:
+                # Accumulate name parts
+                name_parts = [stripped]
+                j = i + 1
+                while j < len(lines):
+                    ns = lines[j].strip()
+                    if not ns or re.match(r"^(Large|Medium|Small)\b", ns):
+                        break
+                    if len(ns) <= 25:
+                        name_parts.append(ns)
+                        j += 1
+                    else:
+                        break
+                out.append(" ".join(name_parts))
+                i = j
+                continue
+
+        out.append(stripped)
+        i += 1
+
+    return "\n".join(out)
+
+
 def split_by_state(pages: list[str], title: str) -> dict[str, str]:
     """Split PDF text into per-state chunks.
 
@@ -264,7 +322,7 @@ def split_by_state(pages: list[str], title: str) -> dict[str, str]:
 
         # Strip column header noise, keep gang content
         section_lines = [ln for ln in lines[state_line + 1 : end_line] if ln.strip() and ln.strip() not in STRIP_LINES]
-        section_text = "\n".join(section_lines).strip()
+        section_text = clean_state_text("\n".join(section_lines))
 
         slug = "adl-ws-gangs-" + state_name.lower().replace(" ", "-")
         chunks[slug] = f"{title} — {state_name}\n\nState: {state_name}\n\n{section_text}"
