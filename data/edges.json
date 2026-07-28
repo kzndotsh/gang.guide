@@ -23096,14 +23096,6 @@
     "source_url": "https://www.adl.org/resources/hate-symbol/sadistic-souls"
   },
   {
-    "source": "org:nation-of-islam",
-    "target": "org:church-of-scientology",
-    "type": "alliance",
-    "evidence": "Since the mid-2000s, the Nation of Islam has forged an unlikely alliance with the Church of Scientology.",
-    "source_url": "https://www.adl.org/resources/profile/nation-islam",
-    "start_year": 2005
-  },
-  {
     "source": "org:national-socialist-movement",
     "target": "org:nationalist-socialist-freedom-movement",
     "type": "spin_off",
