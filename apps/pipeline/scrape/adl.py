@@ -138,6 +138,60 @@ PROFILE_SLUGS = [
     "white-aryan-resistance",
 ]
 
+# Hate symbol pages — gang/prison gang specific entries.
+# Fetched from Wayback Machine (2023/2024 snapshots) since ADL direct URLs are JS-rendered.
+# Wayback URL pattern: https://web.archive.org/web/2024/{adl_url}
+HATE_SYMBOL_SLUGS = [
+    # White supremacist prison gangs — state-specific chapters
+    "alabama-aryan-brotherhood",
+    "aryan-brotherhood",
+    "aryan-brotherhood-texas",
+    "aryan-circle",
+    "aryan-cowboy-brotherhood",
+    "aryan-freedom-network",
+    "aryan-knights",
+    "aryan-nations-tennessee-prison-gang",
+    "aryan-renaissance-society",
+    "aryan-terror-brigade",
+    "aryan-warriors",
+    "crew-1488",
+    "crazy-white-boy",
+    "european-kindred",
+    "featherwood",
+    "firm-22",
+    "georgia-aryan-brotherhood",
+    "indiana-aryan-brotherhood",
+    "mississippi-aryan-brotherhood",
+    "new-aryan-empire",
+    "nazi-low-riders",
+    "ohio-aryan-brotherhood",
+    "oklahoma-aryan-brotherhood",
+    "peckerwood",
+    "peckerwood-midwest",
+    "peni",
+    "sacred-separatist-group",
+    "sadistic-souls",
+    "silent-aryan-warriors",
+    "soldiers-aryan-culture",
+    "solid-wood-soldiers",
+    "southern-brotherhood",
+    "supreme-white-alliance",
+    "unforgiven",
+    "universal-aryan-brotherhood",
+    "vinlanders-social-club",
+    "volksfront",
+    "war-arkansas-prison-gang",
+    "white-aryan-resistance",
+    "white-knights",
+    "women-aryan-unity",
+    # Skinhead gangs
+    "211-crew",
+    "blood-honour",
+    "blood-tribe",
+    "hammerskins",
+    "keystone-state-skinheads",
+]
+
 
 def fetch_via_flaresolverr(url: str) -> str | None:
     """Fetch a URL through FlareSolverr. Returns HTML or None."""
@@ -291,9 +345,52 @@ def scrape_profiles(force: bool = False) -> None:
         print(f"  Profiles: {scraped} scraped")
 
 
+def scrape_hate_symbols(force: bool = False) -> None:
+    """Scrape gang/prison gang hate symbol pages via Wayback Machine.
+
+    ADL hate symbol pages are JS-rendered and not accessible via FlareSolverr.
+    Wayback Machine snapshots (2023/2024) contain the full static HTML.
+    """
+    client = get_client()
+    scraped = 0
+    skipped = 0
+    failed = 0
+
+    for slug in HATE_SYMBOL_SLUGS:
+        out_slug = f"hate-symbol-{slug}"
+        if not force and page_exists(SOURCE, out_slug):
+            skipped += 1
+            continue
+
+        adl_url = f"{BASE_URL}/resources/hate-symbol/{slug}"
+        wayback_url = f"https://web.archive.org/web/2024/{adl_url}"
+
+        resp = fetch_with_retry(client, wayback_url)
+        if not resp or len(resp.text) < 5000:
+            # Try 2023 snapshot
+            wayback_url = f"https://web.archive.org/web/2023/{adl_url}"
+            resp = fetch_with_retry(client, wayback_url)
+
+        if not resp or len(resp.text) < 5000:
+            print(f"  [fail] {slug}")
+            failed += 1
+            jitter()
+            continue
+
+        save_page(source=SOURCE, slug=out_slug, url=adl_url, content=resp.text)
+        scraped += 1
+        print(f"  [{scraped}] {slug}")
+        jitter()
+
+    print(f"  Hate symbols: {scraped} scraped, {skipped} skipped, {failed} failed")
+
+
 def scrape(force: bool = False, no_profiles: bool = False) -> None:
     print("Scraping ADL PDFs...")
     scrape_pdfs(force=force)
+
+    print("\nScraping ADL hate symbol pages (gang/prison gang) via Wayback Machine...")
+    scrape_hate_symbols(force=force)
 
     if not no_profiles:
         print("\nScraping ADL profile pages via FlareSolverr...")
