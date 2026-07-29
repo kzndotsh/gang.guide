@@ -16,23 +16,23 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/black_guerrilla_family",
-      "title": "black guerrilla family \u2014 Wikipedia"
+      "title": "black guerrilla family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
-      "title": "Aryan Brotherhood \u2014 Wikipedia"
+      "title": "Aryan Brotherhood — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Peckerwood",
-      "title": "Peckerwood \u2014 Wikipedia"
+      "title": "Peckerwood — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
-      "title": "Hermandad Aria \u2014 Wikipedia"
+      "title": "Hermandad Aria — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Bloods",
-      "title": "Bloods \u2014 Wikipedia"
+      "title": "Bloods — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Black_Guerrilla_Family",
@@ -47,5 +47,6 @@
   "colors": [
     "black"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 200
 }

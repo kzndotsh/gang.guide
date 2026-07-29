@@ -48,5 +48,6 @@
     "black",
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 700
 }
