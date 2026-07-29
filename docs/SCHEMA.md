@@ -16,8 +16,9 @@
   "disbanded_year": null,
   "colors": ["black", "blue"],
   "symbols": ["pitchfork", "six-point star"],
+  "membership_estimate": 5000,
   "nation_affiliation": "org:nation-id | null",
-  "status": "active | inactive",
+  "status": "active | inactive | unknown",
   "sources": [
     {"url": "https://...", "title": "Source Title"}
   ]
@@ -146,16 +147,16 @@ Lazy-loaded on node click (keeps initial payload small).
 
 The linter (`apps/pipeline/lint.py`) runs as a gate before build. Key checks:
 
-- **check_orgs** — required/recommended fields, valid lanes, source URLs, temporal logic
+- **check_orgs** — required/recommended fields, valid lanes, source URLs, temporal logic, type/lane mismatches, status enum, bare domain source titles
 - **check_edges** — valid org references, no self-refs, no dupes, valid types
 - **check_fuzzy_dupes** — word overlap + edit distance to detect duplicate orgs + cross-lane spelling variant detection
 - **check_cross_metro** — flags alliances between orgs in different metros
 - **check_page_title_orgs** — detects orgs that are actually page titles (not real gangs)
-- **check_stub_quality** — flags stub orgs with generic descriptions
+- **check_stub_quality** — flags stub orgs with generic placeholder descriptions (all types: street_gang, prison_gang, white_supremacist, etc.)
 - **check_nation_consistency** — ensures nation affiliation matches member_of edges
 - **check_spinoff_direction** — validates spin_off edges point in the right direction
 - **check_isolated** — warns about orgs with no edges
 - **check_descriptions** — flags short/junk descriptions, HTML entities, slurs
-- **check_sources** — validates source URLs and titles
+- **check_sources** — validates source URLs and titles; warns on bare domain titles
 - **check_id_consistency** — ensures file slug matches org ID
 - **check_temporal_logic** — validates edge year ranges are sane

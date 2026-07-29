@@ -20,8 +20,17 @@ Run the full pipeline: `just pipeline chicago_history`
 | `nyc_historical` | `nyc.py` | New York City Gangs |
 | `stonegreasers` | `stonegreasers.py` | StoneGreasers |
 | `unitedgangs` | `unitedgangs.py` | UnitedGangs.com |
+| `stophoustongangs` | `stophoustongangs.py` | StopHoustonGangs.org (via FlareSolverr) |
+| `adl` | `adl.py` | ADL — WS prison gang PDFs + hate-symbol pages (via Wayback Machine) |
+| `fbi_ngta` | `fbi_ngta.py` | FBI NGTA PDFs 2009/2011/2015 (via pypdf) |
+| `insightcrime` | `insightcrime.py` | InSight Crime — Latin American cartel profiles |
+| `splc` | `splc.py` | SPLC Extremist Files (via FlareSolverr) |
 
 Additional scraper: `wikipedia.py` (general-purpose Wikipedia scraping).
+
+**Scraper dependencies:**
+- Sites behind Cloudflare require FlareSolverr running locally (`docker run -p 8191:8191 ghcr.io/flaresolverr/flaresolverr`)
+- PDF scraping requires `pypdf` (included in flake.nix dev shell)
 
 ## Stages
 
@@ -39,6 +48,8 @@ Each run produces:
 ```json
 {
   "subject_org": "Ambrose",
+  "org_type": "street_gang",
+  "org_lane": "chicago-folk",
   "founded_year": 1958,
   "colors": ["black", "light blue"],
   "symbols": ["spear", "knight's helmet"],
@@ -83,6 +94,8 @@ Conservative upgrade of the actual data files.
 - Only upgrades weaker fields (empty colors, thin descriptions, imprecise years)
 - Adds new edges that don't already exist
 - `--create-orgs` flag creates stub org files for newly-mentioned orgs
+  - Stub type/lane inferred by LLM from source text (`org_type` + `org_lane` extraction fields)
+  - Falls back to `street_gang` / `null` if LLM doesn't classify
 - Guards against page titles (rejects names like "History of..." or "Groups in...")
 - LA org metro inheritance (Piru, Compton, etc. → "Los Angeles")
 - Slug collision check prevents overwriting existing files

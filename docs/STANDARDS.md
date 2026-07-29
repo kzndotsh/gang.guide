@@ -18,13 +18,16 @@ This document describes how gang.guide maintains data quality. All checks are en
 | Invalid lane | Error | Must match an ID in `lanes.json` |
 | Source missing url/title | Error | Every source needs both fields |
 | `disbanded_year` < `founded_year` | Error | Temporal impossibility |
+| Invalid `status` value | Error | Must be `active`, `inactive`, or `unknown` |
 | Missing `lane` or `founded_year` | Warning | Expected but not blocking for stubs |
 | Description < 50 chars | Warning | Too thin to be useful |
 | HTML entities in description | Warning | Scrape junk (`&amp;`, `&#39;`) |
 | Alias > 50 chars | Warning | Likely scrape junk |
 | Invalid color value | Warning | Must be recognizable color names |
 | Crip/Blood before 1969, Piru before 1969 | Error | Impossible founding date |
-| Type/lane mismatch | Warning | e.g. `street_gang` in `prison` lane |
+| Type/lane mismatch | Warning | e.g. `street_gang` in `prison` lane, `white_supremacist` in wrong lane |
+| `white_supremacist` org in non-WS lane | Warning | Check lane assignment |
+| Bare domain as source title | Warning | Use proper name (e.g. "ADL" not "adl.org") |
 | Name has whitespace/punctuation issues | Warning | Double spaces, colon, trailing space |
 | Description starts with non-alpha | Warning | Likely scrape junk |
 | Duplicate org name | Warning | Merge candidate |
@@ -48,7 +51,7 @@ This document describes how gang.guide maintains data quality. All checks are en
 | `check_id_consistency` | Error | `id` field doesn't match filename |
 | `check_spinoff_direction` | Warning | Target org is older than source (likely reversed) |
 | `check_cross_metro` | Info | Rivalry between orgs in different cities |
-| `check_stub_quality` | Info | Generic placeholder description, needs enrichment |
+| `check_stub_quality` | Info | Generic placeholder description for any org type, needs enrichment |
 | `check_isolated` | Info | Org has zero edges and no nation affiliation |
 | `check_fuzzy_dupes` | Warning | Two orgs with >90% name similarity |
 | `check_fuzzy_dupes` | Error | Cross-lane spelling variant duplicates (e.g. Gangster/Gangsta) |

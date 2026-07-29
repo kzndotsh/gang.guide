@@ -28,8 +28,8 @@ Run `just build-data` to see current org/edge counts.
 
 Python scripts that enrich the data using LLMs. Not part of the runtime — runs manually or via `just pipeline`.
 
-- **Scrapers** (`scrape/`) — `cgh.py`, `dsg.py`, `ngcrc.py`, `nyc.py`, `stonegreasers.py`, `wikipedia.py`
-- **Extract** — sends source pages to sonnet 4.6 at 3 temperatures (v2 prompt)
+- **Scrapers** (`scrape/`) — `cgh.py`, `dsg.py`, `ngcrc.py`, `nyc.py`, `stonegreasers.py`, `unitedgangs.py`, `wikipedia.py`, `stophoustongangs.py`, `adl.py`, `fbi_ngta.py`, `insightcrime.py`, `splc.py`
+- **Extract** — sends source pages to sonnet 4.6 at 3 temperatures (v2 prompt); infers `org_type` and `org_lane` per org
 - **Adjudicate** — sonnet 4.6 validates evidence quotes (v2 prompt)
 - **Merge** — produces consensus from multiple runs
 - **Apply** — conservative upgrade of org files + edges; `--create-orgs` creates stub files for new orgs
