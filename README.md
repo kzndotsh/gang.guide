@@ -75,7 +75,7 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 |---|---|---|
 | [Wikipedia](https://en.wikipedia.org) | [StreetGangs.com](https://www.streetgangs.com) | [UnitedGangs.com](https://unitedgangs.com) |
 | [Chicago Gang History](https://chicagoganghistory.com) | [DetroitStreetGangs](https://detroitstreetgangs.com) | [NGCRC](https://www.ngcrc.com) |
-| [NewYorkCityGangs](https://newyorkcitygangs.com) | [StoneGreasers](https://www.stonegreasers.com) | [DOJ / FBI](https://www.justice.gov) |
+| [NewYorkCityGangs](https://newyorkcitygangs.com) | [StoneGreasers](https://www.stonegreasers.com) | [DOJ](https://www.justice.gov) |
 | [BlackPast.org](https://www.blackpast.org) | [CourtListener](https://www.courtlistener.com) | [StopHoustonGangs](https://stophoustongangs.org) |
 | [ADL](https://www.adl.org) | [FBI NGTA](https://www.fbi.gov/how-we-can-help-you/need-an-fbi-service-or-more-information/library/gang-reports) | |
 
