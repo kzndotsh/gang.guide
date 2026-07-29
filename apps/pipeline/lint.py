@@ -74,13 +74,23 @@ def check_fuzzy_dupes(orgs: dict[str, dict]):
 
     # Common spelling variants that should be treated as identical
     SPELLING_VARIANTS = [
-        ('tray', 'trey'), ('grey', 'gray'), ('honour', 'honor'),
-        ('neighbourhood', 'neighborhood'), ('centre', 'center'),
-        ('organisation', 'organization'), ('defence', 'defense'),
-        ('colour', 'color'), ('favour', 'favor'), ('harbour', 'harbor'),
-        ('gangsta', 'gangster'), ('blocc', 'block'), ('boyz', 'boys'),
-        ('niggaz', 'niggas'), ('loc', 'loco'), ('clicc', 'click'),
-        ('macc', 'mac'),
+        ("tray", "trey"),
+        ("grey", "gray"),
+        ("honour", "honor"),
+        ("neighbourhood", "neighborhood"),
+        ("centre", "center"),
+        ("organisation", "organization"),
+        ("defence", "defense"),
+        ("colour", "color"),
+        ("favour", "favor"),
+        ("harbour", "harbor"),
+        ("gangsta", "gangster"),
+        ("blocc", "block"),
+        ("boyz", "boys"),
+        ("niggaz", "niggas"),
+        ("loc", "loco"),
+        ("clicc", "click"),
+        ("macc", "mac"),
     ]
 
     def normalize_spelling(name: str) -> str:
@@ -93,7 +103,7 @@ def check_fuzzy_dupes(orgs: dict[str, dict]):
     # Cross-lane spelling variant check
     norm_map: dict[str, list[tuple[str, str]]] = defaultdict(list)
     for org_id, org in orgs.items():
-        canon = normalize_spelling(re.sub(r'[^a-z0-9 ]', '', org.get("name", "").lower()).strip())
+        canon = normalize_spelling(re.sub(r"[^a-z0-9 ]", "", org.get("name", "").lower()).strip())
         norm_map[canon].append((org["_file"], org.get("name", "")))
     for canon, entries in norm_map.items():
         if len(entries) > 1:
@@ -101,7 +111,7 @@ def check_fuzzy_dupes(orgs: dict[str, dict]):
             errors.append(f"spelling variant dupe: {' ↔ '.join(names)}")
 
     def norm(name: str) -> str:
-        return re.sub(r'[^a-z0-9 ]', '', name.lower()).strip()
+        return re.sub(r"[^a-z0-9 ]", "", name.lower()).strip()
 
     def word_similarity(a: str, b: str) -> float:
         """Dice coefficient on word sets."""
@@ -154,10 +164,10 @@ def check_fuzzy_dupes(orgs: dict[str, dict]):
                 # Flag if either metric is high
                 if wsim >= 0.90 or esim >= 0.90:
                     # Skip numbered sets that only differ by street number
-                    nums1 = set(re.findall(r'\d+', norm1))
-                    nums2 = set(re.findall(r'\d+', norm2))
-                    words1 = set(re.sub(r'\d+', '', norm1).split())
-                    words2 = set(re.sub(r'\d+', '', norm2).split())
+                    nums1 = set(re.findall(r"\d+", norm1))
+                    nums2 = set(re.findall(r"\d+", norm2))
+                    words1 = set(re.sub(r"\d+", "", norm1).split())
+                    words2 = set(re.sub(r"\d+", "", norm2).split())
                     if nums1 != nums2 and words1 == words2:
                         continue  # Same name pattern, different numbers = distinct sets
                     best = max(wsim, esim)
@@ -195,7 +205,14 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         # Disbanded before founded
         if org.get("disbanded_year") and org.get("founded_year"):
             if org["disbanded_year"] < org["founded_year"]:
-                errors.append(f"{f}: disbanded_year ({org['disbanded_year']}) before founded_year ({org['founded_year']})")
+                errors.append(
+                    f"{f}: disbanded_year ({org['disbanded_year']}) before founded_year ({org['founded_year']})"
+                )
+
+        # Status must be a known value
+        status = org.get("status", "")
+        if status and status not in ("active", "inactive", "unknown"):
+            errors.append(f"{f}: invalid status '{status}' (must be active/inactive/unknown)")
 
         # --- Warnings ---
         desc = org.get("description", "")
@@ -204,12 +221,12 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         if "&amp;" in desc or "&#" in desc or "&nbsp;" in desc:
             warnings.append(f"{f}: description contains HTML entities")
 
-        for alias in (org.get("aliases") or []):
+        for alias in org.get("aliases") or []:
             if len(alias) > 60:
                 warnings.append(f"{f}: alias too long ({len(alias)} chars): '{alias[:50]}...'")
 
         # Symbols must be title case (allow ALL CAPS abbreviations ≤6 chars)
-        for sym in (org.get("symbols") or []):
+        for sym in org.get("symbols") or []:
             if sym.isupper() and len(sym) <= 6:
                 continue  # abbreviations like PIRU, DAMU, IV
             if sym != sym.title():
@@ -238,23 +255,23 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         names_seen[name] = f
 
         # Name quality checks
-        if re.search(r',\s*\d+\s*$', name):
+        if re.search(r",\s*\d+\s*$", name):
             warnings.append(f"{f}: name ends with ', NUMBER' — move number to front: '{name}'")
         if name != name.strip():
             warnings.append(f"{f}: name has leading/trailing whitespace")
-        if '  ' in name:
+        if "  " in name:
             warnings.append(f"{f}: name has double spaces: '{name}'")
-        if name.startswith('Westside ') or name.startswith('Eastside '):
-            if name.replace('Westside ', '').replace('Eastside ', '') in names_seen:
+        if name.startswith("Westside ") or name.startswith("Eastside "):
+            if name.replace("Westside ", "").replace("Eastside ", "") in names_seen:
                 warnings.append(f"{f}: name has redundant Westside/Eastside prefix (may duplicate)")
-        if re.search(r'\(w/s\)|\(e/s\)|\(n/s\)', name, re.IGNORECASE):
+        if re.search(r"\(w/s\)|\(e/s\)|\(n/s\)", name, re.IGNORECASE):
             warnings.append(f"{f}: name has junk side abbreviation in parens: '{name}'")
-        if re.search(r'\(v\.\s', name):
+        if re.search(r"\(v\.\s", name):
             warnings.append(f"{f}: name has 'v.' prefix in parens: '{name}'")
-        if name.endswith(' gang') or name.endswith(' Gang'):
+        if name.endswith(" gang") or name.endswith(" Gang"):
             if org.get("type") == "street_gang":
                 pass  # some legit names end in Gang
-        if re.search(r'[:\|]', name):
+        if re.search(r"[:\|]", name):
             warnings.append(f"{f}: name contains colon or pipe: '{name}'")
 
         # Description quality
@@ -263,18 +280,49 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             warnings.append(f"{f}: description starts with lowercase")
         if desc and not desc[0].isalnum():
             warnings.append(f"{f}: description starts with non-alphanumeric '{desc[0]}' (likely scrape junk)")
-        if re.search(r'^(Full Name|Also Known As|Name|Acronym|Founded|Origin|Founder|Videos|Territory|Ethnicity|Membership):', desc) or re.search(r'^[A-Z][^.]{0,30}(Also Known As|Founded|Acronym):', desc):
+        if re.search(
+            r"^(Full Name|Also Known As|Name|Acronym|Founded|Origin|Founder|Videos|Territory|Ethnicity|Membership):",
+            desc,
+        ) or re.search(r"^[A-Z][^.]{0,30}(Also Known As|Founded|Acronym):", desc):
             warnings.append(f"{f}: description starts with infobox pattern (scrape junk)")
         if "Search for:" in desc or "Recent Posts" in desc or "Other gangs nearby" in desc:
             errors.append(f"{f}: description contains navigation/sidebar junk")
 
         # Type/lane mismatch
         lane = org.get("lane") or ""
-        if "prison" in lane and org.get("type", "") == "street_gang":
+        org_type = org.get("type", "")
+        if "prison" in lane and org_type == "street_gang":
             warnings.append(f"{f}: street_gang in prison lane (should be prison_gang?)")
-        if "motorcycle" in lane and org.get("type", "") != "motorcycle_club":
-            org_type = org.get('type', '')
+        if "motorcycle" in lane and org_type != "motorcycle_club":
             warnings.append(f"{f}: {org_type} in motorcycle lane (should be motorcycle_club?)")
+        if "white-supremacist" in lane and org_type not in ("white_supremacist", "prison_gang"):
+            warnings.append(f"{f}: {org_type} in white-supremacist lane (should be white_supremacist?)")
+        if (
+            org_type == "white_supremacist"
+            and lane
+            and "white-supremacist" not in lane
+            and "prison" not in lane
+            and "motorcycle" not in lane
+        ):
+            warnings.append(f"{f}: white_supremacist org in non-WS lane '{lane}' — check lane assignment")
+
+        # Source title quality — bare domains are not informative
+        BARE_DOMAINS = {
+            "adl.org",
+            "www.adl.org",
+            "splcenter.org",
+            "fbi.gov",
+            "www.fbi.gov",
+            "justice.gov",
+            "www.justice.gov",
+            "detroitstreetgangs.com",
+            "stophoustongangs.org",
+            "chicagoganghistory.com",
+        }
+        for s in org.get("sources") or []:
+            title = s.get("title", "")
+            if title in BARE_DOMAINS or "web.archive.org" in title:
+                warnings.append(f"{f}: source has bare domain as title (use proper name): '{title}'")
 
         # --- Info ---
         sources = org.get("sources") or []
@@ -346,13 +394,22 @@ def check_cross_metro(orgs: dict[str, dict], edges: list[dict]):
             # Allow national orgs (Bloods/Crips/Folk/People) to have cross-metro rivalries
             national = {"United States", "National", ""}
             if src_metro not in national and tgt_metro not in national:
-                info.append(f"edge[{i}]: cross-metro rivalry {src_org.get('name','')} ({src_metro}) → {tgt_org.get('name','')} ({tgt_metro})")
+                info.append(
+                    f"edge[{i}]: cross-metro rivalry {src_org.get('name', '')} ({src_metro}) → {tgt_org.get('name', '')} ({tgt_metro})"
+                )
 
 
 def check_page_title_orgs(orgs: dict[str, dict]):
     """Flag orgs that look like page titles rather than real organizations."""
-    page_patterns = ["history of", "groups in", "street groups", "defunct",
-                     "affiliated groups", "overview", "map review"]
+    page_patterns = [
+        "history of",
+        "groups in",
+        "street groups",
+        "defunct",
+        "affiliated groups",
+        "overview",
+        "map review",
+    ]
     for org_id, org in orgs.items():
         name = org.get("name", "").lower()
         if any(p in name for p in page_patterns):
@@ -361,12 +418,22 @@ def check_page_title_orgs(orgs: dict[str, dict]):
 
 def check_stub_quality(orgs: dict[str, dict]):
     """Flag stub orgs that need enrichment."""
+    # Placeholder descriptions for any type (not just street gangs)
+    PLACEHOLDER_PATTERNS = [
+        r"^.+ is a street gang based in .+\.$",
+        r"^.+ is a white supremacist organization\.$",
+        r"^.+ is a prison gang\.$",
+        r"^.+ is an outlaw motorcycle club\.$",
+        r"^.+ is an organized crime group\.$",
+        r"^.+ is a street gang based in Unknown\.$",
+    ]
     for org_id, org in orgs.items():
         f = org["_file"]
         desc = org.get("description", "")
-        # Generic placeholder descriptions
-        if re.match(r"^.+ is a street gang based in .+\.$", desc) and len(desc) < 60:
-            info.append(f"{f}: stub org needs enrichment")
+        for pattern in PLACEHOLDER_PATTERNS:
+            if re.match(pattern, desc) and len(desc) < 80:
+                info.append(f"{f}: stub org needs enrichment")
+                break
 
 
 def check_nation_consistency(orgs: dict[str, dict], edges: list[dict]):
@@ -393,7 +460,9 @@ def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
         src_year = src_org.get("founded_year")
         tgt_year = tgt_org.get("founded_year")
         if src_year and tgt_year and tgt_year < src_year - 5:
-            warnings.append(f"edge[{i}]: spin_off direction suspect — {tgt_org.get('name','')} (founded {tgt_year}) is older than {src_org.get('name','')} (founded {src_year})")
+            warnings.append(
+                f"edge[{i}]: spin_off direction suspect — {tgt_org.get('name', '')} (founded {tgt_year}) is older than {src_org.get('name', '')} (founded {src_year})"
+            )
 
 
 def check_isolated(orgs: dict[str, dict], edges: list[dict]):
@@ -431,31 +500,32 @@ def check_descriptions(orgs: dict[str, dict]):
             info.append(f"{f}: description has unbalanced quotes")
 
         # Descriptions that end abruptly (likely truncated)
-        if len(desc) > 100 and desc[-1] not in '.!?")\' ':
+        if len(desc) > 100 and desc[-1] not in ".!?\")' ":
             info.append(f"{f}: description may be truncated (ends with '{desc[-1]}')")
 
 
 def check_sources(orgs: dict[str, dict]):
     """Check source URL quality."""
     from collections import Counter
+
     url_counts: Counter = Counter()
-    
+
     for org_id, org in orgs.items():
         f = org["_file"]
         seen_urls = set()
-        for s in (org.get("sources") or []):
+        for s in org.get("sources") or []:
             url = s.get("url", "")
             url_counts[url] += 1
-            
+
             # Duplicate URL within same org
             if url in seen_urls:
                 warnings.append(f"{f}: duplicate source URL: {url[:60]}")
             seen_urls.add(url)
-            
+
             # Non-https
             if url.startswith("http://"):
                 info.append(f"{f}: source uses http (should be https): {url[:60]}")
-            
+
             # Suspicious domains
             if any(d in url for d in ("fandom.com/wiki", "answers.yahoo", "quora.com")):
                 info.append(f"{f}: low-quality source domain: {url[:60]}")
@@ -479,28 +549,36 @@ def check_id_consistency(orgs: dict[str, dict]):
 def check_temporal_logic(orgs: dict[str, dict], edges: list[dict]):
     """Check for impossible temporal relationships."""
     org_years = {oid: org.get("founded_year") for oid, org in orgs.items() if org.get("founded_year")}
-    
+
     for e in edges:
         src = e.get("source", "")
         tgt = e.get("target", "")
         etype = e.get("type", "")
-        
+
         # Spin-off can't be older than parent
         if etype == "spin_off" and src in org_years and tgt in org_years:
             if org_years[src] < org_years[tgt]:
-                warnings.append(f"temporal: spin_off {src} ({org_years[src]}) older than parent {tgt} ({org_years[tgt]})")
+                warnings.append(
+                    f"temporal: spin_off {src} ({org_years[src]}) older than parent {tgt} ({org_years[tgt]})"
+                )
 
     # Nation affiliation: org can't be older than its nation
     nation_years = {
-        "org:crips": 1969, "org:bloods": 1972, "org:folk-nation": 1978,
-        "org:people-nation": 1978, "org:surenos": 1968, "org:nortenos": 1968,
+        "org:crips": 1969,
+        "org:bloods": 1972,
+        "org:folk-nation": 1978,
+        "org:people-nation": 1978,
+        "org:surenos": 1968,
+        "org:nortenos": 1968,
     }
     for org_id, org in orgs.items():
         aff = org.get("nation_affiliation")
         if aff and aff in nation_years and org.get("founded_year"):
             # Org founded before nation existed AND precision is exact/circa = suspicious
             if org["founded_year"] < nation_years[aff] and org.get("founded_year_precision") in ("exact", "circa"):
-                info.append(f"{org['_file']}: founded {org['founded_year']} but affiliated with {aff} (est. {nation_years[aff]})")
+                info.append(
+                    f"{org['_file']}: founded {org['founded_year']} but affiliated with {aff} (est. {nation_years[aff]})"
+                )
 
 
 def main():
@@ -525,27 +603,27 @@ def main():
 
     # Print results
     if info:
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"INFO ({len(info)})")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
         for msg in info[:20]:
             print(f"  ℹ {msg}")
         if len(info) > 20:
             print(f"  ... and {len(info) - 20} more")
 
     if warnings:
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"WARNINGS ({len(warnings)})")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
         for msg in warnings[:30]:
             print(f"  ⚠ {msg}")
         if len(warnings) > 30:
             print(f"  ... and {len(warnings) - 30} more")
 
     if errors:
-        print(f"\n{'='*60}")
+        print(f"\n{'=' * 60}")
         print(f"ERRORS ({len(errors)})")
-        print(f"{'='*60}")
+        print(f"{'=' * 60}")
         for msg in errors:
             print(f"  ✗ {msg}")
         print(f"\n❌ Lint FAILED with {len(errors)} error(s)")

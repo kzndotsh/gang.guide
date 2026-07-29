@@ -24,9 +24,14 @@
 - [ ] Backfill founded_year on remaining 29 historical-east stubs
 
 ### Pipeline
-- [ ] Run extraction on remaining sources (streetgangs, prisongang, SPLC/ADL)
+- [ ] Run extraction on remaining sources (streetgangs, prisongang, SPLC)
 - [ ] Wire up Wikipedia scraper (MediaWiki API, category traversal)
 - [ ] Wire up CourtListener scraper (gang-enhancement cases)
+- [ ] Wire up TxDPS Gang Threat Assessment PDFs (5 annual reports, Texas orgs)
+- [ ] Wire up NDIC archive additional publications (AG Suburban Gangs 2008, etc.)
+- [x] Run extraction on ADL (WS prison gangs, hate-symbol pages)
+- [x] Run extraction on FBI NGTA (2009/2011/2015 PDFs, appendix profiles split)
+- [x] Run extraction on StopHoustonGangs
 - [ ] Add `--dry-run` cost estimate to extract CLI
 - [ ] Curated overrides file (blocklist/forcelist for known bad/good edges)
 - [ ] Aggregate `unresolved_names` from adjudication into review queue
@@ -44,7 +49,23 @@
 ---
 
 ## Done
+- [x] Run full pipeline on FBI NGTA (2009/2011/2015 PDFs, +13 membership estimates, +8 edges)
+- [x] Run full pipeline on ADL (2016 PDF + 44 hate-symbol pages + 11 profiles, +56 orgs, +22 edges)
 - [x] Run full pipeline on StopHoustonGangs (30 profiles, +7 org symbol enrichments, Houston/Texas gangs)
+- [x] LLM now infers org_type and org_lane during extraction (no more street_gang defaults)
+- [x] Fix null-lane nodes appearing at top of canvas (indexOf(null) = -1 bug)
+- [x] Clamp node row spread within lane height for dense lanes
+- [x] Scrapers: fbi_ngta.py, adl.py (PDF+hate-symbols+profiles), splc.py, insightcrime.py, stophoustongangs.py
+- [x] ADL 2016 PDF split into per-gang files (state-by-state WS prison gang inventory)
+- [x] FBI NGTA 2009 appendices split into per-gang profile files
+- [x] pypdf added to flake.nix + pyproject.toml for PDF text extraction
+- [x] Normalize 125 source titles (bare domains → proper names)
+- [x] Rename org:florencia → org:florencia-13 (31 edge references updated)
+- [x] Audit + fix new WS org stubs: remove Church of Scientology, fix 11 founding years, flag 10 unverifiable orgs
+- [x] Fix type/lane mismatches on 6 orgs (Public Enemy No 1, Spook Hunters, OVS, Logan Heights, etc.)
+- [x] All pipeline models upgraded to claude-sonnet-4.6
+- [x] FlareSolverr integration for Cloudflare-protected sites (stophoustongangs, SPLC profiles)
+- [x] Wayback Machine fallback for ADL PDFs and hate-symbol pages
 - [x] Run full pipeline on UnitedGangs (1400+ edges, largest single-source extraction)
 - [x] Run full pipeline on Detroit (25 pages, +78 orgs, +127 edges)
 - [x] Run full pipeline on NGCRC (6 academic profiles, +9 edges)
