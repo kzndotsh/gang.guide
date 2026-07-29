@@ -32,6 +32,10 @@
     {
       "url": "https://www.justice.gov/opa/pr/barrio-azteca-gang-leader-pleads-guilty-racketeering-conspiracy-and-murder-charges-related",
       "title": "DOJ - Barrio Azteca Leader Pleads Guilty"
+    },
+    {
+      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+      "title": "FBI/NDIC National Gang Threat Assessment 2009"
     }
   ],
   "metro": "El Paso",
@@ -46,5 +50,6 @@
     "Fletchas Indios",
     "EPT",
     "Chuco Town"
-  ]
+  ],
+  "membership_estimate": 2000
 }

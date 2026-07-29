@@ -26,6 +26,10 @@
     {
       "url": "https://en.wikipedia.org/wiki/Sindicato_de_Texas",
       "title": "Sindicato de Texas — Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+      "title": "FBI/NDIC National Gang Threat Assessment 2009"
     }
   ],
   "metro": "Houston",
@@ -39,5 +43,6 @@
     "16",
     "20",
     "2"
-  ]
+  ],
+  "membership_estimate": 14000
 }

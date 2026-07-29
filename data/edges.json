@@ -23191,5 +23191,77 @@
     "type": "rivalry",
     "evidence": "The rivalry between Volksfront/Hammerskin Nation and the Vinlanders remains high. An Internet exchange at the racist online forum Stormfront indicated that a prominent Vinlander even cut off the ear of a Volksfront member in St. Louis.",
     "source_url": "https://www.adl.org/resources/profile/volksfront"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:bandidos-motorcycle-club",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+        "title": "FBI/NDIC National Gang Threat Assessment 2009"
+      }
+    ],
+    "evidence": "today Mongols club is allied with Bandidos, Outlaws, Sons of Silence, and Pagan's OMGs against HAMC"
+  },
+  {
+    "source": "org:mongols-mc",
+    "target": "org:sons-of-silence",
+    "type": "rivalry",
+    "sources": [
+      {
+        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+        "title": "FBI/NDIC National Gang Threat Assessment 2009"
+      }
+    ],
+    "evidence": "today Mongols club is allied with Bandidos, Outlaws, Sons of Silence, and Pagan's OMGs against HAMC"
+  },
+  {
+    "source": "org:outlaws-motorcycle-club",
+    "target": "org:hells-angels-motorcycle-club",
+    "type": "rivalry",
+    "sources": [
+      {
+        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+        "title": "FBI/NDIC National Gang Threat Assessment 2009"
+      }
+    ],
+    "evidence": "It competes with HAMC for membership and territory."
+  },
+  {
+    "source": "org:florencia-13",
+    "target": "org:mexican-mafia",
+    "type": "member_of",
+    "sources": [
+      {
+        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+        "title": "FBI/NDIC National Gang Threat Assessment 2009"
+      }
+    ],
+    "evidence": "Florencia 13 is subordinate to the Mexican Mafia (La Eme) prison gang and claims Sureños (Sur 13) affiliation."
+  },
+  {
+    "source": "org:puro-tango-blast",
+    "target": "org:aryan-brotherhood-of-texas",
+    "type": "rivalry",
+    "sources": [
+      {
+        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+        "title": "FBI/NDIC National Gang Threat Assessment 2009"
+      }
+    ],
+    "evidence": "Hispanic men incarcerated in federal, state, and local prisons founded Tango Blast for personal protection against violence from traditional prison gangs such as the Aryan Brotherhood, Texas Syndicate, and Texas Mexican Mafia."
+  },
+  {
+    "source": "org:puro-tango-blast",
+    "target": "org:mexikanemi",
+    "type": "rivalry",
+    "sources": [
+      {
+        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+        "title": "FBI/NDIC National Gang Threat Assessment 2009"
+      }
+    ],
+    "evidence": "Hispanic men incarcerated in federal, state, and local prisons founded Tango Blast for personal protection against violence from traditional prison gangs such as the Aryan Brotherhood, Texas Syndicate, and Texas Mexican Mafia."
   }
 ]

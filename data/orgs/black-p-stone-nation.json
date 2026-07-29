@@ -50,6 +50,10 @@
     {
       "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
       "title": "Almighty Black P. Stone Nation - Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+      "title": "FBI/NDIC National Gang Threat Assessment 2009"
     }
   ],
   "symbols": [
@@ -57,5 +61,6 @@
     "Five-Pointed Star",
     "Crescent Moon"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 7000
 }

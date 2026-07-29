@@ -75,6 +75,10 @@
     {
       "url": "https://www.streetgangs.com/news/102897-supply-a-job",
       "title": "102897 Supply A Job — StreetGangs"
+    },
+    {
+      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+      "title": "FBI/NDIC National Gang Threat Assessment 2009"
     }
   ],
   "colors": [
@@ -85,5 +89,6 @@
     "Five-Pointed Crown",
     "Dog Paw"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 18500
 }

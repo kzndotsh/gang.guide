@@ -32,6 +32,10 @@
     {
       "url": "https://en.wikipedia.org/wiki/Crips",
       "title": "Crips — Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+      "title": "FBI/NDIC National Gang Threat Assessment 2009"
     }
   ],
   "colors": [
@@ -43,5 +47,5 @@
     "Five-Pointed Star"
   ],
   "status": "active",
-  "membership_estimate": 30
+  "membership_estimate": 11000
 }

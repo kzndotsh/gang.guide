@@ -36,6 +36,10 @@
     {
       "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents_in_Denmark",
       "title": "Bandidos MC criminal allegations and incidents in Denmark — Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+      "title": "FBI/NDIC National Gang Threat Assessment 2009"
     }
   ],
   "metro": "United States",
@@ -47,5 +51,6 @@
     "black",
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 900
 }

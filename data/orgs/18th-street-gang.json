@@ -72,6 +72,10 @@
     {
       "url": "https://www.courtlistener.com/docket/8345774/1/1/united-states-v-in-the-matter-of-the-search-of-1915-18th-street-nw-2nd",
       "title": "Courtlistener"
+    },
+    {
+      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
+      "title": "FBI/NDIC National Gang Threat Assessment 2009"
     }
   ],
   "founded_year": 1965,
@@ -85,5 +89,6 @@
     "black"
   ],
   "founded_year_precision": "circa",
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 40000
 }
