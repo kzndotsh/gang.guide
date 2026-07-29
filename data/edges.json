@@ -23263,5 +23263,31 @@
       }
     ],
     "evidence": "Hispanic men incarcerated in federal, state, and local prisons founded Tango Blast for personal protection against violence from traditional prison gangs such as the Aryan Brotherhood, Texas Syndicate, and Texas Mexican Mafia."
+  },
+  {
+    "source": "org:aryan-brotherhood",
+    "target": "org:nazi-low-riders",
+    "type": "alliance",
+    "start_year": 1980,
+    "sources": [
+      {
+        "url": "https://www.adl.org/sites/default/files/Bigotry-Behind-Bars-Racist-Groups-in-US-Prisons.pdf",
+        "title": "ADL: Bigotry Behind Bars - Racist Groups in US Prisons (1998)"
+      }
+    ],
+    "evidence": "There is reason to believe that Aryan Brotherhood aligned itself with NLR in the late 1970s or early 1980s, when the California Department of Corrections began cracking down on Aryan Brotherhood members. NLR remained a separate gang, but helped promote Aryan Brotherhood's interests within the prison system."
+  },
+  {
+    "source": "org:nine-trey-gangsters",
+    "target": "org:lucchese-crime-brooklyn-faction",
+    "type": "alliance",
+    "start_year": 2010,
+    "sources": [
+      {
+        "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+        "title": "FBI: National Gang Threat Assessment 2011"
+      }
+    ],
+    "evidence": "in may 2010, New Jersey authorities indicted 34 members of the lucchese crime family on racketeering, weapons offenses, bribery, money laundering, and conspiracy charges. the investigation revealed that members of the lucchese family in New Jersey were working with the Nine trey Gangster Bloods to smuggle drugs and cell phones into the east Jersey state Prison for fellow inmates"
   }
 ]
