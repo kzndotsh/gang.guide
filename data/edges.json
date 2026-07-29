@@ -897,7 +897,7 @@
   {
     "id": "e0b7accf765c",
     "source": "org:18th-street-gang",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry"
   },
   {
@@ -1291,7 +1291,7 @@
   {
     "id": "06284cc40260",
     "source": "org:bloods",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry"
   },
   {
@@ -1433,7 +1433,7 @@
   {
     "id": "84d3be6c840b",
     "source": "org:crips",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry"
   },
   {
@@ -1547,7 +1547,7 @@
   {
     "id": "1599e023b7b6",
     "source": "org:east-coast-crips-los-angeles",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "The East Coast Crips are currently engaged in a racial war with a Mexican-American street gang known as the Florencia 13.",
     "source_url": "https://unitedgangs.com/east-coast-crips/"
@@ -1555,18 +1555,18 @@
   {
     "id": "6cf9f206064c",
     "source": "org:east-coast-crips-los-angeles",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "alliance"
   },
   {
     "id": "eb0a5bf33fdc",
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:grape-watts-crips",
     "type": "rivalry"
   },
   {
     "id": "44b11d91ece9",
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:harvard-park-brims-los-angeles",
     "type": "alliance",
     "evidence": "They share their neighborhood with the Harvard Park Brims, an African-American street gang. They have peacefully co-existed in this area since the 1980s.",
@@ -1574,19 +1574,19 @@
   },
   {
     "id": "6ebf859dc6a5",
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:hat-watts-crips",
     "type": "rivalry"
   },
   {
     "id": "701aed593d56",
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:mad-swan-bloods",
     "type": "alliance"
   },
   {
     "id": "804b5a450118",
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:mexican-mafia",
     "type": "alliance"
   },
@@ -2314,7 +2314,7 @@
   },
   {
     "id": "d35e756fb5e4",
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:playboys-surenos-13",
     "type": "rivalry"
   },
@@ -3737,7 +3737,7 @@
   },
   {
     "id": "63d8feca26ea",
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:playboys-gang",
     "type": "rivalry"
   },
@@ -13680,7 +13680,7 @@
   },
   {
     "source": "org:fruit-town-piru",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Mexican rivals include: Compton Varrio 155 , Compton Varrio Tortilla Flats , 18th Street Gang , Florencia 13 , and Compton Varrio Largo 36",
     "source_url": "https://unitedgangs.com/145-neighborhood-piru/"
@@ -14044,7 +14044,7 @@
   },
   {
     "source": "org:59-east-coast-crips",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "All East Coast Crips are currently engaged in a bitter rivalry with Florencia 13.",
     "source_url": "https://unitedgangs.com/59-east-coast-crips/"
@@ -14170,7 +14170,7 @@
   },
   {
     "source": "org:62-east-coast-crips",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "They also feud with the BloodStone Villians and Pueblo Bishop Bloods along with the Florencia 13",
     "source_url": "https://unitedgangs.com/62-east-coast-neighbor-hood-crips/"
@@ -14212,7 +14212,7 @@
   },
   {
     "source": "org:69-east-coast-crips",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Their main rivals are the Mad Swan Bloods, Hoover Criminal Gang, and the Florencia 13.",
     "source_url": "https://unitedgangs.com/69-east-coast-crips/"
@@ -14387,7 +14387,7 @@
   },
   {
     "source": "org:76ecc",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "The shootings are linked to an ongoing feud between the East Coast Crips and Florencia 13",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
@@ -14401,7 +14401,7 @@
   },
   {
     "source": "org:mexican-mafia",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "alliance",
     "evidence": "The gangs are normally rivals, but authorities say they forged a union in order to flood California, and beyond, with drugs to reap significant profit.",
     "source_url": "https://unitedgangs.com/2013/08/08/8-arrested-44-indicted-in-raid-targeting-mexican-mafia-drug-cartel-street-gang/",
@@ -15322,7 +15322,7 @@
   },
   {
     "source": "org:barrio-mojados",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Florencia 13: One of the largest Sureño gangs in Los Angeles, whose proximity creates ongoing tension tied to territorial overlap and influence.",
     "source_url": "https://unitedgangs.com/barrio-mojados-13/"
@@ -15833,7 +15833,7 @@
   },
   {
     "source": "org:campanella-park-piru",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Other enemies of the Campanella Park Pirus of the Compton Varrio 155, Florencia 13 and all subsets of the Hoover Criminals Gang",
     "source_url": "https://unitedgangs.com/campanella-park-piru/"
@@ -16630,7 +16630,7 @@
   },
   {
     "source": "org:el-hoyo-maravilla",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "The El Hoyo Marvilla are rivals of the Geraghty Loma , Varrio Nuevo Estrada , 18th Street Gang , 38th Street Gang , Playboys 13 , Florencia 13",
     "source_url": "https://unitedgangs.com/el-hoyo-maravilla/"
@@ -16839,21 +16839,21 @@
     "source_url": "https://unitedgangs.com/five-time-hometown-crips/"
   },
   {
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:18th-street-gang",
     "type": "rivalry",
     "evidence": "Their largest rivalries are with the 18th Street Gang, 38th Street Gang, Playboys 13, and the East Coast Crips.",
     "source_url": "https://unitedgangs.com/florencia-13/"
   },
   {
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:playboys-13",
     "type": "rivalry",
     "evidence": "Their largest rivalries are with the 18th Street Gang, 38th Street Gang, Playboys 13, and the East Coast Crips.",
     "source_url": "https://unitedgangs.com/florencia-13/"
   },
   {
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:watts-jardin-garden-in-watts",
     "type": "rivalry",
     "evidence": "However their earliest enemies were with Watts Varrios, such as the Watts Varrio Hickory Street, Watts Varrio Grape Street, Watts Varrio Elm Street, and the Watts Jardin (Watts Garden). These rivalries date back to the 1950s.",
@@ -17031,7 +17031,7 @@
   },
   {
     "source": "org:front-street-watts-crips",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Rivals include: Florencia 13",
     "source_url": "https://unitedgangs.com/front-street-watts-crips/"
@@ -17411,7 +17411,7 @@
   },
   {
     "source": "org:grape-watts-crips",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "they maintain a close relationship, and share common enemies such as the East Coast Crips and the Florencia 13 gang.",
     "source_url": "https://unitedgangs.com/grape-street-watts-crips/"
@@ -17635,7 +17635,7 @@
   },
   {
     "source": "org:hang-out-boys-hob-in-south-los-angeles-los-angeles",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "They are bitter rivals of the Florencia 13 and the 38th Street Gang",
     "source_url": "https://unitedgangs.com/hang-out-boys-13/"
@@ -20536,7 +20536,7 @@
   },
   {
     "source": "org:playboys-13",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Their arch enemies are the Florencia 13 (F-13), 38th Street Gang, and the 18th Street Gang",
     "source_url": "https://unitedgangs.com/playboys-surenos-13/"
@@ -21834,7 +21834,7 @@
   },
   {
     "source": "org:southlos",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Despite their affiliation with the Mexican Mafia, outside of prison, the South Los 13 have engaged in rivalries with a large number of other Sureño gangs such as the 18th Street Gang, Florencia 13",
     "source_url": "https://unitedgangs.com/south-los-13/"
@@ -22780,7 +22780,7 @@
   },
   {
     "source": "org:watts-13-gang",
-    "target": "org:florencia",
+    "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Rivals include: Watts Varrio Grape and the Watts Elm Street as well as the Florencia 13.",
     "source_url": "https://unitedgangs.com/watts-13-gang/"
@@ -23229,7 +23229,7 @@
     "evidence": "It competes with HAMC for membership and territory."
   },
   {
-    "source": "org:florencia",
+    "source": "org:florencia-13",
     "target": "org:mexican-mafia",
     "type": "member_of",
     "sources": [
