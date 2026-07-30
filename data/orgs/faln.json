@@ -1,0 +1,22 @@
+{
+  "id": "org:faln",
+  "name": "FALN",
+  "type": "terrorist_organization",
+  "lane": "other-national",
+  "description": "The FALN (Fuerzas Armadas de Liberación Nacional Puertorriqueña) was a Puerto Rican nationalist clandestine organization that carried out over 120 bombings in the United States between 1974 and 1983 targeting government and corporate buildings. Eleven members were arrested in Evanston, Illinois in 1980. Incarcerated FALN member Luis Rosa taught bomb-making to Latin Kings members at Stateville Penitentiary in the early 1980s.",
+  "status": "inactive",
+  "founded_year": 1974,
+  "founded_year_precision": "exact",
+  "disbanded_year": 1983,
+  "metro": "Chicago",
+  "aliases": [
+    "Fuerzas Armadas de Liberación Nacional Puertorriqueña"
+  ],
+  "colors": [],
+  "sources": [
+    {
+      "url": "https://www.gangenforcement.com/latin-kings.html",
+      "title": "Gang Enforcement — Latin Kings Profile"
+    }
+  ]
+}

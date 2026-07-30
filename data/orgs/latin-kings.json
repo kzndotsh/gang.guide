@@ -6,7 +6,11 @@
     "ALKN",
     "LKN",
     "Latin Kings",
-    "Almighty Latin King and Queen Nation"
+    "Almighty Latin King and Queen Nation",
+    "ADR",
+    "LK",
+    "Almighty Latin King Nation",
+    "Latin King Nation"
   ],
   "type": "street_gang",
   "lane": "chicago-people",
@@ -52,6 +56,10 @@
     {
       "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
       "title": "2015 National Gang Report (NGIC/NAGIA)"
+    },
+    {
+      "url": "https://www.gangenforcement.com/latin-kings.html",
+      "title": "Gang Enforcement — Latin Kings Profile"
     }
   ],
   "symbols": [

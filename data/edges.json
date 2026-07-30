@@ -21940,5 +21940,31 @@
       }
     ],
     "start_year": 2015
+  },
+  {
+    "source": "org:latin-kings",
+    "target": "org:los-solidos",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/latin-kings.html",
+        "title": "Gang Enforcement — Latin Kings Profile",
+        "evidence": "Per Gang Enforcement Latin Kings profile: 'Loose alliances: 20 Love and some sets of the Los Solidos'"
+      }
+    ]
+  },
+  {
+    "source": "org:latin-kings",
+    "target": "org:faln",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/latin-kings.html",
+        "title": "Gang Enforcement — Latin Kings Profile",
+        "evidence": "Per Gang Enforcement Latin Kings profile: 'FALN member Luis Rosa, imprisoned at Stateville, taught Latin Kings bomb-making including improvised explosives, napalm, and remote-detonation devices in the early 1980s'"
+      }
+    ],
+    "start_year": 1981,
+    "end_year": 1983
   }
 ]
