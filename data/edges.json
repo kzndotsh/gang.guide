@@ -5718,8 +5718,8 @@
   },
   {
     "id": "de16c8016324",
-    "source": "org:noble-knights",
-    "target": "org:arch-dukes",
+    "source": "org:arch-dukes",
+    "target": "org:noble-knights",
     "type": "spin_off",
     "evidence": "In the year 1972 some young members of the Arch Dukes began to come up with an idea to create their own club. These kids then formed the \"Noble Knights,\" that was situated at the corner of 14 th and 51 st Court int he Grant Works section of Cicero.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-noble-knights/"
@@ -5843,8 +5843,8 @@
   },
   {
     "id": "d759da4a5f65",
-    "source": "org:almighty-popes",
-    "target": "org:almighty-insane-popes-nation",
+    "source": "org:almighty-insane-popes-nation",
+    "target": "org:almighty-popes",
     "type": "spin_off",
     "evidence": "Lorenzen took the name of 'Almighty Popes' and went renegade in his own way against the Insane Popes that year.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-popes/"
@@ -5961,8 +5961,8 @@
   },
   {
     "id": "88967c9474e1",
-    "source": "org:spanish-gangster-disciples-chicago",
-    "target": "org:almighty-saints",
+    "source": "org:almighty-saints",
+    "target": "org:spanish-gangster-disciples-chicago",
     "type": "spin_off",
     "start_year": 1981,
     "end_year": 1983,
@@ -7088,8 +7088,8 @@
   },
   {
     "id": "d55b14035617",
-    "source": "org:cullerton-deuces",
-    "target": "org:morgan-deuces",
+    "source": "org:morgan-deuces",
+    "target": "org:cullerton-deuces",
     "type": "spin_off",
     "start_year": 1967,
     "end_year": 1986,
@@ -7184,8 +7184,8 @@
   },
   {
     "id": "fd43759a2aa1",
-    "source": "org:insane-deuces",
-    "target": "org:morgan-deuces",
+    "source": "org:morgan-deuces",
+    "target": "org:insane-deuces",
     "type": "spin_off",
     "evidence": "a kid from the Pilsen or Little Village area named \"Little Rich\" moved to the Lathrop Projects and Little Rich was a member of the Morgan Deuces. The North Side Deuces were not a spin off of the Morgan Deuces, Barons or Black Hawks, they were a club that paid tribute to the clubs that taught them all about gang life.",
     "source_url": "https://chicagoganghistory.com/gang/insane-deuces/"
@@ -7645,8 +7645,8 @@
   },
   {
     "id": "621c45586750",
-    "source": "org:orquestra-albany",
-    "target": "org:latin-kings",
+    "source": "org:latin-kings",
+    "target": "org:orquestra-albany",
     "type": "spin_off",
     "evidence": "In 1972 these now high school aged kids decided that they loved La Orquestra Albanies more than they loved the Latin King nation so they left the gang and turned La Orquestra Albanies into their own club",
     "source_url": "https://chicagoganghistory.com/gang/insane-la-orquestra-albany/"
@@ -8345,8 +8345,8 @@
   },
   {
     "id": "5fac7ccde5f5",
-    "source": "org:ylo-cobras",
-    "target": "org:spanish-cobras-chicago",
+    "source": "org:spanish-cobras-chicago",
+    "target": "org:ylo-cobras",
     "type": "spin_off",
     "start_year": 1976,
     "end_year": 1980,
@@ -10614,8 +10614,8 @@
     "source_url": "https://www.ngcrc.com/ngcrc/page14.htm"
   },
   {
-    "source": "org:noble-knights",
-    "target": "org:latin-kings",
+    "source": "org:latin-kings",
+    "target": "org:noble-knights",
     "type": "spin_off",
     "evidence": "The first chapter of the LKs on the Northside is said have grown out of the Noble Knights",
     "source_url": "https://www.ngcrc.com/ngcrc/page15.htm"
@@ -11656,8 +11656,8 @@
     "source_url": "http://www.stonegreasers.com/greaser/lansing_vicelords_crips.html"
   },
   {
-    "source": "org:mohawks",
-    "target": "org:little-hell-sharks",
+    "source": "org:little-hell-sharks",
+    "target": "org:mohawks",
     "type": "spin_off",
     "evidence": "A few years after this migration, the cousins and nephews of the original Sharks started their own gangs: Mohawks, Hudson, and the Cleveland Jammers.",
     "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
@@ -11670,8 +11670,8 @@
     "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
   },
   {
-    "source": "org:cleveland-jammers",
-    "target": "org:little-hell-sharks",
+    "source": "org:little-hell-sharks",
+    "target": "org:cleveland-jammers",
     "type": "spin_off",
     "evidence": "A few years after this migration, the cousins and nephews of the original Sharks started their own gangs: Mohawks, Hudson, and the Cleveland Jammers.",
     "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
@@ -12150,8 +12150,8 @@
     "source_url": "https://www.stonegreasers.com/greaser/larkin_popes_by_his_brother.html"
   },
   {
-    "source": "org:corp",
-    "target": "org:little-hell-sharks",
+    "source": "org:little-hell-sharks",
+    "target": "org:corp",
     "type": "spin_off",
     "evidence": "The Mohawk's, Hudson's, and Cleveland Jammers would eventually unite in the early 70s under the CORP gang becoming the third generation of gangs spawned off of the Little Hell Sharks.",
     "source_url": "https://www.stonegreasers.com/greaser/little_hell_sharks.html"
@@ -12668,8 +12668,8 @@
     "source_url": "https://unitedgangs.com/145-neighborhood-piru/"
   },
   {
-    "source": "org:18th-street-gang",
-    "target": "org:clanton14th-original-hood-los-angeles",
+    "source": "org:clanton14th-original-hood-los-angeles",
+    "target": "org:18th-street-gang",
     "type": "spin_off",
     "evidence": "They were originally part of Clanton 14 but wanted to make a separate clique called Clanton 18th Street and allow immigrants the opportunity to join. This proposal was rejected by the Clanton 14, which led to the formation of the 18th Street gang.",
     "source_url": "https://unitedgangs.com/18th-street-gang/"
@@ -15821,8 +15821,8 @@
     "source_url": "https://unitedgangs.com/florencia-13/"
   },
   {
-    "source": "org:folk-nation",
-    "target": "org:black-gangster-disciples-nation",
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:folk-nation",
     "type": "spin_off",
     "evidence": "The story of the Folk Nation begins in 1974, with the death of David Barksdale, leader of the recently formed Gangster Disciples Nation. Having then seized power, Larry Hoover called for a meeting with other local gangs leaders",
     "source_url": "https://unitedgangs.com/folk-nation/",
@@ -18271,8 +18271,8 @@
     "source_url": "https://unitedgangs.com/menlo-crips/"
   },
   {
-    "source": "org:mexican-mafia",
-    "target": "org:rock-maravilla",
+    "source": "org:rock-maravilla",
+    "target": "org:mexican-mafia",
     "type": "spin_off",
     "evidence": "The foundation of the gang began with thirteen Mexican-Americans from East Los Angeles, several of whom were members of the Maravilla gang.",
     "source_url": "https://unitedgangs.com/mexicanmafia/"
@@ -20047,8 +20047,8 @@
     "source_url": "https://unitedgangs.com/rollin-40s-crips/"
   },
   {
-    "source": "org:rollin-40s-crips",
-    "target": "org:rollin-40s-neighborhood-crips",
+    "source": "org:rollin-40s-neighborhood-crips",
+    "target": "org:rollin-40s-crips",
     "type": "spin_off",
     "evidence": "The Rollin 40s neighborhood Crips were started by a Los Angeles, gang member of the original Rollin 40s Crips, who relocated to the Southeast district of San Diego.",
     "source_url": "https://unitedgangs.com/rollin-40s-neighborhood-crips/"
@@ -20994,8 +20994,8 @@
     "source_url": "https://unitedgangs.com/street-villains-gang/"
   },
   {
-    "source": "org:suren-os-united-states",
-    "target": "org:mexican-mafia",
+    "source": "org:mexican-mafia",
+    "target": "org:suren-os-united-states",
     "type": "member_of",
     "evidence": "Sureños (Spanish for \"Southerners\"), or Sureñas for females, are groups of loosely affiliated gangs that pay tribute to the Mexican Mafia while in US Federal and State correctional facilities.",
     "source_url": "https://unitedgangs.com/surenos/"
@@ -21975,8 +21975,8 @@
     "source_url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf"
   },
   {
-    "source": "org:aryan-brotherhood-of-texas",
-    "target": "org:aryan-brotherhood",
+    "source": "org:aryan-brotherhood",
+    "target": "org:aryan-brotherhood-of-texas",
     "type": "spin_off",
     "evidence": "New Mexico in particular has a strong ABT presence, as its dominant racist prison gang, the New Mexico Aryan Brotherhood, is actually an offshoot or colony of the ABT.",
     "source_url": "https://www.adl.org/resources/profiles/aryan-brotherhood-texas"

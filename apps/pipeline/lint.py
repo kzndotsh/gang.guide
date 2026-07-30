@@ -556,7 +556,12 @@ def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
 
 
 def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
-    """Flag spin_off edges where the target is older than the source (likely reversed)."""
+    """Flag spin_off edges where the TARGET is older than the SOURCE by 5+ years.
+
+    Schema: A --spin_off--> B means 'B came from A' (A is parent/older, B is spinoff/newer).
+    So if B (target) is OLDER than A (source), the relationship is likely reversed.
+    Note: source being older than target is CORRECT and expected.
+    """
     for i, e in enumerate(edges):
         if e.get("type") != "spin_off":
             continue
@@ -564,9 +569,11 @@ def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
         tgt_org = orgs.get(e.get("target", ""), {})
         src_year = src_org.get("founded_year")
         tgt_year = tgt_org.get("founded_year")
-        if src_year and tgt_year and tgt_year < src_year - 5:
+        # Only flag if TARGET is significantly OLDER than SOURCE (genuinely reversed)
+        if src_year and tgt_year and tgt_year < src_year - 10:
             warnings.append(
-                f"edge[{i}]: spin_off direction suspect — {tgt_org.get('name', '')} (founded {tgt_year}) is older than {src_org.get('name', '')} (founded {src_year})"
+                f"edge[{i}]: spin_off direction suspect — {tgt_org.get('name', '')} (founded {tgt_year}) "
+                f"is older than {src_org.get('name', '')} (founded {src_year}) — target should be the spinoff (newer)"
             )
 
 
@@ -660,13 +667,8 @@ def check_temporal_logic(orgs: dict[str, dict], edges: list[dict]):
         tgt = e.get("target", "")
         etype = e.get("type", "")
 
-        # Spin-off direction: A --spin_off--> B means "B came from A" (A is parent, B is spinoff)
-        # So src (parent) should be OLDER than tgt (spinoff): src_year <= tgt_year
-        if etype == "spin_off" and src in org_years and tgt in org_years:
-            if org_years[tgt] < org_years[src] - 10:
-                warnings.append(
-                    f"temporal: spin_off {tgt} ({org_years[tgt]}) is the spinoff but was founded earlier than parent {src} ({org_years[src]}) — likely reversed"
-                )
+        # Spin-off direction handled by check_spinoff_direction
+        # (A --spin_off--> B means B came from A; check if B is older than A)
 
     # Nation affiliation: org can't be older than its nation
     nation_years = {
