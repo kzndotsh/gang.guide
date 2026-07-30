@@ -3,13 +3,29 @@
   "name": "Pimp Player Hustler Gangster Crips",
   "type": "street_gang",
   "lane": "california-crips-gangster",
-  "founded_year": 1980,
-  "founded_year_precision": "decade",
+  "founded_year": 1985,
+  "founded_year_precision": "circa",
   "description": "Crips, are an African-American street gang operating on the East Side of San Bernardino, California. They originated in the mid-1980’s, during the crack epidemic era. The PPHG Crips are also associated with the number 4x (4’s), similar to gangs under the 2x (Deuces)",
   "sources": [
     {
       "url": "https://unitedgangs.com/pimp-player-hustler-gangster-crips",
       "title": "Pimp Player Hustler Gangster Crips — UnitedGangs"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-2005-nov-15-me-girls15-story.html",
+      "title": "Girl, 11, Fatally Shot Inside Home — Los Angeles Times (Nov. 15, 2005)"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-2007-jun-24-me-gang24-story.html",
+      "title": "Man Who Steered Killers to Girl's Home Gets Prison — Los Angeles Times (Jun. 24, 2007)"
+    },
+    {
+      "url": "https://www.reddit.com/r/CaliConnection/comments/18vt5tx/san_bernardino_es_pphg_crips/",
+      "title": "San Bernardino: E/S PPHG Crips — r/CaliConnection"
+    },
+    {
+      "url": "https://arpoz-selecta.com/gang/pimp-player-hustler-gangster-crips/",
+      "title": "Pimp Player Hustler Gangster Crips — ARPOZ Selecta"
     }
   ],
   "aliases": [
@@ -21,5 +37,8 @@
     "gray"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "letter C"
+  ]
 }

@@ -7,6 +7,14 @@
     {
       "url": "https://unitedgangs.com/gangster-crips",
       "title": "Gangster Crips — UnitedGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/menlo-crips/",
+      "title": "Menlo Crips — UnitedGangs"
+    },
+    {
+      "url": "https://grokipedia.com/page/65-menlo-neighborhood-crips",
+      "title": "65 Menlo Neighborhood Crips — Grokipedia"
     }
   ],
   "metro": "Los Angeles",
@@ -21,5 +29,8 @@
     "C14"
   ],
   "founded_year_precision": "decade",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "MGC"
+  ]
 }

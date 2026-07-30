@@ -25,7 +25,12 @@
     "blue",
     "gray"
   ],
-  "aliases": null,
+  "aliases": [
+    "118 Eucalyptus Mob Gangster Crips",
+    "118 Eucalyptus Mob Crips",
+    "Eucalyptus Mob",
+    "118 U-Mob"
+  ],
   "founded_year_precision": "estimate",
   "status": "active"
 }

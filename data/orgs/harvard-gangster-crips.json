@@ -7,11 +7,19 @@
     {
       "url": "https://unitedgangs.com/harvard-gangster-crips",
       "title": "Harvard Gangster Crips — UnitedGangs"
+    },
+    {
+      "url": "https://grokipedia.com/page/harvard-gangster-crips",
+      "title": "Harvard Gangster Crips — Grokipedia"
+    },
+    {
+      "url": "https://raptology.com/2024/11/10/opp-goblin-crip-mac-and-55-crips-beef-with-rival-crips-and-bloods-in-la/",
+      "title": "Opp Goblin Crip Mac And 55 Crips Beef With Rival Crips And Bloods In LA — Raptology"
     }
   ],
   "metro": "Los Angeles",
   "type": "street_gang",
-  "founded_year": 1970,
+  "founded_year": 1979,
   "description": "The Harvard Park Gangster Crips are an African-American Crip set based in the Harvard Park neighborhood of South Los Angeles, operating under the Gangster Crips umbrella.",
   "colors": [
     "blue",
@@ -20,6 +28,6 @@
   "aliases": [
     "C14"
   ],
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "status": "active"
 }

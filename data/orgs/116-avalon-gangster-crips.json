@@ -10,6 +10,10 @@
     {
       "url": "https://unitedgangs.com/116-avalon-gangster-crips",
       "title": "116 Avalon Gangster Crips — UnitedGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/avalon-gangster-crips/",
+      "title": "Avalon Gangster Crips — UnitedGangs"
     }
   ],
   "colors": [
@@ -19,6 +23,6 @@
   "aliases": [
     "116AGC"
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "circa",
   "status": "active"
 }
