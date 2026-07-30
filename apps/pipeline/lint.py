@@ -465,6 +465,74 @@ def check_nation_consistency(orgs: dict[str, dict], edges: list[dict]):
         if "people" in affiliation and "folk" in target:
             errors.append(f"edge[{i}]: {e['source']} is People Nation but has member_of → Folk Nation")
 
+    # Flag alliance/nation type orgs that have nation_affiliation set
+    # (nation-level orgs shouldn't themselves be affiliated with a nation)
+    for org_id, org in orgs.items():
+        f = org["_file"]
+        if org.get("type") in ("nation", "alliance") and org.get("nation_affiliation"):
+            na = org["nation_affiliation"]
+            warnings.append(f"{f}: {org.get('type')} type org has nation_affiliation={na} — nations don't belong to nations")
+
+
+def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
+    """Flag incorrect uses of member_of vs nation_affiliation.
+
+    Rules:
+    - gang nation orgs should never be the SOURCE of a member_of edge
+    - member_of to a gang nation is redundant if org already has nation_affiliation
+    - orgs in Crip/Blood lanes without nation_affiliation are missing data
+    """
+    GANG_NATIONS = {
+        "org:crips", "org:bloods", "org:pirus", "org:folk-nation", "org:people-nation",
+        "org:surenos", "org:nortenos", "org:united-blood-nation", "org:suren-os-united-states",
+    }
+    BLOOD_LANES = {
+        "blood-nation", "california-bloods-compton", "california-bloods-carson",
+        "california-bloods-la-south-bay", "california-bloods-other",
+    }
+    CRIP_LANES = {
+        "crip-nation", "california-crips-hoover", "california-crips-neighborhood",
+        "california-crips-east-coast", "california-crips-gangster", "california-crips-hustler",
+        "california-crips-south-la", "california-crips-long-beach", "california-crips-inglewood",
+        "california-crips-other",
+    }
+
+    for i, e in enumerate(edges):
+        if e.get("type") != "member_of":
+            continue
+        src = e.get("source", "")
+        tgt = e.get("target", "")
+        src_org = orgs.get(src, {})
+        src_f = src_org.get("_file", src)
+        src_name = src_org.get("name", src)
+
+        # Gang nation as SOURCE of member_of — should be target
+        if src in GANG_NATIONS:
+            warnings.append(
+                f"edge[{i}]: {src_name} (gang nation) is source of member_of — likely reversed "
+                f"(should be: target --member_of--> {src_name})"
+            )
+
+        # member_of to a gang nation when org already has nation_affiliation = same nation
+        if tgt in GANG_NATIONS:
+            na = src_org.get("nation_affiliation")
+            if na == tgt:
+                warnings.append(
+                    f"edge[{i}]: {src_name} --member_of--> {tgt} is redundant — "
+                    f"nation_affiliation already set to {tgt}"
+                )
+
+    # Orgs in Blood/Crip lanes without nation_affiliation
+    for org_id, org in orgs.items():
+        f = org["_file"]
+        lane = org.get("lane", "")
+        na = org.get("nation_affiliation")
+        if org.get("type") == "street_gang" and not na:
+            if lane in BLOOD_LANES:
+                warnings.append(f"{f}: Blood-lane org missing nation_affiliation (should be org:bloods or specific Blood nation)")
+            elif lane in CRIP_LANES:
+                warnings.append(f"{f}: Crip-lane org missing nation_affiliation (should be org:crips or specific Crip nation)")
+
 
 def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
     """Flag spin_off edges where the target is older than the source (likely reversed)."""
@@ -616,6 +684,7 @@ def main():
     check_stub_quality(orgs)
     check_nation_consistency(orgs, edges)
     check_spinoff_direction(orgs, edges)
+    check_member_of_usage(orgs, edges)
 
     # Print results
     if info:
