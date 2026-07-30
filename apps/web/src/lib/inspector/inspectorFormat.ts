@@ -69,6 +69,41 @@ export function relTypeLabel(type: string): string {
   return REL_TYPE_LABELS[type] ?? type.replace(/_/g, ' ');
 }
 
+/** Direction-aware label: shows the relationship from the viewer's perspective.
+ *  isOutgoing=true means current node is SOURCE (e.g. Pirus --parent--> Bloods → "Parent of")
+ *  isOutgoing=false means current node is TARGET (e.g. Pirus is TARGET of --spin_off--> → "Spawned from")
+ */
+export function relTypeLabelDirectional(type: string, isOutgoing: boolean | undefined): string {
+  if (isOutgoing === undefined) return relTypeLabel(type);
+  if (isOutgoing) {
+    // Current node is the source — describe what it IS to the peer
+    const outLabels: Record<string, string> = {
+      parent: 'Parent of',
+      member_of: 'Member of',
+      spin_off: 'Spawned',
+      parent_set: 'Parent set of',
+      offspring: 'Spawned',
+      merger: 'Merged into',
+      split: 'Split from',
+      migration: 'Migrated to',
+    };
+    return outLabels[type] ?? relTypeLabel(type);
+  } else {
+    // Current node is the target — describe what the peer IS to it
+    const inLabels: Record<string, string> = {
+      parent: 'Child org',
+      member_of: 'Has member',
+      spin_off: 'Origin of',
+      parent_set: 'Child set',
+      offspring: 'Offspring of',
+      merger: 'Merged from',
+      split: 'Split into',
+      migration: 'Migrated from',
+    };
+    return inLabels[type] ?? relTypeLabel(type);
+  }
+}
+
 export function statusLabel(status: OrganizationStatus | undefined): string | null {
   if (!status || status === 'unknown') return null;
   return STATUS_LABELS[status];

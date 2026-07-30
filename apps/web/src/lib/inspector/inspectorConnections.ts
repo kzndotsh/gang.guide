@@ -6,6 +6,7 @@ const SYMMETRIC_REL_TYPES = new Set(['rivalry', 'alliance', 'truce']);
 export type ConnectionRow = {
   type: string;
   peerId: string;
+  isOutgoing?: boolean; // true = current node is SOURCE of the edge (e.g. "this org --parent--> peer")
   confidenceScore?: number;
   reviewStatus?: string;
 };
@@ -64,6 +65,7 @@ export function mergeConnections(nodeId: string, edges: GraphEdge[]): Connection
   for (const edge of edges) {
     if (edge.source !== nodeId && edge.target !== nodeId) continue;
     const peerId = edge.source === nodeId ? edge.target : edge.source;
+    const isOutgoing = edge.source === nodeId;
     const key = connectionKey(nodeId, edge, peerId);
     const existing = map.get(key);
     map.set(
@@ -71,6 +73,7 @@ export function mergeConnections(nodeId: string, edges: GraphEdge[]): Connection
       existing ? pickBetter(existing, edge, peerId) : {
         type: edge.type,
         peerId,
+        isOutgoing,
         confidenceScore: edge.confidence_score,
         reviewStatus: edge.review_status,
       },

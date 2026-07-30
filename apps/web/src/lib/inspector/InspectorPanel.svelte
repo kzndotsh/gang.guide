@@ -26,6 +26,7 @@
     confidencePct,
     orgTypeLabel,
     relTypeLabel,
+    relTypeLabelDirectional,
     reviewLabel,
     statusLabel,
   } from '$lib/inspector/inspectorFormat';
@@ -305,7 +306,7 @@
                                 <span class="inline-flex shrink-0 items-center gap-1.5">
                                   {#if group.id === 'structure' || group.id === 'other'}
                                     <Badge variant="outline" class="text-[0.58rem] font-normal uppercase">
-                                      {relTypeLabel(conn.type)}
+                                      {relTypeLabelDirectional(conn.type, conn.isOutgoing)}
                                     </Badge>
                                   {/if}
                                   {#if conn.confidenceScore != null}
