@@ -2,7 +2,7 @@
   "id": "org:military-misfits-mc",
   "name": "Military Misfits MC",
   "type": "outlaw_motorcycle_gang",
-  "lane": "outlaw-motorcycle-gangs",
+  "lane": "motorcycle-clubs",
   "description": "Military Misfits MC is an outlaw motorcycle gang composed primarily of veterans and active military personnel. Members have served in the Marines and Navy per FBI reporting.",
   "status": "active",
   "military_service": "Marines, Navy",

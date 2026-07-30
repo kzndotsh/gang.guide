@@ -2,7 +2,7 @@
   "id": "org:molochs-mc",
   "name": "Molochs MC",
   "type": "outlaw_motorcycle_gang",
-  "lane": "outlaw-motorcycle-gangs",
+  "lane": "motorcycle-clubs",
   "description": "Molochs MC is an outlaw motorcycle gang operating in California. Members have served in the Marines per FBI NGTA reporting.",
   "status": "active",
   "military_service": "Marines",
