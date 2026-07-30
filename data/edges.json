@@ -11233,13 +11233,6 @@
   },
   {
     "source": "org:crips",
-    "target": "org:5point-nation-crips",
-    "type": "member_of",
-    "evidence": "Crip-affiliated sets are active across multiple Detroit neighborhoods, including: • Northwest Detroit: Rollin 20s, Rollin 40s, Rollin 60s, Rollin 100s, Playboy Gangster Crips, 5Point Nation Crips (5PN)",
-    "source_url": "https://detroitstreetgangs.com/detroit-crips/"
-  },
-  {
-    "source": "org:crips",
     "target": "org:4-gang",
     "type": "member_of",
     "evidence": "Crip-affiliated sets are active across multiple Detroit neighborhoods, including: • Eastside Detroit: 4 Gang",
@@ -11335,13 +11328,6 @@
     "type": "alliance",
     "evidence": "Affiliation referenced in reporting or public records have included: Mafia Insane Vice Lords, People Nation (5X), Headbanger Bloods (Detroit-born)",
     "source_url": "https://detroitstreetgangs.com/detroit-vice-lords/"
-  },
-  {
-    "source": "org:gangster-crips",
-    "target": "org:5point-nation-crips",
-    "type": "member_of",
-    "evidence": "The organization is active within the broader 5Point Nation (5PN) and Movin Gang (3X) alliance structure",
-    "source_url": "https://detroitstreetgangs.com/gangster-crips-3x-movin-detroit-mi/"
   },
   {
     "source": "org:gangster-crips",
@@ -11551,13 +11537,6 @@
     "target": "org:gangster-crips",
     "type": "member_of",
     "evidence": "The set reflects a fusion of local Detroit gang structures with elements of Gangster Crip (3X/Movin Gang) self-identification.",
-    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
-  },
-  {
-    "source": "org:w7m-evergreen-telegraph-gangster-crips",
-    "target": "org:5point-nation-crips",
-    "type": "member_of",
-    "evidence": "Within Detroit's west-side gang landscape, W7M ScoreGang is commonly described as a prominent faction within the broader 5Point Nation (5PN) alliance",
     "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
   },
   {
