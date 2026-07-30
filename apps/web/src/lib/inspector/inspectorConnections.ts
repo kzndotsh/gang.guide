@@ -17,13 +17,13 @@ export type ConnectionGroup = {
 };
 
 const CONNECTION_GROUP_DEFS: Array<{ id: string; label: string; types: string[] }> = [
-  { id: 'affiliation', label: 'Affiliations', types: ['nation_affiliation', 'car_affiliation'] },
+  { id: 'affiliation', label: 'Affiliations', types: ['nation_affiliation', 'nation', 'car_affiliation'] },
   { id: 'alliance', label: 'Alliances', types: ['alliance', 'truce'] },
   { id: 'rivalry', label: 'Rivalries', types: ['rivalry'] },
   {
     id: 'structure',
     label: 'Structure',
-    types: ['parent_set', 'spin_off', 'offspring', 'merger', 'split', 'migration'],
+    types: ['parent', 'member_of', 'spin_off', 'parent_set', 'offspring', 'merger', 'split', 'migration'],
   },
   { id: 'other', label: 'Other', types: ['influence', 'other'] },
 ];

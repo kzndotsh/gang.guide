@@ -13,7 +13,10 @@ const ORG_TYPE_LABELS: Record<string, string> = {
 const REL_TYPE_LABELS: Record<string, string> = {
   spin_off: 'Spin-off',
   parent_set: 'Parent set',
+  parent: 'Parent',
+  member_of: 'Member of',
   offspring: 'Offspring',
+  nation: 'Nation',
   alliance: 'Alliance',
   rivalry: 'Rivalry',
   truce: 'Truce',
@@ -21,7 +24,7 @@ const REL_TYPE_LABELS: Record<string, string> = {
   merger: 'Merger',
   split: 'Split',
   car_affiliation: 'Car affiliation',
-  nation_affiliation: 'Nation affiliation',
+  nation_affiliation: 'Nation',
   influence: 'Influence',
   other: 'Related',
 };
