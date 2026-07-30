@@ -1,0 +1,37 @@
+{
+  "id": "org:ku-klux-klan",
+  "name": "Ku Klux Klan",
+  "type": "white_supremacist",
+  "lane": "white-supremacist",
+  "metro": "Pulaski",
+  "description": "The Ku Klux Klan (KKK) is the oldest and most notorious white supremacist organization in the United States, founded December 24, 1865 in Pulaski, Tennessee by six Confederate veterans. It has operated in three distinct eras — Reconstruction (1865–1870s), revival (1915–1944, peak membership 4 million), and modern fragmented form (1946–present, ~5,000 members across 40+ independent factions) — carrying out terrorism, lynchings, bombings, and hate crimes against Black Americans, Jews, Catholics, immigrants, and LGBTQ individuals.",
+  "status": "active",
+  "founded_year": 1865,
+  "founded_year_precision": "exact",
+  "membership_estimate": 5000,
+  "aliases": [
+    "KKK",
+    "Invisible Empire",
+    "The Klan",
+    "Knights of the Ku Klux Klan"
+  ],
+  "colors": [
+    "white"
+  ],
+  "symbols": [
+    "Burning Cross",
+    "Blood Drop Cross",
+    "White Robes And Hood",
+    "MIOAK Patch"
+  ],
+  "sources": [
+    {
+      "url": "https://www.gangenforcement.com/ku-klux-klan.html",
+      "title": "Gang Enforcement — Ku Klux Klan Profile"
+    },
+    {
+      "url": "https://archive.adl.org/learn/ext_us/kkk/default.html",
+      "title": "Anti-Defamation League — Ku Klux Klan"
+    }
+  ]
+}

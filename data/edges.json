@@ -22003,5 +22003,54 @@
         "evidence": "Per Gang Enforcement IGD profile: IGD operates as the enforcement/assassin arm within the GD constellation; sibling sets under the same Folk Nation structure"
       }
     ]
+  },
+  {
+    "source": "org:ku-klux-klan",
+    "target": "org:imperial-klans-of-america",
+    "type": "spin_off",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/ku-klux-klan.html",
+        "title": "Gang Enforcement — Ku Klux Klan Profile",
+        "evidence": "Imperial Klans of America is a splinter faction of the Ku Klux Klan, founded 1996 by Ron Edwards"
+      }
+    ],
+    "start_year": 1996
+  },
+  {
+    "source": "org:ku-klux-klan",
+    "target": "org:national-socialist-movement",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/ku-klux-klan.html",
+        "title": "Gang Enforcement — Ku Klux Klan Profile",
+        "evidence": "Per Gang Enforcement KKK profile: 'Affiliations: National Socialist Movement, Aryan Nations, Christian Identity groups'"
+      }
+    ]
+  },
+  {
+    "source": "org:ku-klux-klan",
+    "target": "org:aryan-nations",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/ku-klux-klan.html",
+        "title": "Gang Enforcement — Ku Klux Klan Profile",
+        "evidence": "Per Gang Enforcement KKK profile: 'Affiliations: National Socialist Movement, Aryan Nations, Christian Identity groups'"
+      }
+    ]
+  },
+  {
+    "source": "org:ku-klux-klan",
+    "target": "org:white-knights-of-america",
+    "type": "spin_off",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/ku-klux-klan.html",
+        "title": "Gang Enforcement — Ku Klux Klan Profile",
+        "evidence": "White Knights of America is a splinter faction derived from the Ku Klux Klan tradition"
+      }
+    ]
   }
 ]
