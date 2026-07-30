@@ -42,9 +42,10 @@ def build_layout(org, lane_meta, slot):
         else:
             display_year = 1965 + (h % 40)  # 1965-2005
     elif precision in ("decade", "circa") or year % 10 == 0:
-        # Round/imprecise year: jitter within ±4 years
+        # Round/imprecise year: jitter forward only (±0 to +8) to avoid placing
+        # node before its stated founding year
         h = hash(org["id"]) & 0xFF
-        display_year = year + (h % 9) - 4
+        display_year = year + (h % 9)
     else:
         display_year = year
 
