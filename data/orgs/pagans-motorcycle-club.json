@@ -42,11 +42,16 @@
     {
       "url": "https://www.gangenforcement.com/outlaw-motorcycle-gangs.html",
       "title": "Gang Enforcement — Outlaw Motorcycle Gangs"
+    },
+    {
+      "url": "https://www.gangenforcement.com/gangs-in-the-military.html",
+      "title": "Gang Enforcement — Gangs in the Military"
     }
   ],
   "colors": [
     "black"
   ],
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "military_service": "Various branches"
 }

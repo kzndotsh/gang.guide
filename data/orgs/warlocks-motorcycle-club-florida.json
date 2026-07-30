@@ -18,12 +18,17 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Warlocks_Motorcycle_Club_(Florida)",
-      "title": "Warlocks Motorcycle Club Florida \u2014 Wikipedia"
+      "title": "Warlocks Motorcycle Club Florida — Wikipedia"
+    },
+    {
+      "url": "https://www.gangenforcement.com/gangs-in-the-military.html",
+      "title": "Gang Enforcement — Gangs in the Military"
     }
   ],
   "colors": [
     "black",
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "military_service": "Various branches"
 }
