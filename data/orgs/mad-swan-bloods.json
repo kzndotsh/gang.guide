@@ -29,10 +29,16 @@
       "title": "Florencia 13 — Wikipedia"
     }
   ],
-  "founded_year": 1975,
+  "founded_year": 1972,
   "colors": [
     "red"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "circa",
+  "status": "active",
+  "symbols": [
+    "swan imagery",
+    "red bandana",
+    "7-9 hand sign",
+    "7-9 graffiti"
+  ]
 }

@@ -1,20 +1,56 @@
 {
   "id": "org:7-mile-rollin-60s-crips",
   "name": "7 Mile Rollin 60s Crips",
-  "aliases": [],
+  "aliases": [
+    "7M R$C",
+    "R60s",
+    "Rollin Sixties",
+    "Rollin 60s Neighborhood Crips",
+    "Rich Rollin Crips",
+    "Cixty Crips"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 2006,
+  "founded_year_precision": "circa",
   "description": "The 7 Mile Rollin' 60s Crips (7M R$C) are one of Detroit's older and more historically recognizable Crip sets, predominantly African American, formed around 2006 and operating along Seven Mile Road. They grew to an estimated 150 members at their peak and retain influence within the larger Detroit Rollin Neighborhood Crips structure. Federal authorities targeted the set through ATF-led RICO prosecutions stemming from their prolonged conflict with the Playboy Gangster Crips.",
-  "colors": [],
+  "colors": [
+    "blue"
+  ],
   "nation_affiliation": "org:crips",
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/7-mile-playboy-gangster-crips-detroit-mi/",
       "title": "DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://detroitstreetgangs.com/7-mile-rollin-60s-crips-7m-r60s-7m-rc/",
+      "title": "Inside the Powerful Rise of 7 Mile Rollin' 60s Crips in Detroit – DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://detroitstreetgangs.com/rollin-60s-crips-detroit-mi/",
+      "title": "Inside the Powerful Rise of Rollin 60s in Detroit – DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://www.justice.gov/usao/edmi/pr/rollin-60-crips-gang-leaders-sentenced-racketeering-charges-1",
+      "title": "Rollin' 60 Crips Gang Leaders Sentenced for Racketeering Charges – DOJ EDMI"
+    },
+    {
+      "url": "https://www.justice.gov/usao/edmi/pr/gang-members-convicted-racketeering-charges",
+      "title": "Gang Members Convicted of Racketeering Charges – DOJ EDMI"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Rollin%27_60s_Neighborhood_Crips",
+      "title": "Rollin' 60s Neighborhood Crips – Wikipedia"
     }
+  ],
+  "membership_estimate": 150,
+  "symbols": [
+    "Seattle Mariners cap",
+    "UNC Tar Heels cap",
+    "number 60",
+    "R60s graffiti"
   ]
 }

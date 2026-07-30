@@ -41,5 +41,8 @@
     "black"
   ],
   "founded_year_precision": "exact",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "722"
+  ]
 }
