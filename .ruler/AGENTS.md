@@ -130,4 +130,4 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 Stats are computed at build time and embedded in `graph.json` meta. Run `just build-data` to see current counts.
 
 - Edge types: nation, rivalry, alliance, member_of, spin-off, parent
-- Top sources: Wikipedia, StreetGangs, UnitedGangs, Chicago Gang History, DOJ, StopHoustonGangs, ADL, FBI NGTA
+- Top sources: Wikipedia, StreetGangs, UnitedGangs, Chicago Gang History, DOJ, StopHoustonGangs, ADL, FBI NGTA, Gang Enforcement, 2015 National Gang Report (NGIC/NAGIA)
