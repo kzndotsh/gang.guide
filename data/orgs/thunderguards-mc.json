@@ -1,0 +1,17 @@
+{
+  "id": "org:thunderguards-mc",
+  "name": "Thunderguards MC",
+  "type": "outlaw_motorcycle_gang",
+  "lane": "motorcycle-clubs",
+  "description": "The Thunderguards MC is a Black outlaw motorcycle gang counted among the largest Black OMGs in the United States. The gang maintains an exclusively male membership per 2015 National Gang Report.",
+  "status": "active",
+  "sources": [
+    {
+      "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+      "title": "2015 National Gang Report (NGIC/NAGIA)"
+    }
+  ],
+  "aliases": [],
+  "colors": [],
+  "founded_year": null
+}

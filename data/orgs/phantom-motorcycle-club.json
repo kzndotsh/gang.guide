@@ -1,0 +1,18 @@
+{
+  "id": "org:phantom-motorcycle-club",
+  "name": "Phantom Motorcycle Club",
+  "type": "outlaw_motorcycle_gang",
+  "lane": "motorcycle-clubs",
+  "description": "The Phantom Motorcycle Club is a Black outlaw motorcycle gang with documented ties to the Vice Lords street gang. In March 2015, six leaders and members of the Phantom MC and Vice Lords were convicted of conspiracy to commit murder and racketeering offenses.",
+  "status": "active",
+  "metro": "Detroit",
+  "sources": [
+    {
+      "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+      "title": "2015 National Gang Report (NGIC/NAGIA)"
+    }
+  ],
+  "aliases": [],
+  "colors": [],
+  "founded_year": null
+}

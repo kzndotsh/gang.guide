@@ -1,0 +1,23 @@
+{
+  "id": "org:artistas-asesinos",
+  "name": "Artistas Asesinos",
+  "type": "street_gang",
+  "lane": "california-latino-other",
+  "description": "Artistas Asesinos (AA) is a Sureño street gang based in the El Paso, Texas area with strong ties to the Juárez Cartel in Mexico. The gang ranks among the top 12 most criminally active gangs along the US/Mexico border per the 2015 National Gang Report.",
+  "status": "active",
+  "metro": "El Paso",
+  "nation_affiliation": "org:suren-os-united-states",
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "AA"
+  ],
+  "sources": [
+    {
+      "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+      "title": "2015 National Gang Report (NGIC/NAGIA)"
+    }
+  ],
+  "founded_year": null
+}

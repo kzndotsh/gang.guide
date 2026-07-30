@@ -21876,5 +21876,69 @@
       }
     ],
     "evidence": "in may 2010, New Jersey authorities indicted 34 members of the lucchese crime family on racketeering, weapons offenses, bribery, money laundering, and conspiracy charges. the investigation revealed that members of the lucchese family in New Jersey were working with the Nine trey Gangster Bloods to smuggle drugs and cell phones into the east Jersey state Prison for fellow inmates"
+  },
+  {
+    "source": "org:hells-angels-motorcycle-club",
+    "target": "org:red-devils-mc",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+        "title": "2015 National Gang Report (NGIC/NAGIA)",
+        "evidence": "Per 2015 National Gang Report (NGIC/NAGIA): 'Red Devils [is] a support club for the Hells Angels' — members jointly convicted of violent racketeering crimes (DOJ, February 2015)"
+      }
+    ]
+  },
+  {
+    "source": "org:phantom-motorcycle-club",
+    "target": "org:almighty-vice-lord-nation",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+        "title": "2015 National Gang Report (NGIC/NAGIA)",
+        "evidence": "Per 2015 National Gang Report (NGIC/NAGIA): 'six leaders and members of the Phantom Motorcycle Club and Vice Lords street gang were convicted of conspiracy to commit murder and racketeering' (DOJ, March 2015)"
+      }
+    ],
+    "start_year": 2015
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:cossacks-mc",
+    "type": "rivalry",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+        "title": "2015 National Gang Report (NGIC/NAGIA)",
+        "evidence": "Per 2015 National Gang Report (NGIC/NAGIA): 'Twin Peaks restaurant confrontation in Waco, TX between Cossacks and Bandidos resulted in nine killed' (May 2015)"
+      }
+    ],
+    "start_year": 2015
+  },
+  {
+    "source": "org:outcast-motorcycle-club",
+    "target": "org:wheels-of-soul-mc",
+    "type": "rivalry",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+        "title": "2015 National Gang Report (NGIC/NAGIA)",
+        "evidence": "Per 2015 National Gang Report (NGIC/NAGIA): 'Outcast MC members opened fire at Showstoppers MC clubhouse in Birmingham, AL, killing Wheels of Soul members' (September 2014)"
+      }
+    ],
+    "start_year": 2014
+  },
+  {
+    "source": "org:bandidos-motorcycle-club",
+    "target": "org:wheels-of-soul-mc",
+    "type": "rivalry",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+        "title": "2015 National Gang Report (NGIC/NAGIA)",
+        "evidence": "Per 2015 National Gang Report (NGIC/NAGIA): 'Wheels of Soul and Bandidos engaged in a gunfight at a restaurant in Albuquerque, NM' (March 2015)"
+      }
+    ],
+    "start_year": 2015
   }
 ]
