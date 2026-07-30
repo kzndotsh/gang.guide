@@ -34,6 +34,11 @@ Ideas, data sources, and long-term goals that aren't actionable yet. Moved here 
 - [ ] **GI-TOC Global Organized Crime Index** (ocindex.net) — Country-level metrics, regional observatories
 - [ ] **UNODC SHERLOC** — Transnational organized crime case law + legislation
 - [ ] **Journal of Gang Research (NGCRC)** — Peer-reviewed, special reports on prison gangs, federal legislation
+- [ ] **NGCRC Gang Profiles** (ngcrc.com/profile/profile.html) — Detailed gang threat analyses including Gangster Disciples prosecution impact, Latin Kings, Almighty Black P Stones, and ~10 others. Primary source quality, free access.
+- [ ] **NGCRC Black Disciples Profile** (ngcrc.com/bdprofile.html) — Detailed profile with history, structure, and threat analysis.
+- [ ] **National Gang Center GANGINFO** (nationalgangcenter.org/Resources/GANGINFO) — Search tool for gang-related legislation, research, and statistics by state. Useful for validating org presence and legal status.
+- [ ] **IAACI** (International Association of Asian Crime Investigators, iaaci.com) — Asian gang profiles, training materials. Currently offline but check periodically.
+- [ ] **ILGIA** (International Latino Gang Investigators Association, ilgiaonline.org) — Latino gang intelligence resources.
 - [ ] **Europol criminal network reports** — 821+ groups analyzed, good for international expansion if scope widens
 
 ### Geographic Expansion Sources
