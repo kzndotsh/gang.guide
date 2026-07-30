@@ -228,9 +228,11 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         # Symbols must be title case (allow ALL CAPS abbreviations ≤6 chars)
         for sym in org.get("symbols") or []:
             if sym.isupper() and len(sym) <= 6:
-                continue  # abbreviations like PIRU, DAMU, IV
-            if sym != sym.title():
-                errors.append(f"{f}: symbol not title case: '{sym}' → '{sym.title()}'")
+                continue  # pure abbreviations like PIRU, DAMU, IV
+            # Normalize: title-case but preserve all-caps words (acronyms like NGC, OVG, BG)
+            expected = " ".join(w if w.isupper() else w.capitalize() for w in sym.split())
+            if sym != expected:
+                errors.append(f"{f}: symbol not title case: '{sym}' → '{expected}'")
 
         colors = org.get("colors") or []
         for c in colors:
