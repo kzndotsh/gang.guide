@@ -240,6 +240,22 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         # Crip/Blood/Piru set before parent movement existed
         y = org.get("founded_year")
         name_lower = org.get("name", "").lower()
+
+        # Founded year precision consistency
+        y_prec = org.get("founded_year_precision", "")
+        if y and y_prec:
+            # 'decade' precision should use a round decade start (1940, 1950, etc.)
+            if y_prec == "decade" and y % 10 != 0:
+                warnings.append(f"{f}: decade precision but year {y} is not a round decade — use 'circa' instead")
+            # 'exact' on a round year ending in 0 for pre-2000 orgs is suspicious
+            if y_prec == "exact" and y % 10 == 0 and y < 2000:
+                warnings.append(f"{f}: exact precision on round year {y} (pre-2000) — likely 'circa' or 'decade'")
+            # 'exact' on year ending in 5 for pre-1960 orgs is suspicious
+            if y_prec == "exact" and y % 5 == 0 and y % 10 != 0 and y < 1960:
+                warnings.append(f"{f}: exact precision on round-5 year {y} (pre-1960) — likely 'circa'")
+            # 'circa' with round decade year pre-1990 should probably be 'decade'
+            if y_prec == "circa" and y % 10 == 0 and y < 1990:
+                warnings.append(f"{f}: circa precision on round decade year {y} (pre-1990) — consider 'decade'")
         lane_lower = (org.get("lane") or "").lower()
         if y and y < 1969 and "crip" in name_lower and "crip" in lane_lower:
             errors.append(f"{f}: Crip set founded {y} (Crips started 1969)")

@@ -19,6 +19,9 @@ This document describes how gang.guide maintains data quality. All checks are en
 | Source missing url/title | Error | Every source needs both fields |
 | `disbanded_year` < `founded_year` | Error | Temporal impossibility |
 | Invalid `status` value | Error | Must be `active`, `inactive`, or `unknown` |
+| `decade` precision with non-round year | Warning | `decade` implies only the decade is known — year should be round (1940, 1950) |
+| `exact` precision on round year pre-2000 | Warning | Round years like 1960, 1970 are rarely exact — likely `circa` or `decade` |
+| `circa` on round decade year pre-1990 | Warning | Ambiguous — probably `decade` precision |
 | Missing `lane` or `founded_year` | Warning | Expected but not blocking for stubs |
 | Description < 50 chars | Warning | Too thin to be useful |
 | HTML entities in description | Warning | Scrape junk (`&amp;`, `&#39;`) |
