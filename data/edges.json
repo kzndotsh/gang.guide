@@ -110,12 +110,6 @@
     "type": "rivalry"
   },
   {
-    "id": "cbf507297a6f",
-    "source": "org:aryan-brotherhood",
-    "target": "org:hells-angels-motorcycle-club",
-    "type": "rivalry"
-  },
-  {
     "id": "506ef343629d",
     "source": "org:aryan-brotherhood",
     "target": "org:nuestra-familia",
@@ -209,7 +203,8 @@
     "id": "78552ccb4590",
     "source": "org:crips",
     "target": "org:pirus",
-    "type": "rivalry"
+    "type": "rivalry",
+    "start_year": 1972
   },
   {
     "id": "d6996439234a",
@@ -1023,12 +1018,6 @@
     "type": "alliance"
   },
   {
-    "id": "7c0e3fea16b2",
-    "source": "org:aryan-brotherhood",
-    "target": "org:mexican-mafia",
-    "type": "rivalry"
-  },
-  {
     "id": "6c2d9b20d592",
     "source": "org:aryan-brotherhood",
     "target": "org:mexican-mafia",
@@ -1060,7 +1049,9 @@
     "target": "org:aryan-circle",
     "type": "rivalry",
     "evidence": "A federal judge sentenced ABT member John Oliver Manning to nearly 30 years in prison following his conviction on racketeering and firearms charges in connection with the shooting of a member of the rival Aryan Circle gang.",
-    "source_url": "https://www.adl.org/resources/profiles/aryan-brotherhood-texas"
+    "source_url": "https://www.adl.org/resources/profiles/aryan-brotherhood-texas",
+    "start_year": 1985,
+    "end_year": 1994
   },
   {
     "id": "fe5b69d32a50",
@@ -1078,7 +1069,8 @@
     "id": "98ec18cf1371",
     "source": "org:aryan-brotherhood-of-texas",
     "target": "org:aryan-circle",
-    "type": "alliance"
+    "type": "alliance",
+    "start_year": 1994
   },
   {
     "id": "7ee116b81f92",
@@ -1153,12 +1145,6 @@
     "source": "org:bandidos-motorcycle-club",
     "target": "org:hells-angels-motorcycle-club",
     "type": "rivalry"
-  },
-  {
-    "id": "743afa982437",
-    "source": "org:bandidos-motorcycle-club",
-    "target": "org:hells-angels-motorcycle-club",
-    "type": "alliance"
   },
   {
     "id": "0ed2e2907752",
@@ -1440,7 +1426,9 @@
     "id": "433937e0f994",
     "source": "org:crips",
     "target": "org:pirus",
-    "type": "alliance"
+    "type": "alliance",
+    "start_year": 1969,
+    "end_year": 1972
   },
   {
     "id": "b0e584f15da6",
@@ -1623,12 +1611,6 @@
     "type": "rivalry",
     "evidence": "Rivals include: all Compton Crips (C.C.Ridaz) especially the \" Acacia Blocc Compton Crips , Spook Town Compton Crips , Farm Dog Compton Crips \" ( A.T.F ). Palmer Blocc Compton Crips , Raymond Street Hustler Compton Crips , Santana Blocc Compton Crips , South Side Compton Crips",
     "source_url": "https://unitedgangs.com/145-neighborhood-piru/"
-  },
-  {
-    "id": "5584b9ec5fc3",
-    "source": "org:gambino-crime",
-    "target": "org:genovese-crime",
-    "type": "rivalry"
   },
   {
     "id": "c32723a1744e",
@@ -2025,12 +2007,6 @@
     "type": "alliance"
   },
   {
-    "id": "738ced0ccbb4",
-    "source": "org:mexican-mafia",
-    "target": "org:ms-13",
-    "type": "rivalry"
-  },
-  {
     "id": "e703c2000334",
     "source": "org:mexican-mafia",
     "target": "org:ms-13",
@@ -2113,12 +2089,6 @@
     "source": "org:mob-piru",
     "target": "org:santana-blocc-compton-crips",
     "type": "rivalry"
-  },
-  {
-    "id": "050371f29d9f",
-    "source": "org:hells-angels-motorcycle-club",
-    "target": "org:mongols-mc",
-    "type": "alliance"
   },
   {
     "id": "05da6a247e35",
@@ -3105,7 +3075,7 @@
     "source": "org:black-disciples-chicago",
     "target": "org:black-gangster-disciples-nation",
     "type": "rivalry",
-    "start_year": 1991,
+    "start_year": 1974,
     "evidence": "In the summer of 1991, GDs gunned down Mickey Bull. After that happened the Black Disciples got revenge on August 7, 1991, by gunning down multiple members of the GDs in Englewood...Between 1991 to 1994, the wars between GDs and BDs were increasing",
     "source_url": "https://chicagoganghistory.com/gang/gangster-disciples/"
   },
@@ -3115,7 +3085,7 @@
     "target": "org:black-gangster-disciples-nation",
     "type": "alliance",
     "start_year": 1969,
-    "end_year": 1981,
+    "end_year": 1974,
     "evidence": "In June of 1969, Larry Hoover had enough of the Stones and a meeting was called upon between Hoover and David Barksdale. This historic event took place St. Stephens Parish House located at 6455 S. Peoria Street in Englewood...The two groups established an alliance that had a title known as the 'Black Gangster Disciple nation.'",
     "source_url": "https://chicagoganghistory.com/gang/gangster-disciples/"
   },
@@ -5471,7 +5441,8 @@
     "target": "org:latin-kings",
     "type": "alliance",
     "evidence": "The Latin Kings were especially summoned for this historic meeting as Latin Kings, Black P Stones, EL Rukns and Vice Lords were the main front runners for making this alliance official.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-kings/"
+    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-kings/",
+    "start_year": 1978
   },
   {
     "id": "7a54c8efbff7",
@@ -10185,7 +10156,8 @@
     "target": "org:latin-kings",
     "type": "rivalry",
     "evidence": "CVLs spread to multiple housing areas on the northeast side and moved into these areas in 1988 alongside Latin Kings which made them become adversaries. CVL and Latin King wars were intense as much as both gangs' wars with Gangster Disciples.",
-    "source_url": "https://chicagoganghistory.com/gang/vice-lords/"
+    "source_url": "https://chicagoganghistory.com/gang/vice-lords/",
+    "end_year": 1978
   },
   {
     "id": "91c8e244789c",
@@ -17328,14 +17300,17 @@
     "target": "org:neighborhood-compton-crips",
     "type": "alliance",
     "evidence": "during the 1980s the Kelly Park Compton Crips, Neighborhood Compton Crips and the Atlantic Drive Compton Crips. All three gangs, was close allies and use to hang together at Kelly Park",
-    "source_url": "https://unitedgangs.com/kelly-park-compton-crips/"
+    "source_url": "https://unitedgangs.com/kelly-park-compton-crips/",
+    "start_year": 1970,
+    "end_year": 1984
   },
   {
     "source": "org:kelly-park-compton-crips",
     "target": "org:neighborhood-compton-crips",
     "type": "rivalry",
     "evidence": "by the mid 1990s, they was in a full fledge war with each other",
-    "source_url": "https://unitedgangs.com/kelly-park-compton-crips/"
+    "source_url": "https://unitedgangs.com/kelly-park-compton-crips/",
+    "start_year": 1984
   },
   {
     "source": "org:kelly-park-compton-crips",
@@ -19571,7 +19546,8 @@
     "target": "org:crips",
     "type": "rivalry",
     "evidence": "by 1971 they had associated themselves with the Crips. However at the end of 1972 they had a falling out with the Crips",
-    "source_url": "https://unitedgangs.com/bloods-2/pirus/"
+    "source_url": "https://unitedgangs.com/bloods-2/pirus/",
+    "start_year": 1972
   },
   {
     "source": "org:pirus",
