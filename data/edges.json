@@ -386,21 +386,6 @@
     "type": "rivalry"
   },
   {
-    "id": "6fb67ee000f8",
-    "source": "org:latin-eagles-chicago",
-    "target": "org:spanish-cobras-chicago",
-    "type": "rivalry",
-    "start_year": 1989,
-    "evidence": "After this beating death of the Latin Eagle war ensued between Latin Eagles and Spanish Cobras putting a dent in the ULO coalition.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/"
-  },
-  {
-    "id": "d2e19bb11bfb",
-    "source": "org:latin-eagles-chicago",
-    "target": "org:spanish-gangster-disciples-chicago",
-    "type": "rivalry"
-  },
-  {
     "id": "653efbb0df42",
     "source": "org:latin-kings",
     "target": "org:maniac-latin-disciples-chicago",
@@ -644,12 +629,6 @@
     "source": "org:spanish-cobras-chicago",
     "target": "org:spanish-gangster-disciples-chicago",
     "type": "rivalry"
-  },
-  {
-    "id": "7bcaeec2f2ba",
-    "source": "org:fruit-town-piru",
-    "target": "org:tree-top-piru",
-    "type": "alliance"
   },
   {
     "id": "e67fa97f800f",
@@ -1153,12 +1132,6 @@
     "type": "rivalry"
   },
   {
-    "id": "2cc18bd2ef3d",
-    "source": "org:bandidos-motorcycle-club",
-    "target": "org:outlaws-motorcycle-club",
-    "type": "alliance"
-  },
-  {
     "id": "4e86711bd857",
     "source": "org:bandidos-motorcycle-club",
     "target": "org:vagos-motorcycle-club",
@@ -1186,12 +1159,6 @@
     "id": "b3fa23fa388e",
     "source": "org:asian-boyz",
     "target": "org:black-dragons",
-    "type": "alliance"
-  },
-  {
-    "id": "a1d3ef2822c5",
-    "source": "org:black-dragons",
-    "target": "org:wah-ching",
     "type": "alliance"
   },
   {
@@ -1285,12 +1252,6 @@
     "source": "org:bonanno-crime",
     "target": "org:east-harlem-purple",
     "type": "alliance"
-  },
-  {
-    "id": "3fd334a3b594",
-    "source": "org:bonanno-crime",
-    "target": "org:gambino-crime",
-    "type": "rivalry"
   },
   {
     "id": "8a6bbc1490b2",
@@ -1391,12 +1352,6 @@
     "type": "rivalry"
   },
   {
-    "id": "cf75c194afb9",
-    "source": "org:comando-vermelho-united-states",
-    "target": "org:primeiro-comando-da-capital-united-states",
-    "type": "alliance"
-  },
-  {
     "id": "71e7db7666d8",
     "source": "org:cossacks-motorcycle-club",
     "target": "org:diablos-motorcycle-club",
@@ -1445,12 +1400,6 @@
     "source_url": "https://unitedgangs.com/2017/11/06/culver-city-boys/"
   },
   {
-    "id": "6768628eca40",
-    "source": "org:decavalcante-crime",
-    "target": "org:gambino-crime",
-    "type": "rivalry"
-  },
-  {
     "id": "c3ff61741406",
     "source": "org:decavalcante-crime",
     "target": "org:gambino-crime",
@@ -1473,12 +1422,6 @@
     "source": "org:diablos-motorcycle-club",
     "target": "org:satanas",
     "type": "alliance"
-  },
-  {
-    "id": "fd59d8b9723a",
-    "source": "org:bonanno-crime",
-    "target": "org:east-harlem-purple",
-    "type": "rivalry"
   },
   {
     "id": "54358dc099ff",
@@ -1525,12 +1468,6 @@
     "type": "rivalry",
     "evidence": "The East Coast Crips are currently engaged in a racial war with a Mexican-American street gang known as the Florencia 13.",
     "source_url": "https://unitedgangs.com/east-coast-crips/"
-  },
-  {
-    "id": "6cf9f206064c",
-    "source": "org:east-coast-crips-los-angeles",
-    "target": "org:florencia-13",
-    "type": "alliance"
   },
   {
     "id": "eb0a5bf33fdc",
@@ -1685,12 +1622,6 @@
     "type": "alliance"
   },
   {
-    "id": "ff8584e95dba",
-    "source": "org:bounty-hunter-watts-bloods",
-    "target": "org:grape-watts-crips",
-    "type": "alliance"
-  },
-  {
     "id": "391af9cd5f11",
     "source": "org:east-coast-crips-los-angeles",
     "target": "org:grape-watts-crips",
@@ -1723,12 +1654,6 @@
     "source": "org:chosen-few-motorcycle-club",
     "target": "org:hells-angels-motorcycle-club",
     "type": "alliance"
-  },
-  {
-    "id": "bf9fa9b65794",
-    "source": "org:diablos-motorcycle-club",
-    "target": "org:hells-angels-motorcycle-club",
-    "type": "rivalry"
   },
   {
     "id": "1a1a79c6d5d4",
@@ -1776,13 +1701,8 @@
     "id": "21d8ad599221",
     "source": "org:hells-angels-motorcycle-club",
     "target": "org:outlaws-motorcycle-club",
-    "type": "rivalry"
-  },
-  {
-    "id": "fa33e8487429",
-    "source": "org:hells-angels-motorcycle-club",
-    "target": "org:outlaws-motorcycle-club",
-    "type": "alliance"
+    "type": "rivalry",
+    "start_year": 1974
   },
   {
     "id": "713769e37153",
@@ -2005,12 +1925,6 @@
     "type": "alliance"
   },
   {
-    "id": "1d7d8d18fc13",
-    "source": "org:barrio-azteca",
-    "target": "org:mexican-mafia",
-    "type": "rivalry"
-  },
-  {
     "id": "e3259053f747",
     "source": "org:bloods",
     "target": "org:mexican-mafia",
@@ -2065,22 +1979,10 @@
     "type": "rivalry"
   },
   {
-    "id": "05da6a247e35",
-    "source": "org:mexican-mafia",
-    "target": "org:mongols-mc",
-    "type": "rivalry"
-  },
-  {
     "id": "a6d4c2ece514",
     "source": "org:mongols-mc",
     "target": "org:outlaws-motorcycle-club",
     "type": "rivalry"
-  },
-  {
-    "id": "08d1c2a2c322",
-    "source": "org:mongols-mc",
-    "target": "org:outlaws-motorcycle-club",
-    "type": "alliance"
   },
   {
     "id": "5f26df41f1bf",
@@ -2183,12 +2085,6 @@
     "source": "org:aryan-nations",
     "target": "org:outlaws-motorcycle-club",
     "type": "alliance"
-  },
-  {
-    "id": "ac8bee9fc7ad",
-    "source": "org:chosen-few-motorcycle-club",
-    "target": "org:outlaws-motorcycle-club",
-    "type": "rivalry"
   },
   {
     "id": "357e2fa177f5",
@@ -2377,12 +2273,6 @@
     "type": "alliance"
   },
   {
-    "id": "053ae6a9b77d",
-    "source": "org:hells-angels-motorcycle-club",
-    "target": "org:sons-of-silence",
-    "type": "rivalry"
-  },
-  {
     "id": "5723b2df7001",
     "source": "org:iron-horsemen-motorcycle-club",
     "target": "org:sons-of-silence",
@@ -2555,12 +2445,6 @@
     "type": "rivalry"
   },
   {
-    "id": "a3b4575c534d",
-    "source": "org:18th-street-gang",
-    "target": "org:venice",
-    "type": "alliance"
-  },
-  {
     "id": "6744e0978fe5",
     "source": "org:mexican-mafia",
     "target": "org:venice",
@@ -2573,18 +2457,6 @@
     "type": "rivalry",
     "evidence": "Venice 13 exchanged blows with both African-American gangs (specifically the Venice Shoreline Crips)",
     "source_url": "https://unitedgangs.com/venice-13/"
-  },
-  {
-    "id": "073e462dfe95",
-    "source": "org:venice",
-    "target": "org:venice-shoreline-crips",
-    "type": "alliance"
-  },
-  {
-    "id": "8f1bbbf91e0f",
-    "source": "org:18th-street-gang",
-    "target": "org:vineland-boys",
-    "type": "alliance"
   },
   {
     "id": "45cad12629b1",
@@ -3206,12 +3078,6 @@
     "type": "rivalry"
   },
   {
-    "id": "9bfc201ff288",
-    "source": "org:crips",
-    "target": "org:tiny-rascal-gang",
-    "type": "alliance"
-  },
-  {
     "id": "132ccf26c3df",
     "source": "org:black-guerrilla",
     "target": "org:dc-blacks",
@@ -3292,12 +3158,6 @@
     "type": "alliance",
     "evidence": "Other allies include: Cedar Block Piru , Tree Top Piru",
     "source_url": "https://unitedgangs.com/elm-street-piru/"
-  },
-  {
-    "id": "1642cdee38af",
-    "source": "org:born-to-kill-gang",
-    "target": "org:flying-dragons",
-    "type": "rivalry"
   },
   {
     "id": "e77289cd9978",
@@ -3408,12 +3268,6 @@
     "type": "alliance"
   },
   {
-    "id": "6512f61ef322",
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:latin-eagles-chicago",
-    "type": "rivalry"
-  },
-  {
     "id": "ea81a347b0b7",
     "source": "org:black-gangster-disciples-nation",
     "target": "org:latin-eagles-chicago",
@@ -3473,12 +3327,6 @@
     "id": "6e85572e08d4",
     "source": "org:mexican-mafia",
     "target": "org:tiny-rascal-gang",
-    "type": "rivalry"
-  },
-  {
-    "id": "491132c3ce2b",
-    "source": "org:almighty-vice-lord-nation",
-    "target": "org:mickey-cobras-chicago",
     "type": "rivalry"
   },
   {
@@ -3608,12 +3456,6 @@
     "type": "rivalry"
   },
   {
-    "id": "ae8f49966911",
-    "source": "org:outlaws-motorcycle-club",
-    "target": "org:pagans-motorcycle-club",
-    "type": "alliance"
-  },
-  {
     "id": "a5f6a1124980",
     "source": "org:aryan-brotherhood",
     "target": "org:ovs",
@@ -3710,12 +3552,6 @@
     "type": "rivalry"
   },
   {
-    "id": "0c75cf853530",
-    "source": "org:rudaj-organization",
-    "target": "org:the-commission",
-    "type": "alliance"
-  },
-  {
     "id": "114780ec435f",
     "source": "org:hells-angels-motorcycle-club",
     "target": "org:the-company",
@@ -3750,18 +3586,6 @@
     "source": "org:roach-guards",
     "target": "org:shirt-tails",
     "type": "alliance"
-  },
-  {
-    "id": "78854bef6f2b",
-    "source": "org:almighty-gaylords-nation",
-    "target": "org:simon-city-royals-chicago",
-    "type": "alliance"
-  },
-  {
-    "id": "c24993f791d3",
-    "source": "org:pagans-motorcycle-club",
-    "target": "org:sons-of-satan-motorcycle-club",
-    "type": "rivalry"
   },
   {
     "id": "1436d58be37d",
@@ -4190,14 +4014,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
   },
   {
-    "id": "e8c57ca40c75",
-    "source": "org:ambrose",
-    "target": "org:satan-disciples-chicago",
-    "type": "rivalry",
-    "evidence": "According to court documents in the case of the People vs. Rodriguez, Joyce Rodriguez was convicted of driving a car used in a shooting at 16th and Fairfield in the North Lawndale neighborhood against the Satan Disciples. It was said in the court documents that Louie Limas, who was the President of Ambrose at the time fired a pistol at Satan Disciples",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
-  },
-  {
     "id": "707fb78d2673",
     "source": "org:ambrose",
     "target": "org:two-two-boys",
@@ -4360,14 +4176,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
   },
   {
-    "id": "d6e26ce1c442",
-    "source": "org:ambrose",
-    "target": "org:spanish-gangster-disciples-chicago",
-    "type": "rivalry",
-    "evidence": "Ambrose set up a serious section that viciously battled Latin King, Latin Counts, Spanish Vice Lords, Vice Lords, Latin Dragons and Spanish Gangster Disciples at times.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
-  },
-  {
     "id": "2a86ee9f7166",
     "source": "org:ambrose",
     "target": "org:insane-unknowns",
@@ -4391,25 +4199,6 @@
     "start_year": 1970,
     "end_year": 1995,
     "evidence": "The Bishops became very close allies with the Latin Counts. Bishops and Counts had close family ties and perhaps the Counts wanted the Bishops to join but the Bishops wanted to go their own way but would vow to fight alongside the Counts in the wars against Ambrose and the Satan Disciples.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-bishops/"
-  },
-  {
-    "id": "75f68ac5240c",
-    "source": "org:bishops",
-    "target": "org:latin-counts-chicago",
-    "type": "rivalry",
-    "start_year": 1996,
-    "evidence": "In January of 1996 Bishops and Counts got into an argument at a party... Later on that night a Latin Count named 'Rhino' gunned down a Bishop named 'Chuco' to avenge the death of the Counts' girlfriend. This started a vicious war between Bishops and Counts that would live on until present day.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-bishops/"
-  },
-  {
-    "id": "8e0634c86b2e",
-    "source": "org:bishops",
-    "target": "org:latin-kings",
-    "type": "rivalry",
-    "start_year": 1971,
-    "end_year": 1992,
-    "evidence": "In the year 1971, war started with the Latin Kings when one of the Latin King top leaders Raul 'Rayo' Gonzalez shot and killed one of the Uncles of the Bishops after a dance party at a school.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-bishops/"
   },
   {
@@ -4701,7 +4490,7 @@
     "source": "org:almighty-gaylords-nation",
     "target": "org:almighty-insane-popes-nation",
     "type": "alliance",
-    "start_year": 1960,
+    "start_year": 1975,
     "end_year": 1973,
     "evidence": "In 1960 a Gaylord named 'Baba' hung out with a group of boys and they opened a club house at Diversey and California. The boys attended Carl Schurz High School and Baba helped this group of youths start the Popes.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-north-side-insane-popes/"
@@ -4788,24 +4577,6 @@
     "type": "rivalry",
     "evidence": "The Gaylords then made it to the North Center neighborhood at Berteua and Leavitt, Column and Campbell and Berteau and Milwaukee which is what set off a fire cracker of a gang war between Gaylords and Insane Deuces.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-gaylords/"
-  },
-  {
-    "id": "0c714e236c90",
-    "source": "org:almighty-gaylords-nation",
-    "target": "org:almighty-vice-lord-nation",
-    "type": "rivalry",
-    "evidence": "Gay Lords were fighting with Vice Lords, Egyptian Cobras and Roman Saints because they were attending Harrison High School as they commuted from the Near West Side neighborhood from the Maxwell Street Market area.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-gaylords/"
-  },
-  {
-    "id": "ff25bb789f81",
-    "source": "org:harrison-gents",
-    "target": "org:latin-kings",
-    "type": "alliance",
-    "start_year": 1969,
-    "end_year": 1979,
-    "evidence": "Right away the Gents and Kings were met by the Gaylords, Uptown Rebels and Kenmore Boys from the neighborhood in an all-out war because these groups were angy white groups that were opposed to Hispanic and African American increased migration to Uptown...therefore Latin Kings and Harrison Gents became very close allies.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-harrison-gents/"
   },
   {
     "id": "7ae948196963",
@@ -5180,16 +4951,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-north-side-insane-popes/"
   },
   {
-    "id": "4e491ddd3654",
-    "source": "org:almighty-insane-popes-nation",
-    "target": "org:cnotes",
-    "type": "alliance",
-    "start_year": 1971,
-    "end_year": 1980,
-    "evidence": "Popes had no beef with the other gangs in UFO especially C-Notes who they had a friendship with.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-north-side-insane-popes/"
-  },
-  {
     "id": "43b447eb68a8",
     "source": "org:krazy-get-down-boys",
     "target": "org:satan-disciples-chicago",
@@ -5228,14 +4989,6 @@
     "type": "rivalry",
     "evidence": "The KGBs would also fight a vicious war with Saints and Latin Kings.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-krazy-get-down-boys/"
-  },
-  {
-    "id": "c98fd4a8c23a",
-    "source": "org:latin-angels",
-    "target": "org:latin-kings",
-    "type": "rivalry",
-    "evidence": "After July 20, 1993 the Latin Angels now became a gang banging crew that now gang banged on the Latin Kings as their arch enemy",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-angels/"
   },
   {
     "id": "bf098ea9b234",
@@ -6338,14 +6091,6 @@
     "source_url": "https://chicagoganghistory.com/gang/chi-west/"
   },
   {
-    "id": "8ca66b3580b6",
-    "source": "org:chiwest",
-    "target": "org:latin-kings",
-    "type": "alliance",
-    "evidence": "Chi-West became even less visible by 1989 as many thought the organization had gone extinct but Chi-West was still active and even drew up a reluctant alliance with the Damen and Crystal Latin Kings that brought Chi-West into the People alliance in the early 1990s.",
-    "source_url": "https://chicagoganghistory.com/gang/chi-west/"
-  },
-  {
     "id": "1e5c89af672a",
     "source": "org:chiwest",
     "target": "org:maniac-latin-disciples-chicago",
@@ -6970,16 +6715,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
   },
   {
-    "id": "99b796215649",
-    "source": "org:almighty-gaylords-nation",
-    "target": "org:cnotes",
-    "type": "rivalry",
-    "start_year": 1982,
-    "end_year": 1983,
-    "evidence": "After almost 20 years of a strong alliance between C-Notes and Gaylords was now down the drain as these two gangs were now infringing on each other's turf which caused an all out war.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-c-notes/"
-  },
-  {
     "id": "80d39337d37e",
     "source": "org:cnotes",
     "target": "org:latin-kings",
@@ -7112,14 +6847,6 @@
     "start_year": 1981,
     "end_year": 1994,
     "evidence": "Pee Wee Cullerton Deuces now identified with the People alliance on the streets as they now had a tight relationship with Latin Kings",
-    "source_url": "https://chicagoganghistory.com/gang/insane-cullerton-deuces/"
-  },
-  {
-    "id": "86d488c24bfa",
-    "source": "org:cullerton-deuces",
-    "target": "org:latin-kings",
-    "type": "rivalry",
-    "evidence": "After the beating death of the Latin King, the Deuces added more injury to the Latin Kings",
     "source_url": "https://chicagoganghistory.com/gang/insane-cullerton-deuces/"
   },
   {
@@ -8514,16 +8241,6 @@
     "source_url": "https://chicagoganghistory.com/gang/la-familia-stones/"
   },
   {
-    "id": "5feb5fd871ab",
-    "source": "org:la-raza-chicago",
-    "target": "org:two-six",
-    "type": "rivalry",
-    "start_year": 1998,
-    "end_year": 1999,
-    "evidence": "La Raza remained close allies with Two Six until a territorial dispute happened in 1998 over 42 nd and Mozart which was in Two Six territory and La Raza was taking from their drug business, La Raza did not want to give up the territory so they both went to war for about 1 year",
-    "source_url": "https://chicagoganghistory.com/gang/la-raza/"
-  },
-  {
     "id": "98b4f098a99f",
     "source": "org:latin-dragons",
     "target": "org:latin-kings",
@@ -8558,7 +8275,8 @@
     "type": "rivalry",
     "start_year": 1992,
     "evidence": "In the year 1992 Latin Kings began to push the Latin Dragons around and start trouble which the Latin Dragons had no tolerance for this, and a war erupted.",
-    "source_url": "https://chicagoganghistory.com/gang/latin-dragons/"
+    "source_url": "https://chicagoganghistory.com/gang/latin-dragons/",
+    "end_year": 1983
   },
   {
     "id": "ada58b54d198",
@@ -8682,14 +8400,6 @@
     "target": "org:latin-souls",
     "type": "rivalry",
     "evidence": "the Latin Souls would end up at war with Two Sixs, City Knights and Satan Disciples by the turn of the 21st century.",
-    "source_url": "https://chicagoganghistory.com/gang/latin-souls/"
-  },
-  {
-    "id": "aabb402ef0d1",
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:latin-souls",
-    "type": "rivalry",
-    "evidence": "the area became increasingly African American and the Gangster Disciples started to take over.",
     "source_url": "https://chicagoganghistory.com/gang/latin-souls/"
   },
   {
@@ -8974,16 +8684,6 @@
     "source_url": "https://chicagoganghistory.com/gang/milwaukee-kings/"
   },
   {
-    "id": "b3a2c274cc59",
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:milwaukee-kings",
-    "type": "rivalry",
-    "start_year": 1994,
-    "end_year": 1995,
-    "evidence": "In the meantime in Cicero things got worse when Milwaukee Kings were now also at war with the Gangster Disciples.",
-    "source_url": "https://chicagoganghistory.com/gang/milwaukee-kings/"
-  },
-  {
     "id": "9ae216e87287",
     "source": "org:milwaukee-kings",
     "target": "org:two-six",
@@ -9147,7 +8847,7 @@
     "source": "org:almighty-gaylords-nation",
     "target": "org:playboys-ventures-pulaski-park-rice-boys",
     "type": "alliance",
-    "start_year": 1971,
+    "start_year": 1973,
     "end_year": 1975,
     "evidence": "In West Humboldt Park Playboys and Gaylords came together at North Ave and Kedvale to create the P.V.G or Playboys Ventures and Gaylords.",
     "source_url": "https://chicagoganghistory.com/gang/playboys-ventures-pulaski-park-rice-boys/"
@@ -9168,7 +8868,7 @@
     "target": "org:playboys-ventures-pulaski-park-rice-boys",
     "type": "rivalry",
     "start_year": 1958,
-    "end_year": 1969,
+    "end_year": 1973,
     "evidence": "At school they quickly got to see that the Italian gangs were running the high school, primarily the Dominos, Lazy Gents, C-Notes and Gaylords. These Italian gangs bullied and harassed the Naturals and their friends because they would get attention from girls at school or would gather a following around them.",
     "source_url": "https://chicagoganghistory.com/gang/playboys-ventures-pulaski-park-rice-boys/"
   },
@@ -9461,15 +9161,6 @@
     "type": "rivalry",
     "start_year": 1974,
     "evidence": "The Popes were quick not to tolerate this and fought the BGDs almost daily to the point that Chicago police needed to sweep the hallways with police dogs. These fights with the BGDs would start a permanent war with the Gangster Disciples for several decades to come.",
-    "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
-  },
-  {
-    "id": "8c5c1c07874d",
-    "source": "org:almighty-insane-popes-nation",
-    "target": "org:almighty-vice-lord-nation",
-    "type": "alliance",
-    "start_year": 1981,
-    "evidence": "The Counts did not have the authority to directly invite the Popes into People but they were able to bring the Popes to meet the Count's 'cousin' gang and People sponsor the Conservative Vice Lords. The Popes discovered the Vice Lords were cool guys and had no issue joining the People alliance after meeting the Vice Lords.",
     "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
   },
   {
@@ -9942,14 +9633,6 @@
     "target": "org:black-p-stone-nation",
     "type": "rivalry",
     "evidence": "the west side Vice Lords began having it out with EL Rukns from the south side attending the same theater",
-    "source_url": "https://chicagoganghistory.com/gang/vice-lords/"
-  },
-  {
-    "id": "6d4b4433438b",
-    "source": "org:almighty-vice-lord-nation",
-    "target": "org:black-p-stones",
-    "type": "rivalry",
-    "evidence": "Eventually CVLs and Black P Stones would go to war over territory now that both gangs were big in certain south side areas.",
     "source_url": "https://chicagoganghistory.com/gang/vice-lords/"
   },
   {
@@ -11877,13 +11560,6 @@
     "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
   },
   {
-    "source": "org:wicker-park-warlords",
-    "target": "org:latin-kings",
-    "type": "rivalry",
-    "evidence": "the Kings wanted hoods in allies hoods, so they sent other Kings to cause trouble than say 'they weren't from here'. They took the YBO-GBO hood on Armitage, declared war on the Insane 2 Nation for Hamlin Park, fought Unknowns for Bucktown, we were next.",
-    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
-  },
-  {
     "source": "org:bayside-west-zombies",
     "target": "org:corona-dukes",
     "type": "alliance",
@@ -13472,7 +13148,8 @@
     "target": "org:main-mafia-crips-msmc-los-angeles",
     "type": "rivalry",
     "evidence": "The 83 Hoover Criminals Gang main rivals are the Rollin 90s West Coast Crips and the Gangster Crips (98/97/87/) as well as the 84 Main Street Mafia Crips",
-    "source_url": "https://unitedgangs.com/83-hoover-criminals-gang/"
+    "source_url": "https://unitedgangs.com/83-hoover-criminals-gang/",
+    "start_year": 2009
   },
   {
     "source": "org:hoover-criminals",
@@ -16928,7 +16605,8 @@
     "target": "org:main-mafia-crips-msmc-los-angeles",
     "type": "alliance",
     "evidence": "The Hoover Criminals maintained alliances primarily with other Hoover-branded subsets. Outside of these internal affiliations, their most significant historical alliance was with the Main Street Mafia Crips. This relationship ended in 2009 following a violent confrontation at a social gathering hosted by Main Street members.",
-    "source_url": "https://unitedgangs.com/hoover-criminals-gang/"
+    "source_url": "https://unitedgangs.com/hoover-criminals-gang/",
+    "end_year": 2009
   },
   {
     "source": "org:hoover-criminals",
@@ -17090,13 +16768,6 @@
     "type": "rivalry",
     "evidence": "The Indiana Dukes mainly feud with other Mexican-American street gangs near their varrio such as the Clika Los Primos, White Fence, Varrio Nuevo Estrada, Opal Street Locos, King Kobra Rifa, Little Valley Rifa and the Laguna Park Vikings",
     "source_url": "https://unitedgangs.com/indiana-dukes-13/"
-  },
-  {
-    "source": "org:kelly-park-compton-crips",
-    "target": "org:atlantic-drive-compton-crips",
-    "type": "alliance",
-    "evidence": "during the 1980s the Kelly Park Compton Crips, Neighborhood Compton Crips and the Atlantic Drive Compton Crips. All three gangs, was close allies and use to hang together at Kelly Park",
-    "source_url": "https://unitedgangs.com/kelly-park-compton-crips/"
   },
   {
     "source": "org:kelly-park-compton-crips",
@@ -22121,18 +21792,6 @@
     "type": "rivalry",
     "evidence": "The rivalry between Volksfront/Hammerskin Nation and the Vinlanders remains high. An Internet exchange at the racist online forum Stormfront indicated that a prominent Vinlander even cut off the ear of a Volksfront member in St. Louis.",
     "source_url": "https://www.adl.org/resources/profile/volksfront"
-  },
-  {
-    "source": "org:mongols-mc",
-    "target": "org:bandidos-motorcycle-club",
-    "type": "alliance",
-    "sources": [
-      {
-        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
-        "title": "FBI/NDIC National Gang Threat Assessment 2009"
-      }
-    ],
-    "evidence": "today Mongols club is allied with Bandidos, Outlaws, Sons of Silence, and Pagan's OMGs against HAMC"
   },
   {
     "source": "org:mongols-mc",
