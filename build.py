@@ -49,8 +49,10 @@ def build_layout(org, lane_meta, slot):
     else:
         display_year = year
 
-    # Add fractional offset based on slot so same-year nodes don't stack exactly
-    display_year = display_year + (slot % 5) * 0.4
+    # Add small fractional offset based on slot position within the column
+    # so same-year nodes in the same column don't stack exactly.
+    # Keep this tiny (≤0.4yr) since column jitter in KonvaMap handles broader spread.
+    display_year = display_year + (slot % 5) * 0.1
 
     return {
         "lane": lane_id,

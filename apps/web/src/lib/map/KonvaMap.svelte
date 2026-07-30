@@ -159,7 +159,7 @@
     // Jitter wraps per row so nodes in the same row share the same X offset.
     // This prevents unbounded rightward drift in dense lanes (e.g. 74 nodes → slot 73 * 8 = 584px off-canvas).
     const col = Math.floor(slot / rowCount);
-    const jitter = col * 8;
+    const jitter = col * 4;
     return baseX + jitter;
   }
 
