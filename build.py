@@ -43,15 +43,20 @@ def build_layout(org, lane_meta, slot):
             display_year = 1965 + (h % 40)  # 1965-2005
     elif precision in ("decade", "circa") or year % 10 == 0:
         # Round/imprecise year: jitter forward only to avoid placing node before founding year.
-        # Cap spread based on recency — recent orgs (post-1990) get at most ±2yr;
-        # historical orgs get up to ±8yr since the imprecision is genuine.
+        # "circa" = approximately ±1-2yr. "decade" = up to +9yr (could be anywhere in decade).
+        # Round years (ends in 0) treated like circa.
         h = hash(org["id"]) & 0xFF
-        if year >= 1990:
-            display_year = year + (h % 3)   # 0-2 years forward
-        elif year >= 1960:
-            display_year = year + (h % 5)   # 0-4 years forward
+        if precision == "decade":
+            # Decade precision: 0–4yr spread (column jitter adds ~0–1yr on top)
+            display_year = year + (h % 5)   # 0–4yr
         else:
-            display_year = year + (h % 9)   # 0-8 years forward
+            # circa or round year — tight spread
+            if year >= 1980:
+                display_year = year + (h % 2)   # 0–1yr — very recent, keep tight
+            elif year >= 1950:
+                display_year = year + (h % 3)   # 0–2yr
+            else:
+                display_year = year + (h % 4)   # 0–3yr — historical
     else:
         display_year = year
 

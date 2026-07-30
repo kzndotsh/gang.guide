@@ -4,7 +4,7 @@
   "type": "street_gang",
   "lane": "california-bloods-compton",
   "founded_year": 1972,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "description": "Bartender Pirus was a short-lived predominately African-American street gang located on the eastside of Compton during the 1970s.",
   "nation_affiliation": "org:bloods",
   "sources": [

@@ -4,7 +4,7 @@
   "type": "street_gang",
   "lane": "california-bloods-other",
   "founded_year": 1973,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "description": "The Delmann Heights Bloods (DHB) are a multi-ethnic street gang located on the West Side in the Delmann Heights community of San Bernardino, California. According to the FBI and DOJ, they play a major role in narcotics distribution in the San Bernardino area.",
   "sources": [
     {

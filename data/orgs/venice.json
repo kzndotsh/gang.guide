@@ -8,27 +8,27 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Venice_13",
-      "title": "Venice 13 \u2014 Wikipedia"
+      "title": "Venice 13 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Crips",
-      "title": "Crips \u2014 Wikipedia"
+      "title": "Crips — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Culver_City_Boys",
-      "title": "Culver City Boys \u2014 Wikipedia"
+      "title": "Culver City Boys — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Santa_Monica_13",
-      "title": "Santa Monica 13 \u2014 Wikipedia"
+      "title": "Santa Monica 13 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Venice_Shoreline_Crips",
-      "title": "Venice Shoreline Crips \u2014 Wikipedia"
+      "title": "Venice Shoreline Crips — Wikipedia"
     }
   ],
   "founded_year": 1968,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "colors": [
     "blue"
   ],
