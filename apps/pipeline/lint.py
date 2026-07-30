@@ -471,7 +471,9 @@ def check_nation_consistency(orgs: dict[str, dict], edges: list[dict]):
         f = org["_file"]
         if org.get("type") in ("nation", "alliance") and org.get("nation_affiliation"):
             na = org["nation_affiliation"]
-            warnings.append(f"{f}: {org.get('type')} type org has nation_affiliation={na} — nations don't belong to nations")
+            warnings.append(
+                f"{f}: {org.get('type')} type org has nation_affiliation={na} — nations don't belong to nations"
+            )
 
 
 def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
@@ -483,17 +485,33 @@ def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
     - orgs in Crip/Blood lanes without nation_affiliation are missing data
     """
     GANG_NATIONS = {
-        "org:crips", "org:bloods", "org:pirus", "org:folk-nation", "org:people-nation",
-        "org:surenos", "org:nortenos", "org:united-blood-nation", "org:suren-os-united-states",
+        "org:crips",
+        "org:bloods",
+        "org:pirus",
+        "org:folk-nation",
+        "org:people-nation",
+        "org:surenos",
+        "org:nortenos",
+        "org:united-blood-nation",
+        "org:suren-os-united-states",
     }
     BLOOD_LANES = {
-        "blood-nation", "california-bloods-compton", "california-bloods-carson",
-        "california-bloods-la-south-bay", "california-bloods-other",
+        "blood-nation",
+        "california-bloods-compton",
+        "california-bloods-carson",
+        "california-bloods-la-south-bay",
+        "california-bloods-other",
     }
     CRIP_LANES = {
-        "crip-nation", "california-crips-hoover", "california-crips-neighborhood",
-        "california-crips-east-coast", "california-crips-gangster", "california-crips-hustler",
-        "california-crips-south-la", "california-crips-long-beach", "california-crips-inglewood",
+        "crip-nation",
+        "california-crips-hoover",
+        "california-crips-neighborhood",
+        "california-crips-east-coast",
+        "california-crips-gangster",
+        "california-crips-hustler",
+        "california-crips-south-la",
+        "california-crips-long-beach",
+        "california-crips-inglewood",
         "california-crips-other",
     }
 
@@ -518,8 +536,7 @@ def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
             na = src_org.get("nation_affiliation")
             if na == tgt:
                 warnings.append(
-                    f"edge[{i}]: {src_name} --member_of--> {tgt} is redundant — "
-                    f"nation_affiliation already set to {tgt}"
+                    f"edge[{i}]: {src_name} --member_of--> {tgt} is redundant — nation_affiliation already set to {tgt}"
                 )
 
     # Orgs in Blood/Crip lanes without nation_affiliation
@@ -529,9 +546,13 @@ def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
         na = org.get("nation_affiliation")
         if org.get("type") == "street_gang" and not na:
             if lane in BLOOD_LANES:
-                warnings.append(f"{f}: Blood-lane org missing nation_affiliation (should be org:bloods or specific Blood nation)")
+                warnings.append(
+                    f"{f}: Blood-lane org missing nation_affiliation (should be org:bloods or specific Blood nation)"
+                )
             elif lane in CRIP_LANES:
-                warnings.append(f"{f}: Crip-lane org missing nation_affiliation (should be org:crips or specific Crip nation)")
+                warnings.append(
+                    f"{f}: Crip-lane org missing nation_affiliation (should be org:crips or specific Crip nation)"
+                )
 
 
 def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
@@ -686,24 +707,33 @@ def main():
     check_spinoff_direction(orgs, edges)
     check_member_of_usage(orgs, edges)
 
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Lint gang.guide data files")
+    parser.add_argument("--all", action="store_true", help="Show all warnings and info without truncation")
+    args, _ = parser.parse_known_args()
+
+    max_info = 999999 if args.all else 20
+    max_warn = 999999 if args.all else 30
+
     # Print results
     if info:
         print(f"\n{'=' * 60}")
         print(f"INFO ({len(info)})")
         print(f"{'=' * 60}")
-        for msg in info[:20]:
+        for msg in info[:max_info]:
             print(f"  ℹ {msg}")
-        if len(info) > 20:
-            print(f"  ... and {len(info) - 20} more")
+        if len(info) > max_info:
+            print(f"  ... and {len(info) - max_info} more")
 
     if warnings:
         print(f"\n{'=' * 60}")
         print(f"WARNINGS ({len(warnings)})")
         print(f"{'=' * 60}")
-        for msg in warnings[:30]:
+        for msg in warnings[:max_warn]:
             print(f"  ⚠ {msg}")
-        if len(warnings) > 30:
-            print(f"  ... and {len(warnings) - 30} more")
+        if len(warnings) > max_warn:
+            print(f"  ... and {len(warnings) - max_warn} more")
 
     if errors:
         print(f"\n{'=' * 60}")
