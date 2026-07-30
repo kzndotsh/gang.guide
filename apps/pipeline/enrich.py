@@ -222,6 +222,8 @@ def score_org(org: dict, edge_count: int) -> tuple[float, list[str]]:
     # Missing fields
     if not org.get("founded_year"):
         issues.append("no_year")
+    elif org.get("founded_year_precision") in ("decade", "estimate"):
+        issues.append("imprecise_year")  # has a year but could be more specific
     if not (org.get("colors") or []):
         issues.append("no_colors")
     if not (org.get("aliases") or []):
@@ -271,6 +273,10 @@ def build_prompt(org: dict, issues: list[str], edge_count: int, raw_context: str
         missing.append("description (2-3 factual sentences)")
     if "no_year" in issues:
         missing.append("founded_year + precision")
+    if "imprecise_year" in issues:
+        missing.append(
+            f"founded_year precision upgrade (currently {org.get('founded_year')} with '{org.get('founded_year_precision')}' precision — find the exact or circa year)"
+        )
     if "no_colors" in issues:
         missing.append("colors")
     if "no_aliases" in issues:
@@ -584,20 +590,30 @@ def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
         ):
             changes["description"] = new_desc
 
-    # Founded year: only fill if missing, validate range
-    if "no_year" in issues and enrichment.get("founded_year"):
+    # Founded year: only fill if missing or imprecise, validate range
+    if ("no_year" in issues or "imprecise_year" in issues) and enrichment.get("founded_year"):
         year = enrichment["founded_year"]
         if isinstance(year, (int, float)) and 1850 <= year <= 2025:
-            # Check against org type constraints
             name_lower = org.get("name", "").lower()
             lane = org.get("lane", "")
-            if "crip" in name_lower and "crip" in lane and year < 1969:
-                pass  # reject pre-Crip dates
-            elif "piru" in name_lower and year < 1969:
-                pass  # reject pre-Piru dates
-            elif "blood" in name_lower and "blood" in lane and year < 1969:
-                pass  # reject pre-Blood dates
+            # Reject impossible dates for known movements
+            if (
+                ("crip" in name_lower and "crip" in lane and year < 1969)
+                or ("piru" in name_lower and year < 1969)
+                or ("blood" in name_lower and "blood" in lane and year < 1969)
+            ):
+                pass
+            elif "imprecise_year" in issues:
+                # Only upgrade if LLM gives same decade and better precision
+                existing_year = org.get("founded_year", 0)
+                existing_decade = (existing_year // 10) * 10
+                new_decade = (int(year) // 10) * 10
+                new_prec = enrichment.get("founded_year_precision", "estimate")
+                if new_decade == existing_decade and new_prec in ("exact", "circa"):
+                    changes["founded_year"] = int(year)
+                    changes["founded_year_precision"] = new_prec
             else:
+                # Missing year: accept if reasonable
                 changes["founded_year"] = int(year)
                 if enrichment.get("founded_year_precision"):
                     changes["founded_year_precision"] = enrichment["founded_year_precision"]
@@ -666,6 +682,12 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Score and rank only, don't call LLM")
     parser.add_argument("--org", type=str, default=None, help="Enrich a specific org by ID")
     parser.add_argument("--min-edges", type=int, default=0, help="Only enrich orgs with >= N edges")
+    parser.add_argument(
+        "--lane", type=str, default=None, help="Only enrich orgs in a specific lane (e.g. california-crips-gangster)"
+    )
+    parser.add_argument(
+        "--issues", type=str, default=None, help="Only enrich orgs with a specific issue (e.g. imprecise_year, no_year)"
+    )
     parser.add_argument("--model", type=str, default=None, help="Override model")
     parser.add_argument("--no-tools", action="store_true", help="Disable agentic tool use (no web search)")
     args = parser.parse_args()
@@ -686,10 +708,14 @@ def main():
     for org_id, org in orgs.items():
         if args.org and org_id != args.org:
             continue
+        if args.lane and org.get("lane") != args.lane:
+            continue
         ec = edge_counts.get(org_id, 0)
         if ec < args.min_edges:
             continue
         priority, issues = score_org(org, ec)
+        if args.issues and args.issues not in issues:
+            continue
         if priority > 0:
             scored.append((priority, org, issues, ec))
 
