@@ -61,7 +61,7 @@
   }: Props = $props();
 
   const LANE_HEIGHT = 160;
-  const LANE_ROW_OFFSET = 18;
+  const LANE_ROW_OFFSET = 22;
   const BASE_ROW_COUNT = 5;
   const CHART_PAD = 24;
 
