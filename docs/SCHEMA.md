@@ -60,10 +60,27 @@
 |------|-----------|-------------|
 | `alliance` | Undirected | Two orgs that cooperate/support each other |
 | `rivalry` | Undirected | Two orgs in active conflict |
-| `member_of` | Directed | Org belongs to a larger coalition (not a nation) |
+| `member_of` | Directed | Source org belongs to a larger coalition or controlling org — **not** for gang-nation affiliation (use `nation_affiliation` field instead) |
 | `spin_off` | Directed | Source org was formed from target org |
 | `parent` | Directed | Source org is the parent/umbrella of target |
 | `nation` | Auto-generated | Org affiliated with a nation (derived from `nation_affiliation` at build time) |
+
+### `nation_affiliation` vs `member_of`
+
+These are the two most confused relationships:
+
+**`nation_affiliation`** (field on the org, not an edge):
+- Used when a set/clique directly belongs to a gang nation
+- Examples: Rollin 60s Crips → `nation_affiliation: org:crips`, Mob Piru → `nation_affiliation: org:bloods`
+- Build.py auto-generates a `nation` edge from this at build time
+- **Use this for**: any Blood/Crip/Sureño/Folk/People set claiming that nation
+
+**`member_of`** (edge type):
+- Used for structural relationships one level above gang-nation — coalitions, controlling orgs, umbrellas
+- Examples: Latin Kings `member_of` People Nation (coalition of coalitions), Florencia 13 `member_of` Mexican Mafia (prison gang controls street gang)
+- **Use this for**: when org A is structurally subordinate to org B but org B isn't a gang nation (it's a prison gang, a regional alliance, etc.)
+
+**Rule of thumb**: If the target is `org:crips`, `org:bloods`, `org:folk-nation`, `org:people-nation`, `org:surenos`, etc. — use `nation_affiliation` field, not a `member_of` edge.
 
 ### Edge ID
 12-character SHA-256 hash of `source:target:type`. Deterministic — same input = same ID.
