@@ -10970,12 +10970,6 @@
   },
   {
     "source": "org:black-p-stone-nation",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "represent one of Michigan's longest-standing Blood-affiliated criminal street gangs"
-  },
-  {
-    "source": "org:black-p-stone-nation",
     "target": "org:people-nation",
     "type": "member_of",
     "evidence": "BPSN continues to operate as a People Nation-aligned Blood set"
@@ -11066,22 +11060,9 @@
   },
   {
     "source": "org:rollin-60s-neighborhood-crips",
-    "target": "org:crips",
-    "type": "member_of",
-    "evidence": "The Rollin 60s Crips in Detroit are documented as a predominantly African American, local chapter of the nationwide Crip alliance"
-  },
-  {
-    "source": "org:rollin-60s-neighborhood-crips",
     "target": "org:gangster-crips",
     "type": "rivalry",
     "evidence": "The organization became the subject of a major federal investigation in the late 2010s, centered on an extended violent conflict with the 7 Mile Playboy Gangster Crips, a feud that resulted in multiple deaths, including bystanders."
-  },
-  {
-    "source": "org:42-hustle-boyz",
-    "target": "org:crips",
-    "type": "member_of",
-    "evidence": "They are locally identified as an east-side Crip-aligned set",
-    "source_url": "https://detroitstreetgangs.com/42-hustle-boyz-detroit-mi/"
   },
   {
     "source": "org:42-hustle-boyz",
@@ -11089,13 +11070,6 @@
     "type": "rivalry",
     "evidence": "The gang gained broader notoriety during the 2010s following a series of violent conflicts with the 55 Seven Mile Bloods (55 SMB)",
     "source_url": "https://detroitstreetgangs.com/42-hustle-boyz-detroit-mi/"
-  },
-  {
-    "source": "org:55-seven-mile-bloods",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "The 55 Seven Mile Bloods —widely recognized as 'RedZone Bloods' —are documented as predominantly African American, and are one of Detroit's most entrenched and influential Blood-affiliated criminal street gangs",
-    "source_url": "https://detroitstreetgangs.com/55-seven-mile-bloods-detroit-mi/"
   },
   {
     "source": "org:5point-nation-crips",
@@ -11141,13 +11115,6 @@
     "target": "org:gangster-crips",
     "type": "member_of",
     "evidence": "frequently described as part of a Gangster Crips (3X / Movin' Gang)–influenced tradition",
-    "source_url": "https://detroitstreetgangs.com/6-mile-greenguyz-sgc-shotgun-crips/"
-  },
-  {
-    "source": "org:6-mile-greenguyz",
-    "target": "org:crips",
-    "type": "member_of",
-    "evidence": "The 6 Mile GreenGuyz, also known as ShotGun Crips (SGC), are documented as a predominantly African American, Crip-affiliated street gang",
     "source_url": "https://detroitstreetgangs.com/6-mile-greenguyz-sgc-shotgun-crips/"
   },
   {
@@ -11271,24 +11238,10 @@
   },
   {
     "source": "org:headbanger-bloods",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "Bloods (Detroit-born lineage)",
-    "source_url": "https://detroitstreetgangs.com/headbanger-bloods-detroit-mi/"
-  },
-  {
-    "source": "org:headbanger-bloods",
     "target": "org:black-gangster-disciples-nation",
     "type": "rivalry",
     "evidence": "documented conflicts with Crip- and Gangster Disciples–affiliated rivals",
     "source_url": "https://detroitstreetgangs.com/headbanger-bloods-detroit-mi/"
-  },
-  {
-    "source": "org:dwbi",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "DWBI ('Don't Worry Bout It') is a citywide street gang alliance comprising multiple independent cliques that broadly identify under Detroit's local Blood umbrella",
-    "source_url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/"
   },
   {
     "source": "org:dwbi",
@@ -11436,13 +11389,6 @@
     "type": "rivalry",
     "evidence": "Paybacc Crips vs. Rollin 40s (7-Tel RFC) — Publicly reported mainly as intermittent street disputes, locals cite street fights and verbal online banter.",
     "source_url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/"
-  },
-  {
-    "source": "org:w7m-evergreen-telegraph-gangster-crips",
-    "target": "org:crips",
-    "type": "member_of",
-    "evidence": "the group has been identified as a 'subset of the Crips' active within the Five Points neighborhood of Detroit's 48219 ZIP code",
-    "source_url": "https://detroitstreetgangs.com/w7m-evergreen-telegraph-gangster-crips-w7m-scoregang-crips/"
   },
   {
     "source": "org:w7m-evergreen-telegraph-gangster-crips",
@@ -16625,13 +16571,6 @@
     "source_url": "https://unitedgangs.com/exotic-family-city-crips/"
   },
   {
-    "source": "org:mob-piru",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "by 2Pac choosing to affiliate himself with the bloods –specifically, the Compton Mob Piru",
-    "source_url": "https://unitedgangs.com/2017/06/19/faizon-love-says-2pac-would-still-be-alive-if-he-had-stayed-friends-with-snoop-dogg-video/"
-  },
-  {
     "source": "org:family-swan-bloods",
     "target": "org:mad-swan-bloods",
     "type": "alliance",
@@ -17847,13 +17786,6 @@
     "source_url": "https://unitedgangs.com/holly-hood-piru/"
   },
   {
-    "source": "org:lueders-park-pirus",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "Honcho, a Compton rapper from Lueders Park Piru (Bloods)",
-    "source_url": "https://unitedgangs.com/2014/07/06/honcho-fly-motherfuka-music-video/"
-  },
-  {
     "source": "org:denver-lane-bloods",
     "target": "org:crips",
     "type": "rivalry",
@@ -18027,13 +17959,6 @@
     "type": "rivalry",
     "evidence": "The Indiana Dukes mainly feud with other Mexican-American street gangs near their varrio such as the Clika Los Primos, White Fence, Varrio Nuevo Estrada, Opal Street Locos, King Kobra Rifa, Little Valley Rifa and the Laguna Park Vikings",
     "source_url": "https://unitedgangs.com/indiana-dukes-13/"
-  },
-  {
-    "source": "org:van-ness-gangsters",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "Joe Moses a South Los Angeles rapper from Van Ness Gangster Brims (bloods)",
-    "source_url": "https://unitedgangs.com/2014/08/23/joe-moses-big-homies-music-video/"
   },
   {
     "source": "org:kelly-park-compton-crips",
@@ -18223,13 +18148,6 @@
     "type": "rivalry",
     "evidence": "They also feud with the West Side Crips and the Linda Vista Crips",
     "source_url": "https://unitedgangs.com/krook-city-bloods-san-diego/"
-  },
-  {
-    "source": "org:denver-lane-bloods",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "During the 1970s, several independent street gangs—including the Denver Lanes, Brims, Bounty Hunters, Van Ness Gangsters, and Chain Gang—became increasingly opposed to the expansion and dominance of the Crips. These groups eventually aligned to form what became known as the Bloods alliance.",
-    "source_url": "https://unitedgangs.com/la-denver-lane-bloods/"
   },
   {
     "source": "org:denver-lane-bloods",
@@ -21662,13 +21580,6 @@
   },
   {
     "source": "org:sons-of-samoa",
-    "target": "org:crips",
-    "type": "member_of",
-    "evidence": "Their structure was influenced by black street gangs, and they also aligned themselves with Crips.",
-    "source_url": "https://unitedgangs.com/sons-of-samoa/"
-  },
-  {
-    "source": "org:sons-of-samoa",
     "target": "org:asian-boyz",
     "type": "alliance",
     "evidence": "Other allies include the USO (United Samoan Organization) and the Asian Boyz Crips",
@@ -22268,13 +22179,6 @@
     "type": "rivalry",
     "evidence": "Mexican Rivals: 18th Street Gang",
     "source_url": "https://unitedgangs.com/twilight-zone-compton-crips/"
-  },
-  {
-    "source": "org:deep-valley-bloods",
-    "target": "org:bloods",
-    "type": "member_of",
-    "evidence": "Convicted murderers Seau and Tua are both members of the Bloods gang, according to prosecutor Jon Oliphant.",
-    "source_url": "https://unitedgangs.com/2016/02/25/two-deep-valley-bloods-get-more-than-75-years-in-state-prison/"
   },
   {
     "source": "org:united-blood-nation",
