@@ -33,6 +33,10 @@
     {
       "url": "https://en.wikipedia.org/wiki/Norte%C3%B1os",
       "title": "Norte%C3%B1os — Wikipedia"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "metro": "Fresno",
@@ -43,5 +47,6 @@
   "membership_estimate": 6000,
   "symbols": [
     "Bulldog"
-  ]
+  ],
+  "military_service": "National Guard, Marines"
 }

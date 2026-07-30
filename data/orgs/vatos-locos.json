@@ -1,0 +1,20 @@
+{
+  "id": "org:vatos-locos",
+  "name": "Vatos Locos",
+  "type": "street_gang",
+  "lane": "california-latino-other",
+  "description": "Vatos Locos is a Hispanic street gang active across multiple US states. Members have served in the Army per FBI NGTA 2011 reporting. The gang appears in multiple state lists including California, Texas, and Arizona.",
+  "status": "active",
+  "military_service": "Army",
+  "sources": [
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
+    }
+  ],
+  "aliases": [
+    "VL"
+  ],
+  "colors": [],
+  "founded_year": null
+}

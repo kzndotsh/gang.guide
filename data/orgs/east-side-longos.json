@@ -1,0 +1,25 @@
+{
+  "id": "org:east-side-longos",
+  "name": "East Side Longos",
+  "type": "street_gang",
+  "lane": "california-latino-other",
+  "description": "East Side Longos is a Sureño street gang based in Long Beach, California. Members have served in the Army and Special Forces per FBI NGTA 2011 reporting.",
+  "status": "active",
+  "military_service": "Army, Special Forces",
+  "metro": "Long Beach",
+  "nation_affiliation": "org:suren-os-united-states",
+  "sources": [
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
+    }
+  ],
+  "aliases": [
+    "ESL",
+    "Longos"
+  ],
+  "colors": [
+    "blue"
+  ],
+  "founded_year": null
+}

@@ -54,6 +54,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/spanish-gangster-disciples",
       "title": "Spanish Gangster Disciples - Chicago Gang History"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "colors": [
@@ -68,5 +72,6 @@
     "Pitchfork",
     "Six-Point Star"
   ],
-  "membership_estimate": 40000
+  "membership_estimate": 40000,
+  "military_service": "Army, Marines, Navy, National Guard"
 }

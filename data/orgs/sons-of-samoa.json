@@ -20,6 +20,10 @@
     {
       "url": "https://en.wikipedia.org/wiki/Tongan_Crip_Gang",
       "title": "Tongan Crip Gang — Wikipedia"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "metro": "Long Beach",
@@ -29,5 +33,6 @@
   ],
   "founded_year_precision": "circa",
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "military_service": "Army"
 }

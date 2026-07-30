@@ -30,6 +30,10 @@
     {
       "url": "https://en.wikipedia.org/wiki/Los_Zetas",
       "title": "Los Zetas — Wikipedia"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "description": "The Texas Syndicate is a criminal prison gang that originated in Folsom State Prison, California in the early 1970s. Predominantly Hispanic, it was formed to protect Texas-born inmates from other prison gangs.",
@@ -44,5 +48,6 @@
     "Longhorn Head",
     "ESE TE",
     "20 19"
-  ]
+  ],
+  "military_service": "Army, Marines"
 }

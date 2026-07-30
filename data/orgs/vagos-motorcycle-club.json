@@ -39,6 +39,10 @@
     {
       "url": "https://www.streetgangs.com/news/042897-bullet-riddled-door",
       "title": "042897 Bullet Riddled Door — StreetGangs"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "metro": "United States",
@@ -49,5 +53,6 @@
   "colors": [
     "green"
   ],
-  "status": "active"
+  "status": "active",
+  "military_service": "Army, Marines, Navy"
 }

@@ -1,0 +1,23 @@
+{
+  "id": "org:moorish-national-movement",
+  "name": "Moorish National Movement",
+  "type": "separatist_group",
+  "lane": "white-supremacist-prison",
+  "description": "The Moorish National Movement (also called Moorish Nation or Moorish Science Temple of America) is a Black separatist/sovereign citizen movement whose members sometimes form prison gangs. Members have served in the US Army per FBI NGTA 2011 reporting.",
+  "status": "active",
+  "military_service": "Army",
+  "sources": [
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
+    }
+  ],
+  "aliases": [
+    "Moorish Nation",
+    "Moorish Science Temple",
+    "MSTA"
+  ],
+  "colors": [],
+  "founded_year": 1913,
+  "founded_year_precision": "exact"
+}

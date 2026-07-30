@@ -44,6 +44,10 @@
     {
       "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
       "title": "FBI/NDIC National Gang Threat Assessment 2009"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "symbols": [
@@ -52,5 +56,6 @@
     "Lion",
     "King Head"
   ],
-  "membership_estimate": 27500
+  "membership_estimate": 27500,
+  "military_service": "Army, Army Reserves, Marines, Navy"
 }

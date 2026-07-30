@@ -33,11 +33,16 @@
     {
       "url": "https://en.wikipedia.org/wiki/Black_Dragons_%28gang%29",
       "title": "Black Dragons %28gang%29 — Wikipedia"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "metro": "San Francisco",
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "military_service": "Army"
 }

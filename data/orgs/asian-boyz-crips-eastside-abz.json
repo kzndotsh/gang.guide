@@ -9,6 +9,10 @@
     {
       "url": "https://www.streetgangs.com/crips/longbeach/esabz",
       "title": "Asian Boyz Crips, Eastside (ABZ) — StreetGangs"
+    },
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "founded_year": 1989,
@@ -19,5 +23,6 @@
   ],
   "nation_affiliation": "org:crips",
   "status": "active",
-  "aliases": []
+  "aliases": [],
+  "military_service": "Army"
 }

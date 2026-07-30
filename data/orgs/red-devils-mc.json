@@ -1,0 +1,18 @@
+{
+  "id": "org:red-devils-mc",
+  "name": "Red Devils MC",
+  "type": "outlaw_motorcycle_gang",
+  "lane": "outlaw-motorcycle-gangs",
+  "description": "The Red Devils MC is a one-percenter outlaw motorcycle gang operating across multiple US states. Members have served in the Army and Coast Guard, per FBI reporting.",
+  "status": "active",
+  "military_service": "Army, Coast Guard",
+  "sources": [
+    {
+      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
+      "title": "FBI NGTA 2011 — Emerging Trends"
+    }
+  ],
+  "aliases": [],
+  "colors": [],
+  "founded_year": null
+}
