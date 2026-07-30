@@ -17,7 +17,7 @@
   "colors": [
     "red"
   ],
-  "nation_affiliation": null,
+  "nation_affiliation": "org:bloods",
   "status": "active",
   "sources": [
     {

@@ -10,7 +10,7 @@
   "type": "prison_gang",
   "lane": "southeast-southwest",
   "founded_year": 1980,
-  "founded_year_precision": "circa",
+  "founded_year_precision": "decade",
   "description": "Mexican American prison gang founded by Chino Avitia in Texas during the early 1980s. It operates in Texas prisons and communities, particularly Laredo, and is active in Mexico with a large contingent in Nuevo Laredo. The gang has over 1,000 members and is involved in trafficking cocaine and marijuana from Mexico into the United States.",
   "sources": [
     {

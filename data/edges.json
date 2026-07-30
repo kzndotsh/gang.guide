@@ -4212,16 +4212,6 @@
     "source_url": "https://chicagoganghistory.com/gang/akrohs-flip-city-kings/"
   },
   {
-    "id": "bbc12b4172ca",
-    "source": "org:akrhos-flip-city-kings",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1984,
-    "end_year": 2000,
-    "evidence": "People Nation — c. 1984",
-    "source_url": "https://chicagoganghistory.com/gang/akrohs-flip-city-kings/"
-  },
-  {
     "id": "19688569ed7e",
     "source": "org:akrhos-flip-city-kings",
     "target": "org:simon-city-royals-chicago",
@@ -4311,16 +4301,6 @@
     "start_year": 1976,
     "end_year": 2000,
     "evidence": "Two Two Boys and Ambrose became very close in the midst of all this which turned them into 'cousins' on the streets.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
-  },
-  {
-    "id": "886a1c875548",
-    "source": "org:ambrose",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "Both Ambrose and Satan Disciples would become part of the Folks alliance in the late 70s/early 80s",
     "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
   },
   {
@@ -4519,15 +4499,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-bishops/"
   },
   {
-    "id": "be680d089fea",
-    "source": "org:bishops",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "evidence": "In April, 1978 the People Nation alliance was created in the prison system and since the Latin Counts and Bishops were so closely united the Bishops were able to be accepted into the People Nation right away in 1978.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-bishops/"
-  },
-  {
     "id": "8e0634c86b2e",
     "source": "org:bishops",
     "target": "org:latin-kings",
@@ -4648,16 +4619,6 @@
     "type": "alliance",
     "evidence": "This alliance drew the Black P Stones very close to the Latin Kings and even helped relations with Vice Lords, Mickey Cobras and Four Corner Hustlers.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-black-p-stones/"
-  },
-  {
-    "id": "77da45edc316",
-    "source": "org:brazers",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1984,
-    "end_year": 2000,
-    "evidence": "In the year 1984, the Brazers officially joined the Folk alliance alongside Simon City Royals and Black Gangster Disciples.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-brazers/"
   },
   {
     "id": "223df511d0be",
@@ -4933,16 +4894,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-gaylords/"
   },
   {
-    "id": "ff48d88fbb53",
-    "source": "org:harrison-gents",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "In the year 1981, the Harrison Gents were now Folks on the streets after it was now spread to the streets that year.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-harrison-gents/"
-  },
-  {
     "id": "ff25bb789f81",
     "source": "org:harrison-gents",
     "target": "org:latin-kings",
@@ -5093,16 +5044,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-harrison-gents/"
   },
   {
-    "id": "146efa421424",
-    "source": "org:imperial-gangsters-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "The Imperial Gangsters would also follow the Folks alliance from its beginnings and by 1981 members were claiming it in the streets.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-imperial-gangsters/"
-  },
-  {
     "id": "7347f548ec27",
     "source": "org:imperial-gangsters-chicago",
     "target": "org:spanish-cobras-chicago",
@@ -5248,16 +5189,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-racine-boys/"
   },
   {
-    "id": "04a136531f16",
-    "source": "org:latin-counts-chicago",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "The Counts were invited to join the Nation of the Peoples alliance it formed in 1981.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-insane-latin-counts/"
-  },
-  {
     "id": "f3f0eb2797c0",
     "source": "org:latin-counts-chicago",
     "target": "org:latin-kings",
@@ -5295,16 +5226,6 @@
     "end_year": 1983,
     "evidence": "The Counts out here hung out with the Latin Dragons during these years.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-insane-latin-counts/"
-  },
-  {
-    "id": "f61fe1dd7311",
-    "source": "org:almighty-insane-popes-nation",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 2000,
-    "evidence": "Since Popes had the 'Royal Pope' alliance the Popes were allowed to join the Folk Nation in 1978.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-north-side-insane-popes/"
   },
   {
     "id": "8c58057f9a7c",
@@ -5365,16 +5286,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-north-side-insane-popes/"
   },
   {
-    "id": "92dfa58eaca6",
-    "source": "org:krazy-get-down-boys",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1992,
-    "end_year": 2000,
-    "evidence": "Hitman G took over the KGBs and arranged for the KGBs to go from being a neutral party crew/future Ambrose to having their own full fledged gang that would be allied with Ambrose and the Folk alliance.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-krazy-get-down-boys/"
-  },
-  {
     "id": "43b447eb68a8",
     "source": "org:krazy-get-down-boys",
     "target": "org:satan-disciples-chicago",
@@ -5433,16 +5344,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-latin-angels/"
   },
   {
-    "id": "f91bb789b4c5",
-    "source": "org:latin-angels",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1993,
-    "end_year": 2000,
-    "evidence": "the Latin Kings took the LAs under their wing and brought them into the People Nation in the same year of 1993",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-angels/"
-  },
-  {
     "id": "7dfced8ea1df",
     "source": "org:latin-angels",
     "target": "org:two-six",
@@ -5483,16 +5384,6 @@
     "source_url": "https://chicagoganghistory.com/gang/puerto-rican-stones/"
   },
   {
-    "id": "8f12dfbdcf8a",
-    "source": "org:latin-eagles-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 2000,
-    "evidence": "In April of the year 1978, the Latin Eagles were invited into the Folk alliance after the alliance was formed in the prison system during a hunger strike.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-eagles/"
-  },
-  {
     "id": "2606e3ec2a47",
     "source": "org:insane-campbell-boys",
     "target": "org:latin-eagles-chicago",
@@ -5517,16 +5408,6 @@
     "end_year": 1994,
     "evidence": "The Latin Eagles also settled here in 1985 and became a force to be reckoned with too",
     "source_url": "https://chicagoganghistory.com/gang/stoned-freaks/"
-  },
-  {
-    "id": "da6f2e935a12",
-    "source": "org:latin-kings",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "In 1981, Jeff Fort of the EL Rukns called a meeting at 'The Fort' for the EL Rukns and top leaders of gangs allied to the EL Rukns or at least allied with other allies to attend. The Latin Kings were especially summoned for this historic meeting as Latin Kings, Black P Stones, EL Rukns and Vice Lords were the main front runners for making this alliance official. The alliance would be known as 'People'",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-kings/"
   },
   {
     "id": "7fddcd843233",
@@ -5634,16 +5515,6 @@
     "type": "rivalry",
     "evidence": "Playboys were one of the biggest rivals of Leavitt and Schiller Latin Kings",
     "source_url": "https://chicagoganghistory.com/gang/almighty-latin-kings/"
-  },
-  {
-    "id": "e10c5740da93",
-    "source": "org:latin-pachucos",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1985,
-    "end_year": 2000,
-    "evidence": "The Latin Pachucos accepted the offer and were now allies with the Insane Unknowns and were officially in the People Nation in 1985.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-pachucos/"
   },
   {
     "id": "18f76a00a081",
@@ -5802,16 +5673,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-latin-stones/"
   },
   {
-    "id": "40e03d58c076",
-    "source": "org:latin-stones",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1995,
-    "end_year": 2000,
-    "evidence": "Instead of there being two different \"Latin Stones\" groups in South Chicago they became one group under the colors black and red and officially joined the People alliance.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-stones/"
-  },
-  {
     "id": "ccd90018c1be",
     "source": "org:latin-kings",
     "target": "org:latin-stones",
@@ -5861,16 +5722,6 @@
     "start_year": 1991,
     "end_year": 1995,
     "evidence": "This led to an eventual war that broke out in 1991 between the two groups.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-los-bebe-stones/"
-  },
-  {
-    "id": "3605af0253fe",
-    "source": "org:los-be-be-stones",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1989,
-    "end_year": 2000,
-    "evidence": "In the year 1989, The Los Be Bes officially joined the People alliance under the wing of Latin Kings.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-los-bebe-stones/"
   },
   {
@@ -5969,16 +5820,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-noble-knights/"
   },
   {
-    "id": "24ce3ed7f049",
-    "source": "org:noble-knights",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 2000,
-    "evidence": "In the year 1978, incarcerated Noble Knights were accepted into the People alliance especially due to their alliance with the Latin Kings. The Noble Knights were the first suburban gang to join the People alliance in history.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-noble-knights/"
-  },
-  {
     "id": "987b9b68f55d",
     "source": "org:noble-knights",
     "target": "org:ridgeway-lords",
@@ -6036,16 +5877,6 @@
     "end_year": 1990,
     "evidence": "Since the very start, Players were ultra tight with Noble Knights and Arch Dukes. These three groups became the main protectors of Cicero in the late 70s and 80s.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-twelfth-street-players/"
-  },
-  {
-    "id": "2e30d229e111",
-    "source": "org:party-players",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1990,
-    "end_year": 2000,
-    "evidence": "Party Players also drew closer to the Latin Kings and both Saints and Party Players joined the People alliance in 1990.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-party-players/"
   },
   {
     "id": "7ba86ce232e4",
@@ -6114,16 +5945,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-popes/"
   },
   {
-    "id": "ab627536a8f9",
-    "source": "org:almighty-popes",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1994,
-    "end_year": 2000,
-    "evidence": "The Almighty Popes were immediately aligned tightly with Latin Kings, Twelfth Street Players and Latin Counts and this is how they had immediate recognition into the People alliance.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-popes/"
-  },
-  {
     "id": "4933b49240a9",
     "source": "org:almighty-insane-popes-nation",
     "target": "org:almighty-popes",
@@ -6182,16 +6003,6 @@
     "end_year": 1998,
     "evidence": "The Almighty Popes colonized this subdivision and went at it with RLs and SDs.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-popes/"
-  },
-  {
-    "id": "120d55bfe226",
-    "source": "org:almighty-saints",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1990,
-    "end_year": 1994,
-    "evidence": "By the year 1990, the Saints were hanging out with Latin Kings in the streets and the Saints Joined the People alliance on the streets in 1990.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-saints/"
   },
   {
     "id": "2efb201213df",
@@ -6323,16 +6134,6 @@
     "type": "rivalry",
     "evidence": "A racial clash soon ensued, and the Puerto Rican youths of East Humboldt Park formed the \"Noble Knights\" street gang to defend themselves against Simon City and other mostly white clubs.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-simon-city-royals/"
-  },
-  {
-    "id": "ac9dabe57ffc",
-    "source": "org:twelfth-street-players",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "Noble Knights, Twelfth Street Players and Park Boys all joined the People alliance in 1981",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-twelfth-street-players/"
   },
   {
     "id": "2712b9613875",
@@ -6498,16 +6299,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-twelfth-street-players/"
   },
   {
-    "id": "2249eeff2311",
-    "source": "org:arch-dukes",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 1993,
-    "evidence": "In the year 1978 the Arch Dukes joined the People alliance alongside Noble Knights, Twelfth Street Players and Latin Kings for protection of their incarcerated members.",
-    "source_url": "https://chicagoganghistory.com/gang/arch-dukes/"
-  },
-  {
     "id": "088d5171f148",
     "source": "org:arch-dukes",
     "target": "org:latin-kings",
@@ -6602,14 +6393,6 @@
     "type": "rivalry",
     "evidence": "May 7, 1971 article about the Black Souls at Madison and Damen in the Near West Side neighborhood getting ready to use an antique tripod machine gun on Vice Lords and Black P Stones.",
     "source_url": "https://chicagoganghistory.com/gang/black-souls/"
-  },
-  {
-    "id": "b27670990b32",
-    "source": "org:chiwest",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "evidence": "Chi-West became even less visible by 1989 as many thought the organization had gone extinct but Chi-West was still active and even drew up a reluctant alliance with the Damen and Crystal Latin Kings that brought Chi-West into the People alliance in the early 1990s.",
-    "source_url": "https://chicagoganghistory.com/gang/chi-west/"
   },
   {
     "id": "470c5c156f44",
@@ -6710,16 +6493,6 @@
     "source_url": "https://chicagoganghistory.com/gang/four-corner-hustlers/"
   },
   {
-    "id": "81df8187cbfe",
-    "source": "org:four-corner-hustlers-chicago",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "When it was time for the People alliance to form in prison and on the streets the Four Corner Hustlers not only joined the People alliance they made their stance in the Vice Lords more known by changing the name to '4 Vice Lords.'",
-    "source_url": "https://chicagoganghistory.com/gang/four-corner-hustlers/"
-  },
-  {
     "id": "13825a6bb471",
     "source": "org:black-p-stone-nation",
     "target": "org:four-corner-hustlers-chicago",
@@ -6803,16 +6576,6 @@
     "type": "rivalry",
     "start_year": 1994,
     "evidence": "In the year 1994, an eternal war would begin between all La Razas and Party People citywide and everywhere else that would never resolve up to present.",
-    "source_url": "https://chicagoganghistory.com/gang/gangster-party-people/"
-  },
-  {
-    "id": "74009d8f324d",
-    "source": "org:party-people",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "Party People then joined the Folk alliance under Two Six from Little Village and this is how Party People developed the moniker \"Gangster.\"",
     "source_url": "https://chicagoganghistory.com/gang/gangster-party-people/"
   },
   {
@@ -7005,16 +6768,6 @@
     "start_year": 1970,
     "end_year": 1977,
     "evidence": "When it came to gangbanging the original Two Six mainly fought Latin Kings and Ridgeway Lords",
-    "source_url": "https://chicagoganghistory.com/gang/gangster-two-six/"
-  },
-  {
-    "id": "5f01bb3b80a7",
-    "source": "org:two-six",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "Two Six would be Latin Folks and they were pivotal in helping put Latin Folks together",
     "source_url": "https://chicagoganghistory.com/gang/gangster-two-six/"
   },
   {
@@ -7214,16 +6967,6 @@
     "source_url": "https://chicagoganghistory.com/gang/ghetto-brothers-organization-yates-boys-organization/"
   },
   {
-    "id": "cb47cb61f1e8",
-    "source": "org:ghetto-brothers-organizationyates-boys-organization",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 1990,
-    "evidence": "In the year 1981 GBO/YBO joined the People Nation alliance",
-    "source_url": "https://chicagoganghistory.com/gang/ghetto-brothers-organization-yates-boys-organization/"
-  },
-  {
     "id": "c61350efc16c",
     "source": "org:ghetto-brothers-organizationyates-boys-organization",
     "target": "org:latin-brothers",
@@ -7350,16 +7093,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
   },
   {
-    "id": "6a384f32c2cf",
-    "source": "org:ashland-vikings",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 2000,
-    "evidence": "In 1977, the Vikings were reorganizing very well and even revitalized their connections with the B.G.D.'s. In that year Larry Hoover officially recognized the Ashland Vikings as allies with the B.G.D.'s and in April, 1978 the Ashland Vikings were among the first groups invited to join the Folk Nation Alliance due to their history with the B.G.D.'s.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
-  },
-  {
     "id": "66e368cbdf46",
     "source": "org:ashland-vikings",
     "target": "org:spanish-cobras-chicago",
@@ -7403,16 +7136,6 @@
     "start_year": 1982,
     "end_year": 1983,
     "evidence": "After almost 20 years of a strong alliance between C-Notes and Gaylords was now down the drain as these two gangs were now infringing on each other's turf which caused an all out war.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-c-notes/"
-  },
-  {
-    "id": "ab2d4c932793",
-    "source": "org:cnotes",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1995,
-    "end_year": 2000,
-    "evidence": "In the year 1995, the C-Notes finally got into the Folk Nation alliance",
     "source_url": "https://chicagoganghistory.com/gang/insane-c-notes/"
   },
   {
@@ -7485,16 +7208,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-c-notes/"
   },
   {
-    "id": "c78e71b7e6ce",
-    "source": "org:insane-campbell-boys",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1989,
-    "end_year": 2000,
-    "evidence": "They had cooperation from the Insane Dragons to sponsor this new group into the Insane family and turn them Folks right away",
-    "source_url": "https://chicagoganghistory.com/gang/insane-campbell-boys/"
-  },
-  {
     "id": "d30f14f548f3",
     "source": "org:insane-campbell-boys",
     "target": "org:insane-dragons",
@@ -7540,16 +7253,6 @@
     "start_year": 1967,
     "end_year": 1986,
     "evidence": "The Cullerton Deuces were basically born out of the older Morgan Deuces street gang that started in the year 1959",
-    "source_url": "https://chicagoganghistory.com/gang/insane-cullerton-deuces/"
-  },
-  {
-    "id": "d4255867035e",
-    "source": "org:cullerton-deuces",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1980,
-    "end_year": 1994,
-    "evidence": "Older Morgan Deuces that were in the Cullerton Deuces got the Deuces chartered into the People alliance in the prison system in the year 1980",
     "source_url": "https://chicagoganghistory.com/gang/insane-cullerton-deuces/"
   },
   {
@@ -7644,16 +7347,6 @@
     "target": "org:morgan-deuces",
     "type": "spin_off",
     "evidence": "a kid from the Pilsen or Little Village area named \"Little Rich\" moved to the Lathrop Projects and Little Rich was a member of the Morgan Deuces. The North Side Deuces were not a spin off of the Morgan Deuces, Barons or Black Hawks, they were a club that paid tribute to the clubs that taught them all about gang life.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-deuces/"
-  },
-  {
-    "id": "8706adc5e685",
-    "source": "org:insane-deuces",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 1992,
-    "evidence": "The Insane Deuces were with the People alliance as of 1981.",
     "source_url": "https://chicagoganghistory.com/gang/insane-deuces/"
   },
   {
@@ -7832,14 +7525,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-dragons/"
   },
   {
-    "id": "ec86ff10d9d8",
-    "source": "org:insane-dragons",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "evidence": "In the year 1981, the Dragons joined the Folk alliance as they were sponsored by the Spanish Cobras while members were behind bars.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-dragons/"
-  },
-  {
     "id": "60055c64886e",
     "source": "org:insane-dragons",
     "target": "org:latin-kings",
@@ -7921,16 +7606,6 @@
     "type": "alliance",
     "evidence": "City Knights and Two Six early to mid-1990s",
     "source_url": "https://chicagoganghistory.com/gang/insane-gangster-city-knights/"
-  },
-  {
-    "id": "bb40ee24cfad",
-    "source": "org:satan-disciples-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "Folk Nation — c. 1979 – 2000 or later",
-    "source_url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/"
   },
   {
     "id": "83add755e980",
@@ -8069,14 +7744,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-king-cobras/"
   },
   {
-    "id": "b3c21073c37a",
-    "source": "org:king-cobras",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "evidence": "In the year 1981, King Cobras connected with the Spanish Cobras and joined the Insane family from the north side of the city.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-king-cobras/"
-  },
-  {
     "id": "5e029c8cf4b9",
     "source": "org:king-cobras",
     "target": "org:latin-kings",
@@ -8185,16 +7852,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-la-orquestra-albany/"
   },
   {
-    "id": "4a6ba00b08ae",
-    "source": "org:orquestra-albany",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 2000,
-    "evidence": "The Spanish Cobras assisted the OAs into the Folk alliance in 1978 and sponsored them.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-la-orquestra-albany/"
-  },
-  {
     "id": "ff5732ff302c",
     "source": "org:orquestra-albany",
     "target": "org:simon-city-royals-chicago",
@@ -8256,16 +7913,6 @@
     "start_year": 1970,
     "end_year": 2002,
     "evidence": "Once the Latin Brothers formed they became very close allies with the Bishops and Latin Counts as they joined in their fight against the Ambrose street gang from 18th and Throop and their other enemies like Satan Disciples and Latin Kings.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-latin-brothers/"
-  },
-  {
-    "id": "e019f6b042d7",
-    "source": "org:latin-brothers",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "When the People alliance was created in 1981 the Latin Brothers joined People instead mostly because of their Pilsen ties and tightness with Latin Counts and Bishops.",
     "source_url": "https://chicagoganghistory.com/gang/insane-latin-brothers/"
   },
   {
@@ -8344,16 +7991,6 @@
     "start_year": 1978,
     "end_year": 1995,
     "evidence": "from the start the Jivers were very close with the Maniac Latin Disciples and there was much blood relation between Jiver and Disciple gang members",
-    "source_url": "https://chicagoganghistory.com/gang/insane-latin-jivers/"
-  },
-  {
-    "id": "88672fee99ba",
-    "source": "org:latin-jivers",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "In the year 1981, the Jivers were accepted into the Folks alliance being sponsored by the Maniac Latin Disciples",
     "source_url": "https://chicagoganghistory.com/gang/insane-latin-jivers/"
   },
   {
@@ -8445,16 +8082,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-latin-jivers/"
   },
   {
-    "id": "6d8ace2042d1",
-    "source": "org:insane-majestics",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1992,
-    "end_year": 2000,
-    "evidence": "the MPCs were secretly meeting with the Satan Disciples to discuss joining the Folk Nation under the SD's wing",
-    "source_url": "https://chicagoganghistory.com/gang/insane-majestics/"
-  },
-  {
     "id": "decef6a102d0",
     "source": "org:insane-majestics",
     "target": "org:two-two-boys",
@@ -8529,16 +8156,6 @@
     "source": "org:ambrose",
     "target": "org:racine-boys",
     "type": "alliance",
-    "start_year": 1981,
-    "end_year": 2010,
-    "evidence": "The Racine Boys then allied with Ambrose and were able to join the Folk alliance alongside Ambrose in the year 1981.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-racine-boys/"
-  },
-  {
-    "id": "02172fbde1e7",
-    "source": "org:racine-boys",
-    "target": "org:folk-nation",
-    "type": "member_of",
     "start_year": 1981,
     "end_year": 2010,
     "evidence": "The Racine Boys then allied with Ambrose and were able to join the Folk alliance alongside Ambrose in the year 1981.",
@@ -8632,16 +8249,6 @@
     "target": "org:spanish-cobras-chicago",
     "type": "rivalry",
     "evidence": "they fought through multiple generations of gangs starting with the white gangs then onto the Maniac Latin Disciples, Imperial Gangsters, Milwaukee Kings, Insane Unknowns and several others.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/"
-  },
-  {
-    "id": "f73dfd97adb6",
-    "source": "org:two-two-boys",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "Folk Nation — c. 1979 – 2000 or later",
     "source_url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/"
   },
   {
@@ -8798,16 +8405,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-two-two-boys/"
   },
   {
-    "id": "ded9d2865b09",
-    "source": "org:insane-unknowns",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "When the People nation was formed the Insane Unknowns were easily invited into the People Nation alliance because they were a part of the United Neighborhoods alliance",
-    "source_url": "https://chicagoganghistory.com/gang/insane-unknowns/"
-  },
-  {
     "id": "3536275b5c15",
     "source": "org:insane-unknowns",
     "target": "org:spanish-lords",
@@ -8921,16 +8518,6 @@
     "end_year": 1980,
     "evidence": "YLOs decided to click up with Spanish Cobras and Latin Disciples by 1976",
     "source_url": "https://chicagoganghistory.com/gang/maniac-ylo-disciples/"
-  },
-  {
-    "id": "37f7cff6837a",
-    "source": "org:ylo-cobras",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1980,
-    "end_year": 2000,
-    "evidence": "By default, YLO Cobras were taken into the Folk Nation alliance as soon as they gained independence since they were born out of the Spanish Cobras.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-ylo-cobras/"
   },
   {
     "id": "ac2512865915",
@@ -9067,16 +8654,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-ylo-cobras/"
   },
   {
-    "id": "1706cfea9d31",
-    "source": "org:familia-stones",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1992,
-    "end_year": 2000,
-    "evidence": "People Nation — 1992 – 2000 or later",
-    "source_url": "https://chicagoganghistory.com/gang/la-familia-stones/"
-  },
-  {
     "id": "a1be9d5d3849",
     "source": "org:almighty-vice-lord-nation",
     "target": "org:familia-stones",
@@ -9101,16 +8678,6 @@
     "type": "rivalry",
     "evidence": "Familia Stones have run out of People nation allies as they even have engaged in wars with Black P Stone groups in parts of the city.",
     "source_url": "https://chicagoganghistory.com/gang/la-familia-stones/"
-  },
-  {
-    "id": "118278e3869f",
-    "source": "org:la-raza-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "In the year 1981, the fights with neighborhood gangs got worse for La Raza and they made the decision to join the Folk alliance alongside their closest allies the Party People.",
-    "source_url": "https://chicagoganghistory.com/gang/la-raza/"
   },
   {
     "id": "5feb5fd871ab",
@@ -9202,16 +8769,6 @@
     "type": "alliance",
     "evidence": "The Scorpions made peace with Latin Kings right away in 1964 in order to join in the fight against the white greaser gangs.",
     "source_url": "https://chicagoganghistory.com/gang/latin-scorpions/"
-  },
-  {
-    "id": "8bcaa1376c2e",
-    "source": "org:latin-souls",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "Folk Nation — c. 1979 – 2000 or later;",
-    "source_url": "https://chicagoganghistory.com/gang/latin-souls/"
   },
   {
     "id": "54b225c328bb",
@@ -9310,16 +8867,6 @@
     "source_url": "https://chicagoganghistory.com/gang/latin-stylers/"
   },
   {
-    "id": "08b7a69c13d9",
-    "source": "org:latin-stylers",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "This friendship ended when the Latin Stylers joined Folks in 1981",
-    "source_url": "https://chicagoganghistory.com/gang/latin-stylers/"
-  },
-  {
     "id": "482e36bf66d8",
     "source": "org:black-gangster-disciples-nation",
     "target": "org:latin-stylers",
@@ -9396,16 +8943,6 @@
     "source_url": "https://chicagoganghistory.com/gang/maniac-campbell-boys/"
   },
   {
-    "id": "0d1e9f12b9e6",
-    "source": "org:maniac-campbell-boys",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1984,
-    "end_year": 2000,
-    "evidence": "Right away the Maniac Campbell Boys became a \"Maniac\" allied organization and were taken right into the Folk alliance under the wing of the Maniac Latin Disciples.",
-    "source_url": "https://chicagoganghistory.com/gang/maniac-campbell-boys/"
-  },
-  {
     "id": "50789f28e168",
     "source": "org:maniac-campbell-boys",
     "target": "org:spanish-cobras-chicago",
@@ -9446,16 +8983,6 @@
     "source_url": "https://chicagoganghistory.com/gang/maniac-latin-disciples/"
   },
   {
-    "id": "516a0856d0ed",
-    "source": "org:maniac-latin-disciples-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "Maniac Latin Disciples, Spanish Cobras, Satan Disciples, Imperial Gangsters, Latin Eagles, Ambrose, Two Six, Two Two Boys, Ridgeway Lords, Saints, Orquestra Albany, Insane Dragons, Harrison Gents, Milwaukee Kings, Latin Lovers and Latin Stylers and others created the 'Latin Folks' that was meant for the Hispanic gangs that were Folks. The Maniac Latin Disciples had a high chair on the board of the Folks because they originally came from the Disciple nation",
-    "source_url": "https://chicagoganghistory.com/gang/maniac-latin-disciples/"
-  },
-  {
     "id": "7aa55e30a70c",
     "source": "org:maniac-latin-disciples-chicago",
     "target": "org:milwaukee-kings",
@@ -9484,16 +9011,6 @@
     "end_year": 1970,
     "evidence": "The Spanish Lords used to have unlikely allies in their original years as they hung out with Latin Disciples and Spanish Cobras once upon a time. In 1968, the Spanish Lords moved to Wicker Park and began hanging with the Disciples, the Disciples loved the colors and the Spanish Lords were willing to part with those colors",
     "source_url": "https://chicagoganghistory.com/gang/maniac-latin-disciples/"
-  },
-  {
-    "id": "97761deeaca1",
-    "source": "org:ylo-disciples",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "The four organizations then created three separate alliances within the Folk Nation",
-    "source_url": "https://chicagoganghistory.com/gang/maniac-ylo-disciples/"
   },
   {
     "id": "be5f2166bcf1",
@@ -9577,16 +9094,6 @@
     "source_url": "https://chicagoganghistory.com/gang/mickey-cobras/"
   },
   {
-    "id": "e2267e7b6b66",
-    "source": "org:mickey-cobras-chicago",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1982,
-    "end_year": 2000,
-    "evidence": "Once the Cobras separated from the Stones they retained peace with the EL Rukns and joined the People alliance on the streets.",
-    "source_url": "https://chicagoganghistory.com/gang/mickey-cobras/"
-  },
-  {
     "id": "c4bc53b6ed11",
     "source": "org:devils-diciples-motorcycle-club",
     "target": "org:mickey-cobras-chicago",
@@ -9631,16 +9138,6 @@
     "start_year": 1969,
     "end_year": 2000,
     "evidence": "The Milwaukee Kings were started because Latin Kings in Wicker Park very aggressively tried to recruit Ramos and his family which caused Ramos and his family to declare war on the Latin Kings",
-    "source_url": "https://chicagoganghistory.com/gang/milwaukee-kings/"
-  },
-  {
-    "id": "689309562929",
-    "source": "org:milwaukee-kings",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "In the year 1981, Folks was spread to the streets and all Milwaukee Kings on the streets busted out as Folks",
     "source_url": "https://chicagoganghistory.com/gang/milwaukee-kings/"
   },
   {
@@ -9811,16 +9308,6 @@
     "source_url": "https://chicagoganghistory.com/gang/paulina-barry-community/"
   },
   {
-    "id": "781367d47475",
-    "source": "org:paulina-barry-community",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 1997,
-    "evidence": "The PBCs made the tough decision to join the Folk alliance in 1978 while members were incarcerated.",
-    "source_url": "https://chicagoganghistory.com/gang/paulina-barry-community/"
-  },
-  {
     "id": "6deb205fd155",
     "source": "org:black-gangster-disciples-nation",
     "target": "org:paulina-barry-community",
@@ -9957,29 +9444,11 @@
     "source_url": "https://chicagoganghistory.com/gang/playboys-ventures-pulaski-park-rice-boys/"
   },
   {
-    "id": "fd46f4365ebf",
-    "source": "org:playboys-ventures-pulaski-park-rice-boys",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 1990,
-    "evidence": "People Nation — c. 1981 – give",
-    "source_url": "https://chicagoganghistory.com/gang/playboys-ventures-pulaski-park-rice-boys/"
-  },
-  {
     "id": "f5613a0116c6",
     "source": "org:future-puerto-rican-stones",
     "target": "org:puerto-rican-stones",
     "type": "spin_off",
     "evidence": "This new group started by the five brothers would become the \"Future Puerto Rican Stones.\"",
-    "source_url": "https://chicagoganghistory.com/gang/puerto-rican-future-stones/"
-  },
-  {
-    "id": "be29b5c38fb6",
-    "source": "org:future-puerto-rican-stones",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "evidence": "In 1992, the Latin Kings were making a lot of enemies on the north side within the People Nation alliance.",
     "source_url": "https://chicagoganghistory.com/gang/puerto-rican-future-stones/"
   },
   {
@@ -10035,16 +9504,6 @@
     "source_url": "https://chicagoganghistory.com/gang/puerto-rican-stones/"
   },
   {
-    "id": "86152bdf7b07",
-    "source": "org:puerto-rican-stones",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 1990,
-    "evidence": "In April, 1978 when the People Nation alliance was created the P.R. Stones were invited to join",
-    "source_url": "https://chicagoganghistory.com/gang/puerto-rican-stones/"
-  },
-  {
     "id": "68e8a6b0ffe5",
     "source": "org:latin-kings",
     "target": "org:puerto-rican-stones",
@@ -10087,16 +9546,6 @@
     "source_url": "https://chicagoganghistory.com/gang/rampants/"
   },
   {
-    "id": "d138bec55d84",
-    "source": "org:ridgeway-lords",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1980,
-    "end_year": 1996,
-    "evidence": "In the year 1980, the Ridgeway Lords squashed their wars with Two Six, Two Two Boys and Satan Disciples as they joined the Folk alliance in 1980 in prison",
-    "source_url": "https://chicagoganghistory.com/gang/ridgeway-lords/"
-  },
-  {
     "id": "dbd6e8ff6a9b",
     "source": "org:latin-kings",
     "target": "org:ridgeway-lords",
@@ -10125,16 +9574,6 @@
     "end_year": 1980,
     "evidence": "In the year 1980, the Ridgeway Lords squashed their wars with Two Six, Two Two Boys and Satan Disciples",
     "source_url": "https://chicagoganghistory.com/gang/ridgeway-lords/"
-  },
-  {
-    "id": "131236116dc4",
-    "source": "org:sin-city-boys",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "The Sin City Boys are a Folk Nation gang at least since 1981",
-    "source_url": "https://chicagoganghistory.com/gang/sin-city-boys/"
   },
   {
     "id": "4abd40816b13",
@@ -10263,16 +9702,6 @@
     "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
   },
   {
-    "id": "dcd40acf8291",
-    "source": "org:spanish-gangster-disciples-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "During their time in prison, they were allied with the new \"Folks\" alliance that was developing between 1978-1979.",
-    "source_url": "https://chicagoganghistory.com/gang/spanish-gangster-disciples/"
-  },
-  {
     "id": "8c88fa9270ad",
     "source": "org:spanish-gangster-disciples-chicago",
     "target": "org:almighty-saints",
@@ -10322,16 +9751,6 @@
     "start_year": 1992,
     "end_year": 1994,
     "evidence": "In the year 1992, the Spanish Lords erupted into a vicious gang war with the Insane Unknowns and Latin Kings who were previously close allies",
-    "source_url": "https://chicagoganghistory.com/gang/spanish-lords/"
-  },
-  {
-    "id": "f8889f34f94c",
-    "source": "org:spanish-lords",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "end_year": 2000,
-    "evidence": "Later in the year 1978, the Spanish Lords were allowed to join the People Nation alliance",
     "source_url": "https://chicagoganghistory.com/gang/spanish-lords/"
   },
   {
@@ -10389,16 +9808,6 @@
     "end_year": 1970,
     "evidence": "instead they fought white greaser clubs like C-Notes , Chi-West , Taylor Jousters , Gaylords and the Simon City gang",
     "source_url": "https://chicagoganghistory.com/gang/spanish-lords/"
-  },
-  {
-    "id": "685b4fb692c0",
-    "source": "org:spanish-vice-lords",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 2000,
-    "evidence": "The Latin Kings now laid off and withdrew from the park out of respect for the fact that the SVLs were part of the People Nation alliance.",
-    "source_url": "https://chicagoganghistory.com/gang/spanish-vice-lords/"
   },
   {
     "id": "337203862a64",
@@ -10478,16 +9887,6 @@
     "start_year": 1994,
     "end_year": 2000,
     "evidence": "The biggest enemy of these Freaks was the Jefferson Park C-Notes which was a vicious war that led to incarcerations and heavy police intervention",
-    "source_url": "https://chicagoganghistory.com/gang/stoned-freaks/"
-  },
-  {
-    "id": "e4bcc28094a0",
-    "source": "org:stoned-freaks",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1987,
-    "end_year": 2000,
-    "evidence": "In light of Crazy Fs pending incarceration the Stoned Freaks connected with the Latin Kings and officially joined the People alliance",
     "source_url": "https://chicagoganghistory.com/gang/stoned-freaks/"
   },
   {
@@ -10649,16 +10048,6 @@
     "source_url": "https://chicagoganghistory.com/gang/thorndale-jag-offs/"
   },
   {
-    "id": "aec331b41aaf",
-    "source": "org:latin-lovers",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "evidence": "This dirty business not only brought the Latin Lovers lots of money but it also kept many members out of prison and solidified the Lovers with the Folk Nation alliance in 1980 while members were incarcerated.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-latin-lovers/"
-  },
-  {
     "id": "522c88c6c865",
     "source": "org:latin-lovers",
     "target": "org:maniac-latin-disciples-chicago",
@@ -10731,16 +10120,6 @@
     "type": "rivalry",
     "evidence": "Godfather was only the leader until 1988 when he got arrested and put in prison for the attempted shooting of Spanish Lords at Mclean and Oakley.",
     "source_url": "https://chicagoganghistory.com/gang/insane-latin-lovers/"
-  },
-  {
-    "id": "7d883a1b491c",
-    "source": "org:uptown-rebels",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 1990,
-    "evidence": "In the year 1981 the Uptown Rebels joined the People Nation alliance alongside the Gaylords",
-    "source_url": "https://chicagoganghistory.com/gang/uptown-rebels/"
   },
   {
     "id": "61593718a749",
@@ -10911,16 +10290,6 @@
     "source_url": "https://chicagoganghistory.com/gang/warlords-wicker-park-la-familia-warlords/"
   },
   {
-    "id": "a1f7eea8f59b",
-    "source": "org:warlords-wicker-park-la-familia-warlords",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "start_year": 1981,
-    "end_year": 1993,
-    "evidence": "While Lord E was away in the Marines in 1981, Lord Chief guided the Warlords to join the People Nation alliance alongside the YBO/GBO",
-    "source_url": "https://chicagoganghistory.com/gang/warlords-wicker-park-la-familia-warlords/"
-  },
-  {
     "id": "fdab42631329",
     "source": "org:spanish-cobras-chicago",
     "target": "org:warlords-wicker-park-la-familia-warlords",
@@ -10967,12 +10336,6 @@
     "type": "alliance",
     "evidence": "Current war sweater with Imperial Gangster patch showing the recent allegiance",
     "source_url": "https://chicagoganghistory.com/gang/warlords-wicker-park-la-familia-warlords/"
-  },
-  {
-    "source": "org:black-p-stone-nation",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "evidence": "BPSN continues to operate as a People Nation-aligned Blood set"
   },
   {
     "source": "org:black-p-stone-nation",
@@ -15260,13 +14623,6 @@
     "target": "org:black-gangster-disciples-nation",
     "type": "spin_off",
     "evidence": "eventually broke away from the BGDN, being recreated as a proper gang rather than a group of smaller associations",
-    "source_url": "https://unitedgangs.com/black-disciples/"
-  },
-  {
-    "source": "org:black-disciples-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "evidence": "Jerome Freeman succeeded to the King and immediately joined the Folk Nation, a newborn alliance formed in 1978.",
     "source_url": "https://unitedgangs.com/black-disciples/"
   },
   {
