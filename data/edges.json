@@ -21966,5 +21966,42 @@
     ],
     "start_year": 1981,
     "end_year": 1983
+  },
+  {
+    "source": "org:black-gangster-disciples-nation",
+    "target": "org:insane-gangster-disciples",
+    "type": "spin_off",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/insane-gangster-disciples.html",
+        "title": "Gang Enforcement — Insane Gangster Disciples Profile",
+        "evidence": "Per Gang Enforcement IGD profile: 'Solomon formed IGD (The Cobra) after King David's death' as a secret enforcement unit of the Folk Nation/GD constellation"
+      }
+    ],
+    "start_year": 1974
+  },
+  {
+    "source": "org:insane-gangster-disciples",
+    "target": "org:folk-nation",
+    "type": "member_of",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/insane-gangster-disciples.html",
+        "title": "Gang Enforcement — Insane Gangster Disciples Profile",
+        "evidence": "Per Gang Enforcement IGD profile: IGD is listed as one of the 6 Folk Nation sets: 'GD, BGD, IGD, GG, IG, MLG, SD'"
+      }
+    ]
+  },
+  {
+    "source": "org:insane-gangster-disciples",
+    "target": "org:black-gangster-disciples-nation",
+    "type": "alliance",
+    "sources": [
+      {
+        "url": "https://www.gangenforcement.com/insane-gangster-disciples.html",
+        "title": "Gang Enforcement — Insane Gangster Disciples Profile",
+        "evidence": "Per Gang Enforcement IGD profile: IGD operates as the enforcement/assassin arm within the GD constellation; sibling sets under the same Folk Nation structure"
+      }
+    ]
   }
 ]

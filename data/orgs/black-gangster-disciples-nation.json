@@ -11,7 +11,8 @@
     "GDN",
     "Gangster Disciple Nation",
     "Growth & Development",
-    "Black Gangster Disciples"
+    "Black Gangster Disciples",
+    "BGD"
   ],
   "status": "active",
   "sources": [
@@ -62,6 +63,10 @@
     {
       "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
       "title": "2015 National Gang Report (NGIC/NAGIA)"
+    },
+    {
+      "url": "https://www.gangenforcement.com/insane-gangster-disciples.html",
+      "title": "Gang Enforcement — Insane Gangster Disciples Profile"
     }
   ],
   "colors": [
@@ -74,7 +79,8 @@
     "Devil Horns",
     "Devil Tail",
     "Pitchfork",
-    "Six-Point Star"
+    "Six-Point Star",
+    "Three-Point Crown"
   ],
   "membership_estimate": 40000,
   "military_service": "Army, Marines, Navy, National Guard"
