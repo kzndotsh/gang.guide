@@ -93,7 +93,7 @@ export function relTypeLabelDirectional(type: string, isOutgoing: boolean | unde
     const inLabels: Record<string, string> = {
       parent: 'Child org',
       member_of: 'Has member',
-      spin_off: 'Spun off from this',
+      spin_off: 'Spun off from',
       parent_set: 'Child set',
       offspring: 'Offspring of this',
       merger: 'Merged from',
