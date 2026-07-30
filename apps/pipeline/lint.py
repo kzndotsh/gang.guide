@@ -660,11 +660,12 @@ def check_temporal_logic(orgs: dict[str, dict], edges: list[dict]):
         tgt = e.get("target", "")
         etype = e.get("type", "")
 
-        # Spin-off can't be older than parent
+        # Spin-off direction: A --spin_off--> B means "B came from A" (A is parent, B is spinoff)
+        # So src (parent) should be OLDER than tgt (spinoff): src_year <= tgt_year
         if etype == "spin_off" and src in org_years and tgt in org_years:
-            if org_years[src] < org_years[tgt]:
+            if org_years[tgt] < org_years[src] - 10:
                 warnings.append(
-                    f"temporal: spin_off {src} ({org_years[src]}) older than parent {tgt} ({org_years[tgt]})"
+                    f"temporal: spin_off {tgt} ({org_years[tgt]}) is the spinoff but was founded earlier than parent {src} ({org_years[src]}) — likely reversed"
                 )
 
     # Nation affiliation: org can't be older than its nation

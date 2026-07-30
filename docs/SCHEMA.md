@@ -61,7 +61,7 @@
 | `alliance` | Undirected | Two orgs that cooperate/support each other |
 | `rivalry` | Undirected | Two orgs in active conflict |
 | `member_of` | Directed | Source org belongs to a larger coalition or controlling org — **not** for gang-nation affiliation (use `nation_affiliation` field instead) |
-| `spin_off` | Directed | Source org was formed from target org |
+| `spin_off` | Directed | **Source org is the ORIGIN/PARENT; target was formed from source.** A → spin_off → B means "B came from A" (A spawned B) |
 | `parent` | Directed | Source org is the parent/umbrella of target |
 | `nation` | Auto-generated | Org affiliated with a nation (derived from `nation_affiliation` at build time) |
 

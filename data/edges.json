@@ -640,12 +640,6 @@
     "type": "rivalry"
   },
   {
-    "id": "3884b466fac5",
-    "source": "org:simon-city-royals-chicago",
-    "target": "org:spanish-gangster-disciples-chicago",
-    "type": "rivalry"
-  },
-  {
     "id": "0a82b898bf2a",
     "source": "org:spanish-cobras-chicago",
     "target": "org:spanish-gangster-disciples-chicago",
@@ -965,12 +959,6 @@
     "id": "bb6c4e8298bb",
     "source": "org:almighty-saints",
     "target": "org:satan-disciples-chicago",
-    "type": "rivalry"
-  },
-  {
-    "id": "1511a60fe8c8",
-    "source": "org:american-front",
-    "target": "org:white-aryan-resistance",
     "type": "rivalry"
   },
   {
@@ -1314,19 +1302,17 @@
     "id": "ad6de2bb8764",
     "source": "org:bonanno-crime",
     "target": "org:genovese-crime",
-    "type": "rivalry"
+    "type": "rivalry",
+    "start_year": 1963,
+    "end_year": 1968
   },
   {
     "id": "b1b3a8c062ad",
     "source": "org:bonanno-crime",
     "target": "org:genovese-crime",
-    "type": "alliance"
-  },
-  {
-    "id": "72fc64ff26d8",
-    "source": "org:bonanno-crime",
-    "target": "org:decavalcante-crime",
-    "type": "rivalry"
+    "type": "alliance",
+    "start_year": 1931,
+    "end_year": 1963
   },
   {
     "id": "82adf29069d0",
@@ -1721,12 +1707,6 @@
     "source_url": "https://unitedgangs.com/grape-street-watts-crips/"
   },
   {
-    "id": "b51d94859b13",
-    "source": "org:grape-watts-crips",
-    "target": "org:pj-watts-crips",
-    "type": "alliance"
-  },
-  {
     "id": "b28d43228db2",
     "source": "org:gypsy-joker-motorcycle-club",
     "target": "org:hells-angels-motorcycle-club",
@@ -1784,12 +1764,6 @@
     "id": "5b885cb06728",
     "source": "org:hells-angels-motorcycle-club",
     "target": "org:iron-horsemen-motorcycle-club",
-    "type": "alliance"
-  },
-  {
-    "id": "9ea527397b73",
-    "source": "org:hells-angels-motorcycle-club",
-    "target": "org:mexican-mafia",
     "type": "alliance"
   },
   {
@@ -2341,12 +2315,6 @@
     "source": "org:puro-tango-blast",
     "target": "org:texas-syndicate",
     "type": "rivalry"
-  },
-  {
-    "id": "4d59d85d44b2",
-    "source": "org:gambino-crime",
-    "target": "org:rudaj-organization",
-    "type": "alliance"
   },
   {
     "id": "5b80fc873d1d",
@@ -3208,12 +3176,6 @@
     "type": "rivalry"
   },
   {
-    "id": "eac47d37ac03",
-    "source": "org:39ers-gang",
-    "target": "org:byrd",
-    "type": "alliance"
-  },
-  {
     "id": "01d2b525aa8d",
     "source": "org:chaldean-mafia",
     "target": "org:mexican-mafia",
@@ -3284,12 +3246,6 @@
     "source": "org:dirty-dozen-motorcycle-club",
     "target": "org:vagos-motorcycle-club",
     "type": "rivalry"
-  },
-  {
-    "id": "13192b4e8d3c",
-    "source": "org:dominicans-don-t-play",
-    "target": "org:trinitarios",
-    "type": "alliance"
   },
   {
     "id": "7f7edfe33ce6",
@@ -3948,21 +3904,9 @@
     "type": "alliance"
   },
   {
-    "id": "666bf399e08f",
-    "source": "org:mullen",
-    "target": "org:winter-hill-gang",
-    "type": "rivalry"
-  },
-  {
     "id": "95405ab1c05c",
     "source": "org:easy-riders-gang",
     "target": "org:mexican-mafia",
-    "type": "alliance"
-  },
-  {
-    "id": "797c55b66739",
-    "source": "org:fruit-town-piru",
-    "target": "org:mob-piru",
     "type": "alliance"
   },
   {
@@ -4217,16 +4161,6 @@
     "target": "org:latin-counts-chicago",
     "type": "rivalry",
     "evidence": "On Tuesday August 21, 1979, Reno 'Maniac Mouse' Enriquez of the Latin Counts from address 1619 S. Loomis (17th and Loomis) shot Louie Limas to death",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
-  },
-  {
-    "id": "0caa766f813d",
-    "source": "org:ambrose",
-    "target": "org:two-six",
-    "type": "alliance",
-    "start_year": 1970,
-    "end_year": 1986,
-    "evidence": "Ambrose and Two Six became great allies when Two Six formed in 1970 and this alliance would continue into the 80s when both gangs joined Folks and the ATSD was effective.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-ambrose/"
   },
   {
@@ -6027,8 +5961,8 @@
   },
   {
     "id": "88967c9474e1",
-    "source": "org:almighty-saints",
-    "target": "org:spanish-gangster-disciples-chicago",
+    "source": "org:spanish-gangster-disciples-chicago",
+    "target": "org:almighty-saints",
     "type": "spin_off",
     "start_year": 1981,
     "end_year": 1983,
@@ -6456,24 +6390,6 @@
     "source_url": "https://chicagoganghistory.com/gang/four-corner-hustlers/"
   },
   {
-    "id": "edb13df36981",
-    "source": "org:black-p-stones",
-    "target": "org:four-corner-hustlers-chicago",
-    "type": "rivalry",
-    "evidence": "According to many old school Black P Stones and Vice Lords that settled in Austin in 1968, the Four Corner Hustlers were aggressive about recruitment so much that Fours started a war with Black P Stones and Apache (Insane) Vice Lords.",
-    "source_url": "https://chicagoganghistory.com/gang/four-corner-hustlers/"
-  },
-  {
-    "id": "13825a6bb471",
-    "source": "org:black-p-stone-nation",
-    "target": "org:four-corner-hustlers-chicago",
-    "type": "rivalry",
-    "start_year": 1979,
-    "end_year": 1981,
-    "evidence": "The Four Corner Hustlers, Conservative Vice Lord, Insane Vice Lords, Renegade Vice Lords, Cicero Insane Vice Lords and Imperial Insane Vice Lords allied up with Black P Stones against the EL Rukns by 1981 and Vice Lords and Fours began hanging out on the south side.",
-    "source_url": "https://chicagoganghistory.com/gang/four-corner-hustlers/"
-  },
-  {
     "id": "3b2067703a95",
     "source": "org:four-corner-hustlers-chicago",
     "target": "org:latin-kings",
@@ -6538,15 +6454,6 @@
     "start_year": 1980,
     "end_year": 1994,
     "evidence": "This group became known as the \"Party People\" which gave the image that they were a peaceful group of people that like to party. Party People were in love with the sweaters, parties and the crowds that gangs drew, and they wanted to be a club that drew in those same perks but without getting involved in the gangbanging drama. When they first formed, they found another newer group that had the same ideals, this group was known as \"La Raza\" and this is when La Raza and Party People became good friends.",
-    "source_url": "https://chicagoganghistory.com/gang/gangster-party-people/"
-  },
-  {
-    "id": "f38390538df2",
-    "source": "org:la-raza-chicago",
-    "target": "org:party-people",
-    "type": "rivalry",
-    "start_year": 1994,
-    "evidence": "In the year 1994, an eternal war would begin between all La Razas and Party People citywide and everywhere else that would never resolve up to present.",
     "source_url": "https://chicagoganghistory.com/gang/gangster-party-people/"
   },
   {
@@ -6666,25 +6573,6 @@
     "type": "rivalry",
     "start_year": 1997,
     "evidence": "The CVLs then began disrespecting the Party People as they infringed on the borders of G-Town Party People turf, this caused a violent gang war to erupt.",
-    "source_url": "https://chicagoganghistory.com/gang/gangster-party-people/"
-  },
-  {
-    "id": "0ca59d643474",
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:party-people",
-    "type": "alliance",
-    "start_year": 1993,
-    "end_year": 2005,
-    "evidence": "By the end of the year 1993 territories began to shift as Gangster Disciples and Party People negotiated dividing more territory. Now Party People laid claim from 55th to 58th and from Tallman to Campbell, it was a business arrangement between Party People and the GDs.",
-    "source_url": "https://chicagoganghistory.com/gang/gangster-party-people/"
-  },
-  {
-    "id": "60bfb227a01f",
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:party-people",
-    "type": "rivalry",
-    "start_year": 2005,
-    "evidence": "In the year 2005 Party People and Gangster Disciples went to war that was only a fist fighting war as no gun play occurred.",
     "source_url": "https://chicagoganghistory.com/gang/gangster-party-people/"
   },
   {
@@ -7048,14 +6936,6 @@
     "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
   },
   {
-    "id": "83c614540468",
-    "source": "org:ashland-vikings",
-    "target": "org:cnotes",
-    "type": "rivalry",
-    "evidence": "Before 1973 the Vikings and C-Notes were at war and fought vicious battles",
-    "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
-  },
-  {
     "id": "1f1633b7167d",
     "source": "org:ashland-vikings",
     "target": "org:cnotes",
@@ -7087,16 +6967,6 @@
     "start_year": 1983,
     "end_year": 1986,
     "evidence": "At the end of 1983, the S.D.'s get into an altercation with one of the younger Viking sections; when the Rajahs receive the news the S.D.'s are confronted by Puncher in back of Carpenter School (1250 W. Erie) which resulted in the spokesman for the S.D.'s getting shot.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
-  },
-  {
-    "id": "69b1ea1f3df6",
-    "source": "org:ashland-vikings",
-    "target": "org:milwaukee-kings",
-    "type": "rivalry",
-    "start_year": 1984,
-    "end_year": 1986,
-    "evidence": "The Bosworth Gents and the Milwaukee Kings who were not happy with the U.P.C.I.'s territorial control side with the S.D.'s and as 1984 rolled in the Vikings took the S.D.'s, H.G.'s and M.K.'s to war.",
     "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
   },
   {
@@ -7469,7 +7339,9 @@
     "target": "org:insane-dragons",
     "type": "rivalry",
     "evidence": "These kids banded together and mainly fought white greaser gangs like Chi-West, Gaylords and C-Notes.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-dragons/"
+    "source_url": "https://chicagoganghistory.com/gang/insane-dragons/",
+    "start_year": 1970,
+    "end_year": 1993
   },
   {
     "id": "093a1b531108",
@@ -7477,7 +7349,8 @@
     "target": "org:insane-dragons",
     "type": "alliance",
     "evidence": "By the year 1992, the Dragons stopped their gang wars with the C-Notes and the two became best allies.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-dragons/"
+    "source_url": "https://chicagoganghistory.com/gang/insane-dragons/",
+    "start_year": 1993
   },
   {
     "id": "cac119820f4c",
@@ -8051,16 +7924,6 @@
     "type": "rivalry",
     "evidence": "Eventually the Jivers from East Humboldt Park stopped warring with the MLDs and Maniac Campbell Boys and began hanging out with them again",
     "source_url": "https://chicagoganghistory.com/gang/insane-latin-jivers/"
-  },
-  {
-    "id": "decef6a102d0",
-    "source": "org:insane-majestics",
-    "target": "org:two-two-boys",
-    "type": "alliance",
-    "start_year": 1990,
-    "end_year": 1992,
-    "evidence": "The Two Two Boys of 31st and Laramie took the MPCs under their wing and basically mentored them all about gang banging and assisted them in their wars with the People Nation gangs in the area.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-majestics/"
   },
   {
     "id": "5c2f80046547",
@@ -8974,16 +8837,6 @@
     "source_url": "https://chicagoganghistory.com/gang/maniac-latin-disciples/"
   },
   {
-    "id": "0f1d0317edbf",
-    "source": "org:maniac-latin-disciples-chicago",
-    "target": "org:spanish-lords",
-    "type": "alliance",
-    "start_year": 1968,
-    "end_year": 1970,
-    "evidence": "The Spanish Lords used to have unlikely allies in their original years as they hung out with Latin Disciples and Spanish Cobras once upon a time. In 1968, the Spanish Lords moved to Wicker Park and began hanging with the Disciples, the Disciples loved the colors and the Spanish Lords were willing to part with those colors",
-    "source_url": "https://chicagoganghistory.com/gang/maniac-latin-disciples/"
-  },
-  {
     "id": "be5f2166bcf1",
     "source": "org:maniac-latin-disciples-chicago",
     "target": "org:ylo-disciples",
@@ -9073,16 +8926,6 @@
     "source_url": "https://chicagoganghistory.com/gang/mickey-cobras/"
   },
   {
-    "id": "ad574affe8f4",
-    "source": "org:black-p-stone-nation",
-    "target": "org:mickey-cobras-chicago",
-    "type": "rivalry",
-    "start_year": 1977,
-    "end_year": 1985,
-    "evidence": "In 1985, Jeff Fort ordered the murders of several King Cobras in April of 1985. According to court documents in the case of United States vs. Andrews, Jeff Fort wanted complete control of the heroin trade at 54th and Bishop in the Back of the Yards neighborhoods and 67th and Stoney Island in the Woodlawn neighborhood.",
-    "source_url": "https://chicagoganghistory.com/gang/mickey-cobras/"
-  },
-  {
     "id": "3ca39dd9b723",
     "source": "org:king-cobras",
     "target": "org:mickey-cobras-chicago",
@@ -9090,15 +8933,6 @@
     "start_year": 1960,
     "end_year": 1977,
     "evidence": "Within weeks of the formation of the King Cobras in the early months of 1960, the Egyptian Cobras and King Cobras came to an agreement to come together as one fighting force that would be somewhat combined as the 'Egyptian King Cobras.'",
-    "source_url": "https://chicagoganghistory.com/gang/mickey-cobras/"
-  },
-  {
-    "id": "29ea04e82158",
-    "source": "org:black-p-stones",
-    "target": "org:mickey-cobras-chicago",
-    "type": "rivalry",
-    "start_year": 1958,
-    "evidence": "Cobras are heavily invested in Woodlawn and have shared these streets close by the Black P Stones with on and off violent rivalries which goes back to 1958.",
     "source_url": "https://chicagoganghistory.com/gang/mickey-cobras/"
   },
   {
@@ -9649,14 +9483,6 @@
     "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
   },
   {
-    "id": "0b9e936497da",
-    "source": "org:almighty-insane-popes-nation",
-    "target": "org:almighty-popes",
-    "type": "spin_off",
-    "evidence": "At midnight, these Popes did not follow orders and instead created their own nation, the 'Almighty Popes.'",
-    "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
-  },
-  {
     "id": "51a5caaa3042",
     "source": "org:almighty-insane-popes-nation",
     "target": "org:la-raza-chicago",
@@ -9671,14 +9497,6 @@
     "type": "alliance",
     "evidence": "The Black P Stones were the main African American gang in the 80s and 90s but the Stones are with the People alliance.",
     "source_url": "https://chicagoganghistory.com/gang/south-side-almighty-insane-popes/"
-  },
-  {
-    "id": "8c88fa9270ad",
-    "source": "org:spanish-gangster-disciples-chicago",
-    "target": "org:almighty-saints",
-    "type": "spin_off",
-    "evidence": "The Saints ran 87th and Houston while Royal Knights ran 88th to 89th and Commercial area, these groups were neighbors to each other... because the Saints previously ran 87th and Houston for decades and because the last remnant of their members were involved, they wanted their name as part of this. The new group was initially called \"Saint Disciples.\"",
-    "source_url": "https://chicagoganghistory.com/gang/spanish-gangster-disciples/"
   },
   {
     "id": "ec3ea937cc6e",
@@ -9974,14 +9792,6 @@
     "target": "org:taylor-jousters",
     "type": "rivalry",
     "evidence": "The Jousters also spread to the west of Logan Square into the Irving Park neighborhood at Agatite and Kilbourn where they fought the Insane Popes.",
-    "source_url": "https://chicagoganghistory.com/gang/taylor-jousters/"
-  },
-  {
-    "id": "c5c20972f97b",
-    "source": "org:cnotes",
-    "target": "org:taylor-jousters",
-    "type": "rivalry",
-    "evidence": "In the year 1982 the UFO alliance broke up. The Hell's Devils gang was not as strong as they once were and now the C-Notes became enemies of all their old pals especially the Gaylords and Jousters.",
     "source_url": "https://chicagoganghistory.com/gang/taylor-jousters/"
   },
   {
@@ -11846,8 +11656,8 @@
     "source_url": "http://www.stonegreasers.com/greaser/lansing_vicelords_crips.html"
   },
   {
-    "source": "org:little-hell-sharks",
-    "target": "org:mohawks",
+    "source": "org:mohawks",
+    "target": "org:little-hell-sharks",
     "type": "spin_off",
     "evidence": "A few years after this migration, the cousins and nephews of the original Sharks started their own gangs: Mohawks, Hudson, and the Cleveland Jammers.",
     "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
@@ -11860,8 +11670,8 @@
     "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
   },
   {
-    "source": "org:little-hell-sharks",
-    "target": "org:cleveland-jammers",
+    "source": "org:cleveland-jammers",
+    "target": "org:little-hell-sharks",
     "type": "spin_off",
     "evidence": "A few years after this migration, the cousins and nephews of the original Sharks started their own gangs: Mohawks, Hudson, and the Cleveland Jammers.",
     "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
@@ -12340,8 +12150,8 @@
     "source_url": "https://www.stonegreasers.com/greaser/larkin_popes_by_his_brother.html"
   },
   {
-    "source": "org:little-hell-sharks",
-    "target": "org:corp",
+    "source": "org:corp",
+    "target": "org:little-hell-sharks",
     "type": "spin_off",
     "evidence": "The Mohawk's, Hudson's, and Cleveland Jammers would eventually unite in the early 70s under the CORP gang becoming the third generation of gangs spawned off of the Little Hell Sharks.",
     "source_url": "https://www.stonegreasers.com/greaser/little_hell_sharks.html"
@@ -13586,13 +13396,6 @@
     "type": "spin_off",
     "evidence": "81 ESH was niggas from KITCHEN CRIP that were hustlers",
     "source_url": "https://unitedgangs.com/81st-street-east-side-hustler-crips/"
-  },
-  {
-    "source": "org:eight-tray-83-gangster-crip-los-angeles",
-    "target": "org:rollin-60s-neighborhood-crips",
-    "type": "alliance",
-    "evidence": "The Eight Trays were once allied with nearby Crip gangs, including what would later become their main rivals, the Rollin 60s Neighborhood Crips.",
-    "source_url": "https://unitedgangs.com/83-gangster-crips/"
   },
   {
     "source": "org:eight-tray-83-gangster-crip-los-angeles",
@@ -20244,8 +20047,8 @@
     "source_url": "https://unitedgangs.com/rollin-40s-crips/"
   },
   {
-    "source": "org:rollin-40s-neighborhood-crips",
-    "target": "org:rollin-40s-crips",
+    "source": "org:rollin-40s-crips",
+    "target": "org:rollin-40s-neighborhood-crips",
     "type": "spin_off",
     "evidence": "The Rollin 40s neighborhood Crips were started by a Los Angeles, gang member of the original Rollin 40s Crips, who relocated to the Southeast district of San Diego.",
     "source_url": "https://unitedgangs.com/rollin-40s-neighborhood-crips/"
@@ -20813,8 +20616,8 @@
     "source_url": "https://unitedgangs.com/simon-city-royals/"
   },
   {
-    "source": "org:mona-park-compton-crips",
-    "target": "org:six-hood-compton-crips-in-willowbrook",
+    "source": "org:six-hood-compton-crips-in-willowbrook",
+    "target": "org:mona-park-compton-crips",
     "type": "spin_off",
     "evidence": "The Six Hood Compton Crips originated as a clique of the larger Mona Park Compton Crips.",
     "source_url": "https://unitedgangs.com/six-hood-compton-crips/"
