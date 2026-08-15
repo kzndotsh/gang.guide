@@ -47,5 +47,12 @@
   "colors": [
     "red"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 250,
+  "symbols": [
+    "XIV",
+    "Huelga Bird",
+    "Red Bandana",
+    "Sombrero Over Bloody Machete"
+  ]
 }

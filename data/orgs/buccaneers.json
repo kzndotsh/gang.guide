@@ -7,7 +7,7 @@
   "metro": "New York",
   "founded_year": 1953,
   "founded_year_precision": "circa",
-  "description": "Buccaneers is a street gang based in New York.",
+  "description": "The Buccaneers were a teenage street gang based in the Sumner Projects area of Bedford-Stuyvesant, Brooklyn, active during the late 1950s and early 1960s. They claimed the Sumner Projects as their turf and were longtime rivals of the nearby Marcy Chaplains, who controlled the adjacent Marcy Projects. The gang was part of a dense cluster of youth gangs that made the Marcy-Sumner corridor one of the most active gang-fighting zones in New York City during that era.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
@@ -15,6 +15,14 @@
     {
       "url": "https://newyorkcitygangs.com/?page_id=1817",
       "title": "newyorkcitygangs.com"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2316",
+      "title": "Buccaneers and Marcy Chaplains – March 1960 | New York City Fighting Gangs"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2277",
+      "title": "Marcy, Sumner and a Nest of Youth Gangs | New York City Fighting Gangs"
     }
   ]
 }

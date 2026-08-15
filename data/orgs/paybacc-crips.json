@@ -1,7 +1,14 @@
 {
   "id": "org:paybacc-crips",
   "name": "Paybacc Crips",
-  "aliases": [],
+  "aliases": [
+    "GPBC",
+    "PBC",
+    "Gardena Paybacc Crips",
+    "Original Gardena Paybacc Crips",
+    "Pay Back Crips",
+    "W/S Paybacc Crips"
+  ],
   "type": "street_gang",
   "lane": "california-crips-other",
   "metro": "Los Angeles",
@@ -17,6 +24,17 @@
     {
       "url": "https://detroitstreetgangs.com/detroit-crips/",
       "title": "DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://unitedgangs.com/gardena-paybacc-crips/",
+      "title": "Gardena Paybacc Crips - UnitedGangs.com"
+    },
+    {
+      "url": "https://grokipedia.com/page/paybacc-crips",
+      "title": "Paybacc Crips — Grokipedia"
     }
+  ],
+  "symbols": [
+    "CC Double-C Spelling"
   ]
 }

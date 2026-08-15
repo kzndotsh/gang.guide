@@ -1,7 +1,9 @@
 {
   "id": "org:latin-stones",
   "name": "Latin Stones",
-  "aliases": [],
+  "aliases": [
+    "Almighty Latin Stones"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +20,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-latin-stones",
       "title": "Latin Stones - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/almighty-latin-stones",
+      "title": "Latin Stones (Almighty Latin Stones) – South Chicago | Chicago Gang History"
     }
   ],
   "symbols": [

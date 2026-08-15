@@ -32,5 +32,9 @@
   "colors": [
     "red"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Boston Red Sox Apparel",
+    "San Diego Padres Apparel"
+  ]
 }

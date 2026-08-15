@@ -1,7 +1,9 @@
 {
   "id": "org:morgan-deuces",
   "name": "Morgan Deuces",
-  "aliases": [],
+  "aliases": [
+    "Deuces"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -18,6 +20,22 @@
     {
       "url": "https://chicagoganghistory.com/gang/morgan-deuces",
       "title": "Morgan Deuces - Chicago Gang History"
+    },
+    {
+      "url": "https://stonegreasers.com/greaser/morgan_deuces.html",
+      "title": "Morgan Deuces | Chicago Morgan Deuces - Stone Greasers"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/morgan-deuces",
+      "title": "Morgan Deuces – Teddy McGee, Taylor & Morgan | Chicago Gang History"
+    },
+    {
+      "url": "https://stonegreasers.com/greaser/insane_deuces.html",
+      "title": "Chicago Insane Deuces, Morgan Deuces, Jahn Deuces - Stone Greasers"
+    },
+    {
+      "url": "https://chicago.suntimes.com/murals-mosaics/2019/7/24/18684107/pilsen-mural-david-boogie-gonzalez-gang-truce-chicano-movement-1970s",
+      "title": "Chicago murals: This is the story of one of Pilsen's disappearing murals - Chicago Sun-Times"
     }
   ],
   "disbanded_year": 1980,

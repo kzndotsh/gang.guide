@@ -1,7 +1,10 @@
 {
   "id": "org:noble-knights",
   "name": "Noble Knights",
-  "aliases": [],
+  "aliases": [
+    "Almighty Noble Knights",
+    "ANK"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +21,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-noble-knights",
       "title": "Noble Knights - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/almighty-noble-knights",
+      "title": "Noble Knights (Almighty Noble Knights) – Chicago Gang History"
     }
   ],
   "symbols": [

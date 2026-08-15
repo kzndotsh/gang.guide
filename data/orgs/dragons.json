@@ -7,7 +7,7 @@
   "metro": "New York",
   "founded_year": 1953,
   "founded_year_precision": "circa",
-  "description": "Dragons is a street gang based in New York.",
+  "description": "The Dragons were a youth street gang active in New York City, with documented origins in East Harlem around 1953. Part of the postwar generation of NYC neighborhood gangs, they reportedly expanded to multiple boroughs and by 1960 had divisions in every borough except Staten Island.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
@@ -15,6 +15,18 @@
     {
       "url": "https://newyorkcitygangs.com/?page_id=1596",
       "title": "newyorkcitygangs.com"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=3034",
+      "title": "Copians and Dragons East Harlem - New York City Gangs"
+    },
+    {
+      "url": "https://books.google.com/books/about/Vampires_Dragons_and_Egyptian_Kings.html?id=1NhTzoKrUVkC",
+      "title": "Vampires, Dragons, and Egyptian Kings: Youth Gangs in Postwar New York - Eric C. Schneider (Princeton University Press)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gU9X7wey0ZU",
+      "title": "1950s NYC Street Gangs Rare Photos: Latin Crowns, Dragons, Vampires & Unknown Sinners"
     }
   ]
 }

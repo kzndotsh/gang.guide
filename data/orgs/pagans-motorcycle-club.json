@@ -51,7 +51,11 @@
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "exact",
   "status": "active",
-  "military_service": "Various branches"
+  "military_service": "Various branches",
+  "membership_estimate": 5000,
+  "symbols": [
+    "Surtr (Norse Fire Giant)"
+  ]
 }

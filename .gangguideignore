@@ -61,6 +61,24 @@ org:hard-time-hustler-crips-los-angeles  # no_membership: no public count
 org:genovese-crime-family     # imprecise_year + no_symbols: Wikipedia has year but no symbols
 org:the-commission            # no_symbols: no verifiable symbols for umbrella body
 
+# Second-pass dead ends — exhaustively searched, nothing found
+org:main-street-mafia-crips   # imprecise_year + no_membership: no verifiable data in any source
+org:circle-city-piru          # imprecise_year + no_membership + no_symbols: 10+ searches, nothing
+org:mafia-crips               # no_aliases + no_membership: zero data in any checked source
+org:simon-city-royals         # no_membership: Wikipedia + UnitedGangs both silent
+org:genovese-crime-family     # imprecise_year + no_symbols: Wikipedia has info but not what's missing
+org:kitchen-crips             # imprecise_year + no_membership: no verifiable data found
+org:miller-gangster-bloods    # no_membership + no_symbols + imprecise_year: all sources are stubs
+org:venice-shoreline-crips    # no_membership + no_symbols + imprecise_year: sources exhausted
+org:avenue-piru-gang          # imprecise_year + no_membership: no data in any source
+org:front-street-watts-crips  # imprecise_year + no_membership: no data found
+org:the-65-menlo-crips        # no_membership + no_symbols: sources are stubs
+org:south-side-compton-crips  # imprecise_year + no_membership: sources exhausted
+org:hoover-criminals          # no_membership: no public count in any source
+org:lantana-blocc-compton-crips  # imprecise_year + no_membership + no_symbols: exhaustively searched
+org:harvard-park-brims        # no_membership + no_symbols: all sources are stubs
+org:centinela-park-family     # imprecise_year + no_membership + no_symbols: no data found
+
 
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.

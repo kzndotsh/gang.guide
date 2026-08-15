@@ -5,7 +5,7 @@
   "lane": "prison",
   "metro": "Chicago",
   "description": "A white supremacist prison gang active in Southern California, especially Cypress, with small factions in Chicago and other states. Originated in the mid-1970s, recognized by California prison authorities in 1999. Known for extreme violence and a three-tier hierarchy. Allies include the Aryan Brotherhood and Public Enemy No. 1; rivals include Bloods, Crips, and Black Guerrilla Family.",
-  "founded_year": 1970,
+  "founded_year": 1975,
   "aliases": [
     "NLR",
     "the Ride"
@@ -13,28 +13,35 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Nazi_Lowriders",
-      "title": "Nazi Lowriders \u2014 Wikipedia"
+      "title": "Nazi Lowriders — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Aryan_Brotherhood",
-      "title": "Aryan Brotherhood \u2014 Wikipedia"
+      "title": "Aryan Brotherhood — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
-      "title": "Hermandad Aria \u2014 Wikipedia"
+      "title": "Hermandad Aria — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Big_Circle_Gang",
-      "title": "Big Circle Gang \u2014 Wikipedia"
+      "title": "Big Circle Gang — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hells_Angels_MC_criminal_allegations_and_incidents",
-      "title": "Hells Angels MC criminal allegations and incidents \u2014 Wikipedia"
+      "title": "Hells Angels MC criminal allegations and incidents — Wikipedia"
     }
   ],
   "colors": [
     "white"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "circa",
+  "status": "active",
+  "membership_estimate": 1000,
+  "symbols": [
+    "Reichsadler Eagle",
+    "Swastika",
+    "NLR Initials (Old English Script)",
+    "Runic Alphabet Script"
+  ]
 }

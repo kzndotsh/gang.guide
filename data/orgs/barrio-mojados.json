@@ -9,6 +9,14 @@
     {
       "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/bm",
       "title": "Barrio Mojados — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/barrio-mojados-13/",
+      "title": "Barrio Mojados 13 - UnitedGangs.com"
+    },
+    {
+      "url": "https://case-law.vlex.com/vid/people-v-garcia-b244732-893074978",
+      "title": "People v. Garcia, B244732 (Cal. App. Jan. 29, 2014)"
     }
   ],
   "founded_year": 1965,
@@ -17,5 +25,16 @@
     "blue"
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "BMS",
+    "Barrio Mojados 13",
+    "Eastside Barrio Mojados",
+    "Wet Town",
+    "Wet Town Gang",
+    "Weteros"
+  ],
+  "symbols": [
+    "XIII",
+    "BMS"
+  ]
 }

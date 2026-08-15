@@ -1,7 +1,9 @@
 {
   "id": "org:cullerton-deuces",
   "name": "Cullerton Deuces",
-  "aliases": [],
+  "aliases": [
+    "Insane Cullerton Deuces"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -20,6 +22,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/insane-cullerton-deuces",
       "title": "Cullerton Deuces - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/insane-cullerton-deuces",
+      "title": "Cullerton Deuces (Insane Cullerton Deuces) – Marshall Square | Chicago Gang History"
+    },
+    {
+      "url": "https://www.reddit.com/r/GangBangCity/comments/wfkdw5/cullerton_deuces/",
+      "title": "Cullerton Deuces : r/GangBangCity"
     }
   ],
   "symbols": [
