@@ -400,12 +400,40 @@ def check_edges(edges: list[dict], org_ids: set[str]):
             if org_founded and start < org_founded - 10:
                 info.append(f"edge[{i}]: start_year {start} is well before {src} founded ({org_founded})")
 
-    # Contradictory edges
-    alliance_pairs = {(e["source"], e["target"]) for e in edges if e.get("type") == "alliance"}
-    rivalry_pairs = {(e["source"], e["target"]) for e in edges if e.get("type") == "rivalry"}
-    both = alliance_pairs & rivalry_pairs
-    for src, tgt in both:
-        warnings.append(f"contradictory edges: {src} ↔ {tgt} has both alliance AND rivalry")
+    # Contradictory and redundant edge pairs
+    # Build normalized pair maps for fast lookup
+    # For undirected types (alliance, rivalry), normalize pair as frozenset
+    # For directed types, use (source, target) as-is
+    from collections import defaultdict
+
+    pair_types: dict = defaultdict(set)  # normalized_pair -> set of types
+
+    for e in edges:
+        src, tgt, etype = e["source"], e["target"], e["type"]
+        if etype in ("alliance", "rivalry"):
+            key = frozenset([src, tgt])
+        else:
+            key = (src, tgt)
+        pair_types[key].add(etype)
+
+    for key, types in pair_types.items():
+        pair_str = " ↔ ".join(sorted(key)) if isinstance(key, frozenset) else f"{key[0]} → {key[1]}"
+
+        # alliance + rivalry on same pair = contradiction (error)
+        if "alliance" in types and "rivalry" in types:
+            errors.append(f"contradictory edges: {pair_str} has both alliance AND rivalry")
+
+        # parent + spin_off on same directed pair = conflict (error)
+        if "parent" in types and "spin_off" in types:
+            errors.append(f"contradictory edges: {pair_str} has both parent AND spin_off")
+
+        # member_of + parent = redundant (warning — parent supersedes member_of)
+        if "member_of" in types and "parent" in types:
+            warnings.append(f"redundant edges: {pair_str} has both member_of AND parent (remove member_of)")
+
+        # member_of + alliance = redundant (warning)
+        if "member_of" in types and "alliance" in types:
+            warnings.append(f"redundant edges: {pair_str} has both member_of AND alliance (remove alliance)")
 
 
 def check_cross_metro(orgs: dict[str, dict], edges: list[dict]):
