@@ -86,6 +86,7 @@
   // Node position cache
   let nodePositions = new Map<string, { x: number; y: number }>();
   let nodeShapes = new Map<string, any>();
+  let nodeById = new Map<string, GraphNode>();
 
   // Viewport culling bounds (in content coordinates)
   function getViewportBounds(): { x1: number; y1: number; x2: number; y2: number } {
@@ -315,10 +316,12 @@
     nodeLayer.destroyChildren();
     nodePositions.clear();
     nodeShapes.clear();
+    nodeById.clear();
 
     for (const node of visibleNodes) {
       const pos = nodePos(node);
       nodePositions.set(node.id, pos);
+      nodeById.set(node.id, node);
 
       const circle = new Konva.Circle({
         x: pos.x, y: pos.y, radius: 6,
@@ -340,226 +343,215 @@
     rebuildEdgeIndex();
   }
 
+  function segmentInView(
+    ax: number, ay: number, bx: number, by: number,
+    b: { x1: number; y1: number; x2: number; y2: number },
+  ): boolean {
+    return !(Math.max(ax, bx) < b.x1 || Math.min(ax, bx) > b.x2 || Math.max(ay, by) < b.y1 || Math.min(ay, by) > b.y2);
+  }
+
   /** Update node appearance for selection/hover without recreating */
   function updateNodeAppearance() {
     for (const [id, circle] of nodeShapes) {
       const isSelected = selectedId === id;
       const isHovered = hoveredId === id;
-      const node = graph.nodes.find(n => n.id === id);
+      const node = nodeById.get(id);
+      if (!node) continue;
       circle.radius(isSelected ? 10 : isHovered ? 9 : 6);
-      circle.fill(isSelected ? '#f78166' : nodeColor(node!));
+      circle.fill(isSelected ? '#f78166' : nodeColor(node));
       circle.stroke(isSelected ? '#fff' : isHovered ? '#58a6ff' : null);
       circle.strokeWidth((isSelected || isHovered) ? 2 : 0);
     }
     nodeLayer.batchDraw();
   }
 
+  function bucketByType(edges: GraphEdge[]): Map<string, GraphEdge[]> {
+    const buckets = new Map<string, GraphEdge[]>();
+    for (const edge of edges) {
+      const list = buckets.get(edge.type);
+      if (list) list.push(edge);
+      else buckets.set(edge.type, [edge]);
+    }
+    return buckets;
+  }
+
+  function addLineBatch(
+    batch: GraphEdge[],
+    opts: { curved: boolean; opacity: number; width: number; dash?: number[]; lineCap?: string; cull: boolean },
+  ) {
+    edgeLayer.add(new Konva.Shape({
+      sceneFunc: (ctx: any, shape: any) => {
+        const bounds = opts.cull ? getViewportBounds() : null;
+        ctx.beginPath();
+        for (const edge of batch) {
+          const s = nodePositions.get(edge.source);
+          const t = nodePositions.get(edge.target);
+          if (!s || !t) continue;
+          if (bounds && !segmentInView(s.x, s.y, t.x, t.y, bounds)) continue;
+          ctx.moveTo(s.x, s.y);
+          if (opts.curved) {
+            const dx = t.x - s.x;
+            const dy = t.y - s.y;
+            ctx.quadraticCurveTo((s.x + t.x) / 2 - dy * 0.08, (s.y + t.y) / 2 + dx * 0.08, t.x, t.y);
+          } else {
+            ctx.lineTo(t.x, t.y);
+          }
+        }
+        ctx.strokeShape(shape);
+      },
+      stroke: edgeStroke(batch[0]),
+      strokeWidth: opts.width,
+      opacity: opts.opacity,
+      dash: opts.dash,
+      lineCap: opts.lineCap,
+      listening: false,
+      perfectDrawEnabled: false,
+      shadowForStrokeEnabled: false,
+    }));
+  }
+
+  type ArrowGeom = {
+    sx: number; sy: number; ctrlX: number; ctrlY: number;
+    baseX: number; baseY: number; tipX: number; tipY: number;
+    mnx: number; mny: number;
+  };
+
+  function arrowGeom(edge: GraphEdge, idx: number): ArrowGeom | null {
+    let srcPos = nodePositions.get(edge.source);
+    let tgtPos = nodePositions.get(edge.target);
+    if (!srcPos || !tgtPos) return null;
+    if (edge.type === 'member_of' || edge.type === 'nation') {
+      [srcPos, tgtPos] = [tgtPos, srcPos];
+    }
+    const dx = tgtPos.x - srcPos.x;
+    const dy = tgtPos.y - srcPos.y;
+    const len = Math.sqrt(dx * dx + dy * dy);
+    if (len < 20) return null;
+    const spread = (idx - 0.5) * 0.12;
+    const ctrlX = (srcPos.x + tgtPos.x) / 2 - dy * (0.08 + spread);
+    const ctrlY = (srcPos.y + tgtPos.y) / 2 + dx * (0.08 + spread);
+    const tanX = tgtPos.x - ctrlX;
+    const tanY = tgtPos.y - ctrlY;
+    const tanLen = Math.sqrt(tanX * tanX + tanY * tanY) || 1;
+    const mnx = tanX / tanLen;
+    const mny = tanY / tanLen;
+    return {
+      sx: srcPos.x, sy: srcPos.y, ctrlX, ctrlY, mnx, mny,
+      tipX: tgtPos.x - mnx * 10, tipY: tgtPos.y - mny * 10,
+      baseX: tgtPos.x - mnx * 20, baseY: tgtPos.y - mny * 20,
+    };
+  }
+
+  function addArrowBatch(batch: GraphEdge[], opacity: number, width: number) {
+    const targetCount = new Map<string, number>();
+    const geoms: ArrowGeom[] = [];
+    for (const edge of batch) {
+      const tgt = nodePositions.get(edge.type === 'member_of' || edge.type === 'nation' ? edge.source : edge.target);
+      const key = tgt ? `${tgt.x},${tgt.y}` : '';
+      const idx = targetCount.get(key) ?? 0;
+      targetCount.set(key, idx + 1);
+      const geom = arrowGeom(edge, idx);
+      if (geom) geoms.push(geom);
+    }
+    if (geoms.length === 0) return;
+    const stroke = edgeStroke(batch[0]);
+    edgeLayer.add(new Konva.Shape({
+      sceneFunc: (ctx: any, shape: any) => {
+        ctx.beginPath();
+        for (const g of geoms) {
+          ctx.moveTo(g.sx, g.sy);
+          ctx.quadraticCurveTo(g.ctrlX, g.ctrlY, g.baseX, g.baseY);
+        }
+        ctx.strokeShape(shape);
+      },
+      stroke,
+      strokeWidth: width,
+      opacity,
+      listening: false,
+      perfectDrawEnabled: false,
+      shadowForStrokeEnabled: false,
+    }));
+    edgeLayer.add(new Konva.Shape({
+      sceneFunc: (ctx: any, shape: any) => {
+        const sz = 6;
+        for (const g of geoms) {
+          ctx.beginPath();
+          ctx.moveTo(g.tipX, g.tipY);
+          ctx.lineTo(g.baseX - g.mny * sz, g.baseY + g.mnx * sz);
+          ctx.lineTo(g.baseX + g.mny * sz, g.baseY - g.mnx * sz);
+          ctx.closePath();
+        }
+        ctx.fillShape(shape);
+      },
+      fill: stroke,
+      opacity,
+      listening: false,
+      perfectDrawEnabled: false,
+    }));
+  }
+
   /** Draw edges based on current mode */
   function drawEdges(focusNodeId: string | null) {
     edgeLayer.destroyChildren();
 
+    const overview = edgeMode === 'all';
     let edgesToDraw: GraphEdge[] = [];
 
-    if (edgeMode === 'all') {
-      // Draw all edges
+    if (overview) {
       for (const edge of graph.edges) {
         if (!visibleIds.has(edge.source) || !visibleIds.has(edge.target)) continue;
         if (!nodePositions.has(edge.source) || !nodePositions.has(edge.target)) continue;
         edgesToDraw.push(edge);
       }
-    } else {
-      // 'hover' mode: only show focused node's edges
-      if (focusNodeId) {
-        edgesToDraw.push(...(edgeIndex.get(focusNodeId) ?? []));
-      }
+    } else if (focusNodeId) {
+      edgesToDraw.push(...(edgeIndex.get(focusNodeId) ?? []));
     }
 
+    edgesToDraw = edgesToDraw.filter((e) => nodePositions.has(e.source) && nodePositions.has(e.target));
     if (edgesToDraw.length === 0) {
       edgeLayer.draw();
       return;
     }
 
-    // Filter to edges with valid positions
-    edgesToDraw = edgesToDraw.filter(e => nodePositions.has(e.source) && nodePositions.has(e.target));
-
-    // Filter out directional edges from batches — they'll be drawn separately with arrows
     const directionalTypes = new Set(['spin_off', 'parent', 'member_of', 'nation']);
-    const batchEdges: GraphEdge[] = [];
+    const lineEdges: GraphEdge[] = [];
     const arrowEdges: GraphEdge[] = [];
     for (const edge of edgesToDraw) {
-      if (directionalTypes.has(edge.type)) {
-        arrowEdges.push(edge);
-      } else {
-        batchEdges.push(edge);
-      }
+      if (!overview && directionalTypes.has(edge.type)) arrowEdges.push(edge);
+      else lineEdges.push(edge);
     }
 
-    // Batch non-directional edges by type
-    const buckets = new Map<string, GraphEdge[]>();
-    for (const edge of batchEdges) {
-      const t = edge.type;
-      if (!buckets.has(t)) buckets.set(t, []);
-      buckets.get(t)!.push(edge);
+    const opacity = overview ? (selectedId ? 0.12 : 0.35) : 1;
+    const width = overview ? 1 : 2;
+
+    for (const [, batch] of bucketByType(lineEdges)) {
+      addLineBatch(batch, {
+        curved: !overview,
+        opacity,
+        width,
+        dash: overview ? undefined : (batch[0].type === 'rivalry' ? [6, 3] : batch[0].type === 'alliance' ? [0.5, 4] : undefined),
+        lineCap: batch[0].type === 'alliance' ? 'round' : undefined,
+        cull: overview,
+      });
     }
 
-    for (const [type, batch] of buckets) {
-      const isFocusBatch = edgeMode !== 'all';
-      const hasFocus = !!selectedId;
-      const bgOpacity = isFocusBatch ? 1 : hasFocus ? 0.12 : 0.35;
-      edgeLayer.add(new Konva.Shape({
-        sceneFunc: (ctx: any, shape: any) => {
-          ctx.beginPath();
-          for (const edge of batch) {
-            const srcPos = nodePositions.get(edge.source)!;
-            const tgtPos = nodePositions.get(edge.target)!;
-            const midX = (srcPos.x + tgtPos.x) / 2;
-            const midY = (srcPos.y + tgtPos.y) / 2;
-            const dx = tgtPos.x - srcPos.x;
-            const dy = tgtPos.y - srcPos.y;
-            ctx.moveTo(srcPos.x, srcPos.y);
-            ctx.quadraticCurveTo(midX - dy * 0.08, midY + dx * 0.08, tgtPos.x, tgtPos.y);
-          }
-          ctx.fillStrokeShape(shape);
-        },
-        stroke: edgeStroke(batch[0]),
-        strokeWidth: isFocusBatch ? 2 : 1,
-        opacity: bgOpacity,
-        dash: type === 'rivalry' ? [6, 3] : type === 'alliance' ? [0.5, 4] : undefined,
-        lineCap: type === 'alliance' ? 'round' : undefined,
-        listening: false,
-        perfectDrawEnabled: false,
-      }));
+    for (const [, batch] of bucketByType(arrowEdges)) {
+      addArrowBatch(batch, 1, 2);
     }
 
-    // Draw directional edges with shortened line + arrowhead
-    const directionalBuckets = new Map<string, GraphEdge[]>();
-    for (const edge of arrowEdges) {
-      const t = edge.type;
-      if (!directionalBuckets.has(t)) directionalBuckets.set(t, []);
-      directionalBuckets.get(t)!.push(edge);
-    }
-
-    // Draw directional edges with line stopping at arrow
-    for (const [type, batch] of directionalBuckets) {
-      const isFocusBatch = edgeMode !== 'all';
-
-      // Track edges per target to offset parallel arrows
-      const targetCount = new Map<string, number>();
-
-      for (const edge of batch) {
-        let srcPos = nodePositions.get(edge.source)!;
-        let tgtPos = nodePositions.get(edge.target)!;
-        // For member_of/nation: flip so arrow goes from nation → org
-        if (edge.type === 'member_of' || edge.type === 'nation') {
-          [srcPos, tgtPos] = [tgtPos, srcPos];
-        }
-        const dx = tgtPos.x - srcPos.x;
-        const dy = tgtPos.y - srcPos.y;
-        const len = Math.sqrt(dx * dx + dy * dy);
-        if (len < 20) continue;
-
-        // Offset curve to spread parallel edges
-        const tgtKey = `${tgtPos.x},${tgtPos.y}`;
-        const idx = targetCount.get(tgtKey) ?? 0;
-        targetCount.set(tgtKey, idx + 1);
-        const spread = (idx - 0.5) * 0.12;
-
-        const midX = (srcPos.x + tgtPos.x) / 2;
-        const midY = (srcPos.y + tgtPos.y) / 2;
-        const ctrlX = midX - dy * (0.08 + spread);
-        const ctrlY = midY + dx * (0.08 + spread);
-
-        // Tangent direction at target
-        const tx = tgtPos.x - ctrlX;
-        const ty = tgtPos.y - ctrlY;
-        const tlen = Math.sqrt(tx * tx + ty * ty);
-        const nx = tx / tlen;
-        const ny = ty / tlen;
-
-        // Arrow at end, gap before node. Line stops at arrow base.
-        const tanX = tgtPos.x - ctrlX;
-        const tanY = tgtPos.y - ctrlY;
-        const tanLen = Math.sqrt(tanX * tanX + tanY * tanY);
-        const mnx = tanX / tanLen;
-        const mny = tanY / tanLen;
-
-        // Arrow tip is 10px from node, base is 20px from node
-        const tipX = tgtPos.x - mnx * 10;
-        const tipY = tgtPos.y - mny * 10;
-        const baseX = tgtPos.x - mnx * 20;
-        const baseY = tgtPos.y - mny * 20;
-
-        // Draw curve stopping at arrow base
-        edgeLayer.add(new Konva.Shape({
-          sceneFunc: (ctx: any, shape: any) => {
-            ctx.beginPath();
-            ctx.moveTo(srcPos.x, srcPos.y);
-            ctx.quadraticCurveTo(ctrlX, ctrlY, baseX, baseY);
-            ctx.fillStrokeShape(shape);
-          },
-          stroke: edgeStroke(edge),
-          strokeWidth: isFocusBatch ? 2 : 1,
-          opacity: isFocusBatch ? 1 : (selectedId ? 0.12 : 0.35),
-          listening: false,
-          perfectDrawEnabled: false,
-        }));
-
-        // Arrow triangle pointing at node
-        const sz = 6;
-        edgeLayer.add(new Konva.Shape({
-          sceneFunc: (ctx: any, shape: any) => {
-            ctx.beginPath();
-            ctx.moveTo(tipX, tipY);
-            ctx.lineTo(baseX - mny * sz, baseY + mnx * sz);
-            ctx.lineTo(baseX + mny * sz, baseY - mnx * sz);
-            ctx.closePath();
-            ctx.fillStrokeShape(shape);
-          },
-          fill: edgeStroke(edge),
-          opacity: isFocusBatch ? 1 : (selectedId ? 0.12 : 0.35),
-          listening: false,
-          perfectDrawEnabled: false,
-        }));
-      }
-    }
-
-    // In 'all' mode, draw focused node's edges on top at full opacity
-    if (edgeMode === 'all') {
-      const focusId = selectedId;
-      if (focusId) {
-        const focusEdges = (edgeIndex.get(focusId) ?? []).filter(
-          e => nodePositions.has(e.source) && nodePositions.has(e.target)
-        );
-        const fBuckets = new Map<string, GraphEdge[]>();
-        for (const e of focusEdges) {
-          if (!fBuckets.has(e.type)) fBuckets.set(e.type, []);
-          fBuckets.get(e.type)!.push(e);
-        }
-        for (const [ftype, fbatch] of fBuckets) {
-          edgeLayer.add(new Konva.Shape({
-            sceneFunc: (ctx: any, shape: any) => {
-              ctx.beginPath();
-              for (const edge of fbatch) {
-                const s = nodePositions.get(edge.source)!;
-                const t = nodePositions.get(edge.target)!;
-                const mx = (s.x + t.x) / 2;
-                const my = (s.y + t.y) / 2;
-                const ddx = t.x - s.x;
-                const ddy = t.y - s.y;
-                ctx.moveTo(s.x, s.y);
-                ctx.quadraticCurveTo(mx - ddy * 0.08, my + ddx * 0.08, t.x, t.y);
-              }
-              ctx.fillStrokeShape(shape);
-            },
-            stroke: edgeStroke(fbatch[0]),
-            strokeWidth: 2.5,
-            opacity: 1,
-            dash: ftype === 'rivalry' ? [6, 3] : ftype === 'alliance' ? [0.5, 4] : undefined,
-            lineCap: ftype === 'alliance' ? 'round' : undefined,
-            listening: false,
-            perfectDrawEnabled: false,
-          }));
-        }
+    if (overview && selectedId) {
+      const focusEdges = (edgeIndex.get(selectedId) ?? []).filter(
+        (e) => nodePositions.has(e.source) && nodePositions.has(e.target),
+      );
+      for (const [, fbatch] of bucketByType(focusEdges)) {
+        addLineBatch(fbatch, {
+          curved: true,
+          opacity: 1,
+          width: 2.5,
+          dash: fbatch[0].type === 'rivalry' ? [6, 3] : fbatch[0].type === 'alliance' ? [0.5, 4] : undefined,
+          lineCap: fbatch[0].type === 'alliance' ? 'round' : undefined,
+          cull: false,
+        });
       }
     }
 
@@ -786,7 +778,7 @@
     if (hov !== prevHoveredId) {
       prevHoveredId = hov;
       updateNodeAppearance();
-      drawEdges(selectedId ?? hov);
+      if (edgeMode !== 'all') drawEdges(selectedId ?? hov);
       drawLabels();
     }
   });
