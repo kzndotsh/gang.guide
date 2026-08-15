@@ -25,8 +25,8 @@
   }
 </script>
 
-<div class="flex h-7 items-center gap-1.5 rounded-full bg-muted px-3">
-  <span class="text-[0.65rem] font-medium text-muted-foreground">{yearMin}</span>
+<div class="flex h-8 items-center gap-1.5 rounded-full bg-muted px-3 md:h-7">
+  <span class="text-[0.65rem] font-medium tabular-nums text-muted-foreground">{yearMin}</span>
   <Slider
     type="multiple"
     {min}
@@ -34,7 +34,7 @@
     step={1}
     {value}
     {onValueChange}
-    class="w-20 [&_[data-slot=slider-track]]:h-0.5 [&_[data-slot=slider-thumb]]:size-2 [&_[data-slot=slider-thumb]]:border-0 [&_[data-slot=slider-thumb]]:bg-muted-foreground/60 [&_[data-slot=slider-thumb]]:hover:bg-foreground [&_[data-slot=slider-range]]:bg-muted-foreground/40"
+    class="w-24 md:w-20 [&_[data-slot=slider-track]]:h-1 md:[&_[data-slot=slider-track]]:h-0.5 [&_[data-slot=slider-thumb]]:size-3.5 md:[&_[data-slot=slider-thumb]]:size-2 [&_[data-slot=slider-thumb]]:border-0 [&_[data-slot=slider-thumb]]:bg-muted-foreground/60 [&_[data-slot=slider-thumb]]:hover:bg-foreground [&_[data-slot=slider-range]]:bg-muted-foreground/40"
   />
-  <span class="text-[0.65rem] font-medium text-muted-foreground">{yearMax}</span>
+  <span class="text-[0.65rem] font-medium tabular-nums text-muted-foreground">{yearMax}</span>
 </div>

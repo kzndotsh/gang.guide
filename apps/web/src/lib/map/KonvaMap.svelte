@@ -832,6 +832,42 @@
       if (pointer) applyZoom(factor, pointer.x, pointer.y);
     });
 
+    let pinchDist = 0;
+    let pinchCenter: { x: number; y: number } | null = null;
+
+    function pinchPoint(touches: TouchList, i: number): { x: number; y: number } {
+      const rect = containerEl!.getBoundingClientRect();
+      return { x: touches[i].clientX - rect.left, y: touches[i].clientY - rect.top };
+    }
+
+    stage.on('touchmove', (e: any) => {
+      const touches: TouchList | undefined = e.evt?.touches;
+      if (!touches || touches.length < 2) return;
+      e.evt.preventDefault();
+      stage.draggable(false);
+      const a = pinchPoint(touches, 0);
+      const b = pinchPoint(touches, 1);
+      const dist = Math.hypot(b.x - a.x, b.y - a.y);
+      const center = { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2 };
+      if (pinchDist > 0 && pinchCenter) {
+        stage.position({
+          x: stage.x() + (center.x - pinchCenter.x),
+          y: stage.y() + (center.y - pinchCenter.y),
+        });
+        applyZoom(dist / pinchDist, center.x, center.y);
+      }
+      pinchDist = dist;
+      pinchCenter = center;
+    });
+
+    const endPinch = () => {
+      pinchDist = 0;
+      pinchCenter = null;
+      stage.draggable(true);
+    };
+    stage.on('touchend', endPinch);
+    stage.on('touchcancel', endPinch);
+
     // Rebuild labels on pan end (viewport-dependent)
     stage.on('dragend', () => {
       if (rebuildTimer) clearTimeout(rebuildTimer);

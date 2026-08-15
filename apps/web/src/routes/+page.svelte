@@ -16,6 +16,7 @@
   import type { Graph } from '$lib/types';
   import { visibleEdgeCount } from '$lib/map/visibility';
   import { PaneGroup, Pane, Handle } from '$lib/components/ui/resizable/index.js';
+  import * as Drawer from '$lib/components/ui/drawer/index.js';
 
     const INSPECTOR_LAYOUT_KEY = 'gang-guide-inspector';
   const INSPECTOR_MIN_SIZE = 16;
@@ -132,8 +133,17 @@
     visibleEdgeCount(graph, edgeMode, selectedId)
   );
 
+  let viewport = $state<'pending' | 'mobile' | 'desktop'>('pending');
+
   onMount(() => {
     if (!browser) return;
+    const mq = window.matchMedia('(min-width: 768px)');
+    const applyViewport = () => {
+      viewport = mq.matches ? 'desktop' : 'mobile';
+    };
+    applyViewport();
+    mq.addEventListener('change', applyViewport);
+
     const params = new URL(window.location.href).searchParams;
 
     // Restore org from URL
@@ -156,6 +166,8 @@
       const showLanes = new Set(lane.split(','));
       hiddenLanes = new Set(allLanes.filter((l: string) => !showLanes.has(l)));
     }
+
+    return () => mq.removeEventListener('change', applyViewport);
   });
 
   // Sync state → URL
@@ -183,6 +195,10 @@
 
     history.replaceState({}, '', url);
   });
+
+  function onInspectorOpenChange(open: boolean) {
+    if (!open) deselect();
+  }
 
   function select(id: string) {
     if (selectedId === id) {
@@ -242,27 +258,18 @@
 
 <svelte:window onkeydown={onKeydown} />
 
-<div class="fixed inset-0 overflow-hidden bg-background">
-  <!-- Desktop: full-height sidebar on right, everything else on left -->
-  <!-- Mobile fallback -->
-  <div class="flex h-full flex-col items-center justify-center gap-6 px-8 text-center md:hidden bg-[#0d1117] [background-image:linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] [background-size:40px_40px]">
-    <svg class="size-16 animate-[spin_6s_linear_infinite] text-muted-foreground/20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4">
-      <circle cx="50" cy="50" r="45"/>
-      <ellipse cx="50" cy="50" rx="45" ry="12"/>
-      <ellipse cx="50" cy="50" rx="20" ry="45"/>
-      <ellipse cx="50" cy="50" rx="35" ry="45"/>
-    </svg>
-    <div class="space-y-2">
-      <p class="text-[0.6rem] tracking-[0.3em] text-muted-foreground/40 font-mono uppercase">gang.guide</p>
-      <p class="text-lg font-semibold text-foreground/90">Desktop only</p>
-      <p class="text-xs text-muted-foreground/60 max-w-[240px] mx-auto leading-relaxed">This interactive map requires a larger screen. Mobile is coming.</p>
+<div class="fixed inset-0 h-dvh overflow-hidden bg-background pb-[env(safe-area-inset-bottom)]">
+  {#if viewport === 'pending'}
+    <div class="flex h-full flex-col items-center justify-center">
+      <svg class="size-16 animate-[spin_6s_linear_infinite] text-muted-foreground/20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4">
+        <circle cx="50" cy="50" r="45"/>
+        <ellipse cx="50" cy="50" rx="45" ry="12"/>
+        <ellipse cx="50" cy="50" rx="20" ry="45"/>
+        <ellipse cx="50" cy="50" rx="35" ry="45"/>
+      </svg>
     </div>
-  </div>
-  <PaneGroup autoSaveId={INSPECTOR_LAYOUT_KEY}
-    direction="horizontal"
-    class="hidden h-full md:flex "
-  >
-    <Pane defaultSize={100 - INSPECTOR_DEFAULT_SIZE} minSize={40} class="min-h-0 min-w-0">
+  {:else}
+    {#snippet mapWorkspace()}
       <div class="flex h-full flex-col">
         <AppHeader
           {graph}
@@ -270,8 +277,6 @@
           nodeCount={graph.nodes.length}
           edgeCount={visibleEdgeCountDerived}
         />
-
-
         <main class="relative min-h-0 flex-1 overflow-hidden bg-background">
           <KonvaMap
             zoomCommand={zoomCmd}
@@ -285,21 +290,23 @@
             ondeselect={deselect}
             onzoom={(z) => (zoomPct = Math.round(z * 100))}
           />
-          <div class="absolute top-3 left-3 right-3 z-[2] flex items-center justify-between">
+          <div class="absolute top-3 right-3 left-3 z-[2] flex items-center gap-2 md:justify-between">
             <button
-              class="flex h-7 min-w-36 items-center gap-1.5 rounded-full bg-muted px-3 text-muted-foreground hover:text-foreground active:scale-[0.97]"
+              class="flex h-8 min-w-0 flex-1 items-center gap-1.5 rounded-full bg-muted px-3 text-muted-foreground hover:text-foreground active:scale-[0.97] md:h-7 md:min-w-36 md:flex-none"
               onclick={() => searchRef?.focusSearch()}
               title="Search (⌘K)"
             >
-              <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <svg class="size-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
               <span class="text-[0.65rem]">Search…</span>
-              <Kbd.Root class="ml-auto">⌘K</Kbd.Root>
+              <Kbd.Root class="ml-auto hidden md:inline-flex">⌘K</Kbd.Root>
             </button>
-            <EdgeModeToggle bind:edgeMode {selectedId} />
+            <div class="hidden md:block">
+              <EdgeModeToggle bind:edgeMode {selectedId} />
+            </div>
             <YearSlider bind:yearMin bind:yearMax />
           </div>
-          <MapOverlay position="bottom-left">
-            <div class="flex flex-col gap-1">
+          <MapOverlay position="bottom-left" class="hidden md:block">
+            <div class="flex flex-col gap-1 pb-1">
               <EdgeLegend />
               <LaneFilter
                 groups={laneGroups}
@@ -310,7 +317,7 @@
             </div>
           </MapOverlay>
           <OrgSearch bind:this={searchRef} {graph} onselect={selectFromSearch} />
-          <MapOverlay position="bottom-right">
+          <MapOverlay position="bottom-right" class="hidden md:block">
             <ZoomControls
               {zoomPct}
               onZoomIn={() => sendZoom("in")}
@@ -318,62 +325,69 @@
               onFit={() => sendZoom("fit")}
             />
           </MapOverlay>
+          <div class="absolute inset-x-3 bottom-3 z-[2] flex items-center gap-1 md:hidden">
+            <LaneFilter
+              groups={laneGroups}
+              {hiddenLanes}
+              onToggleGroup={toggleLaneGroup}
+              onShowAll={() => { if (hiddenLanes.size === 0) { hiddenLanes = new Set(Object.values(laneGroups).flat()); } else { hiddenLanes = new Set(); } }}
+            />
+            <div class="min-w-0 flex-1">
+              <EdgeModeToggle bind:edgeMode {selectedId} />
+            </div>
+            <ZoomControls
+              {zoomPct}
+              onZoomIn={() => sendZoom("in")}
+              onZoomOut={() => sendZoom("out")}
+              onFit={() => sendZoom("fit")}
+            />
+          </div>
         </main>
       </div>
-    </Pane>
+    {/snippet}
 
-    <Handle withHandle class="shrink-0 bg-border/80" />
-
-    <Pane
-      defaultSize={INSPECTOR_DEFAULT_SIZE}
-      minSize={INSPECTOR_MIN_SIZE}
-      maxSize={INSPECTOR_MAX_SIZE}
-      
-      class="min-h-0 min-w-0"
-    >
-      <aside
-        class="flex h-full min-h-0 min-w-0 flex-col overflow-hidden border-l border-border/80 bg-card"
-        aria-label="Entity inspector"
+    {#if viewport === 'desktop'}
+      <PaneGroup autoSaveId={INSPECTOR_LAYOUT_KEY} direction="horizontal" class="flex h-full">
+        <Pane defaultSize={100 - INSPECTOR_DEFAULT_SIZE} minSize={40} class="min-h-0 min-w-0">
+          {@render mapWorkspace()}
+        </Pane>
+        <Handle withHandle class="shrink-0 bg-border/80" />
+        <Pane
+          defaultSize={INSPECTOR_DEFAULT_SIZE}
+          minSize={INSPECTOR_MIN_SIZE}
+          maxSize={INSPECTOR_MAX_SIZE}
+          class="min-h-0 min-w-0"
+        >
+          <aside
+            class="flex h-full min-h-0 min-w-0 flex-col overflow-hidden border-l border-border/80 bg-card"
+            aria-label="Entity inspector"
+          >
+            <InspectorPanel
+              {graph}
+              node={enrichedNode}
+              onclose={deselect}
+              onselect={select}
+            />
+          </aside>
+        </Pane>
+      </PaneGroup>
+    {:else}
+      {@render mapWorkspace()}
+      <Drawer.Root
+        open={Boolean(selectedId)}
+        onOpenChange={onInspectorOpenChange}
+        shouldScaleBackground={false}
       >
-        <InspectorPanel
-          {graph}
-          node={enrichedNode}
-          onclose={deselect}
-          onselect={select}
-        />
-      </aside>
-    </Pane>
-  </PaneGroup>
-
-  <!-- Mobile: full-width map + slide-over inspector -->
-  <div class="relative min-h-0 flex-1 md:hidden">
-    <main class="h-full min-h-0 overflow-hidden bg-background">
-      <KonvaMap
-        zoomCommand={zoomCmd}
-        {graph}
-        {selectedId}
-        {edgeMode}
-          {yearMin}
-          {yearMax}
-          {hiddenLanes}
-        onselect={select}
-        ondeselect={deselect}
-        onzoom={(z) => (zoomPct = Math.round(z * 100))}
-      />
-    </main>
-
-    {#if enrichedNode}
-      <aside
-        class="absolute inset-0 z-10 flex flex-col overflow-hidden bg-card"
-        aria-label="Entity inspector"
-      >
-        <InspectorPanel
-          {graph}
-          node={enrichedNode}
-          onclose={deselect}
-          onselect={select}
-        />
-      </aside>
+        <Drawer.Content class="h-[80dvh] max-h-[80dvh] min-h-0 gap-0 overflow-hidden rounded-t-lg p-0">
+          <InspectorPanel
+            {graph}
+            node={enrichedNode}
+            onclose={deselect}
+            onselect={select}
+          />
+        </Drawer.Content>
+      </Drawer.Root>
     {/if}
-  </div>
+  {/if}
 </div>
+

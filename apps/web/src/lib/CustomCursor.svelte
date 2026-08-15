@@ -9,6 +9,8 @@
   let scale = 1;
 
   onMount(() => {
+    const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+    if (!finePointer.matches) return;
     const timer = setTimeout(() => { ready = true; }, 500);
     return () => clearTimeout(timer);
   });

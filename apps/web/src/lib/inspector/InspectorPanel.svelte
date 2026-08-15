@@ -440,11 +440,14 @@
       <div class="flex flex-col items-center gap-2 text-center">
         <MousePointerClick class="size-8 text-muted-foreground/40" />
         <h3 class="text-sm font-medium text-foreground">No selection</h3>
-        <p class="max-w-48 text-[0.7rem] text-muted-foreground">
+        <p class="max-w-48 text-[0.7rem] text-muted-foreground md:hidden">
+          Tap a node on the map or use search
+        </p>
+        <p class="hidden max-w-48 text-[0.7rem] text-muted-foreground md:block">
           Click a node on the map or press <Kbd>⌘K</Kbd> to search
         </p>
       </div>
-      <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[0.65rem] text-muted-foreground">
+      <div class="hidden flex-wrap items-center justify-center gap-x-4 gap-y-2 text-[0.65rem] text-muted-foreground md:flex">
         <span class="inline-flex items-center gap-1"><Kbd>⌘K</Kbd> search</span>
         <span class="inline-flex items-center gap-1"><Kbd>Esc</Kbd> deselect</span>
         <span class="inline-flex items-center gap-1"><Kbd>F</Kbd> fit</span>

@@ -58,12 +58,12 @@
 
   </div>
 
-  <div class="flex items-center gap-1.5">
+  <div class="ml-auto flex items-center gap-1.5 lg:ml-0">
     <CoverageDialog {graph} edgeMode="all" {selectedId} />
     <Dialog.Root>
     <Dialog.Trigger>
       {#snippet child({ props })}
-        <button {...props} class="inline-flex size-6 items-center justify-center rounded-md border border-border bg-card text-muted-foreground hover:bg-accent hover:text-foreground" title="Build history">
+        <button {...props} class="inline-flex size-8 items-center justify-center rounded-md border border-border bg-card text-muted-foreground hover:bg-accent hover:text-foreground md:size-6" title="Build history">
               <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
             </button>
       {/snippet}

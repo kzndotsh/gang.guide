@@ -8,7 +8,7 @@
 </script>
 
 <Tooltip.Provider>
-  <div class="dark h-full min-h-screen cursor-none" oncontextmenu={(e) => e.preventDefault()}>
+  <div class="dark h-full min-h-dvh" oncontextmenu={(e) => e.preventDefault()}>
     <CustomCursor />
     {#if navigating.to}
       <div class="fixed inset-0 z-50 flex items-center justify-center bg-background">

@@ -6,9 +6,11 @@ An interactive map of US criminal organizations — their alliances, rivalries, 
 
 ## Using the Map
 
-- **Pan/zoom** — scroll or pinch to navigate
-- **Click a node** — opens the inspector panel with org details
-- **Search** — Ctrl+K to search by name
+The map works on desktop and mobile browsers.
+
+- **Pan/zoom** — scroll wheel, trackpad pinch, or two-finger touch to navigate
+- **Click/tap a node** — opens the inspector panel with org details
+- **Search** — Ctrl+K (desktop) or the search button (mobile) to search by name
 - **Year slider** — filter orgs by founding year range
 - **Lane filter** — show/hide geographic/affiliation groups
 - **Edge mode** — toggle between "all edges" and "focus" (selected org only)

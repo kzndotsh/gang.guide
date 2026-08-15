@@ -13,14 +13,17 @@
   let { edgeMode = $bindable(), selectedId }: Props = $props();
 </script>
 
-<div class="flex h-7 items-center rounded-full bg-muted px-3">
+<div class="flex h-8 w-full items-center justify-center rounded-full bg-muted px-1 md:h-7 md:w-auto md:px-3">
   {#each EDGE_OPTIONS as opt}
     {@const disabled = opt.needsSelection && !selectedId}
     {@const active = edgeMode === opt.value}
     <button
-      class="rounded-full px-3 py-1 text-[0.65rem] font-medium transition-colors {active ? 'bg-background text-foreground' : 'text-muted-foreground hover:text-foreground'} {disabled ? 'opacity-30 pointer-events-none' : ''}"
+      class="min-w-0 flex-1 rounded-full px-1.5 py-1 text-[0.65rem] font-medium transition-colors md:flex-none md:px-3 {active ? 'bg-background text-foreground' : 'text-muted-foreground hover:text-foreground'} {disabled ? 'opacity-30 pointer-events-none' : ''}"
       onclick={() => { edgeMode = opt.value; }}
       {disabled}
-    >{opt.label}</button>
+    >
+      <span class="md:hidden">{opt.value === 'hover' ? 'Hover' : 'All'}</span>
+      <span class="hidden md:inline">{opt.label}</span>
+    </button>
   {/each}
 </div>
