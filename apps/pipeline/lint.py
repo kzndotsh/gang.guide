@@ -410,10 +410,7 @@ def check_edges(edges: list[dict], org_ids: set[str]):
 
     for e in edges:
         src, tgt, etype = e["source"], e["target"], e["type"]
-        if etype in ("alliance", "rivalry"):
-            key = frozenset([src, tgt])
-        else:
-            key = (src, tgt)
+        key = frozenset([src, tgt]) if etype in ("alliance", "rivalry") else (src, tgt)
         pair_edges[key].append(e)
 
     for key, elist in pair_edges.items():
