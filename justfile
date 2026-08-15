@@ -116,6 +116,14 @@ enrich *args:
 enrich-rank:
     python3 -m apps.pipeline.enrich --dry-run --limit 50
 
+# Verify and clean existing org data (spot-check for bad/fabricated data)
+clean *args:
+    python3 -m apps.pipeline.clean {{args}}
+
+# Clean dry-run: show orgs flagged for verification without calling LLM
+clean-rank:
+    python3 -m apps.pipeline.clean --dry-run --limit 50
+
 # Show what .gangguideignore is currently suppressing
 ignore-show:
     @echo "=== [enrich:skip] ==="; grep -A999 '^\[enrich:skip\]' .gangguideignore | grep -B999 '^\[' | grep '^org:' | sort || true
