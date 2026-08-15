@@ -17,7 +17,7 @@ from pathlib import Path
 
 from apps.pipeline.log import PipelineLogger
 
-from .ignore import load_ignore_rules
+from .ignore import IgnoreRules, load_ignore_rules
 from .lib.resolve import build_index, resolve
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -251,7 +251,6 @@ def apply_edges(
     ignore: "IgnoreRules | None" = None,
 ) -> list[str]:
     """Apply extracted edges. Mutates edges_list and existing_keys in place."""
-    from apps.pipeline.ignore import IgnoreRules  # avoid circular at module level
 
     edges_added = []
 

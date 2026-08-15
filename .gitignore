@@ -36,3 +36,5 @@ htmlcov/
 data/enrichment_log.json
 data/logs/*.jsonl
 .agents/
+
+/tmp
