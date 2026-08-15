@@ -1,13 +1,16 @@
 {
   "id": "org:racine-boys",
   "name": "Racine Boys",
-  "aliases": [],
+  "aliases": [
+    "Insane Racine Boys",
+    "RBs"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "Racine Boys was a Folk Nation street gang founded 1970 in Chicago. Disbanded around 2000.",
+  "description": "The Racine Boys formed in 1970 at 18th Place and Racine in the Pilsen neighborhood of Chicago's Lower West Side, the same year as the Bishops and Latin Brothers. Originally allied with the Bishops and Latin Counts, a violent falling-out at a 1980 party led them to align with Ambrose and join the Folk Nation in 1981. The gang gradually shrank through the 1990s and 2000s as members flipped to Ambrose, with activity reported around Dvorak Park as late as 2010.",
   "founded_year": 1970,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "exact",
   "colors": [
     "light blue",
     "navy blue"
@@ -18,6 +21,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/insane-racine-boys",
       "title": "Racine Boys - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/insane-racine-boys",
+      "title": "Racine Boys (Insane Racine Boys) – Pilsen, 18th Place & Racine | Chicago Gang History"
     }
   ],
   "disbanded_year": 2000,

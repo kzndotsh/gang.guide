@@ -1,7 +1,10 @@
 {
   "id": "org:aristocrats",
   "name": "Aristocrats",
-  "aliases": [],
+  "aliases": [
+    "The Almighty Seminary and Barry Aristocrats",
+    "Crats"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
@@ -19,6 +22,18 @@
     {
       "url": "http://www.stonegreasers.com/greaser/aristocrats.html",
       "title": "www.stonegreasers.com"
+    },
+    {
+      "url": "https://www.stonegreasers.com/greaser/aristocrats.html",
+      "title": "Chicago Aristocrats Gang, Sherry-Berry Black Saints Gang – Stone Greasers"
+    },
+    {
+      "url": "https://gaylords712.com/greaser/aristocrats_Simoncityroyals_deuces_rebels.html",
+      "title": "Sherry Berry Black Saints - Aristocrats - Simon City Royals - Deuces"
+    },
+    {
+      "url": "https://chicagoganghistory.com/hoods/lakeview",
+      "title": "Lake View - North Side, Wrigleyville & Boystown | Chicago Gang History"
     }
   ],
   "symbols": [

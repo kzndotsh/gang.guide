@@ -9,6 +9,18 @@
     {
       "url": "https://www.streetgangs.com/crips/altadena",
       "title": "Altadena Blocc Crips (ABC) — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/altadena-blocc-crips/",
+      "title": "Altadena Blocc Crips - United Gangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/five-alleged-members-altadena-and-duarte-based-street-gangs-face-federal-firearms",
+      "title": "Five Alleged Members of Altadena- and Duarte-Based Street Gangs Face Federal Firearms Charges - DOJ"
+    },
+    {
+      "url": "https://pasadenanow.com/main/5-alleged-altadena-duarte-gang-members-arrested-on-gun-charges-in-federal-roundup",
+      "title": "5 Alleged Altadena, Duarte Gang Members Arrested on Gun Charges in Federal Roundup - Pasadena Now"
     }
   ],
   "metro": "Los Angeles",
@@ -19,6 +31,6 @@
   "aliases": [
     "ABCAIA"
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "exact",
   "status": "active"
 }

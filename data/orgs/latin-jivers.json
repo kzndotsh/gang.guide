@@ -1,7 +1,10 @@
 {
   "id": "org:latin-jivers",
   "name": "Latin Jivers",
-  "aliases": [],
+  "aliases": [
+    "Insane Latin Jivers",
+    "Maniac Latin Jivers"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",

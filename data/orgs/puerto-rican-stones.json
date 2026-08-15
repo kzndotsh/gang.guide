@@ -1,7 +1,10 @@
 {
   "id": "org:puerto-rican-stones",
   "name": "Puerto Rican Stones",
-  "aliases": [],
+  "aliases": [
+    "P.R. Stones",
+    "P.R.S."
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +21,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/puerto-rican-stones",
       "title": "Puerto Rican Stones - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/puerto-rican-stones",
+      "title": "Puerto Rican Stones – Chicago Gang History"
+    },
+    {
+      "url": "https://onchicago.blogspot.com/p/puerto-rican-stones.html",
+      "title": "Puerto Rican Stones – Original Northside Chicago"
     }
   ],
   "disbanded_year": 1980,

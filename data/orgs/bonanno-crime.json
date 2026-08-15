@@ -13,6 +13,14 @@
     {
       "url": "https://www.streetgangs.com/bonanno/crime",
       "title": "Bonanno Crime Family — StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bonanno_crime_family",
+      "title": "Bonanno crime family - Wikipedia"
+    },
+    {
+      "url": "https://aboutthemafia.com/new-york-mafia-families-current-membership-numbers/",
+      "title": "New York Mafia Families Current Membership Numbers — About the Mafia"
     }
   ],
   "metro": "New York",
@@ -20,6 +28,7 @@
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "circa",
+  "status": "active",
+  "membership_estimate": 130
 }

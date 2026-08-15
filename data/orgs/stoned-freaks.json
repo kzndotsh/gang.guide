@@ -1,7 +1,13 @@
 {
   "id": "org:stoned-freaks",
   "name": "Stoned Freaks",
-  "aliases": [],
+  "aliases": [
+    "Young Blood Freaks",
+    "Youngblood Freaks",
+    "Stoned Freak Nation",
+    "SFN",
+    "Freaks"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -19,6 +25,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/stoned-freaks",
       "title": "Stoned Freaks - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/stoned-freaks",
+      "title": "Stoned Freaks - Chicago Gang History"
+    },
+    {
+      "url": "https://stonegreasers.com/greaser/stoned_freaks.html",
+      "title": "Stoned Freaks | Stoned Freak Nation | United Stoned Freaks"
     }
   ],
   "disbanded_year": 2000,

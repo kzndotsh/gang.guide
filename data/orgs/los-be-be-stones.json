@@ -1,7 +1,13 @@
 {
   "id": "org:los-be-be-stones",
   "name": "Los Be Be Stones",
-  "aliases": [],
+  "aliases": [
+    "Los Be Bes",
+    "Los Bebes",
+    "Almighty Los Be Be Kings",
+    "Almighty Los Be Be Stones",
+    "Los Be Be Kings"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -20,6 +26,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-los-bebe-stones",
       "title": "Los Be Be Stones - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/almighty-los-bebe-stones",
+      "title": "Los Be Be Stones (Los Bebes) - Chicago Gang History"
     }
   ],
   "symbols": [

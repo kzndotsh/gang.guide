@@ -1,7 +1,9 @@
 {
   "id": "org:howard-street-greasers",
   "name": "Howard Street Greasers",
-  "aliases": [],
+  "aliases": [
+    "HSG"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
@@ -18,6 +20,14 @@
     {
       "url": "http://www.stonegreasers.com/greaser/corp.html",
       "title": "www.stonegreasers.com"
+    },
+    {
+      "url": "https://www.stonegreasers.com/greaser/howard_street_greasers.html",
+      "title": "Chicago's Rogers Park Howard Street Greasers Gang, Howard Street Lords, Irish Gangs – Stone Greasers"
+    },
+    {
+      "url": "https://chicagoganghistory.com/hoods/rogers-park",
+      "title": "Rogers Park – Far North Side, Howard Street | Chicago Gang History"
     }
   ]
 }
