@@ -9,6 +9,10 @@
     {
       "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/idks",
       "title": "Indiana Dukes — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/indiana-dukes-13/",
+      "title": "Indiana Dukes 13 - United Gangs"
     }
   ],
   "founded_year": 1965,
@@ -17,5 +21,15 @@
     "blue"
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "Varrio Indiana Dukes",
+    "VIDKS",
+    "Indiana Dukes 13",
+    "IDKS13",
+    "Indiana Street Dukes 13"
+  ],
+  "symbols": [
+    "Duke Blue Devils Apparel",
+    "Number 13"
+  ]
 }

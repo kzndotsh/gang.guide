@@ -15,10 +15,17 @@
     {
       "url": "https://unitedgangs.com/rollin-50s-crips",
       "title": "Rollin 50S Crips — UnitedGangs"
+    },
+    {
+      "url": "https://grokipedia.com/page/55-neighborhood-crips",
+      "title": "55 Neighborhood Crips — Grokipedia"
     }
   ],
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Deuces (2x) Hand Sign"
+  ]
 }

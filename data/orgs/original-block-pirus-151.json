@@ -9,6 +9,10 @@
     {
       "url": "https://www.streetgangs.com/bloods/compton/obp",
       "title": "Original Block Pirus, 151 — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/original-block-piru-151/",
+      "title": "151 Original Block Piru — UnitedGangs.com"
     }
   ],
   "founded_year": 1972,
@@ -18,5 +22,12 @@
   ],
   "nation_affiliation": "org:bloods",
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "151 OBP",
+    "151 Neighborhood Piru",
+    "151NHP",
+    "151 Original Block Neighborhood Piru",
+    "151OBNP",
+    "WS 151P"
+  ]
 }

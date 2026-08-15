@@ -1,7 +1,10 @@
 {
   "id": "org:party-players",
   "name": "Party Players",
-  "aliases": [],
+  "aliases": [
+    "Almighty Party Players",
+    "APPN"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +21,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-party-players",
       "title": "Party Players - Chicago Gang History"
+    },
+    {
+      "url": "https://www.reddit.com/r/APPNLittleVillage/comments/qmssj0/almighty_party_players_gang_history_sets/",
+      "title": "Almighty Party Players Gang History & Sets - r/APPNLittleVillage"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SzHyJZoIL8w",
+      "title": "Almighty Party Players Chicago Gang History - YouTube"
     }
   ],
   "symbols": [

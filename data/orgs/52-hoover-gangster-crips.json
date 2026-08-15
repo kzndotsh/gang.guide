@@ -29,5 +29,14 @@
   "colors": [
     "orange"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "HGC",
+    "Five-Deuce",
+    "Hoova",
+    "Five-Pointed Star",
+    "H Hand Sign",
+    "Houston Astros Apparel",
+    "New York Mets Apparel"
+  ]
 }

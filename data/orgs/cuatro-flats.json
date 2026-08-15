@@ -9,6 +9,18 @@
     {
       "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights/cuatroflats",
       "title": "Cuatro Flats — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/cuatro-flats/",
+      "title": "Cuatro Flats — UnitedGangs.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Joe_Saenz",
+      "title": "Joe Saenz — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aliso_Village",
+      "title": "Aliso Village — Wikipedia"
     }
   ],
   "founded_year": 1950,
@@ -17,5 +29,12 @@
     "blue"
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "Cuatro Flats 13",
+    "4th Street Flats"
+  ],
+  "symbols": [
+    "Sur 13",
+    "XIII"
+  ]
 }

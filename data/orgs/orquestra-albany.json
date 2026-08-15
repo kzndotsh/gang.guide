@@ -1,7 +1,12 @@
 {
   "id": "org:orquestra-albany",
   "name": "Orquestra Albany",
-  "aliases": [],
+  "aliases": [
+    "La Orquestra Albany",
+    "La Orquestra Albanies",
+    "Insane Orquestra Albany",
+    "Orchestra Albany"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -18,6 +23,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/insane-la-orquestra-albany",
       "title": "Orquestra Albany - Chicago Gang History"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TD_fUPjgdqg",
+      "title": "Dangerous Chicago Gangs: Orquestra Albany - The Puerto Rican Gang of Logan Square"
+    },
+    {
+      "url": "https://www.reddit.com/r/Chiraqology/comments/xcrpmm/everything_about_orchestra_albany/",
+      "title": "Everything About Orchestra Albany : r/Chiraqology"
     }
   ],
   "symbols": [

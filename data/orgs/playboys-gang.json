@@ -34,6 +34,10 @@
     "white",
     "blue"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "circa",
+  "status": "active",
+  "membership_estimate": 6500,
+  "symbols": [
+    "Playboy Bunny Logo"
+  ]
 }

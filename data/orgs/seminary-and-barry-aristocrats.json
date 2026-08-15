@@ -1,7 +1,10 @@
 {
   "id": "org:seminary-and-barry-aristocrats",
   "name": "Seminary and Barry Aristocrats",
-  "aliases": [],
+  "aliases": [
+    "The Crats",
+    "Almighty Seminary and Barry Aristocrats"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Unknown",
@@ -19,6 +22,10 @@
     {
       "url": "https://www.stonegreasers.com/greaser/aristocrats.html",
       "title": "www.stonegreasers.com"
+    },
+    {
+      "url": "https://gaylords712.com/greaser/aristocrats_Simoncityroyals_deuces_rebels.html",
+      "title": "Sherry Berry Black Saints - Aristocrats - Simon City Royals - Deuces"
     }
   ],
   "symbols": [

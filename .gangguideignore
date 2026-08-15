@@ -38,46 +38,53 @@
 # precision — repeated LLM attempts return null, manual research confirmed empty.
 [enrich:skip]
 
-# Confirmed dead ends — no public membership data exists
-org:denver-lane-bloods        # no_membership: no public count found (FBI/UnitedGangs/Wikipedia all silent)
-org:gangster-crips            # no_membership: umbrella set, no aggregate count in any public source
-org:main-street-mafia-crips   # no_membership + imprecise_year: no verifiable data in any source
-org:hacienda-village-bloods   # no_membership + no_symbols: sources are sparse stubs
-org:circle-city-piru          # no_membership + no_symbols: no verifiable data found
-org:rollin-40s-neighborhood-crips  # no_membership + imprecise_year: Wikipedia/UnitedGangs both empty
-org:simon-city-royals         # no_membership: no public count — Wikipedia and UnitedGangs silent
-org:mafia-crips               # no_aliases + no_membership: no data in any checked source
-org:broadway-gangster-crips   # no_membership + no_symbols: sources are stubs
-org:kitchen-crips             # no_membership + imprecise_year: no verifiable data
-org:farm-dog-compton-crips    # imprecise_year + no_membership + no_symbols: exhaustively searched
-org:fudge-town-mafia-crips    # imprecise_year + no_membership: no data beyond what's already filed
-org:67-neighborhood-crips     # no_membership: no public count in any source
-org:east-coast-crips-los-angeles  # fully enriched (membership_estimate added manually)
-org:112-neighborhood-crips    # no_symbols + imprecise_year: exhaustively searched, nothing found
-org:blue-gate-mafia-crips     # no_symbols: no apparel/sign data found in any source
-org:inglewood-family-gangster-bloods  # no_symbols: 14-turn search exhausted, nothing verifiable
-org:miller-gangster-bloods    # no_symbols + imprecise_year: no data found
-org:hard-time-hustler-crips-los-angeles  # no_membership: no public count
-org:genovese-crime-family     # imprecise_year + no_symbols: Wikipedia has year but no symbols
-org:the-commission            # no_symbols: no verifiable symbols for umbrella body
-
-# Second-pass dead ends — exhaustively searched, nothing found
-org:main-street-mafia-crips   # imprecise_year + no_membership: no verifiable data in any source
-org:circle-city-piru          # imprecise_year + no_membership + no_symbols: 10+ searches, nothing
-org:mafia-crips               # no_aliases + no_membership: zero data in any checked source
-org:simon-city-royals         # no_membership: Wikipedia + UnitedGangs both silent
-org:genovese-crime-family     # imprecise_year + no_symbols: Wikipedia has info but not what's missing
-org:kitchen-crips             # imprecise_year + no_membership: no verifiable data found
-org:miller-gangster-bloods    # no_membership + no_symbols + imprecise_year: all sources are stubs
-org:venice-shoreline-crips    # no_membership + no_symbols + imprecise_year: sources exhausted
-org:avenue-piru-gang          # imprecise_year + no_membership: no data in any source
-org:front-street-watts-crips  # imprecise_year + no_membership: no data found
-org:the-65-menlo-crips        # no_membership + no_symbols: sources are stubs
-org:south-side-compton-crips  # imprecise_year + no_membership: sources exhausted
-org:hoover-criminals          # no_membership: no public count in any source
-org:lantana-blocc-compton-crips  # imprecise_year + no_membership + no_symbols: exhaustively searched
-org:harvard-park-brims        # no_membership + no_symbols: all sources are stubs
-org:centinela-park-family     # imprecise_year + no_membership + no_symbols: no data found
+# Confirmed dead ends — exhaustive LLM + manual research, nothing found
+org:denver-lane-bloods                             # no_membership: no public count anywhere
+org:gangster-crips                                 # no_membership: umbrella, no aggregate count
+org:main-mafia-crips-msmc-los-angeles              # imprecise_year + no_membership: exhausted
+org:circle-city-pirus-in-watts-los-angeles         # all issues: exhaustive multi-session search
+org:mafia-crips-los-angeles                        # no_aliases + no_membership: exhausted
+org:simon-city-royals-chicago                      # no_membership: Wikipedia + UnitedGangs silent
+org:genovese-crime                                 # imprecise_year + no_symbols: exhausted
+org:kitchen-crips-los-angeles                      # imprecise_year + no_membership: exhausted
+org:miller-gangster-bloods-los-angeles             # all issues: exhausted
+org:venice-shoreline-crips                         # all issues: exhausted
+org:avenue-piru-gang                               # imprecise_year + no_membership: exhausted
+org:front-street-watts-crips                       # imprecise_year + no_membership: exhausted
+org:65-menlo-crips-in-south-los-angeles-los-angeles  # no_membership: count not available
+org:south-side-compton-crips-sscc                  # imprecise_year + no_membership: exhausted
+org:hoover-criminals                               # no_membership: no public count
+org:lantana-blocc-compton-crips                    # all issues: exhausted
+org:harvard-park-brims-los-angeles                 # no_membership: exhausted (symbols added)
+org:centinela-park-family                          # all issues: exhausted
+org:rollin-20s-neighborhood-bloods                 # no_membership + no_symbols: exhausted
+org:ward-lane-compton-crips                        # imprecise_year + no_membership: exhausted
+org:wattsmafiacrip                                 # no_membership + no_symbols: exhausted
+org:west-side-pirus-compton                        # no_membership: already enriched year
+org:dwbi                                           # no_membership: already enriched sources
+org:halsey-bops                                    # no_membership + no_symbols: already enriched aliases
+org:elm-street-piru                                # imprecise_year + no_membership: exhausted
+org:hacienda-village-bloods                        # no_membership + no_symbols: sparse stubs
+org:rollin-40s-neighborhood-crips                  # no_membership + imprecise_year: exhausted
+org:blue-gate-mafia-crips                          # no_symbols: exhausted
+org:broadway-gangster-crips                        # no_membership + no_symbols: stubs
+org:67-neighborhood-crips                          # no_membership: no public count
+org:112-neighborhood-crips                         # no_symbols + imprecise_year: exhausted
+org:hard-time-hustler-crips-los-angeles            # no_membership: no public count
+org:inglewood-family-gangster-bloods               # no_symbols: 14-turn search, nothing
+org:the-commission                                 # no_symbols: no verifiable symbols
+org:east-coast-crips-los-angeles                   # fully enriched (membership added manually)
+org:farm-dog-compton-crips                         # all issues: exhausted
+org:fudge-town-mafia-crips                         # imprecise_year + no_membership: exhausted
+org:ambrose                                        # no_membership: exhausted
+org:87-gangster-crips                              # no_membership + no_symbols: stubs
+org:cross-atlantic-pirus                           # imprecise_year + no_membership: exhausted
+org:latin-brothers                                 # no_membership: exhausted
+org:mad-ass-gangster-crips                         # no_membership + no_symbols: stubs
+org:ten-line-gangster-crips                        # no_membership + no_symbols: stubs
+org:anzac-grape-compton-crips                      # no_membership + imprecise_year: exhausted
+org:avalon-ganster-crips-los-angeles               # no_membership: already enriched symbols
+org:rollin-40s-crips                               # imprecise_year + no_membership: exhausted
 
 
 # ── enrich:skip-field ─────────────────────────────────────────────────────────

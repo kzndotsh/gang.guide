@@ -1,7 +1,14 @@
 {
   "id": "org:imperial-spanish-gangsters",
   "name": "Imperial Spanish Gangsters",
-  "aliases": [],
+  "aliases": [
+    "ISG",
+    "Imperial Gangsters",
+    "Almighty Imperial Gangsters",
+    "AIG",
+    "Almighty Imperial Gangsters Nation",
+    "AIGN"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Unknown",
@@ -18,6 +25,14 @@
     {
       "url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html",
       "title": "www.stonegreasers.com"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/almighty-imperial-gangsters",
+      "title": "Imperial Gangsters – Mighty Grand to Logan Square | Chicago Gang History"
+    },
+    {
+      "url": "https://unitedgangs.com/2017/10/17/almighty-imperial-gangsters/",
+      "title": "Almighty Imperial Gangsters | UnitedGangs.com"
     }
   ],
   "symbols": [
