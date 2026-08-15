@@ -2514,7 +2514,7 @@
   },
   {
     "id": "4b8402095648",
-    "source": "org:10th--oregon-crew",
+    "source": "org:10th-oregon-crew",
     "target": "org:pagans-motorcycle-club",
     "type": "rivalry"
   },
@@ -2756,7 +2756,7 @@
   },
   {
     "id": "abca32e96a34",
-    "source": "org:10th--oregon-crew",
+    "source": "org:10th-oregon-crew",
     "target": "org:the-commission",
     "type": "alliance"
   },

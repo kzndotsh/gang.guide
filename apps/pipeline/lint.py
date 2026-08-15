@@ -664,12 +664,49 @@ def check_sources(orgs: dict[str, dict]):
 
 
 def check_id_consistency(orgs: dict[str, dict]):
-    """Check that org IDs match filenames."""
+    """Check that org IDs match filenames and follow slug naming conventions.
+
+    Slug rules (errors):
+    - Must start with 'org:'
+    - Slug portion must be lowercase letters, digits, and hyphens only
+    - No double hyphens (--)
+    - No leading or trailing hyphens
+    - No spaces or non-ASCII characters
+
+    Filename/ID match (info):
+    - ID slug should match the filename stem
+    """
+    import re
+
+    slug_pattern = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+
     for org_id, org in orgs.items():
         f = org["_file"]
+
+        # Must start with 'org:'
+        if not org_id.startswith("org:"):
+            errors.append(f"{f}: ID '{org_id}' must start with 'org:'")
+            continue
+
+        slug = org_id[4:]
+
+        # Slug character/format checks
+        if not slug:
+            errors.append(f"{f}: ID '{org_id}' has empty slug")
+        elif not slug.isascii():
+            errors.append(f"{f}: ID '{org_id}' contains non-ASCII characters in slug")
+        elif " " in slug:
+            errors.append(f"{f}: ID '{org_id}' contains spaces in slug")
+        elif "--" in slug:
+            errors.append(f"{f}: ID '{org_id}' contains double hyphens")
+        elif slug.startswith("-") or slug.endswith("-"):
+            errors.append(f"{f}: ID '{org_id}' slug has leading or trailing hyphen")
+        elif not slug_pattern.match(slug):
+            errors.append(f"{f}: ID '{org_id}' slug contains invalid characters (only a-z, 0-9, - allowed)")
+
+        # Filename match (info only — not all slugs need to match name exactly)
         expected_id = f"org:{f.replace('.json', '')}"
         if org_id != expected_id:
-            # Not an error (IDs can differ from filenames) but flag inconsistency
             info.append(f"{f}: ID '{org_id}' doesn't match filename slug")
 
 
