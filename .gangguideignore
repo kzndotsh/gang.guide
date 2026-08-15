@@ -92,7 +92,7 @@ org:rollin-40s-crips                               # imprecise_year + no_members
 # Useful when one field is a known dead end but others may still improve.
 [enrich:skip-field]
 
-org:spanish-cobras            no_membership   # umbrella count not in public sources
+org:spanish-cobras-chicago    no_membership   # umbrella count not in public sources
 org:east-coast-crips-los-angeles  no_membership   # already manually set to 850
 org:mob-piru                  no_membership   # already manually set to 200
 
@@ -134,15 +134,15 @@ org:people-nation   *   nation
 [lint:suppress]
 
 # cross_metro edges that are known and intentional (national orgs with multi-city presence)
-org:bloods                    cross_metro
-org:crips                     cross_metro
-org:folk-nation               cross_metro
-org:people-nation             cross_metro
-org:ms-13                     cross_metro
-org:18th-street-gang          cross_metro
-org:latin-kings               cross_metro
-org:surenos                   cross_metro
-org:norenos                   cross_metro
-org:gangster-disciples        cross_metro
-org:vice-lords                cross_metro
-org:black-p-stones            cross_metro
+org:bloods                           cross_metro
+org:crips                            cross_metro
+org:folk-nation                      cross_metro
+org:people-nation                    cross_metro
+org:ms-13                            cross_metro
+org:18th-street-gang                 cross_metro
+org:latin-kings                      cross_metro
+org:suren-os-united-states           cross_metro
+org:black-gangster-disciples-nation  cross_metro
+org:almighty-vice-lord-nation        cross_metro
+org:black-p-stones                   cross_metro
+org:spanish-cobras-chicago           cross_metro

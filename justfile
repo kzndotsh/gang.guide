@@ -123,6 +123,10 @@ ignore-show:
     @echo "=== [apply:skip-org] ==="; grep -A999 '^\[apply:skip-org\]' .gangguideignore | grep -B999 '^\[' | grep '^org:' | sort || true
     @echo "=== [lint:suppress] ==="; grep -A999 '^\[lint:suppress\]' .gangguideignore | grep -B999 '^\[' | grep '^org:' | sort || true
 
+# Validate org IDs in .gangguideignore exist in data/orgs/
+ignore-validate:
+    python3 -m apps.pipeline.ignore
+
 # Verify suspicious edges via web search (post-adjudication)
 verify source *args:
     python3 -m apps.pipeline.verify --source {{source}} {{args}}

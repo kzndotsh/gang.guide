@@ -130,11 +130,13 @@ class IgnoreRules:
         return False
 
 
-def load_ignore_rules(path: str | Path | None = None) -> IgnoreRules:
+def load_ignore_rules(path: str | Path | None = None, validate: bool = False) -> IgnoreRules:
     """Parse a .gangguideignore file and return an IgnoreRules instance.
 
     If path is None, looks for .gangguideignore at the project root.
     If the file does not exist, returns empty rules (no-op).
+
+    If validate=True, warns about any org IDs that don't exist in data/orgs/.
     """
     ignore_path = Path(path) if path else DEFAULT_IGNORE_FILE
 
@@ -196,10 +198,62 @@ def load_ignore_rules(path: str | Path | None = None) -> IgnoreRules:
         else:
             _warn(ignore_path, lineno, f"unknown section [{current_section}], skipping: {line!r}")
 
+    if validate:
+        _validate_org_ids(ignore_path, rules)
+
     return rules
+
+
+def _validate_org_ids(ignore_path: Path, rules: IgnoreRules) -> None:
+    """Warn about org IDs in the ignore file that don't exist in data/orgs/."""
+    import json
+
+    orgs_dir = ROOT / "data" / "orgs"
+    if not orgs_dir.exists():
+        return
+
+    real_ids: set[str] = set()
+    for f in orgs_dir.glob("*.json"):
+        try:
+            data = json.loads(f.read_text())
+            real_ids.add(data["id"])
+        except (json.JSONDecodeError, KeyError):
+            pass
+
+    # Collect all org IDs referenced in the ignore file
+    all_ids: set[str] = set()
+    all_ids |= rules.enrich_skip
+    all_ids |= rules.apply_skip_orgs
+    all_ids |= {oid for oid in rules.enrich_skip_fields}
+    all_ids |= {oid for oid in rules.lint_suppress if oid != "*"}
+    for src, tgt, _ in rules.apply_skip_edges:
+        if src != "*":
+            all_ids.add(src)
+        if tgt != "*":
+            all_ids.add(tgt)
+    for src, tgt, _ in rules.verify_skip_edges:
+        if src != "*":
+            all_ids.add(src)
+        if tgt != "*":
+            all_ids.add(tgt)
+
+    missing = sorted(all_ids - real_ids)
+    if missing:
+        import sys
+
+        print(f"\n  ⚠ {ignore_path.name}: {len(missing)} org ID(s) not found in data/orgs/:", file=sys.stderr)
+        for oid in missing:
+            print(f"    {oid}", file=sys.stderr)
 
 
 def _warn(path: Path, lineno: int, msg: str) -> None:
     import sys
 
     print(f"  ⚠ {path.name}:{lineno}: {msg}", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    # Run validation: python3 -m apps.pipeline.ignore
+    rules = load_ignore_rules(validate=True)
+    print(f"Loaded {len(rules.enrich_skip)} enrich:skip, {len(rules.lint_suppress)} lint:suppress orgs")
+    print("Validation complete.")
