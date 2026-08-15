@@ -47,16 +47,16 @@ def build_layout(org, lane_meta, slot):
         # Round years (ends in 0) treated like circa.
         h = hash(org["id"]) & 0xFF
         if precision == "decade":
-            # Decade precision: 0–4yr spread (column jitter adds ~0–1yr on top)
-            display_year = year + (h % 5)  # 0–4yr
+            # Decade precision: 0-4yr spread (column jitter adds ~0-1yr on top)
+            display_year = year + (h % 5)  # 0-4yr
         else:
             # circa or round year — tight spread
             if year >= 1980:
-                display_year = year + (h % 2)  # 0–1yr — very recent, keep tight
+                display_year = year + (h % 2)  # 0-1yr — very recent, keep tight
             elif year >= 1950:
-                display_year = year + (h % 3)  # 0–2yr
+                display_year = year + (h % 3)  # 0-2yr
             else:
-                display_year = year + (h % 4)  # 0–3yr — historical
+                display_year = year + (h % 4)  # 0-3yr — historical
     else:
         display_year = year
 
