@@ -406,7 +406,7 @@ def check_edges(edges: list[dict], org_ids: set[str]):
     # For directed types, use (source, target) as-is
     from collections import defaultdict
 
-    pair_types: dict = defaultdict(set)  # normalized_pair -> set of types
+    pair_edges: dict = defaultdict(list)  # normalized_pair -> list of edge dicts
 
     for e in edges:
         src, tgt, etype = e["source"], e["target"], e["type"]
@@ -414,14 +414,25 @@ def check_edges(edges: list[dict], org_ids: set[str]):
             key = frozenset([src, tgt])
         else:
             key = (src, tgt)
-        pair_types[key].add(etype)
+        pair_edges[key].append(e)
 
-    for key, types in pair_types.items():
+    for key, elist in pair_edges.items():
+        types = {e["type"] for e in elist}
         pair_str = " ↔ ".join(sorted(key)) if isinstance(key, frozenset) else f"{key[0]} → {key[1]}"
 
-        # alliance + rivalry on same pair = contradiction (error)
+        # alliance + rivalry on same pair
         if "alliance" in types and "rivalry" in types:
-            errors.append(f"contradictory edges: {pair_str} has both alliance AND rivalry")
+            # If ALL edges have temporal data disambiguating them, it's a known transition (info only)
+            # If any edge lacks temporal data, it's ambiguous (error)
+            a_edges = [e for e in elist if e["type"] == "alliance"]
+            r_edges = [e for e in elist if e["type"] == "rivalry"]
+            all_dated = all(
+                e.get("start_year") or e.get("end_year") for e in a_edges + r_edges
+            )
+            if all_dated:
+                info.append(f"temporal transition: {pair_str} alliance↔rivalry with dates (ok)")
+            else:
+                errors.append(f"contradictory edges: {pair_str} has both alliance AND rivalry (add start_year/end_year to disambiguate)")
 
         # parent + spin_off on same directed pair = conflict (error)
         if "parent" in types and "spin_off" in types:

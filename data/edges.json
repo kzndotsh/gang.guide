@@ -72,12 +72,6 @@
     "type": "alliance"
   },
   {
-    "id": "59b0cdb15020",
-    "source": "org:almighty-saints",
-    "target": "org:people-nation",
-    "type": "rivalry"
-  },
-  {
     "id": "1e30e2bc1176",
     "source": "org:aryan-brotherhood",
     "target": "org:black-p-stone-nation",
@@ -353,7 +347,8 @@
     "id": "c0ef68ab2f35",
     "source": "org:latin-counts-chicago",
     "target": "org:latin-kings",
-    "type": "rivalry"
+    "type": "rivalry",
+    "start_year": 1990
   },
   {
     "id": "c87f1124d4d9",
@@ -377,7 +372,8 @@
     "id": "deb6d5c5ff14",
     "source": "org:latin-eagles-chicago",
     "target": "org:maniac-latin-disciples-chicago",
-    "type": "rivalry"
+    "type": "rivalry",
+    "start_year": 1992
   },
   {
     "id": "61e164c7a4cc",
@@ -443,7 +439,8 @@
     "id": "4ac267aac22b",
     "source": "org:maniac-latin-disciples-chicago",
     "target": "org:spanish-cobras-chicago",
-    "type": "rivalry"
+    "type": "rivalry",
+    "start_year": 1992
   },
   {
     "id": "a7f50efd67e1",
@@ -1005,12 +1002,6 @@
     "type": "alliance"
   },
   {
-    "id": "ac1d04dd8829",
-    "source": "org:aryan-brotherhood",
-    "target": "org:aryan-brotherhood-of-texas",
-    "type": "alliance"
-  },
-  {
     "id": "c76e1e98a24c",
     "source": "org:aryan-brotherhood-of-texas",
     "target": "org:aryan-circle",
@@ -1311,18 +1302,6 @@
     "id": "45847de5a2fc",
     "source": "org:bufalino-crime",
     "target": "org:gambino-crime",
-    "type": "alliance"
-  },
-  {
-    "id": "00f0dd32ccbd",
-    "source": "org:bufalino-crime",
-    "target": "org:genovese-crime",
-    "type": "rivalry"
-  },
-  {
-    "id": "69d79eecc8b2",
-    "source": "org:bufalino-crime",
-    "target": "org:genovese-crime",
     "type": "alliance"
   },
   {
@@ -1824,7 +1803,8 @@
     "id": "9340ae73beb4",
     "source": "org:latin-eagles-chicago",
     "target": "org:simon-city-royals-chicago",
-    "type": "alliance"
+    "type": "alliance",
+    "start_year": 1981
   },
   {
     "id": "b93e140c8214",
@@ -1893,12 +1873,6 @@
     "end_year": 1989,
     "evidence": "In the year 1978 Imperial Gangsters, Spanish Cobras, Maniac Latin Disciples and Latin Eagles created the \" United Latino Organization \" ( ULO )",
     "source_url": "https://chicagoganghistory.com/gang/almighty-imperial-gangsters/"
-  },
-  {
-    "id": "524b46f933e1",
-    "source": "org:maniac-latin-disciples-chicago",
-    "target": "org:spanish-gangster-disciples-chicago",
-    "type": "alliance"
   },
   {
     "id": "e703c2000334",
@@ -2243,12 +2217,6 @@
     "type": "alliance"
   },
   {
-    "id": "cdcb991d33d5",
-    "source": "org:imperial-gangsters-chicago",
-    "target": "org:simon-city-royals-chicago",
-    "type": "rivalry"
-  },
-  {
     "id": "ca5c9deaf532",
     "source": "org:sin-city-deciples-motorcycle-club",
     "target": "org:wheels-of-soul-motorcycle-club",
@@ -2323,12 +2291,6 @@
     "type": "rivalry"
   },
   {
-    "id": "3d3980bb2d95",
-    "source": "org:imperial-gangsters-chicago",
-    "target": "org:spanish-gangster-disciples-chicago",
-    "type": "alliance"
-  },
-  {
     "id": "87d306a8daf3",
     "source": "org:latin-eagles-chicago",
     "target": "org:spanish-gangster-disciples-chicago",
@@ -2343,12 +2305,6 @@
   {
     "id": "45efe450eaa1",
     "source": "org:simon-city-royals-chicago",
-    "target": "org:spanish-gangster-disciples-chicago",
-    "type": "alliance"
-  },
-  {
-    "id": "9c7361a98b3e",
-    "source": "org:spanish-cobras-chicago",
     "target": "org:spanish-gangster-disciples-chicago",
     "type": "alliance"
   },
@@ -2618,7 +2574,7 @@
     "target": "org:almighty-insane-popes-nation",
     "type": "rivalry",
     "start_year": 1973,
-    "end_year": 2000,
+    "end_year": 1975,
     "evidence": "In the year 1973, Gaylords began spraying 'GL' on the walls over Pope tags and Larkin had a big problem with that... Near the railroad tracks by the old Sears building between the intersections of Irving Park Road between Kilpatrick and Kilbourn is where a fight happened between Gaylords and Popes that started the war between both gangs.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-north-side-insane-popes/"
   },
@@ -2719,7 +2675,8 @@
     "target": "org:black-gangster-disciples-nation",
     "type": "rivalry",
     "evidence": "Vice Lord Nation's main enemy are all gangs of the Folk Nation alliance, especially Gangster Disciples.",
-    "source_url": "https://unitedgangs.com/almighty-vice-lord-nation/"
+    "source_url": "https://unitedgangs.com/almighty-vice-lord-nation/",
+    "start_year": 1974
   },
   {
     "id": "8dcc25f64575",
@@ -2887,12 +2844,6 @@
     "type": "alliance"
   },
   {
-    "id": "52a062e45fc1",
-    "source": "org:asian-boyz",
-    "target": "org:tiny-rascal-gang",
-    "type": "alliance"
-  },
-  {
     "id": "7b02bba61252",
     "source": "org:atlantic-guards",
     "target": "org:dead-rabbits",
@@ -2908,7 +2859,8 @@
     "id": "ac9d689cf298",
     "source": "org:almighty-vice-lord-nation",
     "target": "org:black-disciples-chicago",
-    "type": "rivalry"
+    "type": "rivalry",
+    "start_year": 1974
   },
   {
     "id": "d17d2b45c723",
@@ -3081,12 +3033,6 @@
     "id": "132ccf26c3df",
     "source": "org:black-guerrilla",
     "target": "org:d-c-blacks",
-    "type": "alliance"
-  },
-  {
-    "id": "b05c3ffe1a03",
-    "source": "org:dead-rabbits",
-    "target": "org:roach-guards",
     "type": "alliance"
   },
   {
@@ -3528,12 +3474,6 @@
     "type": "rivalry"
   },
   {
-    "id": "494fce685e39",
-    "source": "org:dead-rabbits",
-    "target": "org:roach-guards",
-    "type": "rivalry"
-  },
-  {
     "id": "38d36401cb30",
     "source": "org:rollin-40s-neighborhood-crips",
     "target": "org:rollin-60s-neighborhood-crips",
@@ -3937,7 +3877,8 @@
     "target": "org:rollin-60s-neighborhood-crips",
     "type": "rivalry",
     "evidence": "The Eight Trays were once allied with nearby Crip gangs, including what would later become their main rivals, the Rollin 60s Neighborhood Crips. By the early 1980s, tensions between the two groups escalated into one of the first major Crip-on-Crip wars in Los Angeles.",
-    "source_url": "https://unitedgangs.com/83-gangster-crips/"
+    "source_url": "https://unitedgangs.com/83-gangster-crips/",
+    "start_year": 1979
   },
   {
     "id": "88e279cc599c",
@@ -4340,14 +4281,6 @@
     "source_url": "https://chicagoganghistory.com/gang/almighty-brazers/"
   },
   {
-    "id": "bafbfc475230",
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:brazers",
-    "type": "alliance",
-    "evidence": "Brazers were tight with La Raza, Simon City Royals and Gangster Disciples in Rogers Park.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-brazers/"
-  },
-  {
     "id": "5553feb92597",
     "source": "org:brazers",
     "target": "org:latin-kings",
@@ -4575,7 +4508,9 @@
     "target": "org:insane-deuces",
     "type": "rivalry",
     "evidence": "The Gaylords then made it to the North Center neighborhood at Berteua and Leavitt, Column and Campbell and Berteau and Milwaukee which is what set off a fire cracker of a gang war between Gaylords and Insane Deuces.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-gaylords/"
+    "source_url": "https://chicagoganghistory.com/gang/almighty-gaylords/",
+    "start_year": 1982,
+    "end_year": 1984
   },
   {
     "id": "7ae948196963",
@@ -5066,14 +5001,6 @@
     "source_url": "https://chicagoganghistory.com/gang/stoned-freaks/"
   },
   {
-    "id": "7fddcd843233",
-    "source": "org:latin-kings",
-    "target": "org:noble-knights",
-    "type": "parent",
-    "evidence": "Kedzie and Ohio Latin Kings encouraged the Noble Knights to flip to Latin Kings and history was made as the Knights accepted and went defunct now that they were Kings.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-kings/"
-  },
-  {
     "id": "98297da750f1",
     "source": "org:latin-kings",
     "target": "org:ridgeway-lords",
@@ -5295,7 +5222,8 @@
     "target": "org:latin-stones",
     "type": "alliance",
     "evidence": "The Latin Stones became slightly allied with Latin Counts in the area but mostly allied with Black P Stones.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-stones/"
+    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-stones/",
+    "end_year": 2005
   },
   {
     "id": "80f6d10673e0",
@@ -5303,7 +5231,8 @@
     "target": "org:latin-stones",
     "type": "rivalry",
     "evidence": "A war erupted in the mid-2000s with the Latin Counts which was costly and at this time the Latin Stones began to shrink but have remained active as a low-key group.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-stones/"
+    "source_url": "https://chicagoganghistory.com/gang/almighty-latin-stones/",
+    "start_year": 2005
   },
   {
     "id": "824505ffa2ec",
@@ -5754,7 +5683,8 @@
     "target": "org:simon-city-royals-chicago",
     "type": "rivalry",
     "evidence": "On a warm day in 1976, Royals and Unknowns were hanging out while drinking beers together and listening to music having a good time at Wrightwood and Wayne. All of a sudden frank pulled out a small 25 caliber pistol and shot Capone to death without saying a word and in a stone cold manner. Even William Fender had no idea his brother was going to shoot Capone, it seemingly was a spur of the moment action, and this started the war.",
-    "source_url": "https://chicagoganghistory.com/gang/almighty-simon-city-royals/"
+    "source_url": "https://chicagoganghistory.com/gang/almighty-simon-city-royals/",
+    "start_year": 1976
   },
   {
     "id": "14eb00d40706",
@@ -6017,7 +5947,8 @@
     "target": "org:four-corner-hustlers-chicago",
     "type": "rivalry",
     "evidence": "After the death of Willis, the Mad Black Souls began having conflicts with the Four Corner Hustlers now that Pee Wee was deceased.",
-    "source_url": "https://chicagoganghistory.com/gang/black-souls/"
+    "source_url": "https://chicagoganghistory.com/gang/black-souls/",
+    "start_year": 1990
   },
   {
     "id": "91e502c9d509",
@@ -6025,7 +5956,8 @@
     "target": "org:four-corner-hustlers-chicago",
     "type": "alliance",
     "evidence": "Monroe Banks met with Jack Bobo and Sam McKay and forged a legendary agreement for peace on the west side. The 'Solid,' '440' concepts were created in 1987 to signify that Souls and Fours were 'Solid' with each other and their relationship was tight.",
-    "source_url": "https://chicagoganghistory.com/gang/black-souls/"
+    "source_url": "https://chicagoganghistory.com/gang/black-souls/",
+    "end_year": 1990
   },
   {
     "id": "823dba91bebe",
@@ -6541,7 +6473,8 @@
     "target": "org:latin-kings",
     "type": "alliance",
     "evidence": "Both groups also became allies with Warlords, Spanish Lords, Insane Unknowns and Latin Kings.",
-    "source_url": "https://chicagoganghistory.com/gang/ghetto-brothers-organization-yates-boys-organization/"
+    "source_url": "https://chicagoganghistory.com/gang/ghetto-brothers-organization-yates-boys-organization/",
+    "end_year": 1987
   },
   {
     "id": "54987a03e0ff",
@@ -6764,14 +6697,6 @@
     "start_year": 1973,
     "end_year": 1982,
     "evidence": "In the year 1973, the Gaylords, C-Notes, Taylor Jousters, and PVP all got together at a meeting on the corner of Damen and Milwaukee in the Wicker Park neighborhood to discuss a merger between these five gangs that would be known as the 'United Five Organization' or UFO",
-    "source_url": "https://chicagoganghistory.com/gang/insane-c-notes/"
-  },
-  {
-    "id": "c3b62fd51dfb",
-    "source": "org:c-notes",
-    "target": "org:simon-city-royals-chicago",
-    "type": "alliance",
-    "evidence": "The P.V.P and G.C.G extended their alliance over a broader network and connected with all the white gangs including enemies like the Almighty Popes and Simon City Royals. This new alliance was called the 'White Power Organization,' or 'W.P.O.'",
     "source_url": "https://chicagoganghistory.com/gang/insane-c-notes/"
   },
   {
@@ -7409,7 +7334,8 @@
     "target": "org:orquestra-albany",
     "type": "alliance",
     "evidence": "the OAs came together with some allies like Spanish Cobras and Imperial Gangsters that also had wars going on with Latin Kings and Gaylords",
-    "source_url": "https://chicagoganghistory.com/gang/insane-la-orquestra-albany/"
+    "source_url": "https://chicagoganghistory.com/gang/insane-la-orquestra-albany/",
+    "end_year": 1993
   },
   {
     "id": "7d4660c1539b",
@@ -7854,7 +7780,8 @@
     "target": "org:two-two-boys",
     "type": "alliance",
     "evidence": "Since the Latin Angels started in the late 80s, the Two Two Boys were tight with this neutron party crew, the Angels were a crew not interested in gangbanging.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-two-two-boys/"
+    "source_url": "https://chicagoganghistory.com/gang/insane-two-two-boys/",
+    "end_year": 1993
   },
   {
     "id": "6eb09b8605d4",
@@ -8043,7 +7970,8 @@
     "target": "org:insane-unknowns",
     "type": "rivalry",
     "evidence": "In 1976, it looked like the Unknowns were well on the way to becoming a future Folk Nation gang due to being allies with Royals, Almighty Popes (Insane Popes), PBCs (Paulina Barry Community) and Black Gangster Disciples while they were at war with Latin Kings, Gaylords and Insane Deuces.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-unknowns/"
+    "source_url": "https://chicagoganghistory.com/gang/insane-unknowns/",
+    "end_year": 1981
   },
   {
     "id": "e6ec46b93b31",
@@ -8808,7 +8736,8 @@
     "target": "org:simon-city-royals-chicago",
     "type": "rivalry",
     "evidence": "These PBCs also developed a strong conflict with Simon City Royals.",
-    "source_url": "https://chicagoganghistory.com/gang/paulina-barry-community/"
+    "source_url": "https://chicagoganghistory.com/gang/paulina-barry-community/",
+    "end_year": 1994
   },
   {
     "id": "6deb205fd155",
@@ -9038,7 +8967,8 @@
     "target": "org:rampants",
     "type": "rivalry",
     "evidence": "Rampants would clash violently with Ambrose and Spartans and these were Rampants worst enemies.",
-    "source_url": "https://chicagoganghistory.com/gang/rampants/"
+    "source_url": "https://chicagoganghistory.com/gang/rampants/",
+    "start_year": 1973
   },
   {
     "id": "b54c2f51ee8a",
@@ -9335,7 +9265,9 @@
     "target": "org:stoned-freaks",
     "type": "rivalry",
     "evidence": "In the year 1982, the Young Blood Freaks and Gaylords went to war in the Hermosa area",
-    "source_url": "https://chicagoganghistory.com/gang/stoned-freaks/"
+    "source_url": "https://chicagoganghistory.com/gang/stoned-freaks/",
+    "start_year": 1982,
+    "end_year": 1984
   },
   {
     "id": "80daf32f5a74",
@@ -9565,7 +9497,8 @@
     "target": "org:maniac-latin-disciples-chicago",
     "type": "rivalry",
     "evidence": "The MLDs were petitioning for removal of the Latin Lovers from the SGD La Tabla saying that they allowed a snitch to rule their organization for a long time.",
-    "source_url": "https://chicagoganghistory.com/gang/insane-latin-lovers/"
+    "source_url": "https://chicagoganghistory.com/gang/insane-latin-lovers/",
+    "start_year": 1992
   },
   {
     "id": "5f4bb9b53de3",
@@ -9782,7 +9715,8 @@
     "target": "org:warlords-wicker-park-la-familia-warlords",
     "type": "rivalry",
     "evidence": "Around 1993, the Warlords had a brief war with Latin Kings after Latin Kings began moving in on Warlord territory in Wicker Park, this resulted in a gang fight inside a restaurant at Damen and Division.",
-    "source_url": "https://chicagoganghistory.com/gang/warlords-wicker-park-la-familia-warlords/"
+    "source_url": "https://chicagoganghistory.com/gang/warlords-wicker-park-la-familia-warlords/",
+    "start_year": 1993
   },
   {
     "id": "ea701bf94de9",
@@ -11358,18 +11292,13 @@
     "source_url": "http://www.stonegreasers.com/greaser/little_hell_sharks.html"
   },
   {
-    "source": "org:morgan-deuces",
-    "target": "org:cullerton-deuces",
-    "type": "parent",
-    "evidence": "the Cullerton Deuces were under the Morgan Deuces protection",
-    "source_url": "http://www.stonegreasers.com/greaser/morgan_deuces.html"
-  },
-  {
     "source": "org:almighty-insane-popes-nation",
     "target": "org:almighty-gaylords-nation",
     "type": "rivalry",
     "evidence": "The Pope/Gaylord's war of the early seventies divided the White greaser gangs in Chicago at a time when minority gang memberships were on the rise.",
-    "source_url": "http://www.stonegreasers.com/greaser/popes_gaylords_war.html"
+    "source_url": "http://www.stonegreasers.com/greaser/popes_gaylords_war.html",
+    "start_year": 1973,
+    "end_year": 1975
   },
   {
     "source": "org:almighty-insane-popes-nation",
@@ -11453,13 +11382,6 @@
     "source_url": "http://www.stonegreasers.com/greaser/scr.html"
   },
   {
-    "source": "org:simon-city-royals-chicago",
-    "target": "org:latin-eagles-chicago",
-    "type": "rivalry",
-    "evidence": "The Royals grew fast in the Lakeview area, especially since the Latin Eagles of the time had a habit of attacking white non-gang members.",
-    "source_url": "http://www.stonegreasers.com/greaser/scr.html"
-  },
-  {
     "source": "org:stoned-freaks",
     "target": "org:latin-kings",
     "type": "alliance",
@@ -11532,13 +11454,6 @@
   {
     "source": "org:wicker-park-warlords",
     "target": "org:insane-2-nation",
-    "type": "alliance",
-    "evidence": "When the Project Kings started a war with the i2n for control of Hamlin Park, Capone and Elvis backed up the i2n- cobras Alliance.",
-    "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
-  },
-  {
-    "source": "org:wicker-park-warlords",
-    "target": "org:spanish-cobras-chicago",
     "type": "alliance",
     "evidence": "When the Project Kings started a war with the i2n for control of Hamlin Park, Capone and Elvis backed up the i2n- cobras Alliance.",
     "source_url": "http://www.stonegreasers.com/greaser/warlords.html"
@@ -15893,13 +15808,6 @@
   },
   {
     "source": "org:gangster-crips",
-    "target": "org:eight-tray-83-gangster-crip-los-angeles",
-    "type": "parent",
-    "evidence": "Street gangs, who fall under the Gangster Crips card, are loosely connected to the Eight Tray Gangster Crips.",
-    "source_url": "https://unitedgangs.com/gangster-crips/"
-  },
-  {
-    "source": "org:gangster-crips",
     "target": "org:67-neighborhood-crips",
     "type": "rivalry",
     "evidence": "Deuces (2x) and Trays (3X), are mortal rivals feud by over thirty years of hatred.",
@@ -19243,7 +19151,8 @@
     "target": "org:dodge-city-crips-los-angeles",
     "type": "alliance",
     "evidence": "The Rancho San Pedro's and the Dodge City Crips, were once allies and shared the Rancho San Pedro housing projects.",
-    "source_url": "https://unitedgangs.com/rancho-san-pedro-rsp/"
+    "source_url": "https://unitedgangs.com/rancho-san-pedro-rsp/",
+    "end_year": 1995
   },
   {
     "source": "org:rancho-san-pedro-los-angeles",
@@ -19783,14 +19692,9 @@
     "target": "org:eight-tray-83-gangster-crip-los-angeles",
     "type": "alliance",
     "evidence": "The Rollin 60s were once closely aligned with the Eight Tray Gangster Crips.",
-    "source_url": "https://unitedgangs.com/rollin-60s-neighborhood-crips/"
-  },
-  {
-    "source": "org:rollin-60s-neighborhood-crips",
-    "target": "org:eight-tray-83-gangster-crip-los-angeles",
-    "type": "rivalry",
-    "evidence": "The Rollin 60s were once closely aligned with the Eight Tray Gangster Crips. During the late 1970s and early 1980s, tensions between the two gangs escalated into a violent feud that helped divide many Los Angeles Crip gangs into the Neighborhood Crips (2x) and Gangster Crips (3x) factions.",
-    "source_url": "https://unitedgangs.com/rollin-60s-neighborhood-crips/"
+    "source_url": "https://unitedgangs.com/rollin-60s-neighborhood-crips/",
+    "start_year": 1969,
+    "end_year": 1979
   },
   {
     "source": "org:rollin-60s-neighborhood-crips",
