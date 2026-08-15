@@ -8,7 +8,7 @@
   "type": "prison_gang",
   "lane": "southeast-southwest",
   "founded_year": 1989,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "description": "Puro Tango Blast is a loose affiliation of regionally based street and prison gangs of primarily Hispanic men from major Texas cities. Formed in the late 1980s within the Texas Department of Criminal Justice, it lacks a strict hierarchy and is classified as a security threat group. Members engage in drug trafficking, robbery, and other crimes.",
   "sources": [
     {
@@ -16,28 +16,8 @@
       "title": "Puro Tango Blast — Wikipedia"
     },
     {
-      "url": "https://en.wikipedia.org/wiki/Gulf_Cartel",
-      "title": "Gulf Cartel — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Texas_Syndicate",
-      "title": "Texas Syndicate — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Sindicato_de_Texas",
-      "title": "Sindicato de Texas — Wikipedia"
-    },
-    {
       "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
       "title": "FBI/NDIC National Gang Threat Assessment 2009"
-    },
-    {
-      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
-      "title": "FBI NGTA 2011 — Emerging Trends"
-    },
-    {
-      "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
-      "title": "2015 National Gang Report (NGIC/NAGIA)"
     }
   ],
   "metro": "Houston",
@@ -52,6 +32,6 @@
     "20",
     "2"
   ],
-  "membership_estimate": 14000,
+  "membership_estimate": 18000,
   "military_service": "Army"
 }

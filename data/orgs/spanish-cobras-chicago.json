@@ -2,49 +2,28 @@
   "id": "org:spanish-cobras-chicago",
   "name": "Spanish Cobras",
   "aliases": [
-    "Insane Spanish Cobras Nation",
-    "SGD"
+    "Insane Spanish Cobras Nation"
   ],
   "type": "street_gang",
   "lane": "chicago-folk-people",
   "metro": "Chicago",
   "founded_year": 1958,
   "founded_year_precision": "circa",
-  "description": "The Insane Spanish Cobras are a primarily Latino (Puerto Rican/Mexican) Folk Nation street gang founded circa 1958 in Bridgeport, Chicago as 'Loco De Culebro' (Crazy Snakes). Richard 'King Cobra' Medina created the 'Insane' concepts in the mid-1970s, adopting black and green colors. Medina was assassinated by Insane Unknowns in 1979 at age 20. In 1989, Cobras, Maniac Latin Disciples, and Two Sixers formed Spanish Growth and Development (SGD), modeled after the Chicago Outfit, to control shootings — it eventually collapsed. The Insane-Maniac war escalated in 1996 making Chicago Tribune headlines. Led by Anibal 'Tuffy C' Santiago. Present in Chicago (North/West sides), Milwaukee, Racine, Kenosha, Detroit, Ohio, Connecticut, and Florida.",
+  "description": "The Insane Spanish Cobras are a primarily Latino (Puerto Rican/Mexican) Folk Nation street gang whose origins are disputed — some accounts cite 1958 in Bridgeport, others point to the early 1970s in East Humboldt Park, Chicago. Richard 'King Cobra' Medina introduced the 'Insane' prefix around 1975 and was killed by Insane Unknowns in 1979. In 1989, the Cobras, Maniac Latin Disciples, and Two Sixers co-founded Spanish Growth and Development (SGD), modeled on the Chicago Outfit to reduce shootings, but it collapsed. The gang operates on Chicago's North and West sides with a presence in Wisconsin, Michigan, Ohio, Connecticut, and Florida, and is led by Anibal 'Tuffy C' Santiago.",
   "sources": [
-    {
-      "url": "https://www.streetgangs.com/spanish/cobras",
-      "title": "Spanish Cobras — StreetGangs"
-    },
     {
       "url": "https://en.wikipedia.org/wiki/Spanish_Cobras",
       "title": "Spanish Cobras — Wikipedia"
     },
     {
-      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
-      "title": "Popes %28gang%29 — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Latin_Eagles",
-      "title": "Latin Eagles — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Latin_Kings",
-      "title": "Latin Kings — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Maniac_Latin_Disciples",
-      "title": "Maniac Latin Disciples — Wikipedia"
-    },
-    {
-      "url": "https://chicagoganghistory.com/gang/insane-spanish-cobras",
-      "title": "Spanish Cobras - Chicago Gang History"
+      "url": "https://www.streetgangs.com/spanish/cobras",
+      "title": "Spanish Cobras — StreetGangs"
     }
   ],
   "symbols": [
     "Cobra",
-    "Six-Pointed Star",
-    "Pitchfork"
+    "Pitchfork",
+    "Six-Pointed Star"
   ],
   "colors": [
     "black",

@@ -11,8 +11,8 @@
   "lane": "chicago-folk",
   "metro": "Chicago",
   "founded_year": 1966,
-  "founded_year_precision": "exact",
-  "description": "The Maniac Latin Disciples (MLD) are a predominantly Hispanic but multi-racial Folk Nation street gang founded in 1966 in Humboldt Park, Chicago with 7,500-10,000 members. Originated as a Puerto Rican baseball club (Latin Scorpions) harassed by white gangs like Simon City Royals and Gaylords. Albert 'Hitler' Hernandez positioned himself as King at Hirsch & Rockwell — he was stabbed to death by two Latin Kings in 1972 at age 18, igniting permanent war. Dominated the heroin trade at Rockwell & Potomac ('The Twilight Zone'). In 1989, leaders met with Spanish Cobras and Two Sixers to form Spanish Growth and Development (SGD), modeled after the Chicago Outfit. Spread to Ohio, Quad Cities, Boston, Wisconsin, Michigan, Indiana, Tennessee, Texas, New York, and Florida. Identifiers: heart with devil horns/tail, the Monk, swastika, trident, Detroit Tigers 'D'.",
+  "founded_year_precision": "circa",
+  "description": "The Maniac Latin Disciples (MLD) are a predominantly Hispanic, multi-racial Folk Nation street gang founded in approximately 1966 in Humboldt Park, Chicago, originating as a Puerto Rican baseball club known as the Latin Scorpions. The gang was founded by Albert 'Hitler' Hernandez, who was stabbed to death by two Latin Kings in 1972 at age 18, sparking a lasting rivalry with the Latin Kings. Estimated at 7,500–10,000 members, the MLD have expanded to Ohio, the Quad Cities, Boston, Wisconsin, Michigan, Indiana, Tennessee, Texas, New York, and Florida.",
   "colors": [
     "black",
     "light blue"
@@ -57,8 +57,12 @@
     }
   ],
   "symbols": [
-    "Heart With Devil Horns",
-    "Pitchfork"
+    "Heart With Devil Horns And Tail",
+    "The Monk",
+    "Swastika",
+    "Trident",
+    "Pitchfork",
+    "Blackletter D"
   ],
   "status": "active",
   "membership_estimate": 8750,
