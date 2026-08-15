@@ -21,6 +21,7 @@ from pathlib import Path
 
 import httpx
 
+from apps.pipeline.ignore import load_ignore_rules
 from apps.pipeline.log import PipelineLogger
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -702,6 +703,7 @@ def main():
 
     orgs = load_orgs()
     edge_counts = load_edge_counts()
+    ignore = load_ignore_rules()
 
     # Score and rank
     scored = []
@@ -713,10 +715,15 @@ def main():
         ec = edge_counts.get(org_id, 0)
         if ec < args.min_edges:
             continue
+        # Skip orgs listed in [enrich:skip]
+        if ignore.should_skip_org(org_id):
+            continue
         priority, issues = score_org(org, ec)
+        # Remove issues suppressed via [enrich:skip-field]
+        issues = ignore.filter_issues(org_id, issues)
         if args.issues and args.issues not in issues:
             continue
-        if priority > 0:
+        if priority > 0 and issues:
             scored.append((priority, org, issues, ec))
 
     scored.sort(key=lambda x: -x[0])

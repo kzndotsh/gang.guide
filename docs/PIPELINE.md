@@ -150,6 +150,48 @@ Safe to re-run at any time.
 7. **Slug collision check** — prevents overwriting existing org files
 8. **Lint gate** — rejects apply if lint errors increase
 
+## .gangguideignore
+
+Pipeline-wide ignore rules live in `.gangguideignore` at the project root. Parsed by `apps/pipeline/ignore.py`.
+
+### Sections
+
+| Section | Tool | Purpose |
+|---------|------|---------|
+| `[enrich:skip]` | `enrich.py` | Org IDs to skip entirely — confirmed dead ends with no public data |
+| `[enrich:skip-field]` | `enrich.py` | Suppress one specific issue for one org (`org-id  field`) |
+| `[apply:skip-org]` | `apply.py` | Org IDs the pipeline may never overwrite |
+| `[apply:skip-edge]` | `apply.py` | Edge patterns the pipeline may never add (`source target type`, `*` = wildcard) |
+| `[verify:skip]` | `verify.py` | Edge patterns to skip web-checking (treat as supported) |
+| `[lint:suppress]` | `lint.py` | Suppress a lint check for a specific org (`org-id check-name`, `*` = global) |
+
+### Example
+
+```
+[enrich:skip]
+org:denver-lane-bloods    # no public membership data found after exhaustive search
+
+[enrich:skip-field]
+org:spanish-cobras  no_membership   # umbrella count not public
+
+[apply:skip-edge]
+*  *  spin_off            # block all spin_off edges from pipeline (review manually)
+
+[verify:skip]
+org:crips  *  nation      # well-documented — skip web-checking nation edges
+
+[lint:suppress]
+org:bloods  cross_metro   # national org, cross-metro edges are intentional
+```
+
+### Field names (`enrich:skip-field`)
+`no_membership`, `imprecise_year`, `no_year`, `no_symbols`, `no_aliases`, `no_colors`, `stub_desc`, `short_desc`, `single_source`
+
+### Lint check names (`lint:suppress`)
+`cross_metro`, `page_title_org`, `stub_quality`, `nation_consistency`, `spinoff_direction`, `isolated`, `temporal_logic`, `fuzzy_dupe`, `symbol_title_case`, `founded_year_precision`, `single_source`
+
+---
+
 ## Enrich (`apps/pipeline/enrich.py`)
 
 Standalone LLM enrichment of weak org profiles — not part of the source pipeline flow.

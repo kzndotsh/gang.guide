@@ -17,6 +17,7 @@ from pathlib import Path
 
 from apps.pipeline.log import PipelineLogger
 
+from .ignore import load_ignore_rules
 from .lib.resolve import build_index, resolve
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -247,8 +248,11 @@ def apply_edges(
     source_url: str | None = None,
     create_orgs: bool = False,
     metro: str = "Unknown",
+    ignore: "IgnoreRules | None" = None,
 ) -> list[str]:
     """Apply extracted edges. Mutates edges_list and existing_keys in place."""
+    from apps.pipeline.ignore import IgnoreRules  # avoid circular at module level
+
     edges_added = []
 
     for edge in consensus.get("edges", []):
@@ -274,6 +278,10 @@ def apply_edges(
         etype = edge.get("type", "alliance")
         if target_id == org_id:
             continue  # skip self-references
+
+        # Skip edges blocked in [apply:skip-edge]
+        if ignore and ignore.should_skip_apply_edge(org_id, target_id, etype):
+            continue
         key = (org_id, target_id, etype)
         if key in existing_keys:
             # Enrich existing edge if it lacks evidence
@@ -366,6 +374,8 @@ def main():
     edges_list = json.loads(DATA_RELS.read_text(encoding="utf-8"))
     existing_keys = {(e["source"], e["target"], e["type"]) for e in edges_list}
 
+    ignore = load_ignore_rules()
+
     total_changes = 0
     total_edges = 0
 
@@ -415,6 +425,10 @@ def main():
             if not org_id:
                 continue
 
+        # Skip orgs blocked in [apply:skip-org]
+        if ignore.should_skip_apply_org(org_id):
+            continue
+
         changes = apply_extraction(consensus, org_id, org_path_index, dry_run=args.dry_run)
 
         # Derive metro from subject org for new org creation
@@ -431,6 +445,7 @@ def main():
             source_url=source_url,
             create_orgs=args.create_orgs,
             metro=metro,
+            ignore=ignore,
         )
 
         if changes or edges:

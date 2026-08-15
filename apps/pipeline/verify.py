@@ -18,6 +18,7 @@ from pathlib import Path
 
 import httpx
 
+from apps.pipeline.ignore import load_ignore_rules
 from apps.pipeline.log import PipelineLogger
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -278,6 +279,8 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
         print(f"No extractions for {source}")
         return
 
+    ignore = load_ignore_rules()
+
     total_checked = 0
     total_verified = 0
     total_rejected = 0
@@ -319,7 +322,17 @@ def process_source(source: str, limit: int = 50, dry_run: bool = False, min_conf
                     break
 
                 edge = s["edge"]
-                print(f"  [{subject}] verifying: {edge.get('type', '')} → {edge.get('target', '')}")
+                edge_type = edge.get("type", "")
+                edge_target = edge.get("target", "")
+
+                # Skip edges in [verify:skip] — treat as supported without LLM call
+                if ignore.should_skip_verify_edge(subject, edge_target, edge_type):
+                    total_verified += 1
+                    total_checked += 1
+                    print(f"  [{subject}] skipped (ignored): {edge_type} → {edge_target}")
+                    continue
+
+                print(f"  [{subject}] verifying: {edge_type} → {edge_target}")
 
                 verdict = verify_edge(edge, subject)
                 if not verdict:

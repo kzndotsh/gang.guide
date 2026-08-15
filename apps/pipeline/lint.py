@@ -18,6 +18,12 @@ ORGS_DIR = ROOT / "data" / "orgs"
 RELS_FILE = ROOT / "data" / "edges.json"
 LANES_FILE = ROOT / "data" / "lanes.json"
 
+# Support both `python3 apps/pipeline/lint.py` (script) and `python3 -m apps.pipeline.lint` (module)
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
+from apps.pipeline.ignore import load_ignore_rules  # noqa: E402
+
 REQUIRED_FIELDS = {"id", "name", "description", "sources"}
 RECOMMENDED_FIELDS = {"lane", "founded_year"}
 
@@ -718,6 +724,28 @@ def main():
     check_nation_consistency(orgs, edges)
     check_spinoff_direction(orgs, edges)
     check_member_of_usage(orgs, edges)
+
+    # Filter out suppressed entries from .gangguideignore
+    ignore = load_ignore_rules()
+    if ignore.lint_suppress:
+        # Build a set of (org_id, check_name) pairs that are suppressed
+        def _is_suppressed(msg: str) -> bool:
+            # Messages are formatted as "filename.json: ..." or "edge[N]: ..."
+            # Extract the filename stem as org slug, then reconstruct org_id
+            for org_id, checks in ignore.lint_suppress.items():
+                for check in checks:
+                    # Match by org_id slug appearing in the message
+                    slug = org_id.replace("org:", "")
+                    if slug in msg and check in msg:
+                        return True
+                    # Global suppression
+                    if org_id == "*" and check in msg:
+                        return True
+            return False
+
+        errors[:] = [m for m in errors if not _is_suppressed(m)]
+        warnings[:] = [m for m in warnings if not _is_suppressed(m)]
+        info[:] = [m for m in info if not _is_suppressed(m)]
 
     import argparse
 

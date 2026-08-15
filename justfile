@@ -116,6 +116,13 @@ enrich *args:
 enrich-rank:
     python3 -m apps.pipeline.enrich --dry-run --limit 50
 
+# Show what .gangguideignore is currently suppressing
+ignore-show:
+    @echo "=== [enrich:skip] ==="; grep -A999 '^\[enrich:skip\]' .gangguideignore | grep -B999 '^\[' | grep '^org:' | sort || true
+    @echo "=== [enrich:skip-field] ==="; grep -A999 '^\[enrich:skip-field\]' .gangguideignore | grep -B999 '^\[' | grep '^org:' | sort || true
+    @echo "=== [apply:skip-org] ==="; grep -A999 '^\[apply:skip-org\]' .gangguideignore | grep -B999 '^\[' | grep '^org:' | sort || true
+    @echo "=== [lint:suppress] ==="; grep -A999 '^\[lint:suppress\]' .gangguideignore | grep -B999 '^\[' | grep '^org:' | sort || true
+
 # Verify suspicious edges via web search (post-adjudication)
 verify source *args:
     python3 -m apps.pipeline.verify --source {{source}} {{args}}

@@ -1,0 +1,123 @@
+# .gangguideignore
+# Ignore rules for the gang.guide pipeline tools.
+#
+# SYNTAX
+# ──────
+# Lines starting with '#' are comments. Blank lines are ignored.
+#
+# SECTIONS
+#   [enrich:skip]           — orgs to skip entirely in enrich.py
+#   [enrich:skip-field]     — suppress a specific field issue for a specific org
+#                             format:  org-id  field
+#   [apply:skip-org]        — org IDs that apply.py should never write to
+#   [apply:skip-edge]       — edge patterns apply.py should never add
+#                             format:  source-org-id  target-org-id  edge-type
+#                             use '*' as a wildcard for any field
+#   [verify:skip]           — edge patterns that verify.py should skip (treat as supported)
+#                             format:  source-org-id  target-org-id  edge-type
+#                             use '*' as a wildcard for any field
+#   [lint:suppress]         — suppress a specific lint check for a specific org
+#                             format:  org-id  check-name
+#                             use '*' as org-id to suppress globally
+#
+# ENRICH FIELD NAMES (for enrich:skip-field)
+#   no_membership, imprecise_year, no_year, no_symbols, no_aliases,
+#   no_colors, stub_desc, short_desc, single_source
+#
+# LINT CHECK NAMES (for lint:suppress)
+#   cross_metro, page_title_org, stub_quality, nation_consistency,
+#   spinoff_direction, isolated, temporal_logic, fuzzy_dupe,
+#   symbol_title_case, founded_year_precision, single_source
+#
+# EDGE TYPES (for apply:skip-edge and verify:skip)
+#   alliance, rivalry, nation, member_of, spin_off, parent
+
+
+# ── enrich:skip ───────────────────────────────────────────────────────────────
+# Orgs confirmed to have no publicly available membership data or founding year
+# precision — repeated LLM attempts return null, manual research confirmed empty.
+[enrich:skip]
+
+# Confirmed dead ends — no public membership data exists
+org:denver-lane-bloods        # no_membership: no public count found (FBI/UnitedGangs/Wikipedia all silent)
+org:gangster-crips            # no_membership: umbrella set, no aggregate count in any public source
+org:main-street-mafia-crips   # no_membership + imprecise_year: no verifiable data in any source
+org:hacienda-village-bloods   # no_membership + no_symbols: sources are sparse stubs
+org:circle-city-piru          # no_membership + no_symbols: no verifiable data found
+org:rollin-40s-neighborhood-crips  # no_membership + imprecise_year: Wikipedia/UnitedGangs both empty
+org:simon-city-royals         # no_membership: no public count — Wikipedia and UnitedGangs silent
+org:mafia-crips               # no_aliases + no_membership: no data in any checked source
+org:broadway-gangster-crips   # no_membership + no_symbols: sources are stubs
+org:kitchen-crips             # no_membership + imprecise_year: no verifiable data
+org:farm-dog-compton-crips    # imprecise_year + no_membership + no_symbols: exhaustively searched
+org:fudge-town-mafia-crips    # imprecise_year + no_membership: no data beyond what's already filed
+org:67-neighborhood-crips     # no_membership: no public count in any source
+org:east-coast-crips-los-angeles  # fully enriched (membership_estimate added manually)
+org:112-neighborhood-crips    # no_symbols + imprecise_year: exhaustively searched, nothing found
+org:blue-gate-mafia-crips     # no_symbols: no apparel/sign data found in any source
+org:inglewood-family-gangster-bloods  # no_symbols: 14-turn search exhausted, nothing verifiable
+org:miller-gangster-bloods    # no_symbols + imprecise_year: no data found
+org:hard-time-hustler-crips-los-angeles  # no_membership: no public count
+org:genovese-crime-family     # imprecise_year + no_symbols: Wikipedia has year but no symbols
+org:the-commission            # no_symbols: no verifiable symbols for umbrella body
+
+
+# ── enrich:skip-field ─────────────────────────────────────────────────────────
+# Suppress a specific issue for a specific org without skipping enrichment entirely.
+# Useful when one field is a known dead end but others may still improve.
+[enrich:skip-field]
+
+org:spanish-cobras            no_membership   # umbrella count not in public sources
+org:east-coast-crips-los-angeles  no_membership   # already manually set to 850
+org:mob-piru                  no_membership   # already manually set to 200
+
+
+# ── apply:skip-org ────────────────────────────────────────────────────────────
+# Org IDs that apply.py should never overwrite, regardless of pipeline output.
+# Use for orgs where the current data is known-correct and pipeline extractions
+# are suspected to degrade it (e.g. LLM hallucinations on poorly-sourced pages).
+[apply:skip-org]
+
+# (none currently — add orgs here if pipeline keeps corrupting their data)
+
+
+# ── apply:skip-edge ───────────────────────────────────────────────────────────
+# Edge patterns apply.py should never add. Format: source target type
+# Use '*' as a wildcard for any single field.
+# Useful for permanently rejecting known-bad recurring extractions.
+[apply:skip-edge]
+
+# (none currently — add patterns here if a bad edge keeps re-appearing)
+
+
+# ── verify:skip ───────────────────────────────────────────────────────────────
+# Edge patterns verify.py should skip (treat as already supported).
+# Use '*' as a wildcard for any single field.
+# Useful for well-established relationships that don't need web-checking.
+[verify:skip]
+
+# Well-documented top-level nation memberships — no point web-checking these
+org:crips           *   nation
+org:bloods          *   nation
+org:folk-nation     *   nation
+org:people-nation   *   nation
+
+
+# ── lint:suppress ─────────────────────────────────────────────────────────────
+# Suppress specific lint checks for specific orgs.
+# Use for known acceptable deviations — not for hiding real data issues.
+[lint:suppress]
+
+# cross_metro edges that are known and intentional (national orgs with multi-city presence)
+org:bloods                    cross_metro
+org:crips                     cross_metro
+org:folk-nation               cross_metro
+org:people-nation             cross_metro
+org:ms-13                     cross_metro
+org:18th-street-gang          cross_metro
+org:latin-kings               cross_metro
+org:surenos                   cross_metro
+org:norenos                   cross_metro
+org:gangster-disciples        cross_metro
+org:vice-lords                cross_metro
+org:black-p-stones            cross_metro
