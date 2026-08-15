@@ -17,6 +17,7 @@
   "colors": ["black", "blue"],
   "symbols": ["pitchfork", "six-point star"],
   "membership_estimate": 5000,
+  "military_service": "Army, Marines",
   "nation_affiliation": "org:nation-id | null",
   "status": "active | inactive | unknown",
   "sources": [
