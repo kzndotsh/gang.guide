@@ -43,14 +43,17 @@ The filename and `id` slug must be derived from the org name: lowercase, hyphens
 {
   "id": "org:rollin-30s-original-harlem-crips",
   "name": "Rollin 30s Original Harlem Crips",
-  "aliases": [],
+  "aliases": ["30s", "OHC"],
   "type": "street_gang",
   "lane": "california-crips-gangster",
   "metro": "Los Angeles",
   "founded_year": 1970,
   "founded_year_precision": "circa",
+  "disbanded_year": null,
   "description": "Factual 1-3 sentence description with founding context.",
   "colors": ["blue"],
+  "symbols": ["Six-Point Star", "Letter C Hand Sign"],
+  "membership_estimate": 200,
   "nation_affiliation": "org:crips",
   "status": "active",
   "sources": [{"url": "https://...", "title": "Source Name"}]
