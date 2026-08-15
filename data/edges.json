@@ -13472,13 +13472,6 @@
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:99-watts-mafia-crips",
-    "target": "org:mafia-crips-los-angeles",
-    "type": "member_of",
-    "evidence": "They also falls under the Mafia Crips umbrella",
-    "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
-  },
-  {
     "source": "org:ms-13",
     "target": "org:18th-street-gang",
     "type": "rivalry",
@@ -14123,13 +14116,6 @@
     "type": "rivalry",
     "evidence": "In the past they have waged war against other powerhouse gangs in South Los Angeles such as the Rollin 30's Harlem Crips and the Rollin 40 Crips and the 18th Street Gang, one of the largest Latino gangs in the city.",
     "source_url": "https://unitedgangs.com/black-p-stones/"
-  },
-  {
-    "source": "org:blue-gate-mafia-crips",
-    "target": "org:mafia-crips-los-angeles",
-    "type": "member_of",
-    "evidence": "The Blue Gate Mafia Crips falls under the Mafia Crips umbrella.",
-    "source_url": "https://unitedgangs.com/blue-gate-mafia-crips/"
   },
   {
     "source": "org:blue-gate-mafia-crips",
@@ -15751,20 +15737,6 @@
   },
   {
     "source": "org:fudge-town-mafia-crips",
-    "target": "org:mafia-crips-los-angeles",
-    "type": "member_of",
-    "evidence": "The Fudge Town Mafia Crips fall under the Mafia Crips umbrella",
-    "source_url": "https://unitedgangs.com/fudge-town-mafia-crips/"
-  },
-  {
-    "source": "org:fudge-town-mafia-crips",
-    "target": "org:mafia-crips-los-angeles",
-    "type": "alliance",
-    "evidence": "Allies include: all Mafia Crips suh as 99 Mafia Crips",
-    "source_url": "https://unitedgangs.com/fudge-town-mafia-crips/"
-  },
-  {
-    "source": "org:fudge-town-mafia-crips",
     "target": "org:main-mafia-crips-msmc-los-angeles",
     "type": "alliance",
     "evidence": "Allies include: all Mafia Crips suh as 99 Mafia Crips , Main Street Mafia Crips",
@@ -16484,13 +16456,6 @@
     "target": "org:mafia-crips-los-angeles",
     "type": "alliance",
     "evidence": "The Hat Gang Watts were once close allies of the 99 Mafia Crips and the Compton Ave Crips in the 1980s.",
-    "source_url": "https://unitedgangs.com/hat-gang-watts-crips/"
-  },
-  {
-    "source": "org:hat-watts-crips",
-    "target": "org:mafia-crips-los-angeles",
-    "type": "rivalry",
-    "evidence": "However, by the 1990s the feud between the Hat Gang and the Compton Ave Crips along with the 99 Mafia Crips, graduated from fighting to gun-play.",
     "source_url": "https://unitedgangs.com/hat-gang-watts-crips/"
   },
   {
@@ -17248,13 +17213,6 @@
   },
   {
     "source": "org:mac-mafia-crips",
-    "target": "org:mafia-crips-los-angeles",
-    "type": "member_of",
-    "evidence": "They fall under the Mafia Crips umbrella, along with the Boulevard Mafia Crips and the Blue Gate Mafia Crips as well as the Beach Town Mafia Crips.",
-    "source_url": "https://unitedgangs.com/mac-mafia-crips/"
-  },
-  {
-    "source": "org:mac-mafia-crips",
     "target": "org:clanton14th-original-hood-los-angeles",
     "type": "alliance",
     "evidence": "They have an alliance with the Original Hood Crips and the Blvd Mafia Crips, known as the M.O.B. (Mafia-Original-Blvd).",
@@ -17504,13 +17462,6 @@
     "type": "rivalry",
     "evidence": "Some Mafia Crips are rivals of the Denver Lane Bloods, Mad Swan Bloods, Bounty Hunter Bloods, Grape Street Crips, East Coast Crips, Hard Time Hustler Crips, EastSide Hustle Crips, Raymond Avenue Crips and the Hoover Criminal Gangs.",
     "source_url": "https://unitedgangs.com/mafia-crips-los-angeles/"
-  },
-  {
-    "source": "org:main-mafia-crips-msmc-los-angeles",
-    "target": "org:mafia-crips-los-angeles",
-    "type": "member_of",
-    "evidence": "The Main Street Mafia Crips fall under the Mafia Crips umbrella.",
-    "source_url": "https://unitedgangs.com/main-street-mafia-crips/"
   },
   {
     "source": "org:main-mafia-crips-msmc-los-angeles",
