@@ -7,6 +7,8 @@
   let cx = 0;
   let cy = 0;
   let scale = 1;
+  let rafId = 0;
+  let pending = false;
 
   onMount(() => {
     const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
@@ -19,23 +21,28 @@
     if (el) {
       el.style.transform = `translate(${cx - 10}px, ${cy - 10}px) scale(${scale})`;
     }
+    pending = false;
   }
 
   function onMove(e: MouseEvent) {
     cx = e.clientX;
     cy = e.clientY;
-    applyTransform();
     if (!visible) visible = true;
+    // Throttle DOM writes to one per animation frame
+    if (!pending) {
+      pending = true;
+      rafId = requestAnimationFrame(applyTransform);
+    }
   }
 
   function onDown() {
     scale = 0.75;
-    applyTransform();
+    if (el) el.style.transform = `translate(${cx - 10}px, ${cy - 10}px) scale(${scale})`;
   }
 
   function onUp() {
     scale = 1;
-    applyTransform();
+    if (el) el.style.transform = `translate(${cx - 10}px, ${cy - 10}px) scale(${scale})`;
   }
 </script>
 

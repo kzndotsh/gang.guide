@@ -861,7 +861,12 @@
     stage.on('touchcancel', endPinch);
 
     // Rebuild labels on pan end (viewport-dependent)
+    // Also re-enable hit detection after drag (was disabled for perf during drag)
+    stage.on('dragstart', () => {
+      nodeLayer.hitGraphEnabled(false);
+    });
     stage.on('dragend', () => {
+      nodeLayer.hitGraphEnabled(true);
       if (rebuildTimer) clearTimeout(rebuildTimer);
       rebuildTimer = setTimeout(() => drawLabels(), 150);
     });
