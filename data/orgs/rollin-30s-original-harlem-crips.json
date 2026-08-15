@@ -1,0 +1,49 @@
+{
+  "id": "org:rollin-30s-original-harlem-crips",
+  "name": "Rollin 30s Original Harlem Crips",
+  "lane": "california-crips-neighborhood",
+  "metro": "Los Angeles",
+  "founded_year": 2006,
+  "description": "Original Harlem Crips are a predominately African-American street gang located in the Jefferson Park area of South Los Angeles.",
+  "type": "street_gang",
+  "nation_affiliation": "org:crips",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/crips/losangeles/r30crips",
+      "title": "Rollin 30s Original Harlem Crips — StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Rollin%27_30s_Harlem_Crips",
+      "title": "Rollin' 30s Harlem Crips — Wikipedia"
+    },
+    {
+      "url": "https://archives.fbi.gov/archives/losangeles/press-releases/2013/dozens-of-members-of-violent-street-gang-charged-with-narcotics-and-weapons-violation-following-joint-investigation-known-as-operation-thumbs-down",
+      "title": "Operation Thumbs Down — FBI Los Angeles Press Release (2013)"
+    },
+    {
+      "url": "https://unitedgangs.com/rollin-30s-harlem-crips/",
+      "title": "Rollin 30s Original Harlem Crips — United Gangs"
+    }
+  ],
+  "colors": [
+    "blue"
+  ],
+  "aliases": [
+    "RTC",
+    "Dirt Gang",
+    "OHC",
+    "Original Harlem Crip",
+    "Rollin 30s"
+  ],
+  "founded_year_precision": "estimate",
+  "status": "active",
+  "membership_estimate": 850,
+  "symbols": [
+    "Texas Rangers 'T' Cap",
+    "Texas Longhorns Apparel",
+    "New York Yankees Apparel",
+    "Seattle Mariners Apparel",
+    "'H' Hand Sign (Two Thumbs Up)",
+    "Number 30"
+  ]
+}

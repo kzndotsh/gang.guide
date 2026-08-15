@@ -59,7 +59,7 @@ org:harvard-park-brims-los-angeles                 # no_membership: exhausted (s
 org:centinela-park-family                          # all issues: exhausted
 org:rollin-20s-neighborhood-bloods                 # no_membership + no_symbols: exhausted
 org:ward-lane-compton-crips                        # imprecise_year + no_membership: exhausted
-org:wattsmafiacrip                                 # no_membership + no_symbols: exhausted
+org:99-watts-mafia-crips                                 # no_membership + no_symbols: exhausted
 org:west-side-pirus-compton                        # no_membership: already enriched year
 org:dwbi                                           # no_membership: already enriched sources
 org:halsey-bops                                    # no_membership + no_symbols: already enriched aliases
@@ -141,7 +141,7 @@ org:people-nation                    cross_metro
 org:ms-13                            cross_metro
 org:18th-street-gang                 cross_metro
 org:latin-kings                      cross_metro
-org:suren-os-united-states           cross_metro
+org:surenos           cross_metro
 org:black-gangster-disciples-nation  cross_metro
 org:almighty-vice-lord-nation        cross_metro
 org:black-p-stones                   cross_metro

@@ -1,0 +1,22 @@
+{
+  "id": "org:san-pedro-13",
+  "name": "San Pedro 13",
+  "lane": "california-latino-harbor",
+  "metro": "Los Angeles",
+  "description": "San Pedro 13 (SP13) is a Sureño street gang based in the San Pedro neighborhood of Los Angeles. One of the oldest Hispanic gangs in the Harbor area.",
+  "type": "street_gang",
+  "nation_affiliation": "org:bloods",
+  "sources": [
+    {
+      "url": "https://www.streetgangs.com/hispanic/cityofla/sanpedro",
+      "title": "San Pedro 13 — StreetGangs"
+    }
+  ],
+  "colors": [
+    "red"
+  ],
+  "founded_year": 1975,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "aliases": []
+}

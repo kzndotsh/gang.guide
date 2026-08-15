@@ -762,7 +762,7 @@
   },
   {
     "id": "b5f41536d095",
-    "source": "org:68ecc",
+    "source": "org:68-east-coast-crips",
     "target": "org:east-coast-crips-los-angeles",
     "type": "alliance"
   },
@@ -1151,7 +1151,7 @@
   },
   {
     "id": "d804eefb60ff",
-    "source": "org:barriox13",
+    "source": "org:barrio-x3",
     "target": "org:mexican-mafia",
     "type": "alliance"
   },
@@ -1920,7 +1920,7 @@
   },
   {
     "id": "92f5755b54c4",
-    "source": "org:azmv",
+    "source": "org:arizona-maravilla",
     "target": "org:mexican-mafia",
     "type": "alliance"
   },
@@ -2178,7 +2178,7 @@
   },
   {
     "id": "56c14369f1ef",
-    "source": "org:barriox13",
+    "source": "org:barrio-x3",
     "target": "org:primeiro-comando-da-capital-united-states",
     "type": "alliance"
   },
@@ -2399,19 +2399,19 @@
   {
     "id": "219b12d14b4f",
     "source": "org:18th-street-gang",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "alliance"
   },
   {
     "id": "c83565a23a44",
     "source": "org:ms-13",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "rivalry"
   },
   {
     "id": "8eabb8cb60ac",
     "source": "org:sons-of-samoa",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "alliance"
   },
   {
@@ -2871,7 +2871,7 @@
   {
     "id": "aa881323f24f",
     "source": "org:aryan-brotherhood",
-    "target": "org:dc-blacks",
+    "target": "org:d-c-blacks",
     "type": "rivalry"
   },
   {
@@ -3080,7 +3080,7 @@
   {
     "id": "132ccf26c3df",
     "source": "org:black-guerrilla",
-    "target": "org:dc-blacks",
+    "target": "org:d-c-blacks",
     "type": "alliance"
   },
   {
@@ -3180,7 +3180,7 @@
   {
     "id": "c660616ea017",
     "source": "org:genovese-crime",
-    "target": "org:ka-gang",
+    "target": "org:k-a-gang",
     "type": "alliance"
   },
   {
@@ -3239,7 +3239,7 @@
   },
   {
     "id": "cb384529dcba",
-    "source": "org:ka-gang",
+    "source": "org:k-a-gang",
     "target": "org:philadelphia-greek-mob",
     "type": "alliance"
   },
@@ -3391,7 +3391,7 @@
   },
   {
     "id": "a32a4dc727d8",
-    "source": "org:dc-blacks",
+    "source": "org:d-c-blacks",
     "target": "org:nazi-lowriders",
     "type": "rivalry"
   },
@@ -3711,7 +3711,7 @@
   },
   {
     "id": "85381d34606e",
-    "source": "org:frogtown",
+    "source": "org:frog-town-rifa",
     "target": "org:whitefence",
     "type": "alliance"
   },
@@ -3850,7 +3850,7 @@
   {
     "id": "c9ad2468090c",
     "source": "org:east-coast-crips-los-angeles",
-    "target": "org:wdcc",
+    "target": "org:neighborhood-dont-care-crips",
     "type": "alliance"
   },
   {
@@ -4448,7 +4448,7 @@
   {
     "id": "c6b7ce3aa7cc",
     "source": "org:almighty-gaylords-nation",
-    "target": "org:cnotes",
+    "target": "org:c-notes",
     "type": "alliance",
     "start_year": 1964,
     "end_year": 1982,
@@ -4683,7 +4683,7 @@
   },
   {
     "id": "79ba12f04cd2",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:harrison-gents",
     "type": "rivalry",
     "start_year": 1975,
@@ -5724,7 +5724,7 @@
   {
     "id": "920739c11716",
     "source": "org:almighty-saints",
-    "target": "org:barriovannuys",
+    "target": "org:barrio-van-nuys",
     "type": "parent",
     "evidence": "The Saints admired these new and upcoming crews and if they were down enough they would convince them to join, before you knew it the Saints absorbed the Latin Taste, Turbo Boys, Knight Riders, D Boys and Paulina Boys.",
     "source_url": "https://chicagoganghistory.com/gang/almighty-saints/"
@@ -5768,7 +5768,7 @@
   },
   {
     "id": "e38c7a18e4fd",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:simon-city-royals-chicago",
     "type": "rivalry",
     "evidence": "Now Almighty Insane Popes and Simon City Royals both hated Gaylords, Latin Kings and Insane Deuces with a passion. With the hate of the Gaylords soon followed a hatred of the entire U.F.O unity which brought the Royals to war with C-Notes.",
@@ -6053,7 +6053,7 @@
   },
   {
     "id": "470c5c156f44",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:latin-lovers",
     "type": "alliance",
     "start_year": 1975,
@@ -6063,7 +6063,7 @@
   },
   {
     "id": "f31c4d79106d",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:imperial-gangsters-chicago",
     "type": "rivalry",
     "start_year": 1975,
@@ -6073,7 +6073,7 @@
   },
   {
     "id": "b9d5afba37ac",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:paulina-barry-community",
     "type": "rivalry",
     "start_year": 1975,
@@ -6083,7 +6083,7 @@
   },
   {
     "id": "2485d32ad244",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:latin-kings",
     "type": "rivalry",
     "evidence": "In 1964 the Latin Kings formed which became the ultimate nemesis for white gangs but Chi-West kept the Latin Kings completely out of Ukrainian Village, they never claimed a single piece of turf here.",
@@ -6091,7 +6091,7 @@
   },
   {
     "id": "1e5c89af672a",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:maniac-latin-disciples-chicago",
     "type": "rivalry",
     "evidence": "In the year 1966, the Maniac Latin Disciples formed and one of the primary reasons they formed was because of Chi-West.",
@@ -6099,7 +6099,7 @@
   },
   {
     "id": "10340affe737",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:insane-dragons",
     "type": "rivalry",
     "evidence": "In 1970 the Insane Dragons formed and of course, one of the main reasons they formed was because of Chi-West.",
@@ -6108,7 +6108,7 @@
   {
     "id": "9d0fb52d9f46",
     "source": "org:bishops",
-    "target": "org:chiwest",
+    "target": "org:chi-west",
     "type": "rivalry",
     "evidence": "Cortland and Harding only lasted until 1978 because Chi-West killed the north side leader of the Bishops \"Cougar.\"",
     "source_url": "https://chicagoganghistory.com/gang/chi-west/"
@@ -6621,7 +6621,7 @@
   },
   {
     "id": "4a912d7a4171",
-    "source": "org:hells-devils",
+    "source": "org:hell-s-devils",
     "target": "org:latin-kings",
     "type": "rivalry",
     "evidence": "The Hell's Devils now joined the fight against Latin Kings, Spanish Cobras, Simon City Royals and Paulina and Barry Community.",
@@ -6629,7 +6629,7 @@
   },
   {
     "id": "32f313ade24b",
-    "source": "org:hells-devils",
+    "source": "org:hell-s-devils",
     "target": "org:spanish-cobras-chicago",
     "type": "rivalry",
     "evidence": "The Hell's Devils now joined the fight against Latin Kings, Spanish Cobras, Simon City Royals and Paulina and Barry Community.",
@@ -6637,7 +6637,7 @@
   },
   {
     "id": "530aadff6fa9",
-    "source": "org:hells-devils",
+    "source": "org:hell-s-devils",
     "target": "org:simon-city-royals-chicago",
     "type": "rivalry",
     "evidence": "The Hell's Devils now joined the fight against Latin Kings, Spanish Cobras, Simon City Royals and Paulina and Barry Community.",
@@ -6682,7 +6682,7 @@
   {
     "id": "1f1633b7167d",
     "source": "org:ashland-vikings",
-    "target": "org:cnotes",
+    "target": "org:c-notes",
     "type": "alliance",
     "evidence": "In the year 1973, the Vikings encountered an incident when the Chicago Police decided to retaliate on a C-Note gang member by dropping him off in Viking neighborhood so he would be beaten or killed. The C-Note stood his ground waiting for his fate but Puncher told the Vikings to leave him alone and let him go home. At that moment respect was built between Vikings and C-Notes that has carried on into present day.",
     "source_url": "https://chicagoganghistory.com/gang/insane-ashland-vikings/"
@@ -6715,7 +6715,7 @@
   },
   {
     "id": "80d39337d37e",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:latin-kings",
     "type": "rivalry",
     "evidence": "The two worst enemies and arch rivals of the C-Notes were now Latin Kings and Satan Disciples.",
@@ -6723,7 +6723,7 @@
   },
   {
     "id": "2780a0d87719",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:satan-disciples-chicago",
     "type": "rivalry",
     "start_year": 1979,
@@ -6732,7 +6732,7 @@
   },
   {
     "id": "3227320896da",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:playboys-gang",
     "type": "rivalry",
     "evidence": "C-Notes would fight Playboys quite often in these early days.",
@@ -6740,7 +6740,7 @@
   },
   {
     "id": "bf45db5de77e",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:maniac-latin-disciples-chicago",
     "type": "rivalry",
     "evidence": "This brought in Maniac Latin Disciples, Harrison Gents, Satan Disciples and Milwaukee Kings. Milwaukee Kings completely moved their headquarters here as MLDs and SDs established a stronghold here. Harrison Gents flipped many Lazy Gents into their ranks and now the C-Notes had four new rivals to deal with but the C-Notes fought them all heavily.",
@@ -6748,7 +6748,7 @@
   },
   {
     "id": "9368e9d35e2d",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:milwaukee-kings",
     "type": "rivalry",
     "start_year": 1975,
@@ -6758,7 +6758,7 @@
   },
   {
     "id": "b9ef48e17577",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:taylor-jousters",
     "type": "alliance",
     "start_year": 1973,
@@ -6768,7 +6768,7 @@
   },
   {
     "id": "c3b62fd51dfb",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:simon-city-royals-chicago",
     "type": "alliance",
     "evidence": "The P.V.P and G.C.G extended their alliance over a broader network and connected with all the white gangs including enemies like the Almighty Popes and Simon City Royals. This new alliance was called the 'White Power Organization,' or 'W.P.O.'",
@@ -6777,7 +6777,7 @@
   {
     "id": "8d303c728294",
     "source": "org:almighty-vice-lord-nation",
-    "target": "org:cnotes",
+    "target": "org:c-notes",
     "type": "rivalry",
     "evidence": "the African American street gangs such as the Vice Lords from the Henry Horner projects just south, would not dare cross the railroad tracks by Kinzie Street on the south.",
     "source_url": "https://chicagoganghistory.com/gang/insane-c-notes/"
@@ -7061,7 +7061,7 @@
   },
   {
     "id": "b85935ee88de",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:insane-dragons",
     "type": "rivalry",
     "evidence": "These kids banded together and mainly fought white greaser gangs like Chi-West, Gaylords and C-Notes.",
@@ -7071,7 +7071,7 @@
   },
   {
     "id": "093a1b531108",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:insane-dragons",
     "type": "alliance",
     "evidence": "By the year 1992, the Dragons stopped their gang wars with the C-Notes and the two became best allies.",
@@ -7081,7 +7081,7 @@
   {
     "id": "cac119820f4c",
     "source": "org:insane-dragons",
-    "target": "org:cnotes",
+    "target": "org:c-notes",
     "type": "parent",
     "evidence": "Dragons have also been good allies with the Insane Familia gangs and even sponsored the C-Notes into Insane and Folks in 1995.",
     "source_url": "https://chicagoganghistory.com/gang/insane-dragons/"
@@ -7637,7 +7637,7 @@
   },
   {
     "id": "143c750e962d",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:latin-jivers",
     "type": "rivalry",
     "evidence": "The Jivers had some of the same enemies as the MLDs like Gaylords, Latin Kings, Taylor Jousters, Chi-West, Spanish Lords, Warlords and C-Notes",
@@ -7767,7 +7767,7 @@
   },
   {
     "id": "5d62b978c31b",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:spanish-cobras-chicago",
     "type": "alliance",
     "start_year": 1995,
@@ -8852,7 +8852,7 @@
   },
   {
     "id": "814abef312bf",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:playboys-ventures-pulaski-park-rice-boys",
     "type": "rivalry",
     "start_year": 1958,
@@ -9164,7 +9164,7 @@
   {
     "id": "9450b97e343c",
     "source": "org:almighty-insane-popes-nation",
-    "target": "org:cnotes",
+    "target": "org:c-notes",
     "type": "rivalry",
     "start_year": 1989,
     "end_year": 1990,
@@ -9249,7 +9249,7 @@
   },
   {
     "id": "dc03d37664ed",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:spanish-lords",
     "type": "rivalry",
     "start_year": 1969,
@@ -9259,7 +9259,7 @@
   },
   {
     "id": "4ca7962f2e53",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:spanish-lords",
     "type": "rivalry",
     "start_year": 1969,
@@ -9359,7 +9359,7 @@
   },
   {
     "id": "49491e98b06a",
-    "source": "org:cnotes",
+    "source": "org:c-notes",
     "target": "org:stoned-freaks",
     "type": "rivalry",
     "start_year": 1994,
@@ -9720,7 +9720,7 @@
   },
   {
     "id": "14bc84a18eaf",
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:warlords-wicker-park-la-familia-warlords",
     "type": "rivalry",
     "evidence": "The Warlord's worst enemies were Taylor Jousters , Chi-West , Gaylords and PVR/PVPs which were white greaser clubs that wanted to flush out groups of Puerto Rican youths.",
@@ -9838,7 +9838,7 @@
   },
   {
     "source": "org:black-gangster-disciples-nation",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "alliance",
     "evidence": "in Southwest Detroit various GD-aligned sets (particularly predominately Latino sets) have mutual relations with Sureños (SUR-13) gangs"
   },
@@ -10853,56 +10853,56 @@
     "source_url": "http://www.stonegreasers.com/greaser/brooklyn_suicides.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:latin-angels",
     "type": "rivalry",
     "evidence": "Chi-West rumbled against Latino gang rivals like Latin Angels and the Spanish Kings. December 4th, 1962, Chicago Police broke up a rumble between Chi-West, the Latin Angels, and the Spanish Kings in the Chopin School Playground.",
     "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:spanish-kings",
     "type": "rivalry",
     "evidence": "Chi-West rumbled against Latino gang rivals like Latin Angels and the Spanish Kings. December 4th, 1962, Chicago Police broke up a rumble between Chi-West, the Latin Angels, and the Spanish Kings in the Chopin School Playground.",
     "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:haddon-boys",
     "type": "rivalry",
     "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
     "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:dragons",
     "type": "rivalry",
     "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
     "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:young-lords",
     "type": "rivalry",
     "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
     "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:unknowns",
     "type": "rivalry",
     "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
     "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:warlords",
     "type": "rivalry",
     "evidence": "Although we had quite a few battles at Columbus with Haddon Boys, Spanish Lords, Dragons, Young Lords, Latin Disciples, Unknowns, Latin Kings, Warlords",
     "source_url": "http://www.stonegreasers.com/greaser/chi_west.html"
   },
   {
-    "source": "org:chiwest",
+    "source": "org:chi-west",
     "target": "org:sabin-boys",
     "type": "rivalry",
     "evidence": "We did rumble with the Spanish Lords daily for months at a time during the school year during the mid 60's through 70-71 as they and the LD's, Haddon Boys, Sabin Boys, UK's, Dragons etc would group together",
@@ -11047,7 +11047,7 @@
   },
   {
     "source": "org:corp",
-    "target": "org:chiwest",
+    "target": "org:chi-west",
     "type": "alliance",
     "evidence": "Alliances: The Popes, Patch, Chi-West, Aristocrats, Bel-Aires, Howard Street Greasers, TJO, and another white gang for Rogers Park called the Kings.",
     "source_url": "http://www.stonegreasers.com/greaser/corp.html"
@@ -11116,7 +11116,7 @@
     "source_url": "http://www.stonegreasers.com/greaser/corp.html"
   },
   {
-    "source": "org:jans-boys",
+    "source": "org:jan-s-boys",
     "target": "org:warrendale-gang",
     "type": "alliance",
     "evidence": "At times we joined forces with the Warrendale crowd to fight other gangs.",
@@ -11373,7 +11373,7 @@
   },
   {
     "source": "org:almighty-insane-popes-nation",
-    "target": "org:chiwest",
+    "target": "org:chi-west",
     "type": "rivalry",
     "evidence": "When the Gaylords went to war with the Royals and Popes so did Chi West.",
     "source_url": "http://www.stonegreasers.com/greaser/popes_gaylords_war.html"
@@ -11417,7 +11417,7 @@
   },
   {
     "source": "org:simon-city-royals-chicago",
-    "target": "org:simons-city",
+    "target": "org:simon-s-city",
     "type": "spin_off",
     "evidence": "A spin-off of the much older Simon's City name originating from Simons Park, the Royals recruited new members from the area",
     "source_url": "http://www.stonegreasers.com/greaser/scr.html"
@@ -11769,7 +11769,7 @@
   },
   {
     "source": "org:imperial-spanish-gangsters",
-    "target": "org:o-as",
+    "target": "org:o-a-s",
     "type": "alliance",
     "evidence": "In the jails the people of the Imperial Spanish Gangster's found other allies that they've dealt with on the street, by allies I speak of; Maniac Latin Disciple's, Satin's Disciples, Latin Eagle's, Spanish Cobra's, O-A'S",
     "source_url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html"
@@ -11860,7 +11860,7 @@
   },
   {
     "source": "org:hard-time-hustler-crips-los-angeles",
-    "target": "org:rollin100s",
+    "target": "org:rollin-100s-crips",
     "type": "member_of",
     "evidence": "This set is also part of the Rollin 100s Crips card.",
     "source_url": "https://unitedgangs.com/104-hard-time-hustler-crips/"
@@ -11993,7 +11993,7 @@
   },
   {
     "source": "org:112-hoover-criminals",
-    "target": "org:rollin100s",
+    "target": "org:rollin-100s-crips",
     "type": "rivalry",
     "evidence": "Other rivals include Harvard Gangster Crips, 113 Original Blocc Crips, Gardena Paybacc Crips, and all East Coast Crips along with all Rollin 100s",
     "source_url": "https://unitedgangs.com/112-hoover-criminals-gang/"
@@ -12007,7 +12007,7 @@
   },
   {
     "source": "org:112-neighborhood-crips",
-    "target": "org:rollin100s",
+    "target": "org:rollin-100s-crips",
     "type": "member_of",
     "evidence": "The 112 Neighborhood Crips fall under the Neighborhood Crips and are part of the Rollin 100s Crips",
     "source_url": "https://unitedgangs.com/112-neighbor-hood-crips/"
@@ -12063,7 +12063,7 @@
   },
   {
     "source": "org:115-neighborhood-crips",
-    "target": "org:rollin100s",
+    "target": "org:rollin-100s-crips",
     "type": "member_of",
     "evidence": "fall under the Rollin 100s (Crips) umbrella",
     "source_url": "https://unitedgangs.com/115-neighborhood-crips/"
@@ -12462,7 +12462,7 @@
   },
   {
     "source": "org:gangster-crips",
-    "target": "org:allforcrime-los-angeles",
+    "target": "org:all-for-crime-bloods",
     "type": "rivalry",
     "evidence": "The 40's Gangster Crips also fued with the Rollin 20s Outlaw Bloods , All For Crime Bloods , Playboy Sureños 13 , Hangout Boyz 13 , and an large number of Hispanic Sureño's 13 gangs.",
     "source_url": "https://unitedgangs.com/40s-gangster-crips-4-pacc/"
@@ -12791,7 +12791,7 @@
   },
   {
     "source": "org:62-east-coast-crips",
-    "target": "org:68ecc",
+    "target": "org:68-east-coast-crips",
     "type": "alliance",
     "evidence": "They also apart of the 6 Pacc East Coast Crips alliance, which include the 69,68,66 East Coast Crips .",
     "source_url": "https://unitedgangs.com/62-east-coast-neighbor-hood-crips/"
@@ -12874,56 +12874,56 @@
     "source_url": "https://unitedgangs.com/69-east-coast-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:gangster-crips",
     "type": "member_of",
     "evidence": "The 7-Tray Hustler Crips fall under Hustler Crips and the Gangster Crip (3X) umbrella.",
     "source_url": "https://unitedgangs.com/73-hustler-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:73-gangster-crips",
     "type": "alliance",
     "evidence": "better known as the 7-Tray Hustler Crips or 7-Tray Hustler Gangster Crips, due to their alliance with the 73 Gangster Crips",
     "source_url": "https://unitedgangs.com/73-hustler-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:hustler-crips",
     "type": "alliance",
     "evidence": "They are allies of the Playboy Hustler Crips",
     "source_url": "https://unitedgangs.com/73-hustler-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:7-mile-playboy-gangster-crips",
     "type": "alliance",
     "evidence": "They are allies of the Playboy Hustler Crips and the Playboy Gangster Crips",
     "source_url": "https://unitedgangs.com/73-hustler-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:eight-tray-83-gangster-crip-los-angeles",
     "type": "alliance",
     "evidence": "They are allies of the Playboy Hustler Crips and the Playboy Gangster Crips as well as the Eight Tray Gangster Crips",
     "source_url": "https://unitedgangs.com/73-hustler-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:mad-swan-bloods",
     "type": "rivalry",
     "evidence": "The 7-Tray Hustler Crips are rivals of the 77 Mad Swan Bloods",
     "source_url": "https://unitedgangs.com/73-hustler-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:112-neighborhood-crips",
     "type": "rivalry",
     "evidence": "The 7-Tray Hustler Crips are rivals of the 77 Mad Swan Bloods, 112 Neighborhood Crips, Raymond Ave Crips, and the Front Street Crips (Watts)",
     "source_url": "https://unitedgangs.com/73-hustler-crips/"
   },
   {
-    "source": "org:73hustlercrip",
+    "source": "org:73-hustler-crips",
     "target": "org:front-street-watts-crips",
     "type": "rivalry",
     "evidence": "The 7-Tray Hustler Crips are rivals of the 77 Mad Swan Bloods, 112 Neighborhood Crips, Raymond Ave Crips, and the Front Street Crips (Watts)",
@@ -12945,7 +12945,7 @@
   },
   {
     "source": "org:74-hoover-criminals",
-    "target": "org:76ecc",
+    "target": "org:76-east-coast-crip",
     "type": "rivalry",
     "evidence": "Rivals include the Rollin 60s Neighborhood Crips and the 76 East Coast Crips",
     "source_url": "https://unitedgangs.com/74-hoover-criminals-gang/"
@@ -12972,84 +12972,84 @@
     "source_url": "https://unitedgangs.com/74-hoover-criminals-gang/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:east-coast-crips-los-angeles",
     "type": "member_of",
     "evidence": "The 76 (pronounced Seven Six) East Coast Crips (76 ECC) also known as 76 East Coast Neighborhood Crips are an well-known African-American street gang under the East Coast Crips umbrella.",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:89-east-coast-crips",
     "type": "alliance",
     "evidence": "Their allies include: East Coast Crips ; 89 East Coast Crips",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:east-coast-crips-97",
     "type": "alliance",
     "evidence": "Their allies include: 97 East Coast Crips",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:6-pacc-east-coast-crips",
     "type": "alliance",
     "evidence": "Their allies include: 6 Pacc East Coast Crips",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:1st-east-coast-crips",
     "type": "alliance",
     "evidence": "Their allies include: 1st East Coast Crips",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:67-neighborhood-crips",
     "type": "alliance",
     "evidence": "Their allies include: all Neighborhood Crips",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:mad-swan-bloods",
     "type": "rivalry",
     "evidence": "Rivals include: the Mad Swan Bloods",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:rollin-40s-crips",
     "type": "rivalry",
     "evidence": "Akil Robbins and Christopher Mathis shot a member of the Rollin 40s Crips five or six times",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:family-swan-bloods",
     "type": "rivalry",
     "evidence": "Rivals include: Family Swan Bloods",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:kitchen-crips-los-angeles",
     "type": "rivalry",
     "evidence": "Rivals include: Kitchen Crips",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "The shootings are linked to an ongoing feud between the East Coast Crips and Florencia 13",
     "source_url": "https://unitedgangs.com/76-east-coast-crips/"
   },
   {
-    "source": "org:76ecc",
+    "source": "org:76-east-coast-crip",
     "target": "org:grape-watts-crips",
     "type": "rivalry",
     "evidence": "Rivals include: Grape Street Crips (Watts)",
@@ -13291,7 +13291,7 @@
   },
   {
     "source": "org:gangster-crips-96",
-    "target": "org:wattsmafiacrip",
+    "target": "org:99-watts-mafia-crips",
     "type": "rivalry",
     "evidence": "Their rivals include the Be-Bopp Watts Bishops , 92 Elm Street Pirus and the 99 Watts Mafia Crips",
     "source_url": "https://unitedgangs.com/96-gangster-crips/"
@@ -13319,7 +13319,7 @@
   },
   {
     "source": "org:97-gangster-crips",
-    "target": "org:112bgc",
+    "target": "org:112-broadway-gangster-crips",
     "type": "alliance",
     "evidence": "are allies of neighborhoods also claiming the same card along with all East Coast Crips , the 112 Broadway Gangster Crips and PJ Watts Crips",
     "source_url": "https://unitedgangs.com/97-gangster-crips/"
@@ -13409,70 +13409,70 @@
     "source_url": "https://unitedgangs.com/98-gangster-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:fudge-town-mafia-crips",
     "type": "alliance",
     "evidence": "The 99 Watts Mafia Crips have a strong alliance with the Fudge Town Mafia Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:blue-gate-mafia-crips",
     "type": "alliance",
     "evidence": "The 99 Watts Mafia Crips have a strong alliance with the Fudge Town Mafia Crips and the Blue Gate Mafia Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:main-mafia-crips-msmc-los-angeles",
     "type": "alliance",
     "evidence": "The 99 Watts Mafia Crips have a strong alliance with the Fudge Town Mafia Crips and the Blue Gate Mafia Crips as well as the Main Street Mafia Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:pj-watts-crips",
     "type": "alliance",
     "evidence": "Other allies include the PJ Watts Crips and Nut Hood Watts Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:hat-watts-crips",
     "type": "rivalry",
     "evidence": "Their main rivals are the Hat Gang Watts Crips and the Krazy Mexican Town",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:bounty-hunter-watts-bloods",
     "type": "rivalry",
     "evidence": "Other rivals include: Bounty Hunter Bloods, Cicrle City Pirus, Be-Bop Watts Bishop Bloods, Grape Street Crips, and the 8-Tray Gangster Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:circle-city-pirus-in-watts-los-angeles",
     "type": "rivalry",
     "evidence": "Other rivals include: Bounty Hunter Bloods, Cicrle City Pirus, Be-Bop Watts Bishop Bloods, Grape Street Crips, and the 8-Tray Gangster Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:grape-watts-crips",
     "type": "rivalry",
     "evidence": "Other rivals include: Bounty Hunter Bloods, Cicrle City Pirus, Be-Bop Watts Bishop Bloods, Grape Street Crips, and the 8-Tray Gangster Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:gangster-crips",
     "type": "rivalry",
     "evidence": "Other rivals include: Bounty Hunter Bloods, Cicrle City Pirus, Be-Bop Watts Bishop Bloods, Grape Street Crips, and the 8-Tray Gangster Crips",
     "source_url": "https://unitedgangs.com/99-watts-mafia-crips/"
   },
   {
-    "source": "org:wattsmafiacrip",
+    "source": "org:99-watts-mafia-crips",
     "target": "org:mafia-crips-los-angeles",
     "type": "member_of",
     "evidence": "They also falls under the Mafia Crips umbrella",
@@ -13769,7 +13769,7 @@
   },
   {
     "source": "org:atlantic-drive-compton-crips",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "rivalry",
     "evidence": "The Atlantic Drive Compton Crips historical rivalries are with the Cross Atlantic Piru , Mob Piru Gang , Lueders Park Piru , Elm Street Piru , Holly Hood Piru , and the Lime Hood Piru",
     "source_url": "https://unitedgangs.com/atlantic-drive-compton-crips/"
@@ -13790,7 +13790,7 @@
   },
   {
     "source": "org:avalon-ganster-crips-los-angeles",
-    "target": "org:112bgc",
+    "target": "org:112-broadway-gangster-crips",
     "type": "alliance",
     "evidence": "Other allies are 87 Kitchen Crips and the Eight Tray Gangster Crips along with the 112 Broadway Gangster Crips.",
     "source_url": "https://unitedgangs.com/avalon-gangster-crips/"
@@ -13888,14 +13888,14 @@
   },
   {
     "source": "org:avenue-piru-gang",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "rivalry",
     "evidence": "The APBs also feud with the 102 Budlong Gangster Crips, Rollin 90s, Raymond Avenue Crips, Osage Legend Crips, Imperial Village Crips, and the Tongan Crip Gang",
     "source_url": "https://unitedgangs.com/avenue-piru-gang/"
   },
   {
     "source": "org:varrio-avenues-43rd-57th-cyclones",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "alliance",
     "evidence": "Allies: Surenos, Mexican Mafia",
     "source_url": "https://unitedgangs.com/avenues-gang/"
@@ -13916,7 +13916,7 @@
   },
   {
     "source": "org:varrio-avenues-43rd-57th-cyclones",
-    "target": "org:frogtown",
+    "target": "org:frog-town-rifa",
     "type": "rivalry",
     "evidence": "Rivals: Cypress Park Boys, Highland Park Gang, Frogtown Rifa, Westside Locos",
     "source_url": "https://unitedgangs.com/avenues-gang/"
@@ -13965,7 +13965,7 @@
   },
   {
     "source": "org:barrio-mojados",
-    "target": "org:allforcrime-los-angeles",
+    "target": "org:all-for-crime-bloods",
     "type": "alliance",
     "evidence": "All For Crime (AFC): A smaller allied group that has historically aligned with Barrio Mojados against mutual rivals, reflecting strategic partnerships.",
     "source_url": "https://unitedgangs.com/barrio-mojados-13/"
@@ -14027,42 +14027,42 @@
     "source_url": "https://unitedgangs.com/2016/12/11/big-bad-chrome-music-video/"
   },
   {
-    "source": "org:bighazard",
+    "source": "org:big-hazard",
     "target": "org:mexican-mafia",
     "type": "alliance",
     "evidence": "The Hazard gang is known for having deep-rooted connections to the Mexican-Mafia, dating back to the 1950s.",
     "source_url": "https://unitedgangs.com/big-hazard/"
   },
   {
-    "source": "org:bighazard",
+    "source": "org:big-hazard",
     "target": "org:michigan-chicano-force",
     "type": "rivalry",
     "evidence": "their mortal rivals were the Geraghty Loma 13 and the Krazy Ass Mexicans (KAM) as well as the MC Force.",
     "source_url": "https://unitedgangs.com/big-hazard/"
   },
   {
-    "source": "org:bighazard",
+    "source": "org:big-hazard",
     "target": "org:varrio-avenues-43rd-57th-cyclones",
     "type": "rivalry",
     "evidence": "They mostly feud with Latino gangs in East Los Angeles and Boyle Heights as well as Terrace City, such as the Avenues",
     "source_url": "https://unitedgangs.com/big-hazard/"
   },
   {
-    "source": "org:bighazard",
+    "source": "org:big-hazard",
     "target": "org:nuevo-estrada-in-boyle-heights-estrada-courts-los-angeles",
     "type": "rivalry",
     "evidence": "They mostly feud with Latino gangs in East Los Angeles and Boyle Heights as well as Terrace City, such as the Avenues, 38th Street Gang and Varrio Nuevo Estrada.",
     "source_url": "https://unitedgangs.com/big-hazard/"
   },
   {
-    "source": "org:bighazard",
+    "source": "org:big-hazard",
     "target": "org:geraghty-loma-from-east-la",
     "type": "rivalry",
     "evidence": "their mortal rivals were the Geraghty Loma 13 and the Krazy Ass Mexicans (KAM) as well as the MC Force.",
     "source_url": "https://unitedgangs.com/big-hazard/"
   },
   {
-    "source": "org:bighazard",
+    "source": "org:big-hazard",
     "target": "org:krazy-ass-mexicans",
     "type": "rivalry",
     "evidence": "their mortal rivals were the Geraghty Loma 13 and the Krazy Ass Mexicans (KAM) as well as the MC Force.",
@@ -14147,7 +14147,7 @@
   },
   {
     "source": "org:blue-gate-mafia-crips",
-    "target": "org:wattsmafiacrip",
+    "target": "org:99-watts-mafia-crips",
     "type": "alliance",
     "evidence": "They have a tight family alliance with the Beach Town Mafia Crips and the Fudge Town Mafia Crips, as well as the 99 Watts Mafia Crips",
     "source_url": "https://unitedgangs.com/blue-gate-mafia-crips/"
@@ -14469,7 +14469,7 @@
   },
   {
     "source": "org:campanella-park-piru",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "rivalry",
     "evidence": "Their main rivals are the Original Swamps Compton Crips, Twilight Zone Compton Crips and the Tragniew Park Compton Crips.",
     "source_url": "https://unitedgangs.com/campanella-park-piru/"
@@ -14609,7 +14609,7 @@
   },
   {
     "source": "org:centinela-park-family",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "rivalry",
     "evidence": "Other rivals include: Rollin 90 Crips , Rollin 40 Crips , Osage Legand Crips , 83 Gangster Crips , and the Tongan Crips Gang",
     "source_url": "https://unitedgangs.com/centinela-park-family/"
@@ -14837,7 +14837,7 @@
   },
   {
     "source": "org:cross-atlantic-pirus",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "alliance",
     "evidence": "The Cross Atlantic Pirus are allies of the Lime Hood Pirus , Lueders Park Pirus , and the Holly Hood Pirus",
     "source_url": "https://unitedgangs.com/cross-atlantic-piru/"
@@ -14928,7 +14928,7 @@
   },
   {
     "source": "org:culver-city-boys",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "member_of",
     "evidence": "Affiliated with both the Sureños and La eMe, the Mexican Mafia",
     "source_url": "https://unitedgangs.com/2017/11/06/culver-city-boys/"
@@ -14955,49 +14955,49 @@
     "source_url": "https://unitedgangs.com/2017/11/06/culver-city-boys/"
   },
   {
-    "source": "org:dc-blacks",
+    "source": "org:d-c-blacks",
     "target": "org:aryan-brotherhood",
     "type": "rivalry",
     "evidence": "Among these, the all-white Aryan Brotherhood would soon become their main enemy.",
     "source_url": "https://unitedgangs.com/2017/11/28/d-c-blacks/"
   },
   {
-    "source": "org:dc-blacks",
-    "target": "org:suren-os-united-states",
+    "source": "org:d-c-blacks",
+    "target": "org:surenos",
     "type": "rivalry",
     "evidence": "Assassinations and executions shook the Marion penitentiary for most of the 90s, eventually seeing the gang clash with the Hispanic Sureños as well as with fellow African-Americans.",
     "source_url": "https://unitedgangs.com/2017/11/28/d-c-blacks/"
   },
   {
-    "source": "org:dc-blacks",
+    "source": "org:d-c-blacks",
     "target": "org:black-guerrilla",
     "type": "alliance",
     "evidence": "Allies: Black Guerrilla Family, Bloods, Crips, other African-American gangs",
     "source_url": "https://unitedgangs.com/2017/11/28/d-c-blacks/"
   },
   {
-    "source": "org:dc-blacks",
+    "source": "org:d-c-blacks",
     "target": "org:bloods",
     "type": "alliance",
     "evidence": "Allies: Black Guerrilla Family, Bloods, Crips, other African-American gangs",
     "source_url": "https://unitedgangs.com/2017/11/28/d-c-blacks/"
   },
   {
-    "source": "org:dc-blacks",
+    "source": "org:d-c-blacks",
     "target": "org:crips",
     "type": "alliance",
     "evidence": "Allies: Black Guerrilla Family, Bloods, Crips, other African-American gangs",
     "source_url": "https://unitedgangs.com/2017/11/28/d-c-blacks/"
   },
   {
-    "source": "org:dc-blacks",
+    "source": "org:d-c-blacks",
     "target": "org:latin-kings",
     "type": "rivalry",
     "evidence": "Rivals: Latin Kings, Aryan Brotherhood, Mexican Mafia",
     "source_url": "https://unitedgangs.com/2017/11/28/d-c-blacks/"
   },
   {
-    "source": "org:dc-blacks",
+    "source": "org:d-c-blacks",
     "target": "org:mexican-mafia",
     "type": "rivalry",
     "evidence": "Rivals: Latin Kings, Aryan Brotherhood, Mexican Mafia",
@@ -15280,7 +15280,7 @@
   },
   {
     "source": "org:el-monte-flores",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "member_of",
     "evidence": "Like other gangs affiliated with the Mexican Mafia, members of El Monte Flores are asked to set their differences aside and join the Sureños while in prison.",
     "source_url": "https://unitedgangs.com/el-monte-flores-13/"
@@ -15328,49 +15328,49 @@
     "source_url": "https://unitedgangs.com/emerald-hills-gangster-bloods/"
   },
   {
-    "source": "org:efcc",
+    "source": "org:exotic-family-city-crip",
     "target": "org:asian-boyz",
     "type": "alliance",
     "evidence": "The Exotic Family City Crips main allies are the Asian Boyz Crips and the Suicidal Town. This alliance is known as the 'SEA Crips' or the 'SEA Alliance.'",
     "source_url": "https://unitedgangs.com/exotic-family-city-crips/"
   },
   {
-    "source": "org:efcc",
+    "source": "org:exotic-family-city-crip",
     "target": "org:suicidal-town-long-beach-california",
     "type": "alliance",
     "evidence": "The Exotic Family City Crips main allies are the Asian Boyz Crips and the Suicidal Town. This alliance is known as the 'SEA Crips' or the 'SEA Alliance.'",
     "source_url": "https://unitedgangs.com/exotic-family-city-crips/"
   },
   {
-    "source": "org:efcc",
+    "source": "org:exotic-family-city-crip",
     "target": "org:sons-of-samoa",
     "type": "alliance",
     "evidence": "Other allies are the Sons Of Samoa Crips and the Insane Crips as well as the Tonga Crip Gang located in Inglewood, California.",
     "source_url": "https://unitedgangs.com/exotic-family-city-crips/"
   },
   {
-    "source": "org:efcc",
+    "source": "org:exotic-family-city-crip",
     "target": "org:longos-13",
     "type": "rivalry",
     "evidence": "The Exotic Family City Crips mainly feud with street gangs located in the Harbor Region of Los Angeles. Which include the Longos 13, Waterfront Piru, Tiny Rascals Gang, East Side Pain and the West Side Piru (Carson).",
     "source_url": "https://unitedgangs.com/exotic-family-city-crips/"
   },
   {
-    "source": "org:efcc",
+    "source": "org:exotic-family-city-crip",
     "target": "org:tiny-rascal-gang",
     "type": "rivalry",
     "evidence": "The Exotic Family City Crips mainly feud with street gangs located in the Harbor Region of Los Angeles. Which include the Longos 13, Waterfront Piru, Tiny Rascals Gang, East Side Pain and the West Side Piru (Carson).",
     "source_url": "https://unitedgangs.com/exotic-family-city-crips/"
   },
   {
-    "source": "org:efcc",
+    "source": "org:exotic-family-city-crip",
     "target": "org:east-side-pain-gang",
     "type": "rivalry",
     "evidence": "The Exotic Family City Crips mainly feud with street gangs located in the Harbor Region of Los Angeles. Which include the Longos 13, Waterfront Piru, Tiny Rascals Gang, East Side Pain and the West Side Piru (Carson).",
     "source_url": "https://unitedgangs.com/exotic-family-city-crips/"
   },
   {
-    "source": "org:efcc",
+    "source": "org:exotic-family-city-crip",
     "target": "org:west-side-pirus-compton",
     "type": "rivalry",
     "evidence": "The Exotic Family City Crips mainly feud with street gangs located in the Harbor Region of Los Angeles. Which include the Longos 13, Waterfront Piru, Tiny Rascals Gang, East Side Pain and the West Side Piru (Carson).",
@@ -15441,7 +15441,7 @@
   },
   {
     "source": "org:farm-dog-compton-crips",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "rivalry",
     "evidence": "Rivals include: Mob Piru, 151 Original Block Piru, Holly Hood Piru",
     "source_url": "https://unitedgangs.com/farm-dog-compton-crips/"
@@ -15548,7 +15548,7 @@
   },
   {
     "source": "org:fresno-bulldogs",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "rivalry",
     "evidence": "They are known for their ongoing rivalry with Surenos and Nortenos in Northern California.",
     "source_url": "https://unitedgangs.com/fresno-bulldogs/"
@@ -15632,7 +15632,7 @@
   },
   {
     "source": "org:front-street-watts-crips",
-    "target": "org:88agc",
+    "target": "org:88-avalon-gardens-crips",
     "type": "alliance",
     "evidence": "Allies include: Avalon Gardens Crips",
     "source_url": "https://unitedgangs.com/front-street-watts-crips/"
@@ -15660,7 +15660,7 @@
   },
   {
     "source": "org:front-street-watts-crips",
-    "target": "org:southlos",
+    "target": "org:south-los-13",
     "type": "rivalry",
     "evidence": "Rivals include: South Los 13",
     "source_url": "https://unitedgangs.com/front-street-watts-crips/"
@@ -15863,7 +15863,7 @@
   },
   {
     "source": "org:mexican-mafia",
-    "target": "org:lowellstreet",
+    "target": "org:lowell-street-locos",
     "type": "rivalry",
     "evidence": "They defied the Mexican Mafia in 1993, when they chose to reject affiliation and loyalty to the gang.",
     "source_url": "https://unitedgangs.com/2018/05/19/gangs-who-defied-the-mexican-mafia/"
@@ -15913,7 +15913,7 @@
   },
   {
     "source": "org:nuestra-familia",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "rivalry",
     "evidence": "Having sworn allegiance to La Eme, the Sureños have always been in a war with the Norteños and other parts of the Nuestra Familia",
     "source_url": "https://unitedgangs.com/2019/03/12/gangs-who-defied-the-nuestra-familia/",
@@ -16096,7 +16096,7 @@
   },
   {
     "source": "org:grape-watts-crips",
-    "target": "org:wattsmafiacrip",
+    "target": "org:99-watts-mafia-crips",
     "type": "rivalry",
     "evidence": "Rivals include: PJ Watts Crips, Hacienda Village Bloods, Circle City Piru, Ten Line Gangster Crips, East Coast Crips, Fudge Town Mafia Crips, 99 Watts Mafia Crips. Rollin 60s Neighborhood Crips and Florencia 13.",
     "source_url": "https://unitedgangs.com/grape-street-watts-crips/"
@@ -16222,7 +16222,7 @@
   },
   {
     "source": "org:hacienda-village-bloods",
-    "target": "org:wattsmafiacrip",
+    "target": "org:99-watts-mafia-crips",
     "type": "rivalry",
     "evidence": "Rivals include: Grape Street Watts Crips , Watts Mafia Crips , Bacc Street Watts Crips , Front Street Watts Crips , Fudge Town Mafia Crips , Avalon Gangster Crips , East Coast Crips , and all Compton Crips .",
     "source_url": "https://unitedgangs.com/hacienda-village-bloods/"
@@ -16564,28 +16564,28 @@
     "source_url": "https://unitedgangs.com/2014/07/31/hit-em-up-lil-wayne-gets-banged-on-by-a-los-angeles-crip/"
   },
   {
-    "source": "org:hollyhood-pirus",
+    "source": "org:holly-hood-pirus",
     "target": "org:east-side-pirus-compton",
     "type": "spin_off",
     "evidence": "Holly Hood Piru emerged during the late 1970s and early 1980s as the original East Side Piru neighborhood broke into several smaller sets throughout East Compton.",
     "source_url": "https://unitedgangs.com/holly-hood-piru/"
   },
   {
-    "source": "org:hollyhood-pirus",
+    "source": "org:holly-hood-pirus",
     "target": "org:lime-hood-pirus",
     "type": "alliance",
     "evidence": "During the gang's early years, Holly Hood Piru maintained particularly close ties with the neighboring Lime Hood Piru. The alliance between the two groups became known as 'Holly Lime,' reflecting the close relationship that existed between the sets during the late 1970s and 1980s.",
     "source_url": "https://unitedgangs.com/holly-hood-piru/"
   },
   {
-    "source": "org:hollyhood-pirus",
+    "source": "org:holly-hood-pirus",
     "target": "org:ward-lane-compton-crips",
     "type": "rivalry",
     "evidence": "One of the most significant documented conflicts involving Holly Hood Piru occurred during a violent feud with the Ward Lane Compton Crips in 2006.",
     "source_url": "https://unitedgangs.com/holly-hood-piru/"
   },
   {
-    "source": "org:hollyhood-pirus",
+    "source": "org:holly-hood-pirus",
     "target": "org:rollin-20s-crips",
     "type": "rivalry",
     "evidence": "In a later appellate case involving a 2011 killing in Long Beach, the victim was identified as a Holly Hood Piru member from Compton. According to testimony introduced at trial, the victim was targeted because of his gang affiliation while living in an area claimed by the Rollin' 20s Crips.",
@@ -16615,7 +16615,7 @@
   },
   {
     "source": "org:hoover-criminals",
-    "target": "org:southlos",
+    "target": "org:south-los-13",
     "type": "rivalry",
     "evidence": "The Hoover Criminals have also engaged in a violent feud with South Los 13, a Sureño-aligned gang that later adopted racially motivated ideologies.",
     "source_url": "https://unitedgangs.com/hoover-criminals-gang/"
@@ -16685,7 +16685,7 @@
   },
   {
     "source": "org:inglewood-family-gangster-bloods",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "rivalry",
     "evidence": "Other rivals of the Inglewood Family Gang are the 104 Hard Time Hustler Crips, Imperial Village Crips, and the Tongan Crips Gang.",
     "source_url": "https://unitedgangs.com/iiglewood-family-gang/"
@@ -16814,7 +16814,7 @@
   },
   {
     "source": "org:kelly-park-compton-crips",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "rivalry",
     "evidence": "Rivals include: Holly Hood Piru, Elm Street Piru, Lueders Park Piru, Mob Piru, and all Compton Pirus on the West Side",
     "source_url": "https://unitedgangs.com/kelly-park-compton-crips/"
@@ -16856,7 +16856,7 @@
   },
   {
     "source": "org:kitchen-crips-los-angeles",
-    "target": "org:112bgc",
+    "target": "org:112-broadway-gangster-crips",
     "type": "alliance",
     "evidence": "The 116/95/87 Kitchen Crips get along with most Gangster Crips such as the 116 Avalon Gangster Crips , 52 Broadway Gangster Crips , 112 Broadway Gangster Crips , and the Eight Tray Gangster Crips",
     "source_url": "https://unitedgangs.com/kitchen-crips/"
@@ -16982,7 +16982,7 @@
   },
   {
     "source": "org:denver-lane-bloods",
-    "target": "org:112bgc",
+    "target": "org:112-broadway-gangster-crips",
     "type": "rivalry",
     "evidence": "East of the 110 Freeway, the Denver Lane Bloods also feud with the 112 Broadway Gangster Crips and the 118 East Coast Blocc Crips.",
     "source_url": "https://unitedgangs.com/la-denver-lane-bloods/"
@@ -17045,7 +17045,7 @@
   },
   {
     "source": "org:lantana-blocc-compton-crips",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "alliance",
     "evidence": "The Lantana Blocc Compton Crips are close allies of the Tragniew Park Compton Crips, which dates back as far as the 1980s.",
     "source_url": "https://unitedgangs.com/lantana-blocc-compton-crips/"
@@ -17129,7 +17129,7 @@
   },
   {
     "source": "org:lime-hood-pirus",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "alliance",
     "evidence": "Historically, Lime Hood Piru has maintained close ties to several East Side Piru sets such as Lueders Park Piru , Holly Hood Piru , and Cross Atlantic Piru",
     "source_url": "https://unitedgangs.com/lime-hood-piru/"
@@ -17269,7 +17269,7 @@
   },
   {
     "source": "org:mac-mafia-crips",
-    "target": "org:wattsmafiacrip",
+    "target": "org:99-watts-mafia-crips",
     "type": "alliance",
     "evidence": "The Mac Mafia Crips are allies of all gangs under the Mafia Crips such as the Blvd Crips and the Main Street Mafia Crips as well as the 99 Watts Mafia Crips.",
     "source_url": "https://unitedgangs.com/mac-mafia-crips/"
@@ -17528,7 +17528,7 @@
   },
   {
     "source": "org:main-mafia-crips-msmc-los-angeles",
-    "target": "org:wattsmafiacrip",
+    "target": "org:99-watts-mafia-crips",
     "type": "alliance",
     "evidence": "The Main Street Mafia Crips fall under the Mafia Crips umbrella. Along with the Fudge Town Mafia Crips and the Blue Gate Mafia Crips as well as the 99 Watts Mafia Crips",
     "source_url": "https://unitedgangs.com/main-street-mafia-crips/"
@@ -17549,7 +17549,7 @@
   },
   {
     "source": "org:main-mafia-crips-msmc-los-angeles",
-    "target": "org:112bgc",
+    "target": "org:112-broadway-gangster-crips",
     "type": "rivalry",
     "evidence": "They mainly feud with the Q102 East Coast Crips, 97 Gangster Crips, 112 Broadway Gangster Crips, and the Denver Lane Gangster Bloods.",
     "source_url": "https://unitedgangs.com/main-street-mafia-crips/"
@@ -17654,7 +17654,7 @@
   },
   {
     "source": "org:mansfield-gangster-crips-los-angeles",
-    "target": "org:73hustlercrip",
+    "target": "org:73-hustler-crips",
     "type": "alliance",
     "evidence": "The Mansfield Gangster Crips are allies of the Eight Tray Gangster Crips and the 73 Hustler Crips",
     "source_url": "https://unitedgangs.com/mansfield-gangster-crips/"
@@ -17724,14 +17724,14 @@
   },
   {
     "source": "org:marianna-maravilla-east-los-angeles",
-    "target": "org:azmv",
+    "target": "org:arizona-maravilla",
     "type": "rivalry",
     "evidence": "Despite being a gang under the Maravilla moniker they are known to clash with neighboring street gangs such Arizona Maravilla (AMV)",
     "source_url": "https://unitedgangs.com/marianna-maravilla-east-los-angeles/"
   },
   {
     "source": "org:marianna-maravilla-east-los-angeles",
-    "target": "org:fordmv",
+    "target": "org:ford-maravilla",
     "type": "rivalry",
     "evidence": "Despite being a gang under the Maravilla moniker they are known to clash with neighboring street gangs such Arizona Maravilla (AMV) and Ford Maravilla (FMV)",
     "source_url": "https://unitedgangs.com/marianna-maravilla-east-los-angeles/"
@@ -17808,7 +17808,7 @@
   },
   {
     "source": "org:menace-of-destruction",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "rivalry",
     "evidence": "Their rivals include the Asian Boyz Crips,Vietnamese Boyz, Frenso Bulldogs , Sureños",
     "source_url": "https://unitedgangs.com/menace-of-destruction/"
@@ -17822,7 +17822,7 @@
   },
   {
     "source": "org:65-menlo-crips-in-south-los-angeles-los-angeles",
-    "target": "org:59hoover",
+    "target": "org:59-hoovers",
     "type": "alliance",
     "evidence": "In the late 1970s (around 1978), during this era, they were closely tight with the 52 Hoover Gangster Crips and the 59 Hoovers.",
     "source_url": "https://unitedgangs.com/menlo-crips/"
@@ -18053,7 +18053,7 @@
   },
   {
     "source": "org:ms-13",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "member_of",
     "evidence": "The Surenos, an umbrella group of street gangs with ties to Latin America that includes gangs such as the ultraviolent Mara Salvatrucha, or MS-13",
     "source_url": "https://unitedgangs.com/2014/05/01/ms-13-feds-nab-over-600-gang-suspects/"
@@ -18200,7 +18200,7 @@
   },
   {
     "source": "org:neighborhood-piru-inglewood",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "rivalry",
     "evidence": "Rivals include: Osage Legend Crips, 102 Raymond Avenue Crips, Tongan Crips Gang, and the Rollin 60s Crips.",
     "source_url": "https://unitedgangs.com/neighbor-hood-piru/"
@@ -18270,7 +18270,7 @@
   },
   {
     "source": "org:neighborhood-compton-crips",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "rivalry",
     "evidence": "Rivals include: Atlantic Drive Compton Crips , South Side Compton Crips , Nutty Blocc Compton Crips , Kelly Park Compton Crips , Holly Hood Pirus , Lime Hood Piru , Lueders Park Piru , Mob Piru , Compton Varrio 70 , Compton Varrio Segundo and the Compton Varrio Tiny Gangsters",
     "source_url": "https://unitedgangs.com/neighborhood-compton-crips/"
@@ -18363,7 +18363,7 @@
   },
   {
     "source": "org:hat-watts-crips",
-    "target": "org:wattsmafiacrip",
+    "target": "org:99-watts-mafia-crips",
     "type": "rivalry",
     "evidence": "Watts rap group \"Nordy Ent\" from The Hat Gang Watts Crips \"War Time\" music video Taking shots at their rival gang 99 Watts Mafia Crips",
     "source_url": "https://unitedgangs.com/2016/01/23/nordy-ent-war-time-music-video/"
@@ -18475,7 +18475,7 @@
   },
   {
     "source": "org:nutty-blocc-compton-crips",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "rivalry",
     "evidence": "Rival Crip gangs: Farm Dog Compton Crips , Acacia Blocc Compton Crips , Spook Town Compton Crips , Neighborhood Compton Crips , Latana Blocc Compton Crips , Poccet Hood Compton Crips , Santana Blocc Compton Crips , Kelly Park Compton Crips , Tragniew Park Compton Crips",
     "source_url": "https://unitedgangs.com/nutty-blocc-compton-crips/"
@@ -18559,7 +18559,7 @@
   },
   {
     "source": "org:original-block-pirus-151",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "alliance",
     "evidence": "They also formed an alliance with the Tragniew Park Compton Crips",
     "source_url": "https://unitedgangs.com/original-block-piru-151/"
@@ -18622,7 +18622,7 @@
   },
   {
     "source": "org:original-swamp-compton-crips",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "rivalry",
     "evidence": "Other rivals of the Original Swamp Compton Crips are the 145 Piru (NHP), Tragniew Park Compton Crips",
     "source_url": "https://unitedgangs.com/original-swamps-compton-crips/"
@@ -18671,7 +18671,7 @@
   },
   {
     "source": "org:rollin-20s-outlaw-bloods",
-    "target": "org:eastsidelocos",
+    "target": "org:varrio-east-side-trece",
     "type": "rivalry",
     "evidence": "Rivals include: 43 Gangster Crips, Avalon Gangster Crips, Broadway Gangster Crips, and the East Side Trece.",
     "source_url": "https://unitedgangs.com/outlaw-20s/"
@@ -18783,7 +18783,7 @@
   },
   {
     "source": "org:palmer-blocc-compton-crips",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "alliance",
     "evidence": "Their allies include: Tragniew Park Compton Crips",
     "source_url": "https://unitedgangs.com/palmer-blocc-compton-crips/"
@@ -19093,7 +19093,7 @@
   },
   {
     "source": "org:hustler-crips",
-    "target": "org:73hustlercrip",
+    "target": "org:73-hustler-crips",
     "type": "alliance",
     "evidence": "Other allies include the PlayBoy Style Crips, and the 73 Hustler Crips.",
     "source_url": "https://unitedgangs.com/playboy-hustler-crips/"
@@ -19198,14 +19198,14 @@
   },
   {
     "source": "org:primera-flats-in-boyle-heights-los-angeles-los-angeles",
-    "target": "org:22street",
+    "target": "org:varrio-22nd-street",
     "type": "rivalry",
     "evidence": "The 23rd Street Flats are rivals of the Street Saints , 22nd Street Gang and the Ghetto Boyz Gang.",
     "source_url": "https://unitedgangs.com/primera-flats/"
   },
   {
     "source": "org:primera-flats-in-boyle-heights-los-angeles-los-angeles",
-    "target": "org:38thstreet",
+    "target": "org:varrio-38th-street",
     "type": "rivalry",
     "evidence": "Other rivals include the 38th Street , Varrio Locos Park , and the Harpys Gang.",
     "source_url": "https://unitedgangs.com/primera-flats/"
@@ -19282,7 +19282,7 @@
   },
   {
     "source": "org:queen-street-bloods",
-    "target": "org:tongancrips",
+    "target": "org:tongan-crip-gang",
     "type": "rivalry",
     "evidence": "Their main rivals include: Raymond Avenue Crips, Inglewood Family Gang, Osage Legend Crips, and the Tongan Crips Gang.",
     "source_url": "https://unitedgangs.com/queen-street-bloods/"
@@ -19311,7 +19311,7 @@
   },
   {
     "source": "org:rancho-san-pedro-los-angeles",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "member_of",
     "evidence": "falls under the Sureños 13 (San Pedro 13) umbrella",
     "source_url": "https://unitedgangs.com/rancho-san-pedro-rsp/"
@@ -19374,7 +19374,7 @@
   },
   {
     "source": "org:raymond-street-hustler-compton-crips",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "rivalry",
     "evidence": "Rival crip gangs: Farm Dog Compton Crips, Acacia Block Compton Crips, Spook Town Compton Crips (ATF), and the Tragniew Park Compton Crips.",
     "source_url": "https://unitedgangs.com/raymond-street-hustler-compton-crips/"
@@ -19401,35 +19401,35 @@
     "source_url": "https://unitedgangs.com/rockwood-street-locos/"
   },
   {
-    "source": "org:rollin100s",
+    "source": "org:rollin-100s-crips",
     "target": "org:67-neighborhood-crips",
     "type": "member_of",
     "evidence": "the Rollin 100s function as a network of multiple affiliated sets that operate under the broader Neighborhood Crip (NHC / Deuce / 2x) identity",
     "source_url": "https://unitedgangs.com/rollin-100s/"
   },
   {
-    "source": "org:rollin100s",
+    "source": "org:rollin-100s-crips",
     "target": "org:rollin-90s-neighborhood-crips",
     "type": "alliance",
     "evidence": "The Rollin 100s are closely aligned with other Neighborhood Crip sets, forming part of a larger alliance that includes the Rollin 90s Neighborhood Crips and the Rollin 60s Neighborhood Crips. Geographically, the Rollin 100s serve as the southern extension of the Rollin 90s, forming a continuous corridor of Neighborhood Crip influence across the western portion of South Los Angeles.",
     "source_url": "https://unitedgangs.com/rollin-100s/"
   },
   {
-    "source": "org:rollin100s",
+    "source": "org:rollin-100s-crips",
     "target": "org:rollin-60s-neighborhood-crips",
     "type": "alliance",
     "evidence": "The Rollin 100s are closely aligned with other Neighborhood Crip sets, forming part of a larger alliance that includes the Rollin 90s Neighborhood Crips and the Rollin 60s Neighborhood Crips",
     "source_url": "https://unitedgangs.com/rollin-100s/"
   },
   {
-    "source": "org:rollin100s",
+    "source": "org:rollin-100s-crips",
     "target": "org:hoover-criminals",
     "type": "rivalry",
     "evidence": "The Rollin 100s maintain longstanding rivalries with several groups, most notably the Hoover Criminals, who are widely considered their primary adversary.",
     "source_url": "https://unitedgangs.com/rollin-100s/"
   },
   {
-    "source": "org:rollin100s",
+    "source": "org:rollin-100s-crips",
     "target": "org:gangster-crips",
     "type": "rivalry",
     "evidence": "In addition to the Hoovers, the Rollin 100s have conflicts with various Gangster Crip (3x) sets",
@@ -19492,133 +19492,133 @@
     "source_url": "https://unitedgangs.com/rollin-20s-crip/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:rollin-60s-neighborhood-crips",
     "type": "alliance",
     "evidence": "The Rollin 30s are allies of all Rollin Os (Crips)",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:rollin-40s-crips",
     "type": "rivalry",
     "evidence": "However, they had a short-lived fued with the Rollin 40s Crips.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:grape-watts-crips",
     "type": "alliance",
     "evidence": "Other allies include the Grape Street Crips, 4-Tray Gangster Crips, Bacc Street Crips (Watts), Holmes Street Watts Crips, Paramount Gundry Blocc Crips, East Coast Crips, and the Rollin 100s.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:gangster-crips",
     "type": "alliance",
     "evidence": "Other allies include the Grape Street Crips, 4-Tray Gangster Crips, Bacc Street Crips (Watts), Holmes Street Watts Crips, Paramount Gundry Blocc Crips, East Coast Crips, and the Rollin 100s.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:holmes-crips",
     "type": "alliance",
     "evidence": "Other allies include the Grape Street Crips, 4-Tray Gangster Crips, Bacc Street Crips (Watts), Holmes Street Watts Crips, Paramount Gundry Blocc Crips, East Coast Crips, and the Rollin 100s.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:gundry-blocc-crips",
     "type": "alliance",
     "evidence": "Other allies include the Grape Street Crips, 4-Tray Gangster Crips, Bacc Street Crips (Watts), Holmes Street Watts Crips, Paramount Gundry Blocc Crips, East Coast Crips, and the Rollin 100s.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:east-coast-crips-los-angeles",
     "type": "alliance",
     "evidence": "Other allies include the Grape Street Crips, 4-Tray Gangster Crips, Bacc Street Crips (Watts), Holmes Street Watts Crips, Paramount Gundry Blocc Crips, East Coast Crips, and the Rollin 100s.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
-    "target": "org:rollin100s",
+    "source": "org:rollin-30s-original-harlem-crips",
+    "target": "org:rollin-100s-crips",
     "type": "alliance",
     "evidence": "Other allies include the Grape Street Crips, 4-Tray Gangster Crips, Bacc Street Crips (Watts), Holmes Street Watts Crips, Paramount Gundry Blocc Crips, East Coast Crips, and the Rollin 100s.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:rollin-20s-neighborhood-bloods",
     "type": "rivalry",
     "evidence": "The Rollin 30s Harlem Crips have been feuding with the Rollin 20s Neighborhood Bloods since the 1980s.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:black-p-stones",
     "type": "rivalry",
     "evidence": "The Rollin 30s Harlem Crips second main blood rival are the Black P Stones, who are located on the west side in the Baldwin Village projects known as the Jungles.",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:van-ness-gangsters",
     "type": "rivalry",
     "evidence": "Rivals include: Van Ness Gangster Brims",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:fruit-town-brims",
     "type": "rivalry",
     "evidence": "Rivals include: Fruit Town Brims",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:harvard-park-brims-los-angeles",
     "type": "rivalry",
     "evidence": "Rivals include: Harvard Park Brims",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:hoover-criminals",
     "type": "rivalry",
     "evidence": "Rivals include: Hoover Criminals",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:front-street-watts-crips",
     "type": "rivalry",
     "evidence": "Rivals include: Front Street Watts Crips",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:trouble-gangster-crips",
     "type": "rivalry",
     "evidence": "Rivals include: Trouble Gangster Crips",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:rollin-20s-outlaw-bloods",
     "type": "rivalry",
     "evidence": "Rivals include: Outlaw 20s Bloods",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:school-yard-crips",
     "type": "rivalry",
     "evidence": "Rivals include: School Yard Crips",
     "source_url": "https://unitedgangs.com/rollin-30s-harlem-crips/"
   },
   {
-    "source": "org:r30crips",
+    "source": "org:rollin-30s-original-harlem-crips",
     "target": "org:bounty-hunter-watts-bloods",
     "type": "rivalry",
     "evidence": "Rivals include: Bounty Hunter Bloods",
@@ -20039,7 +20039,7 @@
   },
   {
     "source": "org:santa-monica-13",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "member_of",
     "evidence": "The group's affiliation with both the Mexican Mafia and the Surenos gangs probably pushed its members to take parts in the illegal sale of narcotics.",
     "source_url": "https://unitedgangs.com/santa-monica-13/"
@@ -20153,7 +20153,7 @@
   },
   {
     "source": "org:santana-blocc-compton-crips",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "rivalry",
     "evidence": "Other rivals include: Tree Top Piru, Mob Piru, Duccy Hood Compton Crips, Holly Hood Piru.",
     "source_url": "https://unitedgangs.com/santana-blocc-compton-crips/"
@@ -20363,7 +20363,7 @@
   },
   {
     "source": "org:suicidal-town-long-beach-california",
-    "target": "org:efcc",
+    "target": "org:exotic-family-city-crip",
     "type": "alliance",
     "evidence": "Suicidal Town is a street gang located in Long Beach,Ca that have a close alliance with the Exotic Family City Crips",
     "source_url": "https://unitedgangs.com/2014/10/18/sneezy-tweet-gangsta-music-music-video/"
@@ -20425,35 +20425,35 @@
     "source_url": "https://unitedgangs.com/sotel-13/"
   },
   {
-    "source": "org:southlos",
+    "source": "org:south-los-13",
     "target": "org:mexican-mafia",
     "type": "member_of",
     "evidence": "This gang falls under the Sureños \"card\" and are loyal to the Mexican Mafia, as indicated with the number \"13\" in their name.",
     "source_url": "https://unitedgangs.com/south-los-13/"
   },
   {
-    "source": "org:southlos",
+    "source": "org:south-los-13",
     "target": "org:18th-street-gang",
     "type": "rivalry",
     "evidence": "Despite their affiliation with the Mexican Mafia, outside of prison, the South Los 13 have engaged in rivalries with a large number of other Sureño gangs such as the 18th Street Gang",
     "source_url": "https://unitedgangs.com/south-los-13/"
   },
   {
-    "source": "org:southlos",
+    "source": "org:south-los-13",
     "target": "org:florencia-13",
     "type": "rivalry",
     "evidence": "Despite their affiliation with the Mexican Mafia, outside of prison, the South Los 13 have engaged in rivalries with a large number of other Sureño gangs such as the 18th Street Gang, Florencia 13",
     "source_url": "https://unitedgangs.com/south-los-13/"
   },
   {
-    "source": "org:southlos",
+    "source": "org:south-los-13",
     "target": "org:east-coast-crips-los-angeles",
     "type": "rivalry",
     "evidence": "Despite their affiliation with the Mexican Mafia, outside of prison, the South Los 13 have engaged in rivalries with a large number of other Sureño gangs such as the 18th Street Gang, Florencia 13, Junior Mafia 13, Barrio 13, Capones 13, Gardena 13, all Compton Varrios, all East Coast Crips",
     "source_url": "https://unitedgangs.com/south-los-13/"
   },
   {
-    "source": "org:southlos",
+    "source": "org:south-los-13",
     "target": "org:hoover-criminals",
     "type": "rivalry",
     "evidence": "Despite their affiliation with the Mexican Mafia, outside of prison, the South Los 13 have engaged in rivalries with a large number of other Sureño gangs such as the 18th Street Gang, Florencia 13, Junior Mafia 13, Barrio 13, Capones 13, Gardena 13, all Compton Varrios, all East Coast Crips and all Hoover Criminals",
@@ -20587,7 +20587,7 @@
   },
   {
     "source": "org:spook-town-compton-crips",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "rivalry",
     "evidence": "Rivals include: Mob Piru, 151Original Block Piru, Holly Hood Piru",
     "source_url": "https://unitedgangs.com/spook-town-compton-crips/"
@@ -20664,7 +20664,7 @@
   },
   {
     "source": "org:mexican-mafia",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "member_of",
     "evidence": "Sureños (Spanish for \"Southerners\"), or Sureñas for females, are groups of loosely affiliated gangs that pay tribute to the Mexican Mafia while in US Federal and State correctional facilities.",
     "source_url": "https://unitedgangs.com/surenos/"
@@ -20796,42 +20796,42 @@
     "source_url": "https://unitedgangs.com/tiny-rascals-gang/"
   },
   {
-    "source": "org:tpcc",
+    "source": "org:tragniew-park-compton-crips",
     "target": "org:lantana-blocc-compton-crips",
     "type": "alliance",
     "evidence": "Allies include: Lantana Blocc Compton Crips",
     "source_url": "https://unitedgangs.com/tragniew-park-compton-crips/"
   },
   {
-    "source": "org:tpcc",
+    "source": "org:tragniew-park-compton-crips",
     "target": "org:palmer-blocc-compton-crips",
     "type": "alliance",
     "evidence": "Allies include: Lantana Blocc Compton Crips , Palmer Blocc Compton Crips",
     "source_url": "https://unitedgangs.com/tragniew-park-compton-crips/"
   },
   {
-    "source": "org:tpcc",
+    "source": "org:tragniew-park-compton-crips",
     "target": "org:west-side-pirus-compton",
     "type": "rivalry",
     "evidence": "Rivals include: West Side Piru",
     "source_url": "https://unitedgangs.com/tragniew-park-compton-crips/"
   },
   {
-    "source": "org:tpcc",
+    "source": "org:tragniew-park-compton-crips",
     "target": "org:mona-park-compton-crips",
     "type": "rivalry",
     "evidence": "Rivals include: Mona Park Compton Crips",
     "source_url": "https://unitedgangs.com/tragniew-park-compton-crips/"
   },
   {
-    "source": "org:tpcc",
+    "source": "org:tragniew-park-compton-crips",
     "target": "org:nutty-blocc-compton-crips",
     "type": "rivalry",
     "evidence": "Rivals include: Nutty Blocc Compton Crips",
     "source_url": "https://unitedgangs.com/tragniew-park-compton-crips/"
   },
   {
-    "source": "org:tpcc",
+    "source": "org:tragniew-park-compton-crips",
     "target": "org:kelly-park-compton-crips",
     "type": "rivalry",
     "evidence": "Rivals include: Kelly Park Compton Crips",
@@ -20867,7 +20867,7 @@
   },
   {
     "source": "org:trinitarios",
-    "target": "org:suren-os-united-states",
+    "target": "org:surenos",
     "type": "rivalry",
     "evidence": "Rivals: Bloods, Crips, Sureños, 60th Street Boys, Dominicans Don't Play",
     "source_url": "https://unitedgangs.com/trinitarios/"
@@ -20909,7 +20909,7 @@
   },
   {
     "source": "org:trouble-gangster-crips",
-    "target": "org:68ecc",
+    "target": "org:68-east-coast-crips",
     "type": "rivalry",
     "evidence": "The Trouble Gang are rivals of all East Coast Crips; 59 East Coast Crips, 66 East Coast Crips, 67 East Coast Crips, 68 East Coast Crips",
     "source_url": "https://unitedgangs.com/trouble-gangster-crips/"
@@ -21098,7 +21098,7 @@
     "source_url": "https://unitedgangs.com/varrio-lennox/"
   },
   {
-    "source": "org:mesa",
+    "source": "org:varrio-mesa-locos",
     "target": "org:mexican-mafia",
     "type": "alliance",
     "evidence": "The Mesa Locos are allies of The Mexican-Mafia",
@@ -21316,7 +21316,7 @@
   },
   {
     "source": "org:ward-lane-compton-crips",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "rivalry",
     "evidence": "Rivals include: All Compton Pirus (P-Funk Ridas) such as Holly Hood Pirus, Lueders Park Piru, Mob Piru, Elm Street Piru, Lime Hood Piru, and Cross Atlantic Piru.",
     "source_url": "https://unitedgangs.com/ward-lane-compton-crips/"
@@ -21435,7 +21435,7 @@
   },
   {
     "source": "org:watts-franklin-square-crips",
-    "target": "org:southlos",
+    "target": "org:south-los-13",
     "type": "rivalry",
     "evidence": "Rivals include: South Los 13",
     "source_url": "https://unitedgangs.com/watts-franklin-square-crips/"
@@ -21568,7 +21568,7 @@
   },
   {
     "source": "org:west-side-pirus-compton",
-    "target": "org:hollyhood-pirus",
+    "target": "org:holly-hood-pirus",
     "type": "alliance",
     "evidence": "The West Side Pirus are allied with mostly all Compton Pirus \"P-Funk Ridas\" such as: Holly Hood Piru",
     "source_url": "https://unitedgangs.com/west-side-piru/"
@@ -21582,7 +21582,7 @@
   },
   {
     "source": "org:west-side-pirus-compton",
-    "target": "org:tpcc",
+    "target": "org:tragniew-park-compton-crips",
     "type": "rivalry",
     "evidence": "The main rivals of the West Side Pirus are the Compton Crips, in particular the Tragniew Park Compton Crips",
     "source_url": "https://unitedgangs.com/west-side-piru/"
