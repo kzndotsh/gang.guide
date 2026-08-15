@@ -18,35 +18,35 @@ def clean_html(raw: str) -> str:
     text = raw
 
     # Remove script/style blocks
-    text = re.sub(r'<script[^>]*>.*?</script>', '', text, flags=re.DOTALL | re.IGNORECASE)
-    text = re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<script[^>]*>.*?</script>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r"<style[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
 
     # Remove HTML comments
-    text = re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL)
+    text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
 
     # Convert common block elements to newlines
-    text = re.sub(r'<(?:br|hr|/p|/div|/tr|/li|/h[1-6])[^>]*>', '\n', text, flags=re.IGNORECASE)
+    text = re.sub(r"<(?:br|hr|/p|/div|/tr|/li|/h[1-6])[^>]*>", "\n", text, flags=re.IGNORECASE)
 
     # Remove all remaining HTML tags
-    text = re.sub(r'<[^>]+>', ' ', text)
+    text = re.sub(r"<[^>]+>", " ", text)
 
     # Decode HTML entities
     text = html_lib.unescape(text)
 
     # Remove citation markers [1] [2] [citation needed]
-    text = re.sub(r'\[\d+\]', '', text)
-    text = re.sub(r'\[citation needed\]', '', text, flags=re.IGNORECASE)
-    text = re.sub(r'\[edit\]', '', text, flags=re.IGNORECASE)
+    text = re.sub(r"\[\d+\]", "", text)
+    text = re.sub(r"\[citation needed\]", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\[edit\]", "", text, flags=re.IGNORECASE)
 
     # Fix mojibake patterns
-    text = text.replace('Ã©', 'é').replace('Ã±', 'ñ').replace('Ã³', 'ó')
-    text = text.replace('â€™', "'").replace('â€"', '—').replace('â€œ', '"').replace('â€\x9d', '"')
+    text = text.replace("Ã©", "é").replace("Ã±", "ñ").replace("Ã³", "ó")
+    text = text.replace("â€™", "'").replace('â€"', "—").replace("â€œ", '"').replace("â€\x9d", '"')
 
     # Collapse whitespace
-    text = re.sub(r'[ \t]+', ' ', text)
-    text = re.sub(r'\n{3,}', '\n\n', text)
-    text = re.sub(r' +\n', '\n', text)
-    text = '\n'.join(line.strip() for line in text.split('\n'))
+    text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    text = re.sub(r" +\n", "\n", text)
+    text = "\n".join(line.strip() for line in text.split("\n"))
 
     return text.strip()
 
@@ -54,7 +54,7 @@ def clean_html(raw: str) -> str:
 def quality_score(text: str) -> dict:
     """Compute quality metrics for cleaned text."""
     words = text.split()
-    lines = [l for l in text.split('\n') if l.strip()]
+    lines = [l for l in text.split("\n") if l.strip()]
     prose_lines = [l for l in lines if len(l.split()) > 5]
     return {
         "word_count": len(words),

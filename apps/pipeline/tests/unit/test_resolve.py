@@ -5,14 +5,17 @@ from apps.pipeline.lib.resolve import normalize, resolve
 
 
 class TestNormalize:
-    @pytest.mark.parametrize("input,expected", [
-        ("Latin Kings", "latin kings"),
-        ("MS-13", "ms13"),
-        ("  hello   world  ", "hello world"),
-        ("Almighty Vice Lord Nation", "almighty vice lord nation"),
-        ("18th Street Gang!", "18th street gang"),
-        ("", ""),
-    ])
+    @pytest.mark.parametrize(
+        "input,expected",
+        [
+            ("Latin Kings", "latin kings"),
+            ("MS-13", "ms13"),
+            ("  hello   world  ", "hello world"),
+            ("Almighty Vice Lord Nation", "almighty vice lord nation"),
+            ("18th Street Gang!", "18th street gang"),
+            ("", ""),
+        ],
+    )
     def test_normalize(self, input, expected):
         assert normalize(input) == expected
 
@@ -39,13 +42,16 @@ class TestResolve:
     def test_no_false_containment(self, org_index):
         assert resolve("King", org_index) is None
 
-    @pytest.mark.parametrize("name,expected_id", [
-        ("Folk Nation", "org:folk-nation"),
-        ("folk nation", "org:folk-nation"),
-        ("Bloods", "org:bloods"),
-        ("Almighty Ambrose", "org:ambrose"),
-        ("Vice Lords", "org:almighty-vice-lord-nation"),
-    ])
+    @pytest.mark.parametrize(
+        "name,expected_id",
+        [
+            ("Folk Nation", "org:folk-nation"),
+            ("folk nation", "org:folk-nation"),
+            ("Bloods", "org:bloods"),
+            ("Almighty Ambrose", "org:ambrose"),
+            ("Vice Lords", "org:almighty-vice-lord-nation"),
+        ],
+    )
     def test_known_resolutions(self, org_index, name, expected_id):
         assert resolve(name, org_index) == expected_id
 

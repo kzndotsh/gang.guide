@@ -59,7 +59,7 @@ def merge_runs(runs: list[dict]) -> dict:
     edge_key_counts: Counter = Counter()
     edge_best: dict = {}
     for r in runs:
-        for e in (r.get("edges") or []):
+        for e in r.get("edges") or []:
             key = (e.get("target", "").lower(), e.get("type", ""))
             edge_key_counts[key] += 1
             # Keep the one with longest evidence quote

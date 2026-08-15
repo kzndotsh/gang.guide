@@ -35,9 +35,9 @@ def ts():
 
 
 def section(title):
-    print(f"\n{'='*80}")
+    print(f"\n{'=' * 80}")
     print(f"  {title}")
-    print(f"{'='*80}")
+    print(f"{'=' * 80}")
 
 
 def main():
@@ -67,7 +67,9 @@ def main():
     text = clean_html(raw)
     score = quality_score(text)
     print(f"  [{ts()}] Raw: {len(raw):,} chars → Clean: {len(text):,} chars")
-    print(f"  [{ts()}] Quality: {score['word_count']} words, {score['prose_ratio']:.0%} prose, low_quality={score['is_low_quality']}")
+    print(
+        f"  [{ts()}] Quality: {score['word_count']} words, {score['prose_ratio']:.0%} prose, low_quality={score['is_low_quality']}"
+    )
 
     if score["is_low_quality"]:
         print("  ❌ Page is low quality, would be skipped in production")
@@ -102,12 +104,15 @@ def main():
 
             # Merge chunks
             from apps.pipeline.extract import merge_chunks
+
             merged = merge_chunks(run_results)
             runs.append(merged)
 
             elapsed = time.time() - run_start
             edges = len(merged.get("edges", []))
-            print(f"  [{ts()}] Run {run_idx} (temp={temp}): {edges} edges, {len(run_results)}/{len(chunks)} chunks OK ({elapsed:.1f}s)")
+            print(
+                f"  [{ts()}] Run {run_idx} (temp={temp}): {edges} edges, {len(run_results)}/{len(chunks)} chunks OK ({elapsed:.1f}s)"
+            )
 
             # Save
             (out_dir / f"run_{run_idx}.json").write_text(json.dumps(merged, indent=2, ensure_ascii=False) + "\n")
@@ -119,10 +124,18 @@ def main():
     # Print run comparison
     print("\n  Run comparison:")
     print(f"  {'':20} {'Run 0':>8} {'Run 1':>8} {'Run 2':>8}")
-    print(f"  {'Edges':20} {len(runs[0].get('edges',[])):>8} {len(runs[1].get('edges',[])):>8} {len(runs[2].get('edges',[])) if len(runs)>2 else '-':>8}")
-    print(f"  {'Colors':20} {len(runs[0].get('colors',[])):>8} {len(runs[1].get('colors',[])):>8} {len(runs[2].get('colors',[])) if len(runs)>2 else '-':>8}")
-    print(f"  {'Orgs mentioned':20} {len(runs[0].get('orgs_mentioned',[])):>8} {len(runs[1].get('orgs_mentioned',[])):>8} {len(runs[2].get('orgs_mentioned',[])) if len(runs)>2 else '-':>8}")
-    print(f"  {'Year':20} {runs[0].get('founded_year','?'):>8} {runs[1].get('founded_year','?'):>8} {runs[2].get('founded_year','?') if len(runs)>2 else '-':>8}")
+    print(
+        f"  {'Edges':20} {len(runs[0].get('edges', [])):>8} {len(runs[1].get('edges', [])):>8} {len(runs[2].get('edges', [])) if len(runs) > 2 else '-':>8}"
+    )
+    print(
+        f"  {'Colors':20} {len(runs[0].get('colors', [])):>8} {len(runs[1].get('colors', [])):>8} {len(runs[2].get('colors', [])) if len(runs) > 2 else '-':>8}"
+    )
+    print(
+        f"  {'Orgs mentioned':20} {len(runs[0].get('orgs_mentioned', [])):>8} {len(runs[1].get('orgs_mentioned', [])):>8} {len(runs[2].get('orgs_mentioned', [])) if len(runs) > 2 else '-':>8}"
+    )
+    print(
+        f"  {'Year':20} {runs[0].get('founded_year', '?'):>8} {runs[1].get('founded_year', '?'):>8} {runs[2].get('founded_year', '?') if len(runs) > 2 else '-':>8}"
+    )
 
     # === STAGE 3: ADJUDICATE ===
     section("STAGE 3: ADJUDICATE (opus 4.6)")
@@ -189,7 +202,7 @@ def main():
             confidence = e.get("confidence", "")
             print(f"    {status} {e.get('type'):12} → {e.get('target'):30} [{confidence}]")
             if e.get("evidence"):
-                print(f"      evidence: \"{e['evidence'][:80]}...\"")
+                print(f'      evidence: "{e["evidence"][:80]}..."')
         if len(consensus.get("edges", [])) > 10:
             print(f"    ... and {len(consensus['edges']) - 10} more")
 
@@ -197,11 +210,13 @@ def main():
     total_elapsed = time.time() - start_time
     section("SUMMARY")
     print(f"  Page: {page}")
-    print(f"  Total time: {total_elapsed:.0f}s ({total_elapsed/60:.1f}m)")
+    print(f"  Total time: {total_elapsed:.0f}s ({total_elapsed / 60:.1f}m)")
     print(f"  Chunks: {len(chunks)}")
-    print(f"  Edges extracted: {'/'.join(str(len(r.get('edges',[]))) for r in runs)}")
+    print(f"  Edges extracted: {'/'.join(str(len(r.get('edges', []))) for r in runs)}")
     print(f"  Edges after consensus: {len(consensus.get('edges', []))}")
-    print(f"  Resolvable edges: {sum(1 for e in consensus.get('edges',[]) if resolve(e.get('target',''), org_index))}/{len(consensus.get('edges', []))}")
+    print(
+        f"  Resolvable edges: {sum(1 for e in consensus.get('edges', []) if resolve(e.get('target', ''), org_index))}/{len(consensus.get('edges', []))}"
+    )
     print(f"  Org resolved: {org_id or 'FAILED'}")
     print()
 

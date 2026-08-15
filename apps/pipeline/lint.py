@@ -235,6 +235,7 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         for sym in org.get("symbols") or []:
             if sym.isupper() and len(sym) <= 6:
                 continue  # pure abbreviations like PIRU, DAMU, IV
+
             # Normalize: title-case but preserve ALL-CAPS words (acronyms like NGC, OVG)
             # and don't mangle apostrophe words (str.title() turns "A's" → "A'S")
             def _title_word(w: str) -> str:

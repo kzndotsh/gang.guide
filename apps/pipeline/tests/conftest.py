@@ -11,6 +11,7 @@ def pytest_configure(config):
     """Configure test environment."""
     # Ensure we're not accidentally hitting the network in unit tests
     import os
+
     os.environ.setdefault("KIRO_GATEWAY_URL", "http://localhost:99999")
     os.environ.setdefault("KIRO_GATEWAY_API_KEY", "test-key-not-real")
 
@@ -46,10 +47,30 @@ def sample_extraction():
         "membership_estimate": None,
         "description": "Ambrose is a Latino street gang founded in 1958 on Chicago's Near West Side.",
         "edges": [
-            {"target": "Folk Nation", "type": "member_of", "evidence": "Joined Folk Nation circa 1979", "period": "1979-2000"},
-            {"target": "Rampants", "type": "alliance", "evidence": "Ambrose had no war with Rampants and were close allies", "period": None},
-            {"target": "Latin Counts", "type": "rivalry", "evidence": "Reno of the Latin Counts was shot by Ambrose", "period": None},
-            {"target": "Satan Disciples", "type": "rivalry", "evidence": "In 1986 Ambrose was at war with Satan Disciples", "period": "1986-present"},
+            {
+                "target": "Folk Nation",
+                "type": "member_of",
+                "evidence": "Joined Folk Nation circa 1979",
+                "period": "1979-2000",
+            },
+            {
+                "target": "Rampants",
+                "type": "alliance",
+                "evidence": "Ambrose had no war with Rampants and were close allies",
+                "period": None,
+            },
+            {
+                "target": "Latin Counts",
+                "type": "rivalry",
+                "evidence": "Reno of the Latin Counts was shot by Ambrose",
+                "period": None,
+            },
+            {
+                "target": "Satan Disciples",
+                "type": "rivalry",
+                "evidence": "In 1986 Ambrose was at war with Satan Disciples",
+                "period": "1986-present",
+            },
         ],
         "orgs_mentioned": ["Folk Nation", "Rampants", "Latin Counts", "Satan Disciples", "Taylor Street Dukes"],
     }
@@ -62,8 +83,14 @@ def sample_runs(sample_extraction):
     run1 = {
         **sample_extraction,
         "colors": ["black", "blue"],
-        "edges": sample_extraction["edges"] + [
-            {"target": "Gangster Disciples", "type": "alliance", "evidence": "Connected through Folk Nation", "period": None},
+        "edges": sample_extraction["edges"]
+        + [
+            {
+                "target": "Gangster Disciples",
+                "type": "alliance",
+                "evidence": "Connected through Folk Nation",
+                "period": None,
+            },
         ],
     }
     run2 = {

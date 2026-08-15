@@ -16,23 +16,23 @@ DATA_RAW = Path(__file__).resolve().parent.parent.parent.parent / "data" / "raw"
 
 def extract_field(html: str, field: str) -> str:
     """Extract a field value from CGH HTML table."""
-    pattern = rf'{field}\s*</t[hd]>\s*<td[^>]*>(.*?)</td>'
+    pattern = rf"{field}\s*</t[hd]>\s*<td[^>]*>(.*?)</td>"
     m = re.search(pattern, html, re.DOTALL | re.IGNORECASE)
     if m:
-        val = re.sub(r'<[^>]+>', ' ', m.group(1))
-        return re.sub(r'\s+', ' ', val).strip()
-    return ''
+        val = re.sub(r"<[^>]+>", " ", m.group(1))
+        return re.sub(r"\s+", " ", val).strip()
+    return ""
 
 
 def extract_year(founded_str: str) -> int | None:
-    m = re.search(r'(\d{4})', founded_str)
+    m = re.search(r"(\d{4})", founded_str)
     return int(m.group(1)) if m else None
 
 
 def extract_precision(founded_str: str) -> str:
-    if 'c.' in founded_str or 'circa' in founded_str.lower():
-        return 'circa'
-    return 'exact'
+    if "c." in founded_str or "circa" in founded_str.lower():
+        return "circa"
+    return "exact"
 
 
 def parse_page(slug: str) -> dict | None:
@@ -49,11 +49,11 @@ def parse_page(slug: str) -> dict | None:
     else:
         return None
 
-    founded = extract_field(html, 'Founded')
-    colors = extract_field(html, 'Colors') or extract_field(html, 'Color usage')
-    affiliations = extract_field(html, 'Affiliations')
-    ethnicity = extract_field(html, 'Primary ethnicities')
-    status = extract_field(html, 'Status')
+    founded = extract_field(html, "Founded")
+    colors = extract_field(html, "Colors") or extract_field(html, "Color usage")
+    affiliations = extract_field(html, "Affiliations")
+    ethnicity = extract_field(html, "Primary ethnicities")
+    status = extract_field(html, "Status")
 
     return {
         "slug": slug,

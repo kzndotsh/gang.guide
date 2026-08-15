@@ -111,14 +111,22 @@ class TestConflictingEdges:
     def test_same_target_different_type_both_kept(self):
         """If same target has alliance AND rivalry in 2+ runs, both survive."""
         runs = [
-            {"subject_org": "X", "edges": [
-                {"target": "Y", "type": "alliance", "evidence": "allied 1977"},
-                {"target": "Y", "type": "rivalry", "evidence": "war 1986"},
-            ], "colors": []},
-            {"subject_org": "X", "edges": [
-                {"target": "Y", "type": "alliance", "evidence": "friends"},
-                {"target": "Y", "type": "rivalry", "evidence": "enemies"},
-            ], "colors": []},
+            {
+                "subject_org": "X",
+                "edges": [
+                    {"target": "Y", "type": "alliance", "evidence": "allied 1977"},
+                    {"target": "Y", "type": "rivalry", "evidence": "war 1986"},
+                ],
+                "colors": [],
+            },
+            {
+                "subject_org": "X",
+                "edges": [
+                    {"target": "Y", "type": "alliance", "evidence": "friends"},
+                    {"target": "Y", "type": "rivalry", "evidence": "enemies"},
+                ],
+                "colors": [],
+            },
         ]
         result = merge_runs(runs)
         types = [e["type"] for e in result["edges"] if e["target"] == "Y"]
@@ -128,15 +136,21 @@ class TestConflictingEdges:
     def test_high_variance_runs(self):
         """Runs with very different edge counts — consensus is conservative."""
         runs = [
-            {"subject_org": "X", "edges": [
-                {"target": f"Org{i}", "type": "alliance", "evidence": f"e{i}"} for i in range(20)
-            ], "colors": []},
-            {"subject_org": "X", "edges": [
-                {"target": f"Org{i}", "type": "alliance", "evidence": f"e{i}"} for i in range(5)
-            ], "colors": []},
-            {"subject_org": "X", "edges": [
-                {"target": f"Org{i}", "type": "alliance", "evidence": f"e{i}"} for i in range(3, 10)
-            ], "colors": []},
+            {
+                "subject_org": "X",
+                "edges": [{"target": f"Org{i}", "type": "alliance", "evidence": f"e{i}"} for i in range(20)],
+                "colors": [],
+            },
+            {
+                "subject_org": "X",
+                "edges": [{"target": f"Org{i}", "type": "alliance", "evidence": f"e{i}"} for i in range(5)],
+                "colors": [],
+            },
+            {
+                "subject_org": "X",
+                "edges": [{"target": f"Org{i}", "type": "alliance", "evidence": f"e{i}"} for i in range(3, 10)],
+                "colors": [],
+            },
         ]
         result = merge_runs(runs)
         # Only edges in 2+ runs survive: Org3, Org4 (in all 3); Org0-2 (in runs 0+1); Org5-9 (in runs 0+2)

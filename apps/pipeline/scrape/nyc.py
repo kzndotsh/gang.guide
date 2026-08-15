@@ -27,7 +27,7 @@ def discover_pages(client) -> list[str]:
         resp = fetch_with_retry(client, start_url)
         if not resp:
             continue
-        urls = re.findall(r'https://newyorkcitygangs\.com/\?page_id=(\d+)', resp.text)
+        urls = re.findall(r"https://newyorkcitygangs\.com/\?page_id=(\d+)", resp.text)
         for pid in urls:
             if pid not in seen:
                 seen.add(pid)
@@ -37,7 +37,7 @@ def discover_pages(client) -> list[str]:
 
 
 def slug_from_url(url: str) -> str:
-    m = re.search(r'page_id=(\d+)', url)
+    m = re.search(r"page_id=(\d+)", url)
     return f"page-{m.group(1)}" if m else url.split("/")[-1]
 
 

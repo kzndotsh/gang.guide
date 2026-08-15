@@ -32,8 +32,16 @@ class TestNeedsAdjudication:
 
     def test_many_uncertain_edges(self):
         runs = [
-            {"founded_year": 1958, "colors": [], "edges": [{"target": "A", "type": "r"}, {"target": "B", "type": "r"}, {"target": "C", "type": "r"}]},
-            {"founded_year": 1958, "colors": [], "edges": [{"target": "D", "type": "r"}, {"target": "E", "type": "r"}, {"target": "F", "type": "r"}]},
+            {
+                "founded_year": 1958,
+                "colors": [],
+                "edges": [{"target": "A", "type": "r"}, {"target": "B", "type": "r"}, {"target": "C", "type": "r"}],
+            },
+            {
+                "founded_year": 1958,
+                "colors": [],
+                "edges": [{"target": "D", "type": "r"}, {"target": "E", "type": "r"}, {"target": "F", "type": "r"}],
+            },
             {"founded_year": 1958, "colors": [], "edges": []},
         ]
         assert needs_adjudication(runs) is True
@@ -53,18 +61,36 @@ class TestNeedsAdjudicationEdgeCases:
     def test_few_uncertain_edges_no_trigger(self):
         """Less than 3 uncertain edges should not trigger adjudication."""
         runs = [
-            {"founded_year": 1958, "colors": [], "edges": [
-                {"target": "A", "type": "r"}, {"target": "B", "type": "r"},
-                {"target": "C", "type": "r"}, {"target": "D", "type": "r"},
-            ]},
-            {"founded_year": 1958, "colors": [], "edges": [
-                {"target": "A", "type": "r"}, {"target": "B", "type": "r"},
-                {"target": "C", "type": "r"}, {"target": "E", "type": "r"},
-            ]},
-            {"founded_year": 1958, "colors": [], "edges": [
-                {"target": "A", "type": "r"}, {"target": "B", "type": "r"},
-                {"target": "C", "type": "r"}, {"target": "F", "type": "r"},
-            ]},
+            {
+                "founded_year": 1958,
+                "colors": [],
+                "edges": [
+                    {"target": "A", "type": "r"},
+                    {"target": "B", "type": "r"},
+                    {"target": "C", "type": "r"},
+                    {"target": "D", "type": "r"},
+                ],
+            },
+            {
+                "founded_year": 1958,
+                "colors": [],
+                "edges": [
+                    {"target": "A", "type": "r"},
+                    {"target": "B", "type": "r"},
+                    {"target": "C", "type": "r"},
+                    {"target": "E", "type": "r"},
+                ],
+            },
+            {
+                "founded_year": 1958,
+                "colors": [],
+                "edges": [
+                    {"target": "A", "type": "r"},
+                    {"target": "B", "type": "r"},
+                    {"target": "C", "type": "r"},
+                    {"target": "F", "type": "r"},
+                ],
+            },
         ]
         # D, E, F each in 1 run = 3 uncertain out of 12 total = 25% < 30%
         assert needs_adjudication(runs) is False

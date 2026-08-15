@@ -115,7 +115,9 @@ def scrape(force: bool = False, all_profiles: bool = False) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Scrape InSight Crime org profiles")
     parser.add_argument("--force", action="store_true", help="Re-scrape already-saved pages")
-    parser.add_argument("--all", action="store_true", dest="all_profiles", help="Scrape all profiles, not just US-relevant")
+    parser.add_argument(
+        "--all", action="store_true", dest="all_profiles", help="Scrape all profiles, not just US-relevant"
+    )
     args = parser.parse_args()
     scrape(force=args.force, all_profiles=args.all_profiles)
 

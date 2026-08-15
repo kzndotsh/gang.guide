@@ -19,12 +19,29 @@ class TestChunkText:
 
 class TestMergeChunks:
     def test_single_chunk(self):
-        chunk = {"subject_org": "X", "founded_year": 1990, "edges": [{"target": "Y", "type": "rivalry"}], "colors": ["blue"]}
+        chunk = {
+            "subject_org": "X",
+            "founded_year": 1990,
+            "edges": [{"target": "Y", "type": "rivalry"}],
+            "colors": ["blue"],
+        }
         assert merge_chunks([chunk]) == chunk
 
     def test_merges_edges_from_chunks(self):
-        c1 = {"subject_org": "X", "edges": [{"target": "A", "type": "alliance"}], "colors": [], "symbols": [], "orgs_mentioned": []}
-        c2 = {"subject_org": "X", "edges": [{"target": "B", "type": "rivalry"}], "colors": [], "symbols": [], "orgs_mentioned": []}
+        c1 = {
+            "subject_org": "X",
+            "edges": [{"target": "A", "type": "alliance"}],
+            "colors": [],
+            "symbols": [],
+            "orgs_mentioned": [],
+        }
+        c2 = {
+            "subject_org": "X",
+            "edges": [{"target": "B", "type": "rivalry"}],
+            "colors": [],
+            "symbols": [],
+            "orgs_mentioned": [],
+        }
         result = merge_chunks([c1, c2])
         assert len(result["edges"]) == 2
 
@@ -79,14 +96,42 @@ class TestMergeChunksEdgeCases:
         assert result["colors"].count("blue") == 1
 
     def test_picks_longest_description(self):
-        c1 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "description": "Short."}
-        c2 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "description": "A much longer and more detailed description."}
+        c1 = {
+            "subject_org": "X",
+            "edges": [],
+            "colors": [],
+            "symbols": [],
+            "orgs_mentioned": [],
+            "description": "Short.",
+        }
+        c2 = {
+            "subject_org": "X",
+            "edges": [],
+            "colors": [],
+            "symbols": [],
+            "orgs_mentioned": [],
+            "description": "A much longer and more detailed description.",
+        }
         result = merge_chunks([c1, c2])
         assert "longer" in result["description"]
 
     def test_membership_takes_last(self):
-        c1 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "membership_estimate": 5000}
-        c2 = {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "membership_estimate": 8000}
+        c1 = {
+            "subject_org": "X",
+            "edges": [],
+            "colors": [],
+            "symbols": [],
+            "orgs_mentioned": [],
+            "membership_estimate": 5000,
+        }
+        c2 = {
+            "subject_org": "X",
+            "edges": [],
+            "colors": [],
+            "symbols": [],
+            "orgs_mentioned": [],
+            "membership_estimate": 8000,
+        }
         result = merge_chunks([c1, c2])
         assert result["membership_estimate"] == 8000
 
@@ -112,14 +157,30 @@ class TestChunkTextAdversarial:
 class TestMergeChunksAdversarial:
     def test_chunks_with_none_fields(self):
         chunks = [
-            {"subject_org": None, "founded_year": None, "edges": None, "colors": None, "symbols": None, "orgs_mentioned": None, "description": None, "membership_estimate": None},
+            {
+                "subject_org": None,
+                "founded_year": None,
+                "edges": None,
+                "colors": None,
+                "symbols": None,
+                "orgs_mentioned": None,
+                "description": None,
+                "membership_estimate": None,
+            },
         ]
         result = merge_chunks(chunks)
         assert result["subject_org"] is None
 
     def test_very_long_description(self):
         chunks = [
-            {"subject_org": "X", "edges": [], "colors": [], "symbols": [], "orgs_mentioned": [], "description": "x" * 100000},
+            {
+                "subject_org": "X",
+                "edges": [],
+                "colors": [],
+                "symbols": [],
+                "orgs_mentioned": [],
+                "description": "x" * 100000,
+            },
         ]
         result = merge_chunks(chunks)
         assert len(result["description"]) == 100000

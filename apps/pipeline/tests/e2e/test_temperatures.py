@@ -31,12 +31,19 @@ def ts():
 
 def call(text: str, temperature: float) -> tuple[dict | None, float]:
     from apps.pipeline.extract import SYSTEM_PROMPT as SYS
+
     payload = {
         "model": MODEL,
         "max_tokens": 4096,
         "temperature": temperature,
-        "messages": [{"role": "user", "content": f"Extract gang data from this text. Respond with ONLY a JSON object, no markdown fences, no explanation:\n\n{text}"}],
-        "system": SYS + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
+        "messages": [
+            {
+                "role": "user",
+                "content": f"Extract gang data from this text. Respond with ONLY a JSON object, no markdown fences, no explanation:\n\n{text}",
+            }
+        ],
+        "system": SYS
+        + "\n\nIMPORTANT: Output ONLY the JSON object. No markdown code fences. No preamble. Start with { and end with }.",
     }
     headers = {
         "x-api-key": KIRO_KEY,
@@ -79,9 +86,9 @@ def main():
     chunk = chunks[0]
     print(f"[{ts()}] Testing {PAGE} (chunk 1/{len(chunks)}, {len(chunk.split())} words)")
     print(f"[{ts()}] Model: {MODEL}")
-    print(f"{'='*80}")
+    print(f"{'=' * 80}")
     print(f"{'Temp':<6} {'Time':<8} {'Edges':<7} {'Colors':<15} {'Year':<6} {'Parse':<6} Edge types")
-    print(f"{'-'*80}")
+    print(f"{'-' * 80}")
 
     results = []
     for temp_int in range(0, 11):  # 0.0 to 1.0 in 0.1 steps
@@ -96,7 +103,9 @@ def main():
                 t = e.get("type", "?")
                 edge_types[t] = edge_types.get(t, 0) + 1
             type_str = " ".join(f"{t}:{c}" for t, c in sorted(edge_types.items()))
-            print(f"{temp:<6.1f} {elapsed:<8.1f} {len(edges):<7} {','.join(colors[:3]):<15} {year or '?':<6} {'OK':<6} {type_str}")
+            print(
+                f"{temp:<6.1f} {elapsed:<8.1f} {len(edges):<7} {','.join(colors[:3]):<15} {year or '?':<6} {'OK':<6} {type_str}"
+            )
             results.append({"temp": temp, "edges": len(edges), "colors": colors, "year": year, "elapsed": elapsed})
         else:
             print(f"{temp:<6.1f} {elapsed:<8.1f} {'FAIL':<7}")
@@ -104,7 +113,7 @@ def main():
 
         time.sleep(0.5)
 
-    print(f"{'='*80}")
+    print(f"{'=' * 80}")
     # Summary
     ok = [r for r in results if not r.get("parse_fail")]
     fails = [r for r in results if r.get("parse_fail")]
@@ -112,8 +121,8 @@ def main():
     print(f"\n[{ts()}] Summary:")
     print(f"  Parse OK: {len(ok)}/11, Failures: {len(fails)}/11")
     if edge_counts:
-        print(f"  Edges: min={min(edge_counts)}, max={max(edge_counts)}, avg={sum(edge_counts)/len(edge_counts):.1f}")
-    print(f"  Avg time: {sum(r['elapsed'] for r in results)/len(results):.1f}s")
+        print(f"  Edges: min={min(edge_counts)}, max={max(edge_counts)}, avg={sum(edge_counts) / len(edge_counts):.1f}")
+    print(f"  Avg time: {sum(r['elapsed'] for r in results) / len(results):.1f}s")
     if fails:
         print(f"  Failed at temps: {[r['temp'] for r in fails]}")
 

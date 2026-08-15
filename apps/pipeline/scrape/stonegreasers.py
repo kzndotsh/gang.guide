@@ -18,9 +18,16 @@ BASE_URL = "https://www.stonegreasers.com"
 
 # Pages to skip (not gang profiles)
 SKIP_SLUGS = {
-    "index", "sitemap", "chicago_cold_case_murder", "risingupangry",
-    "chicago_gang_study", "NewYorkTattooing", "usa_gangs", "conclay",
-    "new_jersey_gangs", "swan",
+    "index",
+    "sitemap",
+    "chicago_cold_case_murder",
+    "risingupangry",
+    "chicago_gang_study",
+    "NewYorkTattooing",
+    "usa_gangs",
+    "conclay",
+    "new_jersey_gangs",
+    "swan",
 }
 
 

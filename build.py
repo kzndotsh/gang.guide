@@ -48,15 +48,15 @@ def build_layout(org, lane_meta, slot):
         h = hash(org["id"]) & 0xFF
         if precision == "decade":
             # Decade precision: 0–4yr spread (column jitter adds ~0–1yr on top)
-            display_year = year + (h % 5)   # 0–4yr
+            display_year = year + (h % 5)  # 0–4yr
         else:
             # circa or round year — tight spread
             if year >= 1980:
-                display_year = year + (h % 2)   # 0–1yr — very recent, keep tight
+                display_year = year + (h % 2)  # 0–1yr — very recent, keep tight
             elif year >= 1950:
-                display_year = year + (h % 3)   # 0–2yr
+                display_year = year + (h % 3)  # 0–2yr
             else:
-                display_year = year + (h % 4)   # 0–3yr — historical
+                display_year = year + (h % 4)  # 0–3yr — historical
     else:
         display_year = year
 
@@ -117,6 +117,7 @@ def build_graph(out_path=None):
 
     # Group by lane and assign slots (sorted by year so adjacent slots have adjacent years)
     from collections import defaultdict
+
     lane_orgs = defaultdict(list)
     for org in orgs:
         lane = org.get("lane", "unplaced")
@@ -125,7 +126,9 @@ def build_graph(out_path=None):
     nodes = []
     for lane, lane_org_list in lane_orgs.items():
         # Sort by display year so nearby years get sequential slots (= different rows)
-        lane_org_list.sort(key=lambda o: (o.get("founded_year") or 1980, o.get("name", "")))
+        lane_org_list.sort(
+            key=lambda o: (o.get("founded_year") or 1980, o.get("name", ""))
+        )
         for slot, org in enumerate(lane_org_list):
             nodes.append(build_node(org, lane_meta, slot))
 
@@ -193,24 +196,45 @@ def build_graph(out_path=None):
             node_detail["edges"] = edge_evidence[n["id"]]
         details["nodes"][n["id"]] = node_detail
         # Keep only rendering fields
-        slim_data = {k: v for k, v in data.items() if k not in ("description", "sources") and v is not None}
+        slim_data = {
+            k: v
+            for k, v in data.items()
+            if k not in ("description", "sources") and v is not None
+        }
         slim_nodes.append({**n, "data": slim_data})
 
     # Compute coverage stats
     nodes_with_year = sum(1 for n in nodes if n.get("data", {}).get("founded_year"))
-    nodes_exact_circa = sum(1 for n in nodes if n.get("data", {}).get("founded_year_precision") in ("exact", "circa"))
-    nodes_decade = sum(1 for n in nodes if n.get("data", {}).get("founded_year_precision") == "decade")
-    nodes_estimate = sum(1 for n in nodes if n.get("data", {}).get("founded_year_precision") in ("estimate", None) and n.get("data", {}).get("founded_year"))
+    nodes_exact_circa = sum(
+        1
+        for n in nodes
+        if n.get("data", {}).get("founded_year_precision") in ("exact", "circa")
+    )
+    nodes_decade = sum(
+        1 for n in nodes if n.get("data", {}).get("founded_year_precision") == "decade"
+    )
+    nodes_estimate = sum(
+        1
+        for n in nodes
+        if n.get("data", {}).get("founded_year_precision") in ("estimate", None)
+        and n.get("data", {}).get("founded_year")
+    )
     nodes_with_colors = sum(1 for n in nodes if n.get("data", {}).get("colors"))
-    nodes_with_desc = sum(1 for n in nodes if len(n.get("data", {}).get("description", "")) > 50)
+    nodes_with_desc = sum(
+        1 for n in nodes if len(n.get("data", {}).get("description", "")) > 50
+    )
     nodes_with_aliases = sum(1 for n in nodes if n.get("data", {}).get("aliases"))
     nodes_with_metro = sum(1 for n in nodes if n.get("data", {}).get("metro"))
     nodes_active = sum(1 for n in nodes if n.get("data", {}).get("status") == "active")
-    nodes_inactive = sum(1 for n in nodes if n.get("data", {}).get("status") == "inactive")
+    nodes_inactive = sum(
+        1 for n in nodes if n.get("data", {}).get("status") == "inactive"
+    )
 
     # Source stats
     total_sources = sum(len(n.get("data", {}).get("sources", [])) for n in nodes)
-    nodes_multi_source = sum(1 for n in nodes if len(n.get("data", {}).get("sources", [])) >= 2)
+    nodes_multi_source = sum(
+        1 for n in nodes if len(n.get("data", {}).get("sources", [])) >= 2
+    )
     source_domains = {}
     for n in nodes:
         for s in n.get("data", {}).get("sources", []):
@@ -248,7 +272,15 @@ def build_graph(out_path=None):
         "meta": {
             "node_count": len(nodes),
             "edge_count": len(edges),
-            "lanes": [{"id": ln["id"], "label": ln["label"], "order": ln.get("order"), "group": ln.get("group", "Other")} for ln in lanes_list],
+            "lanes": [
+                {
+                    "id": ln["id"],
+                    "label": ln["label"],
+                    "order": ln.get("order"),
+                    "group": ln.get("group", "Other"),
+                }
+                for ln in lanes_list
+            ],
             "visibility": {
                 "exported": {
                     "nodes": len(nodes),
@@ -288,7 +320,9 @@ def build_graph(out_path=None):
     out_path.write_text(json.dumps(graph, ensure_ascii=False) + "\n", encoding="utf-8")
 
     details_path = out_path.parent / "details.json"
-    details_path.write_text(json.dumps(details, ensure_ascii=False) + "\n", encoding="utf-8")
+    details_path.write_text(
+        json.dumps(details, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
 
     # Changelog: accumulate build history
     changelog_path = out_path.parent / "changelog.json"
@@ -307,14 +341,21 @@ def build_graph(out_path=None):
         "built_at": datetime.now(UTC).isoformat(),
     }
     # Only add if stats changed
-    if not prev or entry["nodes"] != prev.get("nodes") or entry["edges"] != prev.get("edges") or entry["sources"] != prev.get("sources"):
+    if (
+        not prev
+        or entry["nodes"] != prev.get("nodes")
+        or entry["edges"] != prev.get("edges")
+        or entry["sources"] != prev.get("sources")
+    ):
         history.append(entry)
     changelog_path.write_text(json.dumps(history, indent=2) + "\n", encoding="utf-8")
 
     print(f"Built graph.json: {len(nodes)} nodes, {len(edges)} edges → {out_path}")
     print(f"Built details.json: {len(details['nodes'])} profiles → {details_path}")
     if prev:
-        print(f"Δ nodes: {entry['delta_nodes']:+d}, Δ edges: {entry['delta_edges']:+d}, Δ sources: {entry['delta_sources']:+d}")
+        print(
+            f"Δ nodes: {entry['delta_nodes']:+d}, Δ edges: {entry['delta_edges']:+d}, Δ sources: {entry['delta_sources']:+d}"
+        )
 
 
 if __name__ == "__main__":

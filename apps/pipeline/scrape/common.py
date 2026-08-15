@@ -42,7 +42,7 @@ def fetch_with_retry(client: httpx.Client, url: str) -> httpx.Response | None:
             if resp.status_code == 200:
                 return resp
             if resp.status_code in (429, 503):
-                wait = min(2 ** attempt, 16)
+                wait = min(2**attempt, 16)
                 if resp.status_code == 429:
                     wait = max(wait, 15 * (attempt + 1))
                 time.sleep(wait)
@@ -53,7 +53,7 @@ def fetch_with_retry(client: httpx.Client, url: str) -> httpx.Response | None:
         except (httpx.TimeoutException, httpx.ConnectError) as exc:
             if attempt >= MAX_RETRIES - 1:
                 return None
-            wait = min(2 ** attempt, 16)
+            wait = min(2**attempt, 16)
             time.sleep(wait)
     return None
 

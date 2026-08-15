@@ -26,7 +26,7 @@ def fetch_article(client, title: str) -> dict | None:
         "format": "json",
         "disabletoc": "true",
     }
-    resp = fetch_with_retry(client, f"{MEDIAWIKI_API}?{'&'.join(f'{k}={v}' for k,v in params.items())}")
+    resp = fetch_with_retry(client, f"{MEDIAWIKI_API}?{'&'.join(f'{k}={v}' for k, v in params.items())}")
     if not resp:
         return None
     data = resp.json()
@@ -52,7 +52,7 @@ def fetch_category_members(client, category: str, limit: int = 500) -> list[str]
         "cmtype": "page",
         "format": "json",
     }
-    url = f"{MEDIAWIKI_API}?{'&'.join(f'{k}={v}' for k,v in params.items())}"
+    url = f"{MEDIAWIKI_API}?{'&'.join(f'{k}={v}' for k, v in params.items())}"
     resp = fetch_with_retry(client, url)
     if resp:
         data = resp.json()
@@ -62,8 +62,8 @@ def fetch_category_members(client, category: str, limit: int = 500) -> list[str]
 
 
 def slug_from_title(title: str) -> str:
-    s = re.sub(r'[^a-z0-9\s]', '', title.lower())
-    return re.sub(r'\s+', '-', s.strip())[:80]
+    s = re.sub(r"[^a-z0-9\s]", "", title.lower())
+    return re.sub(r"\s+", "-", s.strip())[:80]
 
 
 def scrape_articles(titles: list[str], force: bool = False):
@@ -83,7 +83,11 @@ def scrape_articles(titles: list[str], force: bool = False):
             print(f"  FAIL: {title}")
             continue
 
-        url = f"https://en.wikipedia.org/?oldid={article['revid']}" if article['revid'] else f"https://en.wikipedia.org/wiki/{title.replace(' ', '_')}"
+        url = (
+            f"https://en.wikipedia.org/?oldid={article['revid']}"
+            if article["revid"]
+            else f"https://en.wikipedia.org/wiki/{title.replace(' ', '_')}"
+        )
 
         save_page(
             source=SOURCE,

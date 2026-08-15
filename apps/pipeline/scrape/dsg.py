@@ -37,7 +37,8 @@ def get_pages_from_sitemap(client) -> list[str]:
     urls = re.findall(r"<!\[CDATA\[(https://detroitstreetgangs\.com/[^]]+)\]\]>", resp.text)
     # Filter to profile pages only (no images, no homepage, no skip slugs)
     return [
-        u for u in urls
+        u
+        for u in urls
         if u != f"{BASE_URL}/"
         and slug_from_url(u) not in SKIP_SLUGS
         and not re.search(r"\.(jpg|jpeg|png|gif|webp|svg)$", u, re.IGNORECASE)

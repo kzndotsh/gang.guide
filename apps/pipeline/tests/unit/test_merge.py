@@ -1,4 +1,5 @@
 import pytest
+
 """Tests for apps/pipeline/merge.py"""
 
 from apps.pipeline.merge import merge_runs
@@ -64,7 +65,12 @@ class TestMergeRuns:
     def test_description_picks_longest(self):
         runs = [
             {"subject_org": "X", "description": "Short.", "edges": [], "colors": []},
-            {"subject_org": "X", "description": "A much longer description with more detail.", "edges": [], "colors": []},
+            {
+                "subject_org": "X",
+                "description": "A much longer description with more detail.",
+                "edges": [],
+                "colors": [],
+            },
             {"subject_org": "X", "description": "Medium length desc.", "edges": [], "colors": []},
         ]
         result = merge_runs(runs)
@@ -124,13 +130,21 @@ class TestMergeEdgeCases:
     def test_edge_type_matters(self):
         """Same target but different type = different edges."""
         runs = [
-            {"subject_org": "X", "edges": [
-                {"target": "Y", "type": "alliance", "evidence": "allies"},
-                {"target": "Y", "type": "rivalry", "evidence": "rivals"},
-            ], "colors": []},
-            {"subject_org": "X", "edges": [
-                {"target": "Y", "type": "alliance", "evidence": "friends"},
-            ], "colors": []},
+            {
+                "subject_org": "X",
+                "edges": [
+                    {"target": "Y", "type": "alliance", "evidence": "allies"},
+                    {"target": "Y", "type": "rivalry", "evidence": "rivals"},
+                ],
+                "colors": [],
+            },
+            {
+                "subject_org": "X",
+                "edges": [
+                    {"target": "Y", "type": "alliance", "evidence": "friends"},
+                ],
+                "colors": [],
+            },
         ]
         result = merge_runs(runs)
         # Alliance appears in 2/2 runs, rivalry only in 1/2

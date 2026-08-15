@@ -17,8 +17,8 @@ def normalize(name: str) -> str:
     if not name:
         return ""
     s = name.lower().strip()
-    s = re.sub(r'[^a-z0-9\s]', '', s)
-    s = re.sub(r'\s+', ' ', s)
+    s = re.sub(r"[^a-z0-9\s]", "", s)
+    s = re.sub(r"\s+", " ", s)
     return s
 
 
@@ -34,7 +34,7 @@ def build_index() -> dict[str, str]:
         # Index primary name
         index[normalize(org.get("name", ""))] = org_id
         # Index aliases
-        for alias in (org.get("aliases") or []):
+        for alias in org.get("aliases") or []:
             index[normalize(alias)] = org_id
     return index
 
@@ -53,9 +53,9 @@ def resolve(name: str, index: dict[str, str] | None = None) -> str | None:
         return index[norm]
 
     # Try with common suffixes removed
-    for suffix in (' gang', ' crips', ' bloods', ' piru', ' 13', ' nation', ' mc'):
+    for suffix in (" gang", " crips", " bloods", " piru", " 13", " nation", " mc"):
         if norm.endswith(suffix):
-            stripped = norm[:-len(suffix)]
+            stripped = norm[: -len(suffix)]
             if stripped and stripped in index:
                 return index[stripped]
 
