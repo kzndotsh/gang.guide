@@ -155,20 +155,23 @@ just ruler        # regenerate AI agent configs
 
 ## Adding a New Org
 
-1. Create `data/orgs/my-new-org.json`:
+The filename and `id` slug must be derived from the org name: lowercase, hyphens, no special chars.
+`"Rollin 30s Original Harlem Crips"` → `rollin-30s-original-harlem-crips.json` + `"id": "org:rollin-30s-original-harlem-crips"`.
+
+1. Create `data/orgs/rollin-30s-original-harlem-crips.json`:
 ```json
 {
-  "id": "org:my-new-org",
-  "name": "My New Org",
+  "id": "org:rollin-30s-original-harlem-crips",
+  "name": "Rollin 30s Original Harlem Crips",
   "aliases": [],
   "type": "street_gang",
-  "lane": "california-latino-other",
+  "lane": "california-crips-gangster",
   "metro": "Los Angeles",
-  "founded_year": 1985,
+  "founded_year": 1970,
   "founded_year_precision": "circa",
   "description": "Factual 1-3 sentence description with founding context.",
   "colors": ["blue"],
-  "nation_affiliation": null,
+  "nation_affiliation": "org:crips",
   "status": "active",
   "sources": [{"url": "https://...", "title": "Source Name"}]
 }

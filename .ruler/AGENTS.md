@@ -83,7 +83,7 @@ Evidence-backed US criminal organization history data platform. Curated org prof
 - `sources` array: objects with `url` (https) and `title`
 - `lane` must match an ID in `data/lanes.json`
 - All descriptions must be factual, no scrape junk, no slurs, no HTML entities
-- Node IDs use format `org:slug-name`
+- Node IDs use format `org:slug-name` — slug is derived from org name: lowercase, hyphens, no special chars, no double hyphens. Filename must match slug: `data/orgs/{slug}.json`
 
 ## Code Style
 

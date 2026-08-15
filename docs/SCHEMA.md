@@ -32,7 +32,22 @@
 `lane`, `founded_year`
 
 ### ID Format
-`org:` prefix + kebab-case slug. Example: `org:almighty-vice-lord-nation`
+`org:` prefix + kebab-case slug derived from the org's name.
+
+**Rules (enforced by lint):**
+- Lowercase letters, digits, and hyphens only (`a-z`, `0-9`, `-`)
+- No double hyphens (`--`)
+- No leading or trailing hyphens
+- No spaces or non-ASCII characters
+- Filename must match the slug: `data/orgs/{slug}.json`
+
+**Slug derivation:** Normalize unicode (strip accents), lowercase, replace non-alphanumeric runs with `-`, trim hyphens.
+
+Examples:
+- `Rollin 30s Original Harlem Crips` → `org:rollin-30s-original-harlem-crips`
+- `Almighty Vice Lord Nation` → `org:almighty-vice-lord-nation`
+- `Sureños` → `org:surenos` (accent stripped)
+- `C-Notes` → `org:c-notes`
 
 ### Constraints
 - `lane` must exist in `data/lanes.json`
@@ -175,5 +190,5 @@ The linter (`apps/pipeline/lint.py`) runs as a gate before build. Key checks:
 - **check_isolated** — warns about orgs with no edges
 - **check_descriptions** — flags short/junk descriptions, HTML entities, slurs
 - **check_sources** — validates source URLs and titles; warns on bare domain titles
-- **check_id_consistency** — ensures file slug matches org ID
+- **check_id_consistency** — validates slug format (lowercase, a-z/0-9/hyphens only, no double hyphens, no leading/trailing hyphens); ensures file stem matches org ID slug
 - **check_temporal_logic** — validates edge year ranges are sane

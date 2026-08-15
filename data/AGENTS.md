@@ -33,6 +33,11 @@ All gang data lives here as flat JSON files. No database.
 }
 ```
 
+**ID/filename convention:** Slug is derived from org name — lowercase, hyphens only, no special chars, no double hyphens. Filename must match slug: `data/orgs/{slug}.json`. Examples:
+- `"Rollin 30s Original Harlem Crips"` → `org:rollin-30s-original-harlem-crips`
+- `"Sureños"` → `org:surenos` (accents stripped)
+- `"C-Notes"` → `org:c-notes`
+
 ## Rules
 
 - Every org must be a real, documented organization
