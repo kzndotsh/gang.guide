@@ -65,7 +65,7 @@ When you have gathered enough information, respond with ONLY valid JSON matching
   "colors": ["red", "black"] or null,
   "aliases": ["Alias 1", "Alias 2"] or null,
   "membership_estimate": 5000 or null,
-  "symbols": ["six-point star", "pitchfork"] or null,
+  "symbols": ["Six-Point Star", "Pitchfork"] or null,  // Title Case each word; preserve apostrophe words (e.g. "Oakland A's Apparel")
   "sources": [{"url": "https://...", "title": "Page Title"}] or null
 }
 

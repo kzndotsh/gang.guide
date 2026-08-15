@@ -230,7 +230,14 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             if sym.isupper() and len(sym) <= 6:
                 continue  # pure abbreviations like PIRU, DAMU, IV
             # Normalize: title-case but preserve ALL-CAPS words (acronyms like NGC, OVG)
-            expected = " ".join(w if (w.isupper() and len(w) <= 6) else w.title() for w in sym.split())
+            # and don't mangle apostrophe words (str.title() turns "A's" → "A'S")
+            def _title_word(w: str) -> str:
+                if w.isupper() and len(w) <= 6:
+                    return w  # keep acronyms as-is
+                # Only capitalize the first alphabetic char; leave rest as-is after first letter
+                return w[0].upper() + w[1:] if w else w
+
+            expected = " ".join(_title_word(w) for w in sym.split())
             if sym != expected:
                 errors.append(f"{f}: symbol not title case: '{sym}' → '{expected}'")
 
