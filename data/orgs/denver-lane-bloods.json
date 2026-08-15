@@ -9,7 +9,7 @@
   "type": "street_gang",
   "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
-  "description": "The Denver Lane Bloods are one of the original founding sets of the Bloods alliance, established in South Los Angeles in the early 1970s alongside the Pirus, Brims, and Bounty Hunters to oppose Crip dominance. In 2025, a multi-agency operation targeted the Pasadena Denver Lane Bloods for gun trafficking.",
+  "description": "The Denver Lane Bloods formed as an independent street gang in South Los Angeles during the late 1960s, predating the Bloods alliance. As the Crips expanded, the Denver Lanes aligned with the Pirus, Brims, Bounty Hunters, and other non-Crip sets that coalesced into the Bloods by 1972. In 2012 and 2025, federal operations targeted Pasadena Denver Lane Bloods members for narcotics and gun trafficking.",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
@@ -37,7 +37,7 @@
       "title": "DOJ - Denver Lane Bloods Narcotics Arrests"
     }
   ],
-  "founded_year": 1972,
+  "founded_year": 1969,
   "colors": [
     "red"
   ],
@@ -45,6 +45,6 @@
     "Letters Dlb",
     "Denver Broncos"
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "decade",
   "status": "active"
 }

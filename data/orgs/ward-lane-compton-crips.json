@@ -20,5 +20,10 @@
     "C14"
   ],
   "founded_year_precision": "decade",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "400 Blocc",
+    "500 Blocc",
+    "800 Blocc"
+  ]
 }

@@ -1,7 +1,9 @@
 {
   "id": "org:halsey-bops",
   "name": "Halsey Bops",
-  "aliases": [],
+  "aliases": [
+    "Halsey"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
@@ -15,6 +17,18 @@
     {
       "url": "http://www.stonegreasers.com/greaser/halsey_bops.html",
       "title": "www.stonegreasers.com"
+    },
+    {
+      "url": "https://www.stonegreasers.com/greaser/halsey_bops.html",
+      "title": "Bushwick Brooklyn - Halsey Bops Gang and The Saints"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=1944",
+      "title": "The Halsey Bops | New York City Fighting Gangs"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=1301",
+      "title": "Ellery Bop & Halsey Bop Threat Letter | New York City Fighting Gangs"
     }
   ]
 }

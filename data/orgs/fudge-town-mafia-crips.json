@@ -25,5 +25,8 @@
     "yellow"
   ],
   "founded_year_precision": "decade",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Brown Clothing"
+  ]
 }

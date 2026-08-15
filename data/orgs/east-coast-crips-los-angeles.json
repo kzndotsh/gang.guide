@@ -43,5 +43,32 @@
     "Six-Pointed Star",
     "Letter C Hand Sign",
     "Number 6"
+  ],
+  "membership_estimate": 850,
+  "sources": [
+    {
+      "url": "https://unitedgangs.com/east-coast-crips",
+      "title": "East Coast Crips — UnitedGangs"
+    },
+    {
+      "url": "https://www.streetgangs.com/crips/pomona/ecc",
+      "title": "East Coast Crips — StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Crips",
+      "title": "Crips — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Florencia_13",
+      "title": "Florencia 13 — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Grape_Street_Watts_Crips",
+      "title": "Grape Street Watts Crips — Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/final-defendant-rico-indictment-targeting-east-coast-crips-street-gang-pleads-guilty",
+      "title": "Final Defendant in RICO Indictment Targeting East Coast Crips Pleads Guilty — DOJ USAO-CDCA (2016)"
+    }
   ]
 }

@@ -1,7 +1,10 @@
 {
   "id": "org:chiwest",
   "name": "Chi-West",
-  "aliases": [],
+  "aliases": [
+    "Chi West",
+    "Insane Chi-West"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -17,6 +20,18 @@
     {
       "url": "https://chicagoganghistory.com/gang/chi-west",
       "title": "Chi-West - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/hoods/west-town-ukrainian-village/",
+      "title": "Ukrainian Village (West Town) – Chi-West's Home Turf | Chicago Gang History"
+    },
+    {
+      "url": "https://www.stonegreasers.com/greaser/chi_west.html",
+      "title": "Chicago Chi-West Gang, Ukrainian Gang | Stone Greasers"
+    },
+    {
+      "url": "https://www.reddit.com/r/Chiraqology/comments/sduco8/chiwest_ukrainian_gang_from_ukrainian_village/",
+      "title": "Chi-West, Ukrainian Gang From Ukrainian Village | r/Chiraqology"
     }
   ],
   "symbols": [

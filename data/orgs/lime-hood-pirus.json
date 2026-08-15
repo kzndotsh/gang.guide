@@ -9,6 +9,14 @@
     {
       "url": "https://www.streetgangs.com/bloods/compton/lhp",
       "title": "Lime Hood Pirus — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/lime-hood-piru/",
+      "title": "Lime Hood Piru – UnitedGangs.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/South_Side_Compton_Crips",
+      "title": "South Side Compton Crips – Wikipedia"
     }
   ],
   "founded_year": 1972,
@@ -19,5 +27,14 @@
   ],
   "nation_affiliation": "org:bloods",
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "LHP",
+    "547 Gang",
+    "Lime Hood Bompton Piru",
+    "East Side Lime Hood Piru",
+    "Lime Street Gang"
+  ],
+  "symbols": [
+    "547"
+  ]
 }

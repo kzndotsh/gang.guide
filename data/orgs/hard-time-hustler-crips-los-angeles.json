@@ -29,5 +29,9 @@
     "C14"
   ],
   "founded_year_precision": "decade",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "HTH",
+    "HTHC"
+  ]
 }
