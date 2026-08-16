@@ -146,3 +146,40 @@ org:black-gangster-disciples-nation  cross_metro
 org:almighty-vice-lord-nation        cross_metro
 org:black-p-stones                   cross_metro
 org:spanish-cobras-chicago           cross_metro
+
+# metro_lane_consistency false positives
+# Inglewood orgs: Inglewood IS in Los Angeles metro area (correct)
+org:avenue-piru-gang                         metro_lane_consistency
+org:center-park-bloods                       metro_lane_consistency
+org:centinela-park-family                    metro_lane_consistency
+org:crenshaw-mafia-gang                      metro_lane_consistency
+org:doty-block-bloods                        metro_lane_consistency
+org:imperial-village-crips                   metro_lane_consistency
+org:original-inglewood-crips                 metro_lane_consistency
+org:osage-legend-crips-inglewood             metro_lane_consistency
+org:queen-street-bloods                      metro_lane_consistency
+org:tongan-crip-gang                         metro_lane_consistency
+org:west-downtown-inglewood-bloods           metro_lane_consistency
+# "Harlem" in LA Crip names = Harlem Ave, not New York Harlem
+org:rollin-30s-harlem-crips                  metro_lane_consistency
+org:rollin-30s-original-harlem-crips         metro_lane_consistency
+# Inland Empire / OC / specific CA sub-metros on CA lanes
+org:ovs                                      metro_lane_consistency
+org:forming-kaos                             metro_lane_consistency
+org:lopers-13                                metro_lane_consistency
+# Descriptions mention other cities historically, not wrong metro
+org:detroit-gangster-disciples               metro_lane_consistency
+org:el-monte-flores                          metro_lane_consistency
+org:rollin-60s-neighborhood-crips            metro_lane_consistency
+org:four-corner-hustlers-chicago             metro_lane_consistency
+org:latin-counts-chicago                     metro_lane_consistency
+org:wah-ching                                metro_lane_consistency
+org:young-lords                              metro_lane_consistency
+org:eastside-rollin-80s-skyline-pirus        metro_lane_consistency
+org:6-mile-bounty-hunna-watts-bloods         metro_lane_consistency
+org:brightmoor-gangster-crips                metro_lane_consistency
+org:headbanger-bloods                        metro_lane_consistency
+org:jokers                                   metro_lane_consistency
+org:toledo-mafia-counts                      metro_lane_consistency
+org:elm-street-piru                          metro_lane_consistency
+org:rollin-30s-tre-tre-crips                 metro_lane_consistency

@@ -467,6 +467,93 @@ def check_cross_metro(orgs: dict[str, dict], edges: list[dict]):
                 )
 
 
+def check_metro_lane_consistency(orgs: dict[str, dict]):
+    """Flag orgs where metro and lane are inconsistent with each other or description.
+
+    Catches common errors like Chicago greasers assigned to historical-east/New York,
+    or California gangs in Chicago lanes.
+    """
+    # Lane prefix → expected metro keywords
+    LANE_METRO = {
+        "california-": [
+            "Los Angeles", "San Francisco", "California", "San Diego", "Sacramento",
+            "Fresno", "Inglewood", "Compton", "Long Beach", "Pomona", "Riverside",
+            "San Bernardino", "Oxnard", "Salinas", "Stockton", "Modesto", "Oakland",
+            "Azusa", "Carson", "Torrance", "Hawthorne", "Lynwood", "Gardena",
+        ],
+        "chicago-": ["Chicago"],
+        "detroit": ["Detroit"],
+        "new-york": ["New York"],
+        "midwest": [],  # broad, don't enforce
+        "prison": [],   # can be anywhere
+        "organized-crime": [],  # can be anywhere
+        "white-supremacist": [],
+        "motorcycle-clubs": [],
+        "asian-gangs": [],
+        "southeast-southwest": [],
+        "other-national": [],
+        "blood-nation": [],
+        "crip-nation": [],
+        "historical-east": [
+            "New York", "Boston", "Philadelphia", "Baltimore", "Washington",
+            "Newark", "Hartford", "Providence",
+        ],
+    }
+
+    # Description keywords that imply a specific city
+    CITY_SIGNALS = {
+        "chicago": "Chicago",
+        "cabrini green": "Chicago",
+        "north lawndale": "Chicago",
+        "humboldt park": "Chicago",
+        "logan square": "Chicago",
+        "bridgeport, illinois": "Chicago",
+        "pilsen": "Chicago",
+        "little village": "Chicago",
+        "back of the yards": "Chicago",
+        "los angeles": "Los Angeles",
+        "south central": "Los Angeles",
+        "compton": "Los Angeles",
+        "watts": "Los Angeles",
+        "inglewood": "Los Angeles",
+        "detroit": "Detroit",
+        "bronx": "New York",
+        "brooklyn": "New York",
+        "harlem": "New York",
+        "queens": "New York",
+        "manhattan": "New York",
+    }
+
+    for org_id, org in orgs.items():
+        f = org["_file"]
+        lane = org.get("lane") or ""
+        metro = org.get("metro") or ""
+        desc = (org.get("description") or "").lower()
+
+        # Check description signals against metro
+        # Skip national/umbrella orgs — they legitimately mention many cities
+        is_national = metro in ("United States", "National") or org.get("type") in ("nation", "alliance")
+        if not is_national:
+            for signal, implied_metro in CITY_SIGNALS.items():
+                if signal in desc and metro and metro != implied_metro and metro not in ("United States", "National"):
+                    # Only flag if lane also doesn't suggest the org is genuinely cross-metro
+                    if not any(lane.startswith(prefix) for prefix in ["other-national", "prison", "white-supremacist", "motorcycle"]):
+                        warnings.append(
+                            f"{f}: description mentions '{signal}' (implies {implied_metro}) but metro='{metro}'"
+                        )
+                    break  # only flag once per org
+
+        # Check lane/metro consistency
+        for lane_prefix, valid_metros in LANE_METRO.items():
+            if not valid_metros:
+                continue
+            if lane.startswith(lane_prefix) and metro and metro not in valid_metros:
+                warnings.append(
+                    f"{f}: lane '{lane}' but metro='{metro}' (expected one of {valid_metros})"
+                )
+                break
+
+
 def check_page_title_orgs(orgs: dict[str, dict]):
     """Flag orgs that look like page titles rather than real organizations."""
     page_patterns = [
@@ -793,6 +880,7 @@ def main():
     check_id_consistency(orgs)
     check_temporal_logic(orgs, edges)
     check_cross_metro(orgs, edges)
+    check_metro_lane_consistency(orgs)
     check_page_title_orgs(orgs)
     check_stub_quality(orgs)
     check_nation_consistency(orgs, edges)
