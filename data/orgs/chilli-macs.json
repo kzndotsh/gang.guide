@@ -7,14 +7,14 @@
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Chilli-Macs is a street gang based in Detroit.",
+  "description": "Chilli-Macs was a Detroit street gang active in the 1950s. It was one of several smaller crews — alongside the Lover Boys, Kings' Men, and Seven Crowns — that were absorbed by the Shakers, the dominant North End Detroit youth gang of the era.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Historical and Defunct Street Groups in Detroit"
     }
   ]
 }

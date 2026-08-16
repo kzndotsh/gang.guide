@@ -4,7 +4,7 @@
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "The Almighty Gaylords Nation is a European-American Chicago street gang founded in 1952 in the West Town neighborhood at Grand and Noble Street, originally composed mostly of Italians, Irish, and Greek Americans. By 1979 they ranked as the fourth most powerful gang in Chicago, noted as 'Chicago's largest white street gang,' with sets spanning the North, West, and South Sides at their peak. They are members of the People Nation alliance, with allies including the Latin Kings, Vice Lords, and Indiana Aryan Brotherhood. The gang declined in the 1990s as leaders were incarcerated; in 2011, nine suburban members were arrested for drug dealing and gun trafficking.",
+  "description": "The Almighty Gaylords Nation is a European-American Chicago street gang founded in 1952 in the West Town neighborhood at Grand Avenue and Noble Street, initially composed mostly of Italian Americans. A member of the People Nation alliance — with allies including the Latin Kings, Vice Lords, and Indiana Aryan Brotherhood — the gang expanded to sets across the North, West, and South Sides at its peak. It declined in the 1990s as key leaders were incarcerated; in 2011, nine suburban members were arrested for drug dealing and gun trafficking.",
   "founded_year": 1952,
   "aliases": [
     "Gaylords",
@@ -43,7 +43,6 @@
   "colors": [
     "black",
     "gray",
-    "green",
     "brown"
   ],
   "founded_year_precision": "exact",

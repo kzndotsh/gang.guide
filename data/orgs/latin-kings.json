@@ -15,7 +15,7 @@
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
-  "description": "The Almighty Latin King and Queen Nation (ALKQN) is one of the largest Hispanic street gangs in the United States, founded in 1954 in Chicago's Humboldt Park by Ramon Santos. The gang operates under two factions: the King Motherland Chicago (KMC), with an estimated 20,000–35,000 members across 31 states, and the New York Bloodline faction, founded by Luis Felipe in the state correctional system in 1986, with 2,200–7,500 members across 5 states. A member of the People Nation alliance, the gang's primary income comes from street-level distribution of cocaine, heroin, and marijuana. Notable prosecutions include NY Bloodline founder 'King Blood' Luis Felipe (life plus 45 years) and Chicago leader 'Corona' Augustin Zambrano (60 years).",
+  "description": "The Almighty Latin King and Queen Nation (ALKQN) is one of the largest Hispanic street gangs in the United States, founded in 1954 in Chicago's Humboldt Park by Ramon Santos. A member of the People Nation alliance, the gang operates under two factions: the King Motherland Chicago (KMC), with an estimated 20,000–35,000 members across 31 states, and the New York Bloodline, founded by Luis Felipe in 1986, with an estimated 2,000–7,500 members across 5 states. Primary criminal activities include street-level distribution of cocaine, heroin, and marijuana.",
   "founded_year": 1954,
   "founded_year_precision": "exact",
   "colors": [
@@ -25,10 +25,6 @@
   "nation_affiliation": "org:people-nation",
   "status": "active",
   "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/Latin_Kings_Chicago",
-      "title": "Latin Kings Chicago — Wikipedia"
-    },
     {
       "url": "https://unitedgangs.com/latin-kings",
       "title": "Latin Kings — UnitedGangs"
@@ -44,22 +40,6 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-latin-kings",
       "title": "Latin Kings - Chicago Gang History"
-    },
-    {
-      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
-      "title": "FBI/NDIC National Gang Threat Assessment 2009"
-    },
-    {
-      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
-      "title": "FBI NGTA 2011 — Emerging Trends"
-    },
-    {
-      "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
-      "title": "2015 National Gang Report (NGIC/NAGIA)"
-    },
-    {
-      "url": "https://www.gangenforcement.com/latin-kings.html",
-      "title": "Gang Enforcement — Latin Kings Profile"
     }
   ],
   "symbols": [

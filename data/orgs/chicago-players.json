@@ -5,10 +5,13 @@
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
-  "description": "Chicago Players is a street gang based in Chicago.",
-  "colors": [],
+  "founded_year": 1986,
+  "founded_year_precision": "circa",
+  "description": "The Chicago Players are a Chicago street gang founded in 1986–1987 by Billy English, a former 63rd Street Insane Pope and Twelfth Street Player. English started the group on 63rd Street after separating from the Insane Popes. The gang wears black and purple colors and was active in multiple Chicago neighborhoods, including a Cicero chapter and a presence at Kedzie and Palmer. They were a founding partner in the United Players Kings (UPK) alliance in K-Town, formed together with the Latin Kings and Insane Unknown Kings (LK/IUK). A related splinter at Kedzie and Dickens eventually reorganized as the Maniac Orquestra Albany Players after aligning more closely with the Chicago Players than with the Imperial Gangsters.",
+  "colors": [
+    "black",
+    "purple"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [

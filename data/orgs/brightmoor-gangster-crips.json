@@ -1,20 +1,34 @@
 {
   "id": "org:brightmoor-gangster-crips",
   "name": "Brightmoor Gangster Crips",
-  "aliases": [],
+  "aliases": [
+    "BGC",
+    "Brightmo Gangstas",
+    "Brightmo Gangsta Crips",
+    "Brightmo Crips",
+    "23 Zone Crips"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Brightmoor Gangster Crips is a street gang based in Detroit.",
-  "colors": [],
+  "description": "BGC (Brightmoor Gangster Crips) is a small Gangster Crip–aligned street group operating primarily in Detroit's Brightmoor neighborhood and the broader 48223 ZIP code area known locally as the '23 Zone.' The group became locally known for graffiti activity and 'tag wars' during the mid-to-late 2010s, and has maintained ties to nearby Gangster Disciples–affiliated crews, including BMG. Some members adopt Grape Street Watts Crips (GSWC) symbolism and imagery — including six-point stars and purple bandannas — though the group denies formal affiliation with the original Watts-based set. In recent years, BGC has been increasingly associated with west side Detroit factions connected to the W7M ScoreGang Crips, with documented overlaps in graffiti activity and neighborhood affiliations. BGC is also documented as an allied group within the broader 5Point Nation (5PN) and Movin Gang (3X) alliance network.",
+  "colors": [
+    "blue",
+    "purple"
+  ],
   "nation_affiliation": "org:crips",
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/detroit-crips/",
-      "title": "DetroitStreetGangs.com"
+      "title": "The History and Impact of Crip-Affiliated Groups in Detroit"
     }
+  ],
+  "symbols": [
+    "Six-point Stars",
+    "Purple Bandannas",
+    "BGC Graffiti Tags"
   ]
 }

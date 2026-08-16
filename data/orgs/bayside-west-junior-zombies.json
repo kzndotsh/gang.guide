@@ -1,20 +1,26 @@
 {
   "id": "org:bayside-west-junior-zombies",
   "name": "Bayside West Junior Zombies",
-  "aliases": [],
+  "aliases": [
+    "Bayside West Zombies",
+    "West Zombies"
+  ],
   "type": "street_gang",
   "lane": "new-york",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
-  "description": "Bayside West Junior Zombies is a street gang based in New York.",
+  "founded_year": 1961,
+  "founded_year_precision": "circa",
+  "description": "The Bayside West Junior Zombies were a greaser street gang based in Bayside, Queens, New York, active in the 1950s and early 1960s. They were considered one of the toughest gangs in New York City at the time, and hung out in 'Zombie Alley,' an alley on 32nd Avenue and 200th Street in Bayside. The gang was composed of Italian and Irish members. Their leader was known as John F., with members including Red Stanbridge, Robert Moll, John Closter, Mad Dog S., FeFe B., and Tippy B. Three members — Robert Moll, William 'Red' Stanbridge, and John Closter — were convicted in connection with the 1961 murder of Nassau County Patrolman Joseph Coote at a Manhasset, Long Island supermarket. The Junior Zombies were a younger offshoot of the Bayside West Zombies, formed in the early 1960s.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://www.stonegreasers.com/greaser/west-zombies-gang.html",
-      "title": "www.stonegreasers.com"
+      "title": "Bayside West Zombies Gang — Stone Greasers"
     }
+  ],
+  "symbols": [
+    "Letter 'Z' Tattooed On The Back Of The Left Hand"
   ]
 }

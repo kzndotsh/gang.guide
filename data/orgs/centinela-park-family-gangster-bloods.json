@@ -7,14 +7,14 @@
   "metro": "Los Angeles",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Centinela Park Family Gangster Bloods is a street gang based in Detroit.",
+  "description": "Centinela Park Family Gangster Bloods (CPFGB) is a West Coast Blood-affiliated street gang based in the Centinela Park area of Los Angeles, California.",
   "colors": [],
   "nation_affiliation": "org:bloods",
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Profiles of Major Neighborhood Street Groups in Detroit – DetroitStreetGangs.com"
     }
   ]
 }

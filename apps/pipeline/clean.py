@@ -602,7 +602,16 @@ def apply_corrections(org: dict, verdict: dict, issues: list[str]) -> dict:
         if new_symbols == []:
             changes["symbols"] = []
         elif isinstance(new_symbols, list):
-            cleaned = [s.strip() for s in new_symbols if isinstance(s, str) and 2 < len(s.strip()) < 80]
+            def _title_word(w: str) -> str:
+                if w.isupper() and len(w) <= 6:
+                    return w
+                return w[0].upper() + w[1:] if w else w
+
+            cleaned = [
+                " ".join(_title_word(w) for w in s.strip().split())
+                for s in new_symbols
+                if isinstance(s, str) and 2 < len(s.strip()) < 80
+            ]
             if cleaned:
                 changes["symbols"] = cleaned
 

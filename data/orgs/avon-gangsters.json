@@ -1,20 +1,22 @@
 {
   "id": "org:avon-gangsters",
   "name": "Avon Gangsters",
-  "aliases": [],
+  "aliases": [
+    "A-Block"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Avon Gangsters is a street gang based in Detroit.",
+  "description": "Avon Gangsters, also known as A-Block, is a hybrid street gang based in Detroit. The group operates outside traditional nationwide gang structures with an identity rooted in local Crip lineage, and has been documented alongside other Detroit hybrid sets including RicoMafia/0430 and Murdaville/SellGang.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Understanding Hybrid and Mixed-Affiliation Groups in Metro Detroit - DetroitStreetGangs.com"
     }
   ]
 }

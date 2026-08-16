@@ -1,20 +1,26 @@
 {
   "id": "org:chaplains",
   "name": "Chaplains",
-  "aliases": [],
+  "aliases": [
+    "Imperial Chaplains"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
-  "founded_year": 1950,
-  "founded_year_precision": "decade",
-  "description": "Chaplains is a street gang based in Chicago.",
-  "colors": [],
+  "founded_year": 1948,
+  "founded_year_precision": "circa",
+  "description": "The Chaplains, originally known as the Imperial Chaplains, were an African American street gang that emerged around 1948 in the Near West Side neighborhood of Chicago, centered on Maxwell and Halsted Streets. They grew out of a Black social athletic club that fought Irish and Italian youth groups for control of Stanford Park. By the early 1950s they had established a presence in the Loomis Courts, Grace Abbott, Jane Addams, and Henry Horner public housing projects, and expanded into North Lawndale, West Garfield Park, East Garfield Park, and Cabrini Green. In 1954 a faction broke away to form the Egyptian Cobras. The gang is considered inactive.",
+  "colors": [
+    "black",
+    "red",
+    "gold"
+  ],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
-      "url": "https://newyorkcitygangs.com/?page_id=2178",
-      "title": "newyorkcitygangs.com"
+      "url": "https://chicagoganghistory.com/gang/egyptian-cobras/",
+      "title": "Egyptian Cobras – Maxwell & Halsted, 1954 | Chicago Gang History"
     }
   ]
 }

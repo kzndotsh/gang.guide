@@ -1,13 +1,15 @@
 {
   "id": "org:braghans",
   "name": "Braghans",
-  "aliases": [],
+  "aliases": [
+    "Jr Bachelors"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
-  "description": "Braghans is a street gang based in New York.",
+  "founded_year": 1952,
+  "founded_year_precision": "circa",
+  "description": "Braghans (also known as the Jr Bachelors) were a 1950s youth street gang based in the Jackson Heights neighborhood of Queens, New York. They operated in the corridor from 82nd Street to 69th Street near the Woodside border, centered around PS 69 on 37th Ave and 78th Street, and were said to control that section of Jackson Heights. Regular hangouts included Bill's Luncheonette and Newtown Bowling. The gang was a precursor to the Splendon Social Club, which was chartered in the mid-1960s by former members.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",

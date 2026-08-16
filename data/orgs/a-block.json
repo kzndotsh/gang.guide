@@ -1,20 +1,28 @@
 {
   "id": "org:a-block",
   "name": "A-Block",
-  "aliases": [],
+  "aliases": [
+    "Sherron Squad",
+    "Vic Gang",
+    "Wet em up Gang",
+    "Jump Out Gang",
+    "Toon World",
+    "Headshot Boyz",
+    "Avon Gangsters"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "A-Block is a street gang based in Detroit.",
+  "description": "A-Block is a Black Disciples-affiliated street gang based in Detroit, also known as Sherron Squad, Vic Gang, and Headshot Boyz. The group is cliqued up with 6-Deuce Dump$treet, Duke Gang, Mooksquad, AAD, and KYMB. The name A-Block also appears as a secondary identifier used by the Blood-affiliated SmokeCamp Bloods set operating around E. Seven Mile Rd., indicating possible name overlap with a separate organization.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Understanding Hybrid and Mixed-Affiliation Groups in Metro Detroit"
     }
   ]
 }

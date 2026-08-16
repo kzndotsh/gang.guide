@@ -1,20 +1,25 @@
 {
   "id": "org:bloc-side-soldiers",
   "name": "Bloc Side Soldiers",
-  "aliases": [],
+  "aliases": [
+    "B.S.S."
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Bloc Side Soldiers is a street gang based in Detroit.",
+  "description": "Bloc Side Soldiers (B.S.S.) is a graffiti-oriented youth tagger crew from Detroit's Five Points area, founded by Zahid Sekou (a/k/a \"Tiny Joker\"). It is recognized as one of two founding precursor crews — alongside the North Side Soldiers (N.S.S.), founded by Zahid's younger cousin known as \"Syxx\" — whose overlapping membership and territory contributed to the emergence of the 5Point Nation Crips (5PN) alliance around 2015–2016. B.S.S. predates ScoreGang and the broader 5PN structure; its symbolism is associated with seniority and longtime membership within local gang culture. Portions of the crew later affiliated with the Hyena Crips (83GC), a core clique within the 5Point Nation.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Inside the Powerful Rise of 5Point Nation Crips (5PN) in Detroit"
     }
+  ],
+  "symbols": [
+    "B.S.S. Tattoo (above Thumb Web)"
   ]
 }
