@@ -12,7 +12,7 @@
   "lane": "california-latino-inland",
   "founded_year": 1984,
   "founded_year_precision": "circa",
-  "description": "Primarily Mexican American criminal street and prison gang based in Fresno, California, founded in 1984. One of the biggest drug gangs in Central California with an estimated 5,000 to 6,000 members. Engaged in drug trafficking, human trafficking, murder, and other crimes. Unaffiliated with Sureños or Norteños, and rivals with multiple prison gangs.",
+  "description": "Primarily Mexican American criminal street and prison gang that originated in Fresno, California in the late 1960s as the F-14 set, gaining independence during the 1984–1985 California prison wars. One of the biggest drug gangs in Central California with an estimated 5,000 to 6,000 members. Engaged in drug trafficking (methamphetamine, marijuana, heroin), human trafficking, murder, assault, and robbery. The only major Hispanic gang in California unaffiliated with Sureños or Norteños, though members associate with Nuestra Familia when trafficking drugs.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Fresno_Bulldogs",
@@ -34,7 +34,8 @@
   "status": "active",
   "membership_estimate": 6000,
   "symbols": [
-    "Bulldog"
+    "Bulldog",
+    "paw print"
   ],
   "military_service": "National Guard, Marines"
 }

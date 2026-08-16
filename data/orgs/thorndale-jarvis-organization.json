@@ -1,20 +1,24 @@
 {
   "id": "org:thorndale-jarvis-organization",
   "name": "Thorndale Jarvis Organization",
-  "aliases": [],
+  "aliases": [
+    "Thorndale Jag Offs",
+    "Thorndale Jagoffs",
+    "TJO"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
-  "founded_year": 1959,
+  "lane": "chicago-independent",
+  "metro": "Chicago",
+  "founded_year": 1962,
   "founded_year_precision": "exact",
-  "description": "The Thorndale Jarvis Organization (TJO), also called Thorndale Jag Offs, was a white North Side Chicago gang active in the Edgewater/Uptown area, composed primarily of Swedes, Germans, Irish, and Appalachian whites. The gang was involved in racial conflicts and claimed approximately 200 members.",
+  "description": "The Thorndale Jarvis Organization (TJO), also known as the Thorndale Jag Offs, was a white greaser gang founded in 1962 by Joe Ganci at the intersection of Thorndale and Kenmore in the Edgewater neighborhood on Chicago's North Side. TJO also stood for \"Truth Justice and Order.\" Composed primarily of Swedes, Germans, Irish, and Appalachian whites, the gang originally formed in response to neighborhood blight and rising crime in eastern Edgewater. By the mid-1960s the TJO was among the most feared greaser gangs in Uptown and was involved in racial conflicts at Senn High School beginning in 1971. The gang was estimated at approximately 200 members at its peak.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
-      "url": "http://www.stonegreasers.com/greaser/thorndale_javis_organization.html",
-      "title": "www.stonegreasers.com"
+      "url": "https://chicagoganghistory.com/gang/thorndale-jag-offs/",
+      "title": "Thorndale Jag Offs (TJO) – Joe Ganci & Edgewater | Chicago Gang History"
     }
   ],
   "membership_estimate": 200

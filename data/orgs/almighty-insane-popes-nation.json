@@ -4,37 +4,31 @@
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "The North Side Almighty Insane Popes are a mostly European-American Folk Nation street gang formed in the late 1950s in Chicago. Originally a Greek greaser gang at Lawrence and Rockwell that had problems with Latin Kings. Rather than joining the Simon City Royals, they formed their own gang. Name originally stood for 'Protecting Our People Eliminating Scum.' Peak membership of 300-500 in mid-1960s to early 1970s. Main membership was Polish (Albany Park), German, Irish, and Scandinavian (Portage Park, Jefferson Park). In the 1980s, some members were children of Chicago firefighters and police officers. Allied with Simon City Royals and Imperial Gangsters.",
-  "founded_year": 1973,
+  "description": "The Almighty Insane Popes Nation is a predominantly European-American street gang formed in the late 1950s on Chicago's North Side, originating from a Greek greaser group at Lawrence and Rockwell who had conflicts with the Latin Kings. Rather than joining the Simon City Royals, they formed their own gang under the Folk Nation alliance, with the name standing for 'Protecting Our People Eliminating Scum.' At their peak in the mid-1960s to early 1970s they had an estimated 300–500 members, drawn primarily from Polish, German, Irish, and Scandinavian communities in Albany Park, Portage Park, and Jefferson Park. They remain closely allied with the Simon City Royals and Imperial Gangsters.",
+  "founded_year": 1958,
   "aliases": [
     "Insane Popes",
     "North Side Insane Popes",
     "Popes",
-    "South Side Almighty Insane Popes",
     "North Side Popes",
-    "AIPN",
-    "Insane Popes (North side)"
+    "AIPN"
   ],
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Popes_%28gang%29",
-      "title": "Popes %28gang%29 — Wikipedia"
+      "url": "https://en.wikipedia.org/wiki/Popes_(gang)",
+      "title": "Popes (gang) - Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Chicago_Gaylords",
-      "title": "Chicago Gaylords — Wikipedia"
+      "title": "Chicago Gaylords - Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Simon_City_Royals",
-      "title": "Simon City Royals — Wikipedia"
+      "title": "Simon City Royals - Wikipedia"
     },
     {
       "url": "https://chicagoganghistory.com/gang/almighty-insane-north-side-popes",
       "title": "Insane Popes (North side) - Chicago Gang History"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Popes_(gang)",
-      "title": "Popes (gang) - Wikipedia"
     }
   ],
   "colors": [
@@ -51,6 +45,5 @@
     "Pope'S Hat",
     "Cross With Three Slashes Above It",
     "Pitchfork"
-  ],
-  "membership_estimate": 336
+  ]
 }

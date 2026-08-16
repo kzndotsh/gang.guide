@@ -10,7 +10,7 @@
   "metro": "New York",
   "founded_year": 1993,
   "founded_year_precision": "exact",
-  "description": "The United Blood Nation (East Coast Bloods) is a street and prison gang formed on July 16, 1993 at Rikers Island by Leonard 'OG Dead Eye' McKenzie, who allied gangs to protect against dominant Hispanic gangs. The East Coast faction of the California Bloods, UBN has 7,000-15,000 members and became the dominant East Coast gang in the 1990s. Co-founder Omar Portee was sentenced to 50 years at ADX Florence. Subgroups include Nine Trey Gangsters and Sex Money Murder. The 6ix9ine/Nine Trey RICO case in 2018 drew widespread media attention.",
+  "description": "The United Blood Nation (UBN), also known as the East Coast Bloods, is a prison-originated street gang founded on July 16, 1993 at Rikers Island by Omar 'O.G. Mack' Portee and co-founder Leonard 'OG Dead Eye' McKenzie, who merged independent African American inmate gangs into a unified front against the Latin Kings and Ñetas. Membership is estimated at 7,000–15,000 nationwide, concentrated along the East Coast. Portee was sentenced to 50 years in 2003 and is incarcerated at ADX Florence. Subgroups include Nine Trey Gangsters and Sex Money Murder. The 2018 RICO case involving 6ix9ine and Nine Trey Gangsters drew widespread media attention.",
   "nation_affiliation": "org:people-nation",
   "sources": [
     {
@@ -28,22 +28,6 @@
     {
       "url": "https://en.wikipedia.org/wiki/Bloods",
       "title": "Bloods — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Crips",
-      "title": "Crips — Wikipedia"
-    },
-    {
-      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
-      "title": "FBI/NDIC National Gang Threat Assessment 2009"
-    },
-    {
-      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
-      "title": "FBI NGTA 2011 — Emerging Trends"
-    },
-    {
-      "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
-      "title": "2015 National Gang Report (NGIC/NAGIA)"
     }
   ],
   "colors": [
