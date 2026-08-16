@@ -1,20 +1,22 @@
 {
   "id": "org:eastside-playboy-gangster-crips",
   "name": "Eastside Playboy Gangster Crips",
-  "aliases": [],
+  "aliases": [
+    "E/S PBGC"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Eastside Playboy Gangster Crips is a street gang based in Detroit.",
+  "description": "Eastside Playboy Gangster Crips (E/S PBGC) is an older, smaller Playboy Gangster Crip-aligned clique operating along blocks on East Warren Avenue on Detroit's eastside. It is one of several PBGC factions across Detroit, distinct from the main 7 Mile corridor set, with activity documented in the East Warren and Fox Creek neighborhoods.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/playboy-gangster-crips-pbgc-33rd-gangsters/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Inside the Powerful Rise of Playboy Gangster Crips in Detroit"
     }
   ]
 }

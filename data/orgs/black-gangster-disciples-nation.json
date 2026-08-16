@@ -4,15 +4,14 @@
   "type": "nation",
   "lane": "prison",
   "metro": "Chicago",
-  "description": "The Gangster Disciples (GDN) are an African-American street and prison gang rooted in Chicago's Englewood neighborhood, formed when Larry Hoover's Supreme Gangsters and David Barksdale's Black Disciples merged around 1968 to create the Black Gangster Disciple Nation. After Barksdale died in 1974 and the organization fractured in 1989, Hoover's faction retained the Gangster Disciples name and expanded to an estimated 30,000–50,000 members across 35+ states with a significant prison presence. Hoover was convicted in 1997 on 40 federal counts including drug conspiracy, extortion, and running a criminal enterprise from prison; he was housed at ADX Florence until his federal sentence was commuted, and renounced his gang ties in 2022.",
+  "description": "The Gangster Disciples (GDN) are an African-American street and prison gang founded in Chicago's Englewood neighborhood when Larry Hoover's Supreme Gangsters and David Barksdale's Black Disciples merged in 1968 to form the Black Gangster Disciple Nation. After Barksdale died in 1974 and the alliance fractured in 1989, Hoover's faction retained the Gangster Disciples name and expanded to an estimated 25,000–50,000 members across 35+ states with a significant prison presence. In 1997, Hoover was convicted on 40 federal counts including conspiracy, extortion, money laundering, and running a continuing criminal enterprise; his federal sentences were commuted by President Trump in May 2025, though he remains incarcerated under a separate 200-year Illinois state sentence for a 1973 murder conviction.",
   "founded_year": 1968,
   "aliases": [
     "GDs",
     "GDN",
     "Gangster Disciple Nation",
     "Growth & Development",
-    "Black Gangster Disciples",
-    "BGD"
+    "Black Gangster Disciples"
   ],
   "status": "active",
   "sources": [
@@ -27,7 +26,8 @@
   ],
   "colors": [
     "blue",
-    "black"
+    "black",
+    "gray"
   ],
   "founded_year_precision": "circa",
   "symbols": [

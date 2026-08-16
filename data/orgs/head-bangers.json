@@ -7,14 +7,14 @@
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Head Bangers is a street gang based in Detroit.",
+  "description": "Head Bangers (also known as Headbanger Bloods) is a Blood-affiliated street gang based in Detroit, Michigan. Emerging in the early 1990s, the set grew to become one of the city's largest Blood-affiliated gangs.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
-      "url": "https://detroitstreetgangs.com/rollin-neighborhood-crips-2x-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "url": "https://detroitstreetgangs.com/detroit-bloods/",
+      "title": "Inside the History of Blood-Affiliated Groups in Detroit – DetroitStreetGangs.com"
     }
   ]
 }

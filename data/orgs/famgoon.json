@@ -1,20 +1,22 @@
 {
   "id": "org:famgoon",
   "name": "Famgoon",
-  "aliases": [],
+  "aliases": [
+    "Famerica"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Famgoon is a street gang based in Detroit.",
+  "description": "Famgoon, also known as Famerica, is a Detroit-based street group that emerged as a remnant of the Black Mafia Family (BMF) following federal wiretaps, surveillance, and synchronized raids in the 2000s that dismantled that organization.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Historical and Defunct Street Groups in Detroit | DetroitStreetGangs.com"
     }
   ]
 }

@@ -1,20 +1,23 @@
 {
   "id": "org:fordham-baldies",
   "name": "Fordham Baldies",
-  "aliases": [],
+  "aliases": [
+    "Belmont Baldies",
+    "Baldie Mob"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
   "founded_year": 1945,
   "founded_year_precision": "circa",
-  "description": "Fordham Baldies is a street gang based in New York.",
+  "description": "Italian-American street gang from the Belmont section of the Bronx, centered around East 187th Street, Belmont Avenue, and Arthur Avenue. Active primarily in the 1950s, the Baldies were known for their shaved heads and were considered one of the most feared gangs in the North Bronx. Singer Dion DiMucci, later of Dion and the Belmonts, was a member. In June 1954, a retaliatory drive-by shooting by the rival East Harlem Red Wings at Piggy's Candy Store on Belmont Avenue killed associate Ernest Montuoro and wounded two Baldies. Some members later joined organized crime.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=1208",
-      "title": "newyorkcitygangs.com"
+      "title": "1954 Red Wings & Fordham Baldies | New York City Fighting Gangs"
     }
   ]
 }

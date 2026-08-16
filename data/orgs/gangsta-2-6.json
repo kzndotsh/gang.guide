@@ -1,20 +1,31 @@
 {
   "id": "org:gangsta-2-6",
   "name": "Gangsta 2-6",
-  "aliases": [],
+  "aliases": [
+    "Two Six",
+    "Gangster Two Six",
+    "G26",
+    "GTS"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
   "founded_year": 1960,
   "founded_year_precision": "decade",
-  "description": "Gangsta 2-6 is a street gang based in New York.",
-  "colors": [],
+  "description": "Gangsta 2-6 is a Chicago-based street gang and branch of the Gangster Two Six nation, which originated in the Little Village neighborhood along 26th Street on the city's southwest side in the late 1960s. Aligned with the Folk Nation, the gang expanded into Chicago's western suburbs — including Cicero, Berwyn, and Countryside — during the 1980s and early 1990s. The gang is known for a long-standing rivalry with the Latin Kings.",
+  "colors": [
+    "black",
+    "beige"
+  ],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
-      "url": "http://www.stonegreasers.com/greaser/12th_street_players.html",
-      "title": "www.stonegreasers.com"
+      "url": "https://wikibin.org/articles/gangster-two-six.html",
+      "title": "Gangster Two Six | Wikibin (Archived Wikipedia Article)"
     }
+  ],
+  "symbols": [
+    "Playboy Bunny With Bent Right Ear"
   ]
 }

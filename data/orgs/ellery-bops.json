@@ -5,9 +5,9 @@
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": 1955,
+  "founded_year": 1956,
   "founded_year_precision": "circa",
-  "description": "Ellery Bops is a street gang based in New York.",
+  "description": "The Ellery Bops were a 1950s–1960s street gang based in the Williamsburg and Bedford-Stuyvesant border area of Brooklyn, centered around Ellery Street. Composed predominantly of second-generation Italian youth, they were allied with the Halsey Bops of Bushwick and operated near the Marcy and Sumner Projects alongside gangs such as the Buccaneers, Jesters, and Latin Kings. In August 1956, member Jose Santiago (15) was stabbed to death by the rival Royal Counts. In 1962 they were involved in a shooting clash with the Latin Kings near P.S. 148. Their graffiti tag 'LAMF' (Like a Motherf***er) appeared on walls in the Williamsburg area. The gang faded by the mid-1960s.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
@@ -16,5 +16,8 @@
       "url": "http://www.stonegreasers.com/greaser/halsey_bops.html",
       "title": "www.stonegreasers.com"
     }
+  ],
+  "symbols": [
+    "LAMF"
   ]
 }

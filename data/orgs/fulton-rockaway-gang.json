@@ -1,20 +1,25 @@
 {
   "id": "org:fulton-rockaway-gang",
   "name": "Fulton-Rockaway gang",
-  "aliases": [],
+  "aliases": [
+    "Fulton-Rockaway Boys"
+  ],
   "type": "street_gang",
   "lane": "new-york",
   "metro": "New York",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Fulton-Rockaway gang is a street gang based in New York.",
-  "colors": [],
+  "description": "The Fulton-Rockaway Boys were an Italian-American teenage street gang active in Brooklyn, New York during the 1950s and 1960s, named for the intersection of Rockaway Avenue and Fulton Street. The gang engaged in auto theft, fencing stolen goods, and street fights, and is best known as the gang where John Gotti — who rose to leadership through his fighting ability and natural command — met future Gambino crime family associates including Angelo Ruggiero and Wilfred 'Willie Boy' Johnson. The gang effectively served as a mob recruiting pipeline, with many members later joining the Gambino family.",
+  "colors": [
+    "purple",
+    "black"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://www.stonegreasers.com/greaser/halsey_bops.html",
-      "title": "www.stonegreasers.com"
+      "title": "Halsey Bops of Brooklyn – Stone Greasers"
     }
   ]
 }

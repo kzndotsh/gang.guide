@@ -1,13 +1,15 @@
 {
   "id": "org:hudson-street",
   "name": "Hudson Street",
-  "aliases": [],
+  "aliases": [
+    "Hudson's"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Hudson Street is a street gang based in New York.",
+  "description": "Hudson Street, known as 'the Hudson's', was a Chicago street gang active in the early-to-mid 1960s in the neighborhood north of the Cabrini Green housing projects. It was one of three founding gangs — alongside Mohawk Street (the Mohawks) and the Cleveland Jammers — that merged to form The CORP, a prominent white gang whose turf ran along North Avenue in the Lincoln Park/Old Town area of Chicago.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",

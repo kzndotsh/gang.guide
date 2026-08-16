@@ -6,15 +6,19 @@
   "lane": "new-york",
   "metro": "New York",
   "founded_year": null,
-  "founded_year_precision": "estimate",
-  "description": "Dukanes is a street gang based in New York.",
+  "founded_year_precision": "decade",
+  "description": "The Dukanes were an Italian-American street gang from Williamsburg, Brooklyn, originating out of the Jackson Street settlement house in the 1950s. Their rivals included the Saints, El Quintos, Phantom Lords, Halsey Bops, and the Chaplains. The gang is believed to be a predecessor to the Jackson Gents, with at least one member photographed wearing a Dukanes jacket before the group adopted that later name.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://www.stonegreasers.com/greaser/halsey_bops.html",
-      "title": "www.stonegreasers.com"
+      "title": "Bushwick Brooklyn – Halsey Bops Gang and The Saints (Stone Greasers)"
+    },
+    {
+      "url": "https://www.stonegreasers.com/newyork.html",
+      "title": "New York Greasers, Gangs and Clubs From New York (Stone Greasers)"
     }
   ]
 }

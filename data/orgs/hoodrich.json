@@ -7,14 +7,14 @@
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "HoodRich is a street gang based in Detroit.",
+  "description": "HoodRich is a defunct street gang based in Detroit, Michigan.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Historical and Defunct Street Groups in Detroit"
     }
   ]
 }
