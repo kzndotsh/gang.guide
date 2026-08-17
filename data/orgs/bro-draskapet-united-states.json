@@ -5,17 +5,23 @@
   "metro": "United States",
   "founded_year": 1995,
   "founded_year_precision": "exact",
-  "description": "Br\u00f6draskapet ('The Brotherhood') is a Swedish prison gang founded in 1995 by inmates at the maximum security prison in Kumla, Sweden. It is one of Sweden's most notorious criminal organizations.",
+  "description": "Brödraskapet ('The Brotherhood', abbreviated BSK) is a Swedish prison gang founded on 27 May 1995 by inmates at the maximum security prison in Kumla, Sweden, led by founding president Daniel 'Danny the Hood' Fitzpatrick. It is considered one of Sweden's most notorious criminal organizations and is classified by Swedish police as meeting EU criteria for organized crime.",
   "type": "prison_gang",
-  "colors": [
-    "black"
-  ],
+  "colors": [],
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Bro_Draskapet",
-      "title": "Bro Draskapet \u2014 Wikipedia"
+      "url": "https://en.wikipedia.org/wiki/Br%C3%B6draskapet",
+      "title": "Brödraskapet — Wikipedia"
     }
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "BSK",
+    "The Brotherhood"
+  ],
+  "membership_estimate": 65,
+  "symbols": [
+    "BSK",
+    "Stockholm Tattoo"
+  ]
 }

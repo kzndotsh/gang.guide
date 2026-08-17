@@ -1,20 +1,38 @@
 {
   "id": "org:toledo-mafia-counts",
   "name": "Toledo Mafia Counts",
-  "aliases": [],
+  "aliases": [
+    "TMC"
+  ],
   "type": "street_gang",
   "lane": "midwest",
   "metro": "Toledo",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Toledo Mafia Counts is a street gang based in Detroit.",
-  "colors": [],
+  "description": "Toledo Mafia Counts (TMC) is a set of the Latin Counts street gang, a People Nation-affiliated organization. The set originated on the 5600 block of Toledo Street in southwest Detroit, Michigan. TMC maintained a rivalry with a Latin Kings set active in Clark Park and Mexicantown, which it eventually overpowered. Its former president, Christopher 'C-5' Rishell, was sentenced to 20 years in federal prison in 2019 following a 2017 drive-by shooting. The set is considered defunct or severely diminished following federal prosecutions.",
+  "colors": [
+    "black",
+    "red"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Historical and Defunct Street Groups in Detroit – DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edmi/pr/latin-counts-gang-leader-sentenced-20-years-prison-orchestrating-deadly-drive-shooting",
+      "title": "Latin Counts Gang Leader Sentenced to 20 Years in Prison – U.S. Department of Justice"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Latin_Counts",
+      "title": "Latin Counts – Wikipedia"
     }
+  ],
+  "symbols": [
+    "Five-point Star",
+    "Knight's Helmet",
+    "Count Sword"
   ]
 }

@@ -1,20 +1,22 @@
 {
   "id": "org:shredgang",
   "name": "ShredGang",
-  "aliases": [],
+  "aliases": [
+    "BGSG"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "ShredGang is a street gang based in Detroit.",
+  "description": "ShredGang is a Detroit street gang that forms part of the BandGang/ShredGang (BGSG) association, having aligned with BandGang (formerly MPR JackBoyz) among younger members. The group maintains loose affiliations with West Coast Blood-affiliated sets including the Inglewood Family Gangster Bloods (IFGB), Neighborhood Pirus (NHP), and Centinela Park Family Gangster Bloods (CPFGB). Documented rivals include TNO/826, TTO/886, and 9000GlockBoyz.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/detroit-gangster-disciples/",
-      "title": "DetroitStreetGangs.com"
+      "title": "The Growth and Influence of Gangster Disciples in Detroit – DetroitStreetGangs.com"
     }
   ]
 }

@@ -1,13 +1,16 @@
 {
   "id": "org:thorndale-jagoffs",
   "name": "Thorndale Jagoffs",
-  "aliases": [],
+  "aliases": [
+    "Thorndale Jarvis Organization",
+    "TJO"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
   "founded_year": 1959,
-  "founded_year_precision": "exact",
-  "description": "Thorndale Jagoffs is a street gang based in New York.",
+  "founded_year_precision": "circa",
+  "description": "The Thorndale Jagoffs (TJO) were a white greaser street gang based in the Edgewater neighborhood of Chicago, Illinois, centered around the Thorndale and Jarvis avenue area near Senn High School. Originally known as the Thorndale Jarvis Organization, they adopted the 'Jagoffs' name after a Chicago newspaper article quoted a police officer calling them 'a bunch of jagoffs.' By the 1970s their territory had been overtaken by the Latin Kings, leaving only a small remnant of members.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",

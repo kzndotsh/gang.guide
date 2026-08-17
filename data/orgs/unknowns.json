@@ -1,14 +1,21 @@
 {
   "id": "org:unknowns",
   "name": "Unknowns",
-  "aliases": [],
+  "aliases": [
+    "Insane Unknowns",
+    "Almighty Insane Unknown Nation",
+    "Unknown Souls"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
-  "description": "Unknowns is a street gang based in Chicago.",
-  "colors": [],
+  "founded_year": 1964,
+  "founded_year_precision": "circa",
+  "description": "The Insane Unknowns (formally the Almighty Insane Unknown Nation) are a Chicago street gang founded circa 1964 by a member known as Popeye in the Bucktown neighborhood. Originally called the Unknown Souls, they renamed themselves the Unknowns in 1967 and initially wore all black. Around 1973, a leader known as T.J. expanded the gang to Leavitt and Schiller in Wicker Park, where they became the Insane Unknowns and adopted black and white as their colors. A People Nation affiliate, the gang has historically been active across northwest and west side Chicago neighborhoods including Wicker Park, West Humboldt Park, and K-Town, and is predominantly Hispanic though their early membership was mixed Hispanic and white.",
+  "colors": [
+    "black",
+    "white"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [

@@ -15,22 +15,11 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Atomwaffen_Division",
-      "title": "Atomwaffen Division \u2014 Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Combat_18",
-      "title": "Combat 18 \u2014 Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Hammerskins",
-      "title": "Hammerskins \u2014 Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/The_Base_%28neo-Nazi_group%29",
-      "title": "The Base %28neo-Nazi group%29 \u2014 Wikipedia"
+      "title": "Atomwaffen Division — Wikipedia"
     }
   ],
   "colors": [
+    "black",
     "white"
   ],
   "status": "active"

@@ -10,7 +10,7 @@
   "type": "street_gang",
   "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
-  "description": "The Bounty Hunter Watts Bloods are a Blood set based in the Nickerson Gardens public housing projects in Watts, the largest government housing complex west of the Mississippi. Originally known as the Green Jackets, founded in 1969 by Gary Barker and Bobby Jack. With over 2,000 documented members subdivided into cliques (Lot Boys, Block Boys, Bell Haven, Ace Line, Duece Line, Tray Line, Four Line, Five Line), they control the largest territory of any African-American street gang in Watts. Their longstanding feud with the Grape Street Watts Crips has been described as 'the most violent and long lasting feud between two gangs in the Watts area.' They notably allied with the rival PJ Watts Crips against the Grape Street Crips.",
+  "description": "The Bounty Hunter Watts Bloods are a Blood set based in the Nickerson Gardens public housing projects in Watts, the largest public housing development west of the Mississippi. Originally known as the Green Jackets, they were founded in 1969 by Gary Barker and Bobby Jack, growing into one of the largest African-American street gangs in Watts with an estimated 2,000 members. They are best known for their longstanding rivalry with the Grape Street Watts Crips, described as 'the most violent and long lasting feud between two gangs in the Watts area,' while maintaining an alliance with the PJ Watts Crips against that shared rival.",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "url": "https://en.wikipedia.org/wiki/Crips%E2%80%93Bloods_gang_war",
-      "title": "Crips%E2%80%93Bloods gang war — Wikipedia"
+      "title": "Crips–Bloods gang war — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Grape_Street_Watts_Crips",
@@ -33,7 +33,7 @@
   "founded_year": 1969,
   "colors": [
     "red",
-    "green"
+    "black"
   ],
   "founded_year_precision": "exact",
   "status": "active",
@@ -52,8 +52,8 @@
     "59BH",
     "59BHB",
     "BHB",
-    "BH",
     "Flames",
-    "282"
+    "282",
+    "28 Dogs"
   ]
 }
