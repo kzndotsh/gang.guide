@@ -12,17 +12,15 @@
   "aliases": [
     "KKK",
     "Invisible Empire",
-    "The Klan",
-    "Knights of the Ku Klux Klan"
+    "The Klan"
   ],
   "colors": [
     "white"
   ],
   "symbols": [
     "Burning Cross",
-    "Blood Drop Cross",
-    "White Robes And Hood",
-    "MIOAK Patch"
+    "Blood Drop Cross (MIOAK)",
+    "White Robes And Hood"
   ],
   "sources": [
     {
@@ -30,8 +28,12 @@
       "title": "Gang Enforcement — Ku Klux Klan Profile"
     },
     {
-      "url": "https://archive.adl.org/learn/ext_us/kkk/default.html",
-      "title": "Anti-Defamation League — Ku Klux Klan"
+      "url": "https://www.splcenter.org/fighting-hate/extremist-files/ideology/ku-klux-klan",
+      "title": "Southern Poverty Law Center — Ku Klux Klan Extremist File"
+    },
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/blood-drop-cross",
+      "title": "Anti-Defamation League — Blood Drop Cross / MIOAK Hate Symbol"
     }
   ]
 }

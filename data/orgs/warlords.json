@@ -1,14 +1,19 @@
 {
   "id": "org:warlords",
   "name": "Warlords",
-  "aliases": [],
+  "aliases": [
+    "War Lords"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Warlords is a street gang based in Chicago.",
-  "colors": [],
+  "description": "The Warlords were a Chicago street gang based in the Wicker Park and Bucktown neighborhoods, active at least by the late 1970s. The gang operated under multiple factions — including the La Familia, Spaulding, Clemente, Bucktown, and Anderson Warlords — and was aligned with the United Neighborhoods alliance. Gang colors were orange and black.",
+  "colors": [
+    "orange",
+    "black"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [

@@ -3,13 +3,14 @@
   "name": "Lopers 13",
   "aliases": [
     "LPS",
-    "LPSX13"
+    "LPSX13",
+    "Varrio Lopers"
   ],
   "type": "street_gang",
   "lane": "california-latino-inland",
-  "founded_year": 1975,
-  "founded_year_precision": "exact",
-  "description": "Lopers 13 is a Mexican American street gang founded in Santa Ana, California, in the late 1980s or early 1990s. It is the largest gang in Santa Ana by territory, controlling areas including Main Street, Minnie Street, First Street, and Edinger Avenue. The gang is involved in drug trafficking and has been targeted by law enforcement operations.",
+  "founded_year": 1979,
+  "founded_year_precision": "circa",
+  "description": "Lopers 13, also known as Varrio Lopers, is a Mexican American street gang founded in Madison Park, Santa Ana, California, in the late 1970s. It is the largest gang in Santa Ana by territory, controlling areas including Main Street, Minnie Street, First Street, and Edinger Avenue. The gang is affiliated with the Sureños and is involved in drug trafficking, and has been targeted by law enforcement operations.",
   "metro": "Orange County",
   "sources": [
     {

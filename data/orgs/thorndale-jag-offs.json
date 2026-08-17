@@ -1,11 +1,14 @@
 {
   "id": "org:thorndale-jag-offs",
   "name": "Thorndale Jag Offs",
-  "aliases": [],
+  "aliases": [
+    "Thorndale Jarvis Organization",
+    "Truth Justice and Order"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
-  "description": "Thorndale Jag Offs was a street gang founded 1962 in Chicago. Disbanded around 1990.",
+  "description": "Thorndale Jag Offs (TJO) was a white greaser street gang founded in 1962 by Joe Ganci at Thorndale and Kenmore in the Edgewater/Uptown neighborhood of Chicago. Originally called the Thorndale Jarvis Organization, the gang dominated the eastern Edgewater corridor through the 1960s–70s. Co-founder Gary Kellas received a 30-year sentence in 1986 for armed robbery of an undercover officer, after which the gang went extinct.",
   "founded_year": 1962,
   "founded_year_precision": "exact",
   "colors": [],
@@ -19,7 +22,7 @@
   ],
   "disbanded_year": 1990,
   "symbols": [
-    "Tjo"
+    "TJO"
   ],
   "membership_estimate": 300
 }

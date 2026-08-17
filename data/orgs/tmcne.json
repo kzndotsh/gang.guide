@@ -1,20 +1,28 @@
 {
   "id": "org:tmcne",
   "name": "TMCNE",
-  "aliases": [],
+  "aliases": [
+    "30Boyz",
+    "TMC",
+    "TMCG"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "TMCNE is a street gang based in Detroit.",
+  "description": "TMCNE (TMC + CNE), also known as the \"30Boyz,\" is a northwest Detroit-based criminal street gang operating primarily within the 48235 ZIP code. The group is also designated as TMCG/8624. It has documented associations with 24CashGang (FWC/392), a Crip-aligned group connected to the Rollin 60s Neighborhood Crips, and is listed as a rival of the Rollin 20s Crips (Detroit).",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Understanding Hybrid and Mixed-Affiliation Groups in Metro Detroit – DetroitStreetGangs.com"
     }
+  ],
+  "symbols": [
+    "862",
+    "8624"
   ]
 }

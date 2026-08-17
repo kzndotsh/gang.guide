@@ -10,7 +10,7 @@
   "metro": "Chicago",
   "founded_year": 1965,
   "founded_year_precision": "circa",
-  "description": "The Aristocrats originated as the Black Saints, a street corner greaser gang based at Seminary and Barry in Chicago that had existed since the 1950s. They changed their name around 1965 due to confusion about being a Black club. They were a multiethnic gang, mostly white but including Puerto Ricans, Mexicans, Irish, and Italians, and were active in turf conflicts throughout the 1960s and 1970s.",
+  "description": "The Aristocrats were a multiethnic street corner greaser gang based at Seminary and Barry in the Lakeview neighborhood of Chicago, founded around 1965 by members including Mickey and Jr. Lira, who had previously belonged to the Black Saints — a greaser gang that hung out along Sheffield from Sheridan Road to Barry Street since the 1950s. The Black Saints did not change their name; the Aristocrats were formed as a new group by former Black Saints members. The name was chosen democratically, partly to avoid confusion with a Black club. They were mostly white but included Puerto Ricans, Mexicans, Irish, and Italians, and were active in turf conflicts throughout the 1960s and 1970s.",
   "colors": [
     "black",
     "white",
@@ -19,10 +19,6 @@
   "nation_affiliation": null,
   "status": "active",
   "sources": [
-    {
-      "url": "http://www.stonegreasers.com/greaser/aristocrats.html",
-      "title": "www.stonegreasers.com"
-    },
     {
       "url": "https://www.stonegreasers.com/greaser/aristocrats.html",
       "title": "Chicago Aristocrats Gang, Sherry-Berry Black Saints Gang – Stone Greasers"

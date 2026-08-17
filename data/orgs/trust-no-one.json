@@ -1,20 +1,26 @@
 {
   "id": "org:trust-no-one",
   "name": "Trust No One",
-  "aliases": [],
+  "aliases": [
+    "TNO",
+    "826"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Trust No One is a street gang based in Detroit.",
+  "description": "Trust No One (TNO) is a West Side Detroit street clique with Gangster Disciples and Folk Nation affiliation, primarily active in the 48206 ZIP code area around Linwood and Davison. The group uses the identifiers \"TNO,\" \"826,\" and 6-pointed star symbolism consistent with Folk Nation. Known activities include fraud, narcotics distribution, and street-level disputes. TNO was referenced in the 2018 federal BandGang VICAR prosecution, which stemmed in part from competition over credit card fraud. Rivals include TTO/886 and BandGang/ShredGang. In 2016, a member was convicted on manslaughter and firearm charges following a fatal shooting connected to the BandGang conflict.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Profiles of Major Neighborhood Street Groups in Detroit"
     }
+  ],
+  "symbols": [
+    "6-pointed Star"
   ]
 }

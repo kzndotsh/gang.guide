@@ -1,13 +1,15 @@
 {
   "id": "org:deuces",
   "name": "Deuces",
-  "aliases": [],
+  "aliases": [
+    "Morgan Deuces"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
-  "founded_year": 1955,
+  "lane": "chicago-independent",
+  "metro": "Chicago",
+  "founded_year": 1959,
   "founded_year_precision": "circa",
-  "description": "Deuces is a street gang based in New York.",
+  "description": "The Morgan Deuces are a Chicago street gang founded in 1959 in the Near West Side neighborhood at the intersection of Taylor Street and Morgan Street. Founded by Teddy McGee, a former Latin Count, the gang expanded into Pilsen and Marshall Square and spawned the Cullerton Deuces faction in the late 1960s. They aligned with the People Nation under the five-point star.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
@@ -16,5 +18,8 @@
       "url": "https://stonegreasers.com/greaser/new_york_gangs.html",
       "title": "New York Greasers, Gangs and Clubs From New York | Stone Greasers"
     }
+  ],
+  "symbols": [
+    "Five-point Star"
   ]
 }
