@@ -114,7 +114,7 @@ def detect_issues(org: dict, edge_count: int) -> list[str]:
         issues.append("html_in_desc")
 
     # Descriptions that are implausibly long or contain metadata junk
-    if len(desc) > 600:
+    if len(desc) > 800:
         issues.append("desc_too_long")
 
     # --- Founded year issues ---
