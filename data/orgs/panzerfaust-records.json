@@ -7,14 +7,18 @@
   "metro": "Dallas",
   "founded_year": 1998,
   "founded_year_precision": "exact",
-  "description": "Panzerfaust Records is a street gang based in Dallas.",
+  "description": "Panzerfaust Records was a Minnesota-based white power record label founded in September 1998 by Anthony Pierpont, Ed Wolbank, and Eric Davidson. The label distributed white power music and organized concerts across the United States, becoming the primary competitor of Resistance Records at its peak around 2000. It maintained ties to Hammerskin Nation, Volksfront, and the neo-Nazi group White Revolution. In 2004 it launched Project Schoolyard, a nationwide campaign distributing free white power sampler CDs to middle and high school students. The label shut down in early 2005 following founder Anthony Pierpont's arrest on drug charges and the revelation that he was of Hispanic descent.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
+      "url": "https://en.wikipedia.org/wiki/Panzerfaust_Records",
+      "title": "Panzerfaust Records - Wikipedia"
+    },
+    {
       "url": "https://www.adl.org/resources/profile/hammerskin-nation",
-      "title": "ADL (Anti-Defamation League)"
+      "title": "The Hammerskin Nation - ADL"
     }
   ]
 }

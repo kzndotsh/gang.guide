@@ -10,18 +10,17 @@
   "metro": "Chicago",
   "founded_year": 1965,
   "founded_year_precision": "circa",
-  "description": "The Seminary and Barry Aristocrats formed around 1965 as a name change from the Black Saints, a street corner greaser gang that had existed since the 1950s. The name was changed because outsiders assumed they were a Black club. The gang was mostly white but ethnically diverse, including Puerto Ricans, Mexicans, and Irish members, and was active in Chicago's North Side.",
+  "description": "The Seminary and Barry Aristocrats formed around 1965, founded by members who came out of the Black Saints, a street corner greaser gang that had existed on the North Side since the 1950s. The Aristocrats were not a rename of the Black Saints — they were a new group, though two Black Saints warlords (Mickey and Jr. Lira) were prominent in starting it. The name was chosen democratically, partly because outsiders assumed 'Black Saints' referred to a Black club. The gang was mostly white but ethnically diverse, including Puerto Ricans, Mexicans, Irish, and Italian members, and was active in Chicago's Lakeview neighborhood.",
   "colors": [
-    "black",
-    "white",
-    "red"
+    "red",
+    "black"
   ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://www.stonegreasers.com/greaser/aristocrats.html",
-      "title": "www.stonegreasers.com"
+      "title": "Chicago Aristocrats Gang, Sherry-Berry Black Saints Gang"
     },
     {
       "url": "https://gaylords712.com/greaser/aristocrats_Simoncityroyals_deuces_rebels.html",

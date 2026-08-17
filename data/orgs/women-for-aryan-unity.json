@@ -1,20 +1,22 @@
 {
   "id": "org:women-for-aryan-unity",
   "name": "Women for Aryan Unity",
-  "aliases": [],
+  "aliases": [
+    "WAU"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "United States",
   "founded_year": 1990,
-  "founded_year_precision": "circa",
-  "description": "Women for Aryan Unity is a street gang based in United States.",
+  "founded_year_precision": "exact",
+  "description": "Women for Aryan Unity (WAU) is a longstanding white supremacist organization, founded in 1990, notable for being one of the only female-only white supremacist groups of recent decades. WAU promotes and supports women in the white supremacist movement from a traditionalist vantage point, with content in its newsletters and websites focusing on domestic and child-rearing topics. The group has also provided support to white supremacist prison inmates, particularly those viewed as political prisoners of war.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
-      "url": "https://www.adl.org/resources/profile/volksfront",
-      "title": "ADL (Anti-Defamation League)"
+      "url": "https://www.adl.org/resources/hate-symbol/women-aryan-unity",
+      "title": "Women for Aryan Unity – ADL Hate Symbols Database"
     }
   ]
 }

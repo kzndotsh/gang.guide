@@ -1,13 +1,16 @@
 {
   "id": "org:rtm",
   "name": "RTM",
-  "aliases": [],
+  "aliases": [
+    "Related Through Money",
+    "Related Thru Money"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "RTM is a street gang based in Detroit.",
+  "description": "RTM (Related Through Money) is a street gang based in northwest Detroit, primarily active around Cody High School in the area known as the 'Skuddzone,' bounded by the Southfield Freeway and Greenfield Road to the west and east, and Plymouth Road and Joy Road to the north and south. The gang was federally indicted in 2015 under the Detroit One initiative on racketeering charges including narcotics distribution, murders, carjackings, and assaults.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
@@ -15,6 +18,10 @@
     {
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
       "title": "Historical and Defunct Street Groups in Detroit – DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://www.fbi.gov/contact-us/field-offices/detroit/news/detroit-one-collaboration-leads-to-indictment-of-rtm-gang-members-in-northwest-detroit",
+      "title": "Detroit One Collaboration Leads to Indictment of RTM Gang Members in Northwest Detroit – FBI"
     }
   ]
 }

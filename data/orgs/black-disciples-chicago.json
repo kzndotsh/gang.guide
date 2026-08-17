@@ -10,7 +10,7 @@
   "lane": "chicago-folk",
   "metro": "Chicago",
   "founded_year": 1966,
-  "description": "The Black Disciples (BDs) are an African-American street gang with 15,000 members that originated in Chicago. In 1958, teenagers from Hyde Park, Englewood, and Kenwood formed the 'Devil's Disciples' — founders included David Barksdale, Richard Strong, Leonard Longstreet, and Prince Old Timer. In 1966, Barksdale created the 'Black Disciples Nation' to boost recruitment into the thousands. In 1969, Larry Hoover merged his Supreme Gangsters with Barksdale's Disciples to form the BGDN. After Barksdale died of kidney failure in 1974, ideological differences split the alliance into the Gangster Disciples and Black Disciples by 1981. Mickey Bull led the BDs until his murder by GDs in August 1991, triggering permanent war. In 1994, 11-year-old member Robert 'Yummy' Sandifer accidentally killed a bystander and was then executed by fellow BDs. Had 300+ sets by 1974. Present in 10+ states. Notable members include Chief Keef, Lil Durk, and King Von.",
+  "description": "The Black Disciples (BDs) are an African-American street gang founded in 1966 by David Barksdale on Chicago's South Side, growing out of the earlier Devil's Disciples. In 1969, Barksdale merged with Larry Hoover's Supreme Gangsters to form the Black Gangster Disciple Nation (BGDN); after Barksdale died of kidney failure in 1974, the alliance fractured and the BDs formally split from the Gangster Disciples in the early 1980s, joining the Folk Nation. War with the GDs erupted in 1991 and drew international attention in 1994 when 11-year-old member Robert 'Yummy' Sandifer killed a bystander and was subsequently executed by fellow BDs. The gang operates across Chicago and at least nine other states, with roughly 300 sets in the Chicagoland area as of the mid-2000s.",
   "colors": [
     "black",
     "blue"
@@ -26,24 +26,12 @@
       "title": "Black Disciples — UnitedGangs"
     },
     {
-      "url": "https://www.ngcrc.com/bdprofile.html",
+      "url": "https://www.ngcrc.com/ngcrc/bdprofile.html",
       "title": "Black Disciples Gang Profile — NGCRC"
     },
     {
       "url": "https://blackpast.org/african-american-history/barksdale-david-1947-1974",
-      "title": "Academic research"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
-      "title": "Almighty Black P. Stone Nation — Wikipedia"
-    },
-    {
-      "url": "https://chicagoganghistory.com/gang/black-disciples",
-      "title": "Black Disciples - Chicago Gang History"
-    },
-    {
-      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
-      "title": "FBI NGTA 2011 — Emerging Trends"
+      "title": "David Barksdale (1947–1974) — BlackPast"
     }
   ],
   "symbols": [
@@ -53,6 +41,6 @@
   ],
   "founded_year_precision": "exact",
   "status": "active",
-  "membership_estimate": 6000,
+  "membership_estimate": 15000,
   "military_service": "Army, Marines, Navy"
 }
