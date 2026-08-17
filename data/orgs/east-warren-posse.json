@@ -1,13 +1,17 @@
 {
   "id": "org:east-warren-posse",
   "name": "East Warren Posse",
-  "aliases": [],
+  "aliases": [
+    "East Warren Crips",
+    "EWC",
+    "East Warrens"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "The East Warren Posse (EWP), also known as East Warren Crips (EWC), is a predominantly African American, Crip-affiliated street gang historically active on Detroit's east side. The gang is centered around the East Warren Avenue corridor and identifies with the color blue consistent with Crip affiliation.",
+  "description": "The East Warren Posse (EWP), also known as the East Warren Crips (EWC), is a predominantly African American, Crip-affiliated street gang historically active on Detroit's east side, centered around the East Warren Avenue corridor, with an extended presence along Warren Avenue into the west side near neighborhoods like Core City. The group is historically Gangster Disciple (GD)-aligned, with senior members claiming to be 'Rollin' 60s GD Crips' — a Detroit-specific adaptation of the Crips street gang. EWP is generally described as a legacy east-side set, with its reputation shaped more by historical presence and legal references than by contemporary social-media visibility.",
   "colors": [
     "blue"
   ],
@@ -16,7 +20,7 @@
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/east-warren-posse-ewp-east-warren-crips/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Inside the Powerful Rise of East Warren Posse (EWP) / East Warren Crips in Detroit"
     }
   ]
 }

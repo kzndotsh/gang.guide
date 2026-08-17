@@ -115,6 +115,19 @@ org:ltc                                            # boilerplate: no verifiable 
 org:latin-deuces                                   # boilerplate: no dedicated page found
 org:statemafiaboyz                                 # boilerplate: source too sparse
 
+# Additional tool-limit dead-ends (repeated hits, no data found)
+org:22-bandcrew                                    # bare_source: no findable DOJ URL
+org:55-seven-mile-bloods                           # bare_source: DOJ URL not accessible
+org:american-outlaws                               # bare_source: stonegreasers page not found
+org:apaches                                        # bare_source: newyorkcitygangs page inaccessible
+org:bel-airs                                       # bare_source: stonegreasers page not found
+org:bronx-rockets                                  # bare_source: newyorkcitygangs page inaccessible
+org:chicago-players                                # bare_source: stonegreasers page not found
+org:cmh                                            # bare_source: no findable details
+org:24cashgang                                     # bare_source: DSG page not accessible
+org:7-mile-rollin-60s-crips                        # bare_source: DOJ URL not accessible
+org:7-mile-playboy-gangster-crips                  # bare_source: DOJ URL not accessible
+
 
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
