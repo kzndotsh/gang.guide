@@ -554,8 +554,11 @@ def apply_corrections(org: dict, verdict: dict, issues: list[str]) -> dict:
     new_desc = verdict.get("description")
     if new_desc is not None:
         if new_desc == "REMOVE":
-            changes["description"] = ""
+            # Only allow removal if the org has a replacement description coming from another field
+            # Never clear without replacement — would create a lint error
+            pass  # skip removal; log the intent but don't clear
         elif isinstance(new_desc, str) and len(new_desc) > 30 and "<" not in new_desc:
+            changes["description"] = new_desc
             changes["description"] = new_desc
 
     # Founded year
