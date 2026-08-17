@@ -1,20 +1,22 @@
 {
   "id": "org:marcy-chaplains",
   "name": "Marcy Chaplains",
-  "aliases": [],
+  "aliases": [
+    "Marcy Ave Chaplains"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
   "founded_year": 1952,
   "founded_year_precision": "circa",
-  "description": "Marcy Chaplains is a street gang based in New York.",
+  "description": "The Marcy Chaplains, also known as the Marcy Ave Chaplains, were a youth street gang active in Brooklyn, New York during the 1950s and into the early 1960s. Based around Marcy Avenue in the Bedford-Stuyvesant neighborhood, they were part of the so-called 'jitterbugging' gang era that defined New York City street gang culture of the period. They had documented interactions with other Brooklyn gangs including the Buccaneers and the Immortal Sinners.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=1817",
-      "title": "newyorkcitygangs.com"
+      "title": "New York City Fighting Gangs"
     }
   ]
 }

@@ -1,20 +1,22 @@
 {
   "id": "org:north-side-soldiers",
   "name": "North Side Soldiers",
-  "aliases": [],
+  "aliases": [
+    "N.S.S."
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
-  "description": "North Side Soldiers is a street gang based in Detroit.",
+  "founded_year": 2015,
+  "founded_year_precision": "circa",
+  "description": "North Side Soldiers (N.S.S.) is a Detroit-based street and graffiti crew that emerged in the mid-2010s on the city's north and northwest sides. It was founded by a member known by the street moniker \"Syxx,\" a younger cousin of Zahid Sekou (a/k/a \"Tiny Joker\"), who founded the related Bloc Side Soldiers (B.S.S.). The overlap in membership and territory between N.S.S. and B.S.S. contributed to the formation of the 5Point Nation Crips (5PN) alliance around 2015–2016, a Crip-aligned street gang alliance operating in Detroit's Five Points neighborhood.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/5point-nation-crips-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Inside the Powerful Rise of 5Point Nation Crips (5PN) in Detroit – DetroitStreetGangs.com"
     }
   ]
 }

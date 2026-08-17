@@ -7,7 +7,7 @@
   "type": "street_gang",
   "lane": "california-crips-south-la",
   "metro": "Los Angeles",
-  "description": "The Grape Street Watts Crips are a Crip set based in the Jordan Downs housing project in Watts, Los Angeles, uniquely identified by wearing purple rather than traditional Crip blue. Their decades-long rivalry with the Bounty Hunter Bloods of Nickerson Gardens has been called 'the most violent and long lasting feud between two gangs in the Watts area.' In 2008, the murder of veteran member Brandon 'BL' Bullard by the East Coast Crips sparked a war resulting in 9 dead and 26 wounded in six weeks; that same year a federal indictment charged members with manufacturing and distributing PCP. The gang has since expanded beyond Los Angeles into Tennessee, New Jersey, and Connecticut.",
+  "description": "The Grape Street Watts Crips are a Crip set based in the Jordan Downs housing project in Watts, Los Angeles, identified by wearing purple rather than traditional Crip blue. Their decades-long rivalry with the Bounty Hunter Bloods of Nickerson Gardens has been called 'the most violent and long lasting feud between two gangs in the Watts area.' In 2008, the murder of veteran member Brandon 'BL' Bullard by the East Coast Crips sparked a retaliatory war that left 9 dead and 26 wounded in six weeks. The gang has since expanded beyond Los Angeles into Tennessee, New Jersey, and Connecticut.",
   "nation_affiliation": "org:crips",
   "sources": [
     {
@@ -21,10 +21,6 @@
     {
       "url": "https://en.wikipedia.org/wiki/Bounty_Hunter_Watts_Bloods",
       "title": "Bounty Hunter Watts Bloods — Wikipedia"
-    },
-    {
-      "url": "https://www.justice.gov/opa/pr/attorney-general-mukasey-announces-charges-against-13-grape-street-crips-gang-members",
-      "title": "AG Mukasey Announces Charges Against 13 Grape Street Crips — DOJ"
     }
   ],
   "founded_year": 1973,

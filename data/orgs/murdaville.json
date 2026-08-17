@@ -1,20 +1,27 @@
 {
   "id": "org:murdaville",
   "name": "Murdaville",
-  "aliases": [],
+  "aliases": [
+    "Villains",
+    "CMW",
+    "928"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Murdaville is a street gang based in Detroit.",
+  "description": "Murdaville is a hybrid street gang originating around Sussex and Fenkell (S-Block) in Detroit. The group developed out of SellGang and Sham Gang, with Murdaville generally considered the younger branch. It operates within the '9s alliance' alongside SellGang, LTK, and 928. Members use the 'Villains' moniker and purple-heart emoji as identifiers, with memorial identities CMW and 928 central to the group's mythology. Its affiliation is fluid but rooted in local Crip lineage.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Understanding Hybrid and Mixed-Affiliation Groups in Metro Detroit"
     }
+  ],
+  "symbols": [
+    "Purple Heart Emoji"
   ]
 }

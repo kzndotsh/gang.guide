@@ -4,8 +4,8 @@
   "type": "nation",
   "lane": "prison",
   "metro": "Chicago",
-  "description": "The Gangster Disciples (GDN) are an African-American street and prison gang founded in Chicago's Englewood neighborhood when Larry Hoover's Supreme Gangsters and David Barksdale's Black Disciples merged in 1968 to form the Black Gangster Disciple Nation. After Barksdale died in 1974 and the alliance fractured in 1989, Hoover's faction retained the Gangster Disciples name and expanded to an estimated 25,000–50,000 members across 35+ states with a significant prison presence. In 1997, Hoover was convicted on 40 federal counts including conspiracy, extortion, money laundering, and running a continuing criminal enterprise; his federal sentences were commuted by President Trump in May 2025, though he remains incarcerated under a separate 200-year Illinois state sentence for a 1973 murder conviction.",
-  "founded_year": 1968,
+  "description": "The Gangster Disciples (GD) are an African-American street and prison gang founded in Chicago when Larry Hoover's Supreme Gangsters and David Barksdale's Black Disciple Nation merged in 1969 to form the Black Gangster Disciple Nation. After Barksdale's death in 1974 and a factional split in 1989, Hoover's faction retained the Gangster Disciples name and expanded to an estimated 25,000–50,000 members across 35+ states with a significant prison presence. In 1997, Hoover was convicted on 40 federal counts including conspiracy, extortion, money laundering, and running a continuing criminal enterprise; his federal sentences were commuted by President Trump in May 2025, though he remains incarcerated under a separate 150-to-200-year Illinois state sentence stemming from a 1973 murder conviction.",
+  "founded_year": 1969,
   "aliases": [
     "GDs",
     "GDN",

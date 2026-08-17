@@ -1,13 +1,15 @@
 {
   "id": "org:mohawk-street",
   "name": "Mohawk Street",
-  "aliases": [],
+  "aliases": [
+    "Mohawks"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Mohawk Street is a street gang based in New York.",
+  "description": "Mohawk Street, also known as the Mohawks, was a street gang based in Chicago, Illinois, active in the neighborhood north of the Cabrini Green housing projects. In the early to mid 1960s, the Mohawks merged with the Hudson Street gang and the Cleveland Jammers to form the CORP, a larger white greaser gang centered around Armitage Avenue near Mohawk and Hudson Streets. The Mohawks were considered the older, more experienced contingent of the three founding groups.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",

@@ -7,14 +7,18 @@
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Lover Boys is a street gang based in Detroit.",
+  "description": "Lover Boys was a defunct Detroit street gang and one of several smaller crews — alongside the Kings' Men, Seven Crowns, and Chilli-Macs — absorbed by the Shakers, a larger Detroit youth gang active in the mid-20th century.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Historical and Defunct Street Groups in Detroit | DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Jackie_Wilson",
+      "title": "Jackie Wilson – Wikipedia"
     }
   ]
 }

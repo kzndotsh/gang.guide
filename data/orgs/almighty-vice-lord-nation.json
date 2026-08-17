@@ -4,13 +4,11 @@
   "type": "alliance",
   "lane": "prison",
   "metro": "Chicago",
-  "description": "The Almighty Vice Lord Nation (AVLN) is an African-American street and prison gang founded circa 1957 at the Illinois State Training School for Boys in St. Charles, Illinois, and headquartered in North Lawndale, Chicago. It is one of the oldest and largest gangs in Chicago, with an estimated 30,000–35,000 members across 28 states, and a founding member of the People Nation alliance. In the late 1960s, the Conservative Vice Lords briefly incorporated as a nonprofit, running businesses and job-training programs funded by government grants and the Rockefeller Foundation, before federal investigations shut the effort down in the early 1970s. The AVLN comprises 25+ semi-independent factions including the Conservative, Traveling, Insane, Mafia Insane, Imperial Insane, Renegade, and Unknown Vice Lords.",
+  "description": "The Almighty Vice Lord Nation (AVLN) is an African-American street and prison gang founded circa 1957 at the Illinois State Training School for Boys in St. Charles, Illinois, and headquartered in North Lawndale, Chicago. It is one of the oldest and largest gangs in Chicago, with an estimated 30,000–35,000 members across 28 states, and a founding member of the People Nation alliance. The AVLN comprises 25+ semi-independent factions including the Conservative, Traveling, Insane, Mafia Insane, Imperial Insane, Renegade, and Unknown Vice Lords.",
   "founded_year": 1957,
   "aliases": [
     "AVLN",
-    "Vice Lords",
-    "VL",
-    "Conservative Vice Lords"
+    "Vice Lords"
   ],
   "sources": [
     {
@@ -24,10 +22,6 @@
     {
       "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
       "title": "Almighty Black P. Stone Nation — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Black_Disciples",
-      "title": "Black Disciples — Wikipedia"
     }
   ],
   "colors": [
@@ -41,7 +35,7 @@
     "Playboy Bunny",
     "Cane",
     "Top Hat",
-    "Martini Glass",
+    "Champagne Glass",
     "Pyramid"
   ],
   "membership_estimate": 35000,
