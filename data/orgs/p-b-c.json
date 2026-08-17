@@ -1,13 +1,15 @@
 {
   "id": "org:p-b-c",
   "name": "P.B.C.",
-  "aliases": [],
+  "aliases": [
+    "Paulina Barry Community"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "P.B.C. is a street gang based in New York.",
+  "description": "P.B.C. (Paulina Barry Community) is a historical street gang from Chicago, Illinois. The gang is documented as a rival of the Aristocrats and fought alongside and against other Chicago greaser-era gangs including the Latin Eagles, Young Lords, Latin Kings, Taylor Street Jousters, Deuces, and Bel Airs.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",

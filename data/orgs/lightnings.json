@@ -1,20 +1,26 @@
 {
   "id": "org:lightnings",
   "name": "Lightnings",
-  "aliases": [],
+  "aliases": [
+    "Lightenings"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
-  "founded_year": 1953,
+  "founded_year": 1948,
   "founded_year_precision": "circa",
-  "description": "Lightnings is a street gang based in New York.",
-  "colors": [],
+  "description": "The Lightenings were a South Bronx street gang based on Stebbins Avenue, active primarily in the late 1940s and early 1950s. At their peak they claimed around 200 members spread throughout the South Bronx. Their club jackets were black and gold reversible. Primary rivals were the Rockets from the Brook Avenue area; the Fordham Baldies were also enemies.",
+  "colors": [
+    "black",
+    "gold"
+  ],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=3231",
-      "title": "newyorkcitygangs.com"
+      "title": "Bronx Rockets & Lightnings | New York City Fighting Gangs"
     }
-  ]
+  ],
+  "membership_estimate": 200
 }

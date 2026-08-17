@@ -1,20 +1,27 @@
 {
   "id": "org:latin-saints",
   "name": "Latin Saints",
-  "aliases": [],
+  "aliases": [
+    "Almighty Saints",
+    "Saints"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
-  "founded_year": 1965,
+  "lane": "chicago-independent",
+  "metro": "Chicago",
+  "founded_year": 1962,
   "founded_year_precision": "circa",
-  "description": "Latin Saints is a street gang based in New York.",
+  "description": "The Almighty Saints (also known as Latin Saints) is a street gang founded in the early 1960s by Polish youth at Davis Square Park in the Back of the Yards neighborhood of Chicago, Illinois. Originally centered around 45th Street and Wood Street, the gang became predominantly Hispanic as neighborhood demographics shifted. The name was borrowed from the TV series of the same name, as reflected in their halo stickman symbol. After initially resisting alignment with either Nation, the Saints joined the People Nation in the late 1980s to early 1990s, sponsored by the Almighty Latin Kings — adopting the 'Almighty' prefix and the five-point star in the process.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
-      "url": "http://www.stonegreasers.com/greaser/corp.html",
-      "title": "www.stonegreasers.com"
+      "url": "https://en.wikipedia.org/wiki/Almighty_Saints",
+      "title": "Almighty Saints - Wikipedia"
     }
+  ],
+  "symbols": [
+    "Five-point Star",
+    "Halo Stickman"
   ]
 }

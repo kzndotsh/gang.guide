@@ -1,20 +1,23 @@
 {
   "id": "org:ricomafia",
   "name": "RicoMafia",
-  "aliases": [],
+  "aliases": [
+    "0430",
+    "0430YRB"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "RicoMafia is a street gang based in Detroit.",
+  "description": "RicoMafia (also known as 0430) is a hybrid street gang active on Detroit's northwest side, centered around the Seven Mile and Telegraph corridor. The group's name derives from a local individual known as \"Rico,\" reportedly born on April 30 — the origin of the \"0430\" moniker. Rather than following a single traditional gang lineage, members adopt Blood-, Vice Lord-, or Crip-leaning affiliations depending on personal ties and block-level alliances. The crew has a notable digital footprint, with social media activity contributing significantly to its visibility and to conflicts with rival Detroit street cliques including 1229 ReaperGang and SpiderGang.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Understanding Hybrid and Mixed-Affiliation Groups in Metro Detroit"
     }
   ]
 }

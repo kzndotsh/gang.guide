@@ -1,20 +1,26 @@
 {
   "id": "org:sellgang",
   "name": "SellGang",
-  "aliases": [],
+  "aliases": [
+    "Murdaville",
+    "Villains"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "SellGang is a street gang based in Detroit.",
+  "description": "SellGang is a hybrid, mixed-affiliation street gang originating around the Sussex and Fenkell corridor (S-Block) in Detroit. The group developed alongside Sham Gang before branching into Murdaville, considered the younger faction. SellGang is a core member of the self-created '9s' alliance, which also includes Murdaville, LTK, and 928. Members use the 'Villains' moniker and purple-heart symbolism. While loosely rooted in Crip lineage, the group carries a fluid identity, with members claiming Blood, Crip, or simply '9' depending on context. Memorial identities CMW and 928 are central to group mythology.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Understanding Hybrid and Mixed-Affiliation Groups in Metro Detroit"
     }
+  ],
+  "symbols": [
+    "Purple Heart Emoji"
   ]
 }

@@ -7,14 +7,17 @@
   "metro": "New York",
   "founded_year": 1955,
   "founded_year_precision": "circa",
-  "description": "Phantom Lords is a street gang based in New York.",
-  "colors": [],
+  "description": "Phantom Lords was a street gang founded in the 1950s in Williamsburg, Brooklyn, New York. Known for their purple and white colors, they were active from the 1950s through the early 1980s, making them one of Williamsburg's oldest and longest-running gangs. Rivals included the Chaplains, Hellburners, Halsey Bops, Saints, and El Quintos. The gang had a female division called the Lady Phantom Lords and a junior sub-group called the Young Lords. Peter Criss, later the drummer of rock band KISS, was a former member.",
+  "colors": [
+    "purple",
+    "white"
+  ],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
       "url": "https://newyorkcitygangs.com/?page_id=1817",
-      "title": "newyorkcitygangs.com"
+      "title": "New York City Fighting Gangs — Hector of the Phantom Lords"
     }
   ]
 }

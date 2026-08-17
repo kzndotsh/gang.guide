@@ -7,14 +7,14 @@
   "metro": "New York",
   "founded_year": 1950,
   "founded_year_precision": "decade",
-  "description": "Suicides is a street gang based in New York.",
+  "description": "The Suicides were a Brooklyn street gang based in the Farragut Houses area near the Brooklyn Navy Yard, active from the late 1950s into the 1960s. The gang spawned a youth offshoot called the Little People Suicides, whose members were largely students at Sands Junior High School. Their chief rivals were the Mau Maus of Fort Greene Houses and the Chaplains. The main gang gained notoriety for its involvement in the stabbing death of an alleged Chaplain member.",
   "colors": [],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
     {
-      "url": "http://www.stonegreasers.com/greaser/brooklyn_suicides.html",
-      "title": "www.stonegreasers.com"
+      "url": "https://www.stonegreasers.com/greaser/brooklyn_suicides.html",
+      "title": "Brooklyn Navy Yard Gangs, Suicides gang, Farragut House Gangs"
     }
   ]
 }

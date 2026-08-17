@@ -1,14 +1,19 @@
 {
   "id": "org:palmer-gaylords",
   "name": "Palmer Gaylords",
-  "aliases": [],
+  "aliases": [
+    "Palmer Street Heads"
+  ],
   "type": "street_gang",
-  "lane": "historical-east",
-  "metro": "New York",
+  "lane": "chicago-independent",
+  "metro": "Chicago",
   "founded_year": 1955,
   "founded_year_precision": "circa",
-  "description": "Palmer Gaylords is a street gang based in New York.",
-  "colors": [],
+  "description": "The Palmer Gaylords are a Chicago street gang and a section of the Almighty Gaylords Nation, rooted in the Palmer Street neighborhood on the North Side of Chicago. The group originated as a greaser crew known as the Palmer Street Heads — active around Seminary and Barry — before formally aligning with the Gaylords Nation in the early 1970s. They were historically allied with the Royals, Popes, Jousters, Satan's Disciples, and Belairs. Sections they spawned, including the Winnemac Park Gaylords and Firehouse Gaylords, adopted black and grey as their colors, distinguishing them from Kilbourn Park-originated sections which used black and light blue.",
+  "colors": [
+    "black",
+    "grey"
+  ],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
@@ -16,5 +21,14 @@
       "url": "http://www.stonegreasers.com/greaser/harpos_story.html",
       "title": "www.stonegreasers.com"
     }
+  ],
+  "symbols": [
+    "Skull",
+    "Top Hat",
+    "Cane",
+    "Dice",
+    "Whiskey Bottle",
+    "Celtic Cross",
+    "Embroidered G"
   ]
 }

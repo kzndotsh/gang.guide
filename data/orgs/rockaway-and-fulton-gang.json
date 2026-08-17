@@ -1,14 +1,20 @@
 {
   "id": "org:rockaway-and-fulton-gang",
   "name": "Rockaway and Fulton gang",
-  "aliases": [],
+  "aliases": [
+    "Fulton-Rockaway gang",
+    "R&F"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Rockaway and Fulton gang is a street gang based in New York.",
-  "colors": [],
+  "description": "The Rockaway and Fulton gang (also known as the Fulton-Rockaway gang) was a Brooklyn street gang active in the late 1950s and early 1960s, based around the Fulton and Rockaway Avenue intersection in East New York. John Gotti was a member and reportedly rose to leader through his fighting ability and natural leadership. Members wore purple and black. The gang was allied with the Halsey Bops of Bushwick and regularly socialized with them at the Sportsman's Cafe on Fulton and Rockaway. In 1959, they were called in during a confrontation at the 14 Holy Martyrs church bazaar, helping repel a large group of Corsair Lords who had entered the area.",
+  "colors": [
+    "purple",
+    "black"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [

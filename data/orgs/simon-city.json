@@ -1,20 +1,23 @@
 {
   "id": "org:simon-city",
   "name": "Simon City",
-  "aliases": [],
+  "aliases": [
+    "Simon's City",
+    "Simon City Boys"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
-  "description": "Simon City is a street gang based in Chicago.",
+  "founded_year": 1952,
+  "founded_year_precision": "circa",
+  "description": "Simon City was a Chicago greaser gang founded circa 1952, named after Simons Park at the corner of Drake and Wabansia in the Humboldt Park neighborhood. One of the older North Side greaser gangs, it later gave rise to the Simon City Royals, a spin-off formed in the Lakeview area around 1968 by a former member known as Arab. The two groups continued as separate entities for decades.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://www.stonegreasers.com/greaser/scr.html",
-      "title": "www.stonegreasers.com"
+      "title": "Chicago's Simon City Royals - Simon City Royal Nation"
     }
   ]
 }

@@ -1,20 +1,30 @@
 {
   "id": "org:purple-heart-vets",
   "name": "Purple Heart Vets",
-  "aliases": [],
+  "aliases": [
+    "PHV",
+    "4-3"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Purple Heart Vets is a street gang based in Detroit.",
+  "description": "Purple Heart Vets (PHV) is a violent street gang operating primarily on the northwest side of Detroit, Michigan. The gang promotes a \"soldiers in battle\" identity, with leaders rewarding members who commit acts of violence with Purple Heart medals. PHV has been involved in shootings, drug trafficking, firearms offenses, and unemployment insurance fraud. In August 2023, a federal grand jury indicted multiple PHV members on RICO conspiracy charges in the Eastern District of Michigan.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Understanding Hybrid and Mixed-Affiliation Groups in Metro Detroit — DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edmi/pr/violent-detroit-street-gang-indicted-rico-charges",
+      "title": "Violent Detroit Street Gang Indicted on RICO Charges — U.S. Attorney's Office, Eastern District of Michigan"
     }
+  ],
+  "symbols": [
+    "Purple Heart Medal"
   ]
 }

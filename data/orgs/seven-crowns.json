@@ -7,7 +7,7 @@
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Seven Crowns is a street gang based in Detroit.",
+  "description": "The Seven Crowns are a historical Detroit street gang active in the 1950s–1960s, documented as one of the early crews absorbed by larger gang networks including the Shakers in the North End area.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
@@ -16,5 +16,6 @@
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
       "title": "DetroitStreetGangs.com"
     }
-  ]
+  ],
+  "symbols": []
 }
