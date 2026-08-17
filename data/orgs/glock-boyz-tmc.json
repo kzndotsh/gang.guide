@@ -4,7 +4,8 @@
   "aliases": [
     "Glockboyz",
     "Too Much Cash",
-    "TMC"
+    "TMC",
+    "9000 GlockBoyz"
   ],
   "type": "street_gang",
   "lane": "detroit",
@@ -18,11 +19,11 @@
   "sources": [
     {
       "url": "https://www.justice.gov/usao-edmi/pr/glock-boyz-gang-member-sentenced-60-months-prison-aggravated-identity-theft-and",
-      "title": "DOJ - Glock Boyz sentencing"
+      "title": "Glock Boyz Gang Member Sentenced to 60 Months in Prison for Aggravated Identity Theft and Wire Fraud | USAO-EDMI | Department of Justice"
     },
     {
       "url": "https://detroitstreetgangs.com/",
-      "title": "DetroitStreetGangs.com"
+      "title": "Inside Detroit Street Gangs: History, Profiles, and Community Impact"
     }
   ]
 }

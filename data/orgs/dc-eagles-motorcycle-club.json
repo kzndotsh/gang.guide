@@ -5,16 +5,20 @@
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1963,
+  "founded_year_precision": "exact",
   "description": "DC Eagles Motorcycle Club is a white greaser motorcycle club based in Chicago, Illinois, associated with the Hermosa and Logan Square neighborhoods. The club absorbed a number of members from the Bel-Airs gang — a rival of the Cortland Stacies — after Bel-Airs members felt outnumbered during the mid-1960s.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
-      "url": "http://stonegreasers.com/greaser/Chicago_Bel-Airs_gangs.html",
-      "title": "StoneGreasers.com"
+      "url": "https://onepercenterbikers.com/dc-eagles-mc/",
+      "title": "DC Eagles MC (Motorcycle Club) - One Percenter Bikers"
     }
+  ],
+  "symbols": [
+    "Bald Eagle (center Patch)",
+    "99% NFG Diamond Patch"
   ]
 }

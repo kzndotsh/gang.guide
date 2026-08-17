@@ -1,20 +1,31 @@
 {
   "id": "org:headbanger-bloods",
   "name": "Headbanger Bloods",
-  "aliases": [],
+  "aliases": [
+    "82HB",
+    "2082",
+    "THB",
+    "True HeadBangerz"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
   "founded_year": null,
   "founded_year_precision": "estimate",
   "description": "The HeadBanger Bloods are one of Detroit's more widely recognized and numerically substantial Blood-affiliated street gangs, based primarily on the Eastside with heavy presence along Harper Avenue. They follow a Detroit-born Bloods lineage and are documented as having conflicts with Crip-affiliated and Gangster Disciples-affiliated rivals.",
-  "colors": [],
+  "colors": [
+    "red"
+  ],
   "nation_affiliation": "org:bloods",
   "status": "active",
   "sources": [
     {
-      "url": "https://detroitstreetgangs.com/detroit-vice-lords/",
-      "title": "DetroitStreetGangs.com"
+      "url": "https://detroitstreetgangs.com/headbanger-bloods/",
+      "title": "Inside the Powerful Rise of HeadBanger Bloods Detroit"
     }
+  ],
+  "symbols": [
+    "2082",
+    "HeadBangerz"
   ]
 }
