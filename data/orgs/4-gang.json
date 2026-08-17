@@ -1,20 +1,22 @@
 {
   "id": "org:4-gang",
   "name": "4 Gang",
-  "aliases": [],
+  "aliases": [
+    "the 4s"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "4 Gang is a street gang based in Detroit.",
+  "description": "4 Gang (also known as 'the 4s') is a Crip-aligned criminal street gang alliance active primarily on Detroit's east side. The alliance is documented as having been formed in part by the 42 Hustle Boyz (42HB), an east-side gang historically associated with narcotics trafficking. The 4s are engaged in a prolonged rivalry with the 5s, a Blood-affiliated alliance.",
   "colors": [],
   "nation_affiliation": "org:crips",
   "status": "active",
   "sources": [
     {
-      "url": "https://detroitstreetgangs.com/detroit-crips/",
-      "title": "DetroitStreetGangs.com"
+      "url": "https://detroitstreetgangs.com/the-5s-and-the-4s/",
+      "title": "The Rise of the \"5's\" And The \"4's\" Gangs in Detroit – DetroitStreetGangs.com"
     }
   ]
 }

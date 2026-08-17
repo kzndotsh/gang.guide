@@ -6,7 +6,7 @@
   "lane": "chicago-independent",
   "metro": "Chicago",
   "founded_year": 1960,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "description": "The Taylor Street Jousters were a street gang founded in 1960 in the Near West Side neighborhood of Chicago, Illinois, at the intersection of Taylor Street and Oakley Street in the Little Italy section. The gang was established as a spin-off of the Taylor Street Dukes, who sponsored its creation to protect the neighborhood from rival groups including the Egyptian Cobras and Vice Lords. Led initially by Pete Bianco, the Jousters adopted light blue and white as their colors and a knight's helmet as their symbol. They later became the first enemies of the Imperial Spanish Gangsters and also fought against the Black Panthers, Harrison Gents, and others.",
   "colors": [
     "white"
@@ -15,8 +15,8 @@
   "status": "inactive",
   "sources": [
     {
-      "url": "http://www.stonegreasers.com/greaser/aristocrats.html",
-      "title": "www.stonegreasers.com"
+      "url": "https://chicagoganghistory.com/gang/taylor-jousters/",
+      "title": "Taylor Jousters – Little Italy, Taylor & Oakley | Chicago Gang History"
     }
   ],
   "symbols": [
