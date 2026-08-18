@@ -3,12 +3,12 @@
   "name": "Barjug",
   "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
-  "description": "An Asian-American street gang active in the greater Los Angeles area, composed primarily of Southeast Asian youth.",
+  "description": "A defunct clique of the 456 Island Piru, an African-American Piru street gang based in the North Side of Pomona, California. The Barjug clique's territory extended into the Claremont community, alongside other 456 Island Piru cliques including A Block, Claremont Villas, and Vassar Block.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/pomona/barjug",
-      "title": "Barjug — StreetGangs"
+      "url": "https://unitedgangs.com/456-island-piru-pomona/",
+      "title": "456 Island Piru (Pomona) — UnitedGangs"
     }
   ],
   "founded_year": 1975,

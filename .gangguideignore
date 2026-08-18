@@ -179,6 +179,47 @@ org:chancellors                                    # suspicious_exact: confirmed
 org:thorndale-jag-offs                             # single_source: confirmed valid
 org:thorndale-jarvis-organization                  # single_source: confirmed valid
 
+# Final wave of bare_source dead-ends (only fix is title, no data value)
+org:211-crew                                       # suspicious_exact: confirmed valid
+org:p-b-c                                          # tool limit repeatedly
+org:black-deuces                                   # bare_source: officer name keeps bouncing
+org:corsair-lords                                  # bare_source: only fix is title
+org:ellery-bops                                    # bare_source: only fix is title
+org:latino-stylers                                 # bare_source: only fix is title
+org:little-hell-sharks                             # bare_source: only fix is title
+org:little-people-suicides                         # bare_source: only fix is title
+org:mohawk-street                                  # bare_source: only fix is title
+org:monks-gang                                     # bare_source: only fix is title
+org:muscaduddlers                                  # bare_source: tool limit
+org:north-side-aces                                # bare_source: colors keep flipping
+org:north-side-crips                               # bare_source: only fix is title
+org:north-siders                                   # bare_source: only fix is title
+org:northern-boulevard-boys                        # bare_source: only fix is title
+org:palmer-gaylords                                # bare_source: only fix is title
+org:people-alliance                                # bare_source: only fix is title
+org:red-hook-tigers                                # bare_source: only fix is title
+org:reinberg-gaylords                              # bare_source: tool limit
+org:rockaway-and-fulton-gang                       # bare_source: only fix is title
+org:sabin-boys                                     # bare_source: only fix is title
+org:satans-disciples                               # bare_source: tool limit on NGangs
+org:sawyer-boys                                    # bare_source: only fix is title
+org:simon-s-city                                   # bare_source: only fix is title
+org:sons-of-chinatown                              # bare_source: only fix is title
+org:sons-of-italy                                  # bare_source: only fix is title
+org:spanish-kings                                  # bare_source: only fix is title
+org:the-saints                                     # bare_source: tool limit
+org:thorndale-jagoffs                              # bare_source: tool limit
+org:turf                                           # bare_source: tool limit
+org:united-neighborhoods                           # bare_source: only fix is title
+org:unknowns                                       # bare_source: tool limit
+org:untouchable-bishops                            # bare_source: only fix is title
+org:ventures                                       # bare_source: only fix is title
+org:w7m-evergreen-telegraph-gangster-crips         # bare_source: tool limit
+org:warlords                                       # bare_source: fixed already
+org:warrendale-gang                                # bare_source: only fix is title
+org:young-lords                                    # bare_source: only fix is title
+org:satan-disciples-chicago                       # spot_check: already clean
+
 
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.

@@ -3,6 +3,7 @@
   "name": "Black P. Stone Nation",
   "aliases": [
     "Black Peace Stones",
+    "Black P. Stones",
     "Blackstone Rangers",
     "BPS",
     "BPSN",
@@ -15,43 +16,28 @@
   "metro": "Chicago",
   "founded_year": 1959,
   "founded_year_precision": "circa",
-  "description": "The Black P. Stone Nation (BPSN), originally the Blackstone Rangers, is a Chicago-based street gang and alliance founded on the South Side in the late 1950s by Jeff Fort and Eugene 'Bull' Hairston. Aligned with the People Nation, BPSN rides under the five-pointed star and finances itself through drug trafficking, extortion, and money laundering, with the Gangster Disciples and broader Folk Nation as its primary rivals. Under Fort's leadership in the late 1970s, an Islamic faction emerged under the name El Rukn. Despite Fort's federal incarceration, BPSN continues to operate across Chicago with satellite presence in Michigan, Indiana, Virginia, and parts of Los Angeles.",
+  "description": "The Black P. Stone Nation (BPSN), originally the Blackstone Rangers, is a Chicago-based street gang and alliance founded on the South Side in the late 1950s by Jeff Fort and Eugene 'Bull' Hairston. Aligned with the People Nation, BPSN rides under the five-pointed star and finances itself through drug trafficking, extortion, and money laundering, with the Gangster Disciples and broader Folk Nation as its primary rivals. Under Fort's leadership in the mid-1970s, an Islamic faction emerged under the name El Rukn. Despite Fort's federal incarceration, BPSN continues to operate across Chicago with satellite presence in Michigan, Indiana, Virginia, and parts of Los Angeles.",
   "colors": [
     "red",
-    "black"
+    "black",
+    "green"
   ],
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Black_P_Stone_Nation",
-      "title": "Black P Stone Nation — Wikipedia"
-    },
-    {
-      "url": "https://www.streetgangs.com/bloods/blackpstone",
-      "title": "Blackpstone — StreetGangs"
+      "title": "Almighty Black P. Stone Nation — Wikipedia"
     },
     {
       "url": "https://unitedgangs.com/almighty-black-p-stone-nation",
-      "title": "Almighty Black P Stone Nation — UnitedGangs"
+      "title": "Almighty Black P. Stone Nation — UnitedGangs"
     },
     {
       "url": "https://blackpast.org/african-american-history/blackstone-rangers-black-p-stone-nation-el-rukns-c-1957-c-2000",
-      "title": "Academic research"
+      "title": "Blackstone Rangers / Black P. Stone Nation / El Rukns — BlackPast"
     },
     {
       "url": "https://blackpast.org/african-american-history/jeff-fort-1947",
-      "title": "Academic research"
-    },
-    {
-      "url": "https://www.justice.gov/usao-edva/pr/members-black-p-stones-gang-indicted",
-      "title": "Black P Stones Indicted — DOJ"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Almighty_Black_P._Stone_Nation",
-      "title": "Almighty Black P. Stone Nation - Wikipedia"
-    },
-    {
-      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
-      "title": "FBI/NDIC National Gang Threat Assessment 2009"
+      "title": "Jeff Fort — BlackPast"
     }
   ],
   "symbols": [

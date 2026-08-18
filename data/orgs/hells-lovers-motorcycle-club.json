@@ -13,16 +13,16 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Hell%27s_Lovers_Motorcycle_Club",
-      "title": "Hell's Lovers Motorcycle Club \u2014 Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Wheels_of_Soul_Motorcycle_Club",
-      "title": "Wheels of Soul Motorcycle Club \u2014 Wikipedia"
+      "title": "Hell's Lovers Motorcycle Club — Wikipedia"
     }
   ],
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "exact",
+  "status": "active",
+  "symbols": [
+    "0% Diamond",
+    "Iron Cross With Skull And Crossbones"
+  ]
 }

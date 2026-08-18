@@ -5,42 +5,24 @@
   "lane": "new-york",
   "metro": "New York",
   "description": "Dominican American criminal organization founded in 1993 on Rikers Island, New York City, by Leonides Sierra and Julio Marine. Initially formed to protect Dominican and Hispanic inmates, it expanded into drug trafficking, murder, and robbery across the northeastern US and internationally. Despite major prosecutions in 2009-2014, the group experienced a resurgence with internal factional violence.",
-  "founded_year": 1989,
+  "founded_year": 1993,
   "aliases": [
-    "Bronx Trinitarios Gang",
-    "BTG"
+    "3NI",
+    "Trinitarians"
   ],
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Trinitarios",
       "title": "Trinitarios — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Bloods",
-      "title": "Bloods — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Dominicans_Don%27t_Play",
-      "title": "Dominicans Don't Play — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Tiny_Rascal_Gang",
-      "title": "Tiny Rascal Gang — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/%C3%91etas",
-      "title": "%C3%91etas — Wikipedia"
-    },
-    {
-      "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
-      "title": "FBI NGTA 2011 — Emerging Trends"
     }
   ],
   "colors": [
     "green",
     "white",
-    "red"
+    "red",
+    "blue"
   ],
-  "founded_year_precision": "circa",
-  "status": "active"
+  "founded_year_precision": "exact",
+  "status": "active",
+  "membership_estimate": 3000
 }
