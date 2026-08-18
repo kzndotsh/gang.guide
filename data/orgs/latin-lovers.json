@@ -6,13 +6,12 @@
     "Almighty Latin Lovers",
     "Maniac Latin Lovers",
     "Universal Latin Lovers",
-    "Universal Insane Latin Lovers",
-    "Haas Parkers"
+    "Universal Insane Latin Lovers"
   ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "Logan Square neighborhood Established 1973-present years Sections of Logan Square Milwaukee to North Point, California to Talman Established 1986 (Mexico City) Richmond & McClean Established 1984 (L Town) Lyndale & Campbell Established 1977 Milwaukee & Campbell Fullerton & Campbell F",
+  "description": "The Latin Lovers originated in Logan Square as the Haas Parkers around 1970, a crew of Puerto Rican youths who hung out at Haas Park (Fullerton & Washtenaw). In 1973, some Haas Parkers formed the Almighty Latin Lovers, founded by a member known as Lucky, based at Fullerton & Rockwell. Their early rivals included the Latin Kings, Imperial Gangsters, and Gaylords. In 1978 they joined the United Latino Organization (ULO), forging a close alliance with the Maniac Latin Disciples. In 1979, when the Maniac and Insane family structures were formalized across allied gangs, the Latin Lovers became Maniac Latin Lovers and adopted the pitchfork as a gang symbol. After a major Insane–Maniac war in early 1992, the Insane and Maniac designations became mandatory, producing the Insane Latin Lovers and Maniac Latin Lovers factions.",
   "founded_year": 1973,
   "founded_year_precision": "exact",
   "colors": [
@@ -23,17 +22,12 @@
   "status": "active",
   "sources": [
     {
-      "url": "https://chicagoganghistory.com/gang/universal-insane-latin-lovers",
-      "title": "Latin Lovers - Chicago Gang History"
-    },
-    {
       "url": "https://chicagoganghistory.com/gangs/insane-latin-lovers",
       "title": "Latin Lovers (Insane Latin Lovers) - Haas Park, Logan Square | Chicago Gang History"
     }
   ],
   "symbols": [
     "Heart",
-    "3 Dots",
     "Pitchfork"
   ]
 }
