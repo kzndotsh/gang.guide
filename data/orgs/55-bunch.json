@@ -3,12 +3,16 @@
   "name": "55 Bunch",
   "lane": "california-latino-south-la",
   "metro": "Los Angeles",
-  "description": "An African-American street gang based around 55th Street in South Central Los Angeles, part of the dense network of gangs in the mid-South LA area between Slauson and Florence Avenues.",
+  "description": "A primarily Mexican-American street gang based on the Eastside of South Central Los Angeles, controlling territory near Main Street between 54th and 58th Streets. A Sureño-aligned gang affiliated with the Mexican Mafia, with cliques including the Locos (LCS), Juveniles (JVLS), Winos (WNS), and Bagos (BGS). Allied with the Hang Out Boys (HOB); rivals of the Eastside Playboys 13, 41st Street Gang, Barrio Mojados 13, and 50th Street Gang.",
   "type": "street_gang",
   "sources": [
     {
+      "url": "https://unitedgangs.com/55-bunch-gang/",
+      "title": "55 Bunch Gang — UnitedGangs.com"
+    },
+    {
       "url": "https://www.streetgangs.com/hispanic/cityofla/eastside/55bunch",
-      "title": "55 Bunch — StreetGangs"
+      "title": "55 Bunch — StreetGangs.com"
     }
   ],
   "founded_year": 1965,
@@ -17,5 +21,13 @@
     "blue"
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "55th Street Bunch",
+    "55B",
+    "5B5",
+    "55BCH"
+  ],
+  "symbols": [
+    "Boston 'B' Baseball Cap"
+  ]
 }

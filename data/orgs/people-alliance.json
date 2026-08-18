@@ -15,8 +15,13 @@
   "status": "active",
   "sources": [
     {
-      "url": "http://www.stonegreasers.com/greaser/stoned_freaks.html",
-      "title": "www.stonegreasers.com"
+      "url": "https://en.wikipedia.org/wiki/People_Nation",
+      "title": "People Nation - Wikipedia"
     }
+  ],
+  "symbols": [
+    "Five-pointed Star",
+    "Five-pointed Crown",
+    "Pitchfork (pointed Down)"
   ]
 }

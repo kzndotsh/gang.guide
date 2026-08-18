@@ -15,15 +15,15 @@
     {
       "url": "https://en.wikipedia.org/wiki/Barriox13",
       "title": "Barriox13 — Wikipedia"
-    },
-    {
-      "url": "https://www.streetgangs.com/hispanic/cityofla/eastside",
-      "title": "Barrio X3 — StreetGangs"
     }
   ],
   "metro": "Los Angeles",
   "colors": [
-    "black"
+    "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "XIII",
+    "B13"
+  ]
 }

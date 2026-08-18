@@ -1,14 +1,22 @@
 {
   "id": "org:young-lords",
   "name": "Young Lords",
-  "aliases": [],
+  "aliases": [
+    "Young Lords Organization",
+    "YLO",
+    "Young Lords Party",
+    "YLP"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
   "founded_year": 1959,
   "founded_year_precision": "exact",
   "description": "The Young Lords were a Puerto Rican street gang founded in Chicago in 1959 that later transformed into a political activist organization. A New York chapter was established in East Harlem in 1969.",
-  "colors": [],
+  "colors": [
+    "black",
+    "purple"
+  ],
   "nation_affiliation": null,
   "status": "inactive",
   "sources": [
