@@ -128,6 +128,57 @@ org:24cashgang                                     # bare_source: DSG page not a
 org:7-mile-rollin-60s-crips                        # bare_source: DOJ URL not accessible
 org:7-mile-playboy-gangster-crips                  # bare_source: DOJ URL not accessible
 
+# More verified-clean / tool-limit dead-ends
+org:tsn                                            # boilerplate: no findable details
+org:ygb                                            # boilerplate: no findable details
+org:68th-and-damen-lil-loafers                     # bare_source: only fix is title
+org:68th-and-wood-street-lil-loafers               # bare_source: only fix is title
+org:69th-street-loafers                            # bare_source: only fix is title
+org:7th-avenue-boys                                # bare_source: only fix is title
+org:baker-street-vice-lords                        # bare_source: only fix is title
+org:bayside-west-zombies                           # bare_source: only fix is title
+org:bel-aires                                      # bare_source: only fix is title
+org:black-gents                                    # bare_source: only fix is title
+org:black-saints                                   # bare_source: only fix is title
+org:braghans                                       # bare_source: only fix is title
+org:bumtown-gents                                  # bare_source: only fix is title
+org:c-d                                            # bare_source: only fix is title
+org:cavaliers                                      # bare_source: only fix is title
+org:cleveland-jammers                              # bare_source: only fix is title
+org:clybourn-corrupters                            # bare_source: only fix is title
+org:coney-island-warriors                          # bare_source: only fix is title
+org:cornell-square-rebels                          # bare_source: only fix is title
+org:corona-dukes                                   # bare_source: only fix is title
+org:cortland-stacies                               # bare_source: only fix is title
+org:d-c-eagles                                     # bare_source: only fix is title
+org:dayton-and-armitage-latin-kings                # bare_source: only fix is title
+org:dc-eagles-motorcycle-club                      # bare_source: only fix is title
+org:el-kovans                                      # bare_source: tool limit
+org:el-kovons                                      # bare_source: tool limit
+org:flaming-satans                                 # bare_source: only fix is title
+org:haddon-boys                                    # bare_source: only fix is title
+org:harlem-lords                                   # bare_source: only fix is title
+org:harlem-peace-treaty-coalition                  # bare_source: only fix is title
+org:hollywood-street-greasers                      # bare_source: only fix is title
+org:howard-street-kings                            # bare_source: only fix is title
+org:hudson                                         # bare_source: only fix is title
+org:hudson-street                                  # bare_source: only fix is title
+org:immortal-sinners                               # bare_source: only fix is title
+org:insane-2-nation                                # bare_source: only fix is title
+org:jackson-gents                                  # bare_source: only fix is title
+org:jan-s-boys                                     # bare_source: only fix is title
+org:jefferson-stumpers                             # bare_source: only fix is title
+org:jesters                                        # bare_source: only fix is title
+org:jokers                                         # bare_source: description fixed
+org:jr-bachelors                                   # bare_source: only fix is title
+org:junior-barons                                  # bare_source: only fix is title
+org:junior-saints                                  # bare_source: tool limit
+org:junior-sinner                                  # bare_source: only fix is title
+org:k-town-lords                                   # bare_source: only fix is title
+org:chancellors                                    # suspicious_exact: confirmed valid
+org:thorndale-jag-offs                             # single_source: confirmed valid
+org:thorndale-jarvis-organization                  # single_source: confirmed valid
+
 
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.

@@ -1,7 +1,9 @@
 {
   "id": "org:ventures",
   "name": "Ventures",
-  "aliases": [],
+  "aliases": [
+    "Sons of Satan Slaves"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",

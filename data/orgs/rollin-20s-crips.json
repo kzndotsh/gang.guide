@@ -12,7 +12,7 @@
   "metro": "Los Angeles",
   "founded_year": 1970,
   "founded_year_precision": "decade",
-  "description": "The Rollin 20s Crips are a Crip subset based in Long Beach, California. They are known for wearing black and gold and using the Pittsburgh Steelers logo as a gang identifier.",
+  "description": "The Rollin 20s Crips (RTC) are a Crip set based on the East Side of Long Beach, California. Their territory runs primarily south of 21st Street, east of Long Beach Blvd, and west of Orange Ave. Members are known to wear black and gold, sporting Pittsburgh Steelers and New Orleans Saints gear as gang identifiers. The gang is internationally known in part due to its association with rappers Snoop Dogg, Nate Dogg, and Daz Dillinger.",
   "colors": [
     "black",
     "gold"
@@ -20,10 +20,6 @@
   "nation_affiliation": "org:crips",
   "status": "active",
   "sources": [
-    {
-      "url": "https://detroitstreetgangs.com/detroit-crips/",
-      "title": "DetroitStreetGangs.com"
-    },
     {
       "url": "https://unitedgangs.com/rollin-20s-crip/",
       "title": "Rollin 20s Crips - UnitedGangs.com"
@@ -38,6 +34,7 @@
     }
   ],
   "symbols": [
-    "Pittsburgh Steelers Emblem"
+    "Pittsburgh Steelers Logo",
+    "New Orleans Saints Logo"
   ]
 }
