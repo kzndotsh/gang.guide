@@ -370,6 +370,13 @@ org:elm-street-piru                          metro_lane_consistency
 org:rollin-30s-tre-tre-crips                 metro_lane_consistency
 
 
+# description_starts_with_name false positives
+# These legitimately open with a formal/legal/common name rather than the abbreviated canonical name
+org:outlaws-motorcycle-club           description_starts_with_name
+org:dgaf                              description_starts_with_name
+org:golden-state-skinheads            description_starts_with_name
+org:clanton14th-original-hood-los-angeles  description_starts_with_name
+
 # ── clean:skip ─────────────────────────────────────────────────────────────────
 # Orgs verified clean or confirmed dead-ends during clean.py batches 17-20.
 # These are skipped by clean.py (use enrich:skip for enrich.py dead-ends).

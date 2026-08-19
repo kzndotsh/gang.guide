@@ -976,6 +976,17 @@ def main():
     ignore = load_ignore_rules()
     if ignore.lint_suppress:
         # Build a set of (org_id, check_name) pairs that are suppressed
+        # Check names map to message substrings for fuzzy matching
+        CHECK_ALIASES = {
+            "cross_metro": "cross-metro",
+            "metro_lane_consistency": "metro_lane_consistency",
+            "description_starts_with_name": "description starts with alias",
+            "status_description_consistency": "status=",
+            "fuzzy_dupe": "potential dupe",
+            "spinoff_direction": "spin_off direction",
+            "temporal_logic": "temporal transition",
+        }
+
         def _is_suppressed(msg: str) -> bool:
             # Messages are formatted as "filename.json: ..." or "edge[N]: ..."
             # Extract the filename stem as org slug, then reconstruct org_id
@@ -983,10 +994,12 @@ def main():
                 for check in checks:
                     # Match by org_id slug appearing in the message
                     slug = org_id.replace("org:", "")
-                    if slug in msg and check in msg:
+                    # Resolve check name to message substring
+                    check_pattern = CHECK_ALIASES.get(check, check)
+                    if slug in msg and check_pattern in msg:
                         return True
                     # Global suppression
-                    if org_id == "*" and check in msg:
+                    if org_id == "*" and check_pattern in msg:
                         return True
             return False
 
