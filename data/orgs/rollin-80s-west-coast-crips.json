@@ -10,6 +10,14 @@
     {
       "url": "https://unitedgangs.com/rollin-80s-west-coast-crips",
       "title": "Rollin 80S West Coast Crips — UnitedGangs"
+    },
+    {
+      "url": "https://www.sfpublicdefender.org/wp-content/uploads/2007/08/study-on-long-beach-gang-injunction.pdf",
+      "title": "Study on Long Beach Gang Injunction — SF Public Defender"
+    },
+    {
+      "url": "https://westcoastcrip.blogspot.com/",
+      "title": "Rollin 80s West Coast Crip — Blogspot"
     }
   ],
   "metro": "Los Angeles",
@@ -20,5 +28,8 @@
     "RWCC"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Dallas Cowboys Apparel"
+  ]
 }

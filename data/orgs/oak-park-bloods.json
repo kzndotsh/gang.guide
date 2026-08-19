@@ -10,6 +10,14 @@
     {
       "url": "https://unitedgangs.com/oak-park-bloods",
       "title": "Oak Park Bloods — UnitedGangs"
+    },
+    {
+      "url": "https://oag.ca.gov/news/press-releases/attorney-general-bonta-announces-takedown-oak-park-bloods-street-gang-sacramento",
+      "title": "Attorney General Bonta Announces Takedown of Oak Park Bloods Street Gang in Sacramento — California DOJ"
+    },
+    {
+      "url": "https://www.justice.gov/usao/edca/pr/oak-park-gang-members-and-drug-suppliers-charged-drug-and-firearm-offenses",
+      "title": "Oak Park Gang Members and Drug Suppliers Charged with Drug and Firearm Offenses — DOJ Eastern District of California"
     }
   ],
   "colors": [
@@ -20,5 +28,8 @@
   "aliases": [
     "OPB"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "6-1-2"
+  ]
 }

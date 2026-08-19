@@ -10,6 +10,10 @@
     {
       "url": "https://unitedgangs.com/family-swan-bloods",
       "title": "Family Swan Bloods — UnitedGangs"
+    },
+    {
+      "url": "https://grokipedia.com/page/family-swan-bloods",
+      "title": "Family Swan Bloods — Grokipedia"
     }
   ],
   "colors": [
@@ -20,5 +24,10 @@
   "aliases": [
     "FSB"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "San Francisco 49ers Apparel",
+    "Swan Imagery",
+    "7-9 Graffiti"
+  ]
 }
