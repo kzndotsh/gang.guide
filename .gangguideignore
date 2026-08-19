@@ -220,6 +220,54 @@ org:warrendale-gang                                # bare_source: only fix is ti
 org:young-lords                                    # bare_source: only fix is title
 org:satan-disciples-chicago                       # spot_check: already clean
 
+# Final cleanup — confirmed clean or tool-limit dead-ends from batches 17-19
+org:racine-boys                                    # suspicious_exact: confirmed exact 1970
+org:trinitarios                                    # single_source: confirmed 1993/exact
+org:mohawks                                        # bare_source: only fix is title
+org:black-p-stone-nation                           # spot_check: confirmed clean multiple times
+org:97-gangster-crips                              # spot_check: confirmed clean
+org:tragniew-park-compton-crips                    # spot_check: confirmed clean
+org:seminary-and-barry-aristocrats                 # spot_check: confirmed clean multiple times
+org:18th-street-westlake                           # spot_check: confirmed clean
+org:456-island-piru-pomona                         # spot_check: confirmed clean
+org:51-trouble-gangster-crips                      # spot_check: confirmed clean
+org:55-bunch                                       # spot_check: confirmed clean
+org:barjug                                         # spot_check: confirmed clean
+org:barrio-x3                                      # spot_check: confirmed clean
+org:baxter-street-dudes                            # spot_check: confirmed clean
+org:bing-kong-tong                                 # spot_check: confirmed clean
+org:bronx-dragons                                  # spot_check: confirmed clean
+org:chevy-chase-locos                              # spot_check: confirmed clean
+org:copians                                        # spot_check: confirmed clean
+org:del-paso-heights-bloods                        # spot_check: confirmed clean
+org:dinner-set-gang                                # spot_check: confirmed clean
+org:dragons                                        # spot_check: confirmed clean
+org:green-counts                                   # spot_check: confirmed clean
+org:hells-lovers-motorcycle-club                  # spot_check: confirmed clean
+org:marginals                                      # spot_check: confirmed clean
+org:racine-boys                                    # spot_check: confirmed clean
+org:scotts-dale-piru                               # spot_check: confirmed clean
+org:skyline-piru-san-diego                         # spot_check: confirmed clean
+org:slaughter-house-gang                           # spot_check: confirmed clean
+org:tmcne                                          # tool limit: dead-end
+org:32-tray-deuce-crips                            # tool limit: dead-end
+org:bible-crips                                    # tool limit: dead-end
+org:east-side-pirus-compton                        # tool limit: dead-end
+org:el-quintos                                     # desc_too_long: confirmed content valid
+org:fordham-baldies                                # tool limit: source broken
+org:galloping-goose-motorcycle-club                # spot_check: confirmed clean
+org:harpys-5th-avenue-los-angeles                              # tool limit: 404 source
+org:jefrox                                         # spot_check: confirmed clean
+org:little-valley                                  # tool limit: source 403
+org:north-side-satanas                             # spot_check: confirmed clean
+org:pasadena-denver-lanes                          # spot_check: confirmed clean
+org:peckerwoods                                    # tool limit
+org:pinoy-real                                     # tool limit
+org:tercera-flats                                  # tool limit: source 404
+org:rascals                                   # spot_check: confirmed clean
+org:ghetto-brothers                                # spot_check: confirmed clean
+org:latin-lovers                                   # desc trimmed, spot_check done
+
 
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.

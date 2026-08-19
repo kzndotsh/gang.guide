@@ -2,15 +2,14 @@
   "id": "org:vinlanders-social-club",
   "name": "Vinlanders Social Club",
   "aliases": [
-    "VSC",
-    "Firm 22"
+    "VSC"
   ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "United States",
   "founded_year": 2003,
   "founded_year_precision": "exact",
-  "description": "The Vinlanders Social Club (VSC) is a hardcore racist skinhead gang founded in 2003 by former members of the Outlaw Hammerskins, including Brien James, Eric \"the Butcher\" Fairburn, and Bryon Widner. It functions as an umbrella organization for state skinhead crews across the midwestern, eastern, and southwestern United States, with Council 28 (the Blood & Honour Council) serving as its executive inner circle. One of the larger racist skinhead groups in the country, the VSC has a high association with violence, including links to multiple murders. Its associate and supporter network operates under the name Firm 22.",
+  "description": "The Vinlanders Social Club (VSC) is a hardcore racist skinhead gang founded in 2003 by former members and associates of the Outlaw Hammerskins, including Brien James, Eric \"the Butcher\" Fairburn, and Bryon Widner. It functions as an umbrella organization for state skinhead crews across the midwestern, eastern, and southwestern United States, with Council 28 (the Blood & Honour Council) serving as its executive inner circle. One of the larger racist skinhead groups in the country, the VSC has a high association with violence, including links to multiple murders. Its associate and supporter network operates under the name Firm 22.",
   "colors": [
     "red",
     "white",
@@ -29,7 +28,6 @@
     }
   ],
   "symbols": [
-    "VSC Initials (sometimes Inside Shield Outline, Sometimes On Empty Outline)",
     "Hand Sign (first, Second, And Fourth Fingers Raised)"
   ]
 }
