@@ -11,7 +11,7 @@
   "metro": "Chicago",
   "description": "The Two Six (Gangster Two Six) are a Latino (Mexican) Folk Nation street gang founded in 1970 in Little Village (South Lawndale), Chicago. Originally called 'Twenty Sixth Street Boys' by rival Latin Kings and Ridgeway Lords after 26th and Sawyer where the founding members gathered, the gang was formalized by the Ayala family in the late 1970s, adopting black and beige colors. Leader David 'El Jefe' Ayala was convicted of murder in 1981 and sentenced to life in prison in 1983, continuing to direct operations from inside. The gang expanded across Chicago's southwest side and into suburbs including Cicero, Berwyn, and Joliet.",
   "founded_year": 1970,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "colors": [
     "black",
     "beige"
