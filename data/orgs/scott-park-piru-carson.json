@@ -4,12 +4,20 @@
   "type": "street_gang",
   "lane": "california-bloods-carson",
   "founded_year": 1980,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "description": "The Scott Park Pirus originated in the early 1980’s, originally known as the Scott Park Killers. They are named after a public park (Scott Park) on Catskills Ave, between 232nd Street and 236th Street.",
   "sources": [
     {
       "url": "https://unitedgangs.com/scott-park-piru",
       "title": "Scott Park Piru — UnitedGangs"
+    },
+    {
+      "url": "https://www.reddit.com/r/CaliConnection/comments/152mpu8/polynesian_hoods_skott_park_piru_spp_is_one_of/",
+      "title": "Polynesian Hoods: Skott Park Piru — Reddit r/CaliConnection"
+    },
+    {
+      "url": "https://www.reddit.com/r/CaliBanging/comments/uck56l/skott_park_piru_anybody_got_any_history_on_them/",
+      "title": "Skott Park Piru — anybody got any history on them? — Reddit r/CaliBanging"
     }
   ],
   "metro": "Los Angeles",

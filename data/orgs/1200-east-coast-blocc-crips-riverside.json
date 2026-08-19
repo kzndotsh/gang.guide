@@ -10,6 +10,14 @@
     {
       "url": "https://unitedgangs.com/1200-east-coast-blocc-crips-riverside",
       "title": "1200 East Coast Blocc Crips Riverside — UnitedGangs"
+    },
+    {
+      "url": "https://www.reddit.com/r/CaliConnection/comments/1debu2c/1200_east_coast_blocc_crip_riverside_they_one_of/",
+      "title": "1200 East Coast Blocc Crip, Riverside — Reddit r/CaliConnection"
+    },
+    {
+      "url": "https://www.reddit.com/r/CaliBanging/comments/qgjksz/1200_east_coast_blocc_crips_riverside_california/",
+      "title": "1200 East Coast Blocc Crips Riverside California (IE) — Reddit r/CaliBanging"
     }
   ],
   "colors": [
@@ -22,5 +30,8 @@
   ],
   "founded_year_precision": "estimate",
   "status": "active",
-  "membership_estimate": 200
+  "membership_estimate": 200,
+  "symbols": [
+    "Tampa Bay Rays Apparel"
+  ]
 }
