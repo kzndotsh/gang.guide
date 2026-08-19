@@ -32,6 +32,26 @@
 ### Recommended Fields
 `lane`, `founded_year`
 
+### Description Rules
+- **Must start with the canonical name** (or a close variant). Not an alias, date, or different org name.
+- **2-4 factual sentences** — founding context + notable characteristics. No lists, no infobox labels.
+- No HTML entities (`&amp;`, `&#39;`), no slurs, no scrape artifacts.
+- Length: 50–800 characters.
+
+### Status Field
+`"active"` | `"inactive"` | `"unknown"`
+
+- `"inactive"` — use when the description mentions the org is "disbanded", "defunct", "no longer active", or "was absorbed". Set `disbanded_year` if known.
+- `"active"` — org is currently operating.
+- `"unknown"` — no reliable information on current status.
+
+### Metro Field
+The specific city the org primarily operates in.
+- Chicago neighborhoods → `"Chicago"` (not `"Cook County"`)
+- LA neighborhoods → `"Los Angeles"` (not `"Southern California"`)
+- National umbrella orgs → `"United States"`
+- Must be consistent with `lane` (a `chicago-folk` org shouldn't have `metro: "New York"`)
+
 ### ID Format
 `org:` prefix + kebab-case slug derived from the org's name.
 

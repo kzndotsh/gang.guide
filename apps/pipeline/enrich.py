@@ -628,7 +628,20 @@ def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
 
     # Aliases: only fill if empty, validate length and content
     if "no_aliases" in issues and enrichment.get("aliases"):
-        aliases = [a.strip() for a in enrichment["aliases"] if a and 2 < len(a) < 60]
+        def _title_alias(a: str) -> str:
+            """Title-case an alias, preserving ALL-CAPS abbreviations."""
+            if a.isupper() and len(a) <= 6:
+                return a  # pure abbreviations like GTS, OHC
+            words = a.strip().split()
+            result = []
+            for w in words:
+                if w.isupper() and len(w) <= 6:
+                    result.append(w)
+                else:
+                    result.append(w[0].upper() + w[1:] if w else w)
+            return " ".join(result)
+
+        aliases = [_title_alias(a) for a in enrichment["aliases"] if a and 2 < len(a) < 60]
         # Reject aliases that are just the org name
         org_name = org.get("name", "").lower()
         aliases = [a for a in aliases if a.lower() != org_name]
@@ -641,9 +654,18 @@ def apply_enrichment(org: dict, enrichment: dict, issues: list[str]) -> dict:
         if isinstance(est, (int, float)) and 5 <= est <= 100000:
             changes["membership_estimate"] = int(est)
 
-    # Symbols: only fill if empty
+    # Symbols: only fill if empty; enforce Title Case
     if "no_symbols" in issues and enrichment.get("symbols"):
-        symbols = [s.strip() for s in enrichment["symbols"] if s and 2 < len(s) < 80]
+        def _title_word(w: str) -> str:
+            if w.isupper() and len(w) <= 6:
+                return w  # preserve acronyms
+            return w[0].upper() + w[1:] if w else w
+
+        symbols = [
+            " ".join(_title_word(w) for w in s.strip().split())
+            for s in enrichment["symbols"]
+            if s and 2 < len(s) < 80
+        ]
         if symbols:
             changes["symbols"] = symbols
 

@@ -511,6 +511,15 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
         "pilsen": "Chicago",
         "little village": "Chicago",
         "back of the yards": "Chicago",
+        "rogers park": "Chicago",
+        "englewood, illinois": "Chicago",
+        "roseland": "Chicago",
+        "woodlawn": "Chicago",
+        "garfield park": "Chicago",
+        "wicker park, chicago": "Chicago",
+        "north side chicago": "Chicago",
+        "south side chicago": "Chicago",
+        "west side chicago": "Chicago",
         "los angeles": "Los Angeles",
         "south central": "Los Angeles",
         "compton": "Los Angeles",
@@ -550,6 +559,80 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
             if lane.startswith(lane_prefix) and metro and metro not in valid_metros:
                 warnings.append(
                     f"{f}: lane '{lane}' but metro='{metro}' (expected one of {valid_metros})"
+                )
+                break
+
+
+def check_status_description_consistency(orgs: dict[str, dict]):
+    """Flag orgs where status contradicts description content.
+
+    Catches:
+    - status='active' but description says the org is defunct/disbanded
+    - status='inactive' but description doesn't mention it being inactive
+    """
+    DEFUNCT_SIGNALS = [
+        "disbanded",
+        "defunct",
+        "no longer exists",
+        "no longer active",
+        "was absorbed",
+        "was dissolved",
+        "ceased to exist",
+        "wiped out",
+        "was destroyed",
+        "has since dissolved",
+        "was eliminated",
+    ]
+
+    for org_id, org in orgs.items():
+        f = org["_file"]
+        status = org.get("status", "")
+        desc = (org.get("description") or "").lower()
+
+        # Status 'active' but description clearly says defunct
+        if status == "active":
+            for signal in DEFUNCT_SIGNALS:
+                if signal in desc:
+                    warnings.append(
+                        f"{f}: status='active' but description mentions '{signal}' — consider status='inactive'"
+                    )
+                    break
+
+
+def check_description_starts_with_name(orgs: dict[str, dict]):
+    """Warn when description starts with an alias or alternate form instead of the canonical name.
+
+    Descriptions should open with the org's canonical name (or a close variant),
+    not with an alias, alternate spelling, or different org name entirely.
+    """
+    for org_id, org in orgs.items():
+        f = org["_file"]
+        desc = org.get("description", "") or ""
+        name = org.get("name", "") or ""
+        aliases = [a.lower() for a in (org.get("aliases") or [])]
+
+        if not desc or not name:
+            continue
+
+        # Extract the first word or phrase of the description (up to first verb/comma)
+        first_words = desc[:80].lower()
+        name_lower = name.lower()
+
+        # Check if description starts with canonical name (allow "The X" variants)
+        starts_ok = (
+            first_words.startswith(name_lower)
+            or first_words.startswith("the " + name_lower)
+            or name_lower in first_words[:len(name_lower) + 10]
+        )
+
+        if starts_ok:
+            continue
+
+        # Check if description starts with a known alias instead — that's a warning
+        for alias in aliases:
+            if first_words.startswith(alias) and alias != name_lower:
+                warnings.append(
+                    f"{f}: description starts with alias '{alias}' instead of canonical name '{name}'"
                 )
                 break
 
@@ -886,6 +969,8 @@ def main():
     check_nation_consistency(orgs, edges)
     check_spinoff_direction(orgs, edges)
     check_member_of_usage(orgs, edges)
+    check_status_description_consistency(orgs)
+    check_description_starts_with_name(orgs)
 
     # Filter out suppressed entries from .gangguideignore
     ignore = load_ignore_rules()

@@ -559,7 +559,6 @@ def apply_corrections(org: dict, verdict: dict, issues: list[str]) -> dict:
             pass  # skip removal; log the intent but don't clear
         elif isinstance(new_desc, str) and len(new_desc) > 30 and "<" not in new_desc:
             changes["description"] = new_desc
-            changes["description"] = new_desc
 
     # Founded year
     new_year = verdict.get("founded_year")
@@ -587,7 +586,20 @@ def apply_corrections(org: dict, verdict: dict, issues: list[str]) -> dict:
         if new_aliases == []:
             changes["aliases"] = []
         elif isinstance(new_aliases, list):
-            cleaned = [a.strip() for a in new_aliases if isinstance(a, str) and 2 < len(a.strip()) < 60]
+            def _title_alias(a: str) -> str:
+                """Title-case an alias, preserving ALL-CAPS abbreviations."""
+                if a.isupper() and len(a) <= 6:
+                    return a  # pure abbreviations like GTS, OHC
+                words = a.strip().split()
+                result = []
+                for w in words:
+                    if w.isupper() and len(w) <= 6:
+                        result.append(w)
+                    else:
+                        result.append(w[0].upper() + w[1:] if w else w)
+                return " ".join(result)
+
+            cleaned = [_title_alias(a) for a in new_aliases if isinstance(a, str) and 2 < len(a.strip()) < 60]
             if cleaned:
                 changes["aliases"] = cleaned
 
@@ -707,7 +719,7 @@ def main() -> None:
         ec = edge_counts.get(org_id, 0)
         if ec < args.min_edges:
             continue
-        if ignore.should_skip_org(org_id):
+        if ignore.should_skip_clean(org_id) or ignore.should_skip_org(org_id):
             continue
         priority, issues = score_org(org, ec)
         if args.issues and args.issues not in issues:

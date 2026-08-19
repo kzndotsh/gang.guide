@@ -41,6 +41,8 @@ This document describes how gang.guide maintains data quality. All checks are en
 | Name contains colon or pipe | Warning | Likely page title fragment |
 | Description starts with lowercase | Warning | Formatting artifact |
 | Description starts with infobox pattern | Warning | Scrape junk (starts with "Full Name:", "Founded:", etc.) |
+| Description starts with alias | Warning | `check_description_starts_with_name` — description should open with canonical name |
+| `status='active'` + defunct description | Warning | `check_status_description_consistency` — description says "disbanded"/"defunct" but status is active |
 | Duplicate org name | Warning | Merge candidate |
 | Single source only | Info | Under-sourced |
 | Imprecise year precision | Info | `estimate` or `decade` — could be researched |
@@ -130,3 +132,53 @@ See [SCHEMA.md](SCHEMA.md#nation_affiliation-vs-member_of) for the full distinct
 just lint                    # run all checks
 python3 apps/pipeline/lint.py   # same thing directly
 ```
+
+## Common Data Quality Issues
+
+Patterns found repeatedly during the clean.py audit passes. Use this as a checklist when adding or editing orgs.
+
+### Description Rules
+- **Must start with the canonical name** — the first phrase should be the org's `name` field value (or a close variant like "The X"). Never start with an alias, a date ("Founded in..."), or a different org's name.
+- **2-4 factual sentences max** — no lists, no infobox fields, no "See also" fragments.
+- **No HTML entities** — fix `&amp;` → `&`, `&#8217;` → `'`. These come from scraping.
+- **No slurs or offensive language** — if a name contains one, paraphrase factually.
+- **No boilerplate** — "X is a street gang based in Y." is not a description; add founding context and notable characteristics.
+
+### Status Consistency
+- If the description says "disbanded", "defunct", "no longer active", or "was absorbed" → `status` should be `"inactive"`.
+- If `status` is `"inactive"` and you know the year the org disbanded, set `disbanded_year`.
+
+### Metro Rules
+- Use the **specific city**, not a county, region, or state.
+  - Chicago neighborhood → `"Chicago"` (not `"Cook County"` or `"Illinois"`)
+  - LA neighborhood → `"Los Angeles"` (not `"Southern California"` or `"Los Angeles County"`)
+  - National umbrella orgs → `"United States"`
+- Metro must be consistent with `lane`. A org in `chicago-folk` lane shouldn't have `metro: "New York"`.
+
+### Founded Year Rules
+- Use the year the **specific set** was founded, not when its parent alliance formed.
+  - A Crips set founded in 1975 → `founded_year: 1975`, not `1969`.
+  - A Blood set formed in 1977 → `founded_year: 1977`, not `1972`.
+- If only the decade is known → `founded_year: 1970, precision: "decade"` (round decade year required).
+- If approximate → `precision: "circa"` with the best estimate year.
+- If completely unknown → omit `founded_year` entirely (don't set to 0 or null).
+
+### Alias Rules
+- Aliases should be names the org is **actually known by** — abbreviations, street names, alternate spellings.
+- Do **not** include subdivision names as aliases (e.g. "Firm 22" is a Vinlanders subdivision, not an alias for the Vinlanders).
+- Title-case each alias (e.g. `"Gangster Two Six"` not `"gangster two six"`).
+- Keep aliases under 60 characters — longer strings are usually descriptions, not aliases.
+
+### Source Rules
+- Every source needs a **proper title** — not a bare domain name.
+  - ✓ `"Wikipedia — Gangster Disciples"`
+  - ✗ `"en.wikipedia.org"`
+  - ✓ `"ADL Backgrounder: Peckerwood"`
+  - ✗ `"adl.org"`
+- Remove sources that return 404 or aren't actually about the org.
+- Sources should use `https://` URLs.
+
+### Symbols Rules
+- Every symbol must be **Title Case**: `"Six-Point Star"` not `"six-point star"`.
+- Abbreviations ≤6 chars are exempt: `"PIRU"`, `"NGC"`, `"OVG"`.
+- Don't include generic sports team names as symbols unless there's documented gang adoption.

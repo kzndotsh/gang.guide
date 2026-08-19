@@ -19,6 +19,9 @@
 #   [lint:suppress]         — suppress a specific lint check for a specific org
 #                             format:  org-id  check-name
 #                             use '*' as org-id to suppress globally
+#   [clean:skip]            — orgs to skip entirely in clean.py
+#                             use for: verified-clean orgs, tool-limit dead-ends,
+#                             orgs with no public data available
 #
 # ENRICH FIELD NAMES (for enrich:skip-field)
 #   no_membership, imprecise_year, no_year, no_symbols, no_aliases,
@@ -365,3 +368,67 @@ org:jokers                                   metro_lane_consistency
 org:toledo-mafia-counts                      metro_lane_consistency
 org:elm-street-piru                          metro_lane_consistency
 org:rollin-30s-tre-tre-crips                 metro_lane_consistency
+
+
+# ── clean:skip ─────────────────────────────────────────────────────────────────
+# Orgs verified clean or confirmed dead-ends during clean.py batches 17-20.
+# These are skipped by clean.py (use enrich:skip for enrich.py dead-ends).
+
+[clean:skip]
+# Verified clean — no issues found after thorough review
+org:97-gangster-crips                        # spot_check: confirmed clean
+org:456-island-piru-pomona                   # spot_check: confirmed clean
+org:51-trouble-gangster-crips                # spot_check: confirmed clean
+org:55-bunch                                 # spot_check: corrected and re-verified
+org:barjug                                   # spot_check: confirmed clean
+org:barrio-x3                                # spot_check: confirmed clean
+org:baxter-street-dudes                      # spot_check: corrected and re-verified
+org:bible-crips                              # spot_check: corrected and re-verified
+org:bing-kong-tong                           # spot_check: corrected and re-verified
+org:black-p-stone-nation                     # spot_check: corrected and re-verified
+org:bronx-dragons                            # spot_check: confirmed clean
+org:chevy-chase-locos                        # spot_check: confirmed clean
+org:copians                                  # spot_check: corrected and re-verified
+org:del-paso-heights-bloods                  # spot_check: confirmed clean
+org:dinner-set-gang                          # spot_check: confirmed clean
+org:dragons                                  # spot_check: confirmed clean
+org:galloping-goose-motorcycle-club          # spot_check: confirmed clean
+org:gangsta-2-6                              # spot_check: confirmed clean
+org:ghetto-brothers                          # spot_check: confirmed clean
+org:green-counts                             # spot_check: confirmed clean
+org:harpys-5th-avenue-los-angeles            # spot_check: confirmed clean, dead Wikipedia source removed
+org:hells-lovers-motorcycle-club             # spot_check: confirmed clean
+org:hermandad-de-pistoleros-latinos          # spot_check: corrected and re-verified
+org:highwaymen-mc                            # spot_check: confirmed clean
+org:jefrox                                   # spot_check: corrected and re-verified
+org:latin-lovers                             # spot_check: verified after desc trim
+org:marginals                                # spot_check: confirmed clean
+org:marvin-gangster-crips                    # tool limit: precision corrected
+org:mid-wilshire-bloods                      # spot_check: confirmed clean, source title fixed
+org:mohawks                                  # bare_source_title: confirmed source live
+org:north-side-satanas                       # spot_check: corrected and re-verified
+org:pasadena-denver-lanes                    # spot_check: dead link removed
+org:peckerwoods                              # tool limit: dead-end
+org:pinoy-real                               # tool limit: dead-end
+org:racine-boys                              # suspicious_exact: confirmed exact 1970
+org:rascals                                  # spot_check: confirmed clean
+org:scotts-dale-piru                         # spot_check: confirmed clean
+org:seminary-and-barry-aristocrats           # spot_check: confirmed clean
+org:skyline-piru-san-diego                   # spot_check: confirmed clean
+org:slaughter-house-gang                     # spot_check: confirmed clean, source fixed
+org:tercera-flats                            # tool limit: Wikipedia 404
+org:tmcne                                    # tool limit: dead-end
+org:tragniew-park-compton-crips              # spot_check: corrected and re-verified
+org:trinitarios                              # single_source_precise: confirmed 1993/exact
+org:unknown-assassins                        # spot_check: corrected and re-verified
+org:varrio-29th-street                       # spot_check: corrected and re-verified
+org:viet-boyz                                # spot_check: confirmed clean
+org:vinlanders-social-club                   # spot_check: corrected and re-verified
+org:wabash                                   # tool limit: source 403
+org:white-tigers                             # spot_check: corrected and re-verified
+org:18th-street-westlake                     # spot_check: confirmed clean
+org:32-tray-deuce-crips                      # tool limit: dead-end
+org:east-side-pirus-compton                  # tool limit: dead-end
+org:el-quintos                               # corrected and re-verified
+org:fordham-baldies                          # tool limit: source broken
+org:little-valley                            # tool limit: source 403

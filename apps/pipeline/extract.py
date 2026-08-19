@@ -129,7 +129,26 @@ EDGE TYPES:
 - spin_off: the target org formed from/splintered off the subject org (A → spin_off → B means "B came from A")
 
 If the text is too short or uninformative, return empty arrays and null fields. Returning nothing is better than guessing.
-</rules>"""
+</rules>
+
+<data_quality>
+DESCRIPTION RULES:
+- Description must begin with the org's canonical name (e.g. "The Gangster Disciples are..." not "Founded in...").
+- Do not begin with an alias, a date, or a different org's name.
+- 2-3 factual sentences max. No lists, no bullet points.
+- No HTML, no scrape artifacts, no phrases like "See also" or "External links".
+
+METRO RULES:
+- metro should be the specific city the org primarily operates in, not a county, region, or state.
+- Chicago neighborhood orgs → metro: "Chicago" (not "Cook County" or "Illinois")
+- LA neighborhood orgs → metro: "Los Angeles" (not "Southern California" or "Los Angeles County")
+- National orgs → metro: "United States"
+
+FOUNDED YEAR RULES:
+- Use the year the specific local set was founded — NOT when its parent alliance was formed.
+- Example: a Crips set founded in 1975 should have founded_year: 1975, not 1969 (when Crips started).
+- If the source only says "formed in the 1970s" use founded_year: 1970, precision: "decade".
+</data_quality>"""
 
 
 def prompt_hash() -> str:

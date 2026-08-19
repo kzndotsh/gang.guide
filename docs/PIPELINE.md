@@ -164,6 +164,7 @@ Pipeline-wide ignore rules live in `.gangguideignore` at the project root. Parse
 | `[apply:skip-edge]` | `apply.py` | Edge patterns the pipeline may never add (`source target type`, `*` = wildcard) |
 | `[verify:skip]` | `verify.py` | Edge patterns to skip web-checking (treat as supported) |
 | `[lint:suppress]` | `lint.py` | Suppress a lint check for a specific org (`org-id check-name`, `*` = global) |
+| `[clean:skip]` | `clean.py` | Org IDs to skip in clean.py — verified-clean orgs or tool-limit dead-ends |
 
 ### Example
 
@@ -189,6 +190,64 @@ org:bloods  cross_metro   # national org, cross-metro edges are intentional
 
 ### Lint check names (`lint:suppress`)
 `cross_metro`, `page_title_org`, `stub_quality`, `nation_consistency`, `spinoff_direction`, `isolated`, `temporal_logic`, `fuzzy_dupe`, `symbol_title_case`, `founded_year_precision`, `single_source`
+
+---
+
+## Clean (`apps/pipeline/clean.py`)
+
+Post-enrichment verification and cleanup — counterpart to `enrich.py`. Spot-checks existing data for accuracy rather than adding new fields.
+
+### What It Checks
+
+| Issue Code | Description |
+|-----------|-------------|
+| `impossible_year` | Founded year predates the movement (Crips before 1969, etc.) |
+| `precision_mismatch` | `decade` precision with non-round year, or `exact` with round year |
+| `suspicious_exact_year` | Exact year ending in 0 or 5 with no strong sourcing |
+| `implausible_membership` | Membership estimate too large for a low-connectivity org |
+| `boilerplate_desc` | Generic "is a street gang based in X" description |
+| `html_in_desc` | HTML entities or tags in description field |
+| `bare_source_title` | Source title is a bare domain name |
+| `single_source_precise` | High-precision data with only one source |
+| `desc_too_long` | Description over 800 characters |
+| `spot_check` | Random 1-in-20 sampling for general verification |
+
+### How It Works
+
+1. **Score and rank** orgs by issue severity × connectivity (high-connectivity errors prioritized).
+2. **Gather context** from `data/raw/` via ripgrep, same as `enrich.py`.
+3. **Agentic LLM loop** — uses `web_search` + `fetch_url` tools to verify suspicious fields.
+4. **Conservative apply** — only changes fields the LLM can confirm are wrong. Never clears a description without a replacement.
+
+### CLI Options
+
+```bash
+just clean                            # clean top-ranked orgs (default 50)
+just clean-rank                       # show priority ranking (dry run)
+python3 -m apps.pipeline.clean --limit 20
+python3 -m apps.pipeline.clean --org org:trinitarios
+python3 -m apps.pipeline.clean --issues suspicious_exact_year
+python3 -m apps.pipeline.clean --lane chicago-folk
+```
+
+Flags:
+- `--dry-run` — preview ranking without calling LLM
+- `--limit N` — max orgs per run
+- `--org ID` — clean a specific org by ID
+- `--issues CODE` — only clean orgs with a specific issue code
+- `--lane ID` — only clean orgs in a specific lane
+- `--no-tools` — disable web search (faster, less accurate)
+- `--model` — override the LLM model
+
+### Skipping Orgs
+
+Add verified-clean orgs or dead-ends to `.gangguideignore` under `[clean:skip]`:
+
+```
+[clean:skip]
+org:trinitarios      # spot_check: confirmed clean after thorough review
+org:tmcne            # tool limit: no accessible public source
+```
 
 ---
 

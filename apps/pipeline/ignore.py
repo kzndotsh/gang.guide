@@ -72,7 +72,8 @@ class IgnoreRules:
     # [lint:suppress] — {org_id: set of check names}; '*' = global
     lint_suppress: dict[str, set[str]] = field(default_factory=dict)
 
-    # ── enrich ────────────────────────────────────────────────────────────────
+    # [clean:skip] — org IDs to skip entirely in clean.py
+    clean_skip: set[str] = field(default_factory=set)
 
     def should_skip_org(self, org_id: str) -> bool:
         """Return True if this org should be skipped entirely in enrich.py."""
@@ -86,6 +87,12 @@ class IgnoreRules:
         """Remove any issues suppressed for this org via [enrich:skip-field]."""
         suppressed = self.enrich_skip_fields.get(org_id, set())
         return [i for i in issues if i not in suppressed]
+
+    # ── clean ─────────────────────────────────────────────────────────────────
+
+    def should_skip_clean(self, org_id: str) -> bool:
+        """Return True if this org should be skipped entirely in clean.py."""
+        return org_id in self.clean_skip
 
     # ── apply ─────────────────────────────────────────────────────────────────
 
@@ -195,6 +202,10 @@ def load_ignore_rules(path: str | Path | None = None, validate: bool = False) ->
             else:
                 _warn(ignore_path, lineno, f"lint:suppress needs 'org-id check-name', got: {line!r}")
 
+        elif current_section == "clean:skip":
+            if len(parts) >= 1:
+                rules.clean_skip.add(parts[0])
+
         else:
             _warn(ignore_path, lineno, f"unknown section [{current_section}], skipping: {line!r}")
 
@@ -224,6 +235,7 @@ def _validate_org_ids(ignore_path: Path, rules: IgnoreRules) -> None:
     all_ids: set[str] = set()
     all_ids |= rules.enrich_skip
     all_ids |= rules.apply_skip_orgs
+    all_ids |= rules.clean_skip
     all_ids |= {oid for oid in rules.enrich_skip_fields}
     all_ids |= {oid for oid in rules.lint_suppress if oid != "*"}
     for src, tgt, _ in rules.apply_skip_edges:
