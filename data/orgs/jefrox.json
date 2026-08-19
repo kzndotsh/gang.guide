@@ -3,12 +3,12 @@
   "name": "Jefrox",
   "lane": "asian-gangs",
   "metro": "Los Angeles",
-  "description": "A Filipino-American street gang based in the Koreatown and Maplewood areas of Los Angeles, with an additional presence in the San Fernando Valley. The name is a stylized play on the word 'projects,' referencing low-income neighborhoods in the Philippines. Though primarily Filipino, the gang also drew members from Korean and Armenian communities due to its Koreatown roots.",
+  "description": "A Filipino-American street gang based in the Koreatown and Maplewood areas of Los Angeles, with an additional presence in the San Fernando Valley. The name is a stylized play on the word 'projects,' referencing low-income neighborhoods in the Philippines. Though primarily Filipino, the gang also drew members from Korean communities due to its Koreatown roots.",
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/asian/losangelesnorth/jfx",
-      "title": "Jefrox — StreetGangs"
+      "url": "https://www.reddit.com/r/CaliBanging/",
+      "title": "Jefrox Gang, JFX — r/CaliBanging (Reddit)"
     }
   ],
   "founded_year": 1980,

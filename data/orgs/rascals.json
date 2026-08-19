@@ -7,8 +7,12 @@
   "type": "street_gang",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Avenues_%28gang%29",
-      "title": "Avenues (gang) — Wikipedia"
+      "url": "https://en.wikipedia.org/wiki/Toonerville_Rifa_13",
+      "title": "Toonerville Rifa 13 — Wikipedia"
+    },
+    {
+      "url": "https://alchetron.com/Thee-Rascals-13",
+      "title": "Thee Rascals 13 — Alchetron"
     }
   ],
   "founded_year": 1975,

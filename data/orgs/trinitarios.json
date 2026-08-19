@@ -19,7 +19,8 @@
   "colors": [
     "red",
     "white",
-    "blue"
+    "blue",
+    "green"
   ],
   "founded_year_precision": "exact",
   "status": "active",
