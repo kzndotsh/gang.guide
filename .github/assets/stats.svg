@@ -54,10 +54,10 @@
   <text class="small" x="288" y="140">2,434 / 2,987</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="420" y="100">2,556 citations</text>
-  <text class="small" x="420" y="120">487 multi-sourced</text>
-  <text class="small" x="420" y="140">695 have aliases</text>
-  <text class="small" x="580" y="100">880 with colors</text>
-  <text class="small" x="580" y="120">245 with symbols</text>
+  <text class="small" x="420" y="100">2,545 citations</text>
+  <text class="small" x="420" y="120">488 multi-sourced</text>
+  <text class="small" x="420" y="140">708 have aliases</text>
+  <text class="small" x="580" y="100">881 with colors</text>
+  <text class="small" x="580" y="120">250 with symbols</text>
   <text class="small" x="580" y="140">752 exact/circa years</text>
 </svg>
