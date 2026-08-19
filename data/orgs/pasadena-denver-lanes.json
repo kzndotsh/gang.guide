@@ -3,31 +3,34 @@
   "name": "Pasadena Denver Lanes",
   "type": "street_gang",
   "lane": "california-bloods-la-south-bay",
-  "description": "Ls) are a predominately African-American street gang located in King’s Manor Apartments in Pasadena, California.",
+  "description": "The Pasadena Denver Lane Bloods (PDLB), commonly known as the Pasadena Denver Lanes (PDL), are a predominantly African-American street gang based on the west side of Pasadena, California. The gang emerged in the late 1970s as a Pasadena-based subset of the Denver Lane Bloods from South Central Los Angeles and is one of the oldest and largest Blood sets in the San Gabriel Valley. Their territory is centered along the Fair Oaks Avenue corridor, with Kings Villages (formerly King's Manor Apartments) and Robinson Park serving as primary gathering areas.",
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://www.streetgangs.com/bloods/pasadena",
-      "title": "Pasadena Denver Lanes — StreetGangs"
+      "url": "https://www.unitedgangs.com/pasadena-denver-lane-bloods/",
+      "title": "Pasadena Denver Lane Bloods — UnitedGangs.com"
     },
     {
-      "url": "https://www.streetgangs.com/crips/pasadena",
-      "title": "Pasadena Denver Lanes — StreetGangs"
-    },
-    {
-      "url": "https://www.streetgangs.com/hispanic/pasadena",
-      "title": "Pasadena Denver Lanes — StreetGangs"
+      "url": "https://www.insidesocal.com/crime/2008/09/pasadena-denver-lanes.html",
+      "title": "Pasadena Denver Lanes — Crime Scene (Inside SoCal)"
     }
   ],
   "metro": "Los Angeles",
-  "founded_year": 1972,
+  "founded_year": 1977,
   "colors": [
     "red"
   ],
   "aliases": [
     "PDL",
-    "Apartments in Pasadena"
+    "PDLB",
+    "Pasadena Devil Lanes"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "circa",
+  "status": "active",
+  "membership_estimate": 400,
+  "symbols": [
+    "PDL",
+    "626",
+    "Red Rose"
+  ]
 }

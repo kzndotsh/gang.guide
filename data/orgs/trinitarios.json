@@ -17,9 +17,8 @@
     }
   ],
   "colors": [
-    "green",
-    "white",
     "red",
+    "white",
     "blue"
   ],
   "founded_year_precision": "exact",

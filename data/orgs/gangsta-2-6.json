@@ -5,7 +5,9 @@
     "Two Six",
     "Gangster Two Six",
     "G26",
-    "GTS"
+    "GTS",
+    "IIGVI",
+    "TSN"
   ],
   "type": "street_gang",
   "lane": "chicago-independent",
@@ -26,6 +28,11 @@
     }
   ],
   "symbols": [
-    "Playboy Bunny With Bent Right Ear"
+    "Playboy Bunny With Bent Right Ear",
+    "Hooded Bunny (Darkside Variant)",
+    "Heart",
+    "Club",
+    "Diamond",
+    "Three Slashes With Three Dots"
   ]
 }

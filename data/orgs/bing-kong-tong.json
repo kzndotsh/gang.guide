@@ -4,7 +4,7 @@
   "type": "street_gang",
   "lane": "other-national",
   "metro": "United States",
-  "description": "The Bing Kong Tong was one of the most powerful Tongs in San Francisco's Chinatown during the early 20th century. It was involved in violent Tong wars, particularly against the Hop Sing and Suey Sing Tongs. The organization was weakened by a decade-long war and state authorities, eventually emerging as a trade union, though suspected of remaining ties to organized crime.",
+  "description": "The Bing Kong Tong (秉公堂) was one of the most powerful Tongs in San Francisco's Chinatown during the early 20th century. It was involved in violent Tong wars after the Hop Sing and Suey Sing Tongs allied against it, instigating one of the most violent Tong conflicts in the United States. An investigation by Santa Rosa attorney Wallace L. Ware, in cooperation with the district attorney's office, exposed the organization's influence across Chinese-American communities along the West Coast and into the Southwest. Weakened by the decade-long war and state authorities, it eventually emerged as a trade union, though suspected by federal and local law enforcement of retaining ties to organized crime.",
   "aliases": [
     "Bing Kong Tong Society",
     "Bing Kung Association"
@@ -12,11 +12,11 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Bing_Kong_Tong",
-      "title": "Bing Kong Tong \u2014 Wikipedia"
+      "title": "Bing Kong Tong — Wikipedia"
     }
   ],
-  "founded_year": 1880,
-  "founded_year_precision": "decade",
+  "founded_year": 1874,
+  "founded_year_precision": "exact",
   "status": "active",
   "colors": []
 }
