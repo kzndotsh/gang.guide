@@ -1,7 +1,7 @@
 {
   "id": "org:highwaymen-mc",
   "name": "Highwaymen MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Highwaymen MC is a one-percenter outlaw motorcycle club founded in 1954 in Detroit, Michigan. The largest outlaw motorcycle club in the Detroit area, it maintains chapters in Alabama, Florida, Indiana, Kentucky, Missouri, Ohio, and Tennessee, with influence across the Midwest and South.",
   "status": "active",

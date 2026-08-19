@@ -1,7 +1,7 @@
 {
   "id": "org:legion-of-doom-mc",
   "name": "Legion of Doom MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "Legion of Doom MC is an outlaw motorcycle gang with members who have served in the US Air Force, per FBI NGTA reporting.",
   "status": "active",

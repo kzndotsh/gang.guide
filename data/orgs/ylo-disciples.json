@@ -11,7 +11,7 @@
   "metro": "Chicago",
   "description": "Chicago Folk Nation street gang founded in 1980 when the Young Latino Organization Cobra Disciples split into two separate organizations. Members who aligned with Disciple concepts became the YLO Disciples, closely allied with the Maniac Latin Disciples under the Maniac Familia. Originally rooted in Logan Square (California & Cortland), they later established presence in West Humboldt Park, Humboldt Park, and Little Village.",
   "founded_year": 1980,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "decade",
   "colors": [
     "black",
     "light blue"

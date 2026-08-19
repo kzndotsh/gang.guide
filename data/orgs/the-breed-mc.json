@@ -1,7 +1,7 @@
 {
   "id": "org:the-breed-mc",
   "name": "The Breed MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Breed MC is a one-percenter outlaw motorcycle gang founded in 1968 in Jersey City, New Jersey, primarily active in the northeastern United States.",
   "status": "active",

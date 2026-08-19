@@ -1,7 +1,7 @@
 {
   "id": "org:invaders-mc",
   "name": "Invaders MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Invaders MC is an outlaw motorcycle gang founded in 1965 in Gary, Indiana.",
   "status": "active",

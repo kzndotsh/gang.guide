@@ -1,7 +1,7 @@
 {
   "id": "org:sons-of-hell-mc",
   "name": "Sons of Hell MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "Sons of Hell MC is an outlaw motorcycle gang whose members have included former US Marines, according to FBI NGTA reporting.",
   "status": "active",

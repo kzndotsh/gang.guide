@@ -6056,16 +6056,6 @@
     "source_url": "https://chicagoganghistory.com/gang/four-corner-hustlers/"
   },
   {
-    "id": "4bf7c943fc18",
-    "source": "org:four-corner-hustlers-chicago",
-    "target": "org:almighty-vice-lord-nation",
-    "type": "member_of",
-    "start_year": 1965,
-    "end_year": 1967,
-    "evidence": "Because Fred Gage Junior's father was a big time Conservative Vice Lord, he blessed his son and nephew with their own branch of the Vice Lords and the boys chose to name themselves off Independence Boulevard (Hamlin Boulevard), they called themselves the 'Independence Vice Lords.'",
-    "source_url": "https://chicagoganghistory.com/gang/four-corner-hustlers/"
-  },
-  {
     "id": "3b2067703a95",
     "source": "org:four-corner-hustlers-chicago",
     "target": "org:latin-kings",
@@ -11209,7 +11199,7 @@
   },
   {
     "source": "org:howard-street-greasers",
-    "target": "org:thorndale-jagoffs",
+    "target": "org:thorndale-jag-offs",
     "type": "alliance",
     "evidence": "We fought along side of what was left of TJO (THORNDALE JAGOFFS)",
     "source_url": "http://www.stonegreasers.com/greaser/howard_street_greasers.html"
@@ -21834,18 +21824,6 @@
       }
     ],
     "start_year": 1974
-  },
-  {
-    "source": "org:insane-gangster-disciples",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "sources": [
-      {
-        "url": "https://www.gangenforcement.com/insane-gangster-disciples.html",
-        "title": "Gang Enforcement — Insane Gangster Disciples Profile",
-        "evidence": "Per Gang Enforcement IGD profile: IGD is listed as one of the 6 Folk Nation sets: 'GD, BGD, IGD, GG, IG, MLG, SD'"
-      }
-    ]
   },
   {
     "source": "org:insane-gangster-disciples",

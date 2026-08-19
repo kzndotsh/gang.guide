@@ -1,7 +1,7 @@
 {
   "id": "org:el-forastero-mc",
   "name": "El Forastero MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "El Forastero MC (also spelled El Foresteros) is a one-percenter outlaw motorcycle gang founded in 1962 in Sioux City, Iowa, primarily active in the Midwest.",
   "status": "active",

@@ -1,7 +1,7 @@
 {
   "id": "org:cossacks-mc",
   "name": "Cossacks MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Cossacks MC is a Texas-based outlaw motorcycle gang and rival of the Bandidos. On May 17, 2015, a confrontation between the Cossacks, Bandidos, and their support clubs at Twin Peaks restaurant in Waco, Texas resulted in nine deaths.",
   "status": "active",

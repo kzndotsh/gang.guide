@@ -1,7 +1,7 @@
 {
   "id": "org:condemned-few-mc",
   "name": "Condemned Few MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Condemned Few MC is an outlaw motorcycle gang founded in 2005 in Queens, New York.",
   "status": "active",

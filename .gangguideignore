@@ -370,6 +370,50 @@ org:elm-street-piru                          metro_lane_consistency
 org:rollin-30s-tre-tre-crips                 metro_lane_consistency
 
 
+# metro_lane_consistency false positives — batch 2026-08-19
+# Inglewood is in LA County; descriptions legitimately say "Inglewood" but metro='Inglewood' is correct
+org:center-park-bloods                metro_lane_consistency
+org:centinela-park-family             metro_lane_consistency
+org:crenshaw-mafia-gang               metro_lane_consistency
+org:doty-block-bloods                 metro_lane_consistency
+org:imperial-village-crips            metro_lane_consistency
+org:original-inglewood-crips          metro_lane_consistency
+org:osage-legend-crips-inglewood      metro_lane_consistency
+org:queen-street-bloods               metro_lane_consistency
+org:tongan-crip-gang                  metro_lane_consistency
+org:west-downtown-inglewood-bloods    metro_lane_consistency
+org:avenue-piru-gang                  metro_lane_consistency
+org:neighborhood-piru-inglewood       metro_lane_consistency
+# Descriptions that mention another city correctly in context (history, spread, alliances)
+org:6-mile-bounty-hunna-watts-bloods  metro_lane_consistency  # named after Watts Bloods, is Detroit
+org:44-trey-mafia                     metro_lane_consistency  # TMF Bloods Detroit, no Chicago
+org:brightmoor-gangster-crips         metro_lane_consistency  # Detroit Crips, no Watts
+org:detroit-gangster-disciples        metro_lane_consistency  # correctly mentions Chicago founding
+org:eastside-rollin-80s-skyline-pirus metro_lane_consistency  # now fixed to Detroit
+org:el-monte-flores                   metro_lane_consistency  # LA gang, 'chicago' in wrong context
+org:elm-street-piru                   metro_lane_consistency  # Compton Piru, mentions spread to Brooklyn
+org:four-corner-hustlers-chicago      metro_lane_consistency  # Chicago org, mentions Detroit branch
+org:graveyard-crips                   metro_lane_consistency  # Santa Monica, near Woodlawn Cemetery
+org:headbanger-bloods                 metro_lane_consistency  # Detroit, mentions Chicago-style Bloods
+org:latin-counts-chicago              metro_lane_consistency  # Chicago org, mentions Detroit branch
+org:rollin-30s-harlem-crips           metro_lane_consistency  # LA Crips, "Harlem" is neighborhood name
+org:rollin-30s-original-harlem-crips  metro_lane_consistency  # same
+org:rollin-60s-neighborhood-crips     metro_lane_consistency  # LA org, Hyde Park mention
+org:shredgang                         metro_lane_consistency  # Detroit, mentions Inglewood Crips alliance
+org:skyline-piru-san-diego            metro_lane_consistency  # San Diego, mentions Compton origin
+org:toledo-mafia-counts               metro_lane_consistency  # Toledo, mentions Chicago Latin Counts
+org:wah-ching                         metro_lane_consistency  # SF, mentions LA chapter
+org:young-lords                       metro_lane_consistency  # Chicago, mentions Harlem branch
+org:circle-city-pirus-in-watts-los-angeles  metro_lane_consistency  # Watts LA, mentions Rogers Park incorrectly
+org:ovs                               metro_lane_consistency  # Ontario CA / Inland Empire - ok
+# Lane/metro combos that need city added to valid list
+org:forming-kaos                      metro_lane_consistency  # Orange County is valid for CA-inland
+org:lopers-13                         metro_lane_consistency  # same
+
+org:baker-street-vice-lords           metro_lane_consistency  # Lansing org started by Chicago VLs, mentions Chicago
+org:glo-gang                          metro_lane_consistency  # Chicago collective, description mentions Detroit fan base
+org:westside-fruit-town-brims         fuzzy_dupe              # Distinct from Fruit Town Brims (confirmed)
+
 # description_starts_with_name false positives
 # These legitimately open with a formal/legal/common name rather than the abbreviated canonical name
 org:outlaws-motorcycle-club           description_starts_with_name

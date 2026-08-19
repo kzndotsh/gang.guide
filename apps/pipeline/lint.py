@@ -480,6 +480,7 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
             "Fresno", "Inglewood", "Compton", "Long Beach", "Pomona", "Riverside",
             "San Bernardino", "Oxnard", "Salinas", "Stockton", "Modesto", "Oakland",
             "Azusa", "Carson", "Torrance", "Hawthorne", "Lynwood", "Gardena",
+            "Orange County", "Anaheim", "Santa Ana", "Inland Empire", "San Jose",
         ],
         "chicago-": ["Chicago"],
         "detroit": ["Detroit"],
@@ -511,10 +512,12 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
         "pilsen": "Chicago",
         "little village": "Chicago",
         "back of the yards": "Chicago",
-        "rogers park": "Chicago",
+        "rogers park, chicago": "Chicago",
+        "rogers park neighborhood of chicago": "Chicago",
         "englewood, illinois": "Chicago",
         "roseland": "Chicago",
-        "woodlawn": "Chicago",
+        "woodlawn, chicago": "Chicago",
+        "woodlawn neighborhood chicago": "Chicago",
         "garfield park": "Chicago",
         "wicker park, chicago": "Chicago",
         "north side chicago": "Chicago",
@@ -978,8 +981,8 @@ def main():
         # Build a set of (org_id, check_name) pairs that are suppressed
         # Check names map to message substrings for fuzzy matching
         CHECK_ALIASES = {
-            "cross_metro": "cross-metro",
-            "metro_lane_consistency": "metro_lane_consistency",
+            "cross_metro": "cross-metro rivalry",
+            "metro_lane_consistency": "but metro=",
             "description_starts_with_name": "description starts with alias",
             "status_description_consistency": "status=",
             "fuzzy_dupe": "potential dupe",

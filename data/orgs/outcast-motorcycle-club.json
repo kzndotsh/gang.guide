@@ -1,7 +1,7 @@
 {
   "id": "org:outcast-motorcycle-club",
   "name": "Outcast Motorcycle Club",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Outcast Motorcycle Club is a Black outlaw motorcycle gang primarily active in the southeastern United States, particularly Alabama. In September 2014, Outcast members opened fire at the Showstoppers MC clubhouse in Birmingham, killing members of the Wheels of Soul and Showstoppers.",
   "status": "active",

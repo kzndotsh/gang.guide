@@ -1,7 +1,7 @@
 {
   "id": "org:devil-disciples-mc",
   "name": "Devil Disciples MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Devil Disciples MC is an outlaw motorcycle gang founded in 1967 in Fontana, California.",
   "status": "active",

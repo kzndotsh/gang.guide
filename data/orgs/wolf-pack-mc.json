@@ -1,7 +1,7 @@
 {
   "id": "org:wolf-pack-mc",
   "name": "Wolf Pack MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "Wolf Pack MC is an outlaw motorcycle gang identified as encouraging members without criminal records to enlist in the US military, per 2013 NGIC reporting.",
   "status": "active",

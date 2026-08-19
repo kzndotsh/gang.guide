@@ -6,7 +6,7 @@
   "lane": "other-national",
   "metro": "Unknown",
   "founded_year": 1930,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "decade",
   "description": "The Nation of Islam (NOI) is the largest Black nationalist organization in the U.S., founded in Detroit in 1930 by Fard Muhammad. Under Louis Farrakhan's decades-long leadership, the organization has maintained a significant presence in Black communities across the United States, blending religious doctrine with Black nationalist ideology.",
   "colors": [],
   "nation_affiliation": null,

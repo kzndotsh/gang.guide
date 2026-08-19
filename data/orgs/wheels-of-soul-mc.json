@@ -1,7 +1,7 @@
 {
   "id": "org:wheels-of-soul-mc",
   "name": "Wheels of Soul MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Wheels of Soul MC is one of the largest Black outlaw motorcycle gangs in the United States, with chapters across multiple states. The gang has documented rivalries with both the Bandidos and Outcast MC, and maintains an exclusively male membership.",
   "status": "active",

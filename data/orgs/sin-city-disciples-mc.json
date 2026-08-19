@@ -1,7 +1,7 @@
 {
   "id": "org:sin-city-disciples-mc",
   "name": "Sin City Disciples MC",
-  "type": "outlaw_motorcycle_gang",
+  "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
   "description": "The Sin City Disciples MC is a Black outlaw motorcycle gang founded in 1966 in Gary, Indiana. It is one of the largest Black OMGs in the United States.",
   "status": "active",
