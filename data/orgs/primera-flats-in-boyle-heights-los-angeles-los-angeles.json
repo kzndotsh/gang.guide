@@ -15,10 +15,30 @@
     {
       "url": "https://www.streetgangs.com/hispanic/cityofla/boyleheights",
       "title": "Boyleheights — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/primera-flats/",
+      "title": "Primera Flats - UnitedGangs.com"
+    },
+    {
+      "url": "https://unitedgangs.com/2018/12/07/sports-hats-you-should-never-wear-in-los-angeles/",
+      "title": "Sports Hats You Should Never Wear In Los Angeles - UnitedGangs.com"
+    },
+    {
+      "url": "https://caselaw.findlaw.com/court/ca-court-of-appeal/1508457.html",
+      "title": "The People v. Carlos Calderon (2010) - FindLaw"
+    },
+    {
+      "url": "https://www.flickr.com/photos/80643375@N00/2816819550/",
+      "title": "\"PF\" Primera Flats Graffiti, East Los Angeles - Flickr"
     }
   ],
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Pittsburgh Pirates Apparel",
+    "PF Graffiti Tag"
+  ]
 }

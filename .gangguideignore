@@ -296,12 +296,27 @@ org:latin-jivers                      # now fixed: source added, remaining field
 org:people-nation                     # no_membership: national alliance, no public count
 org:tree-top-piru                     # now has symbols, remaining issues dead-end
 org:118-east-coast-crips              # imprecise_year + no_symbols: no data found
-org:altadena-blocc-crips-abc          # no_symbols: no data found
+org:altadena-blocc-crips-los-angeles          # no_symbols: no data found
 org:buccaneers                        # no data found after 4 attempts
 org:hawthorne-piru                    # no_symbols + no_membership: confirmed dead-end
 org:howard-street-greasers            # no_membership + no_symbols: confirmed dead-end
 org:76-east-coast-crip                # imprecise_year + no_membership: confirmed dead-end
 org:spook-town-compton-crips          # confirmed dead-end
+
+org:98-gangster-crips                 # no_symbols: confirmed dead-end after 2 tool-limit runs
+org:altadena-blocc-crip-abc-in-altadena  # no_symbols: confirmed dead-end
+org:mona-park-compton-crips           # no_symbols + no_membership: dead-end
+org:south-los-13                      # tool-limit dead-end
+org:taylor-jousters                   # no_membership: confirmed dead-end
+org:trouble-gangster-crips            # no_symbols + no_membership: dead-end
+org:watts-franklin-square-crips       # no_symbols + no_membership: dead-end
+org:twelfth-street-players            # no_membership: confirmed dead-end
+org:112-hoover-criminals              # no_symbols + no_membership: dead-end
+org:62-east-coast-neighborhood-crips  # no_symbols + no_membership: dead-end
+org:original-front-hood-compton-crips # no_symbols + no_membership: dead-end
+org:puerto-rican-stones               # no_membership: confirmed dead-end
+org:raymond-street-hustler-compton-crips  # no_symbols + no_membership: dead-end
+org:lynwood-neighborhood-crips        # no_symbols + no_membership: dead-end
 
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.

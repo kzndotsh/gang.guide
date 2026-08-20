@@ -1,7 +1,10 @@
 {
   "id": "org:maniac-campbell-boys",
   "name": "Maniac Campbell Boys",
-  "aliases": [],
+  "aliases": [
+    "MCBs",
+    "Campbell Boys"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -18,6 +21,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/maniac-campbell-boys",
       "title": "Maniac Campbell Boys - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/maniac-campbell-boys",
+      "title": "Maniac Campbell Boys – Chicago Gang History"
+    },
+    {
+      "url": "https://www.flickr.com/photos/chicagocoldwar/albums/72157620866585109/",
+      "title": "Maniac Campbell Boys – Chicago's Cold War (Flickr)"
     }
   ],
   "symbols": [

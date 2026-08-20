@@ -1,7 +1,10 @@
 {
   "id": "org:latin-dragons",
   "name": "Latin Dragons",
-  "aliases": [],
+  "aliases": [
+    "Latin Dragons Nation",
+    "Latin Dragon Nation"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -18,6 +21,22 @@
     {
       "url": "https://chicagoganghistory.com/gang/latin-dragons",
       "title": "Latin Dragons - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/latin-dragons",
+      "title": "Latin Dragons - Chicago Gang History"
+    },
+    {
+      "url": "https://www.justice.gov/archives/opa/pr/four-additional-latin-dragon-members-charged-racketeering-conspiracy",
+      "title": "Four Additional Latin Dragon Members Charged with Racketeering Conspiracy"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ndin/pr/ten-additional-latin-dragon-members-charged-racketeering-conspiracy-including-five",
+      "title": "Ten Additional Latin Dragon Members Charged with Racketeering Conspiracy"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ndin/pr/latin-dragon-nation-member-sentenced-420-months-imprisonment",
+      "title": "Latin Dragon Nation Member Sentenced to 420 Months Imprisonment"
     }
   ],
   "symbols": [

@@ -44,5 +44,6 @@
     "blue"
   ],
   "status": "active",
-  "military_service": "Army"
+  "military_service": "Army",
+  "membership_estimate": 700
 }
