@@ -1,7 +1,9 @@
 {
   "id": "org:northern-california-aryan-volk",
   "name": "Northern California Aryan Volk",
-  "aliases": [],
+  "aliases": [
+    "NCAV"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "United States",
@@ -15,6 +17,10 @@
     {
       "url": "https://www.adl.org/resources/profile/volksfront",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/volksfront",
+      "title": "Volksfront Hate Symbol – ADL Hate on Display"
     }
   ]
 }

@@ -453,6 +453,21 @@ org:suicidal-town                     # no_symbols: confirmed dead-end
 org:west-blvd-crips                   # no_symbols: tool-limit dead-end
 org:10th-oregon-crew                  # no_symbols: confirmed dead-end
 
+org:concrete-money-gang               # no_year: confirmed dead-end
+org:hoodrich                          # no_year: confirmed dead-end
+org:kings-men                         # no_year: historical Detroit, no date
+org:molochs-mc                        # no_year: tool-limit dead-end
+org:outcast-motorcycle-club           # no_year: confirmed dead-end
+org:seropians                         # no_year: no data found
+org:seven-crowns                      # no_year: confirmed dead-end
+org:sons-of-hell-mc                   # no_year: confirmed dead-end
+org:the-rebels                        # no_year: confirmed dead-end
+org:wildlife                          # no_year: confirmed dead-end
+org:wolf-pack-mc                      # no_year: tool-limit dead-end
+org:2-2-boys                          # no_year: tool-limit dead-end
+org:4-gang                            # no_year: timeout dead-end
+org:42-hustle-boyz                    # no_year: tool-limit dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

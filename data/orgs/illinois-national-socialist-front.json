@@ -1,7 +1,9 @@
 {
   "id": "org:illinois-national-socialist-front",
   "name": "Illinois National Socialist Front",
-  "aliases": [],
+  "aliases": [
+    "INSF"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -15,6 +17,10 @@
     {
       "url": "https://www.adl.org/resources/profile/national-socialist-movement",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.adl.org/resources/news/arthur-jones",
+      "title": "Arthur Jones - ADL"
     }
   ]
 }

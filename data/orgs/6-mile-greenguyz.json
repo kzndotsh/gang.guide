@@ -1,7 +1,12 @@
 {
   "id": "org:6-mile-greenguyz",
   "name": "6 Mile GreenGuyz",
-  "aliases": [],
+  "aliases": [
+    "SGC",
+    "GreenGuyz",
+    "ShotGun Crips",
+    "6 Mile Green Guyz"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
@@ -17,6 +22,16 @@
     {
       "url": "https://detroitstreetgangs.com/6-mile-greenguyz-sgc-shotgun-crips/",
       "title": "Inside the Powerful Rise of 6 Mile GreenGuyz (SGC) / ShotGun Crips in Detroit"
+    },
+    {
+      "url": "https://grokipedia.com/page/6-mile-greenguyz",
+      "title": "6 Mile GreenGuyz — Grokipedia"
     }
+  ],
+  "symbols": [
+    "Green Bay Packers Gear",
+    "Dark Green Bandanna",
+    "Green Gangsta Movement Graffiti",
+    "132nd Clique"
   ]
 }

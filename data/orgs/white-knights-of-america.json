@@ -1,20 +1,48 @@
 {
   "id": "org:white-knights-of-america",
   "name": "White Knights of America",
-  "aliases": [],
+  "aliases": [
+    "White Knights"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1991,
+  "founded_year_precision": "exact",
   "description": "The White Knights of America is a small white supremacist prison gang that originated in the Texas prison system and later expanded to Arizona. The organization falls under Federal Bureau of Prisons (BOP) monitoring as a recognized security threat group.",
-  "colors": [],
+  "colors": [
+    "red",
+    "white",
+    "black"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/white-knights",
+      "title": "White Knights – ADL Hate Symbols Database"
+    },
+    {
+      "url": "https://www.ncfgt.org/articles/white-knights",
+      "title": "White Knights – National Center for Gang Threat (NCFGT)"
+    },
+    {
+      "url": "https://www.adl.org/resources/report/white-supremacist-prison-gangs-2022-assessment",
+      "title": "White Supremacist Prison Gangs: 2022 Assessment – ADL"
     }
+  ],
+  "symbols": [
+    "Knight's Helmet With Skull",
+    "Crossed Swords",
+    "White/Knight Rockers",
+    "23/11 Numeric Code",
+    "W/K Hand Sign",
+    "Knight In Armor Tattoo",
+    "Swastika",
+    "Double Lightning Bolts"
   ]
 }

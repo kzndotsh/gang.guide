@@ -10,9 +10,17 @@
     {
       "url": "https://www.fbi.gov/file-repository/stats-services-publications-2011-national-gang-threat-assessment-2011%20national%20gang%20threat%20assessment%20%20emerging%20trends.pdf",
       "title": "FBI NGTA 2011 — Emerging Trends"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Red_Devils_MC",
+      "title": "Red Devils Motorcycle Club - Wikipedia"
     }
   ],
-  "aliases": [],
+  "aliases": [
+    "RDMC",
+    "Death Patrol"
+  ],
   "colors": [],
-  "founded_year": null
+  "founded_year": 2001,
+  "founded_year_precision": "exact"
 }
