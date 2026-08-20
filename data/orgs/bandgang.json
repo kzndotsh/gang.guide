@@ -7,8 +7,8 @@
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 2008,
+  "founded_year_precision": "circa",
   "description": "BandGang (also known as Band Crew) is a Detroit west side street gang and rap collective formed in 2008. The association comprises smaller gangs including CMH, YNC, PBF, and FOE Life. Members have been federally convicted of attempted murder and drive-by shootings.",
   "colors": [],
   "nation_affiliation": null,
@@ -26,5 +26,8 @@
       "url": "https://detroitstreetgangs.com/",
       "title": "Detroit Street Gangs (DSG) – HOME PAGE"
     }
+  ],
+  "symbols": [
+    "Hand Signs"
   ]
 }

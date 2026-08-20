@@ -1,7 +1,9 @@
 {
   "id": "org:chilli-macs",
   "name": "Chilli-Macs",
-  "aliases": [],
+  "aliases": [
+    "Chilly Macs"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
@@ -15,6 +17,10 @@
     {
       "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
       "title": "Historical and Defunct Street Groups in Detroit"
+    },
+    {
+      "url": "https://www.facebook.com/groups/1499834970343768/posts/4373261453001091/",
+      "title": "I'm From Detroit Mi. | Facebook – North End gang discussion"
     }
   ]
 }

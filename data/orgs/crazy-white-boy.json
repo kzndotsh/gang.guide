@@ -1,7 +1,14 @@
 {
   "id": "org:crazy-white-boy",
   "name": "Crazy White Boy",
-  "aliases": [],
+  "aliases": [
+    "CWB",
+    "Crazy White Boys",
+    "C-Dub",
+    "C-Dubs",
+    "Insane White Boys",
+    "Vicious White Boys"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -16,5 +23,8 @@
       "url": "https://www.adl.org/resources/hate-symbol/crazy-white-boy",
       "title": "ADL (Anti-Defamation League)"
     }
+  ],
+  "symbols": [
+    "CWB Tattoo"
   ]
 }

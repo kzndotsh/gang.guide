@@ -1,7 +1,10 @@
 {
   "id": "org:aryan-brotherhood-of-tennessee",
   "name": "Aryan Brotherhood of Tennessee",
-  "aliases": [],
+  "aliases": [
+    "Brotherhood Forever",
+    "Tennessee Aryan Brotherhood"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -15,6 +18,19 @@
     {
       "url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/brotherhood-forever",
+      "title": "Brotherhood Forever | ADL Hate Symbols Database"
     }
+  ],
+  "symbols": [
+    "SS Lightning Bolts",
+    "Iron Cross",
+    "Shield",
+    "Shamrock",
+    "Number 12",
+    "Number 26",
+    "Number 2662"
   ]
 }

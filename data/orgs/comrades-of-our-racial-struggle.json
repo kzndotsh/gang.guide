@@ -1,7 +1,10 @@
 {
   "id": "org:comrades-of-our-racial-struggle",
   "name": "Comrades Of Our Racial Struggle",
-  "aliases": [],
+  "aliases": [
+    "COORS",
+    "COORS Family Skins"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -15,6 +18,22 @@
     {
       "url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/coors-family-skins",
+      "title": "COORS Family Skins | ADL Hate Symbols Database"
+    },
+    {
+      "url": "https://caselaw.findlaw.com/court/ca-court-of-appeal/1913813.html",
+      "title": "People v. Boukes (2022) | FindLaw"
+    },
+    {
+      "url": "https://www.police1.com/corrections/articles/man-charged-after-calif-police-booby-trap-raids-i3qSYoFtBgrkYryy/",
+      "title": "Man charged after Calif. police booby trap raids | Police1"
     }
+  ],
+  "symbols": [
+    "Othala Rune",
+    "Coors Beer Logo"
   ]
 }

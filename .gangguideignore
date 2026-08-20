@@ -393,6 +393,15 @@ org:budlong-gangster-crips            # imprecise_year: no date found
 org:lucchese-crime-brooklyn-faction   # imprecise_year: no exact date found
 org:decavalcante-crime-family         # imprecise_year: founding predates reliable records
 
+org:574-swipegang                     # no_year: no data found
+org:christian-guard                   # no_year: no data found
+org:core                              # no_year: no chicagoganghistory entry found
+org:eastside-rollin-80s-skyline-pirus # no_year: tool-limit dead-end
+org:ghetto-gangsters                  # no_year: tool-limit dead-end
+org:glo-gang                          # no_year: tool-limit (music collective)
+org:headbanger-bloods                 # no_year: confirmed dead-end
+org:hooterville-unknowns              # no_year: confirmed dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

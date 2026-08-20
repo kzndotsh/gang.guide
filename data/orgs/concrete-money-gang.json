@@ -7,7 +7,7 @@
   "metro": "New York",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Concrete Money Gang is a street gang based in Lansing, Michigan, operating on Baker Street in the area known as \"Cap City.\" The gang claims the turf formerly held by the Baker Street Vice Lords.",
+  "description": "Concrete Money Gang is a street gang based in Lansing, Michigan, operating on Baker Street on the city's East Side in an area known as \"Cap City.\" The gang claims the turf formerly held by the Baker Street Vice Lords, who disbanded after their leadership received lengthy prison sentences in the late 1990s.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
@@ -15,6 +15,14 @@
     {
       "url": "https://www.stonegreasers.com/greaser/lansing_vicelords_crips.html",
       "title": "Lansing Baker Street Vice Lords and North Side Crips - Stone Greasers"
+    },
+    {
+      "url": "https://stonegreasers.com/greaser/lansing_vicelords_crips.html",
+      "title": "Lansing Baker Street Vice Lords - North Side Crips | Stone Greasers"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=U8be7vvf700",
+      "title": "baker st. (pt3) - YouTube"
     }
   ]
 }

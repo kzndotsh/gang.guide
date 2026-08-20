@@ -8,13 +8,32 @@
   "founded_year": null,
   "founded_year_precision": "estimate",
   "description": "Continental Gangsters is a faction of the Imperial Spanish Gangsters Nation (Imperial Gangsters Nation) based on the North Side of Chicago, Illinois. The section was originated by a member known as 'the Minister' and formed as the Imperial Gangsters Nation expanded, alongside other sections including the Ghetto Gangsters and the Imperial Spanish Gangsters on North & Hamlin.",
-  "colors": [],
+  "colors": [
+    "pink",
+    "black"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://www.stonegreasers.com/greaser/imperial_gangsters_nation.html",
       "title": "Chicago Imperial Gangster Nation - Stone Greasers"
+    },
+    {
+      "url": "https://gaylords712.com/greaser/imperial_gangsters_nation.html",
+      "title": "Chicago Imperial Gangster Nation - Stone Greasers"
+    },
+    {
+      "url": "https://unitedgangs.com/2017/10/17/almighty-imperial-gangsters/",
+      "title": "Almighty Imperial Gangsters - UnitedGangs.com"
+    },
+    {
+      "url": "https://www.flickr.com/photos/chicagocoldwar/albums/72157619852333407/",
+      "title": "Almighty Imperial Gangsters - Chicago Cold War (Flickr)"
     }
+  ],
+  "symbols": [
+    "Imperial Crown",
+    "Pink Panther"
   ]
 }

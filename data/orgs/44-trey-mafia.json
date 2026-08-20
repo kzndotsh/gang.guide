@@ -1,7 +1,11 @@
 {
   "id": "org:44-trey-mafia",
   "name": "44 Trey Mafia",
-  "aliases": [],
+  "aliases": [
+    "TMF",
+    "TMF Bloods",
+    "Trey Mafia"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",

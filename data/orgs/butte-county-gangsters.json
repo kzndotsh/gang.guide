@@ -1,7 +1,9 @@
 {
   "id": "org:butte-county-gangsters",
   "name": "Butte County Gangsters",
-  "aliases": [],
+  "aliases": [
+    "BCG"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -15,6 +17,10 @@
     {
       "url": "https://web.archive.org/web/20250124071640/https://www.adl.org/sites/default/files/CR_4499_WhiteSupremacist-Report_web_vff.pdf",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.siskiyoudaily.com/story/news/crime/2010/02/11/fugitive-moves-through-siskiyou-county/49528912007/",
+      "title": "Fugitive moves through Siskiyou County, caught in Nevada — Siskiyou Daily News"
     }
   ]
 }

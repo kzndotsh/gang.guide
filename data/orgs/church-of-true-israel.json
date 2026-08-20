@@ -1,12 +1,14 @@
 {
   "id": "org:church-of-true-israel",
   "name": "Church of True Israel",
-  "aliases": [],
+  "aliases": [
+    "CTI"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1996,
+  "founded_year_precision": "exact",
   "description": "Church of True Israel was formed in late 1996 by Aryan Nations defectors who split from Richard Butler's organization. A Christian Identity sect associated with the broader Aryan Nations movement.",
   "colors": [],
   "nation_affiliation": null,
@@ -15,6 +17,14 @@
     {
       "url": "https://www.adl.org/resources/profile/aryan-nationschurch-jesus-christ-christian",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.splcenter.org/resources/reports/aryan-nations-defectors-form-church-true-israel/",
+      "title": "Aryan Nations' Defectors Form Church of True Israel"
+    },
+    {
+      "url": "https://www.adl.org/resources/news/extremist-groups-schedule-simultaneous-events",
+      "title": "Extremist Groups Schedule Simultaneous Events"
     }
   ]
 }

@@ -1,20 +1,38 @@
 {
   "id": "org:centinela-park-family-gangster-bloods",
   "name": "Centinela Park Family Gangster Bloods",
-  "aliases": [],
+  "aliases": [
+    "CPF",
+    "Centinela Park Family Bloods",
+    "Nelas"
+  ],
   "type": "street_gang",
   "lane": "california-bloods-other",
   "metro": "Los Angeles",
   "founded_year": null,
   "founded_year_precision": "estimate",
   "description": "Centinela Park Family Gangster Bloods (CPFGB) is a West Coast Blood-affiliated street gang based in the Centinela Park area of Los Angeles, California.",
-  "colors": [],
+  "colors": [
+    "red"
+  ],
   "nation_affiliation": "org:bloods",
   "status": "active",
   "sources": [
     {
       "url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/",
       "title": "Profiles of Major Neighborhood Street Groups in Detroit – DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://unitedgangs.com/centinela-park-family/",
+      "title": "Centinela Park Family (Bloods) – UnitedGangs.com"
+    },
+    {
+      "url": "https://hiphopdatabase.fandom.com/wiki/List_of_gangs_in_Inglewood,_California",
+      "title": "List of gangs in Inglewood, California – Hip-Hop Database Wiki"
+    },
+    {
+      "url": "https://hiphopdatabase.fandom.com/wiki/List_of_Blood_sets_in_Los_Angeles_County",
+      "title": "List of Blood Sets in Los Angeles County – Hip-Hop Database Wiki"
     }
   ]
 }
