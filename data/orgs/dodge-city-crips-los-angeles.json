@@ -19,11 +19,14 @@
   "aliases": [
     "BAN"
   ],
-  "founded_year": 1970,
+  "founded_year": 1972,
   "colors": [
     "blue"
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "circa",
   "status": "active",
-  "membership_estimate": 100
+  "membership_estimate": 100,
+  "symbols": [
+    "Los Angeles Dodgers Apparel"
+  ]
 }

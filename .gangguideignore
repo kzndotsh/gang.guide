@@ -383,6 +383,16 @@ org:naughty-nasty-gangster-crips      # no_symbols + no_membership: confirmed de
 org:party-people                      # no_membership: confirmed dead-end
 org:party-players                     # no_membership: confirmed dead-end
 
+org:center-view-pirus                 # imprecise_year: final dead-end
+org:azusa-13                          # imprecise_year: no exact date found
+org:94-hoover-criminals-gang          # imprecise_year: no exact date found
+org:cuatro-flats                      # imprecise_year: no date found
+org:west-covina-mob-piru              # imprecise_year: no data found
+org:atlantic-guards                   # imprecise_year: historical, no date found
+org:budlong-gangster-crips            # imprecise_year: no date found
+org:lucchese-crime-brooklyn-faction   # imprecise_year: no exact date found
+org:decavalcante-crime-family         # imprecise_year: founding predates reliable records
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

@@ -35,6 +35,10 @@
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
-  "disbanded_year": 1997
+  "founded_year_precision": "circa",
+  "disbanded_year": 1997,
+  "membership_estimate": 120,
+  "symbols": [
+    "Double-Six Dice Patch"
+  ]
 }

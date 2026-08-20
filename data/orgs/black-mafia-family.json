@@ -16,11 +16,27 @@
     {
       "url": "https://en.wikipedia.org/wiki/Black_Mafia_Family",
       "title": "Black Mafia Family — Wikipedia"
+    },
+    {
+      "url": "https://unitedgangs.com/black-mafia-family-bmf/",
+      "title": "Black Mafia Family (BMF) — United Gangs"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edmo/pr/more-two-dozen-arrested-roundup-members-and-associates-black-mafia-family",
+      "title": "More than Two Dozen Arrested in Roundup of Members and Associates of the Black Mafia Family — DOJ"
+    },
+    {
+      "url": "https://www.dea.gov/sites/default/files/pubs/pressrel/pr102805.html",
+      "title": "DEA Deals Motor City Mafia a Knock-out Blow — DEA Press Release"
     }
   ],
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
-  "disbanded_year": 2005
+  "founded_year_precision": "circa",
+  "disbanded_year": 2005,
+  "membership_estimate": 500,
+  "symbols": [
+    "BMF Logo"
+  ]
 }

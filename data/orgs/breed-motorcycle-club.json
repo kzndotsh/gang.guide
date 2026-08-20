@@ -35,6 +35,12 @@
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
-  "disbanded_year": 2006
+  "founded_year_precision": "exact",
+  "disbanded_year": 2006,
+  "membership_estimate": 350,
+  "symbols": [
+    "American Flag Patch",
+    "13 Stars In A Circle",
+    "13 Red And White Stripes"
+  ]
 }
