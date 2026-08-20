@@ -7,7 +7,7 @@
   "type": "street_gang",
   "lane": "asian-gangs",
   "founded_year": 1980,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "description": "Chinese-American criminal organization and street gang formed in 1980 by Chinese immigrants in Lincoln Heights, Los Angeles. Operated in Los Angeles and San Gabriel Valley, involved in both organized crime (extortion, prostitution, money laundering, narcotics, counterfeiting) and street-level crime (murder, robbery, home invasion). At its peak had over 100 core members.",
   "sources": [
     {
@@ -31,5 +31,6 @@
   "colors": [
     "black"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 100
 }

@@ -29,7 +29,13 @@
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "exact",
   "status": "active",
-  "military_service": "Various branches"
+  "military_service": "Various branches",
+  "symbols": [
+    "Winged Harpy Emblem",
+    "1% Diamond Patch",
+    "Swastika Tattoo",
+    "Born To Lose Tattoo"
+  ]
 }

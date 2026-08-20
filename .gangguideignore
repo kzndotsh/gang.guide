@@ -432,6 +432,27 @@ org:bonanno-crime-family              # no_symbols: mafia, no symbols
 org:viceroys                          # no_symbols: tool-limit (source site dead)
 org:wilmas-13                         # no_symbols: confirmed dead-end
 
+org:gambino-crime-family              # final dead-end
+org:bonanno-crime-family              # final dead-end
+org:97-east-coast-crips               # final dead-end
+org:emerald-hills-gangster-bloods     # no_symbols: confirmed dead-end
+org:project-gangster-bloods           # final tool-limit dead-end
+org:decavalcante-crime-family         # final dead-end
+org:geraghty-loma                     # final tool-limit dead-end
+org:parkside-pirus                    # final dead-end
+org:beach-town-mafia-crips            # no_symbols: confirmed dead-end
+org:doty-block-bloods                 # no_symbols: confirmed dead-end
+org:hells-devils                      # no_symbols: confirmed dead-end
+org:krook-city-bloods-san-diego       # no_symbols: confirmed dead-end
+org:linda-vista-crips-san-diego       # no_symbols: confirmed dead-end
+org:little-africa-piru-san-diego      # no_symbols: confirmed dead-end
+org:original-inglewood-crips          # no_symbols: tool-limit dead-end
+org:osage-legend-crips-inglewood      # no_symbols: confirmed dead-end
+org:pacoima-piru-bloods               # no_symbols: confirmed dead-end
+org:suicidal-town                     # no_symbols: confirmed dead-end
+org:west-blvd-crips                   # no_symbols: tool-limit dead-end
+org:10th-oregon-crew                  # no_symbols: confirmed dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

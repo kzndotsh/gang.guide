@@ -15,18 +15,19 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Weather_Underground",
-      "title": "Weather Underground \u2014 Wikipedia"
+      "title": "Weather Underground — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Black_Guerrilla_Family",
-      "title": "Black Guerrilla Family \u2014 Wikipedia"
+      "title": "Black Guerrilla Family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/The_Brotherhood_of_Eternal_Love",
-      "title": "The Brotherhood of Eternal Love \u2014 Wikipedia"
+      "title": "The Brotherhood of Eternal Love — Wikipedia"
     }
   ],
   "type": "street_gang",
   "status": "active",
-  "colors": []
+  "colors": [],
+  "membership_estimate": 200
 }
