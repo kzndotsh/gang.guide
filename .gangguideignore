@@ -365,6 +365,24 @@ org:brazers                           # no_membership: confirmed dead-end
 org:insane-dragons                    # no_membership: confirmed dead-end
 org:mickey-cobras                     # no_membership: confirmed dead-end
 
+org:spanish-gangster-disciples        # final: confirmed dead-end
+org:center-view-pirus                 # final: confirmed dead-end
+org:gambino-crime-family              # confirmed dead-end
+org:mickey-cobras                     # confirmed dead-end
+org:milwaukee-kings                   # no_membership: confirmed dead-end
+org:palmer-blocc-compton-crips        # no_membership: confirmed dead-end
+org:69-east-coast-crips               # no_symbols: confirmed dead-end
+org:almighty-saints                   # no_membership: confirmed dead-end
+org:ashland-vikings                   # no_membership: confirmed dead-end
+org:el-hoyo-maravilla                 # no_symbols + no_membership: confirmed dead-end
+org:folk-nation                       # no_membership: national alliance, no public count
+org:48-gangster-crips                 # no_symbols + no_membership: confirmed dead-end
+org:harbor-city-crips                 # no_membership: confirmed dead-end
+org:lueders-park-pirus                # no_symbols: confirmed dead-end
+org:naughty-nasty-gangster-crips      # no_symbols + no_membership: confirmed dead-end
+org:party-people                      # no_membership: confirmed dead-end
+org:party-players                     # no_membership: confirmed dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.
