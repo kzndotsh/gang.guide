@@ -45,5 +45,11 @@
   "founded_year_precision": "circa",
   "status": "active",
   "nation_affiliation": "org:people-nation",
-  "membership_estimate": 30000
+  "membership_estimate": 30000,
+  "symbols": [
+    "Pyramid With Rising Sun",
+    "Five-Point Star",
+    "Crescent Moon",
+    "BPSN"
+  ]
 }

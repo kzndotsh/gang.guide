@@ -9,6 +9,22 @@
     {
       "url": "https://en.wikipedia.org/wiki/Big_Hazard",
       "title": "Big Hazard — Wikipedia"
+    },
+    {
+      "url": "https://www.fbi.gov/contact-us/field-offices/losangeles/news/press-releases/multi-agency-investigation-into-east-l.a.-street-gang-results-in-federal-rico-indictment-that-charges-38-gangsters",
+      "title": "Multi-Agency Investigation into East L.A. Street Gang Results in Federal RICO Indictment That Charges 38 Gangsters — FBI"
+    },
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/multi-agency-investigation-east-la-street-gang-results-federal-rico-indictment-charges",
+      "title": "Multi-Agency Investigation Into East L.A. Street Gang Results In Federal RICO Indictment Charges — DOJ"
+    },
+    {
+      "url": "https://unitedgangs.com/big-hazard/",
+      "title": "Big Hazard (Boyle Heights) — United Gangs"
+    },
+    {
+      "url": "https://nelatv.com/the-story-of-big-hazard-most-feared-gang-of-east-la/",
+      "title": "The Story of Big Hazard \"Most Feared Gang of East LA\" — NELA TV"
     }
   ],
   "founded_year": 1955,
@@ -19,5 +35,6 @@
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 350
 }

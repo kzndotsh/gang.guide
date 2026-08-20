@@ -26,5 +26,9 @@
   ],
   "nation_affiliation": "org:crips",
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Georgetown Hoyas Apparel",
+    "Texas Rangers Apparel"
+  ]
 }

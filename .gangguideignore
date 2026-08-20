@@ -328,6 +328,28 @@ org:culver-city-boys                  # no_symbols + no_membership: confirmed de
 org:d-c-blacks                        # no_symbols + no_membership: confirmed dead-end
 org:palm-oak-gangster-crips           # no_symbols + no_membership: confirmed dead-end
 
+org:spanish-gangster-disciples        # confirmed dead-end (4th attempt)
+org:73-hustler-crips                  # confirmed dead-end (3rd attempt)
+org:center-view-pirus                 # confirmed dead-end (3rd attempt)
+org:rollin-20s-outlaw-bloods          # confirmed dead-end
+org:six-hood-compton-crips-in-willowbrook  # confirmed dead-end
+org:the-covenant-the-sword-and-the-arm-of-the-lord  # tool-limit dead-end (3rd)
+org:uptown-rebels                     # done: source added
+org:bishops                           # confirmed dead-end
+org:campanella-park-piru              # confirmed dead-end
+org:chi-west                          # confirmed dead-end
+org:fruit-town-brims                  # confirmed dead-end
+org:rollin-30s-original-harlem-crips  # confirmed dead-end
+org:ylo-cobras                        # confirmed dead-end
+org:115-neighborhood-crips            # confirmed dead-end
+org:118-eucalyptus-mob-gangster-crips # done: symbols added
+org:190-east-coast-blocc-crips        # done: year added
+org:59-east-coast-crips               # no_symbols: confirmed dead-end
+org:assassins                         # tool-limit dead-end
+org:athens-park-bloods                # tool-limit dead-end
+org:atlantic-drive-compton-crips      # no_membership: confirmed dead-end
+org:almighty-black-p-stone-nation     # done: symbols added
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

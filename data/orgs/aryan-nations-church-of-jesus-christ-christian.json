@@ -1,20 +1,44 @@
 {
   "id": "org:aryan-nations-church-of-jesus-christ-christian",
   "name": "Aryan Nations/Church of Jesus Christ Christian",
-  "aliases": [],
+  "aliases": [
+    "Church Of Jesus Christ Christian",
+    "National Socialist Aryan Nations"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
-  "founded_year": null,
-  "founded_year_precision": "estimate",
+  "founded_year": 1977,
+  "founded_year_precision": "circa",
   "description": "Aryan Nations is a white supremacist, neo-Nazi organization founded by Richard Girnt Butler in the mid-1970s, rooted in Christian Identity theology and headquartered at a compound in Hayden Lake, Idaho. The group advocates for the establishment of an Aryan racial homeland and has long served as a central meeting point for far-right extremists. Following a $6.3 million civil judgment in 2000, Butler lost the compound and the group splintered into competing factions; Butler died in September 2004 leaving the organization's future uncertain.",
-  "colors": [],
+  "colors": [
+    "blue",
+    "red",
+    "white"
+  ],
   "nation_affiliation": null,
   "status": "active",
   "sources": [
     {
       "url": "https://www.adl.org/resources/profile/aryan-nationschurch-jesus-christ-christian",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Aryan_Nations",
+      "title": "Aryan Nations - Wikipedia"
+    },
+    {
+      "url": "https://www.splcenter.org/fighting-hate/extremist-files/group/aryan-nations",
+      "title": "Aryan Nations - Southern Poverty Law Center"
+    },
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/aryan-nations",
+      "title": "Aryan Nations Hate Symbol - ADL"
     }
+  ],
+  "symbols": [
+    "Wolfsangel",
+    "Crown-Topped Sword",
+    "Blue Shield"
   ]
 }
