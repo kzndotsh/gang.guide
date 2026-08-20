@@ -10,6 +10,22 @@
     {
       "url": "https://unitedgangs.com/dorner-blocc-criminal-gang",
       "title": "Dorner Blocc Crips — UnitedGangs"
+    },
+    {
+      "url": "https://www.independent.com/2013/06/05/santa-barbara-school-thefts-linked-riverside-gang/",
+      "title": "Santa Barbara School Thefts Linked to Riverside Gang — Santa Barbara Independent"
+    },
+    {
+      "url": "https://abc7.com/archive/9252247/",
+      "title": "Gang member arrested in fatal shooting of Tiana Ricks — ABC7 Los Angeles"
+    },
+    {
+      "url": "https://ktla.com/news/local-news/6-year-old-girl-killed-father-wounded-in-moreno-valley-shooting/",
+      "title": "6-Year-Old Girl Killed, Father Wounded in Moreno Valley Shooting — KTLA"
+    },
+    {
+      "url": "https://www.nbclosangeles.com/news/local/girl-fatally-shot-man-wounded/2080487/",
+      "title": "Girl, 6, Fatally Shot; Father Wounded in Moreno Valley — NBC Los Angeles"
     }
   ],
   "colors": [
@@ -21,5 +37,6 @@
     "D-Blocc",
     "DBC"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 200
 }

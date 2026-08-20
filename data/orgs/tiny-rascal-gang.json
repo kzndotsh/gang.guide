@@ -52,5 +52,10 @@
   "founded_year_precision": "exact",
   "status": "active",
   "membership_estimate": 10000,
-  "military_service": "Army"
+  "military_service": "Army",
+  "symbols": [
+    "TRG Lettering",
+    "Three-Dot Tattoo",
+    "Five-Dot Tattoo"
+  ]
 }

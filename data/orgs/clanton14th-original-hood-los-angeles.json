@@ -29,5 +29,9 @@
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "C14",
+    "CX14"
+  ]
 }

@@ -29,5 +29,9 @@
     "blue"
   ],
   "status": "active",
-  "membership_estimate": 200
+  "membership_estimate": 200,
+  "symbols": [
+    "New York Yankees Apparel",
+    "NYC Apparel"
+  ]
 }

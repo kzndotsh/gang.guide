@@ -10,6 +10,10 @@
     {
       "url": "https://unitedgangs.com/357-crips",
       "title": "357 Crips — UnitedGangs"
+    },
+    {
+      "url": "https://www.reddit.com/r/CaliBanging/comments/ywl2eq/violent_bloody_pomona_gang_war_bloods_vs_crips/",
+      "title": "Violent & Bloody Pomona Gang War (Blood's vs Crip's) — r/CaliBanging"
     }
   ],
   "colors": [
@@ -21,5 +25,8 @@
     "357 Gangster Crips",
     "Tray-Five-Seven"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "357"
+  ]
 }

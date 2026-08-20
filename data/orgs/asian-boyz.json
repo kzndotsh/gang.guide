@@ -69,5 +69,9 @@
   "status": "active",
   "metro": "United States",
   "membership_estimate": 3500,
-  "military_service": "Army"
+  "military_service": "Army",
+  "symbols": [
+    "Dragon Head With Flame",
+    "ABZ Tattoo"
+  ]
 }

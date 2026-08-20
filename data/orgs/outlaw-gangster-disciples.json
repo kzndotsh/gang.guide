@@ -25,5 +25,10 @@
     "blue"
   ],
   "status": "active",
-  "nation_affiliation": "org:folk-nation"
+  "nation_affiliation": "org:folk-nation",
+  "membership_estimate": 25000,
+  "symbols": [
+    "Six-Point Star",
+    "Pitchfork"
+  ]
 }

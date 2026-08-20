@@ -31,5 +31,8 @@
     "green"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Tray (3x)"
+  ]
 }

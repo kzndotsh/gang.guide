@@ -1,7 +1,9 @@
 {
   "id": "org:hell-s-devils",
   "name": "Hell's Devils",
-  "aliases": [],
+  "aliases": [
+    "Almighty Hell's Devils"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
@@ -18,6 +20,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/hells-devils",
       "title": "Hell's Devils - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/hells-devils",
+      "title": "Hell's Devils – Dunham Park to Diversey & Major | Chicago Gang History"
+    },
+    {
+      "url": "https://flashbak.com/compliments-of-chicago-gang-business-cards-from-the-1970s-and-1980s-441716/",
+      "title": "Compliments of Chicago – Gang Business Cards from the 1970s and 1980s | Flashbak"
     }
   ],
   "disbanded_year": 1982
