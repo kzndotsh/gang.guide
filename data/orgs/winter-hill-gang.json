@@ -34,7 +34,9 @@
     }
   ],
   "founded_year_precision": "exact",
-  "aliases": [],
+  "aliases": [
+    "Winter Hill Mob"
+  ],
   "colors": [],
   "disbanded_year": 2016,
   "membership_estimate": 30

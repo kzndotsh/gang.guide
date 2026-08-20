@@ -12,10 +12,14 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/The_Company_%28Hawaiian_organized_crime%29",
-      "title": "The Company %28Hawaiian organized crime%29 \u2014 Wikipedia"
+      "title": "The Company %28Hawaiian organized crime%29 — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Company_(Hawaiian_organized_crime)",
+      "title": "The Company (Hawaiian organized crime) — Wikipedia"
     }
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "circa",
   "status": "active",
   "colors": []
 }

@@ -1,7 +1,10 @@
 {
   "id": "org:imperial-chaplains",
   "name": "Imperial Chaplains",
-  "aliases": [],
+  "aliases": [
+    "Chaplains",
+    "Imperials"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
@@ -19,6 +22,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/imperial-champlains",
       "title": "Imperial Chaplains - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/imperial-champlains",
+      "title": "Imperial Chaplains - Chicago Gang History"
+    },
+    {
+      "url": "https://alvinandhisthoughts.com/2026/03/11/from-neighborhood-clubs-to-street-empires-how-chicagos-social-conditions-shaped-the-rise-of-the-vice-lords/",
+      "title": "From Neighborhood Clubs to Street Empires: How Chicago's Social Conditions Shaped the Rise of the Vice Lords"
     }
   ],
   "disbanded_year": 1980

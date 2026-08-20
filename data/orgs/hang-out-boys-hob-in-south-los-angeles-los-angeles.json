@@ -23,5 +23,8 @@
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "XIII"
+  ]
 }

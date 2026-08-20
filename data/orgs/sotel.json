@@ -21,6 +21,8 @@
     "blue"
   ],
   "status": "active",
-  "aliases": [],
+  "aliases": [
+    "SX3"
+  ],
   "membership_estimate": 62
 }
