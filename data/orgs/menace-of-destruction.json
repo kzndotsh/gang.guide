@@ -13,22 +13,28 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Menace_Of_Destruction",
-      "title": "Menace Of Destruction \u2014 Wikipedia"
+      "title": "Menace Of Destruction — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Asian_Boyz",
-      "title": "Asian Boyz \u2014 Wikipedia"
+      "title": "Asian Boyz — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Big_Circle_Gang",
-      "title": "Big Circle Gang \u2014 Wikipedia"
+      "title": "Big Circle Gang — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/La_Familia_Michoacana",
-      "title": "La Familia Michoacana \u2014 Wikipedia"
+      "title": "La Familia Michoacana — Wikipedia"
     }
   ],
   "metro": "Fresno",
   "status": "active",
-  "colors": []
+  "colors": [
+    "red",
+    "blue"
+  ],
+  "symbols": [
+    "301"
+  ]
 }

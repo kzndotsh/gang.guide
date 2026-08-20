@@ -1,11 +1,15 @@
 {
   "id": "org:familia-stones",
   "name": "Familia Stones",
-  "aliases": [],
+  "aliases": [
+    "Puerto Rican Familia Stones",
+    "La Familia Stones",
+    "P.R. Familia Stones"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
-  "description": "Familia Stones is a People Nation street gang founded 1992 in Chicago.",
+  "description": "The Familia Stones are a Black P. Stones branch within the People Nation, founded in 1992 in Chicago's Albany Park neighborhood by a Future Stones member known as 'Broleeo.' Originally operating as the Puerto Rican Familia Stones near Sunnyside and Kimball, they dropped the 'Puerto Rican' designation in 1995 as membership expanded beyond Puerto Rican recruits. The gang later spread to the Streamwood suburb and has been the subject of federal drug trafficking prosecutions.",
   "founded_year": 1992,
   "founded_year_precision": "exact",
   "colors": [
@@ -18,6 +22,22 @@
     {
       "url": "https://chicagoganghistory.com/gang/la-familia-stones",
       "title": "Familia Stones - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/la-familia-stones",
+      "title": "La Familia Stones - Albany Park, Broleeo & 1992 | Chicago Gang History"
+    },
+    {
+      "url": "https://www.justice.gov/usao-ndil/pr/eleven-charged-drug-trafficking-chicago-street-gang",
+      "title": "Eleven Charged With Drug Trafficking for Chicago Street Gang | DOJ USAO-NDIL"
+    },
+    {
+      "url": "https://www.dea.gov/press-releases/2023/03/10/11-charged-drug-trafficking-chicago-street-gang",
+      "title": "11 Charged with Drug Trafficking for Chicago Street Gang | DEA"
+    },
+    {
+      "url": "https://cwbchicago.com/2023/03/11-charged-with-running-cocaine-delivery-service-hotline-in-chicago.html",
+      "title": "11 charged with running cocaine delivery service 'hotline' in Chicago | CWB Chicago"
     }
   ],
   "symbols": [

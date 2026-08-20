@@ -25,5 +25,8 @@
     "“Paul Lowe’s Control”"
   ],
   "nation_affiliation": "org:bloods",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Green Clothing"
+  ]
 }

@@ -15,11 +15,24 @@
     {
       "url": "https://www.streetgangs.com/decavalcante/crime",
       "title": "Decavalcante Crime Family — StreetGangs"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/DeCavalcante_crime_family",
+      "title": "DeCavalcante Crime Family - Wikipedia"
+    },
+    {
+      "url": "https://thenewyorkmafia.com/decavalcante-family/",
+      "title": "The DeCavalcante Family - Button Guys of The New York Mafia"
+    },
+    {
+      "url": "https://americanmafiahistory.com/decavalcante-family/",
+      "title": "DeCavalcante Family - American Mafia History"
     }
   ],
   "metro": "New York",
   "colors": [
     "black"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 50
 }

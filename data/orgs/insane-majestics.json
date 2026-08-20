@@ -1,7 +1,10 @@
 {
   "id": "org:insane-majestics",
   "name": "Insane Majestics",
-  "aliases": [],
+  "aliases": [
+    "Majestic Party Crew",
+    "MPC"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -19,9 +22,18 @@
     {
       "url": "https://chicagoganghistory.com/gang/insane-majestics",
       "title": "Insane Majestics - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/insane-majestics",
+      "title": "Insane Majestics (Majestic Party Crew) – Marshall Square | Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/alliances/insane-folks-south-side",
+      "title": "Insane (South Side) – the Satan Disciples' Family | Chicago Gang History"
     }
   ],
   "symbols": [
     "Staff And Cross"
-  ]
+  ],
+  "membership_estimate": 300
 }

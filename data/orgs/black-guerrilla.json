@@ -52,5 +52,10 @@
     "black"
   ],
   "status": "active",
-  "membership_estimate": 200
+  "membership_estimate": 200,
+  "symbols": [
+    "Black Dragon Attacking Prison Tower",
+    "Crossed Machete And Rifle",
+    "276"
+  ]
 }

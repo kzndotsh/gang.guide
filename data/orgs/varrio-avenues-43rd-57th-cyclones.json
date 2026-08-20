@@ -30,5 +30,9 @@
     "AVES",
     "Varrio Avenues"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 800,
+  "symbols": [
+    "Fedora Skull"
+  ]
 }
