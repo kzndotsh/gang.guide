@@ -1,7 +1,9 @@
 {
   "id": "org:almighty-popes",
   "name": "Almighty Popes",
-  "aliases": [],
+  "aliases": [
+    "APs"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +20,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-popes",
       "title": "Almighty Popes - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/almighty-popes",
+      "title": "Almighty Popes – Clearing, 62nd & Normandy | Chicago Gang History"
     }
   ],
   "disbanded_year": 2000,

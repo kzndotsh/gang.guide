@@ -1,7 +1,11 @@
 {
   "id": "org:black-souls",
   "name": "Black Souls",
-  "aliases": [],
+  "aliases": [
+    "Mad Black Souls",
+    "Black Revolutionary Soul Brothers",
+    "440"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
@@ -18,11 +22,20 @@
     {
       "url": "https://chicagoganghistory.com/gang/black-souls",
       "title": "Black Souls - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/black-souls",
+      "title": "Black Souls – Horace Willis & West Garfield Park | Chicago Gang History"
+    },
+    {
+      "url": "https://www.chicagotribune.com/2013/06/13/officials-murder-intimidation-kept-11-million-a-year-gang-going-3/",
+      "title": "Officials: Murder, intimidation kept $11 million-a-year gang going | Chicago Tribune"
     }
   ],
   "symbols": [
     "Winged Heart",
     "4 Point Star",
     "Black Diamond"
-  ]
+  ],
+  "membership_estimate": 750
 }

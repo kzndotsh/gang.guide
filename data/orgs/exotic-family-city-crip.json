@@ -3,7 +3,7 @@
   "name": "Exotic Family City Crip",
   "lane": "california-crips-long-beach",
   "metro": "Los Angeles",
-  "founded_year": 2005,
+  "founded_year": 2000,
   "description": "Long Beach Exotic Family City Crip (EFCC) is a predominately Asian-American & Cambodian gang located on the Eastside of Long Beach, California in Cambodia Town.",
   "type": "street_gang",
   "nation_affiliation": "org:crips",
@@ -23,6 +23,9 @@
   "aliases": [
     "EFCC"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "circa",
+  "status": "active",
+  "symbols": [
+    "New York Yankees Logo"
+  ]
 }

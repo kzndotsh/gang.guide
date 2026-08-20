@@ -1,7 +1,9 @@
 {
   "id": "org:arch-dukes",
   "name": "Arch Dukes",
-  "aliases": [],
+  "aliases": [
+    "The Dukes"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +20,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/arch-dukes",
       "title": "Arch Dukes - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/arch-dukes",
+      "title": "Arch Dukes – Cicero's Grant Works, 1966 | Chicago Gang History"
     }
   ],
   "disbanded_year": 1980,
