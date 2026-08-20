@@ -26,5 +26,13 @@
     "red",
     "burgundy"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Five-Point Star",
+    "Red Bandana",
+    "Burgundy Bandana",
+    "Chicago Bulls Apparel",
+    "Philadelphia Phillies Apparel",
+    "San Francisco 49ers Apparel"
+  ]
 }

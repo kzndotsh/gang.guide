@@ -24,5 +24,8 @@
     "QECC"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Two Fingers And A Thumb Connected"
+  ]
 }

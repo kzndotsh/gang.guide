@@ -12,18 +12,23 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Mau_Maus",
-      "title": "Mau Maus \u2014 Wikipedia"
+      "title": "Mau Maus — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Martinez_Familia_Sangeros",
-      "title": "Martinez Familia Sangeros \u2014 Wikipedia"
+      "title": "Martinez Familia Sangeros — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/South_Brooklyn_Boys",
-      "title": "South Brooklyn Boys \u2014 Wikipedia"
+      "title": "South Brooklyn Boys — Wikipedia"
     }
   ],
   "metro": "New York",
   "status": "active",
-  "colors": []
+  "colors": [
+    "crimson"
+  ],
+  "symbols": [
+    "Crimson MM Insignia"
+  ]
 }

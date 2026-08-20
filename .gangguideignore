@@ -350,6 +350,21 @@ org:athens-park-bloods                # tool-limit dead-end
 org:atlantic-drive-compton-crips      # no_membership: confirmed dead-end
 org:almighty-black-p-stone-nation     # done: symbols added
 
+org:center-view-pirus                 # confirmed dead-end (5th attempt — final)
+org:spanish-gangster-disciples        # confirmed dead-end (5th attempt — final)
+org:east-dago-mob-crips               # no_symbols + no_membership: confirmed dead-end
+org:gambino-crime-family              # no_symbols: confirmed dead-end
+org:grandee-compton-crips             # no_symbols + no_membership: confirmed dead-end
+org:graveyard-crips                   # no_symbols + no_membership: confirmed dead-end
+org:gundry-blocc-crips                # no_symbols + no_membership: confirmed dead-end
+org:ms-13                             # imprecise_year: no exact founding date found
+org:neighborhood-piru-inglewood       # no_symbols + no_membership: confirmed dead-end
+org:valley-hi-gangster-crips          # no_symbols + no_membership: confirmed dead-end
+org:aristocrats                       # no_membership: confirmed dead-end
+org:brazers                           # no_membership: confirmed dead-end
+org:insane-dragons                    # no_membership: confirmed dead-end
+org:mickey-cobras                     # no_membership: confirmed dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

@@ -1,7 +1,13 @@
 {
   "id": "org:krazy-get-down-boys",
   "name": "Krazy Get Down Boys",
-  "aliases": [],
+  "aliases": [
+    "KGB",
+    "KGBs",
+    "KGBz",
+    "Almighty Krazy Get Down Boys",
+    "Crazy Boys"
+  ],
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
@@ -18,6 +24,14 @@
     {
       "url": "https://chicagoganghistory.com/gang/almighty-krazy-get-down-boys",
       "title": "Krazy Get Down Boys - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/almighty-krazy-get-down-boys",
+      "title": "Krazy Get Down Boys - Chicago Gang History"
+    },
+    {
+      "url": "https://hiphopdatabase.fandom.com/wiki/Almighty_Krazy_GetDown_Boys_Nation",
+      "title": "Almighty Krazy GetDown Boys Nation - Hip-Hop Database Wiki"
     }
   ],
   "symbols": [

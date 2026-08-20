@@ -26,9 +26,10 @@
       "title": "DOJ - OVS RICO Indictment"
     }
   ],
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "colors": [
     "blue"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 450
 }

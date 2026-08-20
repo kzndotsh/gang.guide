@@ -13,20 +13,25 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Devils_Diciples_Motorcycle_Club",
-      "title": "Devils Diciples Motorcycle Club \u2014 Wikipedia"
+      "title": "Devils Diciples Motorcycle Club — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hells_Angels_MC_criminal_allegations_and_incidents",
-      "title": "Hells Angels MC criminal allegations and incidents \u2014 Wikipedia"
+      "title": "Hells Angels MC criminal allegations and incidents — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Outlaws_MC_criminal_allegations_and_incidents",
-      "title": "Outlaws MC criminal allegations and incidents \u2014 Wikipedia"
+      "title": "Outlaws MC criminal allegations and incidents — Wikipedia"
     }
   ],
   "colors": [
     "black"
   ],
-  "founded_year_precision": "estimate",
-  "status": "active"
+  "founded_year_precision": "circa",
+  "status": "active",
+  "symbols": [
+    "12-Spoke Wheel",
+    "Two Tridents",
+    "FTW Patch"
+  ]
 }

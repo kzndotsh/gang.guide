@@ -9,11 +9,21 @@
     {
       "url": "https://www.streetgangs.com/asian/longbeach/suicidaltown",
       "title": "Suicidal Town, Long Beach, California — StreetGangs"
+    },
+    {
+      "url": "https://www.reddit.com/r/CaliBanging/comments/vf7dkg/long_beach_city_suicidal_town_crips_stc_the_young/",
+      "title": "Long Beach City: Suicidal Town Crips (STC), the Young Suicidal Locs clique — r/CaliBanging"
     }
   ],
   "founded_year": 1980,
   "founded_year_precision": "decade",
   "status": "active",
-  "aliases": [],
-  "colors": []
+  "aliases": [
+    "STC",
+    "Suicidal Town Crips",
+    "Suicide Town"
+  ],
+  "colors": [
+    "blue"
+  ]
 }
