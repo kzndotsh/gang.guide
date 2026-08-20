@@ -33,8 +33,9 @@
       "title": "West End Gang — Wikipedia"
     }
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "exact",
   "aliases": [],
   "colors": [],
-  "disbanded_year": 2016
+  "disbanded_year": 2016,
+  "membership_estimate": 30
 }

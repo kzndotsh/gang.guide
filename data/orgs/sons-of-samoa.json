@@ -34,5 +34,9 @@
   "founded_year_precision": "circa",
   "nation_affiliation": "org:crips",
   "status": "active",
-  "military_service": "Army"
+  "military_service": "Army",
+  "membership_estimate": 200,
+  "symbols": [
+    "Seattle Mariners Apparel"
+  ]
 }

@@ -24,5 +24,8 @@
     "WCCSD"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "WC Hand Sign"
+  ]
 }

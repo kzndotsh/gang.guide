@@ -1,7 +1,10 @@
 {
   "id": "org:roman-lords",
   "name": "Roman Lords",
-  "aliases": [],
+  "aliases": [
+    "The Hellraisers",
+    "Frenchmen"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
@@ -15,6 +18,22 @@
     {
       "url": "https://newyorkcitygangs.com/",
       "title": "New York City Fighting Gangs"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2101",
+      "title": "Memoir Excerpt from Efraim Ruiz of the Roman Lords | New York City Fighting Gangs"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2123",
+      "title": "Beebop of the Roman Lords | New York City Fighting Gangs"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=2401",
+      "title": "Victor Torres and Son of Evil Street | New York City Fighting Gangs"
+    },
+    {
+      "url": "https://www.facebook.com/classicnystreetgangs/posts/roman-lords-the-hellraisers-aka-the-frechmen-brooklyn-ny-1962romanlordsthehellra/10157056224601021/",
+      "title": "Roman Lords, The Hellraisers aka The Frenchmen – classicnystreetgangs.com (Facebook)"
     }
   ]
 }

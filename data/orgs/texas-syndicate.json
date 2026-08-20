@@ -38,7 +38,12 @@
   ],
   "description": "The Texas Syndicate is a criminal prison gang that originated in Folsom State Prison, California in the early 1970s. Predominantly Hispanic, it was formed to protect Texas-born inmates from other prison gangs.",
   "status": "active",
-  "aliases": [],
+  "aliases": [
+    "Syndicato Tejano",
+    "Sindicato Tejano",
+    "Tejanos",
+    "Cuernos"
+  ],
   "colors": [],
   "membership_estimate": 4000,
   "symbols": [
