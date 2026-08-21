@@ -142,7 +142,7 @@ If the target is `org:crips`, `org:bloods`, `org:folk-nation`, `org:people-natio
 
 `group` drives the lane filter. `order` is canvas Y position.
 
-Current IDs include: `prison`, `white-supremacist`, `motorcycle-clubs`, `organized-crime`, Chicago (`chicago-folk-people`, `chicago-folk`, `chicago-people`, `chicago-independent`), Bloods (`blood-nation`, `california-bloods-*`), Crips (`crip-nation`, `california-crips-*`), Latino (`california-latino-*`), `asian-gangs`, `new-york`, `midwest`, `detroit`, `southeast-southwest`, `historical-east`, `other-national`, `unplaced`.
+Current IDs include: `prison`, `white-supremacist`, `motorcycle-clubs`, `organized-crime`, Chicago (`chicago-folk-people`, `chicago-folk`, `chicago-people`, `chicago-independent`), Detroit (`detroit`), Midwest (`midwest`), Bloods (`blood-nation`, `california-bloods-*`), Crips (`crip-nation`, `california-crips-*`), Latino (`california-latino-*`), `asian-gangs`, `new-york`, `southeast-southwest`, `historical-east`, `cybercrime`, `other-national`, `unplaced`.
 
 Canonical list: `data/lanes.json`.
 

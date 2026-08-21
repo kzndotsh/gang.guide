@@ -52,7 +52,7 @@ Env in `apps/web/.env`: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_
 
 ## Data conventions
 
-- Org files: see `docs/SCHEMA.md`. Lint required: `id`, `name`, `description`, `sources`. Precision: `exact` | `circa` | `decade` | `estimate`. Status: `active` | `inactive` | `unknown`.
+- Org files: see `docs/SCHEMA.md`. Lint required: `id`, `name`, `description`, `sources`. Precision: `exact` | `circa` | `decade` | `estimate`. Status: `active` | `inactive` | `unknown`. Types: `street_gang`, `prison_gang`, `motorcycle_club`, `organized_crime`, `white_supremacist`, `cybercrime_group`, `alliance`, `nation`.
 - Edges: `source`, `target`, `type` required. Edge evidence is stored in `citations[]` — each entry has `url`, `title`, `evidence` (verbatim quote). Types in `edges.json`: alliance, rivalry, member_of, spin_off, parent. Nation edges come from `nation_affiliation` at build.
 - `spin_off`: source is origin, target split off. `member_of`: source belongs to target (not a gang nation). Use `nation_affiliation` for Crips, Bloods, and similar.
 - IDs are `org:slug` (lowercase, hyphens; filename equals slug). Never invent orgs. After org edits, run `just lint` and `just build-data`.

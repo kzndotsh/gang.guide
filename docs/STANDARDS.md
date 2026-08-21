@@ -31,7 +31,7 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | HTML entities in description | Warning | Scrape junk (`&amp;`, `&#39;`) |
 | Alias > 60 chars | Warning | Likely scrape junk |
 | Invalid color value | Warning | Must be recognizable color names |
-| Type/lane mismatch | Warning | `street_gang` in `prison` lane, `motorcycle_club` in wrong lane, etc. |
+| Type/lane mismatch | Warning | `street_gang` in `prison` lane, `motorcycle_club` in wrong lane, `cybercrime_group` not in `cybercrime` lane, etc. |
 | `white_supremacist` org in non-WS/prison/MC lane | Warning | Check lane assignment |
 | Bare domain as source title | Warning | Use proper name (e.g. "ADL" not "adl.org") |
 | Name ends with `, NUMBER` | Warning | Move number to front |

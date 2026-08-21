@@ -113,6 +113,7 @@ FIELDS:
     "southeast-southwest" — Southern/Southwest US gangs
     "historical-east" — Historical East Coast gangs
     "other-national" — National orgs not fitting other lanes
+    "cybercrime" — Hacking groups, ransomware organizations, online criminal networks
     "unplaced" — Cannot determine lane
     null — Genuinely unknown or multi-regional umbrella
 - founded_year: Only if the text explicitly states a year. "Founded in the early 2000s" = null.
