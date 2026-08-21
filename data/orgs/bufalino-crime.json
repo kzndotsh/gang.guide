@@ -12,7 +12,7 @@
   "type": "organized_crime",
   "lane": "organized-crime",
   "founded_year": 1940,
-  "founded_year_precision": "decade",
+  "founded_year_precision": "circa",
   "description": "Italian American Mafia crime family based in Northeastern Pennsylvania, primarily in Scranton, Wilkes-Barre, and Pittston. Originated in the 1880s with Stefano La Torre, and was long led by Russell Bufalino until his death in 1994. Engaged in labor racketeering in the coal and garment industries, and colluded with New York's Five Families. The family was active from around 1900 until 2008.",
   "metro": "New York",
   "colors": [
@@ -22,7 +22,24 @@
     {
       "url": "https://en.wikipedia.org/wiki/Bufalino_Crime",
       "title": "Bufalino Crime — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Bufalino_crime_family",
+      "title": "Bufalino Crime Family — Wikipedia"
+    },
+    {
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/83697NCJRS.pdf",
+      "title": "1981 Annual Report — Pennsylvania Crime Commission"
+    },
+    {
+      "url": "https://www.ojp.gov/pdffiles1/Digitization/133208NCJRS.pdf",
+      "title": "Organized Crime in Pennsylvania: A Decade of Change — Pennsylvania Crime Commission (1991)"
+    },
+    {
+      "url": "https://thenewyorkmafia.com/pittston-scranton-mob/",
+      "title": "The Pittston-Scranton Family — The New York Mafia"
     }
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 40
 }

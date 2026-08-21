@@ -12,18 +12,18 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Chaldean_mafia",
-      "title": "Chaldean mafia \u2014 Wikipedia"
+      "title": "Chaldean mafia — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/American_Mafia",
-      "title": "American Mafia \u2014 Wikipedia"
+      "title": "American Mafia — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Detroit_Partnership",
-      "title": "Detroit Partnership \u2014 Wikipedia"
+      "title": "Detroit Partnership — Wikipedia"
     }
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "circa",
   "status": "active",
   "colors": []
 }

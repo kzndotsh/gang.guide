@@ -9,6 +9,22 @@
     {
       "url": "https://unitedgangs.com/varrio-204th-street",
       "title": "Varrio 204Th Street — UnitedGangs"
+    },
+    {
+      "url": "https://en.everybodywiki.com/Varrio_204th_Street",
+      "title": "Varrio 204th Street - EverybodyWiki"
+    },
+    {
+      "url": "https://www.dailybreeze.com/2008/07/24/harbor-gateway-gangs-hit-with-injunction/",
+      "title": "Harbor Gateway Gangs Hit With Injunction - Daily Breeze"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-2008-jul-24-me-briefs24.s4-story.html",
+      "title": "Gang Injunction Made Permanent - Los Angeles Times"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-2010-sep-10-la-me-0910-harbor-gateway-20100910-story.html",
+      "title": "Two Gang Members Convicted of Hate-Crime Murders - Los Angeles Times"
     }
   ],
   "founded_year": 1970,
@@ -20,5 +36,6 @@
     "blue"
   ],
   "founded_year_precision": "estimate",
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 120
 }
