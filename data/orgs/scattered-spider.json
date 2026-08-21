@@ -17,9 +17,14 @@
     {
       "url": "https://en.wikipedia.org/wiki/Scattered_Spider",
       "title": "Scattered Spider — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
+      "title": "Scattered Spider Hackers Plead Guilty on Day 1 of Trial — Krebs on Security"
     }
   ],
   "type": "cybercrime_group",
-  "status": "active",
-  "colors": []
+  "status": "inactive",
+  "colors": [],
+  "disbanded_year": 2026
 }

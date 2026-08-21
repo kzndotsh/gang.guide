@@ -1,0 +1,23 @@
+{
+  "id": "org:the-gentlemen",
+  "name": "The Gentlemen",
+  "aliases": [
+    "Gentlemen Ransomware Group",
+    "Hastalamuerte"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2025,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "The Gentlemen is a ransomware-as-a-service cybercriminal group that emerged in mid-2025 and rapidly became the second most active ransomware gang by victim count, claiming over 332 published victims through 2026. The group differentiates itself by offering affiliates a 90/10 revenue split — compared to the industry standard 80/20 — accelerating growth by attracting experienced operators from competing programs. Tracked by Check Point Software.",
+  "sources": [
+    {
+      "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+      "title": "Who Runs the Ransomware Group 'The Gentlemen?' — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}
