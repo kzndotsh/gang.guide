@@ -219,6 +219,8 @@
 
   let bgBuilt = false;
   let prevLaneCount = 0;
+  let prevYearMin = 0;
+  let prevYearMax = 0;
   let nodesBuilt = false;
 
   // Edge index for fast lookup by node id
@@ -309,6 +311,8 @@
     bgLayer.draw();
     bgBuilt = true;
     prevLaneCount = lanes.length;
+    prevYearMin = yearDomain.minYear;
+    prevYearMax = yearDomain.maxYear;
   }
 
   /** Build nodes once. Never destroy unless filters change. */
@@ -625,7 +629,8 @@
   /** Full rebuild — only on filter/data changes */
   function buildScene() {
     if (!stage) return;
-    if (!bgBuilt || lanes.length !== prevLaneCount) buildBackground();
+    const yearDomainChanged = yearDomain.minYear !== prevYearMin || yearDomain.maxYear !== prevYearMax;
+    if (!bgBuilt || lanes.length !== prevLaneCount || yearDomainChanged) buildBackground();
     buildNodes();
     drawEdges(selectedId ?? hoveredId);
     drawLabels();
