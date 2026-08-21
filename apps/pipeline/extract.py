@@ -461,7 +461,6 @@ def main():
                 skipped += 1
                 print(f"  [{ts()}] [skip] {slug}")
                 log.info("page_skipped", slug=slug)
-
         total_elapsed = time.time() - start_time
         log.info("extraction_completed", processed=processed, skipped=skipped, elapsed=round(total_elapsed, 1))
 

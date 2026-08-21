@@ -137,7 +137,7 @@ class PipelineLogger:
         self._file.close()
         # Print summary to stdout
         total = sum(self.counts.values())
-        print(f"  📋 Log: {self.log_path.name} ({total} entries, {self._elapsed():.1f}s)")
+        print(f"Log: {self.log_path.name} ({total} entries, {self._elapsed():.1f}s)")
 
     def __enter__(self):
         return self
