@@ -20,6 +20,7 @@ That recipe is: **extract → adjudicate → merge → apply (dry-run)**. It doe
 | Source key | Scraper | Site |
 |------------|---------|------|
 | `chicago_history` | `cgh.py` | Chicago Gang History |
+| `krebs` | `krebs.py` | KrebsOnSecurity.com (neer-do-well-news, ransomware, web-fraud-2-0) |
 | `detroit_dsg` | `dsg.py` | Detroit Street Gangs |
 | `ngcrc` | `ngcrc.py` | National Gang Crime Research Center |
 | `nyc_historical` | `nyc.py` | New York City Gangs |
