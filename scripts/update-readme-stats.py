@@ -25,10 +25,17 @@ def compute_stats():
     with_colors = sum(1 for o in orgs if o.get("colors"))
     with_symbols = sum(1 for o in orgs if o.get("symbols"))
 
+    def _has_evidence(edge: dict) -> bool:
+        if (edge.get("evidence") or "").strip():
+            return True
+        return any(
+            (c.get("evidence") or "").strip() for c in edge.get("citations") or []
+        )
+
     return {
         "orgs": len(orgs),
         "edges": len(edges),
-        "evidence": sum(1 for e in edges if e.get("evidence")),
+        "evidence": sum(1 for e in edges if _has_evidence(e)),
         "active": sum(1 for o in orgs if o.get("status") == "active"),
         "inactive": sum(1 for o in orgs if o.get("status") == "inactive"),
         "rivalry": sum(1 for e in edges if e["type"] == "rivalry"),
@@ -41,7 +48,9 @@ def compute_stats():
         "with_symbols": with_symbols,
         "multi_source": sum(1 for o in orgs if len(o.get("sources") or []) > 1),
         "with_aliases": sum(1 for o in orgs if o.get("aliases")),
-        "year_exact": sum(1 for o in orgs if o.get("founded_year_precision") in ("exact", "circa")),
+        "year_exact": sum(
+            1 for o in orgs if o.get("founded_year_precision") in ("exact", "circa")
+        ),
     }
 
 
@@ -71,50 +80,50 @@ def generate_svg(s: dict) -> str:
   </style>
 
   <!-- Border -->
-  <rect x="0.5" y="0.5" width="{W-1}" height="169" rx="6" stroke="#d0d7de" stroke-opacity="0.4"/>
+  <rect x="0.5" y="0.5" width="{W - 1}" height="169" rx="6" stroke="#d0d7de" stroke-opacity="0.4"/>
 
   <!-- Row 1: Stats -->
-  <text class="value" x="{PAD}" y="42">{s['orgs']:,}</text>
+  <text class="value" x="{PAD}" y="42">{s["orgs"]:,}</text>
   <text class="label" x="{PAD}" y="60">Organizations</text>
 
-  <text class="value" x="180" y="42">{s['edges']:,}</text>
+  <text class="value" x="180" y="42">{s["edges"]:,}</text>
   <text class="label" x="180" y="60">Edges</text>
 
   <text class="value" x="320" y="42">{evidence_pct}%</text>
   <text class="label" x="320" y="60">Evidence-backed</text>
 
-  <text class="value" x="500" y="42">{s['active']:,}</text>
+  <text class="value" x="500" y="42">{s["active"]:,}</text>
   <text class="label" x="500" y="60">Active</text>
 
-  <text class="value" x="620" y="42">{s['inactive']}</text>
+  <text class="value" x="620" y="42">{s["inactive"]}</text>
   <text class="label" x="620" y="60">Inactive</text>
 
   <!-- Divider -->
-  <line x1="{PAD}" y1="76" x2="{W-PAD}" y2="76" stroke="#d0d7de" stroke-opacity="0.3"/>
+  <line x1="{PAD}" y1="76" x2="{W - PAD}" y2="76" stroke="#d0d7de" stroke-opacity="0.3"/>
 
   <!-- Row 2: Bars -->
   <text class="small" x="{PAD}" y="100">Rivalry</text>
   <rect class="bar-bg" x="80" y="91" width="{bar_max}" height="10"/>
   <rect class="bar-red" x="80" y="91" width="{rivalry_w}" height="10"/>
-  <text class="small" x="{80+bar_max+8}" y="100">{s['rivalry']:,}</text>
+  <text class="small" x="{80 + bar_max + 8}" y="100">{s["rivalry"]:,}</text>
 
   <text class="small" x="{PAD}" y="120">Alliance</text>
   <rect class="bar-bg" x="80" y="111" width="{bar_max}" height="10"/>
   <rect class="bar-blue" x="80" y="111" width="{alliance_w}" height="10"/>
-  <text class="small" x="{80+bar_max+8}" y="120">{s['alliance']:,}</text>
+  <text class="small" x="{80 + bar_max + 8}" y="120">{s["alliance"]:,}</text>
 
   <text class="small" x="{PAD}" y="140">Evidence</text>
   <rect class="bar-bg" x="80" y="131" width="{bar_max}" height="10"/>
   <rect class="bar-green" x="80" y="131" width="{evidence_w}" height="10"/>
-  <text class="small" x="{80+bar_max+8}" y="140">{s['evidence']:,} / {s['edges']:,}</text>
+  <text class="small" x="{80 + bar_max + 8}" y="140">{s["evidence"]:,} / {s["edges"]:,}</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="420" y="100">{s['sources']:,} citations</text>
-  <text class="small" x="420" y="120">{s['multi_source']} multi-sourced</text>
-  <text class="small" x="420" y="140">{s['with_aliases']} have aliases</text>
-  <text class="small" x="580" y="100">{s['with_colors']} with colors</text>
-  <text class="small" x="580" y="120">{s['with_symbols']} with symbols</text>
-  <text class="small" x="580" y="140">{s['year_exact']} exact/circa years</text>
+  <text class="small" x="420" y="100">{s["sources"]:,} citations</text>
+  <text class="small" x="420" y="120">{s["multi_source"]} multi-sourced</text>
+  <text class="small" x="420" y="140">{s["with_aliases"]} have aliases</text>
+  <text class="small" x="580" y="100">{s["with_colors"]} with colors</text>
+  <text class="small" x="580" y="120">{s["with_symbols"]} with symbols</text>
+  <text class="small" x="580" y="140">{s["year_exact"]} exact/circa years</text>
 </svg>"""
 
 
