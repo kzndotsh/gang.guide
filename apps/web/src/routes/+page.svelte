@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
+  import { replaceState } from '$app/navigation';
   import KonvaMap from '$lib/map/KonvaMap.svelte';
   import { type EdgeMode } from '$lib/map/KonvaMap.svelte';
   import InspectorPanel from '$lib/inspector/InspectorPanel.svelte';
@@ -210,7 +211,11 @@
       url.searchParams.delete('lane');
     }
 
-    history.replaceState({}, '', url);
+    const next = `${url.pathname}${url.search}${url.hash}`;
+    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
+    if (next !== current) {
+      replaceState(next, {});
+    }
   });
 
   function onInspectorOpenChange(open: boolean) {

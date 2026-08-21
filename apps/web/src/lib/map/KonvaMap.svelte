@@ -256,24 +256,41 @@
       }));
     }
 
+    const bandRuns: { fill: string; y: number; height: number }[] = [];
     for (const lane of lanes) {
-      const top = laneY(lane) - 20;
-      const bandTop = top - 10;
-      const bc = bandColorFor(lane);
-      if (bc !== 'transparent') {
-        bgLayer.add(new Konva.Rect({
-          x: 0, y: bandTop, width: contentWidth, height: LANE_HEIGHT,
-          fill: bc, listening: false,
-        }));
+      const bandTop = laneY(lane) - 30;
+      const fill = bandColorFor(lane);
+      if (fill === 'transparent') continue;
+      const last = bandRuns.at(-1);
+      if (last && last.fill === fill) {
+        last.height = bandTop + LANE_HEIGHT - last.y;
+      } else {
+        bandRuns.push({ fill, y: bandTop, height: LANE_HEIGHT });
       }
+    }
+    for (const run of bandRuns) {
+      bgLayer.add(new Konva.Rect({
+        x: 0,
+        y: Math.round(run.y),
+        width: contentWidth,
+        height: Math.round(run.height),
+        fill: run.fill,
+        listening: false,
+        strokeEnabled: false,
+        perfectDrawEnabled: false,
+      }));
+    }
+
+    for (const lane of lanes) {
+      const bandTop = laneY(lane) - 30;
       const label = new Konva.Text({
-        x: 10, y: bandTop + 2,
+        x: 10, y: bandTop,
         text: laneLabel(lane, graph),
         fontSize: 11, fill: '#b1bac4', listening: false,
       });
-      const lineY = bandTop + 8;
+      label.offsetY(Math.round(label.height() / 2));
       bgLayer.add(new Konva.Line({
-        points: [10 + label.getTextWidth() + 8, lineY, contentWidth - scale.pad, lineY],
+        points: [10 + label.getTextWidth() + 8, bandTop, contentWidth - scale.pad, bandTop],
         stroke: '#21262d', listening: false,
       }));
       bgLayer.add(label);
@@ -913,13 +930,13 @@
     // Rebuild labels on pan end (viewport-dependent)
     // Also re-enable hit detection after drag (was disabled for perf during drag)
     stage.on('dragstart', () => {
-      nodeLayer.hitGraphEnabled(false);
+      nodeLayer.listening(false);
     });
     stage.on('dragmove', () => {
       syncAxisLayer();
     });
     stage.on('dragend', () => {
-      nodeLayer.hitGraphEnabled(true);
+      nodeLayer.listening(true);
       syncAxisLayer();
       if (rebuildTimer) clearTimeout(rebuildTimer);
       rebuildTimer = setTimeout(() => drawLabels(), 150);
