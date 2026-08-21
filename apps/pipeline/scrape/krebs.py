@@ -151,7 +151,10 @@ def scrape(
 
         # Extract article metadata from the HTML
         title_m = re.search(r'<title>([^<]+)</title>', resp.text)
-        title = title_m.group(1).replace(" – Krebs on Security", "").strip() if title_m else slug
+        raw_title = title_m.group(1) if title_m else slug
+        # Decode HTML entities in title
+        import html
+        title = html.unescape(raw_title).replace(" – Krebs on Security", "").replace(" — Krebs on Security", "").strip()
 
         date_m = re.search(r'<time[^>]*datetime="([^"]+)"', resp.text)
         pub_date = date_m.group(1)[:10] if date_m else ""
