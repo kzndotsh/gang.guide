@@ -559,8 +559,64 @@ org:mob-piru                  no_membership   # already manually set to 200
 # Use for orgs where the current data is known-correct and pipeline extractions
 # are suspected to degrade it (e.g. LLM hallucinations on poorly-sourced pages).
 [apply:skip-org]
+# Description / alias / source corrections from clean.py batches and manual research.
+# The pipeline (apply.py) will not overwrite fields or add edges for these orgs.
+# Enrich.py and clean.py are NOT affected by this section.
 
-# (none currently — add orgs here if pipeline keeps corrupting their data)
+# Manually corrected content (description, aliases, sources, founding year)
+org:almighty-black-p-stone-nation      # description corrected, symbols verified
+org:black-p-stone-nation               # description corrected (Detroit Blood error removed)
+org:55-bunch                           # description corrected (Playboys conflation removed)
+org:rollin-60s-neighborhood-crips      # membership 150→1600, description corrected
+org:trinitarios                        # colors corrected, 1993/exact verified
+org:46-neighborhood-crips              # founding year 2010→1970 corrected
+org:pasadena-denver-lanes              # description corrected from mangled scrape
+org:barjug                             # description corrected (was Asian gang, is Blood clique)
+org:denver-lane-bloods                 # founding decade corrected to late 1960s
+org:mob-piru                           # founding year 1977/exact verified
+org:east-coast-crips-los-angeles       # membership estimate added from DOJ RICO case
+org:mafia-crips-los-angeles            # aliases null→[] fixed
+org:hermandad-de-pistoleros-latinos    # name Hermandad→Hermanos + colors/aliases/sources
+org:highwaymen-mc                      # unverified race claim removed from description
+org:unknown-assassins                  # location Chicago→Bellwood/Melrose Park, symbols added
+org:varrio-29th-street                 # description corrected, dead source removed
+org:vinlanders-social-club             # Firm 22 alias removed (subdivision, not alias)
+org:el-quintos                         # territory corrected, colors/symbols fixed
+org:gangsta-2-6                        # description + year 1970→mid-1960s corrected
+org:baxter-street-dudes                # Baby-Face Willie name corrected
+org:bible-crips                        # description corrected (location + name origin)
+org:bing-kong-tong                     # precision exact→circa (1874 not confirmed)
+org:ovs                                # 1980/circa, 450 membership, Black Angels alias
+org:bishops                            # description replaced (was NYC Bed-Stuy, is Chicago Pilsen)
+org:hawaiian-gardens                   # junk aliases removed, 1940/decade, description fixed
+org:five-time-hometown-crips           # description, aliases deduped, metro San Bernardino
+
+# Wikipedia/primary-source verified exact years — protect from pipeline degrading precision
+org:18th-street-gang                   # 1965/exact — Wikipedia
+org:almighty-vice-lord-nation          # 1957/exact — Wikipedia
+org:maniac-latin-disciples-chicago     # 1966/exact — Wikipedia
+org:four-corner-hustlers-chicago       # 1968/exact — Wikipedia
+org:florencia-13                       # 1952/exact — Wikipedia
+org:culver-city-boys                   # 1968/exact — Wikipedia
+org:sotel                              # 1968/exact — Wikipedia (Venice 13 territory)
+org:venice                             # 1968/exact — Wikipedia (Venice 13)
+org:fruit-town-piru                    # 1972/exact — Wikipedia
+org:west-side-pirus-compton            # 1972/exact — Wikipedia
+org:grape-watts-crips                  # 1973/exact — Wikipedia
+org:rollin-90s-neighborhood-crips      # 1979/exact — Wikipedia
+org:94-hoover-crips                    # 1969/exact — Wikipedia
+org:black-gangster-disciples-nation    # 1969/exact — Wikipedia
+org:insane-gangster-disciples          # 1974/exact — Wikipedia
+org:fresno-bulldogs                    # 1984/exact — Wikipedia
+org:kumi-415                           # 1985/exact — Wikipedia
+org:white-tigers                       # 1980/exact — Wikipedia
+org:born-to-kill-gang                  # 1988/exact — Wikipedia
+org:decepticons-gang                   # 1986/exact — Wikipedia
+org:los-solidos                        # 1990/exact — Wikipedia
+org:cornbread-mafia                    # 1978/exact — Wikipedia
+org:dirty-dozen-motorcycle-club        # 1964/exact — Wikipedia
+org:iron-horsemen-motorcycle-club      # 1965/exact — Wikipedia
+org:college-kidnappers                 # 1930/exact — Wikipedia
 
 
 # ── apply:skip-edge ───────────────────────────────────────────────────────────
