@@ -419,7 +419,7 @@
         onOpenChange={onInspectorOpenChange}
         shouldScaleBackground={false}
       >
-        <Drawer.Content class="h-[80dvh] max-h-[80dvh] min-h-0 gap-0 overflow-hidden rounded-t-lg p-0">
+        <Drawer.Content class="h-[80dvh] max-h-[80dvh] min-h-0 gap-0 overflow-hidden rounded-t-lg bg-card p-0">
           <InspectorPanel
             {graph}
             node={enrichedNode}
