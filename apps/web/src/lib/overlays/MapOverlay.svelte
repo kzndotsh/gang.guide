@@ -1,10 +1,10 @@
 <script lang="ts">
   /**
    * MapOverlay — floating container positioned over the map canvas.
-   * Use position prop: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'top-right'
+   * Use position prop: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'middle-left' | 'top-right'
    */
   interface Props {
-    position?: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'top-right' | 'top-left' | 'top-center';
+    position?: 'bottom-center' | 'bottom-right' | 'bottom-left' | 'middle-left' | 'top-right' | 'top-left' | 'top-center';
     class?: string;
     children: any;
   }
@@ -15,6 +15,7 @@
     'bottom-center': 'bottom-3 left-1/2 -translate-x-1/2',
     'bottom-right': 'bottom-3 right-3',
     'bottom-left': 'bottom-3 left-3',
+    'middle-left': 'top-1/2 left-3 -translate-y-1/2',
     'top-right': 'top-3 right-3',
     'top-left': 'top-3 left-3',
     'top-center': 'top-3 left-1/2 -translate-x-1/2',

@@ -305,16 +305,16 @@
             </div>
             <YearSlider bind:yearMin bind:yearMax />
           </div>
+          <MapOverlay position="middle-left" class="hidden md:block">
+            <EdgeLegend />
+          </MapOverlay>
           <MapOverlay position="bottom-left" class="hidden md:block">
-            <div class="flex flex-col gap-1 pb-1">
-              <EdgeLegend />
-              <LaneFilter
-                groups={laneGroups}
-                {hiddenLanes}
-                onToggleGroup={toggleLaneGroup}
-                onShowAll={() => { if (hiddenLanes.size === 0) { hiddenLanes = new Set(Object.values(laneGroups).flat()); } else { hiddenLanes = new Set(); } }}
-              />
-            </div>
+            <LaneFilter
+              groups={laneGroups}
+              {hiddenLanes}
+              onToggleGroup={toggleLaneGroup}
+              onShowAll={() => { if (hiddenLanes.size === 0) { hiddenLanes = new Set(Object.values(laneGroups).flat()); } else { hiddenLanes = new Set(); } }}
+            />
           </MapOverlay>
           <OrgSearch bind:this={searchRef} {graph} onselect={selectFromSearch} />
           <MapOverlay position="bottom-right" class="hidden md:block">
