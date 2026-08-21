@@ -171,9 +171,20 @@ def _ddg_search(query: str, count: int = 6) -> list[dict]:
             resp.text,
             re.DOTALL,
         ):
-            url = match.group(1)
+            raw_url = match.group(1)
             title = re.sub(r"<[^>]+>", "", match.group(2)).strip()
             snippet = re.sub(r"<[^>]+>", "", match.group(3)).strip()
+
+            # Decode DDG redirect URLs → direct destination URLs
+            # DDG returns //duckduckgo.com/l/?uddg=https%3A%2F%2F...
+            url = raw_url
+            uddg_match = re.search(r"[?&]uddg=([^&]+)", raw_url)
+            if uddg_match:
+                from urllib.parse import unquote
+                url = unquote(uddg_match.group(1))
+            elif raw_url.startswith("//"):
+                url = "https:" + raw_url
+
             if title and snippet:
                 results.append({"title": title, "url": url, "snippet": snippet, "source": "ddg"})
             if len(results) >= count:
