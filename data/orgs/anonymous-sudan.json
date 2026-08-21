@@ -1,0 +1,28 @@
+{
+  "id": "org:anonymous-sudan",
+  "name": "Anonymous Sudan",
+  "aliases": [
+    "AnonymousSudan",
+    "Storm-1359"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Sudan",
+  "founded_year": 2023,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "Anonymous Sudan is a criminal hacker group active from January 2023 that claimed pro-Palestinian ideology while conducting extortion. They conducted over 35,000 DDoS attacks against governments, hospitals, universities, and major tech companies including Microsoft and OpenAI. Two Sudanese nationals were arrested and indicted by US federal prosecutors in 2024.",
+  "disbanded_year": 2024,
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Anonymous_Sudan",
+      "title": "Anonymous Sudan — Wikipedia"
+    },
+    {
+      "url": "https://www.cybersecuritydive.com/news/us-disrupts-anonymous-sudan-ddos/730104/",
+      "title": "US disables Anonymous Sudan infrastructure — Cybersecurity Dive"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

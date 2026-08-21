@@ -34315,5 +34315,31 @@
       }
     ],
     "id": "e1f260a06ae1"
+  },
+  {
+    "id": "8b1587516c98",
+    "source": "org:fin7",
+    "target": "org:darkside-hacker-group",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/FIN7",
+        "title": "FIN7 — Wikipedia",
+        "evidence": "FIN7 is also associated with GOLD NIAGARA, ITG14, ALPHV and BlackCat. DarkSide is a cybercriminal hacking group believed to be part of Carbon Spider, which is an alias for FIN7."
+      }
+    ]
+  },
+  {
+    "id": "325ec0baf866",
+    "source": "org:clop",
+    "target": "org:evil-corp",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://www.sentinelone.com/anthology/clop/",
+        "title": "Cl0P Ransomware Analysis — SentinelOne",
+        "evidence": "Clop ransomware is operated by the cybercriminal group TA505, which has overlapping membership with Evil Corp / Indrik Spider operations."
+      }
+    ]
   }
 ]
