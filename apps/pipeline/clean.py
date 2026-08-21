@@ -421,6 +421,8 @@ def call_llm(prompt: str, use_tools: bool = True, timeout: float = 120.0, logger
             resp.raise_for_status()
             body = resp.json()
         except (httpx.HTTPStatusError, httpx.TimeoutException) as e:
+            if logger:
+                logger.error("llm_api_error", turn=turn + 1, error=str(e), error_type=type(e).__name__)
             print(f"    ✗ API error on turn {turn + 1}: {e}")
             return None
 
@@ -451,6 +453,8 @@ def call_llm(prompt: str, use_tools: bool = True, timeout: float = 120.0, logger
         text_out = "".join(p.get("text", "") for p in content_blocks if p.get("type") == "text")
         return _parse_json_response(text_out)
 
+    if logger:
+        logger.warn("llm_max_turns_exceeded", max_turns=max_turns)
     print(f"    ✗ Exceeded max tool-use turns ({max_turns})")
     return None
 

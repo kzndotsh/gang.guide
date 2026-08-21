@@ -448,104 +448,114 @@ def main():
     total_changes = 0
     total_edges = 0
 
-    log = PipelineLogger("apply", source=args.source, dry_run=args.dry_run) if not args.dry_run else None
+    with PipelineLogger("apply", source=args.source, dry_run=args.dry_run, create_orgs=args.create_orgs) as log:
+        log.info("apply_started", source=args.source, dry_run=args.dry_run, create_orgs=args.create_orgs)
 
-    for page_dir in sorted(source_dir.iterdir()):
-        if not page_dir.is_dir():
-            continue
-        consensus_path = page_dir / "consensus.json"
-        if not consensus_path.exists():
-            continue
-
-        consensus = json.loads(consensus_path.read_text(encoding="utf-8"))
-        slug = page_dir.name
-
-        # Extract source URL from raw page
-        source_url = None
-        raw_path = ROOT / "data" / "raw" / args.source / f"{slug}.txt"
-        url_path = ROOT / "data" / "raw" / args.source / slug / "url.txt"
-        if url_path.exists():
-            source_url = url_path.read_text(encoding="utf-8").strip()
-        elif raw_path.exists():
-            raw_head = raw_path.read_text(encoding="utf-8")[:5000]
-            m = re.search(r'<link rel="canonical" href="([^"]+)"', raw_head)
-            if m:
-                source_url = m.group(1)
-
-        org_id = page_map.get(f"{args.source}/{slug}")
-
-        if not org_id:
-            # Try resolving subject_org name
-            org_id = resolve(consensus.get("subject_org", ""), org_index)
-
-        if not org_id:
-            if args.create_orgs and consensus.get("subject_org"):
-                org_id = create_org(
-                    consensus["subject_org"],
-                    consensus=consensus,
-                    source_url=source_url,
-                    dry_run=args.dry_run,
-                )
-                if org_id and not args.dry_run:
-                    from .lib.resolve import normalize
-
-                    org_index[normalize(consensus["subject_org"])] = org_id
-                    org_path_index[org_id] = DATA_ORGS / f"{slugify(consensus['subject_org'])}.json"
-            if not org_id:
+        for page_dir in sorted(source_dir.iterdir()):
+            if not page_dir.is_dir():
+                continue
+            consensus_path = page_dir / "consensus.json"
+            if not consensus_path.exists():
                 continue
 
-        # Skip orgs blocked in [apply:skip-org]
-        if ignore.should_skip_apply_org(org_id):
-            continue
+            consensus = json.loads(consensus_path.read_text(encoding="utf-8"))
+            slug = page_dir.name
 
-        changes = apply_extraction(consensus, org_id, org_path_index, dry_run=args.dry_run)
+            # Extract source URL from raw page
+            source_url = None
+            raw_path = ROOT / "data" / "raw" / args.source / f"{slug}.txt"
+            url_path = ROOT / "data" / "raw" / args.source / slug / "url.txt"
+            if url_path.exists():
+                source_url = url_path.read_text(encoding="utf-8").strip()
+            elif raw_path.exists():
+                raw_head = raw_path.read_text(encoding="utf-8")[:5000]
+                m = re.search(r'<link rel="canonical" href="([^"]+)"', raw_head)
+                if m:
+                    source_url = m.group(1)
 
-        # Derive metro from subject org for new org creation
-        _, subject_data = load_org_by_id(org_id, org_path_index)
-        metro = (subject_data or {}).get("metro", "Unknown")
+            org_id = page_map.get(f"{args.source}/{slug}")
 
-        edges = apply_edges(
-            consensus,
-            org_id,
-            org_index,
-            edges_list,
-            existing_keys,
-            dry_run=args.dry_run,
-            source_url=source_url,
-            create_orgs=args.create_orgs,
-            metro=metro,
-            ignore=ignore,
-        )
+            if not org_id:
+                # Try resolving subject_org name
+                org_id = resolve(consensus.get("subject_org", ""), org_index)
 
-        if changes or edges:
-            prefix = "[DRY] " if args.dry_run else ""
-            print(f"  {prefix}{slug} → {org_id}")
-            for c in changes:
-                print(f"    {c}")
-            for e in edges:
-                print(f"    + {e}")
-            total_changes += len(changes)
-            total_edges += len(edges)
+            if not org_id:
+                if args.create_orgs and consensus.get("subject_org"):
+                    org_id = create_org(
+                        consensus["subject_org"],
+                        consensus=consensus,
+                        source_url=source_url,
+                        dry_run=args.dry_run,
+                    )
+                    if org_id and not args.dry_run:
+                        from .lib.resolve import normalize
 
-    # Write edges once at end
-    if not args.dry_run and total_edges > 0:
-        DATA_RELS.write_text(json.dumps(edges_list, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+                        org_index[normalize(consensus["subject_org"])] = org_id
+                        org_path_index[org_id] = DATA_ORGS / f"{slugify(consensus['subject_org'])}.json"
+                        log.action("org_created", org=org_id, subject=consensus["subject_org"])
+                if not org_id:
+                    log.info("org_unresolved", slug=slug, subject=consensus.get("subject_org", ""))
+                    continue
 
-    print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Applied: {total_changes} field updates, {total_edges} new edges")
+            # Skip orgs blocked in [apply:skip-org]
+            if ignore.should_skip_apply_org(org_id):
+                log.info("org_skipped", org=org_id, reason="apply:skip-org")
+                continue
 
-    # Close the logger
-    if log:
-        log.info("apply_completed", field_updates=total_changes, new_edges=total_edges)
-        log.close()
+            changes = apply_extraction(consensus, org_id, org_path_index, dry_run=args.dry_run)
 
-    # Run lint as final gate
-    if not args.dry_run and (total_changes > 0 or total_edges > 0):
-        print("\nRunning lint...")
-        if run_lint():
-            print("✓ Lint passed — changes accepted")
-        else:
-            print("❌ Lint FAILED — changes may have introduced errors")
-            sys.exit(1)
+            # Derive metro from subject org for new org creation
+            _, subject_data = load_org_by_id(org_id, org_path_index)
+            metro = (subject_data or {}).get("metro", "Unknown")
+
+            edges = apply_edges(
+                consensus,
+                org_id,
+                org_index,
+                edges_list,
+                existing_keys,
+                dry_run=args.dry_run,
+                source_url=source_url,
+                create_orgs=args.create_orgs,
+                metro=metro,
+                ignore=ignore,
+            )
+
+            if changes or edges:
+                prefix = "[DRY] " if args.dry_run else ""
+                print(f"  {prefix}{slug} → {org_id}")
+                for c in changes:
+                    print(f"    {c}")
+                for e in edges:
+                    print(f"    + {e}")
+                total_changes += len(changes)
+                total_edges += len(edges)
+                log.action(
+                    "org_applied",
+                    org=org_id,
+                    slug=slug,
+                    dry_run=args.dry_run,
+                    field_changes=changes,
+                    edge_changes=edges,
+                )
+
+        # Write edges once at end
+        if not args.dry_run and total_edges > 0:
+            DATA_RELS.write_text(json.dumps(edges_list, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+        print(f"\n{'[DRY RUN] ' if args.dry_run else ''}Applied: {total_changes} field updates, {total_edges} new edges")
+        log.info("apply_completed", field_updates=total_changes, new_edges=total_edges, dry_run=args.dry_run)
+
+        # Run lint as final gate
+        if not args.dry_run and (total_changes > 0 or total_edges > 0):
+            print("\nRunning lint...")
+            if run_lint():
+                print("✓ Lint passed — changes accepted")
+                log.info("lint_passed")
+            else:
+                print("❌ Lint FAILED — changes may have introduced errors")
+                log.error("lint_failed")
+                sys.exit(1)
 
 
 if __name__ == "__main__":
