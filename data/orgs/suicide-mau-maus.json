@@ -1,10 +1,7 @@
 {
   "id": "org:suicide-mau-maus",
   "name": "Suicide Mau Maus",
-  "aliases": [
-    "Suicides",
-    "Little People Suicides"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",

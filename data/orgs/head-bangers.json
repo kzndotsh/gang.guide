@@ -1,9 +1,7 @@
 {
   "id": "org:head-bangers",
   "name": "Head Bangers",
-  "aliases": [
-    "Headbanger Bloods"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",

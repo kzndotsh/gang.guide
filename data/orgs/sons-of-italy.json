@@ -1,9 +1,7 @@
 {
   "id": "org:sons-of-italy",
   "name": "Sons of Italy",
-  "aliases": [
-    "69th Street Loafers"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",

@@ -1,9 +1,7 @@
 {
   "id": "org:famgoon",
   "name": "Famgoon",
-  "aliases": [
-    "Famerica"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",

@@ -18,7 +18,12 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | Invalid lane | Error | Must match an ID in `lanes.json` |
 | Source missing url/title | Error | Every source needs both fields |
 | `disbanded_year` < `founded_year` | Error | Temporal impossibility |
+| Unknown extra JSON key | Error | Org files reject fields not in the schema |
 | Invalid `status` value | Error | Must be `active`, `inactive`, or `unknown` |
+| Invalid `type` value | Error | Must be a schema enum (`street_gang`, `prison_gang`, …) |
+| `nation_affiliation` not an org id | Error | Must match an existing `org:…` id |
+| `founded_year` out of range | Error | Integer from 1800 through the current year |
+| Description over 800 chars | Error | Schema max length |
 | Symbol not title case | Error | e.g. `"pitchfork"` → `"Pitchfork"` (abbreviations ≤6 chars exempt) |
 | Description contains navigation junk | Error | "Search for:", "Recent Posts", "Other gangs nearby" |
 | Crip/Blood/Piru set before 1969 | Error | Impossible founding date (movement didn't exist yet) |
@@ -30,8 +35,12 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | Description < 50 chars | Warning | Too thin to be useful |
 | HTML entities in description | Warning | Scrape junk (`&amp;`, `&#39;`) |
 | Alias > 60 chars | Warning | Likely scrape junk |
-| Invalid color value | Warning | Must be recognizable color names |
-| Type/lane mismatch | Warning | `street_gang` in `prison` lane, `motorcycle_club` in wrong lane, `cybercrime_group` not in `cybercrime` lane, etc. |
+| Invalid / unrecognized color | Warning | Placeholder (`unknown`, `give details`) or a name not in the allowlist |
+| Type/lane mismatch | Warning | Non-`prison_gang` in `prison` lane, `motorcycle_club` in wrong lane, `cybercrime_group` not in `cybercrime` lane, etc. |
+| Prison-lane description implies street origin | Warning | `lane=prison` and description says "street gang" while type is not `prison_gang` |
+| Metro looks like a state/county | Warning | Use a city (or `"United States"` for national umbrellas), not `"Texas"` / `"Orange County"` |
+| Alias equals another org's name | Warning | Merge candidate |
+| `membership_estimate` invalid or huge | Warning | Must be a positive integer; flag values over 100,000 |
 | `white_supremacist` org in non-WS/prison/MC lane | Warning | Check lane assignment |
 | Bare domain as source title | Warning | Use proper name (e.g. "ADL" not "adl.org") |
 | Name ends with `, NUMBER` | Warning | Move number to front |
@@ -46,6 +55,8 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | Duplicate org name | Warning | Merge candidate |
 | Single source only | Info | Under-sourced |
 | Imprecise year precision | Info | `estimate` or `decade`: could be researched |
+| `status=inactive` without `disbanded_year` | Info | Set the year if known |
+| `military_service` on non-MC | Info | Field is mainly for motorcycle clubs |
 
 ## Edge rules (`check_edges`)
 
@@ -54,11 +65,14 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | Source/target not in orgs | Error | Broken reference |
 | Self-referencing edge | Error | Org related to itself |
 | Duplicate edge (same src+tgt+type) | Error | Already exists |
+| Invalid edge `type` | Error | Must be `alliance`, `rivalry`, `member_of`, `spin_off`, or `parent` |
+| Alliance/rivalry source not alphabetically smaller | Error | Store the smaller org ID as `source` |
 | `end_year` < `start_year` | Error | Temporal impossibility |
-| Alliance AND rivalry between same pair | Warning | Contradictory without temporal data |
+| Alliance AND rivalry between same pair | Error | Contradictory unless every edge has `start_year`/`end_year` (then info) |
 | Citation missing `url` | Warning | Every citation must have a URL |
+| Citation missing `evidence` | Warning | Verbatim quote required when `citations[]` is present |
 | Citation uses HTTP instead of HTTPS | Info | Should upgrade to `https` |
-| `start_year` well before org founded | Info | Suspicious temporal mismatch |
+| `start_year` well before org founded | Info | More than 10 years before the source org's `founded_year` |
 
 ## Cross-reference rules
 
@@ -68,18 +82,19 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | `check_nation_consistency` | Warning | `nation`/`alliance` type org has `nation_affiliation` set (nations don't belong to nations) |
 | `check_member_of_usage` | Warning | Gang nation org (Crips, Bloods, etc.) is SOURCE of `member_of`: likely reversed |
 | `check_member_of_usage` | Warning | `member_of` to gang nation when org already has `nation_affiliation` = same nation (redundant) |
-| `check_member_of_usage` | Warning | Blood/Crip-lane org missing `nation_affiliation` |
+| `check_member_of_usage` | Warning | Blood/Crip/Folk/People-lane street gang missing `nation_affiliation` |
+| `check_alias_name_collisions` | Warning | An alias matches another org's canonical `name` |
 | `check_page_title_orgs` | Error | Org name looks like a page title ("History of X", "Groups in Y") |
 | `check_id_consistency` | Error | Slug format invalid (charset, `--`, leading/trailing hyphen) |
 | `check_id_consistency` | Info | Filename stem does not match `id` slug |
 | `check_metro_lane_consistency` | Warning | Metro does not fit the org's lane (e.g. Chicago lane + New York metro) |
-| `check_spinoff_direction` | Warning | Target org is older than source by 5+ years (likely reversed) |
+| `check_spinoff_direction` | Warning | Target org is older than source by 10+ years (likely reversed) |
 | `check_cross_metro` | Info | Rivalry between orgs in different cities |
 | `check_stub_quality` | Info | Generic placeholder description for any org type, needs enrichment |
 | `check_isolated` | Info | Org has zero edges and no nation affiliation |
 | `check_fuzzy_dupes` | Warning | Two orgs with >90% name similarity |
 | `check_fuzzy_dupes` | Error | Cross-lane spelling variant duplicates (e.g. Gangster/Gangsta) |
-| `check_temporal_logic` | Warning | Org founded before its affiliated nation existed |
+| `check_temporal_logic` | Info | Org founded before its affiliated nation existed (`exact`/`circa` only) |
 
 ## Description quality (`check_descriptions`)
 

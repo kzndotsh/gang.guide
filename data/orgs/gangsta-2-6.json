@@ -2,12 +2,10 @@
   "id": "org:gangsta-2-6",
   "name": "Gangsta 2-6",
   "aliases": [
-    "Two Six",
     "Gangster Two Six",
     "G26",
     "GTS",
-    "IIGVI",
-    "TSN"
+    "IIGVI"
   ],
   "type": "street_gang",
   "lane": "chicago-independent",

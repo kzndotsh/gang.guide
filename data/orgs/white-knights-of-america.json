@@ -1,9 +1,7 @@
 {
   "id": "org:white-knights-of-america",
   "name": "White Knights of America",
-  "aliases": [
-    "White Knights"
-  ],
+  "aliases": [],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",

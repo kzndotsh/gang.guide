@@ -1,9 +1,7 @@
 {
   "id": "org:chaplains",
   "name": "Chaplains",
-  "aliases": [
-    "Imperial Chaplains"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",

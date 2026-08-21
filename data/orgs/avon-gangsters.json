@@ -1,9 +1,7 @@
 {
   "id": "org:avon-gangsters",
   "name": "Avon Gangsters",
-  "aliases": [
-    "A-Block"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",

@@ -9,7 +9,7 @@
   "founded_year_precision": "estimate",
   "description": "The Kilbourn Gaylords (KPGL) are a Chicago street gang and a set of the Almighty Gaylords Nation, based in the Kilbourn Park neighborhood on Chicago's Northwest Side. Aligned with the People Nation, the Kilbourn Park set was one of the most active Gaylord factions and played a central role in the Popes/Gaylords war of the early 1970s — a conflict that divided Chicago's white street gangs and ultimately drove the Gaylords into the People alliance while the Insane Popes and Simon City Royals joined the Folk Nation.",
   "colors": [],
-  "nation_affiliation": null,
+  "nation_affiliation": "org:people-nation",
   "status": "active",
   "sources": [
     {

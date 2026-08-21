@@ -3,7 +3,8 @@
   "name": "Wheels Of Soul Motorcycle Club",
   "aliases": [
     "Wheels of Soul",
-    "Wheels of Soul MC"
+    "Wheels of Soul MC",
+    "WOS"
   ],
   "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
@@ -18,23 +19,31 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Wheels_Of_Soul_Motorcycle_Club",
-      "title": "Wheels Of Soul Motorcycle Club \u2014 Wikipedia"
+      "title": "Wheels Of Soul Motorcycle Club — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Bandidos_MC_criminal_allegations_and_incidents_in_the_United_States",
-      "title": "Bandidos MC criminal allegations and incidents in the United States \u2014 Wikipedia"
+      "title": "Bandidos MC criminal allegations and incidents in the United States — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Hell%27s_Lovers_Motorcycle_Club",
-      "title": "Hell's Lovers Motorcycle Club \u2014 Wikipedia"
+      "title": "Hell's Lovers Motorcycle Club — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Pagan%27s_Motorcycle_Club",
-      "title": "Pagan's Motorcycle Club \u2014 Wikipedia"
+      "title": "Pagan's Motorcycle Club — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Sin_City_Deciples_Motorcycle_Club",
-      "title": "Sin City Deciples Motorcycle Club \u2014 Wikipedia"
+      "title": "Sin City Deciples Motorcycle Club — Wikipedia"
+    },
+    {
+      "url": "https://www.gangenforcement.com/uploads/2/9/4/1/29411337/2015_-_national_gang_report.pdf",
+      "title": "2015 National Gang Report (NGIC/NAGIA)"
+    },
+    {
+      "url": "https://www.gangenforcement.com/outlaw-motorcycle-gangs.html",
+      "title": "Gang Enforcement — Outlaw Motorcycle Gangs"
     }
   ],
   "status": "active"

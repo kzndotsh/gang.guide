@@ -2,8 +2,7 @@
   "id": "org:roman-lords",
   "name": "Roman Lords",
   "aliases": [
-    "The Hellraisers",
-    "Frenchmen"
+    "The Hellraisers"
   ],
   "type": "street_gang",
   "lane": "historical-east",

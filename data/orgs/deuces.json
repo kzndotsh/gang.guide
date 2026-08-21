@@ -1,9 +1,7 @@
 {
   "id": "org:deuces",
   "name": "Deuces",
-  "aliases": [
-    "Morgan Deuces"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",

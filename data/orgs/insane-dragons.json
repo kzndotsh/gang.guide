@@ -2,8 +2,7 @@
   "id": "org:insane-dragons",
   "name": "Insane Dragons",
   "aliases": [
-    "IDR",
-    "Dragons"
+    "IDR"
   ],
   "type": "street_gang",
   "lane": "chicago-folk",

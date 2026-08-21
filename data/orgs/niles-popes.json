@@ -9,7 +9,7 @@
   "founded_year_precision": "circa",
   "description": "The Niles Popes are a white street gang based in Niles, Illinois, a suburb of Chicago. They originated in the late 1960s from white power Stone Greasers out of Marquette Park who were influenced by the South Side Insane Popes and their leader Larry 'Larkin' Morris. The group initially called themselves the Niles Stone Greasers before becoming known as the Niles Popes. They are considered one of the earliest suburban offshoots of the Popes nation.",
   "colors": [],
-  "nation_affiliation": null,
+  "nation_affiliation": "org:people-nation",
   "status": "active",
   "sources": [
     {

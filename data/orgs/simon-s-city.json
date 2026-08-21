@@ -1,7 +1,10 @@
 {
   "id": "org:simon-s-city",
   "name": "Simon's City",
-  "aliases": [],
+  "aliases": [
+    "Simon City Boys",
+    "Simon City"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
@@ -15,6 +18,10 @@
     {
       "url": "http://www.stonegreasers.com/greaser/scr.html",
       "title": "www.stonegreasers.com"
+    },
+    {
+      "url": "https://www.stonegreasers.com/greaser/scr.html",
+      "title": "Chicago's Simon City Royals - Simon City Royal Nation"
     }
   ]
 }

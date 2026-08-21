@@ -7,10 +7,12 @@ Usage:
     python3 apps/pipeline/lint.py
 """
 
+import argparse
 import json
 import re
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -26,6 +28,122 @@ from apps.pipeline.ignore import load_ignore_rules  # noqa: E402
 
 REQUIRED_FIELDS = {"id", "name", "description", "sources"}
 RECOMMENDED_FIELDS = {"lane", "founded_year"}
+
+VALID_ORG_TYPES = {
+    "street_gang",
+    "organized_crime",
+    "motorcycle_club",
+    "prison_gang",
+    "white_supremacist",
+    "cybercrime_group",
+    "alliance",
+    "nation",
+}
+VALID_EDGE_TYPES = {"alliance", "rivalry", "member_of", "spin_off", "parent"}
+KNOWN_ORG_KEYS = {
+    "id",
+    "name",
+    "aliases",
+    "type",
+    "lane",
+    "metro",
+    "description",
+    "founded_year",
+    "founded_year_precision",
+    "colors",
+    "symbols",
+    "military_service",
+    "nation_affiliation",
+    "status",
+    "disbanded_year",
+    "membership_estimate",
+    "sources",
+    "_file",
+}
+ALLOWED_COLORS = {
+    "blue",
+    "black",
+    "red",
+    "white",
+    "gray",
+    "grey",
+    "green",
+    "orange",
+    "gold",
+    "yellow",
+    "light blue",
+    "purple",
+    "maroon",
+    "brown",
+    "navy blue",
+    "dark blue",
+    "pink",
+    "beige",
+    "silver",
+    "royal blue",
+    "burgundy",
+    "cream",
+    "crimson",
+    "copper",
+    "khaki",
+}
+# State / county labels that are not a specific city. Skip city/state homonyms (New York, Washington).
+METRO_NOT_CITY = {
+    "Alabama",
+    "Alaska",
+    "Arizona",
+    "Arkansas",
+    "California",
+    "Colorado",
+    "Connecticut",
+    "Delaware",
+    "Florida",
+    "Georgia",
+    "Hawaii",
+    "Idaho",
+    "Illinois",
+    "Indiana",
+    "Iowa",
+    "Kansas",
+    "Kentucky",
+    "Louisiana",
+    "Maine",
+    "Maryland",
+    "Massachusetts",
+    "Michigan",
+    "Minnesota",
+    "Mississippi",
+    "Missouri",
+    "Montana",
+    "Nebraska",
+    "Nevada",
+    "New Hampshire",
+    "New Jersey",
+    "New Mexico",
+    "North Carolina",
+    "North Dakota",
+    "Ohio",
+    "Oklahoma",
+    "Oregon",
+    "Pennsylvania",
+    "Rhode Island",
+    "South Carolina",
+    "South Dakota",
+    "Tennessee",
+    "Texas",
+    "Utah",
+    "Vermont",
+    "Virginia",
+    "West Virginia",
+    "Wisconsin",
+    "Wyoming",
+    "Southern California",
+    "Northern California",
+    "Los Angeles County",
+    "Cook County",
+}
+CURRENT_YEAR = date.today().year
+MEMBERSHIP_ESTIMATE_MAX = 100_000
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -215,13 +333,36 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
                     f"{f}: disbanded_year ({org['disbanded_year']}) before founded_year ({org['founded_year']})"
                 )
 
+        # Unknown extra keys (schema additionalProperties: false)
+        for key in org:
+            if key not in KNOWN_ORG_KEYS:
+                errors.append(f"{f}: unknown field '{key}'")
+
         # Status must be a known value
         status = org.get("status", "")
         if status and status not in ("active", "inactive", "unknown"):
             errors.append(f"{f}: invalid status '{status}' (must be active/inactive/unknown)")
 
-        # --- Warnings ---
+        org_type = org.get("type", "")
+        if org_type and org_type not in VALID_ORG_TYPES:
+            errors.append(f"{f}: invalid type '{org_type}' (must be {'|'.join(sorted(VALID_ORG_TYPES))})")
+
+        na = org.get("nation_affiliation")
+        if na and na not in orgs:
+            errors.append(f"{f}: nation_affiliation '{na}' does not match any org id")
+
+        y = org.get("founded_year")
+        if y is not None:
+            if not isinstance(y, int) or isinstance(y, bool):
+                errors.append(f"{f}: founded_year must be an integer, got {type(y).__name__}")
+            elif y < 1800 or y > CURRENT_YEAR:
+                errors.append(f"{f}: founded_year {y} out of range (1800–{CURRENT_YEAR})")
+
         desc = org.get("description", "")
+        if len(desc) > 800:
+            errors.append(f"{f}: description over 800 chars ({len(desc)})")
+
+        # --- Warnings ---
         if len(desc) < 50:
             warnings.append(f"{f}: description under 50 chars ({len(desc)})")
         if "&amp;" in desc or "&#" in desc or "&nbsp;" in desc:
@@ -255,8 +396,11 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
 
         colors = org.get("colors") or []
         for c in colors:
-            if c.lower() in ("give details", "unknown", ""):
+            cl = (c or "").lower().strip()
+            if cl in ("give details", "unknown", ""):
                 warnings.append(f"{f}: invalid color value '{c}'")
+            elif cl not in ALLOWED_COLORS:
+                warnings.append(f"{f}: unrecognized color '{c}'")
 
         # Crip/Blood/Piru set before parent movement existed
         y = org.get("founded_year")
@@ -331,8 +475,20 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         # Type/lane mismatch
         lane = org.get("lane") or ""
         org_type = org.get("type", "")
-        if "prison" in lane and org_type == "street_gang":
-            warnings.append(f"{f}: street_gang in prison lane (should be prison_gang?)")
+        if "prison" in lane and org_type and org_type != "prison_gang":
+            warnings.append(f"{f}: {org_type} in prison lane (should be prison_gang?)")
+        if "prison" in lane and org_type != "prison_gang":
+            if re.search(r"\bstreet\s+gang\b|\bstreet-gang\b", desc, re.IGNORECASE):
+                warnings.append(f"{f}: prison-lane org description implies street origin")
+        metro = org.get("metro") or ""
+        if metro in METRO_NOT_CITY or metro.endswith(" County") or metro.endswith(" State"):
+            warnings.append(f"{f}: metro looks like a state/county, not a city: '{metro}'")
+        membership = org.get("membership_estimate")
+        if membership is not None:
+            if isinstance(membership, bool) or not isinstance(membership, int) or membership < 1:
+                warnings.append(f"{f}: membership_estimate must be a positive integer, got {membership!r}")
+            elif membership > MEMBERSHIP_ESTIMATE_MAX:
+                warnings.append(f"{f}: membership_estimate {membership} is implausibly large")
         if "motorcycle" in lane and org_type != "motorcycle_club":
             warnings.append(f"{f}: {org_type} in motorcycle lane (should be motorcycle_club?)")
         if "white-supremacist" in lane and org_type not in ("white_supremacist", "prison_gang"):
@@ -375,14 +531,24 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         if precision in ("estimate", "decade", ""):
             info.append(f"{f}: year precision '{precision or 'empty'}' — could be researched")
 
+        if status == "inactive" and not org.get("disbanded_year"):
+            info.append(f"{f}: status=inactive without disbanded_year")
 
-def check_edges(edges: list[dict], org_ids: set[str]):
+        if org.get("military_service") and org_type and org_type != "motorcycle_club":
+            info.append(f"{f}: military_service on non-motorcycle_club type '{org_type}'")
+
+
+def check_edges(edges: list[dict], orgs: dict[str, dict]):
     seen_edges: set[tuple] = set()
+    org_ids = set(orgs.keys())
 
     for i, e in enumerate(edges):
         src = e.get("source", "")
         tgt = e.get("target", "")
         etype = e.get("type", "")
+
+        if etype and etype not in VALID_EDGE_TYPES:
+            errors.append(f"edge[{i}]: invalid edge type '{etype}' (must be {'|'.join(sorted(VALID_EDGE_TYPES))})")
 
         # Broken refs
         if src not in org_ids:
@@ -393,6 +559,11 @@ def check_edges(edges: list[dict], org_ids: set[str]):
         # Self-reference
         if src == tgt:
             errors.append(f"edge[{i}]: self-referencing edge ({src})")
+
+        if etype in ("alliance", "rivalry") and src and tgt and src > tgt:
+            errors.append(
+                f"edge[{i}]: {etype} source '{src}' is not alphabetically smaller than target '{tgt}'"
+            )
 
         # Duplicates
         key = (src, tgt, etype)
@@ -406,7 +577,7 @@ def check_edges(edges: list[dict], org_ids: set[str]):
         if start and end and end < start:
             errors.append(f"edge[{i}]: end_year {end} before start_year {start}")
         if start and src in org_ids:
-            org_founded = 0  # TODO: pass orgs dict to edge validation
+            org_founded = orgs[src].get("founded_year") or 0
             if org_founded and start < org_founded - 10:
                 info.append(f"edge[{i}]: start_year {start} is well before {src} founded ({org_founded})")
 
@@ -416,13 +587,13 @@ def check_edges(edges: list[dict], org_ids: set[str]):
                 warnings.append(f"edge[{i}]: citation missing url")
             if citation.get("url", "").startswith("http://"):
                 info.append(f"edge[{i}]: citation uses http (should be https)")
+            if not (citation.get("evidence") or "").strip():
+                warnings.append(f"edge[{i}]: citation missing evidence")
 
     # Contradictory and redundant edge pairs
     # Build normalized pair maps for fast lookup
     # For undirected types (alliance, rivalry), normalize pair as frozenset
     # For directed types, use (source, target) as-is
-    from collections import defaultdict
-
     pair_edges: dict = defaultdict(list)  # normalized_pair -> list of edge dicts
 
     for e in edges:
@@ -440,13 +611,13 @@ def check_edges(edges: list[dict], org_ids: set[str]):
             # If any edge lacks temporal data, it's ambiguous (error)
             a_edges = [e for e in elist if e["type"] == "alliance"]
             r_edges = [e for e in elist if e["type"] == "rivalry"]
-            all_dated = all(
-                e.get("start_year") or e.get("end_year") for e in a_edges + r_edges
-            )
+            all_dated = all(e.get("start_year") or e.get("end_year") for e in a_edges + r_edges)
             if all_dated:
                 info.append(f"temporal transition: {pair_str} alliance↔rivalry with dates (ok)")
             else:
-                errors.append(f"contradictory edges: {pair_str} has both alliance AND rivalry (add start_year/end_year to disambiguate)")
+                errors.append(
+                    f"contradictory edges: {pair_str} has both alliance AND rivalry (add start_year/end_year to disambiguate)"
+                )
 
         # parent + spin_off on same directed pair = conflict (error)
         if "parent" in types and "spin_off" in types:
@@ -493,17 +664,40 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
     # Lane prefix → expected metro keywords
     LANE_METRO = {
         "california-": [
-            "Los Angeles", "San Francisco", "California", "San Diego", "Sacramento",
-            "Fresno", "Inglewood", "Compton", "Long Beach", "Pomona", "Riverside",
-            "San Bernardino", "Oxnard", "Salinas", "Stockton", "Modesto", "Oakland",
-            "Azusa", "Carson", "Torrance", "Hawthorne", "Lynwood", "Gardena",
-            "Orange County", "Anaheim", "Santa Ana", "Inland Empire", "San Jose",
+            "Los Angeles",
+            "San Francisco",
+            "California",
+            "San Diego",
+            "Sacramento",
+            "Fresno",
+            "Inglewood",
+            "Compton",
+            "Long Beach",
+            "Pomona",
+            "Riverside",
+            "San Bernardino",
+            "Oxnard",
+            "Salinas",
+            "Stockton",
+            "Modesto",
+            "Oakland",
+            "Azusa",
+            "Carson",
+            "Torrance",
+            "Hawthorne",
+            "Lynwood",
+            "Gardena",
+            "Orange County",
+            "Anaheim",
+            "Santa Ana",
+            "Inland Empire",
+            "San Jose",
         ],
         "chicago-": ["Chicago"],
         "detroit": ["Detroit"],
         "new-york": ["New York"],
         "midwest": [],  # broad, don't enforce
-        "prison": [],   # can be anywhere
+        "prison": [],  # can be anywhere
         "organized-crime": [],  # can be anywhere
         "white-supremacist": [],
         "motorcycle-clubs": [],
@@ -513,8 +707,14 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
         "blood-nation": [],
         "crip-nation": [],
         "historical-east": [
-            "New York", "Boston", "Philadelphia", "Baltimore", "Washington",
-            "Newark", "Hartford", "Providence",
+            "New York",
+            "Boston",
+            "Philadelphia",
+            "Baltimore",
+            "Washington",
+            "Newark",
+            "Hartford",
+            "Providence",
         ],
     }
 
@@ -566,7 +766,10 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
             for signal, implied_metro in CITY_SIGNALS.items():
                 if signal in desc and metro and metro != implied_metro and metro not in ("United States", "National"):
                     # Only flag if lane also doesn't suggest the org is genuinely cross-metro
-                    if not any(lane.startswith(prefix) for prefix in ["other-national", "prison", "white-supremacist", "motorcycle"]):
+                    if not any(
+                        lane.startswith(prefix)
+                        for prefix in ["other-national", "prison", "white-supremacist", "motorcycle"]
+                    ):
                         warnings.append(
                             f"{f}: description mentions '{signal}' (implies {implied_metro}) but metro='{metro}'"
                         )
@@ -577,9 +780,7 @@ def check_metro_lane_consistency(orgs: dict[str, dict]):
             if not valid_metros:
                 continue
             if lane.startswith(lane_prefix) and metro and metro not in valid_metros:
-                warnings.append(
-                    f"{f}: lane '{lane}' but metro='{metro}' (expected one of {valid_metros})"
-                )
+                warnings.append(f"{f}: lane '{lane}' but metro='{metro}' (expected one of {valid_metros})")
                 break
 
 
@@ -642,7 +843,7 @@ def check_description_starts_with_name(orgs: dict[str, dict]):
         starts_ok = (
             first_words.startswith(name_lower)
             or first_words.startswith("the " + name_lower)
-            or name_lower in first_words[:len(name_lower) + 10]
+            or name_lower in first_words[: len(name_lower) + 10]
         )
 
         if starts_ok:
@@ -651,9 +852,7 @@ def check_description_starts_with_name(orgs: dict[str, dict]):
         # Check if description starts with a known alias instead — that's a warning
         for alias in aliases:
             if first_words.startswith(alias) and alias != name_lower:
-                warnings.append(
-                    f"{f}: description starts with alias '{alias}' instead of canonical name '{name}'"
-                )
+                warnings.append(f"{f}: description starts with alias '{alias}' instead of canonical name '{name}'")
                 break
 
 
@@ -734,9 +933,10 @@ def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
         "org:people-nation",
         "org:surenos",
         "org:nortenos",
-        "org:united-blood-nation",
         "org:suren-os-united-states",
     }
+    FOLK_LANES = {"chicago-folk"}
+    PEOPLE_LANES = {"chicago-people"}
     BLOOD_LANES = {
         "blood-nation",
         "california-bloods-compton",
@@ -795,10 +995,14 @@ def check_member_of_usage(orgs: dict[str, dict], edges: list[dict]):
                 warnings.append(
                     f"{f}: Crip-lane org missing nation_affiliation (should be org:crips or specific Crip nation)"
                 )
+            elif lane in FOLK_LANES:
+                warnings.append(f"{f}: Folk-lane org missing nation_affiliation (should be org:folk-nation)")
+            elif lane in PEOPLE_LANES:
+                warnings.append(f"{f}: People-lane org missing nation_affiliation (should be org:people-nation)")
 
 
 def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
-    """Flag spin_off edges where the TARGET is older than the SOURCE by 5+ years.
+    """Flag spin_off edges where the TARGET is older than the SOURCE by 10+ years.
 
     Schema: A --spin_off--> B means 'B came from A' (A is parent/older, B is spinoff/newer).
     So if B (target) is OLDER than A (source), the relationship is likely reversed.
@@ -817,6 +1021,24 @@ def check_spinoff_direction(orgs: dict[str, dict], edges: list[dict]):
                 f"edge[{i}]: spin_off direction suspect — {tgt_org.get('name', '')} (founded {tgt_year}) "
                 f"is older than {src_org.get('name', '')} (founded {src_year}) — target should be the spinoff (newer)"
             )
+
+
+def check_alias_name_collisions(orgs: dict[str, dict]):
+    """Warn when org A's alias equals org B's canonical name (merge / dupe candidate)."""
+    name_to_file: dict[str, tuple[str, str]] = {}
+    for org_id, org in orgs.items():
+        name = (org.get("name") or "").strip().lower()
+        if name:
+            name_to_file[name] = (org_id, org["_file"])
+
+    for org_id, org in orgs.items():
+        for alias in org.get("aliases") or []:
+            key = (alias or "").strip().lower()
+            if not key:
+                continue
+            hit = name_to_file.get(key)
+            if hit and hit[0] != org_id:
+                warnings.append(f"{org['_file']}: alias '{alias}' matches canonical name of {hit[1]}")
 
 
 def check_isolated(orgs: dict[str, dict], edges: list[dict]):
@@ -847,7 +1069,9 @@ def check_descriptions(orgs: dict[str, dict]):
 
         # Infobox dump — raw scraped location/section data instead of a narrative description
         if re.match(r"^[A-Z][a-z]+ neighborhood (Established|Sections)", desc):
-            warnings.append(f"{f}: description is a raw infobox dump (starts with 'X neighborhood Established/Sections')")
+            warnings.append(
+                f"{f}: description is a raw infobox dump (starts with 'X neighborhood Established/Sections')"
+            )
 
         # Description contains raw scrape junk
         if any(junk in desc for junk in ("class=", "widget-title", "<div", "href=", ".json", "undefined")):
@@ -985,10 +1209,10 @@ def main():
     lane_ids = load_lanes()
     orgs = load_orgs()
     edges = load_edges()
-    org_ids = set(orgs.keys())
 
     check_orgs(orgs, lane_ids)
-    check_edges(edges, org_ids)
+    check_edges(edges, orgs)
+    check_alias_name_collisions(orgs)
     check_isolated(orgs, edges)
     check_fuzzy_dupes(orgs)
     check_descriptions(orgs)
@@ -1018,6 +1242,10 @@ def main():
             "fuzzy_dupe": "potential dupe",
             "spinoff_direction": "spin_off direction",
             "temporal_logic": "temporal transition",
+            "alias_collision": "matches canonical name",
+            "folk_people_affiliation": "missing nation_affiliation",
+            "citation_evidence": "citation missing evidence",
+            "metro_not_city": "metro looks like a state/county",
         }
 
         def _is_suppressed(msg: str) -> bool:
@@ -1039,8 +1267,6 @@ def main():
         errors[:] = [m for m in errors if not _is_suppressed(m)]
         warnings[:] = [m for m in warnings if not _is_suppressed(m)]
         info[:] = [m for m in info if not _is_suppressed(m)]
-
-    import argparse
 
     parser = argparse.ArgumentParser(description="Lint gang.guide data files")
     parser.add_argument("--all", action="store_true", help="Show all warnings and info without truncation")

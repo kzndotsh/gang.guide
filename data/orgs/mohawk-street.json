@@ -1,9 +1,7 @@
 {
   "id": "org:mohawk-street",
   "name": "Mohawk Street",
-  "aliases": [
-    "Mohawks"
-  ],
+  "aliases": [],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",

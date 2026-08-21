@@ -4,7 +4,6 @@
   "aliases": [
     "ISG",
     "Imperial Gangsters",
-    "Almighty Imperial Gangsters",
     "AIG",
     "Almighty Imperial Gangsters Nation",
     "AIGN"
@@ -19,7 +18,7 @@
     "black",
     "pink"
   ],
-  "nation_affiliation": null,
+  "nation_affiliation": "org:folk-nation",
   "status": "active",
   "sources": [
     {

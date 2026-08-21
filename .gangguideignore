@@ -199,7 +199,6 @@ org:north-side-crips                               # bare_source: only fix is ti
 org:north-siders                                   # bare_source: only fix is title
 org:northern-boulevard-boys                        # bare_source: only fix is title
 org:palmer-gaylords                                # bare_source: only fix is title
-org:people-alliance                                # bare_source: only fix is title
 org:red-hook-tigers                                # bare_source: only fix is title
 org:reinberg-gaylords                              # bare_source: tool limit
 org:rockaway-and-fulton-gang                       # bare_source: only fix is title
@@ -577,7 +576,7 @@ org:mob-piru                           # founding year 1977/exact verified
 org:east-coast-crips-los-angeles       # membership estimate added from DOJ RICO case
 org:mafia-crips-los-angeles            # aliases null→[] fixed
 org:hermandad-de-pistoleros-latinos    # name Hermandad→Hermanos + colors/aliases/sources
-org:highwaymen-mc                      # unverified race claim removed from description
+org:highwaymen-motorcycle-club         # unverified race claim removed from description
 org:unknown-assassins                  # location Chicago→Bellwood/Melrose Park, symbols added
 org:varrio-29th-street                 # description corrected, dead source removed
 org:vinlanders-social-club             # Firm 22 alias removed (subdivision, not alias)
@@ -778,7 +777,7 @@ org:green-counts                             # spot_check: confirmed clean
 org:harpys-5th-avenue-los-angeles            # spot_check: confirmed clean, dead Wikipedia source removed
 org:hells-lovers-motorcycle-club             # spot_check: confirmed clean
 org:hermandad-de-pistoleros-latinos          # spot_check: corrected and re-verified
-org:highwaymen-mc                            # spot_check: confirmed clean
+org:highwaymen-motorcycle-club               # spot_check: confirmed clean
 org:jefrox                                   # spot_check: corrected and re-verified
 org:latin-lovers                             # spot_check: verified after desc trim
 org:marginals                                # spot_check: confirmed clean

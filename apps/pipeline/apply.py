@@ -305,6 +305,7 @@ def apply_edges(
     create_orgs: bool = False,
     metro: str = "Unknown",
     ignore: "IgnoreRules | None" = None,
+    org_path_index: dict | None = None,
 ) -> list[str]:
     """Apply extracted edges. Mutates edges_list and existing_keys in place."""
 
@@ -334,6 +335,11 @@ def apply_edges(
         if target_id == org_id:
             continue  # skip self-references
 
+        if etype in ("alliance", "rivalry"):
+            src_id, tgt_id = sorted((org_id, target_id))
+        else:
+            src_id, tgt_id = org_id, target_id
+
         # Skip edges blocked in [apply:skip-edge]
         if ignore and ignore.should_skip_apply_edge(org_id, target_id, etype):
             continue
@@ -343,7 +349,7 @@ def apply_edges(
             reason = edge.get("verify_reason", "no reason given")
             edges_added.append(f"SKIPPED (verify_uncertain): {etype}: {org_id} → {target_id} — {reason[:60]}")
             continue
-        key = (org_id, target_id, etype)
+        key = (src_id, tgt_id, etype)
         if key in existing_keys:
             # Enrich existing edge: append a new citation if the URL is new
             if edge.get("evidence") and source_url and not dry_run:
@@ -357,12 +363,12 @@ def apply_edges(
                                 "evidence": edge["evidence"],
                             }
                             e.setdefault("citations", []).append(citation)
-                            edges_added.append(f"citation added: {etype}: {org_id} → {target_id}")
+                            edges_added.append(f"citation added: {etype}: {src_id} → {tgt_id}")
                         break
             continue
 
         # Skip member_of edges that contradict the org's nation_affiliation
-        if etype == "member_of":
+        if etype == "member_of" and org_path_index is not None:
             org_data = load_org_by_id(org_id, org_path_index)[1]
             if org_data:
                 affiliation = (org_data.get("nation_affiliation") or "").lower()
@@ -375,15 +381,15 @@ def apply_edges(
         # (alliance where rivalry exists, or vice versa)
         if etype in ("alliance", "rivalry"):
             opposite = "rivalry" if etype == "alliance" else "alliance"
-            has_contradiction = (org_id, target_id, opposite) in existing_keys or (
-                target_id,
-                org_id,
+            has_contradiction = (src_id, tgt_id, opposite) in existing_keys or (
+                tgt_id,
+                src_id,
                 opposite,
             ) in existing_keys
             if has_contradiction and not edge.get("start_year") and not edge.get("period"):
                 continue
 
-        new_edge = {"source": org_id, "target": target_id, "type": etype}
+        new_edge = {"source": src_id, "target": tgt_id, "type": etype}
         if edge.get("evidence") or source_url:
             citation = {
                 "url": source_url or "",
@@ -443,7 +449,12 @@ def main():
 
     # Load edges once
     edges_list = json.loads(DATA_RELS.read_text(encoding="utf-8"))
-    existing_keys = {(e["source"], e["target"], e["type"]) for e in edges_list}
+    existing_keys: set[tuple] = set()
+    for e in edges_list:
+        src, tgt, etype = e["source"], e["target"], e["type"]
+        if etype in ("alliance", "rivalry"):
+            src, tgt = sorted((src, tgt))
+        existing_keys.add((src, tgt, etype))
 
     ignore = load_ignore_rules()
 
@@ -521,6 +532,7 @@ def main():
                 create_orgs=args.create_orgs,
                 metro=metro,
                 ignore=ignore,
+                org_path_index=org_path_index,
             )
 
             if changes or edges:

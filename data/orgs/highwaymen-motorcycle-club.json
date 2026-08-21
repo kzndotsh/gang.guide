@@ -26,6 +26,14 @@
     {
       "url": "https://en.wikipedia.org/wiki/Outlaws_MC_criminal_allegations_and_incidents",
       "title": "Outlaws MC criminal allegations and incidents — Wikipedia"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Highwaymen_Motorcycle_Club",
+      "title": "Highwaymen Motorcycle Club — Wikipedia"
+    },
+    {
+      "url": "https://www.gangenforcement.com/outlaw-motorcycle-gangs.html",
+      "title": "Gang Enforcement — Outlaw Motorcycle Gangs"
     }
   ],
   "metro": "Detroit",
@@ -33,5 +41,9 @@
     "black",
     "white"
   ],
-  "status": "active"
+  "status": "active",
+  "membership_estimate": 400,
+  "symbols": [
+    "Winged Skeleton Wearing Motorcycle Cap And Leather Jacket"
+  ]
 }
