@@ -91,6 +91,12 @@ def get_category_pages(client, category: str) -> list[str]:
     return list(dict.fromkeys(urls))  # preserve order, dedupe
 
 
+def _url_year(url: str) -> int:
+    """Extract year from a Krebs article URL. Returns 0 if not parseable."""
+    m = re.match(r"https://krebsonsecurity\.com/(\d{4})/", url)
+    return int(m.group(1)) if m else 0
+
+
 def slug_from_url(url: str) -> str:
     """Extract a clean slug from a Krebs article URL.
 
@@ -107,6 +113,7 @@ def scrape(
     categories: list[str] | None = None,
     force: bool = False,
     limit: int = 0,
+    since: int = 2016,
 ):
     """Scrape Krebs articles from specified categories."""
     if categories is None:
@@ -115,12 +122,14 @@ def scrape(
     client = get_client()
     all_urls: list[str] = []
 
-    print(f"Fetching article lists from {len(categories)} categories...")
+    print(f"Fetching article lists from {len(categories)} categories (since {since})...")
     for cat in categories:
         print(f"  Scanning /{cat}/...")
         urls = get_category_pages(client, cat)
-        print(f"    Found {len(urls)} articles")
-        all_urls.extend(urls)
+        # Filter by year
+        filtered = [u for u in urls if _url_year(u) >= since]
+        print(f"    Found {len(urls)} articles, {len(filtered)} since {since}")
+        all_urls.extend(filtered)
         time.sleep(CRAWL_DELAY)
 
     # Deduplicate (same article may appear in multiple categories)
@@ -201,8 +210,14 @@ def main():
         default=0,
         help="Max articles to scrape (0 = all)",
     )
+    parser.add_argument(
+        "--since",
+        type=int,
+        default=2016,
+        help="Only scrape articles from this year onwards (default: 2016 — older articles use a different HTML structure that extracts poorly)",
+    )
     args = parser.parse_args()
-    scrape(categories=args.categories, force=args.force, limit=args.limit)
+    scrape(categories=args.categories, force=args.force, limit=args.limit, since=args.since)
 
 
 if __name__ == "__main__":
