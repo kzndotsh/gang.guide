@@ -202,13 +202,13 @@
       "id": "midwest",
       "label": "Midwest",
       "group": "Regional",
-      "order": 82
+      "order": 30
     },
     {
       "id": "detroit",
       "label": "Detroit",
       "group": "Detroit",
-      "order": 83
+      "order": 28
     },
     {
       "id": "southeast-southwest",
