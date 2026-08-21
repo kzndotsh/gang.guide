@@ -1,5 +1,11 @@
 const MIN_ZOOM = 0.05;
 const MAX_ZOOM = 3;
+const MIN_STAGE_PX = 8;
+
+/** True when the map container has a real layout box (not a 0×0 first paint). */
+export function isUsableStageSize(width: number, height: number): boolean {
+  return width >= MIN_STAGE_PX && height >= MIN_STAGE_PX;
+}
 
 export function clampZoom(zoom: number): number {
   return Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, zoom));

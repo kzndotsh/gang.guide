@@ -13,7 +13,7 @@
   import { orgDisplayTitle } from '$lib/inspector/inspectorDisplay';
   import { nodeMatchesMetro } from './mapFilters';
   import { formatYearSpan, resolveNodeYearSpan } from '$lib/yearFormat';
-  import { clampZoom, fitContentInViewport } from './panZoom';
+  import { clampZoom, fitContentInViewport, isUsableStageSize } from './panZoom';
   import {
     buildTimelineScale,
     computeYearDomain,
@@ -695,10 +695,21 @@
 
   function buildSceneAsync() {
     buildScene();
+    tryRevealMap();
+  }
+
+  function tryRevealMap(): boolean {
+    if (!containerEl || !stage) return false;
+    const width = containerEl.clientWidth;
+    const height = containerEl.clientHeight;
+    if (!isUsableStageSize(width, height)) return false;
+    stage.width(width);
+    stage.height(height);
     fitToView();
     didInitialFit = true;
     mapReady = true;
     onready?.();
+    return true;
   }
 
   function getNodePosById(id: string): { x: number; y: number } | null {
@@ -860,14 +871,32 @@
   let resizeObserver: ResizeObserver | null = null;
 
   onMount(() => {
-    if (!containerEl) return;
+    let cancelled = false;
+    let bootRaf = 0;
+    const syncStageBox = () => {
+      if (!containerEl || !stage) return;
+      const width = containerEl.clientWidth;
+      const height = containerEl.clientHeight;
+      if (!isUsableStageSize(width, height)) return;
+      stage.width(width);
+      stage.height(height);
+      syncAxisLayer();
+      if (!didInitialFit) tryRevealMap();
+    };
+
+    const boot = () => {
+      if (cancelled) return;
+      if (!containerEl) {
+        bootRaf = requestAnimationFrame(boot);
+        return;
+      }
 
     Konva.pixelRatio = 1;
 
     stage = new Konva.Stage({
       container: containerEl,
-      width: containerEl.clientWidth,
-      height: containerEl.clientHeight,
+      width: Math.max(containerEl.clientWidth, 1),
+      height: Math.max(containerEl.clientHeight, 1),
       draggable: true,
     });
 
@@ -947,25 +976,22 @@
       if (e.target === stage) ondeselect?.();
     });
 
-    // Resize observer
-    resizeObserver = new ResizeObserver(() => {
-      if (!containerEl || !stage) return;
-      stage.width(containerEl.clientWidth);
-      stage.height(containerEl.clientHeight);
-      syncAxisLayer();
-      if (!didInitialFit) {
-        fitToView();
-        didInitialFit = true;
-        mapReady = true; onready?.();
-      }
-    });
+    resizeObserver = new ResizeObserver(syncStageBox);
     resizeObserver.observe(containerEl);
+    window.addEventListener('resize', syncStageBox);
+    window.visualViewport?.addEventListener('resize', syncStageBox);
 
-    // Initial render
     buildSceneAsync();
+    };
+
+    boot();
 
     return () => {
+      cancelled = true;
+      if (bootRaf) cancelAnimationFrame(bootRaf);
       resizeObserver?.disconnect();
+      window.removeEventListener('resize', syncStageBox);
+      window.visualViewport?.removeEventListener('resize', syncStageBox);
       stage?.destroy();
     };
   });

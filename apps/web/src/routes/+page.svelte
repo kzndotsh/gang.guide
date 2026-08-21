@@ -152,6 +152,7 @@
   );
 
   let viewport = $state<'pending' | 'mobile' | 'desktop'>('pending');
+  let urlSyncEnabled = $state(false);
 
   onMount(() => {
     if (!browser) return;
@@ -185,12 +186,13 @@
       hiddenLanes = new Set(allLanes.filter((l: string) => !showLanes.has(l)));
     }
 
+    urlSyncEnabled = true;
     return () => mq.removeEventListener('change', applyViewport);
   });
 
-  // Sync state → URL
+  // Sync state → URL after the first restore so iOS Safari does not abort in-flight loads.
   $effect(() => {
-    if (!browser) return;
+    if (!browser || !urlSyncEnabled) return;
     const url = new URL(window.location.href);
 
     if (selectedId) url.searchParams.set('org', selectedId);
@@ -291,9 +293,9 @@
 
 <svelte:window onkeydown={onKeydown} />
 
-<div class="fixed inset-0 h-dvh overflow-hidden bg-background pb-[env(safe-area-inset-bottom)]">
+<div class="fixed inset-0 h-dvh overflow-hidden bg-background pb-[env(safe-area-inset-bottom)]" style="background-color:#0d1117">
   {#if viewport === 'pending'}
-    <div class="flex h-full flex-col items-center justify-center">
+    <div class="flex h-full flex-col items-center justify-center" style="background-color:#0d1117">
       <svg class="size-16 animate-[spin_6s_linear_infinite] text-muted-foreground/20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4">
         <circle cx="50" cy="50" r="45"/>
         <ellipse cx="50" cy="50" rx="45" ry="12"/>
@@ -302,7 +304,7 @@
       </svg>
     </div>
   {:else}
-    {#snippet mapWorkspace()}
+  {#snippet mapWorkspace()}
       <div class="flex h-full flex-col">
         <AppHeader
           {graph}
@@ -387,7 +389,7 @@
       </div>
     {/snippet}
 
-    {#if viewport === 'desktop'}
+  {#if viewport === 'desktop'}
       <PaneGroup autoSaveId={INSPECTOR_LAYOUT_KEY} direction="horizontal" class="flex h-full">
         <Pane defaultSize={100 - INSPECTOR_DEFAULT_SIZE} minSize={40} class="min-h-0 min-w-0">
           {@render mapWorkspace()}
