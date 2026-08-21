@@ -58,11 +58,27 @@ Output: `data/extracted/{source}/{slug}/adjudicated.json`
 
 ### 3. Verify (`apps/pipeline/verify.py`): optional
 
-Web-search fact-checking with **claude-sonnet-4.6** (DuckDuckGo via tool use). Flags weak evidence, `spin_off` claims, mafia membership, hearsay. Verdicts: `supported`, `unsupported`, `uncertain`. Can drop high-confidence unsupported edges.
+Web-search fact-checking with **claude-sonnet-4.6** (up to 8 tool turns, DuckDuckGo + fetch_url).
 
-Output: `data/extracted/{source}/{slug}/verified.json`
+**Modifies `adjudicated.json` in-place** — merge reads the already-cleaned version. No separate verified.json data path.
 
-Not part of `just pipeline`. Merge does not consume this file today.
+Suspicious edge heuristics:
+- Very short evidence (<30 chars) or list-only ("Allies include X")
+- Hearsay language ("reportedly", "allegedly")
+- `spin_off` with weak evidence (<100 chars) — long quotes exempt
+- `member_of` + mafia target
+- **Cross-metro alliance/rivalry** — orgs in different cities are suspicious without strong evidence
+
+Also runs org-level field checks (printed as warnings, not blocking):
+- `metro` contradicts `lane` (e.g. Chicago org in `historical-east` lane)
+- `founded_year` predates the movement (Crips before 1969, etc.)
+
+Verdicts:
+- `supported` → no change
+- `unsupported` (≥0.7 confidence) → edge **removed** from `adjudicated.json`
+- `uncertain` or low-confidence unsupported → edge **flagged** `verify_uncertain: true` in `adjudicated.json`; `apply.py` skips these rather than silently accepting them
+
+Not part of `just pipeline` by default. Run explicitly: `just verify <source>`
 
 ### 4. Merge (`apps/pipeline/merge.py`)
 

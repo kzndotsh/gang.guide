@@ -281,6 +281,12 @@ def apply_edges(
         # Skip edges blocked in [apply:skip-edge]
         if ignore and ignore.should_skip_apply_edge(org_id, target_id, etype):
             continue
+
+        # Skip edges flagged as uncertain by verify.py — they need manual review
+        if edge.get("verify_uncertain"):
+            reason = edge.get("verify_reason", "no reason given")
+            edges_added.append(f"SKIPPED (verify_uncertain): {etype}: {org_id} → {target_id} — {reason[:60]}")
+            continue
         key = (org_id, target_id, etype)
         if key in existing_keys:
             # Enrich existing edge if it lacks evidence
