@@ -1,0 +1,29 @@
+{
+  "id": "org:alphv-blackcat",
+  "name": "ALPHV/BlackCat",
+  "aliases": [
+    "ALPHV",
+    "BlackCat",
+    "Noberus"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2021,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "disbanded_year": 2024,
+  "description": "ALPHV/BlackCat is a ransomware-as-a-service cybercriminal group that first appeared in November 2021, notable for being written in the Rust programming language. The group is believed to be connected to former DarkSide and REvil affiliates. The FBI disrupted ALPHV/BlackCat in December 2023, seizing websites and releasing decryption tools. After the disruption the group executed an exit scam, keeping a $22M ransom payment from Change Healthcare without paying affiliates.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/BlackCat_(cyber_gang)",
+      "title": "BlackCat (cyber gang) — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2022/01/who-wrote-the-alphv-blackcat-ransomware-strain/",
+      "title": "Who Wrote the ALPHV/BlackCat Ransomware Strain? — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

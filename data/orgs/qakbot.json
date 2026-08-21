@@ -1,0 +1,29 @@
+{
+  "id": "org:qakbot",
+  "name": "QakBot",
+  "aliases": [
+    "QBot",
+    "Pinkslipbot",
+    "Black Basta"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2007,
+  "founded_year_precision": "circa",
+  "status": "inactive",
+  "disbanded_year": 2023,
+  "description": "QakBot (QBot) was a long-running Windows banking trojan and botnet that later evolved into a major malware delivery platform for ransomware groups including Black Basta and Conti. Active since approximately 2007, the FBI disrupted QakBot infrastructure in August 2023 in 'Operation Duck Hunt,' deleting the malware from over 700,000 infected computers globally and seizing over $8.6 million in cryptocurrency.",
+  "sources": [
+    {
+      "url": "https://www.justice.gov/usao-cdca/pr/qakbot-malware-disrupted-international-cyber-takedown",
+      "title": "Qakbot Malware Disrupted in International Cyber Takedown — U.S. DOJ"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2023/08/u-s-hacks-qakbot-quietly-removes-botnet-infections/",
+      "title": "U.S. Hacks QakBot, Quietly Removes Botnet Infections — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": "org:raidforums",
+  "name": "RaidForums",
+  "aliases": [
+    "RF"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Portugal",
+  "founded_year": 2015,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "disbanded_year": 2022,
+  "description": "RaidForums was a popular cybercrime forum for buying and selling stolen data and hacking tools, seized by international law enforcement in April 2022. The forum was founded in 2015 by Portuguese national Diogo Santos Coelho ('Omnipotent'), who was arrested in the UK. BreachForums was founded as a direct successor following the RaidForums seizure.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/RaidForums",
+      "title": "RaidForums — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2022/04/raidforums-gets-raided-alleged-admin-arrested/",
+      "title": "RaidForums Gets Raided, Alleged Admin Arrested — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": "org:8base",
+  "name": "8Base",
+  "aliases": [
+    "8Base Ransomware Group"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2022,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "8Base is a ransomware group that first appeared in early March 2022, remaining quiet initially before surging in 2023 to become one of the most active ransomware operations. The group uses double extortion tactics and primarily targets small and medium-sized businesses. 8Base has claimed hundreds of victims across multiple industries.",
+  "sources": [
+    {
+      "url": "https://krebsonsecurity.com/2023/07/whos-behind-the-8base-ransomware-website/",
+      "title": "Who's Behind the 8Base Ransomware Website? — Krebs on Security"
+    },
+    {
+      "url": "https://www.ransomware.live/group/8base",
+      "title": "8Base — ransomware.live"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

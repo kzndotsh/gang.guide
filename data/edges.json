@@ -32719,5 +32719,83 @@
         "evidence": "On Sept. 22, 2020, the U.S. National Security Agency began a weeks-long operation seizing control of the Trickbot botnet. Conti is one of several cybercrime groups that has regularly used Trickbot to deploy malware."
       }
     ]
+  },
+  {
+    "id": "38daaab8ecde",
+    "source": "org:revil",
+    "target": "org:alphv-blackcat",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/BlackCat_(cyber_gang)",
+        "title": "BlackCat (cyber gang) — Wikipedia",
+        "evidence": "ALPHV is believed to be connected to former DarkSide and REvil affiliates who reorganized after those groups disbanded."
+      }
+    ]
+  },
+  {
+    "id": "7fd151ed5c1c",
+    "source": "org:alphv-blackcat",
+    "target": "org:fin7",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/FIN7",
+        "title": "FIN7 — Wikipedia",
+        "evidence": "FIN7 is also associated with GOLD NIAGARA, ITG14, ALPHV and BlackCat."
+      }
+    ]
+  },
+  {
+    "id": "ee314bdac8d4",
+    "source": "org:raidforums",
+    "target": "org:breachforums",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/BreachForums",
+        "title": "BreachForums — Wikipedia",
+        "evidence": "BreachForums acted as an alternative and successor to RaidForums following its shutdown and seizure in 2022."
+      }
+    ]
+  },
+  {
+    "id": "cca35bd7df9f",
+    "source": "org:conti",
+    "target": "org:emotet",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Emotet",
+        "title": "Emotet — Wikipedia",
+        "evidence": "Conti is one of several cybercrime groups that has regularly used Trickbot to deploy malware. Emotet was used to deliver Trickbot which in turn delivered Conti ransomware."
+      }
+    ]
+  },
+  {
+    "id": "13e21a55eab5",
+    "source": "org:emotet",
+    "target": "org:trickbot",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Emotet",
+        "title": "Emotet — Wikipedia",
+        "evidence": "Emotet evolved into a massive modular botnet used to deliver other malware including Trickbot."
+      }
+    ]
+  },
+  {
+    "id": "04ac5f44d114",
+    "source": "org:conti",
+    "target": "org:qakbot",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://www.justice.gov/usao-cdca/pr/qakbot-malware-disrupted-international-cyber-takedown",
+        "title": "Qakbot Malware Disrupted — U.S. DOJ",
+        "evidence": "QakBot became a major malware delivery platform for ransomware groups including Black Basta and Conti."
+      }
+    ]
   }
 ]

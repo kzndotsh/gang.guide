@@ -1,0 +1,27 @@
+{
+  "id": "org:emotet",
+  "name": "Emotet",
+  "aliases": [
+    "Heodo",
+    "Mealybug"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Ukraine",
+  "founded_year": 2014,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "Emotet is a Ukraine-based malware operation and cybercrime network, first detected in 2014, that evolved from a banking trojan into a massive modular botnet used to deliver other malware including Trickbot, Ryuk, and Conti ransomware. Disrupted by global police action in January 2021 when servers in Germany and Ukraine were seized, but the group rebuilt and resurfaced with new capabilities. Considered one of the most dangerous malware operations in history.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Emotet",
+      "title": "Emotet — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2021/01/international-action-targets-emotet-crimeware/",
+      "title": "International Action Targets Emotet Crimeware — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

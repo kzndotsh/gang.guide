@@ -1,0 +1,27 @@
+{
+  "id": "org:goznym",
+  "name": "GozNym Network",
+  "aliases": [
+    "GozNym"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2016,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "disbanded_year": 2019,
+  "description": "GozNym was an international cybercrime network that stole approximately $100 million from over 41,000 victims by combining the Gozi banking malware with the Nymaim dropper. A coordinated international operation in 2019 dismantled the network, with the US charging 10 members across 6 countries. GozNym operated as a structured criminal enterprise with specialized roles — malware developers, spammers, money mule recruiters, and cash-out specialists.",
+  "sources": [
+    {
+      "url": "https://www.justice.gov/archives/opa/pr/goznym-cyber-criminal-network-operating-out-europe-targeting-american-entities-dismantled",
+      "title": "GozNym Cyber-Criminal Network Dismantled — U.S. Department of Justice"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2019/05/feds-target-100m-goznym-cybercrime-network/",
+      "title": "Feds Target $100M 'GozNym' Cybercrime Network — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

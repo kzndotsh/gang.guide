@@ -1,0 +1,27 @@
+{
+  "id": "org:snatch-ransomware",
+  "name": "Snatch",
+  "aliases": [
+    "Snatch Team",
+    "Snatch Ransomware Group"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2018,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "Snatch is a Russian ransomware group founded in 2018 by a cybercriminal known as 'Truniger', recruited on Russian cybercrime forums. The group is notable for rebooting Windows into Safe Mode before encrypting files to bypass endpoint protection. The FBI and CISA issued a joint advisory about Snatch in September 2023. Krebs reported the group's victim-shaming website accidentally exposed visitor IP addresses.",
+  "sources": [
+    {
+      "url": "https://krebsonsecurity.com/2023/09/a-closer-look-at-the-snatch-data-ransom-group/",
+      "title": "A Closer Look at the Snatch Data Ransom Group — Krebs on Security"
+    },
+    {
+      "url": "https://www.cisa.gov/news-events/alerts/2023/09/20/fbi-and-cisa-release-advisory-snatch-ransomware",
+      "title": "FBI and CISA Release Advisory on Snatch Ransomware — CISA"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

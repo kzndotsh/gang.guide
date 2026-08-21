@@ -1,0 +1,28 @@
+{
+  "id": "org:jokers-stash",
+  "name": "Joker's Stash",
+  "aliases": [
+    "JokerStash",
+    "Joker's Stash Forum"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2014,
+  "founded_year_precision": "circa",
+  "status": "inactive",
+  "disbanded_year": 2021,
+  "description": "Joker's Stash was the world's largest carding marketplace, selling hundreds of millions of stolen payment card records from major data breaches including Target, Home Depot, and Marriott. The anonymous administrator 'JokerStash' voluntarily retired the platform in January 2021, having reportedly amassed over $1 billion in Bitcoin. The site processed over $1 billion in transactions during its operation.",
+  "sources": [
+    {
+      "url": "https://krebsonsecurity.com/2021/01/jokers-stash-carding-market-to-call-it-quits/",
+      "title": "Joker's Stash Carding Market to Call it Quits — Krebs on Security"
+    },
+    {
+      "url": "https://www.elliptic.co/blog/jokers-stash-retiring",
+      "title": "Cybercriminal Joker's Stash Retires with Billions in Bitcoin — Elliptic"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

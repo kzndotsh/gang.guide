@@ -1,0 +1,28 @@
+{
+  "id": "org:breachforums",
+  "name": "BreachForums",
+  "aliases": [
+    "Breached",
+    "BFUK"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2022,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "disbanded_year": 2024,
+  "description": "BreachForums was an English-language cybercrime forum that served as the successor to RaidForums after its 2022 seizure, facilitating the distribution of stolen data, hacking tools, and cybercrime services. Administered by 'Pompompurin' (Connor Brian Fitzpatrick), who was arrested by the FBI in March 2023. The forum was seized by authorities in May 2024 and the domain turned into an FBI seizure notice.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/BreachForums",
+      "title": "BreachForums — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2023/03/feds-charge-ny-man-as-breachforums-boss-pompompurin/",
+      "title": "Feds Charge NY Man as BreachForums Boss 'Pompompurin' — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}
