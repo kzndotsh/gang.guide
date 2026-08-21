@@ -1,0 +1,26 @@
+{
+  "id": "org:fancy-bear",
+  "name": "Fancy Bear",
+  "aliases": [
+    "APT28",
+    "GRU Unit 26165",
+    "Sofacy",
+    "Pawn Storm",
+    "Sednit"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2004,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "Fancy Bear (APT28) is a Russian GRU military intelligence cyber espionage group responsible for the 2016 DNC hack and US election interference, the hacking of the World Anti-Doping Agency, and attacks on NATO members and European governments. Twelve GRU officers were indicted by US Special Counsel Robert Mueller in 2018. Unlike most groups, Fancy Bear focuses on intelligence gathering rather than financial theft.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Fancy_Bear",
+      "title": "Fancy Bear — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

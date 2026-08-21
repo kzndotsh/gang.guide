@@ -1,0 +1,26 @@
+{
+  "id": "org:sandworm",
+  "name": "Sandworm",
+  "aliases": [
+    "APT44",
+    "Telebots",
+    "Voodoo Bear",
+    "IRIDIUM",
+    "Seashell Blizzard"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2009,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "Sandworm is a Russian GRU cyberwarfare unit (Military Unit 74455) responsible for the most destructive cyberattacks in history. The group conducted the 2015 and 2016 attacks on Ukraine's power grid, the NotPetya malware attack (2017) which caused $10 billion in global damage, and the Olympic Destroyer attack on the 2018 Winter Olympics. Six GRU officers were indicted by the US in 2020.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Sandworm_(hacker_group)",
+      "title": "Sandworm (hacker group) — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

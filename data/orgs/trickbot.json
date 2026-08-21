@@ -2,8 +2,10 @@
   "id": "org:trickbot",
   "name": "TrickBot",
   "aliases": [
-    "Trickbot Gang",
-    "Wizard Spider"
+    "TrickBot Gang",
+    "Wizard Spider",
+    "DEV-0193",
+    "Periwinkle Tempest"
   ],
   "type": "cybercrime_group",
   "lane": "cybercrime",
@@ -12,7 +14,7 @@
   "founded_year_precision": "exact",
   "status": "inactive",
   "disbanded_year": 2022,
-  "description": "TrickBot (operated by Wizard Spider) was a Russian modular banking trojan and botnet that infected millions of Windows computers and was widely used to deploy ransomware including Conti and Ryuk. The NSA disrupted the botnet in September 2020 by seizing control and sending infected systems a disconnect command, though the group rebuilt. TrickBot infrastructure was formally seized by authorities in 2022 and UK/US governments sanctioned seven core members.",
+  "description": "TrickBot (operated by Wizard Spider) is a Russian cybercrime group of approximately 80 members based in St. Petersburg, Russia. They developed the TrickBot banking trojan and botnet, then pivoted to deploying Ryuk and Conti ransomware against large organizations. The group also deployed Emotet as a delivery mechanism. UK and US governments sanctioned seven core members in 2022.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/TrickBot",

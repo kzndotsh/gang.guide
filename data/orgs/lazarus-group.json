@@ -1,0 +1,25 @@
+{
+  "id": "org:lazarus-group",
+  "name": "Lazarus Group",
+  "aliases": [
+    "Guardians of Peace",
+    "Whois Team",
+    "APT38",
+    "Hidden Cobra"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "North Korea",
+  "founded_year": 2009,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "Lazarus Group is a North Korean state-sponsored hacker group responsible for some of the largest cryptocurrency thefts in history, including the $620 million Ronin Network hack in 2022 and numerous attacks on banks and exchanges to fund North Korea's weapons programs. Attributed to the Reconnaissance General Bureau of North Korea, the group also conducted the Sony Pictures hack (2014) and WannaCry ransomware attack (2017).",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Lazarus_Group",
+      "title": "Lazarus Group — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

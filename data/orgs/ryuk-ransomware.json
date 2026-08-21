@@ -1,0 +1,22 @@
+{
+  "id": "org:ryuk-ransomware",
+  "name": "Ryuk",
+  "aliases": [
+    "Ryuk Ransomware"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2018,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "Ryuk is a ransomware operation believed to be run by Wizard Spider (TrickBot operators), targeting large public-sector Microsoft Windows systems. First appearing in August 2018, Ryuk was delivered via TrickBot infections and generated over $150 million in ransom payments. Ryuk evolved into Conti ransomware around 2020 as the same operators upgraded their toolkit.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ryuk_(ransomware)",
+      "title": "Ryuk (ransomware) — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "org:hive-ransomware",
+  "name": "Hive",
+  "aliases": [
+    "Hive Ransomware Group",
+    "HiveLeaks"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2021,
+  "founded_year_precision": "exact",
+  "disbanded_year": 2023,
+  "status": "inactive",
+  "description": "Hive was a ransomware-as-a-service operation active June 2021 to January 2023, primarily targeting hospitals, schools, and public institutions. The group extorted over $100 million from more than 1,500 victims in 80 countries. The FBI covertly infiltrated Hive's network in mid-2022, obtaining decryption keys and providing them to victims before dismantling the group's infrastructure in January 2023.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Hive_(ransomware)",
+      "title": "Hive (ransomware) — Wikipedia"
+    },
+    {
+      "url": "https://www.justice.gov/opa/pr/us-department-justice-disrupts-hive-ransomware-variant",
+      "title": "U.S. Department of Justice Disrupts Hive Ransomware — DOJ"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

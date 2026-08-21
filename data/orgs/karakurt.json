@@ -1,0 +1,27 @@
+{
+  "id": "org:karakurt",
+  "name": "Karakurt",
+  "aliases": [
+    "Karakurt Hacking Team",
+    "Karakurt Lair"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2021,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "Karakurt is a data extortion group first appearing in late 2021, believed to be a Conti ransomware side operation based on overlapping tooling, shared attack infrastructure, and associated cryptocurrency wallets. Unlike typical ransomware groups, Karakurt focused solely on data theft and extortion without encrypting victims' systems. The DOJ seized $2.3M in Karakurt-linked cryptocurrency in 2022.",
+  "sources": [
+    {
+      "url": "https://cyberscoop.com/conti-karakurt-extortion-ransomware/",
+      "title": "Prolific cyber extortion group Karakurt might be a Conti side hustle — CyberScoop"
+    },
+    {
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-152a",
+      "title": "Karakurt Data Extortion Group — CISA Advisory"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

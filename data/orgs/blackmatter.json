@@ -1,0 +1,27 @@
+{
+  "id": "org:blackmatter",
+  "name": "BlackMatter",
+  "aliases": [
+    "BlackMatter Ransomware"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2021,
+  "founded_year_precision": "exact",
+  "disbanded_year": 2021,
+  "status": "inactive",
+  "description": "BlackMatter was a short-lived ransomware group that surfaced in July 2021, widely believed to be a successor to DarkSide following its disbandment after the Colonial Pipeline attack, incorporating elements of REvil as well. The group targeted critical infrastructure and agricultural companies before abruptly shutting down in November 2021, with members reportedly moving to ALPHV/BlackCat.",
+  "sources": [
+    {
+      "url": "https://www.hhs.gov/sites/default/files/demystifying-blackmatter.pdf",
+      "title": "Demystifying BlackMatter — HHS HC3"
+    },
+    {
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-291a",
+      "title": "BlackMatter Ransomware — CISA Advisory"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

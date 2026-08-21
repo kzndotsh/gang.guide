@@ -1,0 +1,21 @@
+{
+  "id": "org:milw0rm",
+  "name": "Milw0rm",
+  "aliases": [],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 1998,
+  "founded_year_precision": "exact",
+  "disbanded_year": 1998,
+  "status": "inactive",
+  "description": "Milw0rm was a hacktivist group best known for penetrating India's Bhabha Atomic Research Centre (BARC) on June 3, 1998 — at the time the largest mass hack ever recorded. The group inserted anti-nuclear weapons messages and peace statements across hacked websites in protest of India's nuclear weapons tests. Their slogan was 'Putting the power back in the hands of the people.'",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Milw0rm",
+      "title": "Milw0rm — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

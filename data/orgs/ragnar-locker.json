@@ -1,0 +1,28 @@
+{
+  "id": "org:ragnar-locker",
+  "name": "Ragnar Locker",
+  "aliases": [
+    "RagnarLocker",
+    "Ragnar Locker Gang"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2019,
+  "founded_year_precision": "exact",
+  "disbanded_year": 2023,
+  "status": "inactive",
+  "description": "Ragnar Locker was a ransomware group first identified in December 2019, known for using virtual machine escape techniques to encrypt victims' files and evade endpoint protection. The group targeted critical infrastructure including hospitals and energy companies across multiple countries. A coordinated Europol/Eurojust law enforcement action in October 2023 dismantled the group and arrested its developer.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Ragnar_Locker",
+      "title": "Ragnar Locker — Wikipedia"
+    },
+    {
+      "url": "https://www.europol.europa.eu/media-press/newsroom/news/ragnar-locker-ransomware-gang-taken-down-international-police-swoop",
+      "title": "Ragnar Locker ransomware gang taken down — Europol"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

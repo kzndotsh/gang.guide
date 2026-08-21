@@ -1,0 +1,28 @@
+{
+  "id": "org:cuba-ransomware",
+  "name": "Cuba",
+  "aliases": [
+    "Cuba Ransomware Group",
+    "COLDDRAW",
+    "Tropical Scorpius"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2019,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "Cuba is a Russian ransomware group (unrelated to the country) active since approximately 2019, targeting critical infrastructure sectors including finance, government, healthcare, and IT. Despite the name, the group is Russia-based. The FBI issued advisories in 2021 and 2022, noting Cuba compromised at least 49 US critical infrastructure entities and collected over $60 million in ransom payments from more than 100 victims worldwide.",
+  "sources": [
+    {
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa22-335a",
+      "title": "#StopRansomware: Cuba Ransomware — CISA"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2022/11/fbi-warns-of-unlimited-atm-cashout-blitz/",
+      "title": "Cuba ransomware — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

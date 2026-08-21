@@ -1,0 +1,25 @@
+{
+  "id": "org:cozy-bear",
+  "name": "Cozy Bear",
+  "aliases": [
+    "APT29",
+    "Midnight Blizzard",
+    "The Dukes",
+    "YTTRIUM"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2008,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "Cozy Bear (APT29) is a Russian SVR (foreign intelligence) cyber espionage group that penetrated the DNC in 2015 (alongside Fancy Bear), the US State Department, the 2020 SolarWinds supply chain attack affecting 18,000+ organizations, and Microsoft executive email accounts in 2024. Dutch intelligence AIVD monitored the group since 2014 and provided evidence to US investigators.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Cozy_Bear",
+      "title": "Cozy Bear — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

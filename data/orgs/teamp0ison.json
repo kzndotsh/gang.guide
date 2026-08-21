@@ -1,0 +1,24 @@
+{
+  "id": "org:teamp0ison",
+  "name": "TeaMp0isoN",
+  "aliases": [
+    "Teamp0ison",
+    "TP0isoN"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United Kingdom",
+  "founded_year": 2010,
+  "founded_year_precision": "circa",
+  "disbanded_year": 2012,
+  "status": "inactive",
+  "description": "TeaMp0isoN was a British blackhat hacking group of 3 to 5 core members that gained notoriety in 2011-2012 for attacks on the United Nations, NASA, NATO, Facebook, and other major entities. The group also targeted UK Prime Minister Tony Blair's address book and disrupted the Scotland Yard anti-terrorism hotline. The group disbanded in 2012 following the arrest of core members 'TriCk' (Junaid Hussain, who later joined ISIS) and 'MLT'.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/TeaMp0isoN",
+      "title": "TeaMp0isoN — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

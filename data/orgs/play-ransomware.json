@@ -1,0 +1,27 @@
+{
+  "id": "org:play-ransomware",
+  "name": "Play",
+  "aliases": [
+    "Play Ransomware",
+    "PlayCrypt"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2022,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "Play is a ransomware group that emerged in 2022, employing a double extortion model and presenting itself as a 'closed group' that 'guarantees the secrecy of deals.' The group targets organizations across critical sectors including government, manufacturing, and professional services. FBI and CISA issued a joint advisory in 2023 citing Play's use of Cobalt Strike and living-off-the-land techniques.",
+  "sources": [
+    {
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-352a",
+      "title": "#StopRansomware: Play Ransomware — CISA"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2022/10/new-ransom-payment-schemes-target-executives-telemedicine/",
+      "title": "New Ransom Payment Schemes Target Executives — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

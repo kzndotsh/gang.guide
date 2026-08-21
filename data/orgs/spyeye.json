@@ -1,0 +1,28 @@
+{
+  "id": "org:spyeye",
+  "name": "SpyEye",
+  "aliases": [
+    "SpyEye Gang",
+    "Gribodemon"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2009,
+  "founded_year_precision": "circa",
+  "disbanded_year": 2013,
+  "status": "inactive",
+  "description": "SpyEye was a banking trojan and cybercrime toolkit created by Russian hacker Aleksandr 'Gribodemon' Panin. Sold as crimeware-as-a-service for $1,000-$8,500, SpyEye was used by thousands of cybercriminals to steal banking credentials and conduct fraudulent transactions. The SpyEye and ZeuS toolkits briefly merged in 2011. Panin was arrested in 2013 and sentenced to 9.5 years in US federal prison.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/SpyEye",
+      "title": "SpyEye — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2014/04/spyeye-makers-get-24-years-in-prison/",
+      "title": "SpyEye Makers Get 24 Years in Prison — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

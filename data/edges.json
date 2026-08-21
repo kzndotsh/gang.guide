@@ -32797,5 +32797,148 @@
         "evidence": "QakBot became a major malware delivery platform for ransomware groups including Black Basta and Conti."
       }
     ]
+  },
+  {
+    "id": "ee88249b235b",
+    "source": "org:ryuk-ransomware",
+    "target": "org:trickbot",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ryuk_(ransomware)",
+        "title": "Ryuk (ransomware) — Wikipedia",
+        "evidence": "Ryuk is believed to be used by Wizard Spider, also known as TrickBot, who delivered Ryuk ransomware via TrickBot infections."
+      }
+    ]
+  },
+  {
+    "id": "e7aaf5d36371",
+    "source": "org:ryuk-ransomware",
+    "target": "org:conti",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Ryuk_(ransomware)",
+        "title": "Ryuk (ransomware) — Wikipedia",
+        "evidence": "Ryuk evolved into Conti ransomware around 2020 as Wizard Spider upgraded their toolkit."
+      }
+    ]
+  },
+  {
+    "id": "4432e96d6563",
+    "source": "org:darkside-hacker-group",
+    "target": "org:blackmatter",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://www.hhs.gov/sites/default/files/demystifying-blackmatter.pdf",
+        "title": "Demystifying BlackMatter — HHS HC3",
+        "evidence": "BlackMatter is widely believed to be a successor to DarkSide following its disbandment after the Colonial Pipeline attack."
+      }
+    ]
+  },
+  {
+    "id": "ef0d343e0388",
+    "source": "org:blackmatter",
+    "target": "org:alphv-blackcat",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/BlackCat_(cyber_gang)",
+        "title": "BlackCat (cyber gang) — Wikipedia",
+        "evidence": "BlackMatter members reportedly moved to ALPHV/BlackCat after BlackMatter disbanded in November 2021."
+      }
+    ]
+  },
+  {
+    "id": "8e12b3b131d9",
+    "source": "org:conti",
+    "target": "org:karakurt",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://cyberscoop.com/conti-karakurt-extortion-ransomware/",
+        "title": "Karakurt might be a Conti side hustle — CyberScoop",
+        "evidence": "Similar links between Karakurt, Conti and Diavol in the form of overlapping tooling, shared attack infrastructure and associated cryptocurrency wallets suggest Karakurt was a Conti side operation."
+      }
+    ]
+  },
+  {
+    "id": "27c5d711f1c8",
+    "source": "org:scattered-spider",
+    "target": "org:scattered-lapsus-hunters",
+    "type": "member_of",
+    "citations": [
+      {
+        "url": "https://krebsonsecurity.com/2025/11/meet-rey-the-admin-of-scattered-lapsus-hunters/",
+        "title": "Meet Rey, the Admin of 'Scattered Lapsus$ Hunters' — Krebs on Security",
+        "evidence": "Scattered Lapsus$ Hunters is a 2025 alliance that claims to unite members of Scattered Spider, Lapsus$, and ShinyHunters."
+      }
+    ]
+  },
+  {
+    "id": "e08a5f877575",
+    "source": "org:lapsus",
+    "target": "org:scattered-lapsus-hunters",
+    "type": "member_of",
+    "citations": [
+      {
+        "url": "https://krebsonsecurity.com/2025/11/meet-rey-the-admin-of-scattered-lapsus-hunters/",
+        "title": "Meet Rey, the Admin of 'Scattered Lapsus$ Hunters' — Krebs on Security",
+        "evidence": "Scattered Lapsus$ Hunters is a 2025 alliance that claims to unite members of Scattered Spider, Lapsus$, and ShinyHunters."
+      }
+    ]
+  },
+  {
+    "id": "1cd426c13ae1",
+    "source": "org:shinyhunters",
+    "target": "org:scattered-lapsus-hunters",
+    "type": "member_of",
+    "citations": [
+      {
+        "url": "https://krebsonsecurity.com/2025/11/meet-rey-the-admin-of-scattered-lapsus-hunters/",
+        "title": "Meet Rey, the Admin of 'Scattered Lapsus$ Hunters' — Krebs on Security",
+        "evidence": "Scattered Lapsus$ Hunters is a 2025 alliance that claims to unite members of Scattered Spider, Lapsus$, and ShinyHunters."
+      }
+    ]
+  },
+  {
+    "id": "26eddeaa4c57",
+    "source": "org:gameover-zeus",
+    "target": "org:spyeye",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/SpyEye",
+        "title": "SpyEye — Wikipedia",
+        "evidence": "The SpyEye and ZeuS toolkits briefly merged in 2011, with SpyEye incorporating code to delete the Zeus trojan from infected machines."
+      }
+    ]
+  },
+  {
+    "id": "f6c3d7d2f56c",
+    "source": "org:evil-corp",
+    "target": "org:gameover-zeus",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://krebsonsecurity.com/2019/12/inside-evil-corp-a-100m-cybercrime-menace/",
+        "title": "Inside 'Evil Corp,' a $100M Cybercrime Menace — Krebs on Security",
+        "evidence": "Prior to serving in a leadership role for Evil Corp, Yakubets was also directly associated with Evgeniy 'Slavik' Bogachev, responsible for the distribution of Zeus, Jabber Zeus, and GameOver Zeus."
+      }
+    ]
+  },
+  {
+    "id": "0185b9fbc3ac",
+    "source": "org:cozy-bear",
+    "target": "org:fancy-bear",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Fancy_Bear",
+        "title": "Fancy Bear — Wikipedia",
+        "evidence": "Both Fancy Bear and Cozy Bear penetrated DNC systems in 2015-2016, operating independently."
+      }
+    ]
   }
 ]
