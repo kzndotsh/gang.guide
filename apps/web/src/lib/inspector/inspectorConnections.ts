@@ -9,6 +9,7 @@ export type ConnectionRow = {
   isOutgoing?: boolean; // true = current node is SOURCE of the edge (e.g. "this org --parent--> peer")
   confidenceScore?: number;
   reviewStatus?: string;
+  citations?: Array<{ url?: string; title?: string; evidence?: string }>;
 };
 
 export type ConnectionGroup = {
@@ -76,6 +77,7 @@ export function mergeConnections(nodeId: string, edges: GraphEdge[]): Connection
         isOutgoing,
         confidenceScore: edge.confidence_score,
         reviewStatus: edge.review_status,
+        citations: edge.citations ?? [],
       },
     );
   }

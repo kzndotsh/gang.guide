@@ -288,8 +288,9 @@
                   <Accordion.Content class="px-2 pb-2 pt-0">
                     <ul class="flex list-none flex-col gap-1 p-0">
                       {#each group.items as conn (conn.peerId + conn.type)}
-                        {@const edgeDetail = (node?.data as any)?.edgeEvidence?.find((e: any) => e.target === conn.peerId && e.type === conn.type)}
-                        {@const citations = edgeDetail?.citations ?? (edgeDetail?.evidence ? [{ evidence: edgeDetail.evidence, url: edgeDetail.source_url ?? '' }] : [])}
+                        {@const edgeEvidence = (node?.data as any)?.edgeEvidence as Array<{ target?: string; source?: string; type?: string; citations?: Array<{ url?: string; title?: string; evidence?: string }> }> | undefined}
+                        {@const edgeDetail = edgeEvidence?.find((e) => (e.target === conn.peerId || e.source === conn.peerId) && e.type === conn.type)}
+                        {@const citations = edgeDetail?.citations ?? conn.citations ?? []}
                         <li class="flex flex-col gap-1">
                           <div class="flex items-center gap-1">
                             <button
