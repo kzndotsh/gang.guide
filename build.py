@@ -93,6 +93,8 @@ def build_node(org, lane_meta, slot):
         "symbols": org.get("symbols", []),
         "nation_affiliation": org.get("nation_affiliation"),
         "status": org.get("status"),
+        "membership_estimate": org.get("membership_estimate"),
+        "military_service": org.get("military_service"),
         "sources": org.get("sources", []),
         "layout": layout,
     }

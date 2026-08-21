@@ -96,7 +96,7 @@ export function dropConflictingSoftTies(rows: ConnectionRow[]): ConnectionRow[] 
   });
 }
 
-export function sortConnections(
+function sortConnections(
   rows: ConnectionRow[],
   labelFor: (id: string) => string,
 ): ConnectionRow[] {

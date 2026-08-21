@@ -16485,8 +16485,8 @@
     ]
   },
   {
-    "source": "org:baker-street-vice-lords",
-    "target": "org:chicago-vice-lords",
+    "source": "org:almighty-vice-lord-nation",
+    "target": "org:baker-street-vice-lords",
     "type": "spin_off",
     "citations": [
       {

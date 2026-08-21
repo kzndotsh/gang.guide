@@ -1,8 +1,7 @@
 import type { EdgeMode } from '$lib/map/KonvaMap.svelte';
-import type { Graph, GraphEvent } from '$lib/types';
-import { eventYearMidpoint } from '$lib/yearFormat';
+import type { Graph } from '$lib/types';
 
-export function visibleNodeIds(graph: Graph): Set<string> {
+function visibleNodeIds(graph: Graph): Set<string> {
   return new Set(graph.nodes.map((n) => n.id));
 }
 
@@ -12,22 +11,20 @@ export function visibleEdgeCount(
   selectedId: string | null
 ): number {
   const nodeIds = visibleNodeIds(graph);
-  return graph.edges.filter((e) => {
-    if (!nodeIds.has(e.source) || !nodeIds.has(e.target)) return false;
-    if (edgeMode === 'all') return true;
-    if (edgeMode === 'hover' && selectedId) {
-      return e.source === selectedId || e.target === selectedId;
+  const endpointsVisible = (e: Graph['edges'][number]) =>
+    nodeIds.has(e.source) && nodeIds.has(e.target);
+
+  switch (edgeMode) {
+    case 'all':
+      return graph.edges.filter(endpointsVisible).length;
+    case 'hover':
+      if (!selectedId) return 0;
+      return graph.edges.filter(
+        (e) => endpointsVisible(e) && (e.source === selectedId || e.target === selectedId)
+      ).length;
+    default: {
+      const _exhaustive: never = edgeMode;
+      return _exhaustive;
     }
-    return e.type === 'nation';
-  }).length;
-}
-
-export function isStripEvent(ev: GraphEvent): boolean {
-  if (ev.title?.includes('NYGS estimated active gangs')) return false;
-  return eventYearMidpoint(ev) != null;
-}
-
-export function isEventLinkedToGraph(graph: Graph, ev: GraphEvent): boolean {
-  const nodeIds = new Set(graph.nodes.map((n) => n.id));
-  return (ev.data?.org_ids ?? []).some((id) => nodeIds.has(id));
+  }
 }

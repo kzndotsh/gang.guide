@@ -1,14 +1,15 @@
 {
   "id": "org:almighty-vice-lord-nation",
   "name": "Almighty Vice Lord Nation",
-  "type": "alliance",
-  "lane": "prison",
+  "type": "street_gang",
+  "lane": "chicago-people",
   "metro": "Chicago",
-  "description": "The Almighty Vice Lord Nation (AVLN) is an African-American street and prison gang founded circa 1957 at the Illinois State Training School for Boys in St. Charles, Illinois, and headquartered in North Lawndale, Chicago. It is one of the oldest and largest gangs in Chicago, with an estimated 30,000–35,000 members across 28 states, and a founding member of the People Nation alliance. The AVLN comprises 25+ semi-independent factions including the Conservative, Traveling, Insane, Mafia Insane, Imperial Insane, Renegade, and Unknown Vice Lords.",
+  "description": "The Almighty Vice Lord Nation (AVLN) is an African-American street gang founded circa 1957 at the Illinois State Training School for Boys in St. Charles, Illinois, and headquartered in North Lawndale, Chicago. It is one of the oldest and largest gangs in Chicago, with an estimated 30,000–35,000 members across 28 states, and a founding member of the People Nation alliance. The AVLN comprises 25+ semi-independent factions including the Conservative, Traveling, Insane, Mafia Insane, Imperial Insane, Renegade, and Unknown Vice Lords.",
   "founded_year": 1957,
   "aliases": [
     "AVLN",
-    "Vice Lords"
+    "Vice Lords",
+    "Chicago Vice Lords"
   ],
   "sources": [
     {

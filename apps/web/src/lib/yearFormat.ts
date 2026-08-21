@@ -16,7 +16,7 @@ function yearField(data: GraphNode['data'] | undefined, prefix: YearPrefix, suff
   return data[key];
 }
 
-export function yearSpanFromNodeData(
+function yearSpanFromNodeData(
   data: GraphNode['data'] | undefined,
   prefix: YearPrefix = 'founded',
 ): YearSpan | null {
@@ -34,7 +34,7 @@ export function yearSpanFromNodeData(
   };
 }
 
-export function yearSpanFromLayout(data: GraphNode['data'] | undefined): YearSpan | null {
+function yearSpanFromLayout(data: GraphNode['data'] | undefined): YearSpan | null {
   const layoutSpan = data?.layout?.year_span;
   if (!layoutSpan) return null;
   return {
@@ -50,6 +50,14 @@ export function resolveNodeYearSpan(data: GraphNode['data'] | undefined): YearSp
 }
 
 export function resolveDissolvedYearSpan(data: GraphNode['data'] | undefined): YearSpan | null {
+  if (typeof data?.disbanded_year === 'number') {
+    return {
+      earliest: data.disbanded_year,
+      latest: data.disbanded_year,
+      precision: 'exact',
+      midpoint: data.disbanded_year,
+    };
+  }
   return yearSpanFromNodeData(data, 'dissolved');
 }
 
@@ -62,37 +70,4 @@ export function formatYearSpan(span: YearSpan): string {
   }
   if (precision === 'range' || latest !== earliest) return `~${earliest}–${latest}`;
   return String(earliest);
-}
-
-export function eventYearMidpoint(ev: {
-  year?: number | null;
-  year_earliest?: number | null;
-  year_latest?: number | null;
-}): number | null {
-  if (ev.year_earliest != null) {
-    const hi = ev.year_latest ?? ev.year_earliest;
-    return Math.floor((ev.year_earliest + hi) / 2);
-  }
-  return ev.year ?? null;
-}
-
-export function formatEventYear(ev: {
-  year?: number | null;
-  year_earliest?: number | null;
-  year_latest?: number | null;
-  year_precision?: YearPrecision | null;
-}): string {
-  if (ev.year_earliest != null) {
-    return formatYearSpan({
-      earliest: ev.year_earliest,
-      latest: ev.year_latest ?? ev.year_earliest,
-      precision: ev.year_precision ?? (ev.year_latest !== ev.year_earliest ? 'range' : 'exact'),
-    });
-  }
-  if (ev.year != null) return String(ev.year);
-  return 'undated';
-}
-
-export function spanHasBand(span: YearSpan): boolean {
-  return span.precision === 'decade' || span.precision === 'range' || span.latest !== span.earliest;
 }

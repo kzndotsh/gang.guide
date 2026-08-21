@@ -70,9 +70,6 @@
   });
 
   const graph = $derived(data.graph as Graph);
-  const metroOptions = $derived(
-    [...new Set(graph.nodes.map((n) => n.data?.metro?.trim()).filter(Boolean))].sort() as string[],
-  );
 
   // Year domain derived from actual graph data — not hardcoded
   const yearDomain = $derived.by(() => {
@@ -241,6 +238,17 @@
     selectedId = null;
   }
 
+  function resetHome() {
+    selectedId = null;
+    edgeMode = 'hover';
+    hiddenLanes = new Set();
+    yearMin = 1930;
+    yearMax = yearDomain.max;
+    yearPreferenceRestored = true;
+    if (browser) localStorage.removeItem('gang-guide-filters');
+    sendZoom('fit');
+  }
+
   function onKeydown(e: KeyboardEvent) {
     const tag = (e.target as HTMLElement)?.tagName;
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
@@ -296,6 +304,7 @@
           {selectedId}
           nodeCount={graph.nodes.length}
           edgeCount={visibleEdgeCountDerived}
+          onhome={resetHome}
         />
         <main class="relative min-h-0 flex-1 overflow-hidden bg-background">
           <KonvaMap
@@ -320,7 +329,14 @@
               <span class="text-[0.65rem]">Search…</span>
               <Kbd.Root class="ml-auto hidden md:inline-flex">⌘K</Kbd.Root>
             </button>
-            <YearSlider bind:yearMin bind:yearMax min={yearDomain.min} max={yearDomain.max} />
+            <YearSlider
+              bind:yearMin
+              bind:yearMax
+              min={yearDomain.min}
+              max={yearDomain.max}
+              defaultMin={1930}
+              defaultMax={yearDomain.max}
+            />
           </div>
           <MapOverlay position="middle-left" class="hidden md:block">
             <EdgeLegend />

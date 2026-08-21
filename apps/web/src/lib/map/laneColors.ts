@@ -19,7 +19,7 @@ export const LANE_GROUP_COLORS: Record<string, string> = {
 };
 
 /** Hoover dropped Crip blue; only this lane is orange. */
-export const LANE_COLOR_OVERRIDES: Record<string, string> = {
+const LANE_COLOR_OVERRIDES: Record<string, string> = {
   'california-crips-hoover': '#e09b3d',
 };
 
@@ -36,7 +36,7 @@ export function hexToRgba(hex: string, alpha: number): string {
   return `rgba(${r},${g},${b},${alpha})`;
 }
 
-export function laneGroup(laneId: string, graph?: Graph): string | undefined {
+function laneGroup(laneId: string, graph?: Graph): string | undefined {
   return laneCatalog(graph).find((l) => l.id === laneId)?.group;
 }
 

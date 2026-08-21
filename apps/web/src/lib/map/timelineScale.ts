@@ -3,18 +3,12 @@ import { deriveClientLayout } from './layout';
 import { resolveNodeYearSpan } from '$lib/yearFormat';
 
 /** Pixels between consecutive years on the timeline axis. */
-export const PX_PER_YEAR = 42;
-
-/** Sub-year horizontal spread per slot index (sync with packages/map_layout.py). */
-export const SLOT_YEAR_OFFSET = 2.4;
-
-/** Rows per column before advancing horizontally (sync with packages/map_layout.py). */
-export const LANE_ROW_COUNT = 5;
+const PX_PER_YEAR = 42;
 
 /** Extra years padded on each side of the visible data range. */
-export const YEAR_DOMAIN_PAD = 6;
+const YEAR_DOMAIN_PAD = 6;
 
-export const TIMELINE_PAD = 80;
+const TIMELINE_PAD = 80;
 
 export type TimelineScale = {
   minYear: number;
@@ -30,7 +24,7 @@ export function plotYearForNode(node: GraphNode): number {
   return layout.display_year;
 }
 
-export function yearsForNode(node: GraphNode): number[] {
+function yearsForNode(node: GraphNode): number[] {
   const years: number[] = [];
   const span = resolveNodeYearSpan(node.data);
   if (span) {

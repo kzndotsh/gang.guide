@@ -1,8 +1,8 @@
 {
   "id": "org:black-gangster-disciples-nation",
   "name": "Gangster Disciples",
-  "type": "nation",
-  "lane": "prison",
+  "type": "street_gang",
+  "lane": "chicago-folk",
   "metro": "Chicago",
   "description": "The Gangster Disciples (GD) are an African-American street and prison gang founded in Chicago in 1969 when Larry Hoover's Gangster Nation and David Barksdale's Black Disciple Nation merged to form the Black Gangster Disciple Nation. After Barksdale's death in 1974, Hoover assumed full leadership and expanded the gang to an estimated 25,000–50,000 members across 35+ states, with a significant prison presence. In 1997, following a 17-year federal investigation, Hoover was convicted on 40 counts including conspiracy, extortion, money laundering, and running a continuing criminal enterprise from prison; his federal sentences were commuted by President Trump in May 2025, though he remains incarcerated under a separate 150-to-200-year Illinois state sentence from his 1973 murder conviction.",
   "founded_year": 1969,

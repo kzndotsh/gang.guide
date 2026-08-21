@@ -19,7 +19,3 @@ export const EDGE_OPTIONS: EdgeOption[] = [
     hint: 'Every alliance, rivalry, and affiliation on the map.',
   },
 ];
-
-export function edgeHint(mode: EdgeMode): string {
-  return EDGE_OPTIONS.find((o) => o.value === mode)?.hint ?? '';
-}

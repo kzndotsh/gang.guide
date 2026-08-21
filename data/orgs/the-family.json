@@ -1,9 +1,9 @@
 {
   "id": "org:the-family",
   "name": "The Family",
-  "type": "prison_gang",
-  "lane": "prison",
-  "metro": "United States",
+  "type": "organized_crime",
+  "lane": "historical-east",
+  "metro": "Newark",
   "description": "The Family was an African-American organized crime group based in Newark, New Jersey, founded by Akbar Pray in the early 1970s. It was primarily involved in drug trafficking, particularly cocaine, and at its height had over 300 members. The group collapsed after Pray was sentenced to life in prison in 1990, becoming fragmented.",
   "founded_year": 1970,
   "status": "inactive",

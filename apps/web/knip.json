@@ -5,5 +5,15 @@
     "type": true
   },
   "entry": ["alchemy.run.ts"],
-  "ignore": ["src/lib/components/ui/**"]
+  "ignore": ["src/lib/components/ui/**", "src/lib/hooks/is-mobile.svelte.ts"],
+  "ignoreDependencies": [
+    "@internationalized/date",
+    "@tanstack/table-core",
+    "embla-carousel-svelte",
+    "formsnap",
+    "layerchart",
+    "mode-watcher",
+    "svelte-sonner",
+    "sveltekit-superforms"
+  ]
 }

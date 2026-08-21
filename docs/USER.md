@@ -8,9 +8,10 @@ Works on desktop and mobile.
 
 - Pan / zoom: wheel, trackpad pinch, or two-finger drag
 - Year axis: stays pinned at the top of the map so the current years stay visible while you pan
-- Select: click or tap a node for the inspector
-- Search: ⌘K (Mac) or Ctrl+K, or the search control
-- Year slider: founding-year range (top bar)
+- Select: click or tap a node for the inspector (Overview has type, status, years, lane, nation, membership, military when those fields exist; Identity has colors/symbols; Network and Sources are separate tabs)
+- Brand title: resets the map (deselect, all lanes, default years, hover edges, fit zoom)
+- Year slider: founding-year range (top bar); reset control returns to 1930 → latest year in the data
+- GitHub: header icon, far right
 - Lane filter: show or hide groups (Chicago, Bloods, Crips, and so on)
 - Edges: On hover (hovered or selected org) or All links (every edge); desktop control is bottom-center
 

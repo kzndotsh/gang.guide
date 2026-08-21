@@ -1,22 +1,17 @@
 <script lang="ts">
   import {
-    Clock,
     Crosshair,
-    Database,
     ExternalLink,
     GitBranch,
     Handshake,
     Info,
     Layers,
-    MapPin,
     MousePointerClick,
     Network,
     Palette,
     Quote,
     ScanSearch,
     Swords,
-    Tag,
-    Users,
     X,
   } from '@lucide/svelte';
   import type { Component } from 'svelte';
@@ -25,10 +20,9 @@
     colorSwatch,
     confidencePct,
     orgTypeLabel,
-    relTypeLabel,
     relTypeLabelDirectional,
-    reviewLabel,
     statusLabel,
+    formatMembershipEstimate,
   } from '$lib/inspector/inspectorFormat';
   import { formatYearSpan, resolveDissolvedYearSpan, resolveNodeYearSpan } from '$lib/yearFormat';
   import { orgDisplayDescription, orgDisplayTitle } from '$lib/inspector/inspectorDisplay';
@@ -37,12 +31,9 @@
   import { Button } from '$lib/components/ui/button/index.js';
   import { Badge } from '$lib/components/ui/badge/index.js';
   import { ScrollArea } from '$lib/components/ui/scroll-area/index.js';
-  import { Separator } from '$lib/components/ui/separator/index.js';
-  import * as Card from '$lib/components/ui/card/index.js';
   import * as Tabs from '$lib/components/ui/tabs/index.js';
   import * as Accordion from '$lib/components/ui/accordion/index.js';
   import * as Empty from '$lib/components/ui/empty/index.js';
-  import * as Item from '$lib/components/ui/item/index.js';
   import { Kbd } from '$lib/components/ui/kbd/index.js';
   import { cn } from '$lib/utils.js';
 
@@ -126,39 +117,41 @@
   const statusText = $derived(statusLabel(node?.data?.status));
   const displayTitle = $derived(orgDisplayTitle(node));
   const displayDescription = $derived(orgDisplayDescription(node));
-
-  const lifeSummary = $derived.by(() => {
-    const parts: string[] = [];
-    if (foundedSpan) parts.push(`Founded ${formatYearSpan(foundedSpan)}`);
-    if (dissolvedSpan) parts.push(`Dissolved ${formatYearSpan(dissolvedSpan)}`);
-    return parts.join(' · ');
-  });
-
-  const identityCount = $derived(
-    (node?.data?.colors?.length ?? 0) +
-      (node?.data?.symbols?.length ?? 0) +
-      (node?.data?.original_text_names?.length ?? 0),
+  const laneLabel = $derived(node?.data?.layout?.lane_label ?? null);
+  const membershipText = $derived(formatMembershipEstimate(node?.data?.membership_estimate));
+  const militaryService = $derived(node?.data?.military_service?.trim() || null);
+  const typeLabel = $derived(
+    orgType.replaceAll('_', ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
   );
+  const metro = $derived(node?.data?.metro?.trim() || null);
+  const showMetro = $derived(Boolean(metro && !(laneLabel && metro && laneLabel.toLowerCase().includes(metro.toLowerCase()))));
 
-  const provenance = $derived.by(() => {
-    if (!node) return [] as Array<{ predicate: string; claimIds: string[] }>;
-    const prov = graph.provenance?.[node.id];
-    if (!prov) return [];
-    return Object.entries(prov)
-      .map(([predicate, claimIds]) => ({ predicate, claimIds }))
-      .sort((a, b) => b.claimIds.length - a.claimIds.length);
-  });
+  const hasFacts = $derived(
+    Boolean(
+      typeLabel ||
+        statusText ||
+        foundedSpan ||
+        dissolvedSpan ||
+        showMetro ||
+        laneLabel ||
+        nationLabel ||
+        membershipText ||
+        militaryService,
+    ),
+  );
 
   const hasOverview = $derived(
     Boolean(
       displayDescription ||
         node?.data?.aliases?.length ||
-        lifeSummary ||
-        node?.data?.metro ||
-        nationId ||
-        node?.data?.ethnicity ||
-        node?.data?.era,
+        hasFacts,
     ),
+  );
+
+  const identityCount = $derived(
+    (node?.data?.colors?.length ?? 0) +
+      (node?.data?.symbols?.length ?? 0) +
+      (node?.data?.original_text_names?.length ?? 0),
   );
 
   // Source links — org sources + edge citations merged and grouped
@@ -191,10 +184,6 @@
     <!-- Profile hero -->
     <div class="shrink-0 border-b border-border/60 px-3 py-3">
       <h2 class="text-base font-semibold leading-snug tracking-tight">{displayTitle}</h2>
-      <hr class="my-2 border-border/40"/>
-      <p class="text-xs text-muted-foreground">
-        {orgType.replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase())}{node.data?.status === 'inactive' ? ' · inactive' : ''}{node.data?.metro ? ` · ${node.data.metro}` : ''}{node.data?.founded_year ? ` · ${node.data.founded_year}` : ''}
-      </p>
     </div>
 
     <!-- Tabbed detail -->
@@ -243,6 +232,72 @@
                 <p class="whitespace-pre-wrap text-sm leading-relaxed text-foreground/90">
                   {displayDescription}
                 </p>
+              </section>
+            {/if}
+
+            {#if hasFacts}
+              <section>
+                <h3 class="mb-1.5 text-[0.65rem] font-medium uppercase tracking-wider text-muted-foreground">Profile</h3>
+                <dl class="flex flex-col gap-1">
+                  {#if typeLabel}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Type</dt>
+                      <dd class="min-w-0 text-sm">{typeLabel}</dd>
+                    </div>
+                  {/if}
+                  {#if statusText}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Status</dt>
+                      <dd class="min-w-0 text-sm">{statusText}</dd>
+                    </div>
+                  {/if}
+                  {#if foundedSpan}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Founded</dt>
+                      <dd class="min-w-0 text-sm tabular-nums">{formatYearSpan(foundedSpan)}</dd>
+                    </div>
+                  {/if}
+                  {#if dissolvedSpan}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Disbanded</dt>
+                      <dd class="min-w-0 text-sm tabular-nums">{formatYearSpan(dissolvedSpan)}</dd>
+                    </div>
+                  {/if}
+                  {#if showMetro && metro}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Metro</dt>
+                      <dd class="min-w-0 text-sm">{metro}</dd>
+                    </div>
+                  {/if}
+                  {#if laneLabel}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Lane</dt>
+                      <dd class="min-w-0 text-sm">{laneLabel}</dd>
+                    </div>
+                  {/if}
+                  {#if nationId && nationLabel}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Nation</dt>
+                      <dd class="min-w-0 text-sm">
+                        <button type="button" class="text-left text-primary hover:underline" onclick={() => pickNode(nationId)}>
+                          {nationLabel}
+                        </button>
+                      </dd>
+                    </div>
+                  {/if}
+                  {#if membershipText}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Members</dt>
+                      <dd class="min-w-0 text-sm tabular-nums">{membershipText}</dd>
+                    </div>
+                  {/if}
+                  {#if militaryService}
+                    <div class="flex items-baseline gap-3 rounded-md border border-border/50 bg-background/40 px-3 py-1.5">
+                      <dt class="w-[5.5rem] shrink-0 text-[0.65rem] uppercase tracking-wide text-muted-foreground">Military</dt>
+                      <dd class="min-w-0 text-sm">{militaryService}</dd>
+                    </div>
+                  {/if}
+                </dl>
               </section>
             {/if}
 

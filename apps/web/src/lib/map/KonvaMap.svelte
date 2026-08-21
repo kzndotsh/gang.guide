@@ -13,7 +13,7 @@
   import { orgDisplayTitle } from '$lib/inspector/inspectorDisplay';
   import { nodeMatchesMetro } from './mapFilters';
   import { formatYearSpan, resolveNodeYearSpan } from '$lib/yearFormat';
-  import { clampZoom, fitContentInViewport, zoomAtPoint } from './panZoom';
+  import { clampZoom, fitContentInViewport } from './panZoom';
   import {
     buildTimelineScale,
     computeYearDomain,
@@ -21,10 +21,8 @@
     labeledYears,
     plotYearForNode,
     yearTicks,
-    LANE_ROW_COUNT,
   } from './timelineScale';
   import MapNodeTooltip from './MapNodeTooltip.svelte';
-  import { Badge } from '$lib/components/ui/badge/index.js';
   import { cn } from '$lib/utils.js';
 
   export type EdgeMode = 'hover' | 'all';
@@ -260,22 +258,25 @@
 
     for (const lane of lanes) {
       const top = laneY(lane) - 20;
+      const bandTop = top - 10;
       const bc = bandColorFor(lane);
       if (bc !== 'transparent') {
         bgLayer.add(new Konva.Rect({
-          x: 0, y: top - 10, width: contentWidth, height: LANE_HEIGHT,
+          x: 0, y: bandTop, width: contentWidth, height: LANE_HEIGHT,
           fill: bc, listening: false,
         }));
       }
-      bgLayer.add(new Konva.Line({
-        points: [scale.pad, top + 36, contentWidth - scale.pad, top + 36],
-        stroke: '#21262d', listening: false,
-      }));
-      bgLayer.add(new Konva.Text({
-        x: 10, y: top + 2,
+      const label = new Konva.Text({
+        x: 10, y: bandTop + 2,
         text: laneLabel(lane, graph),
         fontSize: 11, fill: '#b1bac4', listening: false,
+      });
+      const lineY = bandTop + 8;
+      bgLayer.add(new Konva.Line({
+        points: [10 + label.getTextWidth() + 8, lineY, contentWidth - scale.pad, lineY],
+        stroke: '#21262d', listening: false,
       }));
+      bgLayer.add(label);
     }
 
     bgLayer.draw();

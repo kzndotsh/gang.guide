@@ -150,7 +150,7 @@ Canonical list: `data/lanes.json`.
 
 Slim payload for the canvas (`apps/web/static/graph.json`). Includes auto-generated nation edges, so the edge count is higher than `edges.json`.
 
-Node `data` includes `standard_name`, `aliases`, `type`, `metro`, years, `colors`, `symbols`, `nation_affiliation`, `status`, and `layout` (`lane`, `y`, `display_year`, ...). `meta` has lanes and counts.
+Node `data` includes `standard_name`, `aliases`, `type`, `metro`, years (`founded_year`, `founded_year_precision`, `disbanded_year`), `colors`, `symbols`, `nation_affiliation`, `status`, `membership_estimate`, `military_service`, and `layout` (`lane`, `lane_label`, `lane_index`, `display_year`, `slot`, ...). `description` and `sources` are stripped into [details.json](#detailsjson). `meta` has lanes and counts.
 
 ## details.json
 

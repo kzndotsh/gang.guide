@@ -36,10 +36,6 @@ export function predicateLabel(predicate: string): string {
   return PREDICATE_LABELS[predicate] ?? predicate.replace(/_/g, ' ');
 }
 
-export function orgEvents(graph: Graph, orgId: string | null): GraphEvent[] {
-  return [];
-}
-
 function sourceLabel(url: string, fallback?: string | null): string {
   if (fallback?.trim()) return fallback.trim();
   try {
@@ -241,21 +237,4 @@ export function groupedClaimSources(links: OrgSourceLink[]): Array<{ predicate: 
 
 export function nonClaimSources(links: OrgSourceLink[]): OrgSourceLink[] {
   return links.filter((link) => link.kind !== 'claim' && link.kind !== 'news');
-}
-
-export function eventArticleSources(
-  eventId: string,
-  links: OrgSourceLink[],
-): Array<OrgSourceLink & { eventSnippets: SourceSnippet[] }> {
-  return links
-    .filter(
-      (link) =>
-        (link.kind === 'news' || link.kind === 'reference') && link.eventIds.includes(eventId),
-    )
-    .map((link) => ({
-      ...link,
-      eventSnippets: link.snippets.filter(
-        (snippet) => snippet.eventId === eventId || (!snippet.eventId && link.eventIds.length === 1),
-      ),
-    }));
 }

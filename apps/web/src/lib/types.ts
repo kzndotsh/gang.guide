@@ -56,6 +56,7 @@ export type GraphNode = {
     metro?: string;
     nation_affiliation?: string;
     membership_estimate?: number;
+    military_service?: string;
     sources?: Array<{ url?: string; title?: string }>;
   };
 };

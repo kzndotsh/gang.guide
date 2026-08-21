@@ -91,7 +91,7 @@ org:rollin-40s-crips                               # imprecise_year + no_members
 
 # clean.py verified-clean false positives (verify clean every run, no value in re-checking)
 org:nation-of-islam                                # suspicious_exact_year: confirmed exact 1930
-org:chicago-vice-lords                             # implausible_membership: confirmed ~30k valid
+org:almighty-vice-lord-nation                      # implausible_membership: confirmed ~30k–35k valid
 org:fresno-bulldogs                                # implausible_membership: confirmed 5k-6k valid
 org:puro-tango-blast                               # implausible_membership: confirmed 18k valid
 org:united-blood-nation                            # implausible_membership: confirmed 7k valid

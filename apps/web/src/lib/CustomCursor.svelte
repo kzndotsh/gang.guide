@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-  let el: HTMLDivElement | undefined;
+  let el = $state<HTMLDivElement | undefined>(undefined);
   let visible = $state(false);
   let ready = $state(false);
   let cx = 0;

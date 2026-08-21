@@ -30,7 +30,7 @@ Five layers: bg, edges, nodes, labels, sticky year axis. Rebuild nodes on filter
 
 ## Conventions
 
-Svelte 5 runes. Tailwind. shadcn-svelte. `graph.json` on load; `details.json` on first org click.
+Svelte 5 runes. Tailwind. shadcn-svelte. `graph.json` on load; `details.json` on first org click. Inspector Overview shows profile fields from `graph.json` (type, status, years, lane, nation, membership, military) plus lazy description.
 
 Dense, monospace, borders-only, semantic color (alliances green, rivalries red, nation/member_of purple, spin-off/parent amber). No load animations, no UI emojis, `active:scale-[0.97]`, GPU-safe `transform`/`opacity` only. ⌘K / Ctrl+K search, Esc deselect.
 

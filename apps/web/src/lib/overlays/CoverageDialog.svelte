@@ -1,18 +1,14 @@
 <script lang="ts">
   import { Info } from '@lucide/svelte';
-  import type { EdgeMode } from '$lib/map/KonvaMap.svelte';
   import type { Graph } from '$lib/types';
-  import { visibleEdgeCount } from '$lib/map/visibility';
   import { Button } from '$lib/components/ui/button/index.js';
   import * as Dialog from '$lib/components/ui/dialog/index.js';
 
   interface Props {
     graph: Graph;
-    edgeMode: EdgeMode;
-    selectedId: string | null;
   }
 
-  let { graph, edgeMode, selectedId }: Props = $props();
+  let { graph }: Props = $props();
 
   const vis = $derived(graph.meta?.visibility);
 
@@ -31,7 +27,7 @@
     {#snippet child({ props })}
       <Button
         {...props}
-        variant="outline"
+        variant="ghost"
         size="icon-sm"
         class="size-8 shrink-0 text-muted-foreground hover:text-foreground md:size-6"
         aria-label="Data coverage"

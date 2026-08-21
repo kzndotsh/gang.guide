@@ -129,3 +129,8 @@ export function confidencePct(score: number | undefined): string | null {
   if (score == null) return null;
   return `${Math.round(score * 100)}%`;
 }
+
+export function formatMembershipEstimate(n: number | undefined): string | null {
+  if (n == null || !Number.isFinite(n) || n <= 0) return null;
+  return `~${Math.round(n).toLocaleString()} members`;
+}
