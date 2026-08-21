@@ -225,11 +225,20 @@ def _courtlistener_search(query: str, count: int = 4) -> list[dict]:
             case_name = r.get("caseName") or r.get("case_name", "")
             court = r.get("court_id", "").upper()
             date = (r.get("dateFiled") or r.get("date_filed") or "")[:10]
-            snippet = r.get("snippet", "") or r.get("text", "")
-            # Clean HTML tags from snippet
+            url = f"https://www.courtlistener.com{r['absolute_url']}" if r.get("absolute_url") else ""
+
+            # snippet lives in opinions[0].snippet, not top-level
+            snippet = ""
+            opinions = r.get("opinions") or []
+            if opinions and opinions[0].get("snippet"):
+                snippet = opinions[0]["snippet"]
+            if not snippet:
+                # Fallback to posture/syllabus
+                snippet = r.get("posture") or r.get("syllabus") or ""
+            # Clean HTML
             snippet = re.sub(r"<[^>]+>", " ", snippet)
             snippet = re.sub(r"\s+", " ", snippet).strip()
-            url = f"https://www.courtlistener.com{r['absolute_url']}" if r.get("absolute_url") else ""
+
             if case_name and snippet:
                 title = f"{case_name} ({court}, {date})" if court and date else case_name
                 results.append({
@@ -241,42 +250,42 @@ def _courtlistener_search(query: str, count: int = 4) -> list[dict]:
     except Exception:
         pass
 
-    # Also search dockets (PACER filings — indictments, plea agreements)
-    if not results:
-        try:
-            resp = httpx.get(
-                "https://www.courtlistener.com/api/rest/v4/search/",
-                params={
-                    "q": query,
-                    "type": "r",  # RECAP/PACER dockets
-                    "order_by": "score desc",
-                },
-                headers={
-                    "Authorization": f"Token {COURTLISTENER_API_KEY}",
-                    "User-Agent": "gang-guide-pipeline/2.0",
-                },
-                timeout=12.0,
-            )
-            resp.raise_for_status()
-            data = resp.json()
-            for r in (data.get("results") or [])[:count]:
-                case_name = r.get("caseName") or r.get("case_name", "")
-                court = r.get("court_id", "").upper()
-                date = (r.get("dateFiled") or r.get("date_filed") or "")[:10]
-                snippet = r.get("snippet", "") or ""
-                snippet = re.sub(r"<[^>]+>", " ", snippet)
-                snippet = re.sub(r"\s+", " ", snippet).strip()
-                url = f"https://www.courtlistener.com{r['absolute_url']}" if r.get("absolute_url") else ""
-                if case_name and snippet:
-                    title = f"{case_name} ({court}, {date})" if court and date else case_name
-                    results.append({
-                        "title": title,
-                        "url": url,
-                        "snippet": snippet[:400],
-                        "source": "courtlistener_pacer",
-                    })
-        except Exception:
-            pass
+    # Also search PACER dockets (indictments, plea agreements, sentencing docs)
+    try:
+        resp = httpx.get(
+            "https://www.courtlistener.com/api/rest/v4/search/",
+            params={
+                "q": query,
+                "type": "r",  # RECAP/PACER dockets
+                "order_by": "score desc",
+            },
+            headers={
+                "Authorization": f"Token {COURTLISTENER_API_KEY}",
+                "User-Agent": "gang-guide-pipeline/2.0",
+            },
+            timeout=12.0,
+        )
+        resp.raise_for_status()
+        data = resp.json()
+        for r in (data.get("results") or [])[:max(2, count - len(results))]:
+            case_name = r.get("caseName") or r.get("case_name", "")
+            court = r.get("court_id", "").upper()
+            date = (r.get("dateFiled") or "")[:10]
+            nature = r.get("suitNature") or r.get("cause") or ""
+            url = f"https://www.courtlistener.com{r['docket_absolute_url']}" if r.get("docket_absolute_url") else ""
+
+            # PACER dockets don't have text snippets — build one from metadata
+            if case_name and nature:
+                snippet = f"Federal case: {nature}. Filed {date}."
+                title = f"{case_name} ({court}, {date})" if court and date else case_name
+                results.append({
+                    "title": title,
+                    "url": url,
+                    "snippet": snippet,
+                    "source": "courtlistener_pacer",
+                })
+    except Exception:
+        pass
 
     return results
 
@@ -286,20 +295,39 @@ def _courtlistener_search(query: str, count: int = 4) -> list[dict]:
 def _wikipedia_search(query: str) -> list[dict]:
     """Search Wikipedia and return matching article summaries.
 
-    Uses the Wikipedia opensearch API to find matching titles, then fetches
-    the REST summary for each (clean JSON, no HTML parsing needed).
+    Uses the CirrusSearch fulltext API (action=query&list=search) rather than
+    opensearch — opensearch is prefix-only/typeahead, CirrusSearch finds articles
+    by content AND title using Elasticsearch, much better for research queries.
+
+    Then fetches the REST summary for each match for clean extracted text.
     Only called for queries that look like entity names.
     """
     results = []
+
+    # Extract a short entity name from longer queries for the search
+    search_term = query
+    words = query.split()
+    if len(words) >= 2:
+        entity_words = []
+        for w in words:
+            if w and w[0].isupper() and not w.isdigit():
+                entity_words.append(w)
+            elif entity_words:
+                break
+        if len(entity_words) >= 1:
+            search_term = " ".join(entity_words[:3])
+
     try:
-        # Step 1: opensearch to find matching titles
+        # CirrusSearch fulltext search — finds by title AND content
         resp = httpx.get(
             "https://en.wikipedia.org/w/api.php",
             params={
-                "action": "opensearch",
-                "search": query,
-                "limit": 3,
-                "namespace": 0,
+                "action": "query",
+                "list": "search",
+                "srsearch": search_term,
+                "srnamespace": "0",         # articles only
+                "srlimit": "3",
+                "srprop": "snippet|titlesnippet",
                 "format": "json",
             },
             headers={"User-Agent": "gang-guide-pipeline/2.0"},
@@ -307,13 +335,17 @@ def _wikipedia_search(query: str) -> list[dict]:
         )
         resp.raise_for_status()
         data = resp.json()
-        titles = data[1] if len(data) > 1 else []
+        hits = (data.get("query") or {}).get("search") or []
 
-        # Step 2: fetch REST summary for each match
-        for title in titles[:2]:
+        # Fetch REST summary for each match
+        for hit in hits[:2]:
+            title = hit.get("title", "")
+            if not title:
+                continue
             try:
+                title_encoded = title.replace(" ", "_")
                 summary_resp = httpx.get(
-                    f"https://en.wikipedia.org/api/rest_v1/page/summary/{quote_plus(title)}",
+                    f"https://en.wikipedia.org/api/rest_v1/page/summary/{title_encoded}",
                     headers={"User-Agent": "gang-guide-pipeline/2.0"},
                     timeout=8.0,
                     follow_redirects=True,
@@ -449,7 +481,7 @@ def fetch_url(url: str, max_chars: int = 6000) -> str:
     # Wikipedia: use REST API for cleaner output
     wiki_match = re.match(r"https?://en\.wikipedia\.org/wiki/(.+)", url)
     if wiki_match:
-        title = wiki_match.group(1)
+        title = wiki_match.group(1)  # already URL-encoded from the source URL
         try:
             resp = httpx.get(
                 f"https://en.wikipedia.org/api/rest_v1/page/summary/{title}",
