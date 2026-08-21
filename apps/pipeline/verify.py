@@ -93,53 +93,17 @@ TOOLS = [
 ]
 
 
+
 def execute_web_search(query: str) -> str:
-    """Execute a web search via DuckDuckGo HTML."""
-    try:
-        resp = httpx.get(
-            "https://html.duckduckgo.com/html/",
-            params={"q": query},
-            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-verify/1.0)"},
-            timeout=10.0,
-            follow_redirects=True,
-        )
-        resp.raise_for_status()
-        results = []
-        for match in re.finditer(
-            r'<a[^>]*class="result__a"[^>]*href="([^"]*)"[^>]*>(.*?)</a>.*?'
-            r'<a[^>]*class="result__snippet"[^>]*>(.*?)</a>',
-            resp.text,
-            re.DOTALL,
-        ):
-            title = re.sub(r"<[^>]+>", "", match.group(2)).strip()
-            snippet = re.sub(r"<[^>]+>", "", match.group(3)).strip()
-            if title and snippet:
-                results.append(f"{title}: {snippet}")
-            if len(results) >= 6:
-                break
-        return "\n".join(results) if results else "No results found."
-    except Exception as e:
-        return f"Search failed: {e}"
+    """Multi-source search: Brave + DuckDuckGo + Wikipedia REST + CourtListener."""
+    from apps.pipeline.search import multi_search
+    return multi_search(query)
 
 
 def execute_fetch_url(url: str) -> str:
-    """Fetch a URL and extract readable text content."""
-    try:
-        resp = httpx.get(
-            url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-verify/1.0)"},
-            timeout=15.0,
-            follow_redirects=True,
-        )
-        resp.raise_for_status()
-        content = resp.text
-        content = re.sub(r"<script[^>]*>.*?</script>", " ", content, flags=re.DOTALL | re.IGNORECASE)
-        content = re.sub(r"<style[^>]*>.*?</style>", " ", content, flags=re.DOTALL | re.IGNORECASE)
-        content = re.sub(r"<[^>]+>", " ", content)
-        content = re.sub(r"\s+", " ", content).strip()
-        return content[:5000]
-    except Exception as e:
-        return f"Fetch failed: {e}"
+    """Fetch URL with Wikipedia REST API optimization for Wikipedia pages."""
+    from apps.pipeline.search import fetch_url
+    return fetch_url(url)
 
 
 def execute_tool(tool_name: str, tool_input: dict) -> str:
@@ -631,54 +595,6 @@ TOOLS = [
     },
 ]
 
-
-def execute_web_search(query: str) -> str:
-    """Execute a web search via DuckDuckGo HTML."""
-    try:
-        resp = httpx.get(
-            "https://html.duckduckgo.com/html/",
-            params={"q": query},
-            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-verify/1.0)"},
-            timeout=10.0,
-            follow_redirects=True,
-        )
-        resp.raise_for_status()
-        results = []
-        for match in re.finditer(
-            r'<a[^>]*class="result__a"[^>]*href="([^"]*)"[^>]*>(.*?)</a>.*?'
-            r'<a[^>]*class="result__snippet"[^>]*>(.*?)</a>',
-            resp.text,
-            re.DOTALL,
-        ):
-            title = re.sub(r"<[^>]+>", "", match.group(2)).strip()
-            snippet = re.sub(r"<[^>]+>", "", match.group(3)).strip()
-            if title and snippet:
-                results.append(f"{title}: {snippet}")
-            if len(results) >= 5:
-                break
-        return "\n".join(results) if results else "No results found."
-    except Exception as e:
-        return f"Search failed: {e}"
-
-
-def execute_fetch_url(url: str) -> str:
-    """Fetch a URL and extract readable text content."""
-    try:
-        resp = httpx.get(
-            url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-verify/1.0)"},
-            timeout=15.0,
-            follow_redirects=True,
-        )
-        resp.raise_for_status()
-        content = resp.text
-        content = re.sub(r"<script[^>]*>.*?</script>", " ", content, flags=re.DOTALL | re.IGNORECASE)
-        content = re.sub(r"<style[^>]*>.*?</style>", " ", content, flags=re.DOTALL | re.IGNORECASE)
-        content = re.sub(r"<[^>]+>", " ", content)
-        content = re.sub(r"\s+", " ", content).strip()
-        return content[:5000]
-    except Exception as e:
-        return f"Fetch failed: {e}"
 
 
 def execute_tool(tool_name: str, tool_input: dict) -> str:

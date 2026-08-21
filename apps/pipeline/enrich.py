@@ -23,6 +23,9 @@ import httpx
 
 from apps.pipeline.ignore import load_ignore_rules
 from apps.pipeline.log import PipelineLogger
+from apps.pipeline.search import multi_search as _multi_search
+from apps.pipeline.search import fetch_url as _fetch_url
+from apps.pipeline.search import court_search as _court_search
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 DATA_ORGS = ROOT / "data" / "orgs"
@@ -348,72 +351,31 @@ TOOLS = [
             "required": ["url"],
         },
     },
+    {
+        "name": "court_search",
+        "description": "Search federal court records (CourtListener/PACER) for RICO indictments, sentencing documents, and gang-related cases. Especially useful for finding exact founding years, official membership estimates, and confirmed gang relationships cited in federal court proceedings.",
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "query": {
+                    "type": "string",
+                    "description": "Search query (e.g. 'Latin Kings racketeering RICO Chicago founded')",
+                }
+            },
+            "required": ["query"],
+        },
+    },
 ]
 
 
 def execute_web_search(query: str) -> str:
-    """Execute a web search via DuckDuckGo HTML (no API key needed)."""
-    try:
-        resp = httpx.get(
-            "https://html.duckduckgo.com/html/",
-            params={"q": query},
-            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-research/1.0)"},
-            timeout=10.0,
-            follow_redirects=True,
-        )
-        resp.raise_for_status()
-        # Extract result snippets from HTML
-        results = []
-        for match in re.finditer(
-            r'<a[^>]*class="result__a"[^>]*href="([^"]*)"[^>]*>(.*?)</a>.*?'
-            r'<a[^>]*class="result__snippet"[^>]*>(.*?)</a>',
-            resp.text,
-            re.DOTALL,
-        ):
-            url = match.group(1)
-            title = re.sub(r"<[^>]+>", "", match.group(2)).strip()
-            snippet = re.sub(r"<[^>]+>", "", match.group(3)).strip()
-            if title and snippet:
-                results.append(f"[{title}]({url})\n{snippet}")
-            if len(results) >= 8:
-                break
-
-        if not results:
-            # Fallback: try simpler extraction
-            snippets = re.findall(r'class="result__snippet"[^>]*>(.*?)</a>', resp.text, re.DOTALL)
-            for s in snippets[:8]:
-                clean = re.sub(r"<[^>]+>", "", s).strip()
-                if clean:
-                    results.append(clean)
-
-        return "\n\n".join(results) if results else "No results found."
-    except Exception as e:
-        return f"Search failed: {e}"
+    """Multi-source search: Brave + DuckDuckGo + Wikipedia REST + CourtListener."""
+    return _multi_search(query)
 
 
 def execute_fetch_url(url: str) -> str:
-    """Fetch a URL and extract readable text content."""
-    try:
-        resp = httpx.get(
-            url,
-            headers={"User-Agent": "Mozilla/5.0 (compatible; gang-guide-research/1.0)"},
-            timeout=15.0,
-            follow_redirects=True,
-        )
-        resp.raise_for_status()
-        content = resp.text
-
-        # Strip script/style
-        content = re.sub(r"<script[^>]*>.*?</script>", " ", content, flags=re.DOTALL | re.IGNORECASE)
-        content = re.sub(r"<style[^>]*>.*?</style>", " ", content, flags=re.DOTALL | re.IGNORECASE)
-        # Strip HTML tags
-        content = re.sub(r"<[^>]+>", " ", content)
-        # Normalize whitespace
-        content = re.sub(r"\s+", " ", content).strip()
-        # Truncate to reasonable size
-        return content[:6000] if len(content) > 6000 else content
-    except Exception as e:
-        return f"Fetch failed: {e}"
+    """Fetch URL with Wikipedia REST API optimization for Wikipedia pages."""
+    return _fetch_url(url)
 
 
 def execute_tool(tool_name: str, tool_input: dict) -> str:
@@ -422,6 +384,8 @@ def execute_tool(tool_name: str, tool_input: dict) -> str:
         return execute_web_search(tool_input.get("query", ""))
     elif tool_name == "fetch_url":
         return execute_fetch_url(tool_input.get("url", ""))
+    elif tool_name == "court_search":
+        return _court_search(tool_input.get("query", ""))
     else:
         return f"Unknown tool: {tool_name}"
 
