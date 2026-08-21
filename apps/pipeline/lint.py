@@ -845,6 +845,10 @@ def check_descriptions(orgs: dict[str, dict]):
         if desc.lower().startswith(f"{name} is a") and len(desc) < 120:
             info.append(f"{f}: thin boilerplate description")
 
+        # Infobox dump — raw scraped location/section data instead of a narrative description
+        if re.match(r"^[A-Z][a-z]+ neighborhood (Established|Sections)", desc):
+            warnings.append(f"{f}: description is a raw infobox dump (starts with 'X neighborhood Established/Sections')")
+
         # Description contains raw scrape junk
         if any(junk in desc for junk in ("class=", "widget-title", "<div", "href=", ".json", "undefined")):
             warnings.append(f"{f}: description contains code/markup junk")

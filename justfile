@@ -42,6 +42,10 @@ ci: lint fmt test-all build-data check build
 check:
     cd apps/web && npx svelte-kit sync && npm run check
 
+# Unused files, exports, and dependencies (apps/web)
+knip:
+    cd apps/web && npm run knip
+
 # ── Build & Deploy ─────────────────────────────────────────────────────────────
 
 # Production build (vite)

@@ -6,6 +6,7 @@ Konva.js timeline map. **Architecture:** [`docs/ARCHITECTURE.md`](../../docs/ARC
 
 - `npm run dev` / `just dev`
 - `npm run check`: svelte-check
+- `npm run knip` / `just knip`: unused files, exports, dependencies (ignores shadcn `ui/**`)
 - `npm run build` / `npm run deploy`
 
 Deployed to Cloudflare Workers (`adapter-cloudflare`, `alchemy.run.ts`).
