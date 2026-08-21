@@ -38,8 +38,9 @@ Reads orgs + edges → `apps/web/static/graph.json` (render) and `details.json` 
 
 SvelteKit with `prerender = true`, Cloudflare Workers via Alchemy (`apps/web/alchemy.run.ts`), `@sveltejs/adapter-cloudflare`.
 
-- **KonvaMap.svelte**: four layers (bg, edges, nodes, labels). Nodes rebuilt on filter/data change, not on hover. Edges/labels redraw on selection and edge-mode change.
-- **Edge modes**: `hover` ("On hover") and `all` ("All links")
+- **KonvaMap.svelte**: five layers (bg, edges, nodes, labels, sticky year axis). Nodes rebuilt on filter/data change, not on hover. Edges/labels redraw on selection and edge-mode change. The year ruler is screen-space so it stays at the top of the viewport while the map pans.
+- **Lane colors**: group hues in `laneColors.ts` (Bloods red, Crips blue, Hoover orange, Chicago green, …). Same hex for node fill and band (band at 4% alpha). Unplaced has no band.
+- **Edge modes**: `hover` ("On hover") and `all` ("All links"); desktop control is bottom-center
 - **Arrows**: nation, member_of, spin_off, parent
 - **Inspector**: Overview, Network, Identity, Sources
 - **URL state**: `?org=`, `?year=min-max`, `?lane=` (comma-separated IDs)

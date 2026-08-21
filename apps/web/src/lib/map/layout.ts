@@ -6,6 +6,7 @@ export type LaneMeta = {
   sort_order?: number;
   order?: number;
   cluster?: string;
+  group?: string;
 };
 
 const FALLBACK_LABELS: Record<string, string> = {

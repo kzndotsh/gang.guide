@@ -6,7 +6,7 @@
 - [ ] Timeline uses inferred dates (org founded/disbanded) as fallback when edge has no explicit period
 - [ ] Compare mode: select two orgs, highlight shared connections
 - [ ] Timeline scrubber: animate through decades using edge `period` data
-- [ ] Identity-colored node dots (use org's first color as circle fill: today fill is nation/lane)
+- [ ] Identity-colored node dots (use org's first `colors[]` entry; today fill is lane **group** hue, plus Bloods/Crips nation and Hoover override)
 - [ ] Edge labels on hover (relationship type + period): node tooltip exists; edges have none
 - [ ] Inspector Sources tab: group by domain (Wikipedia, StreetGangs, DOJ, ...): still a flat list
 - [ ] Static org pages at `/org/crips` at build time (needed for per-org sitemap + OG)

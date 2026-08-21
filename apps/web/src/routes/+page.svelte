@@ -320,9 +320,6 @@
               <span class="text-[0.65rem]">Search…</span>
               <Kbd.Root class="ml-auto hidden md:inline-flex">⌘K</Kbd.Root>
             </button>
-            <div class="hidden md:block">
-              <EdgeModeToggle bind:edgeMode {selectedId} />
-            </div>
             <YearSlider bind:yearMin bind:yearMax min={yearDomain.min} max={yearDomain.max} />
           </div>
           <MapOverlay position="middle-left" class="hidden md:block">
@@ -335,6 +332,9 @@
               onToggleGroup={toggleLaneGroup}
               onShowAll={() => { if (hiddenLanes.size === 0) { hiddenLanes = new Set(Object.values(laneGroups).flat()); } else { hiddenLanes = new Set(); } }}
             />
+          </MapOverlay>
+          <MapOverlay position="bottom-center" class="hidden md:block">
+            <EdgeModeToggle bind:edgeMode {selectedId} />
           </MapOverlay>
           <OrgSearch bind:this={searchRef} {graph} onselect={selectFromSearch} />
           <MapOverlay position="bottom-right" class="hidden md:block">

@@ -140,6 +140,7 @@ export type Graph = {
       sort_order?: number;
       order?: number;
       cluster?: string;
+      group?: string;
     }>;
     visibility?: GraphVisibilityMeta;
   };

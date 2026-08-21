@@ -7,11 +7,12 @@ Map of US criminal organizations: alliances, rivalries, history, and sources.
 Works on desktop and mobile.
 
 - Pan / zoom: wheel, trackpad pinch, or two-finger drag
+- Year axis: stays pinned at the top of the map so the current years stay visible while you pan
 - Select: click or tap a node for the inspector
 - Search: ⌘K (Mac) or Ctrl+K, or the search control
-- Year slider: founding-year range
+- Year slider: founding-year range (top bar)
 - Lane filter: show or hide groups (Chicago, Bloods, Crips, and so on)
-- Edges: On hover (hovered or selected org) or All links (every edge)
+- Edges: On hover (hovered or selected org) or All links (every edge); desktop control is bottom-center
 
 ## URLs
 
@@ -34,7 +35,9 @@ Directed types have arrowheads.
 
 ## Lanes
 
-Vertical bands by geography and affiliation. Groups include Chicago (Folk, People, Folk/People, Independent), California Bloods and Crips (plus nation rows), California Latino, Asian gangs, New York, Midwest, Detroit, South/Southwest, Historical East, Prison, White supremacist, Motorcycle clubs, Organized crime, Other, Unplaced.
+Vertical bands by geography and affiliation. Band tint and node fill share a **group** color (not each org’s `colors[]` list): Bloods red, Crips blue, Hoover orange, Chicago green, Latino gold, Asian purple, New York terracotta, Detroit rust, plus muted hues for prison, motorcycle, white supremacist, organized crime, regional, and cybercrime. Unplaced has no band fill.
+
+Groups include Chicago (Folk, People, Folk/People, Independent), California Bloods and Crips (plus nation rows), California Latino, Asian gangs, New York, Midwest, Detroit, South/Southwest, Historical East, Prison, White supremacist, Motorcycle clubs, Organized crime, Cybercrime, Other, Unplaced.
 
 ## Sources
 

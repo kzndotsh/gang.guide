@@ -6,7 +6,7 @@
 |------|---------|
 | **Org** | A criminal organization (gang, MC, crime family, prison gang, ...) |
 | **Edge** | A relationship between two orgs |
-| **Lane** | A vertical band on the map (e.g. Chicago Folk) |
+| **Lane** | A vertical band on the map (e.g. Chicago Folk). Color comes from the lane `group`, not the org’s `colors` field |
 | **Nation** | Umbrella identity (Crips, Bloods, Folk Nation, People Nation) |
 | **Set** | Local chapter of a larger gang |
 | **Metro** | Primary city/area |

@@ -14,7 +14,7 @@ Deployed to Cloudflare Workers (`adapter-cloudflare`, `alchemy.run.ts`).
 
 ```
 src/lib/
-├── map/           # KonvaMap, layout, panZoom, timelineScale, mapFilters, visibility
+├── map/           # KonvaMap, layout, laneColors, panZoom, timelineScale, mapFilters, visibility
 ├── inspector/     # InspectorPanel, inspectorDisplay, inspectorConnections, inspectorFormat
 ├── overlays/      # search, year slider, zoom, edge mode, lane filter, legend, coverage
 ├── components/ui/ # shadcn: don't edit unless overriding
@@ -25,7 +25,7 @@ src/lib/
 
 ## Rendering
 
-Four layers: bg, edges, nodes, labels. Rebuild nodes on filter/data change; redraw edges/labels on hover, selection, and edge mode (`hover` | `all`). Do not hardcode node/edge counts.
+Five layers: bg, edges, nodes, labels, sticky year axis. Rebuild nodes on filter/data change; redraw edges/labels on hover, selection, and edge mode (`hover` | `all`). Axis stays in screen space at the top of the viewport. Lane band/node hues live in `laneColors.ts` (group palette; Hoover override). Do not hardcode node/edge counts.
 
 ## Conventions
 

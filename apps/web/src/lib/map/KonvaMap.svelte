@@ -9,6 +9,7 @@
   import { Text } from 'konva/lib/shapes/Text';
   import { Shape } from 'konva/lib/Shape';
   import { deriveClientLayout, laneLabel, laneSortOrder, shortLabel } from './layout';
+  import { bandColor, nodeColor } from './laneColors';
   import { orgDisplayTitle } from '$lib/inspector/inspectorDisplay';
   import { nodeMatchesMetro } from './mapFilters';
   import { formatYearSpan, resolveNodeYearSpan } from '$lib/yearFormat';
@@ -64,6 +65,7 @@
   const LANE_ROW_OFFSET = 22;
   const BASE_ROW_COUNT = 5;
   const CHART_PAD = 24;
+  const AXIS_HEIGHT = 36;
 
   let containerEl = $state<HTMLDivElement | null>(null);
   let hoveredId = $state<string | null>(null);
@@ -78,6 +80,10 @@
   let edgeLayer: any = null;
   let nodeLayer: any = null;
   let labelLayer: any = null;
+  let axisLayer: any = null;
+  let axisBar: any = null;
+  let axisMarks: Array<{ year: number; line: any; label: any | null }> = [];
+  let axisBuilt = false;
 
   // Track current zoom for LOD
   let currentZoom = 1;
@@ -182,27 +188,12 @@
     return { x: nodeMidX(node), y: nodeLaneY(node) };
   }
 
-  function nodeColor(node: GraphNode): string {
-    if (node.data?.nation_affiliation === 'org:bloods' || node.data?.layout?.lane?.includes('blood')) return '#e05550';
-    if (node.data?.nation_affiliation === 'org:crips' || node.data?.layout?.lane?.includes('crip')) return '#4a9eff';
-    if (node.data?.nation_affiliation === 'org:folk-nation') return '#3b82c4';
-    if (node.data?.nation_affiliation === 'org:people-nation') return '#c75050';
-    if (node.data?.layout?.lane?.includes('chicago')) return '#3fb950';
-    if (node.data?.layout?.lane?.includes('latino')) return '#d29922';
-    if (node.data?.layout?.lane?.includes('asian')) return '#bc8ff3';
-    if (node.data?.layout?.lane?.includes('new-york')) return '#da7756';
-    return '#6e7681';
+  function nodeColorFor(node: GraphNode): string {
+    return nodeColor(node, graph);
   }
 
-  function bandColor(lane: string): string {
-    if (lane.includes('blood') || lane === 'blood-nation') return 'rgba(248,81,73,0.04)';
-    if (lane.includes('crip') || lane === 'crip-nation') return 'rgba(88,166,255,0.04)';
-    if (lane.includes('latino')) return 'rgba(210,153,34,0.03)';
-    if (lane.includes('chicago')) return 'rgba(63,185,80,0.04)';
-    if (lane.includes('asian')) return 'rgba(188,143,243,0.04)';
-    if (lane.includes('motorcycle')) return 'rgba(139,148,158,0.05)';
-    if (lane.includes('white-supremacist') || lane.includes('prison')) return 'rgba(139,148,158,0.04)';
-    return 'transparent';
+  function bandColorFor(lane: string): string {
+    return bandColor(lane, graph);
   }
 
   function edgeStroke(edge: GraphEdge): string {
@@ -250,23 +241,11 @@
     const chartY = scale.pad - 24 - CHART_PAD;
     const chartW = contentWidth + CHART_PAD * 2;
     const chartH = contentHeight - (scale.pad - 24) + CHART_PAD * 2;
-    const barH = 24;
 
-    bgLayer.add(new Konva.Rect({
-      x: chartX, y: chartY - barH + 1,
-      width: chartW, height: barH,
-      fill: '#1c2128', cornerRadius: [6, 6, 0, 0], listening: false,
-    }));
-    [0, 1, 2].forEach((i) => {
-      bgLayer.add(new Konva.Circle({
-        x: chartX + 16 + i * 14, y: chartY - barH / 2,
-        radius: 4, fill: '#30363d', listening: false,
-      }));
-    });
     bgLayer.add(new Konva.Rect({
       x: chartX, y: chartY,
       width: chartW, height: chartH,
-      fill: '#161b22', cornerRadius: [0, 0, 6, 6], listening: false,
+      fill: '#161b22', cornerRadius: 6, listening: false,
     }));
 
     for (const year of minorYears) {
@@ -279,18 +258,9 @@
       }));
     }
 
-    for (const year of majorYears) {
-      bgLayer.add(new Konva.Text({
-        x: scale.xForYear(year), y: scale.pad - 34,
-        text: String(year),
-        fontSize: labelStep === 1 ? 9 : 11,
-        fill: '#b1bac4', align: 'center', offsetX: 15, width: 30, listening: false,
-      }));
-    }
-
     for (const lane of lanes) {
       const top = laneY(lane) - 20;
-      const bc = bandColor(lane);
+      const bc = bandColorFor(lane);
       if (bc !== 'transparent') {
         bgLayer.add(new Konva.Rect({
           x: 0, y: top - 10, width: contentWidth, height: LANE_HEIGHT,
@@ -315,6 +285,73 @@
     prevYearMax = yearDomain.maxYear;
   }
 
+  function buildAxis() {
+    if (!stage || !axisLayer || !containerEl) return;
+    axisLayer.destroyChildren();
+    axisMarks = [];
+
+    const labelStep = labeledYearStep(yearDomain.maxYear - yearDomain.minYear);
+    const majorYears = labeledYears(yearDomain.minYear, yearDomain.maxYear, labelStep);
+    const majorYearSet = new Set(majorYears);
+    const minorYears = yearTicks(yearDomain.minYear, yearDomain.maxYear);
+
+    axisBar = new Konva.Rect({
+      x: 0, y: 0,
+      width: containerEl.clientWidth, height: AXIS_HEIGHT,
+      fill: '#1c2128', listening: false,
+    });
+    axisLayer.add(axisBar);
+
+    for (const year of minorYears) {
+      const isMajor = majorYearSet.has(year);
+      const line = new Konva.Line({
+        points: [0, isMajor ? 22 : 28, 0, AXIS_HEIGHT],
+        stroke: isMajor ? '#8b949e' : '#30363d',
+        strokeWidth: 1, listening: false,
+      });
+      axisLayer.add(line);
+      let label: any = null;
+      if (isMajor) {
+        label = new Konva.Text({
+          x: 0, y: 6,
+          text: String(year),
+          fontSize: labelStep === 1 ? 9 : 11,
+          fill: '#b1bac4', align: 'center', offsetX: 16, width: 32, listening: false,
+        });
+        axisLayer.add(label);
+      }
+      axisMarks.push({ year, line, label });
+    }
+
+    axisBuilt = true;
+    syncAxisLayer();
+  }
+
+  function syncAxisLayer() {
+    if (!stage || !axisLayer || !containerEl) return;
+    const S = stage.scaleX() || 1;
+    const panX = stage.x();
+    const panY = stage.y();
+    axisLayer.position({ x: -panX / S, y: -panY / S });
+    axisLayer.scale({ x: 1 / S, y: 1 / S });
+
+    const vw = containerEl.clientWidth;
+    if (axisBar) axisBar.width(vw);
+
+    const margin = 24;
+    for (const mark of axisMarks) {
+      const sx = scale.xForYear(mark.year) * S + panX;
+      const inView = sx >= -margin && sx <= vw + margin;
+      mark.line.x(sx);
+      mark.line.visible(inView);
+      if (mark.label) {
+        mark.label.x(sx);
+        mark.label.visible(inView);
+      }
+    }
+    axisLayer.batchDraw();
+  }
+
   /** Build nodes once. Never destroy unless filters change. */
   function buildNodes() {
     nodeLayer.destroyChildren();
@@ -329,7 +366,7 @@
 
       const circle = new Konva.Circle({
         x: pos.x, y: pos.y, radius: 6,
-        fill: nodeColor(node),
+        fill: nodeColorFor(node),
         id: node.id,
         hitStrokeWidth: 12, perfectDrawEnabled: false,
       });
@@ -362,7 +399,7 @@
       const node = nodeById.get(id);
       if (!node) continue;
       circle.radius(isSelected ? 10 : isHovered ? 9 : 6);
-      circle.fill(isSelected ? '#f78166' : nodeColor(node));
+      circle.fill(isSelected ? '#f78166' : nodeColorFor(node));
       circle.stroke(isSelected ? '#fff' : isHovered ? '#58a6ff' : null);
       circle.strokeWidth((isSelected || isHovered) ? 2 : 0);
     }
@@ -631,6 +668,8 @@
     if (!stage) return;
     const yearDomainChanged = yearDomain.minYear !== prevYearMin || yearDomain.maxYear !== prevYearMax;
     if (!bgBuilt || lanes.length !== prevLaneCount || yearDomainChanged) buildBackground();
+    if (!axisBuilt || yearDomainChanged) buildAxis();
+    else syncAxisLayer();
     buildNodes();
     drawEdges(selectedId ?? hoveredId);
     drawLabels();
@@ -700,6 +739,7 @@
     stage.batchDraw();
     onzoom?.(currentZoom / baseZoom);
     updateLOD();
+    syncAxisLayer();
   }
 
   export function focusOnNode(id: string) {
@@ -718,6 +758,7 @@
     stage.batchDraw();
     onzoom?.(currentZoom / baseZoom);
     updateLOD();
+    syncAxisLayer();
   }
 
   function applyZoom(factor: number, focalX: number, focalY: number) {
@@ -736,6 +777,7 @@
     stage.batchDraw();
     onzoom?.(currentZoom / baseZoom);
     updateLOD();
+    syncAxisLayer();
   }
 
   function updateLOD() {
@@ -815,11 +857,13 @@
     edgeLayer = new Konva.Layer({ listening: false });
     nodeLayer = new Konva.Layer();
     labelLayer = new Konva.Layer({ listening: false });
+    axisLayer = new Konva.Layer({ listening: false });
 
     stage.add(bgLayer);
     stage.add(edgeLayer);
     stage.add(nodeLayer);
     stage.add(labelLayer);
+    stage.add(axisLayer);
 
     // Wheel zoom
     stage.on('wheel', (e: any) => {
@@ -870,8 +914,12 @@
     stage.on('dragstart', () => {
       nodeLayer.hitGraphEnabled(false);
     });
+    stage.on('dragmove', () => {
+      syncAxisLayer();
+    });
     stage.on('dragend', () => {
       nodeLayer.hitGraphEnabled(true);
+      syncAxisLayer();
       if (rebuildTimer) clearTimeout(rebuildTimer);
       rebuildTimer = setTimeout(() => drawLabels(), 150);
     });
@@ -886,6 +934,7 @@
       if (!containerEl || !stage) return;
       stage.width(containerEl.clientWidth);
       stage.height(containerEl.clientHeight);
+      syncAxisLayer();
       if (!didInitialFit) {
         fitToView();
         didInitialFit = true;

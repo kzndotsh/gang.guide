@@ -140,7 +140,7 @@ If the target is `org:crips`, `org:bloods`, `org:folk-nation`, `org:people-natio
 }
 ```
 
-`group` drives the lane filter. `order` is canvas Y position.
+`group` drives the lane filter and the map’s band/node colors (`apps/web/src/lib/map/laneColors.ts`). `order` is canvas Y position. Unplaced has no band tint. Hoover (`california-crips-hoover`) is the only per-lane color override (orange).
 
 Current IDs include: `prison`, `white-supremacist`, `motorcycle-clubs`, `organized-crime`, Chicago (`chicago-folk-people`, `chicago-folk`, `chicago-people`, `chicago-independent`), Detroit (`detroit`), Midwest (`midwest`), Bloods (`blood-nation`, `california-bloods-*`), Crips (`crip-nation`, `california-crips-*`), Latino (`california-latino-*`), `asian-gangs`, `new-york`, `southeast-southwest`, `historical-east`, `cybercrime`, `other-national`, `unplaced`.
 
