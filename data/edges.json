@@ -32940,5 +32940,44 @@
         "evidence": "Both Fancy Bear and Cozy Bear penetrated DNC systems in 2015-2016, operating independently."
       }
     ]
+  },
+  {
+    "id": "b192b15d9a4c",
+    "source": "org:equation-group",
+    "target": "org:the-shadow-brokers",
+    "type": "rivalry",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/The_Shadow_Brokers",
+        "title": "The Shadow Brokers — Wikipedia",
+        "evidence": "The Shadow Brokers published several leaks containing hacking tools from the Equation Group, who are widely suspected to be a branch of the NSA."
+      }
+    ]
+  },
+  {
+    "id": "9276abc16d4c",
+    "source": "org:sandworm",
+    "target": "org:the-shadow-brokers",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Sandworm_(hacker_group)",
+        "title": "Sandworm (hacker group) — Wikipedia",
+        "evidence": "Sandworm weaponized EternalBlue, a leaked NSA tool published by the Shadow Brokers, in the NotPetya malware attack of 2017."
+      }
+    ]
+  },
+  {
+    "id": "b18528448d31",
+    "source": "org:anonymous-sudan",
+    "target": "org:killnet",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://flashpoint.io/blog/anonymous-sudan-ddos-timeline/",
+        "title": "Unmasking Anonymous Sudan — Flashpoint",
+        "evidence": "Killnet and Anonymous Sudan coordinated DDoS campaigns against NATO targets during the Russian invasion of Ukraine."
+      }
+    ]
   }
 ]

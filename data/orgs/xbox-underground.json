@@ -1,0 +1,21 @@
+{
+  "id": "org:xbox-underground",
+  "name": "Xbox Underground",
+  "aliases": [],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2011,
+  "founded_year_precision": "circa",
+  "disbanded_year": 2014,
+  "status": "inactive",
+  "description": "Xbox Underground was an international hacking group that broke into Microsoft's internal networks and those of gaming partners including Activision, Epic Games, and Valve to steal unreleased games, source code, and Xbox One development kits. Members gained access by social engineering Microsoft employees. Several members were arrested and prosecuted in 2014-2015.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Xbox_Underground",
+      "title": "Xbox Underground — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

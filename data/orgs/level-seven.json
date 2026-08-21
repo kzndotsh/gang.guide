@@ -1,0 +1,25 @@
+{
+  "id": "org:level-seven",
+  "name": "Level Seven",
+  "aliases": [
+    "Level 7",
+    "L7",
+    "Level Seven Crew"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 1996,
+  "founded_year_precision": "circa",
+  "disbanded_year": 2000,
+  "status": "inactive",
+  "description": "Level Seven was a hacking group active in the mid to late 1990s known for high-profile website defacements. The group disbanded in early 2000 when founder 'vent' was raided by the FBI on February 25, 2000. Level Seven was involved in defacing numerous government and corporate websites during the peak of the late-1990s defacement era.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Level_Seven_(hacker_group)",
+      "title": "Level Seven (hacker group) — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

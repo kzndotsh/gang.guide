@@ -1,0 +1,20 @@
+{
+  "id": "org:vice-society",
+  "name": "Vice Society",
+  "aliases": [],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2021,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "Vice Society is a Russian-speaking ransomware group that emerged in summer 2021, targeting healthcare, education, and manufacturing organizations. Unlike most ransomware groups, Vice Society does not operate as a ransomware-as-a-service but conducts attacks directly, using double extortion. The group has attacked school districts, hospitals, and universities across the US and UK.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Vice_Society",
+      "title": "Vice Society — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

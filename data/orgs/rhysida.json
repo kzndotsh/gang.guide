@@ -1,0 +1,22 @@
+{
+  "id": "org:rhysida",
+  "name": "Rhysida",
+  "aliases": [
+    "Rhysida Ransomware Group"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2023,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "Rhysida is a ransomware-as-a-service group that emerged in 2023, targeting large organizations with double extortion. The group is responsible for the 2023 British Library cyberattack that caused months of disruption and exposed personal data of 600,000 users. Rhysida has also attacked hospitals, government agencies, and defense contractors in multiple countries.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Rhysida_(hacker_group)",
+      "title": "Rhysida (hacker group) — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

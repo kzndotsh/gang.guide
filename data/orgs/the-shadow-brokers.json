@@ -1,0 +1,22 @@
+{
+  "id": "org:the-shadow-brokers",
+  "name": "The Shadow Brokers",
+  "aliases": [
+    "TSB"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2016,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "The Shadow Brokers is a hacker group that emerged in August 2016 and published multiple leaks of NSA hacking tools stolen from the Equation Group, including the EternalBlue exploit that later powered WannaCry and NotPetya. The group's identity remains unknown but intelligence agencies suspect Russian involvement. Their leaks caused billions in damages worldwide after criminal groups weaponized the tools.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Shadow_Brokers",
+      "title": "The Shadow Brokers — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

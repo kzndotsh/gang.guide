@@ -1,0 +1,22 @@
+{
+  "id": "org:killnet",
+  "name": "Killnet",
+  "aliases": [
+    "KillMilk"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2022,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "Killnet is a pro-Russia DDoS hacktivist group formed around March 2022 in response to the Russian invasion of Ukraine. The group conducted DDoS attacks against government websites, airports, banks, and hospitals across NATO member countries including the US, UK, Germany, and the Baltic states. Killnet claims to be independent but is widely suspected to operate with Kremlin approval.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Killnet",
+      "title": "Killnet — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

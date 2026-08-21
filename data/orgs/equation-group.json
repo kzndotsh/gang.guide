@@ -1,0 +1,24 @@
+{
+  "id": "org:equation-group",
+  "name": "Equation Group",
+  "aliases": [
+    "TAO",
+    "Office of Tailored Access Operations",
+    "NSA TAO"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2000,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "The Equation Group is the NSA's Office of Tailored Access Operations (TAO), widely considered the most sophisticated state-sponsored hacking unit ever documented. Active since at least 1998, the group developed tools including EternalBlue and EternalRomance, later leaked by The Shadow Brokers in 2016-2017. EternalBlue was subsequently weaponized in the WannaCry and NotPetya attacks.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Equation_Group",
+      "title": "Equation Group — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

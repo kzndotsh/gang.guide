@@ -1,0 +1,23 @@
+{
+  "id": "org:global-kos",
+  "name": "Global kOS",
+  "aliases": [
+    "Global Chaos"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 1996,
+  "founded_year_precision": "exact",
+  "disbanded_year": 2000,
+  "status": "inactive",
+  "description": "Global kOS ('kos' pronounced as chaos) was a highly influential grey hat hacker group active 1996-2000, involved in multiple high-profile security breaches and defacements while also releasing notable security research tools. The group was heavily profiled by tech media and contributed to the early hacker community's understanding of network intrusion techniques.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Global_kOS",
+      "title": "Global kOS — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

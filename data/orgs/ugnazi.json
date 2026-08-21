@@ -1,0 +1,23 @@
+{
+  "id": "org:ugnazi",
+  "name": "UGNazi",
+  "aliases": [
+    "Underground Nazi Hacktivist Group"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2012,
+  "founded_year_precision": "exact",
+  "disbanded_year": 2012,
+  "status": "inactive",
+  "description": "UGNazi was an American hacking group that conducted DDoS attacks, social engineering, and data breaches against major targets in 2012 before being dismantled. Two members were arrested in June 2012. In 2018, two former UGNazi members were arrested for murder — they had hired a hitman to kill a third member over a dispute about the group's online reputation.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/UGNazi",
+      "title": "UGNazi — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

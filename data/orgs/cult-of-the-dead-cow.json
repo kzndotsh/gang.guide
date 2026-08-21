@@ -1,0 +1,23 @@
+{
+  "id": "org:cult-of-the-dead-cow",
+  "name": "Cult of the Dead Cow",
+  "aliases": [
+    "cDc",
+    "cDc Communications"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 1984,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "Cult of the Dead Cow (cDc) is a foundational American hacker and DIY media organization founded in 1984 in Lubbock, Texas. One of the most influential hacker groups in history, cDc pioneered responsible disclosure, coined the term 'hacktivism,' and created the Back Orifice remote access tool that exposed Windows security flaws. Members include Beto O'Rourke and journalists at major publications.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Cult_of_the_Dead_Cow",
+      "title": "Cult of the Dead Cow — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}
