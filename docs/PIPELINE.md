@@ -13,7 +13,7 @@ just pipeline chicago_history
 
 That recipe is: **extract → adjudicate → merge → apply (dry-run)**. It does **not** run `verify`. Review the dry-run, then `just apply chicago_history`. For web-search fact-checking, run `just verify chicago_history` after adjudicate (and re-merge / re-apply if you want those verdicts in the dataset).
 
-`merge.py` currently prefers `adjudicated.json` over algorithmic 2/3 consensus. It does **not** read `verified.json`. Treat verify as a review step unless you copy its output into adjudicated/consensus yourself.
+`merge.py` currently prefers `adjudicated.json` over algorithmic 2/3 consensus. It does **not** read a separate `verified.json`. `verify.py` modifies `adjudicated.json` in-place, so running verify before merge is all that is needed — no manual copy step.
 
 ## Sources
 
