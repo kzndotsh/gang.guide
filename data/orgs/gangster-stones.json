@@ -1,7 +1,10 @@
 {
   "id": "org:gangster-stones",
   "name": "Gangster Stones",
-  "aliases": [],
+  "aliases": [
+    "GSN",
+    "Paulina Gangsters"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
@@ -18,6 +21,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/gangster-stones",
       "title": "Gangster Stones - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/gangster-stones/",
+      "title": "Gangster Stones – Black P Stone Faction, Pullman | Chicago Gang History"
     }
   ],
   "symbols": [

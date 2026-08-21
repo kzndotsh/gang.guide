@@ -10,11 +10,22 @@
     {
       "url": "https://en.wikipedia.org/wiki/College_Kidnappers",
       "title": "College Kidnappers — Wikipedia"
+    },
+    {
+      "url": "https://www.prohibitiontours.com/the-college-kidnapers-that-took-on-capone/",
+      "title": "The College Kidnapers that Took on Capone - Prohibition Tours"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Chicago_in_the_1930s",
+      "title": "Chicago in the 1930s - Wikipedia"
     }
   ],
   "founded_year": 1930,
-  "founded_year_precision": "decade",
-  "aliases": [],
+  "founded_year_precision": "circa",
+  "aliases": [
+    "The College Kidnapers"
+  ],
   "colors": [],
-  "disbanded_year": 1935
+  "disbanded_year": 1935,
+  "membership_estimate": 10
 }

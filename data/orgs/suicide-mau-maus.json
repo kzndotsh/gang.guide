@@ -1,7 +1,10 @@
 {
   "id": "org:suicide-mau-maus",
   "name": "Suicide Mau Maus",
-  "aliases": [],
+  "aliases": [
+    "Suicides",
+    "Little People Suicides"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
@@ -15,6 +18,14 @@
     {
       "url": "https://newyorkcitygangs.com/?page_id=2167",
       "title": "Suicide Mau Maus – Brooklyn Youth Gang | New York City Fighting Gangs"
+    },
+    {
+      "url": "https://stonegreasers.com/greaser/brooklyn_suicides.html",
+      "title": "Brooklyn Navy Yard Gangs, Suicides Gang, Farragut House Gangs"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=3148",
+      "title": "Notes of Gang Warfare Involving the Viceroys | New York City Fighting Gangs"
     }
   ],
   "membership_estimate": 12

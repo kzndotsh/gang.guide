@@ -1,7 +1,11 @@
 {
   "id": "org:national-socialist-movement",
   "name": "National Socialist Movement",
-  "aliases": [],
+  "aliases": [
+    "NSM",
+    "NSM88",
+    "National Socialist American Workers Freedom Movement"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -17,6 +21,18 @@
     {
       "url": "https://www.adl.org/resources/profile/national-socialist-movement",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.splcenter.org/resources/extremist-files/national-socialist-movement/",
+      "title": "National Socialist Movement - Southern Poverty Law Center"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/National_Socialist_Movement_(United_States)",
+      "title": "National Socialist Movement (United States) - Wikipedia"
+    },
+    {
+      "url": "https://www.adl.org/resources/backgrounder/national-socialist-movement",
+      "title": "National Socialist Movement - ADL"
     }
   ],
   "symbols": [

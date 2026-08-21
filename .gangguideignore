@@ -521,6 +521,16 @@ org:python-knights                    # no_symbols: confirmed dead-end
 org:red-wings                         # no_symbols: tool-limit dead-end
 org:96-gangster-crips                 # no_symbols: confirmed dead-end
 
+org:north-highlands-gangster-crips    # single_source: no_membership dead-end
+org:south-side-village-crips          # single_source: no_membership dead-end
+org:avenue-bloods                     # absolute final dead-end
+org:sportsmen                         # no_symbols: tool-limit dead-end
+org:the-mob-crew                      # no_symbols: tool-limit dead-end
+org:hangmen-mc                        # single_source: tool-limit dead-end
+org:19th-street-gang                  # single_source: no date found
+org:the-original-blocc-crips          # no_symbols: confirmed dead-end
+org:chaplains                         # single_source: no data found
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

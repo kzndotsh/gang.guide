@@ -9,10 +9,14 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/31_Gang",
-      "title": "31 Gang \u2014 Wikipedia"
+      "title": "31 Gang — Wikipedia"
+    },
+    {
+      "url": "https://www.upi.com/Top_News/2009/02/26/FBI-agent-wounded-in-drug-raid/UPI-91271235701600/",
+      "title": "FBI agent wounded in drug raid — UPI"
     }
   ],
-  "founded_year_precision": "estimate",
+  "founded_year_precision": "circa",
   "status": "active",
   "aliases": [],
   "colors": []

@@ -1,11 +1,14 @@
 {
   "id": "org:akrhos-flip-city-kings",
   "name": "Akrhos (Flip City Kings)",
-  "aliases": [],
+  "aliases": [
+    "Flip City Crowns",
+    "Arkhos"
+  ],
   "type": "street_gang",
   "lane": "chicago-people",
   "metro": "Chicago",
-  "description": "Akrhos (Flip City Kings) is a People Nation street gang founded 1984 in Chicago.",
+  "description": "Akrhos (Flip City Kings) is a Filipino street gang founded in 1984 by 'King Droopy' at Troy and Leland in Chicago's Albany Park neighborhood, growing out of the early 1980s 'Flip City' party crew scene. The group formed as a Filipino branch of the Latin Kings and was regarded as one of the toughest Asian gangs in the city at the time. They maintained deep rivalries with the Simon City Royals and the Insane Popes, and worked alongside Latin King branches across Chicago's North Side.",
   "founded_year": 1984,
   "founded_year_precision": "exact",
   "colors": [
@@ -19,6 +22,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/akrohs-flip-city-kings",
       "title": "Akrhos (Flip City Kings) - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/akrohs-flip-city-kings",
+      "title": "Flip City Kings (Akrhos) – Albany Park's Filipino Crews | Chicago Gang History"
     }
   ],
   "symbols": [

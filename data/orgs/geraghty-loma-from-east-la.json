@@ -9,6 +9,10 @@
     {
       "url": "https://www.streetgangs.com/hispanic/lacounty/eastla/gxl",
       "title": "Geraghty Loma from East LA — StreetGangs"
+    },
+    {
+      "url": "https://www.policemag.com/blogposts/how-we-took-down-the-geraghty-loma-gang",
+      "title": "How We Took Down the Geraghty Loma Gang - Police Magazine"
     }
   ],
   "founded_year": 1950,
@@ -17,5 +21,9 @@
     "blue"
   ],
   "status": "active",
-  "aliases": []
+  "aliases": [
+    "Geraghty Loma 13",
+    "Varrio Geraghty Loma",
+    "Geraghty Lomas"
+  ]
 }

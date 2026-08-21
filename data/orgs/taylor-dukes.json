@@ -1,7 +1,10 @@
 {
   "id": "org:taylor-dukes",
   "name": "Taylor Dukes",
-  "aliases": [],
+  "aliases": [
+    "Taylor Street Dukes",
+    "The Dukes"
+  ],
   "type": "street_gang",
   "lane": "chicago-independent",
   "metro": "Chicago",
@@ -18,6 +21,10 @@
     {
       "url": "https://chicagoganghistory.com/gang/taylor-dukes",
       "title": "Taylor Dukes - Chicago Gang History"
+    },
+    {
+      "url": "https://chicagoganghistory.com/gangs/taylor-dukes",
+      "title": "Taylor Street Dukes – Little Italy, Taylor & Throop | Chicago Gang History"
     }
   ],
   "disbanded_year": 1980,
