@@ -8,12 +8,30 @@
   "metro": "San Joaquin",
   "founded_year": 1990,
   "founded_year_precision": "circa",
-  "aliases": [],
-  "colors": [],
+  "aliases": [
+    "JBFFJB"
+  ],
+  "colors": [
+    "blue",
+    "silver"
+  ],
   "sources": [
     {
       "url": "https://www.gangenforcement.com/outlaw-motorcycle-gangs.html",
       "title": "Gang Enforcement — Outlaw Motorcycle Gangs"
+    },
+    {
+      "url": "https://onepercenterbikers.com/jus-brothers-mc-motorcycle-club/",
+      "title": "Jus Brothers MC (Motorcycle Club) - One Percenter Bikers"
+    },
+    {
+      "url": "https://elisting.us/jusbrothersmcstockton",
+      "title": "Jus Brothers M.C. Stockton - eListing.us"
     }
+  ],
+  "symbols": [
+    "Route 66 Road Sign",
+    "Eagle's Head",
+    "Seven 5-Point Stars"
   ]
 }

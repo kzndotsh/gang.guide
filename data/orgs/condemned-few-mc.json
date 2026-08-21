@@ -3,17 +3,30 @@
   "name": "Condemned Few MC",
   "type": "motorcycle_club",
   "lane": "motorcycle-clubs",
-  "description": "The Condemned Few MC is an outlaw motorcycle gang founded in 2005 in Queens, New York.",
+  "description": "The Condemned Few MC is an outlaw motorcycle club founded in Queens, New York, with documented activity dating to at least 2008. The club claims orange, black, and white as its colors and uses a skeleton-on-motorcycle motif as its primary insignia. It has operated chapters in both Queens and Brooklyn.",
   "status": "active",
   "metro": "Queens",
   "founded_year": 2005,
   "founded_year_precision": "circa",
-  "aliases": [],
-  "colors": [],
+  "aliases": [
+    "Condemned Few Motorcycle Club"
+  ],
+  "colors": [
+    "orange",
+    "black",
+    "white"
+  ],
   "sources": [
     {
       "url": "https://www.gangenforcement.com/outlaw-motorcycle-gangs.html",
       "title": "Gang Enforcement — Outlaw Motorcycle Gangs"
+    },
+    {
+      "url": "https://furm.com/trademarks/condemned-few-mc-new-york-85663373",
+      "title": "CONDEMNED FEW MC NEW YORK Trademark of Condemned Few, LLC - Serial Number 85663373"
     }
+  ],
+  "symbols": [
+    "Skeleton On Motorcycle"
   ]
 }

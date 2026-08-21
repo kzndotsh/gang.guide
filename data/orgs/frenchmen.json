@@ -1,7 +1,9 @@
 {
   "id": "org:frenchmen",
   "name": "Frenchmen",
-  "aliases": [],
+  "aliases": [
+    "Renegade Frenchmen"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
@@ -15,6 +17,10 @@
     {
       "url": "https://newyorkcitygangs.com/?page_id=2101",
       "title": "Memoir Excerpt from Efraim Ruiz of the Roman Lords | New York City Fighting Gangs"
+    },
+    {
+      "url": "https://www.facebook.com/classicnystreetgangs/posts/renegade-frenchmen-vs-roman-lords-brooklyn-ny-1962renegadefrenchmenromanlordscla/10158046999746021/",
+      "title": "Renegade Frenchmen vs. Roman Lords, Brooklyn N.Y. 1962 | Classic NY Street Gangs"
     }
   ]
 }

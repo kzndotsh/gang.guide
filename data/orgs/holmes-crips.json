@@ -10,6 +10,10 @@
     {
       "url": "https://www.streetgangs.com/holmes/crips",
       "title": "Holmes Crips — StreetGangs"
+    },
+    {
+      "url": "https://unitedgangs.com/holmes-street-watts-crips/",
+      "title": "Holmes Street Crips — UnitedGangs.com"
     }
   ],
   "metro": "Los Angeles",
@@ -24,5 +28,8 @@
     "blue"
   ],
   "nation_affiliation": "org:crips",
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Houston Astros Apparel"
+  ]
 }

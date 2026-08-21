@@ -531,6 +531,19 @@ org:19th-street-gang                  # single_source: no date found
 org:the-original-blocc-crips          # no_symbols: confirmed dead-end
 org:chaplains                         # single_source: no data found
 
+org:avenue-bloods                     # absolute final dead-end
+org:the-original-blocc-crips          # absolute final dead-end
+org:comanches                         # tool-limit dead-end
+org:easy-boys                         # confirmed dead-end
+org:garden-grove-town-mob             # tool-limit dead-end
+org:korat-boys                        # confirmed dead-end
+org:krazy-ass-mexicans                # tool-limit dead-end
+org:local-boys                        # confirmed dead-end
+org:lost-boys                         # confirmed dead-end
+org:luzon-visaya-mobsters             # tool-limit dead-end
+org:maravilla-family-gangs            # confirmed dead-end
+org:neighbors-sons                    # confirmed dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.

@@ -10,11 +10,24 @@
     {
       "url": "https://en.wikipedia.org/wiki/Errol_Flynns",
       "title": "Errol Flynns — Wikipedia"
+    },
+    {
+      "url": "https://crimeindetroit.com/documents/Errol%20Flynns%202.pdf",
+      "title": "Errol Flynns — Crime in Detroit"
+    },
+    {
+      "url": "https://detroitstreetgangs.com/historical-defunct-sets-detroit-mi/",
+      "title": "Historical and Defunct Street Groups in Detroit — DetroitStreetGangs.com"
     }
   ],
   "founded_year": 1970,
   "founded_year_precision": "decade",
   "aliases": [],
   "colors": [],
-  "disbanded_year": 1985
+  "disbanded_year": 1985,
+  "membership_estimate": 400,
+  "symbols": [
+    "Gangsta Jits Hand Signs",
+    "Errol Flynn Dance"
+  ]
 }
