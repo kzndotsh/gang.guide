@@ -7,7 +7,7 @@
   "description": "The Insane Gangster Disciples (IGD) are a secretive subset of the Gangster Disciples Folk Nation constellation, created after David Barksdale's death as an enforcement and intelligence unit operating under the code name 'Cobra.' IGD members are present across Illinois, New Jersey, and other states, and use the numeric code 9.7.4. as their identifier.",
   "status": "active",
   "founded_year": 1974,
-  "founded_year_precision": "circa",
+  "founded_year_precision": "exact",
   "aliases": [
     "IGD",
     "Insane GDs",

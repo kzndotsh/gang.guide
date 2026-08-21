@@ -31,6 +31,6 @@
     "Bunch Of Grapes",
     "Letter G"
   ],
-  "founded_year_precision": "circa",
+  "founded_year_precision": "exact",
   "status": "active"
 }

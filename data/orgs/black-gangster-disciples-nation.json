@@ -29,7 +29,7 @@
     "black",
     "gray"
   ],
-  "founded_year_precision": "circa",
+  "founded_year_precision": "exact",
   "symbols": [
     "Winged Heart",
     "Pitchfork",

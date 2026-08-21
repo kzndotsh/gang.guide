@@ -92,7 +92,7 @@
     "blue",
     "black"
   ],
-  "founded_year_precision": "circa",
+  "founded_year_precision": "exact",
   "status": "active",
   "membership_estimate": 40000,
   "military_service": "Army, Marines, Navy"

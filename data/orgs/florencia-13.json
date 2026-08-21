@@ -20,6 +20,10 @@
       "title": "Florencia 13 — StreetGangs"
     },
     {
+      "url": "https://www.policemag.com/373016/history-of-the-florence-13-gang",
+      "title": "History of the Florence 13 Gang — Police Magazine (Richard Valdemar, 2007)"
+    },
+    {
       "url": "https://www.justice.gov/usao-cdca/pr/grand-jury-charges-37-florencia-13-members-and-associates-federal-crimes-including-3",
       "title": "DOJ - Florencia 13 RICO Charges"
     },
@@ -51,39 +55,9 @@
     "Number 13",
     "Florence By The Paragons (Theme Song)"
   ],
-  "founded_year_precision": "circa",
+  "founded_year_precision": "exact",
   "status": "active",
   "membership_estimate": 3000,
   "military_service": "Army, Marines",
-  "nation_affiliation": "org:surenos",
-  "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/Florencia_13",
-      "title": "Florencia 13 — Wikipedia"
-    },
-    {
-      "url": "https://unitedgangs.com/florencia-13",
-      "title": "Florencia 13 — UnitedGangs"
-    },
-    {
-      "url": "https://www.streetgangs.com/hispanic/lacounty/florence/florencia13",
-      "title": "Florencia 13 — StreetGangs"
-    },
-    {
-      "url": "https://www.policemag.com/373016/history-of-the-florence-13-gang",
-      "title": "History of the Florence 13 Gang — Police Magazine (Richard Valdemar, 2007)"
-    },
-    {
-      "url": "https://www.justice.gov/usao-cdca/pr/grand-jury-charges-37-florencia-13-members-and-associates-federal-crimes-including-3",
-      "title": "DOJ - Florencia 13 RICO Charges"
-    },
-    {
-      "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
-      "title": "FBI/NDIC National Gang Threat Assessment 2009"
-    },
-    {
-      "url": "https://archives.fbi.gov/archives/losangeles/press-releases/2009/la011209usa.htm",
-      "title": "Ten Defendants in Largest-Ever Federal Gang Case Found Guilty — FBI Los Angeles"
-    }
-  ]
+  "nation_affiliation": "org:surenos"
 }
