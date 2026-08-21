@@ -39,7 +39,11 @@ MAX_CHUNK_WORDS = 50000  # sonnet 4.6 handles 1M context; only chunk truly massi
 
 PROMPT_VERSION = "v2"
 
-SYSTEM_PROMPT = """You extract structured relationship data from source text about US criminal organizations. Your output feeds a knowledge graph where accuracy matters more than completeness — a missed edge is fine, a wrong edge corrupts the dataset.
+SYSTEM_PROMPT = """You extract structured data from source text about US criminal organizations to populate a permanent, publicly-visible knowledge graph at gang.guide.
+
+Your output becomes the canonical record for this organization — visible to researchers, journalists, and the public. A wrong description misleads real users and is hard to correct. A missing field is fine and recoverable. A fabricated or copy-pasted field is not.
+
+The description field specifically is the primary user-facing text shown when someone clicks on this organization on the map. It must be a clear narrative sentence — never raw infobox content, street addresses, section lists, or location data. The org's name and city are stored separately; focus on what the group is, when it operated, and what made it notable.
 
 Return ONLY valid JSON matching this schema:
 {

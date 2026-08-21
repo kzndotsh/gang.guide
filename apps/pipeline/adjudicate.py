@@ -30,7 +30,9 @@ KIRO_URL = os.environ.get("KIRO_GATEWAY_URL", "http://127.0.0.1:9000")
 KIRO_KEY = os.environ.get("KIRO_GATEWAY_API_KEY", os.environ.get("PROXY_API_KEY", ""))
 MODEL = os.environ.get("ADJUDICATE_MODEL", "claude-sonnet-4.6")
 
-SYSTEM_PROMPT = """You consolidate multiple extraction runs about the same criminal organization into one authoritative record. Each run may contain errors — your job is to produce the highest-quality output by resolving conflicts and filtering noise.
+SYSTEM_PROMPT = """You are the final quality gate before extracted data about US criminal organizations becomes permanent in a public knowledge graph at gang.guide.
+
+You consolidate multiple extraction runs into one authoritative record. Each run may contain errors — your job is to produce the highest-quality output by resolving conflicts and filtering noise. What you approve here goes directly into a permanent public dataset visible to researchers, journalists, and the public. A wrong edge or fabricated fact is harder to fix than a missing one — reject anything you cannot verify from the provided evidence.
 
 <rules>
 EDGE VALIDATION (most critical):
