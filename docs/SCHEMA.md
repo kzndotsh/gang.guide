@@ -75,11 +75,28 @@ Lint **errors** if the slug is not `a-z`, `0-9`, hyphens, no doubles, no leading
   "source": "org:source-id",
   "target": "org:target-id",
   "type": "alliance | rivalry | member_of | spin_off | parent",
-  "evidence": "Verbatim quote proving relationship (optional)",
+  "citations": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Bloods",
+      "title": "Wikipedia",
+      "evidence": "Verbatim quote from the source proving this relationship."
+    }
+  ],
   "start_year": 1977,
   "end_year": 1992
 }
 ```
+
+`citations[]` is the canonical multi-source field. Each citation has:
+- `url` — source page URL (should be `https`)
+- `title` — human-readable source name (e.g. "Wikipedia", "UnitedGangs")
+- `evidence` — verbatim quote from the source proving the relationship
+
+Multiple citations allow the same edge to be supported by several independent sources. `build.py` falls back to legacy `evidence`/`source_url` fields if `citations` is absent.
+
+**Deprecated fields** (do not use in new edges, will be removed):
+- `evidence` — use `citations[0].evidence`
+- `source_url` — use `citations[0].url`
 
 `nation` is **not** stored here. `build.py` generates nation edges from `nation_affiliation`.
 

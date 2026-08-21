@@ -180,7 +180,7 @@ def identify_suspicious_edges(adjudicated: dict) -> list[dict]:
         if edge.get("verify_uncertain"):
             continue
 
-        evidence = edge.get("evidence", "")
+        evidence = edge.get("evidence") or (edge.get("citations") or [{}])[0].get("evidence", "")
         target = edge.get("target", "")
         edge_type = edge.get("type", "")
         reasons = []
@@ -288,7 +288,7 @@ def verify_edge(edge: dict, subject: str) -> dict | None:
     """
     target = edge.get("target", "")
     edge_type = edge.get("type", "")
-    evidence = edge.get("evidence", "")
+    evidence = edge.get("evidence") or (edge.get("citations") or [{}])[0].get("evidence", "")
     reasons = edge.get("_verify_reasons", [])
 
     # Build a focused prompt based on the specific concern
@@ -697,7 +697,7 @@ def identify_suspicious_edges(adjudicated: dict) -> list[dict]:
     subject = adjudicated.get("subject_org", "Unknown")
 
     for edge in edges:
-        evidence = edge.get("evidence", "")
+        evidence = edge.get("evidence") or (edge.get("citations") or [{}])[0].get("evidence", "")
         target = edge.get("target", "")
         edge_type = edge.get("type", "")
         reasons = []
@@ -736,7 +736,7 @@ def verify_edge(edge: dict, subject: str) -> dict | None:
     """Use LLM + web search to verify a single edge claim."""
     target = edge.get("target", "")
     edge_type = edge.get("type", "")
-    evidence = edge.get("evidence", "")
+    evidence = edge.get("evidence") or (edge.get("citations") or [{}])[0].get("evidence", "")
 
     prompt = f"""Verify this claimed relationship:
 

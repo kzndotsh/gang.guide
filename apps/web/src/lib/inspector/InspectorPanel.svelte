@@ -288,7 +288,8 @@
                   <Accordion.Content class="px-2 pb-2 pt-0">
                     <ul class="flex list-none flex-col gap-1 p-0">
                       {#each group.items as conn (conn.peerId + conn.type)}
-                        {@const evidence = (node?.data as any)?.edgeEvidence?.find((e: any) => e.target === conn.peerId && e.type === conn.type)}
+                        {@const edgeDetail = (node?.data as any)?.edgeEvidence?.find((e: any) => e.target === conn.peerId && e.type === conn.type)}
+                        {@const citations = edgeDetail?.citations ?? (edgeDetail?.evidence ? [{ evidence: edgeDetail.evidence, url: edgeDetail.source_url ?? '' }] : [])}
                         <li class="flex flex-col gap-1">
                           <div class="flex items-center gap-1">
                             <button
@@ -317,24 +318,33 @@
                               </span>
                             {/if}
                           </button>
-                          {#if evidence?.evidence}
+                          {#if citations.length > 0}
                             <button
                               type="button"
                               class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-border/50 bg-background/40 text-muted-foreground transition-colors hover:bg-accent/30 hover:text-foreground"
+                              aria-label="Show source evidence"
                               onclick={(e) => { e.stopPropagation(); const el = (e.currentTarget as HTMLElement).closest('li')?.querySelector('[data-evidence]'); if (el) el.classList.toggle('hidden'); }}
                             >
                               <Quote class="size-3" />
                             </button>
                           {/if}
                           </div>
-                          {#if evidence?.evidence}
-                            <div data-evidence class="hidden rounded-md border border-border/30 bg-background/60 px-3 py-2 ml-1">
-                              <p class="text-[0.68rem] leading-relaxed text-muted-foreground">
-                                <span class="italic">"{evidence.evidence}"</span>
-                                {#if evidence.source_url}
-                                  <span class="not-italic ml-1 mr-1">—</span><a href={evidence.source_url} target="_blank" rel="noopener" class="not-italic text-primary/70 hover:text-primary hover:underline">{evidence.source_url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}</a>
+                          {#if citations.length > 0}
+                            <div data-evidence class="hidden ml-1 flex flex-col gap-1.5">
+                              {#each citations as cit, ci (ci)}
+                                {#if cit.evidence || cit.url}
+                                  <div class="rounded-md border border-border/30 bg-background/60 px-3 py-2">
+                                    <p class="text-[0.68rem] leading-relaxed text-muted-foreground">
+                                      {#if cit.evidence}
+                                        <span class="italic">"{cit.evidence}"</span>
+                                      {/if}
+                                      {#if cit.url}
+                                        {#if cit.evidence}<span class="not-italic ml-1 mr-1">—</span>{/if}<a href={cit.url} target="_blank" rel="noopener" class="not-italic text-primary/70 hover:text-primary hover:underline">{cit.title || cit.url.replace(/^https?:\/\/(www\.)?/, '').split('/')[0]}</a>
+                                      {/if}
+                                    </p>
+                                  </div>
                                 {/if}
-                              </p>
+                              {/each}
                             </div>
                           {/if}
                         </li>

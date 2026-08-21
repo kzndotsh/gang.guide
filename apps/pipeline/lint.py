@@ -400,6 +400,13 @@ def check_edges(edges: list[dict], org_ids: set[str]):
             if org_founded and start < org_founded - 10:
                 info.append(f"edge[{i}]: start_year {start} is well before {src} founded ({org_founded})")
 
+        # Citation field quality checks
+        for citation in e.get("citations", []):
+            if not citation.get("url"):
+                warnings.append(f"edge[{i}]: citation missing url")
+            if citation.get("url", "").startswith("http://"):
+                info.append(f"edge[{i}]: citation uses http (should be https)")
+
     # Contradictory and redundant edge pairs
     # Build normalized pair maps for fast lookup
     # For undirected types (alliance, rivalry), normalize pair as frozenset

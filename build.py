@@ -154,6 +154,8 @@ def build_graph(out_path=None):
                     edge["evidence"] = e["evidence"]
                 if e.get("source_url"):
                     edge["source_url"] = e["source_url"]
+                if e.get("citations"):
+                    edge["citations"] = e["citations"]
                 edges.append(edge)
 
     # Generate nation edges from nation_affiliation field (field is source of truth)
@@ -167,14 +169,16 @@ def build_graph(out_path=None):
     slim_nodes = []
 
     # Build edge evidence lookup (org_id → list of edge details)
+    # Reads citations[] first, falls back to legacy evidence/source_url fields
     edge_evidence = {}
     for e in edges:
-        if e.get("evidence") or e.get("source_url"):
-            detail = {"target": e["target"], "type": e["type"]}
-            if e.get("evidence"):
-                detail["evidence"] = e["evidence"]
-            if e.get("source_url"):
-                detail["source_url"] = e["source_url"]
+        citations = e.get("citations") or []
+        if not citations:
+            # Legacy fallback
+            if e.get("evidence") or e.get("source_url"):
+                citations = [{"url": e.get("source_url", ""), "evidence": e.get("evidence", "")}]
+        if citations:
+            detail: dict = {"target": e["target"], "type": e["type"], "citations": citations}
             if e.get("start_year"):
                 detail["start_year"] = e["start_year"]
             if e.get("end_year"):

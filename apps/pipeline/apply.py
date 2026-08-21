@@ -25,6 +25,60 @@ DATA_EXTRACTED = ROOT / "data" / "extracted"
 DATA_ORGS = ROOT / "data" / "orgs"
 DATA_RELS = ROOT / "data" / "edges.json"
 
+DOMAIN_TITLES: dict[str, str] = {
+    "en.wikipedia.org": "Wikipedia",
+    "unitedgangs.com": "UnitedGangs",
+    "www.unitedgangs.com": "UnitedGangs",
+    "streetgangs.com": "StreetGangs",
+    "www.streetgangs.com": "StreetGangs",
+    "chicagoganghistory.com": "Chicago Gang History",
+    "www.chicagoganghistory.com": "Chicago Gang History",
+    "detroitstreetgangs.com": "Detroit Street Gangs",
+    "www.detroitstreetgangs.com": "Detroit Street Gangs",
+    "newyorkcitygangs.com": "New York City Gangs",
+    "www.newyorkcitygangs.com": "New York City Gangs",
+    "stonegreasers.com": "StoneGreasers",
+    "www.stonegreasers.com": "StoneGreasers",
+    "justice.gov": "U.S. Department of Justice",
+    "www.justice.gov": "U.S. Department of Justice",
+    "fbi.gov": "FBI",
+    "www.fbi.gov": "FBI",
+    "adl.org": "ADL",
+    "www.adl.org": "ADL",
+    "splcenter.org": "SPLC",
+    "www.splcenter.org": "SPLC",
+    "blackpast.org": "BlackPast",
+    "www.blackpast.org": "BlackPast",
+    "web.archive.org": "Wayback Machine",
+    "ngcrc.com": "NGCRC",
+    "www.ngcrc.com": "NGCRC",
+    "nagia.org": "NAGIA",
+    "www.nagia.org": "NAGIA",
+    "gangenforcement.com": "Gang Enforcement",
+    "www.gangenforcement.com": "Gang Enforcement",
+    "stophoustongangs.org": "StopHoustonGangs",
+    "www.stophoustongangs.org": "StopHoustonGangs",
+    "courtlistener.com": "CourtListener",
+    "www.courtlistener.com": "CourtListener",
+}
+
+
+def infer_title(url: str) -> str:
+    """Infer a human-readable title from a URL using domain mapping."""
+    if not url:
+        return ""
+    try:
+        from urllib.parse import urlparse
+
+        parsed = urlparse(url)
+        domain = parsed.netloc.lower()
+        if domain in DOMAIN_TITLES:
+            return DOMAIN_TITLES[domain]
+        bare = domain.removeprefix("www.")
+        return DOMAIN_TITLES.get(bare, bare)
+    except Exception:
+        return ""
+
 
 def load_org_by_id(org_id: str, org_path_index: dict) -> tuple[Path | None, dict | None]:
     """Find and load an org file by ID using prebuilt index."""
@@ -289,14 +343,19 @@ def apply_edges(
             continue
         key = (org_id, target_id, etype)
         if key in existing_keys:
-            # Enrich existing edge if it lacks evidence
-            if edge.get("evidence") and not dry_run:
+            # Enrich existing edge: append a new citation if the URL is new
+            if edge.get("evidence") and source_url and not dry_run:
                 for e in edges_list:
-                    if (e["source"], e["target"], e["type"]) == key and not e.get("evidence"):
-                        e["evidence"] = edge["evidence"]
-                        if source_url:
-                            e["source_url"] = source_url
-                        edges_added.append(f"enriched: {etype}: {org_id} → {target_id}")
+                    if (e["source"], e["target"], e["type"]) == key:
+                        existing_urls = {c.get("url") for c in e.get("citations", [])}
+                        if source_url not in existing_urls:
+                            citation = {
+                                "url": source_url,
+                                "title": infer_title(source_url),
+                                "evidence": edge["evidence"],
+                            }
+                            e.setdefault("citations", []).append(citation)
+                            edges_added.append(f"citation added: {etype}: {org_id} → {target_id}")
                         break
             continue
 
@@ -323,10 +382,15 @@ def apply_edges(
                 continue
 
         new_edge = {"source": org_id, "target": target_id, "type": etype}
-        if edge.get("evidence"):
-            new_edge["evidence"] = edge["evidence"]
-        if source_url:
-            new_edge["source_url"] = source_url
+        if edge.get("evidence") or source_url:
+            citation = {
+                "url": source_url or "",
+                "title": infer_title(source_url or ""),
+                "evidence": edge.get("evidence", ""),
+            }
+            new_edge["citations"] = [citation]
+        else:
+            new_edge["citations"] = []
         if edge.get("period"):
             # Convert "1977-1992" string to start_year/end_year ints
             import re as _re
