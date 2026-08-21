@@ -227,9 +227,14 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
         if "&amp;" in desc or "&#" in desc or "&nbsp;" in desc:
             warnings.append(f"{f}: description contains HTML entities")
 
+        if re.search(r"%[0-9A-Fa-f]{2}", desc):
+            warnings.append(f"{f}: description contains URL-encoded characters")
+
         for alias in org.get("aliases") or []:
             if len(alias) > 60:
                 warnings.append(f"{f}: alias too long ({len(alias)} chars): '{alias[:50]}...'")
+            if re.search(r"%[0-9A-Fa-f]{2}|&(?:amp|quot|lt|gt|#\d+);", alias):
+                warnings.append(f"{f}: alias contains URL-encoded or HTML-encoded chars: '{alias[:50]}'")
 
         # Symbols must be title case (allow ALL CAPS abbreviations ≤6 chars)
         for sym in org.get("symbols") or []:
@@ -862,6 +867,7 @@ def check_sources(orgs: dict[str, dict]):
         seen_urls = set()
         for s in org.get("sources") or []:
             url = s.get("url", "")
+            title = s.get("title", "") or ""
             url_counts[url] += 1
 
             # Duplicate URL within same org
@@ -872,6 +878,14 @@ def check_sources(orgs: dict[str, dict]):
             # Non-https
             if url.startswith("http://"):
                 info.append(f"{f}: source uses http (should be https): {url[:60]}")
+
+            # URL-encoded characters in title (scraping artifact)
+            if re.search(r"%[0-9A-Fa-f]{2}", title):
+                warnings.append(f"{f}: source title contains URL-encoded chars (run unquote): {title[:60]}")
+
+            # HTML entities in title
+            if re.search(r"&(?:amp|quot|lt|gt|#\d+);", title):
+                warnings.append(f"{f}: source title contains HTML entities: {title[:60]}")
 
             # Suspicious domains
             if any(d in url for d in ("fandom.com/wiki", "answers.yahoo", "quora.com")):

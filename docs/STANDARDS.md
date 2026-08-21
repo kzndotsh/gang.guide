@@ -98,6 +98,8 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | Same URL cited in 15+ orgs | Warning | Over-cited (likely wrong) |
 | HTTP instead of HTTPS | Info | Should upgrade |
 | Low-quality domain (fandom, yahoo answers) | Info | Weak source |
+| Source title contains URL-encoded chars | Warning | Scraping artifact — `%28` → `(` etc. |
+| Source title contains HTML entities | Warning | Scraping artifact — `&amp;` → `&` etc. |
 
 ## `nation_affiliation` vs `member_of`
 
