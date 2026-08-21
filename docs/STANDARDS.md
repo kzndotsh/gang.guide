@@ -1,16 +1,16 @@
 # Data Standards
 
-This document describes how gang.guide maintains data quality. All checks are enforced by `apps/pipeline/lint.py`, which runs in CI and as a gate after `apply.py`.
+Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after apply. Field shapes: [SCHEMA.md](SCHEMA.md). Suppressions: [PIPELINE.md](PIPELINE.md#gangguideignore).
 
-## Severity Levels
+## Severity
 
 | Level | Meaning | CI |
 |-------|---------|-----|
-| **Error** | Data is broken or contradictory | ❌ Fails |
-| **Warning** | Incomplete or suspicious | ✓ Passes |
-| **Info** | Could be improved | ✓ Passes |
+| **Error** | Data is broken or contradictory | Fails CI |
+| **Warning** | Incomplete or suspicious | Passes |
+| **Info** | Could be improved | Passes |
 
-## Org Rules (`check_orgs`)
+## Org rules (`check_orgs`)
 
 | Rule | Level | Description |
 |------|-------|-------------|
@@ -22,14 +22,14 @@ This document describes how gang.guide maintains data quality. All checks are en
 | Symbol not title case | Error | e.g. `"pitchfork"` → `"Pitchfork"` (abbreviations ≤6 chars exempt) |
 | Description contains navigation junk | Error | "Search for:", "Recent Posts", "Other gangs nearby" |
 | Crip/Blood/Piru set before 1969 | Error | Impossible founding date (movement didn't exist yet) |
-| `decade` precision with non-round year | Warning | `decade` implies only the decade is known — year should be round (1940, 1950) |
-| `exact` precision on round year pre-2000 | Warning | Round years like 1960, 1970 are rarely exact — likely `circa` or `decade` |
-| `exact` precision on round-5 year pre-1960 | Warning | e.g. 1955 exact — likely `circa` |
-| `circa` on round decade year pre-1990 | Warning | Ambiguous — probably `decade` precision |
+| `decade` precision with non-round year | Warning | `decade` implies only the decade is known: year should be round (1940, 1950) |
+| `exact` precision on round year pre-2000 | Warning | Round years like 1960, 1970 are rarely exact: likely `circa` or `decade` |
+| `exact` precision on round-5 year pre-1960 | Warning | e.g. 1955 exact: likely `circa` |
+| `circa` on round decade year pre-1990 | Warning | Ambiguous: probably `decade` precision |
 | Missing `lane` or `founded_year` | Warning | Expected but not blocking for stubs |
 | Description < 50 chars | Warning | Too thin to be useful |
 | HTML entities in description | Warning | Scrape junk (`&amp;`, `&#39;`) |
-| Alias > 50 chars | Warning | Likely scrape junk |
+| Alias > 60 chars | Warning | Likely scrape junk |
 | Invalid color value | Warning | Must be recognizable color names |
 | Type/lane mismatch | Warning | `street_gang` in `prison` lane, `motorcycle_club` in wrong lane, etc. |
 | `white_supremacist` org in non-WS/prison/MC lane | Warning | Check lane assignment |
@@ -41,13 +41,13 @@ This document describes how gang.guide maintains data quality. All checks are en
 | Name contains colon or pipe | Warning | Likely page title fragment |
 | Description starts with lowercase | Warning | Formatting artifact |
 | Description starts with infobox pattern | Warning | Scrape junk (starts with "Full Name:", "Founded:", etc.) |
-| Description starts with alias | Warning | `check_description_starts_with_name` — description should open with canonical name |
-| `status='active'` + defunct description | Warning | `check_status_description_consistency` — description says "disbanded"/"defunct" but status is active |
+| Description starts with alias | Warning | `check_description_starts_with_name`: description should open with canonical name |
+| `status='active'` + defunct description | Warning | `check_status_description_consistency`: description says "disbanded"/"defunct" but status is active |
 | Duplicate org name | Warning | Merge candidate |
 | Single source only | Info | Under-sourced |
-| Imprecise year precision | Info | `estimate` or `decade` — could be researched |
+| Imprecise year precision | Info | `estimate` or `decade`: could be researched |
 
-## Edge Rules (`check_edges`)
+## Edge rules (`check_edges`)
 
 | Rule | Level | Description |
 |------|-------|-------------|
@@ -58,17 +58,19 @@ This document describes how gang.guide maintains data quality. All checks are en
 | Alliance AND rivalry between same pair | Warning | Contradictory without temporal data |
 | `start_year` well before org founded | Info | Suspicious temporal mismatch |
 
-## Cross-Reference Rules
+## Cross-reference rules
 
 | Check | Level | Description |
 |-------|-------|-------------|
 | `check_nation_consistency` | Error | `member_of` Folk→People or People→Folk contradicts nation_affiliation |
 | `check_nation_consistency` | Warning | `nation`/`alliance` type org has `nation_affiliation` set (nations don't belong to nations) |
-| `check_member_of_usage` | Warning | Gang nation org (Crips, Bloods, etc.) is SOURCE of `member_of` — likely reversed |
+| `check_member_of_usage` | Warning | Gang nation org (Crips, Bloods, etc.) is SOURCE of `member_of`: likely reversed |
 | `check_member_of_usage` | Warning | `member_of` to gang nation when org already has `nation_affiliation` = same nation (redundant) |
 | `check_member_of_usage` | Warning | Blood/Crip-lane org missing `nation_affiliation` |
 | `check_page_title_orgs` | Error | Org name looks like a page title ("History of X", "Groups in Y") |
-| `check_id_consistency` | Error | `id` field doesn't match filename |
+| `check_id_consistency` | Error | Slug format invalid (charset, `--`, leading/trailing hyphen) |
+| `check_id_consistency` | Info | Filename stem does not match `id` slug |
+| `check_metro_lane_consistency` | Warning | Metro does not fit the org's lane (e.g. Chicago lane + New York metro) |
 | `check_spinoff_direction` | Warning | Target org is older than source by 5+ years (likely reversed) |
 | `check_cross_metro` | Info | Rivalry between orgs in different cities |
 | `check_stub_quality` | Info | Generic placeholder description for any org type, needs enrichment |
@@ -77,7 +79,7 @@ This document describes how gang.guide maintains data quality. All checks are en
 | `check_fuzzy_dupes` | Error | Cross-lane spelling variant duplicates (e.g. Gangster/Gangsta) |
 | `check_temporal_logic` | Warning | Org founded before its affiliated nation existed |
 
-## Description Quality (`check_descriptions`)
+## Description quality (`check_descriptions`)
 
 | Rule | Level | Description |
 |------|-------|-------------|
@@ -86,7 +88,7 @@ This document describes how gang.guide maintains data quality. All checks are en
 | Boilerplate placeholder description | Info | e.g. "X is a street gang based in Y." or "X is a white supremacist organization." |
 | Unbalanced quotes | Info | Odd number of `"` characters |
 
-## Source Quality (`check_sources`)
+## Source quality (`check_sources`)
 
 | Rule | Level | Description |
 |------|-------|-------------|
@@ -99,15 +101,15 @@ This document describes how gang.guide maintains data quality. All checks are en
 
 See [SCHEMA.md](SCHEMA.md#nation_affiliation-vs-member_of) for the full distinction. Summary:
 
-- **`nation_affiliation`** — use for direct gang-nation membership (Crip sets → `org:crips`, Blood sets → `org:bloods`). Generates a `nation` edge at build time.
-- **`member_of`** — use for structural hierarchies that aren't pure gang-nation affiliation (e.g. Latin Kings `member_of` People Nation, Florencia 13 `member_of` Mexican Mafia).
+- **`nation_affiliation`**: use for direct gang-nation membership (Crip sets → `org:crips`, Blood sets → `org:bloods`). Generates a `nation` edge at build time.
+- **`member_of`**: use for structural hierarchies that aren't pure gang-nation affiliation (e.g. Latin Kings `member_of` People Nation, Florencia 13 `member_of` Mexican Mafia).
 - **Never**: gang nation orgs (Crips, Bloods, Folk Nation, etc.) as the SOURCE of `member_of`.
 
-## Pipeline Quality Gates
+## Pipeline gates
 
 ### Extraction (v2 prompt)
 - Requires verbatim evidence quotes for every edge
-- Infers `org_type` and `org_lane` from source text (38-lane taxonomy)
+- Infers `org_type` and `org_lane` from source text (must match `data/lanes.json`)
 - Only emits edges with explicit relationship verbs
 - Prefers local set names over generic national org names
 - Returns null rather than guessing
@@ -129,33 +131,35 @@ See [SCHEMA.md](SCHEMA.md#nation_affiliation-vs-member_of) for the full distinct
 ## Running
 
 ```bash
-just lint                    # run all checks
-python3 apps/pipeline/lint.py   # same thing directly
+just lint                       # all checks
+python3 apps/pipeline/lint.py --all   # no truncation of warnings/info
 ```
 
-## Common Data Quality Issues
+Suppressions: `.gangguideignore` `[lint:suppress]`: see [PIPELINE.md](PIPELINE.md#gangguideignore).
 
-Patterns found repeatedly during the clean.py audit passes. Use this as a checklist when adding or editing orgs.
+## Common issues
 
-### Description Rules
-- **Must start with the canonical name** — the first phrase should be the org's `name` field value (or a close variant like "The X"). Never start with an alias, a date ("Founded in..."), or a different org's name.
-- **2-4 factual sentences max** — no lists, no infobox fields, no "See also" fragments.
-- **No HTML entities** — fix `&amp;` → `&`, `&#8217;` → `'`. These come from scraping.
-- **No slurs or offensive language** — if a name contains one, paraphrase factually.
-- **No boilerplate** — "X is a street gang based in Y." is not a description; add founding context and notable characteristics.
+Checklist when adding or editing orgs (from clean.py passes):
 
-### Status Consistency
+### Description
+- **Must start with the canonical name**: the first phrase should be the org's `name` field value (or a close variant like "The X"). Never start with an alias, a date ("Founded in..."), or a different org's name.
+- **2-4 factual sentences max**: no lists, no infobox fields, no "See also" fragments.
+- **No HTML entities**: fix `&amp;` → `&`, `&#8217;` → `'`. These come from scraping.
+- **No slurs or offensive language**: if a name contains one, paraphrase factually.
+- **No boilerplate**: "X is a street gang based in Y." is not a description; add founding context and notable characteristics.
+
+### Status
 - If the description says "disbanded", "defunct", "no longer active", or "was absorbed" → `status` should be `"inactive"`.
 - If `status` is `"inactive"` and you know the year the org disbanded, set `disbanded_year`.
 
-### Metro Rules
+### Metro
 - Use the **specific city**, not a county, region, or state.
   - Chicago neighborhood → `"Chicago"` (not `"Cook County"` or `"Illinois"`)
   - LA neighborhood → `"Los Angeles"` (not `"Southern California"` or `"Los Angeles County"`)
   - National umbrella orgs → `"United States"`
-- Metro must be consistent with `lane`. A org in `chicago-folk` lane shouldn't have `metro: "New York"`.
+- Metro must be consistent with `lane`. An org in `chicago-folk` should not have `metro: "New York"`.
 
-### Founded Year Rules
+### Founded year
 - Use the year the **specific set** was founded, not when its parent alliance formed.
   - A Crips set founded in 1975 → `founded_year: 1975`, not `1969`.
   - A Blood set formed in 1977 → `founded_year: 1977`, not `1972`.
@@ -163,22 +167,22 @@ Patterns found repeatedly during the clean.py audit passes. Use this as a checkl
 - If approximate → `precision: "circa"` with the best estimate year.
 - If completely unknown → omit `founded_year` entirely (don't set to 0 or null).
 
-### Alias Rules
-- Aliases should be names the org is **actually known by** — abbreviations, street names, alternate spellings.
+### Aliases
+- Aliases should be names the org is **actually known by**: abbreviations, street names, alternate spellings.
 - Do **not** include subdivision names as aliases (e.g. "Firm 22" is a Vinlanders subdivision, not an alias for the Vinlanders).
 - Title-case each alias (e.g. `"Gangster Two Six"` not `"gangster two six"`).
-- Keep aliases under 60 characters — longer strings are usually descriptions, not aliases.
+- Keep aliases at or under 60 characters: longer strings are usually descriptions, not aliases. Lint warns above 60.
 
-### Source Rules
-- Every source needs a **proper title** — not a bare domain name.
-  - ✓ `"Wikipedia — Gangster Disciples"`
-  - ✗ `"en.wikipedia.org"`
-  - ✓ `"ADL Backgrounder: Peckerwood"`
-  - ✗ `"adl.org"`
+### Sources
+- Every source needs a title that is not a bare domain.
+  - Good: `"Wikipedia: Gangster Disciples"`
+  - Bad: `"en.wikipedia.org"`
+  - Good: `"ADL Backgrounder: Peckerwood"`
+  - Bad: `"adl.org"`
 - Remove sources that return 404 or aren't actually about the org.
 - Sources should use `https://` URLs.
 
-### Symbols Rules
+### Symbols
 - Every symbol must be **Title Case**: `"Six-Point Star"` not `"six-point star"`.
 - Abbreviations ≤6 chars are exempt: `"PIRU"`, `"NGC"`, `"OVG"`.
 - Don't include generic sports team names as symbols unless there's documented gang adoption.

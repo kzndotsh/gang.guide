@@ -21,20 +21,21 @@
 
 <div align="center">
     <h1>gang.guide</h1>
-    <p><strong>Evidence backed mapping of criminal organizations across the US — alliances, rivalries, history, and culture.</strong></p>
+    <p><strong>Map of US criminal organizations: alliances, rivalries, history, sources.</strong></p>
     <p>
-        <a href="https://gang.guide">🌐 Live Site</a> •
-        <a href="#quick-start">🚀 Quick Start</a> •
-        <a href="docs/ARCHITECTURE.md">🏗️ Architecture</a> •
-        <a href="docs/PIPELINE.md">⚙️ Pipeline</a> •
-        <a href="docs/STANDARDS.md">✅ Standards</a> •
-        <a href="TODO.md">🗺️ Roadmap</a>
+        <a href="https://gang.guide">Live site</a> •
+        <a href="#quick-start">Quick start</a> •
+        <a href="docs/INDEX.md">Docs</a> •
+        <a href="docs/ARCHITECTURE.md">Architecture</a> •
+        <a href="docs/PIPELINE.md">Pipeline</a> •
+        <a href="docs/SCHEMA.md">Schema</a> •
+        <a href="TODO.md">Roadmap</a>
     </p>
 </div>
 
 ---
 
-## Quick Start
+## Quick start
 
 ```bash
 # Clone and setup
@@ -51,23 +52,24 @@ python3 build.py
 just dev
 ```
 
-## How It Works
-Scrape → Clean → Extract (sonnet 4.6 × 3 temps) → Adjudicate (sonnet 4.6) → Verify (sonnet 4.6) → Merge → Apply → Build → Serve
+## How it works
+Scrape → Extract (sonnet 4.6 × 3 temps) → Adjudicate → Merge → Apply → Build → Serve
 
-1. **Scrape** raw HTML from sources into `data/raw/`
-2. **Extract** structured JSON via sonnet 4.6 at 3 temperatures — edges require verbatim evidence quotes
-3. **Adjudicate** with sonnet 4.6 — validates evidence, rejects co-mentions, resolves conflicts
-4. **Verify** with sonnet 4.6 — web-search fact-checking of suspicious edges, removes unsupported claims
-5. **Merge** via algorithmic consensus (2/3 agreement) or adjudicated result
-6. **Apply** conservative upgrade to `data/orgs/*.json` + `data/edges.json` — lint gates the result
-7. **Build** compiles flat files into `graph.json` + `details.json`
-8. **Serve** on Cloudflare Workers via SvelteKit + Konva.js canvas
+1. **Scrape** raw text into `data/raw/{source}/{slug}/content.txt`
+2. **Extract** structured JSON via sonnet 4.6 at 3 temperatures: edges need verbatim evidence quotes
+3. **Adjudicate** with sonnet 4.6: validates evidence, rejects co-mentions, resolves conflicts
+4. **Merge** uses `adjudicated.json` when present, otherwise 2/3 consensus
+5. **Apply** conservative upgrade to `data/orgs/*.json` + `data/edges.json`: lint gates the result
+6. **Build** compiles flat files into `graph.json` + `details.json`
+7. **Serve** on Cloudflare Workers via SvelteKit + Konva.js canvas
 
-**Optional:** **Enrich** — agentic post-processing of weak org profiles. Scores orgs by weakness × connectivity, gathers context from `data/raw/` via ripgrep, then uses LLM with web search (DuckDuckGo) and URL fetching to fill missing fields (descriptions, founding years, colors, aliases, membership estimates). Run manually via `just enrich`.
+`just pipeline <source>` runs extract → adjudicate → merge → apply dry-run. **Verify** (`just verify`) is a separate web-search pass; merge does not read `verified.json`. **Enrich** / **clean** (`just enrich`, `just clean`) fill and spot-check org profiles; they are not in that recipe.
+
+Details: [docs/PIPELINE.md](docs/PIPELINE.md).
 
 ## Data
 
-Stats are computed at build time by `build.py` and embedded in `graph.json`. All relationships are evidence-backed with verbatim quotes from source material. Data quality is enforced by [lint rules](docs/STANDARDS.md) that run in CI and gate every pipeline application.
+`build.py` writes counts into `graph.json`. [Lint](docs/STANDARDS.md) runs in CI and after pipeline apply. Extracted edges are supposed to carry a verbatim quote from the source page.
 
 **Sources:**
 
@@ -82,7 +84,7 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 <img src=".github/assets/stats.svg" alt="Data Stats" width="100%">
 <!-- STATS:END -->
 
-## Tech Stack
+## Tech stack
 
 | Component | Technology |
 |-----------|------------|
@@ -95,7 +97,7 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 | **Testing** | pytest + vitest, codecov coverage |
 | **CI/CD** | GitHub Actions, conventional commits, lefthook |
 
-## Project Structure
+## Project structure
 
 ```
 ├── build.py                    # Builds graph.json + details.json from flat data
@@ -107,34 +109,24 @@ Stats are computed at build time by `build.py` and embedded in `graph.json`. All
 ├── apps/
 │   ├── web/                    # SvelteKit + Konva.js Canvas map viewer
 │   │   ├── src/routes/         # +page.svelte (main map), sitemap.xml
-│   │   ├── src/lib/map/        # KonvaMap.svelte, visibility.ts, scale.ts
-│   │   ├── src/lib/inspector/  # Inspector panel components
-│   │   └── alchemy.run.ts      # Deployment config (Cloudflare Workers)
+│   │   ├── src/lib/map/        # KonvaMap.svelte, visibility.ts, scale
+│   │   ├── src/lib/inspector/  # Inspector panel
+│   │   └── alchemy.run.ts      # Cloudflare Workers (Alchemy)
 │   └── pipeline/               # Python LLM extraction pipeline
 │       ├── extract.py          # Multi-temp extraction (sonnet 4.6)
 │       ├── adjudicate.py       # Conflict resolution (sonnet 4.6)
-│       ├── verify.py           # Post-adjudication web-search fact-checking (sonnet 4.6)
-│       ├── merge.py            # Consensus filtering
+│       ├── verify.py           # Optional web-search fact-checking
+│       ├── merge.py            # Consensus / adjudicated copy
 │       ├── apply.py            # Conservative data upgrade
-│       ├── enrich.py           # LLM enrichment of weak org profiles
-│       ├── log.py              # Centralized structured logging (PipelineLogger)
-│       ├── lint.py             # Data validation (runs in CI)
-│       └── tests/              # Unit tests + e2e + fixtures
+│       ├── enrich.py / clean.py
+│       ├── ignore.py           # .gangguideignore
+│       ├── log.py / lint.py
+│       └── scrape/             # Source scrapers
 ├── .ruler/                     # AI agent instructions (source of truth)
-├── .github/workflows/          # CI + release + PR title validation
-├── justfile                    # Task runner (just dev, just ci, just pipeline)
-├── pytest.ini                  # Test config (strict markers, coverage)
-├── lefthook.yml                # Git hooks (ruff pre-commit, svelte-check pre-push)
+├── justfile                    # Task runner
 ├── flake.nix                   # Nix dev shell
-├── TODO.md                     # Roadmap
-└── docs/                       # Documentation
-    ├── ARCHITECTURE.md         # System design
-    ├── PIPELINE.md             # LLM extraction pipeline
-    ├── SCHEMA.md               # Data schema reference
-    ├── STANDARDS.md            # Data quality rules & lint checks
-    ├── TERMINOLOGY.md          # Glossary
-    ├── USER.md                 # User guide
-    └── CONTRIBUTING.md         # Contributor guide
+├── TODO.md / IDEA.md           # Roadmap + research notes
+└── docs/                       # [INDEX.md](docs/INDEX.md): architecture, pipeline, schema, ...
 ```
 
 ## Commands
@@ -146,38 +138,20 @@ just dev          # start dev server
 just build-data   # rebuild graph.json from org files
 just lint         # lint data integrity
 just check        # type-check frontend
-just deploy       # deploy to production
-just enrich       # LLM enrichment of weak org profiles
-just enrich-rank  # show org weakness × connectivity ranking
-just verify       # post-adjudication web-search fact-checking
-just ruler        # regenerate AI agent configs
+just test-all     # pytest + vitest
+just ci           # full local CI
+just deploy       # production
+just deploy-preview
+just pipeline chicago_history   # extract → adjudicate → merge → apply dry-run
+just verify chicago_history     # optional web-search pass
+just enrich / just enrich-rank
+just clean / just clean-rank
+just ruler        # regenerate AI agent configs from .ruler/
 ```
 
-## Adding a New Org
+## Adding a new org
 
-1. Create `data/orgs/rollin-30s-original-harlem-crips.json`:
-```json
-{
-  "id": "org:rollin-30s-original-harlem-crips",
-  "name": "Rollin 30s Original Harlem Crips",
-  "aliases": ["30s", "OHC"],
-  "type": "street_gang",
-  "lane": "california-crips-gangster",
-  "metro": "Los Angeles",
-  "founded_year": 1970,
-  "founded_year_precision": "circa",
-  "disbanded_year": null,
-  "description": "Factual 1-3 sentence description with founding context.",
-  "colors": ["blue"],
-  "symbols": ["Six-Point Star", "Letter C Hand Sign"],
-  "membership_estimate": 200,
-  "nation_affiliation": "org:crips",
-  "status": "active",
-  "sources": [{"url": "https://...", "title": "Source Name"}]
-}
-```
-2. Add relationships to `data/edges.json` if needed
-3. Run `just build-data`
+Follow [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md). Fields: [docs/SCHEMA.md](docs/SCHEMA.md). Then `just lint` and `just build-data`.
 
 ## Deployment
 
@@ -190,7 +164,7 @@ just deploy-preview   # personal stage
 
 Requires `apps/web/.env` with `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`.
 
-## AI Agent Setup
+## AI agent setup
 
 Instructions managed via [Ruler](https://github.com/intellectronica/ruler). After cloning:
 
@@ -210,6 +184,6 @@ TBD
 
 Created by [@kzndotsh](https://github.com/kzndotsh)
 
-## Project Stats
+## Project stats
 
 ![Project Stats](https://repobeats.axiom.co/api/embed/9da041285ec9bd9c7a612bc4443dba787c3d595b.svg)

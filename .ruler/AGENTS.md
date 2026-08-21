@@ -1,133 +1,75 @@
 # gang.guide
 
-Evidence-backed US criminal organization history data platform. Curated org profiles → LLM extraction pipeline → interactive timeline map.
+US criminal organization history as JSON profiles, an LLM extract pipeline, and a timeline map.
 
-## Core Commands
+Docs: `docs/INDEX.md`, `docs/SCHEMA.md`, `docs/STANDARDS.md`, `docs/PIPELINE.md`. Edit `.ruler/AGENTS.md`, then `just ruler`. Do not edit generated `AGENTS.md` / `CLAUDE.md`.
 
-- `just dev` — start dev server
-- `just build-data` — rebuild graph.json from org files
-- `just lint` — lint data integrity
-- `just test-all` — run all tests (pytest + vitest)
-- `just fmt` — format + lint fix Python
-- `just ci` — run full CI locally
-- `just deploy` — deploy to production
-- `just pipeline chicago_history` — run full LLM pipeline on a source
-- `just enrich` — LLM enrichment of weak org profiles
-- `just enrich-rank` — show org weakness × connectivity ranking
-- `just verify <source>` — post-adjudication web-search fact-checking
-- `just ruler` — regenerate AI agent configs
+## Core commands
 
-## Project Layout
+- `just dev`: start dev server
+- `just build-data`: rebuild graph.json from org files
+- `just lint`: lint data integrity
+- `just test-all`: pytest + vitest
+- `just fmt`: format + lint fix Python
+- `just ci`: full CI locally
+- `just deploy`: production
+- `just pipeline chicago_history`: extract → adjudicate → merge → apply dry-run (**not** verify)
+- `just verify <source>`: optional web-search fact-checking (merge does not read `verified.json`)
+- `just enrich` / `just enrich-rank`: weak org profiles
+- `just clean` / `just clean-rank`: spot-check existing fields
+- `just ruler`: regenerate AI agent configs
+
+## Project layout
 
 ```
-├── build.py              # Generates graph.json + details.json from flat files
-├── data/
-│   ├── orgs/             # One JSON file per org (source of truth)
-│   ├── edges.json        # Edge list (alliances, rivalries, affiliations)
-│   ├── lanes.json        # Lane taxonomy + org anchors + metro defaults
-│   ├── logs/             # Pipeline structured logs (JSONL, gitignored)
-│   └── raw/              # 682MB scraped source material (gitignored)
-├── apps/
-│   ├── web/              # SvelteKit + Konva.js Canvas map viewer
-│   └── pipeline/         # Python LLM extraction pipeline
-│       ├── extract.py    # Multi-temp extraction (sonnet 4.6)
-│       ├── adjudicate.py # Conflict resolution (sonnet 4.6)
-│       ├── verify.py     # Post-adjudication web-search fact-checking (sonnet 4.6)
-│       ├── merge.py      # Consensus filtering
-│       ├── apply.py      # Conservative data upgrade
-│       ├── enrich.py     # LLM enrichment of weak org profiles
-│       ├── log.py        # Centralized structured logging (PipelineLogger)
-│       ├── lint.py       # Data validation
-│       └── tests/        # Unit tests + e2e + fixtures
-├── .ruler/               # AI agent instructions (source of truth)
-├── justfile              # Task runner
-├── pytest.ini            # Test config
-└── flake.nix             # Nix dev shell
+├── build.py
+├── data/orgs/ edges.json lanes.json   # source of truth
+├── data/raw/                          # scraped text (gitignored)
+├── apps/web/                          # SvelteKit + Konva map
+├── apps/pipeline/                     # extract, adjudicate, verify, merge, apply, enrich, clean, lint
+├── .ruler/AGENTS.md                   # this file
+├── docs/                              # human documentation
+└── justfile
 ```
 
 ## Architecture
 
-- `build.py` reads `data/orgs/*.json` + `edges.json` → outputs `apps/web/static/graph.json` (rendering) + `details.json` (lazy-loaded)
-- The web app is a prerendered SvelteKit site deployed to Cloudflare Workers via Alchemy
-- `+layout.ts` exports `prerender = true` — all pages are static HTML at build time
-- No database — flat JSON files are the source of truth
-- URL-driven state: `?org=`, `?year=`, `?lane=` params sync bidirectionally
+- `build.py` → `apps/web/static/graph.json` + `details.json`
+- Prerendered SvelteKit on Cloudflare Workers (Alchemy, `apps/web/alchemy.run.ts`)
+- No database. URL state: `?org=`, `?year=`, `?lane=`
 
 ## Pipeline
 
-`just pipeline <source>` runs: extract → adjudicate → verify → merge → apply (dry-run)
+`just pipeline <source>` = extract → adjudicate → merge → apply (dry-run). Verify, enrich, and clean are separate.
 
-- **Extract**: sonnet 4.6 at temps 0.1/0.3/0.7, structured JSON output with evidence quotes
-- **Adjudicate**: sonnet 4.6 validates evidence, resolves conflicts (always runs)
-- **Verify**: sonnet 4.6 web-search fact-checking of suspicious edges (weak evidence, spin_off claims, hearsay); removes unsupported claims
-- **Merge**: algorithmic consensus (2/3 agreement) or adjudicated result
-- **Apply**: conservative upgrade — only improves weaker fields, lint gates result
-- **Enrich**: standalone LLM enrichment of weak org profiles (`just enrich`); scores orgs by weakness × connectivity, gathers context via ripgrep + agentic web search
-- **Logging**: all steps emit structured JSONL to `data/logs/{step}_{source}_{timestamp}.jsonl` — queryable with `jq`
-- **Thinking disabled** on gateway for faster/cleaner responses
+Extract: sonnet 4.6 at 0.1/0.3/0.7. Adjudicate: sonnet 4.6. Merge copies `adjudicated.json` if present, else 2/3 consensus. Apply only upgrades weaker fields; lint gates. Logs: `data/logs/*.jsonl`. Ignore rules: `.gangguideignore`.
 
 ## Deployment
 
-- **IaC**: Alchemy (`alchemy.run.ts`) using `SvelteKit` resource from `alchemy/cloudflare`
-- **Adapter**: `@sveltejs/adapter-cloudflare`
-- **Domain**: `gang.guide` via Alchemy `domains` prop
-- **Env vars**: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` in `apps/web/.env`
-- **Deploy**: `just deploy` = `vite build && tsx alchemy.run.ts --stage production`
-- **State**: `.alchemy/` is gitignored (contains API tokens)
+Env in `apps/web/.env`: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`. `just deploy` = vite build + Alchemy production. Never commit `.env` or `.alchemy/`.
 
-## Data Conventions
+## Data conventions
 
-- Org files: one per gang, schema includes `id`, `name`, `lane`, `metro`, `description`, `founded_year`, `founded_year_precision`, `colors`, `aliases`, `sources`, `nation_affiliation`, `status`, `disbanded_year`
-- Edge schema: `source`, `target`, `type` (required) + optional `sources`, `start_year`, `end_year`
-- `founded_year_precision`: `exact`, `circa`, `decade`, `estimate`
-- `sources` array: objects with `url` (https) and `title`
-- `lane` must match an ID in `data/lanes.json`
-- All descriptions must be factual, no scrape junk, no slurs, no HTML entities
-- Node IDs use format `org:slug-name` — slug is derived from org name: lowercase, hyphens, no special chars, no double hyphens. Filename must match slug: `data/orgs/{slug}.json`
+- Org files: see `docs/SCHEMA.md`. Lint required: `id`, `name`, `description`, `sources`. Precision: `exact` | `circa` | `decade` | `estimate`. Status: `active` | `inactive` | `unknown`.
+- Edges: `source`, `target`, `type` required. Types in `edges.json`: alliance, rivalry, member_of, spin_off, parent. Nation edges come from `nation_affiliation` at build.
+- `spin_off`: source is origin, target split off. `member_of`: source belongs to target (not a gang nation). Use `nation_affiliation` for Crips, Bloods, and similar.
+- IDs are `org:slug` (lowercase, hyphens; filename equals slug). Never invent orgs. After org edits, run `just lint` and `just build-data`.
 
-## Code Style
+## Code style
 
-**Python** (pipeline):
-- Ruff enforced (config in `apps/pipeline/pyproject.toml`)
-- 4-space indent, 120 char line limit
-- Type hints on function signatures
-- Docstrings on modules and public functions
-- No bare `except:` — always specify exception type
-
-**TypeScript/Svelte** (web):
-- Svelte 5 runes: `$state`, `$derived`, `$effect`, `$props`
-- Tailwind for styling, shadcn-svelte for UI components
-- No `any` — use proper types or `unknown`
-- Prefer `const` over `let`
-
-**Git workflow**:
-- Conventional commits: `type(scope): description` (lowercase, imperative)
-- Never push directly to main without CI passing
-- Run `just ci` before pushing if unsure
-- Keep commits atomic — one logical change per commit
+Python: Ruff, 4-space, 120 cols, typed signatures, no bare `except`. TS/Svelte: runes (`$state`, `$derived`, `$effect`, `$props`), Tailwind, shadcn-svelte, no `any`. Commits: `type(scope): description`. Scopes: `web`, `data`, `pipeline`, `infra`, `deps`, `ci`, `release`.
 
 ## Constraints
 
-- Never commit `data/raw/` (682MB, gitignored)
-- Never fabricate gang data — every entry must be a real organization
-- Descriptions should be factual 1-3 sentences, not scraped comments
-- When editing org files, always run `just build-data` after to regenerate outputs
-- The web app uses Svelte 5 runes mode (`$state`, `$derived`, `$effect`, `$props`)
-- `.env` is gitignored — never commit secrets
-- Agent config files (`AGENTS.md`, `CLAUDE.md`, `.kiro/steering/`) are generated by Ruler from `.ruler/AGENTS.md` — edit the source, not the outputs
-- Conventional commits enforced (lefthook + commitlint). Scopes: `web`, `data`, `pipeline`, `infra`, `deps`, `ci`, `release`
+- Never commit `data/raw/`
+- Nested `AGENTS.md` files are local agent context: keep them thin; do not duplicate schema/pipeline here
+- Conventional commits via lefthook + commitlint
 
 ## Testing
 
-- `pytest` — unit tests (no API calls, runs in CI)
-- `pytest -m slow` — e2e tests (needs API key)
-- `cd apps/web && npx vitest run` — web tests
-- Coverage tracked via codecov, badge in README
-- Golden fixtures in `apps/pipeline/tests/fixtures/` for regression detection
+- `pytest`: unit (CI)
+- `pytest -m slow`: e2e (API key)
+- `cd apps/web && npx vitest run`
+- Fixtures: `apps/pipeline/tests/fixtures/`
 
-## Current Stats
-
-Stats are computed at build time and embedded in `graph.json` meta. Run `just build-data` to see current counts.
-
-- Edge types: nation, rivalry, alliance, member_of, spin-off, parent
-- Top sources: Wikipedia, StreetGangs, UnitedGangs, Chicago Gang History, DOJ, StopHoustonGangs, ADL, FBI NGTA, Gang Enforcement, 2015 National Gang Report (NGIC/NAGIA)
+Stats: `just build-data` / `graph.json` meta. Do not hardcode org/edge counts in this file.

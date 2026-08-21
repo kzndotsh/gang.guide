@@ -1,70 +1,65 @@
 # Terminology
 
-## Data Terms
+## Data
 
-| Term | Definition |
-|------|-----------|
-| **Org** | A criminal organization (gang, MC, crime family, prison gang, etc.) |
-| **Edge** | A relationship between two orgs (alliance, rivalry, etc.) |
-| **Lane** | A vertical grouping on the map (e.g. "Chicago Folk", "California Crips") |
-| **Nation** | An umbrella alliance (Crips, Bloods, Folk Nation, People Nation) |
-| **Set** | A local chapter of a larger gang (e.g. "Rollin 60s" is a Crip set) |
-| **Metro** | The city/area where an org primarily operates |
-| **Stub** | A minimal org file created by `apply.py --create-orgs`, needs enrichment |
+| Term | Meaning |
+|------|---------|
+| **Org** | A criminal organization (gang, MC, crime family, prison gang, ...) |
+| **Edge** | A relationship between two orgs |
+| **Lane** | A vertical band on the map (e.g. Chicago Folk) |
+| **Nation** | Umbrella identity (Crips, Bloods, Folk Nation, People Nation) |
+| **Set** | Local chapter of a larger gang |
+| **Metro** | Primary city/area |
+| **Stub** | Minimal org file from `apply.py --create-orgs`; needs enrichment |
 
-## Edge Types
+## Edge types
+
+Canonical direction: [SCHEMA.md](SCHEMA.md#edge-types).
 
 | Type | Meaning |
 |------|---------|
-| `alliance` | Two orgs that cooperate/support each other |
-| `rivalry` | Two orgs in active conflict |
-| `member_of` | Org belongs to a larger coalition (not a nation) |
-| `nation` | Org is affiliated with a nation (auto-generated from `nation_affiliation` field at build time) |
-| `spin_off` | Org was formed from another org |
-| `parent` | Org is the parent/umbrella of another |
+| `alliance` | Cooperation (undirected) |
+| `rivalry` | Conflict (undirected) |
+| `member_of` | Source belongs to target (not a gang-nation field) |
+| `nation` | From `nation_affiliation` at build time: not stored in `edges.json` |
+| `spin_off` | Source spawned target |
+| `parent` | Source is parent/umbrella of target |
 
-## Org Types
+## Org types
 
 | Type | Examples |
-|------|---------|
-| `street_gang` | Crips, Bloods, Latin Kings, MS-13 |
+|------|----------|
+| `street_gang` | Crips sets, Latin Kings, MS-13 |
 | `prison_gang` | Aryan Brotherhood, Mexican Mafia, BGF |
 | `motorcycle_club` | Hells Angels, Bandidos, Pagans |
 | `organized_crime` | Gambino family, Sinaloa Cartel |
-| `white_supremacist` | Volksfront, WAR, Aryan Nations |
+| `white_supremacist` | Volksfront, Aryan Nations |
 | `alliance` | Folk Nation, People Nation |
-| `nation` | Crips, Bloods (umbrella identities) |
+| `nation` | Crips, Bloods as umbrella identities |
 
-## Precision Values
+## Precision
 
 | Value | Meaning |
 |-------|---------|
-| `exact` | Year is confirmed by primary source |
-| `circa` | Approximately that year (±2-3 years) |
-| `decade` | Known to be in that decade (e.g. "1970s") |
-| `estimate` | Best guess, needs research |
+| `exact` | Year confirmed by a strong source |
+| `circa` | About that year (±2-3) |
+| `decade` | That decade; year should be the decade start (1970 = 1970s) |
+| `estimate` | Best guess |
 
-## Pipeline Terms
+## Pipeline
 
-| Term | Definition |
-|------|-----------|
-| **Extract** | Send source text to LLM, get structured JSON back |
-| **Adjudicate** | Smarter LLM validates evidence quotes from extraction |
-| **Merge** | Combine multiple runs into consensus (2/3 agreement) |
-| **Apply** | Write consensus data to org files + edges |
-| **Consensus** | Data point that appeared in 2+ extraction runs |
-| **Evidence** | Verbatim quote from source proving a relationship |
-| **Temperature** | LLM randomness parameter (0.1 = conservative, 0.7 = creative) |
-| **Scraper** | Script that downloads and cleans raw HTML into text files |
-| **Slug** | Kebab-case identifier derived from org name (used as filename and in ID) |
-| **Display year** | The year shown on the canvas; uses lane-aware fallback if `founded_year` is null |
+| Term | Meaning |
+|------|---------|
+| **Extract** | LLM → structured JSON from source text (3 temperatures) |
+| **Adjudicate** | LLM checks evidence quotes from the three runs |
+| **Verify** | Optional web-search check of suspicious edges |
+| **Merge** | `adjudicated.json` if present, else 2/3 consensus |
+| **Apply** | Write consensus into org files and `edges.json` |
+| **Enrich** | Fill weak profiles (standalone) |
+| **Clean** | Spot-check existing fields (standalone) |
+| **Evidence** | Verbatim quote supporting an edge |
+| **Slug** | Kebab-case id/filename from the org name |
+| **Display year** | Canvas X; lane fallback if `founded_year` is null |
+| **Ignore file** | `.gangguideignore`: skip/suppress rules |
 
-## Source Keys
-
-| Key | Scraper | Site |
-|-----|---------|------|
-| `chicago_history` | `cgh.py` | chicagoganghistory.com |
-| `detroit_dsg` | `dsg.py` | detroitstreetgangs.com |
-| `ngcrc` | `ngcrc.py` | ngcrc.com |
-| `nyc_historical` | `nyc.py` | newyorkcitygangs.com |
-| `stonegreasers` | `stonegreasers.py` | stonegreasers.com |
+Source keys and scrapers: [PIPELINE.md](PIPELINE.md#sources).

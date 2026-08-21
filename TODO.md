@@ -1,54 +1,59 @@
-# TODO.md — gang.guide roadmap
+# TODO.md: gang.guide roadmap
 
 ## Pending
 
 ### Frontend
 - [ ] Timeline uses inferred dates (org founded/disbanded) as fallback when edge has no explicit period
-- [ ] Compare mode — select two orgs, highlight shared connections
-- [ ] Timeline scrubber — animate through decades using edge `period` data
-- [ ] Identity-colored node dots (use org's first color as circle fill)
-- [ ] Color swatches in inspector panel
-- [ ] Edge labels on hover (show relationship type + period)
-- [ ] Sources tab: group by domain (Wikipedia, StreetGangs, DOJ, etc.) for scannability
-- [ ] Static org pages at `/org/crips` rendered at build time
-- [ ] OpenGraph meta tags per org
-- [ ] Sitemap generation in build.py
+- [ ] Compare mode: select two orgs, highlight shared connections
+- [ ] Timeline scrubber: animate through decades using edge `period` data
+- [ ] Identity-colored node dots (use org's first color as circle fill: today fill is nation/lane)
+- [ ] Edge labels on hover (relationship type + period): node tooltip exists; edges have none
+- [ ] Inspector Sources tab: group by domain (Wikipedia, StreetGangs, DOJ, ...): still a flat list
+- [ ] Static org pages at `/org/crips` at build time (needed for per-org sitemap + OG)
+- [ ] OpenGraph meta tags per org (site-wide `og:image` only)
+- [ ] Per-org sitemap URLs (homepage sitemap exists)
 
 ### Data
-- [ ] Enrich thin descriptions (<100 chars) via LLM for stub orgs (~200 remaining)
-- [ ] `build.py` changelog: emit diff on each run (new orgs, changed fields)
-- [ ] Lint: detect edges between orgs with non-overlapping time periods
-- [ ] Merge 4 duplicate org pairs (gangster-crips-47/96/97/98)
-- [ ] Resolve ~30 contradictory edges (alliance + rivalry) with temporal data
-- [ ] Audit 101 cross-metro rivalry edges (from lint check_cross_metro)
-- [ ] Backfill founded_year on remaining 29 historical-east stubs
+- [ ] Enrich remaining thin descriptions (<100 chars): **38** orgs left (was ~200)
+- [ ] Changelog: named new-org / field diffs (count deltas already in `changelog.json`)
+- [ ] Lint: edges between orgs with non-overlapping active years
+- [ ] Audit **237** cross-metro rivalry edges (`check_cross_metro`; was 101)
+- [ ] Backfill `founded_year` on **4** historical-east orgs: seropians, jokers, patch, rockaway-and-fulton-gang
 
 ### Pipeline
-- [ ] Run extraction on remaining sources (streetgangs, prisongang, SPLC)
-- [ ] Wire up Wikipedia scraper (MediaWiki API, category traversal)
-- [ ] Wire up CourtListener scraper (gang-enhancement cases)
-- [ ] Wire up TxDPS Gang Threat Assessment PDFs (5 annual reports, Texas orgs)
-- [ ] Wire up NDIC archive additional publications (AG Suburban Gangs 2008, etc.)
-- [x] Run extraction on ADL (WS prison gangs, hate-symbol pages)
-- [x] Run extraction on FBI NGTA (2009/2011/2015 PDFs, appendix profiles split)
-- [x] Run extraction on StopHoustonGangs
-- [ ] Add `--dry-run` cost estimate to extract CLI
-- [ ] Curated overrides file (blocklist/forcelist for known bad/good edges)
-- [ ] Aggregate `unresolved_names` from adjudication into review queue
-- [ ] Add async/concurrent extraction (run 3 temps in parallel for 3x speedup)
-- [ ] Metro-aware resolve() — prefer same-city match for ambiguous names
-- [ ] Enrichment pass: backfill thin descriptions on stub orgs via LLM
+- [ ] Run extraction on remaining raw piles: `streetgangs`, `prisongang`, SPLC, InSight Crime, Wikipedia
+- [ ] CourtListener scraper (gang-enhancement / RICO cases)
+- [ ] TxDPS Gang Threat Assessment PDFs
+- [ ] NDIC archive extras (AG Suburban Gangs 2008, etc.)
+- [ ] Aggregate `unresolved_names` from adjudication into a review queue
+- [ ] Concurrent extract (3 temps in parallel)
+- [ ] Metro-aware `resolve()`: prefer same-city match for ambiguous names
 
 ### Infrastructure
-- [ ] `LICENSE` — MIT for code, CC-BY-4.0 for data
+- [ ] `LICENSE`: MIT for code, CC-BY-4.0 for data
 - [ ] Issue templates: "Add new org", "Fix org data", "Report bad edge"
-- [ ] PR template with checklist (lint, build, map verification)
-- [ ] Protect main branch when collaborators join
-- [ ] Enable Dependabot + secret scanning (toggle when public)
+- [ ] PR template (lint, build, map check)
+- [ ] Protect `main` (GitHub currently reports **no** branch protection)
+- [ ] Dependabot + secret scanning
 
 ---
 
 ## Done
+- [x] Inspector color swatches (Identity tab)
+- [x] Homepage sitemap (`src/routes/sitemap.xml/+server.ts`)
+- [x] `build.py` changelog.json with node/edge/source count deltas
+- [x] Alliance+rivalry pairs all dated (63 remaining are temporal transitions, lint info not errors)
+- [x] Duplicate 97/98 Gangster Crips pairs renamed to `97-gangster-crips` / `98-gangster-crips` (47 and 96 are single files, not pairs)
+- [x] Wikipedia scraper (`wikipedia.py`: MediaWiki API, `--categories`, `--discover`)
+- [x] Extract `--dry-run` page count + rough cost estimate
+- [x] `verify.py`: optional post-adjudicate web-search (not in `just pipeline`)
+- [x] `enrich.py` + many LLM batches (thin-desc work ongoing; 38 left)
+- [x] `clean.py`: 20 verification batches + ignore cleanup
+- [x] `.gangguideignore` (apply/enrich/verify/lint/clean skips) + ID validation
+- [x] Lint: `check_metro_lane_consistency`, slug format, dated alliance↔rivalry as info
+- [x] Normalize 84 org IDs/filenames to match names; double-hyphen slug rule
+- [x] Mobile layout + touch; pan/drag lag fix; batched all-links edge draw
+- [x] Run extraction on ADL, FBI NGTA, StopHoustonGangs
 - [x] Run full pipeline on FBI NGTA (2009/2011/2015 PDFs, +13 membership estimates, +8 edges)
 - [x] Run full pipeline on ADL (2016 PDF + 44 hate-symbol pages + 11 profiles, +56 orgs, +22 edges)
 - [x] Run full pipeline on StopHoustonGangs (30 profiles, +7 org symbol enrichments, Houston/Texas gangs)
@@ -80,7 +85,7 @@
 - [x] Prompt v2: extraction + adjudication rewritten with Anthropic best practices
 - [x] Lint: check_cross_metro, check_page_title_orgs, check_stub_quality, check_nation_consistency, check_spinoff_direction
 - [x] Pipeline guards: reject page titles, LA identifier detection, slug collision check, nation contradiction gate
-- [x] Evidence UI: toggle button with "quote — source" format, spacing fix
+- [x] Evidence UI: toggle button with "quote: source" format, spacing fix
 - [x] Inspector tabs: consistent (#) count format
 - [x] Changelog modal: redesigned with inline diffs
 - [x] Persistent nodes architecture (never destroyed on hover/select)
@@ -110,7 +115,7 @@
 - [x] Sources without both url and title
 - [x] `disbanded_year` before `founded_year`
 - [x] Descriptions containing HTML entities/scrape junk
-- [x] Aliases that are absurdly long (>50 chars)
+- [x] Aliases that are absurdly long (>60 chars; lint threshold)
 - [x] Colors that aren't real colors
 - [x] Founded years impossible for org type (Crip before 1969, Piru before 1972)
 - [x] Contradictory edges (alliance AND rivalry between same pair)
@@ -140,11 +145,11 @@
 - [x] Merged 12 duplicate orgs
 - [x] Deduplicate source URLs across orgs (normalize trailing slashes, http→https, www prefix)
 - [x] Flag sources with slightly different titles pointing to same URL
-- [x] Remove dead domains (checked — none found, all sources are legitimate) — replace with archive.org where possible
+- [x] Remove dead domains (checked: none found, all sources are legitimate): replace with archive.org where possible
 - [x] Write formal JSON Schema for org files
 - [x] Idempotent: skip existing pages unless `--force`
 - [x] Resumable: resume from existing run_*.json files on crash
-- [x] No scraper depends on another — each source is independent
+- [x] No scraper depends on another: each source is independent
 - [x] Already have 1,436 pages in `data/raw/streetgangs/` from prior bulk scrape
 - [x] URL-driven state: `?lane=chicago&year=1970-1990&q=disciples`
 - [x] Deploy via [Alchemy](https://github.com/alchemy-run/alchemy) (TypeScript IaC) to Cloudflare Workers
@@ -157,38 +162,38 @@
 - [x] First deploy to production (live at gang.guide)
 - [x] Add `export const prerender = true` to `src/routes/+layout.ts` (static asset serving)
 - [x] `prerender.handleHttpError: 'warn'` for missing favicon during build
-- [x] `.nvmrc` — pin Node version (22)
-- [x] `.editorconfig` — consistent formatting across editors
-- [x] `.gitattributes` — line ending normalization, linguist hints
-- [x] `.vscode/settings.json` — Svelte, Tailwind, Ruff, performance exclusions
-- [x] `.vscode/extensions.json` — recommended extensions
-- [x] `justfile` — task runner (`just dev`, `just deploy`, `just lint`, etc.)
-- [x] Root `package.json` — commitlint, lefthook, ruler as global devDeps
-- [x] Proper `.gitignore` — `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
-- [x] `.env.example` — document required env vars for deployment
+- [x] `.nvmrc`: pin Node version (22)
+- [x] `.editorconfig`: consistent formatting across editors
+- [x] `.gitattributes`: line ending normalization, linguist hints
+- [x] `.vscode/settings.json`: Svelte, Tailwind, Ruff, performance exclusions
+- [x] `.vscode/extensions.json`: recommended extensions
+- [x] `justfile`: task runner (`just dev`, `just deploy`, `just lint`, etc.)
+- [x] Root `package.json`: commitlint, lefthook, ruler as global devDeps
+- [x] Proper `.gitignore`: `.alchemy/`, `.wrangler/`, `.cursor/`, `.env`, `data/raw/`, `apps/web/build/`
+- [x] `.env.example`: document required env vars for deployment
 - [x] Social media preview image (screenshot of the map)
 - [x] Repository description + topics on GitHub
-- [x] Commitlint (`commitlint.config.js`) — enforces conventional commits
-- [x] Lefthook (`lefthook.yml`) — runs commitlint on commit-msg hook
+- [x] Commitlint (`commitlint.config.js`): enforces conventional commits
+- [x] Lefthook (`lefthook.yml`): runs commitlint on commit-msg hook
 - [x] Scopes: `web`, `data`, `pipeline`, `infra`, `deps`, `ci`, `release`
-- [x] Ruler (`.ruler/`) — single source of truth for AI agent instructions
+- [x] Ruler (`.ruler/`): single source of truth for AI agent instructions
 - [x] Generated agent configs (`AGENTS.md`, `CLAUDE.md`, `.kiro/steering/`) are gitignored
 - [x] CI workflow (`.github/workflows/ci.yml`) on push/PR to main:
 - [x] Release workflow (`.github/workflows/release.yml`) on `v*` tags:
 - [x] Secrets in GitHub: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`
 - [x] `ALCHEMY_CI_STATE_STORE_CHECK=false` for CI deploys (no remote state store)
 - [x] v1.0.0 tagged and released
-- [x] Git IS the backup — force-push protection on main branch — force-push protection on main branch
-- [x] `data/raw/` stays gitignored (682MB) — backed up separately or re-scrapeable — backed up separately or re-scrapeable
+- [x] Git is the backup (`data/raw/` gitignored; re-scrapeable)
+- [x] `data/raw/` stays gitignored (~682MB)
 - [x] CONTRIBUTING.md with org file format, quality standards, source requirements
 
 ---
 
 ## Discarded
-- JSONL for edges — JSON array works fine at 3,152 edges, JSONL adds complexity for no benefit at this scale
-- Dynamic lane assignment based on filter state — lanes are a fixed taxonomy, not user-configurable; URL params handle filtering
-- Evaluate pixi.js / WebGL — Konva handles 1,201 nodes smoothly, no perf issues to solve yet
-- Virtual rendering (only draw nodes in viewport) — all nodes render fine without virtualization at current scale
-- Web Worker for layout computation — layout is instant (<50ms), no jank to offload
+- JSONL for edges: JSON array works fine at 3,152 edges, JSONL adds complexity for no benefit at this scale
+- Dynamic lane assignment based on filter state: lanes are a fixed taxonomy, not user-configurable; URL params handle filtering
+- Evaluate pixi.js / WebGL: Konva handles 1,201 nodes smoothly, no perf issues to solve yet
+- Virtual rendering (only draw nodes in viewport): all nodes render fine without virtualization at current scale
+- Web Worker for layout computation: layout is instant (<50ms), no jank to offload
 
 ---

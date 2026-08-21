@@ -1,295 +1,203 @@
 # Pipeline
 
-## Overview
-
-The pipeline extracts structured data from raw HTML pages using LLMs, then merges it into the dataset.
+The pipeline extracts structured data from raw source text with LLMs, then merges it into `data/orgs/` and `data/edges.json`.
 
 ```
-data/raw/{source}/*.txt → extract → adjudicate → verify → merge → apply → data/orgs/ + edges.json
+data/raw/{source}/  →  extract  →  adjudicate  →  merge  →  apply  →  orgs + edges.json
+                         (optional: verify between adjudicate and merge)
 ```
 
-Run the full pipeline: `just pipeline chicago_history`
+```bash
+just pipeline chicago_history
+```
 
-## Sources Processed
+That recipe is: **extract → adjudicate → merge → apply (dry-run)**. It does **not** run `verify`. Review the dry-run, then `just apply chicago_history`. For web-search fact-checking, run `just verify chicago_history` after adjudicate (and re-merge / re-apply if you want those verdicts in the dataset).
 
-| Source Key | Scraper | Site |
-|-----------|---------|------|
+`merge.py` currently prefers `adjudicated.json` over algorithmic 2/3 consensus. It does **not** read `verified.json`. Treat verify as a review step unless you copy its output into adjudicated/consensus yourself.
+
+## Sources
+
+| Source key | Scraper | Site |
+|------------|---------|------|
 | `chicago_history` | `cgh.py` | Chicago Gang History |
 | `detroit_dsg` | `dsg.py` | Detroit Street Gangs |
 | `ngcrc` | `ngcrc.py` | National Gang Crime Research Center |
 | `nyc_historical` | `nyc.py` | New York City Gangs |
 | `stonegreasers` | `stonegreasers.py` | StoneGreasers |
 | `unitedgangs` | `unitedgangs.py` | UnitedGangs.com |
-| `stophoustongangs` | `stophoustongangs.py` | StopHoustonGangs.org (via FlareSolverr) |
-| `adl` | `adl.py` | ADL — WS prison gang PDFs + hate-symbol pages (via Wayback Machine) |
-| `fbi_ngta` | `fbi_ngta.py` | FBI NGTA PDFs 2009/2011/2015 (via pypdf) |
-| `insightcrime` | `insightcrime.py` | InSight Crime — Latin American cartel profiles |
-| `splc` | `splc.py` | SPLC Extremist Files (via FlareSolverr) |
+| `stophoustongangs` | `stophoustongangs.py` | StopHoustonGangs.org (FlareSolverr) |
+| `adl` | `adl.py` | ADL WS prison gang PDFs + hate-symbol pages (Wayback) |
+| `fbi_ngta` | `fbi_ngta.py` | FBI NGTA PDFs 2009/2011/2015 (`pypdf`) |
+| `insightcrime` | `insightcrime.py` | InSight Crime |
+| `splc` | `splc.py` | SPLC Extremist Files (FlareSolverr) |
 
-Additional scraper: `wikipedia.py` (general-purpose Wikipedia scraping).
+Also: `wikipedia.py` (general Wikipedia). Shared helpers in `scrape/common.py`.
 
-**Scraper dependencies:**
-- Sites behind Cloudflare require FlareSolverr running locally (`docker run -p 8191:8191 ghcr.io/flaresolverr/flaresolverr`)
-- PDF scraping requires `pypdf` (included in flake.nix dev shell)
+Scrapers write `data/raw/{source}/{slug}/content.txt` + `url.txt`. Extract also accepts a flat `data/raw/{source}/{slug}.txt`.
+
+Cloudflare-protected sites need FlareSolverr (`docker run -p 8191:8191 ghcr.io/flaresolverr/flaresolverr`). PDFs need `pypdf` (flake.nix / pipeline deps). LLM steps need `KIRO_GATEWAY_URL` and `KIRO_GATEWAY_API_KEY` (see `.env.example`).
 
 ## Stages
 
 ### 1. Extract (`apps/pipeline/extract.py`)
 
-Sends cleaned page text to **sonnet 4.6** at 3 temperatures (0.1, 0.3, 0.7). Uses v2 prompt.
+Sends cleaned page text to **claude-sonnet-4.6** at temperatures 0.1, 0.3, 0.7 (v2 prompt). Thinking disabled on the gateway.
 
-- Input: `data/raw/{source}/{slug}.txt`
-- Output: `data/extracted/{source}/{slug}/run_1.json`, `run_2.json`, `run_3.json`
-- Skips pages already extracted (checks `meta.json` prompt hash)
-- Resumes from existing runs on crash
-- Thinking disabled on gateway for cleaner responses
+- Input: `data/raw/{source}/...`
+- Output: `data/extracted/{source}/{slug}/run_1.json` ... `run_3.json`
+- Skips pages already extracted (prompt hash in `meta.json`) unless `--force`
+- Resumes existing runs on crash
 
-Each run produces:
-```json
-{
-  "subject_org": "Ambrose",
-  "org_type": "street_gang",
-  "org_lane": "chicago-folk",
-  "founded_year": 1958,
-  "colors": ["black", "light blue"],
-  "symbols": ["spear", "knight's helmet"],
-  "edges": [{"target": "...", "type": "rivalry", "evidence": "...", "period": "1986-present"}],
-  "orgs_mentioned": ["Folk Nation", "Rampants", ...]
-}
-```
+Each run includes `subject_org`, `org_type`, `org_lane`, `founded_year`, `colors`, `symbols`, `edges` (with verbatim `evidence` and optional `period`), `orgs_mentioned`.
 
 ### 2. Adjudicate (`apps/pipeline/adjudicate.py`)
 
-Sends all 3 runs to **sonnet 4.6** which validates each edge's evidence quote. Uses v2 prompt.
+Sends all three runs to **claude-sonnet-4.6** (v2 prompt). Validates that evidence quotes prove the claimed relationship, resolves years/names, drops weak or hallucinated edges, assigns `confidence` `high` or `medium`.
 
-- Checks: does the quote actually prove the claimed relationship type?
-- Resolves: conflicting years, ambiguous names
-- Filters: weak/vague evidence, hallucinated connections
-- Assigns: `confidence: "high"` or `"medium"` per edge
-- Output: `data/extracted/{source}/{slug}/adjudicated.json`
+Output: `data/extracted/{source}/{slug}/adjudicated.json`
 
-### 3. Verify (`apps/pipeline/verify.py`)
+### 3. Verify (`apps/pipeline/verify.py`): optional
 
-Post-adjudication web-search fact-checking using **sonnet 4.6**.
+Web-search fact-checking with **claude-sonnet-4.6** (DuckDuckGo via tool use). Flags weak evidence, `spin_off` claims, mafia membership, hearsay. Verdicts: `supported`, `unsupported`, `uncertain`. Can drop high-confidence unsupported edges.
 
-- Runs between adjudicate and merge — filters suspicious edges before consensus
-- Identifies suspicious edges: weak evidence, spin_off claims, mafia membership, hearsay language
-- Uses an agentic tool-use loop with `web_search` (DuckDuckGo) to verify claims
-- Produces a verdict for each edge: `supported`, `unsupported`, or `uncertain`
-- Removes high-confidence unsupported edges from the adjudicated result
-- Output: `data/extracted/{source}/{slug}/verified.json`
+Output: `data/extracted/{source}/{slug}/verified.json`
+
+Not part of `just pipeline`. Merge does not consume this file today.
 
 ### 4. Merge (`apps/pipeline/merge.py`)
 
-Produces `consensus.json` — the final record that apply reads.
+Writes `consensus.json` for apply.
 
-- If `adjudicated.json` exists: uses it directly (opus already filtered)
-- If not: algorithmic consensus (keep data appearing in 2/3 runs)
-- Output: `data/extracted/{source}/{slug}/consensus.json`
+- If `adjudicated.json` exists: copy it
+- Else: keep fields/edges that appear in at least 2 of 3 extract runs
 
 ### 5. Apply (`apps/pipeline/apply.py`)
 
-Conservative upgrade of the actual data files.
+Conservative upgrade of live data files.
 
-- Only upgrades weaker fields (empty colors, thin descriptions, imprecise years)
-- Adds new edges that don't already exist
-- `--create-orgs` flag creates stub org files for newly-mentioned orgs
-  - Stub type/lane inferred by LLM from source text (`org_type` + `org_lane` extraction fields)
-  - Falls back to `street_gang` / `null` if LLM doesn't classify
-- Guards against page titles (rejects names like "History of..." or "Groups in...")
-- LA org metro inheritance (Piru, Compton, etc. → "Los Angeles")
-- Slug collision check prevents overwriting existing files
-- Skips contradictory edges unless temporal data disambiguates them
-- Skips self-referencing edges
-- Converts `period` strings ("1977-1992") to `start_year`/`end_year` integers
-- Runs lint as final gate — rejects all changes if lint fails
+- Only fills weaker fields (empty colors, thin descriptions, imprecise years)
+- Adds edges that do not already exist
+- `--create-orgs` writes stubs; type/lane from extract `org_type` / `org_lane`, else `street_gang` / unset
+- Rejects page-title names, self-edges, slug collisions, contradictions without dates
+- LA metro inheritance for Piru, Compton, etc.
+- Converts `period` strings (`1977-1992`) to `start_year` / `end_year`
+- Lint is the final gate: all changes rejected if lint errors increase
 
-## CLI Reference
+## CLI
 
 ```bash
-just extract chicago_history          # extract from raw pages
-just adjudicate chicago_history       # resolve conflicts (opus)
-just verify chicago_history           # web-search fact-checking (sonnet 4.6)
-just merge chicago_history            # consensus filtering
-just apply-preview chicago_history    # preview changes (dry run)
-just apply chicago_history            # commit changes
-just pipeline chicago_history         # all of the above
-just enrich                           # LLM enrichment of weak org profiles
-just enrich-rank                      # show org weakness × connectivity ranking
+just extract chicago_history
+just adjudicate chicago_history
+just verify chicago_history          # optional web check
+just merge chicago_history
+just apply-preview chicago_history   # dry-run
+just apply chicago_history
+just pipeline chicago_history        # extract → adjudicate → merge → apply dry-run
+
+just enrich                          # weak org profiles (not in just pipeline)
+just enrich-rank
+just clean                           # spot-check existing fields
+just clean-rank
+just ignore-show
+just ignore-validate
+just index                           # page → org index from raw
 ```
 
 ## Models
 
-| Stage | Model | Temperature | Purpose |
-|-------|-------|-------------|---------|
-| Extract | claude-sonnet-4.6 | 0.1, 0.3, 0.7 | Structured data extraction (v2 prompt) |
-| Adjudicate | claude-sonnet-4.6 | 0.1 | Evidence validation (v2 prompt) |
-| Verify | claude-sonnet-4.6 | 0.1 | Web-search fact-checking of suspicious edges |
-| Enrich | configurable (--model) | — | Agentic enrichment of weak org profiles |
-
-Override via env: `EXTRACT_MODEL`, `ADJUDICATE_MODEL`
+| Stage | Default model | Temperature | Env override |
+|-------|---------------|-------------|--------------|
+| Extract | claude-sonnet-4.6 | 0.1, 0.3, 0.7 | `EXTRACT_MODEL` |
+| Adjudicate | claude-sonnet-4.6 | 0.1 | `ADJUDICATE_MODEL` |
+| Verify | claude-sonnet-4.6 | 0.1 |: |
+| Enrich / clean | configurable `--model` |: |: |
 
 ## Idempotency
 
-- Extract: skips pages with existing runs (unless `--force`)
-- Adjudicate: skips pages with existing `adjudicated.json` (unless `--force`)
-- Verify: skips pages with existing `verified.json` (unless `--force`)
-- Merge: skips pages with existing `consensus.json` (unless `--force`)
-- Apply: skips fields already strong, edges already existing
+Extract, adjudicate, verify, and merge skip work that already exists unless `--force`. Apply skips strong fields and existing edges. Safe to re-run.
 
-Safe to re-run at any time.
+## Quality gates
 
-## Quality Gates
+1. Multi-temperature extract: one-off hallucinations usually fail 2/3
+2. Adjudication: quote must prove the relationship (rejects co-mentions)
+3. Optional web verify: unsupported suspicious edges can be removed
+4. Apply contradiction / self-ref / page-title / slug-collision guards
+5. Lint gate on apply
 
-1. **Multi-temperature consensus** — hallucinations don't repeat across 3 temps
-2. **Opus adjudication** — validates evidence quotes prove claimed relationships
-3. **Web-search verification** — sonnet 4.6 fact-checks suspicious edges via DuckDuckGo, removes unsupported claims
-4. **Contradiction check** — won't add alliance where rivalry exists (without dates)
-5. **Self-reference check** — won't create org→itself edges
-6. **Page title guard** — rejects generic/navigational names from becoming orgs
-7. **Slug collision check** — prevents overwriting existing org files
-8. **Lint gate** — rejects apply if lint errors increase
+## Logging
 
-## .gangguideignore
-
-Pipeline-wide ignore rules live in `.gangguideignore` at the project root. Parsed by `apps/pipeline/ignore.py`.
-
-### Sections
-
-| Section | Tool | Purpose |
-|---------|------|---------|
-| `[enrich:skip]` | `enrich.py` | Org IDs to skip entirely — confirmed dead ends with no public data |
-| `[enrich:skip-field]` | `enrich.py` | Suppress one specific issue for one org (`org-id  field`) |
-| `[apply:skip-org]` | `apply.py` | Org IDs the pipeline may never overwrite |
-| `[apply:skip-edge]` | `apply.py` | Edge patterns the pipeline may never add (`source target type`, `*` = wildcard) |
-| `[verify:skip]` | `verify.py` | Edge patterns to skip web-checking (treat as supported) |
-| `[lint:suppress]` | `lint.py` | Suppress a lint check for a specific org (`org-id check-name`, `*` = global) |
-| `[clean:skip]` | `clean.py` | Org IDs to skip in clean.py — verified-clean orgs or tool-limit dead-ends |
-
-### Example
-
-```
-[enrich:skip]
-org:denver-lane-bloods    # no public membership data found after exhaustive search
-
-[enrich:skip-field]
-org:spanish-cobras  no_membership   # umbrella count not public
-
-[apply:skip-edge]
-*  *  spin_off            # block all spin_off edges from pipeline (review manually)
-
-[verify:skip]
-org:crips  *  nation      # well-documented — skip web-checking nation edges
-
-[lint:suppress]
-org:bloods  cross_metro   # national org, cross-metro edges are intentional
-```
-
-### Field names (`enrich:skip-field`)
-`no_membership`, `imprecise_year`, `no_year`, `no_symbols`, `no_aliases`, `no_colors`, `stub_desc`, `short_desc`, `single_source`
-
-### Lint check names (`lint:suppress`)
-`cross_metro`, `page_title_org`, `stub_quality`, `nation_consistency`, `spinoff_direction`, `isolated`, `temporal_logic`, `fuzzy_dupe`, `symbol_title_case`, `founded_year_precision`, `single_source`
-
----
-
-## Clean (`apps/pipeline/clean.py`)
-
-Post-enrichment verification and cleanup — counterpart to `enrich.py`. Spot-checks existing data for accuracy rather than adding new fields.
-
-### What It Checks
-
-| Issue Code | Description |
-|-----------|-------------|
-| `impossible_year` | Founded year predates the movement (Crips before 1969, etc.) |
-| `precision_mismatch` | `decade` precision with non-round year, or `exact` with round year |
-| `suspicious_exact_year` | Exact year ending in 0 or 5 with no strong sourcing |
-| `implausible_membership` | Membership estimate too large for a low-connectivity org |
-| `boilerplate_desc` | Generic "is a street gang based in X" description |
-| `html_in_desc` | HTML entities or tags in description field |
-| `bare_source_title` | Source title is a bare domain name |
-| `single_source_precise` | High-precision data with only one source |
-| `desc_too_long` | Description over 800 characters |
-| `spot_check` | Random 1-in-20 sampling for general verification |
-
-### How It Works
-
-1. **Score and rank** orgs by issue severity × connectivity (high-connectivity errors prioritized).
-2. **Gather context** from `data/raw/` via ripgrep, same as `enrich.py`.
-3. **Agentic LLM loop** — uses `web_search` + `fetch_url` tools to verify suspicious fields.
-4. **Conservative apply** — only changes fields the LLM can confirm are wrong. Never clears a description without a replacement.
-
-### CLI Options
-
-```bash
-just clean                            # clean top-ranked orgs (default 50)
-just clean-rank                       # show priority ranking (dry run)
-python3 -m apps.pipeline.clean --limit 20
-python3 -m apps.pipeline.clean --org org:trinitarios
-python3 -m apps.pipeline.clean --issues suspicious_exact_year
-python3 -m apps.pipeline.clean --lane chicago-folk
-```
-
-Flags:
-- `--dry-run` — preview ranking without calling LLM
-- `--limit N` — max orgs per run
-- `--org ID` — clean a specific org by ID
-- `--issues CODE` — only clean orgs with a specific issue code
-- `--lane ID` — only clean orgs in a specific lane
-- `--no-tools` — disable web search (faster, less accurate)
-- `--model` — override the LLM model
-
-### Skipping Orgs
-
-Add verified-clean orgs or dead-ends to `.gangguideignore` under `[clean:skip]`:
-
-```
-[clean:skip]
-org:trinitarios      # spot_check: confirmed clean after thorough review
-org:tmcne            # tool limit: no accessible public source
-```
-
----
-
-## Enrich (`apps/pipeline/enrich.py`)
-
-Standalone LLM enrichment of weak org profiles — not part of the source pipeline flow.
-
-### Logging
-
-All pipeline steps emit structured JSONL logs to `data/logs/`.
-
-- **Logger**: `apps/pipeline/log.py` — `PipelineLogger` class
-- **Output**: `data/logs/{step}_{source}_{timestamp}.jsonl`
-- **Schema** (per line): `ts`, `elapsed`, `level`, `event`, `run_id`, `step`, `source` + context fields
-- **Levels**: `debug`, `info`, `warn`, `error`
-- **Events**: past-tense verbs — `edge_rejected`, `file_written`, `run_started`, etc.
-
-Query logs with jq:
+All steps write JSONL to `data/logs/{step}_{source}_{timestamp}.jsonl` via `PipelineLogger` (`apps/pipeline/log.py`). Fields: `ts`, `elapsed`, `level`, `event`, `run_id`, `step`, `source`, plus context.
 
 ```bash
 jq 'select(.level=="error")' data/logs/*.jsonl
 jq 'select(.event=="edge_rejected")' data/logs/adjudicate_*.jsonl
 ```
 
-### How It Works
+## `.gangguideignore`
 
-1. **Rank** orgs by weakness × connectivity (orgs with many edges but thin profiles are prioritized)
-2. **Gather context** from `data/raw/` (3794 scraped files) via ripgrep search
-3. **Agentic loop** — the LLM can call `web_search` (DuckDuckGo) and `fetch_url` tools to find additional information
-4. **Conservative upgrade** — only fills gaps (empty colors, missing descriptions, imprecise years); never overwrites strong existing data
+Parsed by `apps/pipeline/ignore.py`.
 
-### CLI Options
+| Section | Tool | Purpose |
+|---------|------|---------|
+| `[enrich:skip]` | `enrich.py` | Skip org entirely |
+| `[enrich:skip-field]` | `enrich.py` | Suppress one issue (`org-id  field`) |
+| `[apply:skip-org]` | `apply.py` | Never overwrite these orgs |
+| `[apply:skip-edge]` | `apply.py` | Never add matching edges (`source target type`, `*` = wildcard) |
+| `[verify:skip]` | `verify.py` | Treat matching edges as already supported |
+| `[lint:suppress]` | `lint.py` | Suppress a check (`org-id check-name`, `*` = global org) |
+| `[clean:skip]` | `clean.py` | Skip org in clean |
 
-```bash
-just enrich                           # enrich top-ranked weak orgs
-just enrich-rank                      # show weakness × connectivity ranking (no changes)
+**Enrich field names:** `no_membership`, `imprecise_year`, `no_year`, `no_symbols`, `no_aliases`, `no_colors`, `stub_desc`, `short_desc`, `single_source`
+
+**Lint check names** (must match substrings in lint messages; aliases in `lint.py`): `cross_metro`, `metro_lane_consistency`, `description_starts_with_name`, `status_description_consistency`, `fuzzy_dupe`, `spinoff_direction`, `temporal_logic`, `page_title_org`, `stub_quality`, `nation_consistency`, `isolated`, `symbol_title_case`, `founded_year_precision`, `single_source`
+
+```
+[enrich:skip]
+org:denver-lane-bloods
+
+[apply:skip-edge]
+*  *  spin_off
+
+[lint:suppress]
+org:bloods  cross_metro
 ```
 
-Flags:
-- `--dry-run` — preview changes without writing
-- `--limit N` — max orgs to enrich per run
-- `--org ID` — enrich a specific org by ID
-- `--min-edges N` — minimum edge count to consider
-- `--no-tools` — disable web_search/fetch_url tools
-- `--model` — override the LLM model used
+## Enrich (`apps/pipeline/enrich.py`)
+
+Standalone. Not in `just pipeline`.
+
+Ranks orgs by weakness × connectivity, greps `data/raw/`, then an agentic loop (`web_search`, `fetch_url`) fills gaps only. Never overwrites strong fields.
+
+```bash
+just enrich
+just enrich-rank
+python3 -m apps.pipeline.enrich --org org:trinitarios --dry-run
+```
+
+Flags: `--dry-run`, `--limit N`, `--org ID`, `--min-edges N`, `--no-tools`, `--model`.
+
+## Clean (`apps/pipeline/clean.py`)
+
+Post-enrichment verification. Scores issues × connectivity, then confirms with the same tool loop. Only changes fields it can show are wrong; never clears a description without a replacement.
+
+| Issue | Meaning |
+|-------|---------|
+| `impossible_year` | Founded before the movement existed |
+| `precision_mismatch` | `decade` with a non-round year, or `exact` on a round year |
+| `suspicious_exact_year` | Exact year ending 0 or 5 without strong sourcing |
+| `implausible_membership` | Estimate too large for connectivity |
+| `boilerplate_desc` | Generic "is a street gang based in X" |
+| `html_in_desc` | HTML entities/tags |
+| `bare_source_title` | Title is a bare domain |
+| `single_source_precise` | High precision, one source |
+| `desc_too_long` | Over 800 characters |
+| `spot_check` | Random sample |
+
+```bash
+just clean
+just clean-rank
+python3 -m apps.pipeline.clean --org org:trinitarios
+python3 -m apps.pipeline.clean --issues suspicious_exact_year --lane chicago-folk
+```
+
+Flags: `--dry-run`, `--limit N`, `--org ID`, `--issues CODE`, `--lane ID`, `--no-tools`, `--model`.

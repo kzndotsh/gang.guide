@@ -1,5 +1,7 @@
 # Contributing
 
+Full field reference: [SCHEMA.md](SCHEMA.md). Lint and writing rules: [STANDARDS.md](STANDARDS.md). Pipeline: [PIPELINE.md](PIPELINE.md). Docs map: [INDEX.md](INDEX.md).
+
 ## Setup
 
 ```bash
@@ -8,20 +10,18 @@ cd gang.guide
 just setup
 ```
 
-Requires Node 22+, Python 3.12+. Use `nix develop` for a reproducible environment with all dependencies.
-
-## Development
+Needs Node 22+ and Python 3.12+. `nix develop` matches CI. Copy `.env.example` for pipeline keys; `apps/web/.env.example` for deploy.
 
 ```bash
-just dev          # start dev server
-just test-all     # run all tests
-just fmt          # format + lint fix
-just ci           # run full CI locally
+just dev
+just test-all
+just fmt
+just ci
 ```
 
 ## Commits
 
-This project uses [conventional commits](https://www.conventionalcommits.org/) enforced by lefthook + commitlint.
+[Conventional commits](https://www.conventionalcommits.org/), lefthook + commitlint.
 
 ```
 feat(web): add timeline scrubber
@@ -30,71 +30,41 @@ docs: update README
 chore(infra): update CI workflow
 ```
 
-Valid scopes: `web`, `data`, `pipeline`, `infra`, `deps`, `ci`, `release`
+Scopes: `web`, `data`, `pipeline`, `infra`, `deps`, `ci`, `release`.
 
-## Adding an Org
+## Adding an org
 
-The filename and `id` slug must be derived from the org name: lowercase, hyphens, no special chars.
-`"Rollin 30s Original Harlem Crips"` → `rollin-30s-original-harlem-crips.json` + `"id": "org:rollin-30s-original-harlem-crips"`.
+Slug from the name: lowercase, hyphens, no special characters, no `--`. File `data/orgs/{slug}.json`, `"id": "org:{slug}"`.
 
-1. Create `data/orgs/rollin-30s-original-harlem-crips.json`:
+1. Create the org file (required: `id`, `name`, `description`, `sources`). Symbols title case. Description starts with the canonical name.
+2. Add rows to `data/edges.json` if relationships are known (`alliance` / `rivalry` undirected; `member_of` / `spin_off` / `parent` directed: [SCHEMA.md](SCHEMA.md#edge-types)).
+3. `just lint` then `just build-data`.
 
-```json
-{
-  "id": "org:rollin-30s-original-harlem-crips",
-  "name": "Rollin 30s Original Harlem Crips",
-  "aliases": ["30s", "OHC"],
-  "type": "street_gang",
-  "lane": "california-crips-gangster",
-  "metro": "Los Angeles",
-  "founded_year": 1970,
-  "founded_year_precision": "circa",
-  "disbanded_year": null,
-  "description": "Factual 1-3 sentence description with founding context.",
-  "colors": ["blue"],
-  "symbols": ["Six-Point Star", "Letter C Hand Sign"],
-  "membership_estimate": 200,
-  "nation_affiliation": "org:crips",
-  "status": "active",
-  "sources": [{"url": "https://...", "title": "Source Name"}]
-}
-```
-
-2. Add edges to `data/edges.json` if relationships are known
-3. Run `just build-data` and verify with `just lint`
-
-## Data Quality Rules
-
-- Every org needs at least one source with `url` and `title`
-- Descriptions must be factual, 1-3 sentences, no scrape junk
-- `founded_year_precision`: `exact`, `circa`, `decade`, `estimate`
-- Never fabricate data — every entry must be a real organization
-- Run `just lint` before committing data changes
+Do not invent organizations. Every source needs `url` and `title`. `founded_year_precision` is `exact` | `circa` | `decade` | `estimate`.
 
 ## Tests
 
 ```bash
-pytest                              # unit tests only (fast, no API)
-pytest -m "slow"                    # e2e tests (needs API key)
-pytest -m ""                        # everything
-cd apps/web && npx vitest run       # web tests
+pytest                     # unit (CI)
+pytest -m slow             # e2e, needs API key
+cd apps/web && npx vitest run
+just test-all
 ```
 
 ## Pipeline
 
-The LLM extraction pipeline requires `nix develop` and API keys (see `.env.example`).
+Needs `nix develop` (or equivalent) and keys from `.env.example`.
 
 ```bash
-just extract chicago_history        # extract from raw pages
-just adjudicate chicago_history     # resolve conflicts (opus)
-just merge chicago_history          # consensus filtering
-just apply-preview chicago_history  # preview changes
-just apply chicago_history          # commit changes
+just pipeline chicago_history    # extract → adjudicate → merge → apply dry-run
+just apply chicago_history       # after you review the dry-run
+just verify chicago_history      # optional web-search pass (not in just pipeline)
+just enrich
+just clean
 ```
 
-## Code Style
+## Code style
 
-- Python: ruff (config in `apps/pipeline/pyproject.toml`)
-- TypeScript/Svelte: handled by editor (svelte-check in CI)
-- 2-space indent everywhere except Python (4-space)
-- LF line endings
+- Python: Ruff, 4-space, 120-char, types on functions (`apps/pipeline/pyproject.toml`)
+- TypeScript/Svelte: 2-space, Svelte 5 runes, no `any`; `svelte-check` on pre-push
+- LF endings (`.editorconfig`)

@@ -1,4 +1,6 @@
-# Schema Reference
+# Schema
+
+Machine-readable org schema: [`apps/pipeline/schema.json`](../apps/pipeline/schema.json). Quality rules and lint severities: [STANDARDS.md](STANDARDS.md).
 
 ## Org (`data/orgs/*.json`)
 
@@ -10,12 +12,12 @@
   "type": "street_gang | prison_gang | motorcycle_club | organized_crime | white_supremacist | alliance | nation",
   "lane": "lane-id",
   "metro": "City Name",
-  "description": "Factual 1-3 sentence summary.",
+  "description": "Factual 2-4 sentence summary starting with the canonical name.",
   "founded_year": 1958,
   "founded_year_precision": "exact | circa | decade | estimate",
   "disbanded_year": null,
   "colors": ["black", "blue"],
-  "symbols": ["pitchfork", "six-point star"],
+  "symbols": ["Pitchfork", "Six-Point Star"],
   "membership_estimate": 5000,
   "military_service": "Army, Marines",
   "nation_affiliation": "org:nation-id | null",
@@ -26,54 +28,43 @@
 }
 ```
 
-### Required Fields
-`id`, `name`, `description`, `sources`
+`military_service` is optional (mostly motorcycle clubs).
 
-### Recommended Fields
-`lane`, `founded_year`
+### Required vs recommended
 
-### Description Rules
-- **Must start with the canonical name** (or a close variant). Not an alias, date, or different org name.
-- **2-4 factual sentences** — founding context + notable characteristics. No lists, no infobox labels.
-- No HTML entities (`&amp;`, `&#39;`), no slurs, no scrape artifacts.
-- Length: 50–800 characters.
+Lint (`apps/pipeline/lint.py`) is the gate, not JSON Schema:
 
-### Status Field
-`"active"` | `"inactive"` | `"unknown"`
+| | Fields |
+|--|--------|
+| **Required** (error if empty) | `id`, `name`, `description`, `sources` |
+| **Recommended** (warning if empty) | `lane`, `founded_year` |
 
-- `"inactive"` — use when the description mentions the org is "disbanded", "defunct", "no longer active", or "was absorbed". Set `disbanded_year` if known.
-- `"active"` — org is currently operating.
-- `"unknown"` — no reliable information on current status.
+`apps/pipeline/schema.json` matches those required fields. `type`, `lane`, and `founded_year` are expected on real profiles but stubs may omit them.
 
-### Metro Field
-The specific city the org primarily operates in.
-- Chicago neighborhoods → `"Chicago"` (not `"Cook County"`)
-- LA neighborhoods → `"Los Angeles"` (not `"Southern California"`)
-- National umbrella orgs → `"United States"`
-- Must be consistent with `lane` (a `chicago-folk` org shouldn't have `metro: "New York"`)
+### Field notes
 
-### ID Format
-`org:` prefix + kebab-case slug derived from the org's name.
+- **Description**: Start with the canonical `name` (or "The X"). 2-4 factual sentences, 50-800 characters. No HTML entities, slurs, or scrape junk. Full rules: [STANDARDS.md](STANDARDS.md#common-data-quality-issues).
+- **Status**: `active` (operating), `inactive` (disbanded/defunct/absorbed; set `disbanded_year` if known), `unknown`.
+- **Metro**: Specific city, not county/region. Chicago neighborhoods → `"Chicago"`; LA neighborhoods → `"Los Angeles"`; national umbrellas → `"United States"`. Must fit the `lane`.
+- **`founded_year_precision`**: `exact`, `circa`, `decade`, `estimate`. There is no `range` value.
 
-**Rules (enforced by lint):**
-- Lowercase letters, digits, and hyphens only (`a-z`, `0-9`, `-`)
-- No double hyphens (`--`)
-- No leading or trailing hyphens
-- No spaces or non-ASCII characters
-- Filename must match the slug: `data/orgs/{slug}.json`
+### ID format
 
-**Slug derivation:** Normalize unicode (strip accents), lowercase, replace non-alphanumeric runs with `-`, trim hyphens.
+`org:` + kebab-case slug from the org name. Filename must be `data/orgs/{slug}.json`.
 
-Examples:
+Lint **errors** if the slug is not `a-z`, `0-9`, hyphens, no doubles, no leading/trailing hyphen. Filename/ID mismatch is **info**, not an error.
+
+**Slug derivation:** strip accents, lowercase, replace non-alphanumeric runs with `-`, trim hyphens.
+
 - `Rollin 30s Original Harlem Crips` → `org:rollin-30s-original-harlem-crips`
-- `Almighty Vice Lord Nation` → `org:almighty-vice-lord-nation`
-- `Sureños` → `org:surenos` (accent stripped)
+- `Sureños` → `org:surenos`
 - `C-Notes` → `org:c-notes`
 
 ### Constraints
+
 - `lane` must exist in `data/lanes.json`
-- `sources[].url` must be https
-- `disbanded_year` must be > `founded_year`
+- `sources[].url` should be `https`
+- `disbanded_year` must be ≥ `founded_year` (lint errors if it is before)
 - `nation_affiliation` must reference an existing org ID
 
 ## Edge (`data/edges.json`)
@@ -90,49 +81,32 @@ Examples:
 }
 ```
 
-### Edge Types
+`nation` is **not** stored here. `build.py` generates nation edges from `nation_affiliation`.
 
-| Type | Direction | Description |
-|------|-----------|-------------|
-| `alliance` | Undirected | Two orgs that cooperate/support each other |
-| `rivalry` | Undirected | Two orgs in active conflict |
-| `member_of` | Directed | Source org belongs to a larger coalition or controlling org — **not** for gang-nation affiliation (use `nation_affiliation` field instead) |
-| `spin_off` | Directed | **Source org is the ORIGIN/PARENT; target was formed from source.** A → spin_off → B means "B came from A" (A spawned B) |
-| `parent` | Directed | Source org is the parent/umbrella of target |
-| `nation` | Auto-generated | Org affiliated with a nation (derived from `nation_affiliation` at build time) |
+### Edge types
+
+| Type | Direction | Meaning |
+|------|-----------|---------|
+| `alliance` | Undirected | Cooperation / support |
+| `rivalry` | Undirected | Conflict |
+| `member_of` | Directed | Source belongs to target (coalition, prison control, umbrella that is **not** a gang nation) |
+| `spin_off` | Directed | Source is the origin; target formed from source (A → spin_off → B means B came from A) |
+| `parent` | Directed | Source is the parent/umbrella of target |
+| `nation` | Auto-generated | From `nation_affiliation` at build time |
 
 ### `nation_affiliation` vs `member_of`
 
-These are the two most confused relationships:
+**`nation_affiliation`** (org field): the set claims a gang nation. Examples: Rollin 60s Crips → `org:crips`, Mob Piru → `org:bloods`. Use this for Blood / Crip / Sureño / Folk / People (and similar) nation membership.
 
-**`nation_affiliation`** (field on the org, not an edge):
-- Used when a set/clique directly belongs to a gang nation
-- Examples: Rollin 60s Crips → `nation_affiliation: org:crips`, Mob Piru → `nation_affiliation: org:bloods`
-- Build.py auto-generates a `nation` edge from this at build time
-- **Use this for**: any Blood/Crip/Sureño/Folk/People set claiming that nation
+**`member_of`** (edge): structural hierarchy that is **not** that nation field. Examples: Latin Kings `member_of` People Nation; Florencia 13 `member_of` Mexican Mafia.
 
-**`member_of`** (edge type):
-- Used for structural relationships one level above gang-nation — coalitions, controlling orgs, umbrellas
-- Examples: Latin Kings `member_of` People Nation (coalition of coalitions), Florencia 13 `member_of` Mexican Mafia (prison gang controls street gang)
-- **Use this for**: when org A is structurally subordinate to org B but org B isn't a gang nation (it's a prison gang, a regional alliance, etc.)
+If the target is `org:crips`, `org:bloods`, `org:folk-nation`, `org:people-nation`, `org:surenos`, etc., use `nation_affiliation`, not `member_of`.
 
-**Rule of thumb**: If the target is `org:crips`, `org:bloods`, `org:folk-nation`, `org:people-nation`, `org:surenos`, etc. — use `nation_affiliation` field, not a `member_of` edge.
+### Edge ID and storage
 
-### Edge ID
-12-character SHA-256 hash of `source:target:type`. Deterministic — same input = same ID.
-
-### Direction
-- `alliance`, `rivalry`: undirected. Stored with alphabetically smaller ID as source.
-- `member_of`, `spin_off`, `parent`: directed. Source belongs to / came from target.
-
-### Nation edges
-NOT stored in `edges.json`. Auto-generated by `build.py` from the `nation_affiliation` field on each org.
-
-### Constraints
-- `source` and `target` must reference existing org IDs
-- No self-references (`source` != `target`)
-- No duplicate keys (`source` + `target` + `type`)
-- Contradictions (alliance + rivalry for same pair) only allowed with temporal data
+- ID is a 12-character SHA-256 of `source:target:type` (stable).
+- `alliance` / `rivalry`: stored with the alphabetically smaller org ID as `source`.
+- No self-references, no duplicate `source`+`target`+`type`. Alliance + rivalry on the same pair only with `start_year` / `end_year`.
 
 ## Lane (`data/lanes.json`)
 
@@ -143,73 +117,26 @@ NOT stored in `edges.json`. Auto-generated by `build.py` from the `nation_affili
       "id": "chicago-folk",
       "label": "Chicago Folk Nation",
       "group": "Chicago",
-      "order": 5
+      "order": 22
     }
   ]
 }
 ```
 
-The `group` field controls the lane filter panel groupings. `order` controls vertical position on the canvas.
+`group` drives the lane filter. `order` is canvas Y position.
 
-### Lane IDs
+Current IDs include: `prison`, `white-supremacist`, `motorcycle-clubs`, `organized-crime`, Chicago (`chicago-folk-people`, `chicago-folk`, `chicago-people`, `chicago-independent`), Bloods (`blood-nation`, `california-bloods-*`), Crips (`crip-nation`, `california-crips-*`), Latino (`california-latino-*`), `asian-gangs`, `new-york`, `midwest`, `detroit`, `southeast-southwest`, `historical-east`, `other-national`, `unplaced`.
 
-Lanes include: `prison`, `white-supremacist`, `motorcycle-clubs`, `organized-crime`, `chicago-folk`, `chicago-people`, `chicago-folk-people`, `chicago-independent`, `blood-nation`, `california-bloods-*`, `crip-nation`, `california-crips-*`, `california-latino-*`, `asian-gangs`, `new-york`, `midwest`, `detroit`, `southeast-southwest`, `historical-east`, `other-national`.
+Canonical list: `data/lanes.json`.
 
-See `data/lanes.json` for the full list with labels and ordering.
+## graph.json
 
-## Build Output: `graph.json`
+Slim payload for the canvas (`apps/web/static/graph.json`). Includes auto-generated nation edges, so the edge count is higher than `edges.json`.
 
-Slim rendering payload served to the frontend.
+Node `data` includes `standard_name`, `aliases`, `type`, `metro`, years, `colors`, `symbols`, `nation_affiliation`, `status`, and `layout` (`lane`, `y`, `display_year`, ...). `meta` has lanes and counts.
 
-```json
-{
-  "nodes": [{
-    "id": "org:...",
-    "label": "Display Name",
-    "data": {
-      "standard_name", "aliases", "type", "metro",
-      "founded_year", "founded_year_precision",
-      "colors", "symbols", "nation_affiliation",
-      "status", "layout": {"lane", "y"}
-    }
-  }],
-  "edges": [{"source", "target", "type", "start_year?", "end_year?"}],
-  "meta": {"lanes": [...], "edge_count": ...},
-  "exported_at": "ISO timestamp"
-}
-```
+## details.json
 
-Note: `graph.json` contains more edges than `edges.json` because nation edges are auto-generated at build time.
+Lazy-loaded on node click: `description` + `sources` keyed by org ID.
 
-## Build Output: `details.json`
-
-Lazy-loaded on node click (keeps initial payload small).
-
-```json
-{
-  "nodes": {
-    "org:ambrose": {
-      "description": "Full description text...",
-      "sources": [{"url": "...", "title": "..."}]
-    }
-  }
-}
-```
-
-## Lint Rules
-
-The linter (`apps/pipeline/lint.py`) runs as a gate before build. Key checks:
-
-- **check_orgs** — required/recommended fields, valid lanes, source URLs, temporal logic, type/lane mismatches, status enum, bare domain source titles
-- **check_edges** — valid org references, no self-refs, no dupes, valid types
-- **check_fuzzy_dupes** — word overlap + edit distance to detect duplicate orgs + cross-lane spelling variant detection
-- **check_cross_metro** — flags alliances between orgs in different metros
-- **check_page_title_orgs** — detects orgs that are actually page titles (not real gangs)
-- **check_stub_quality** — flags stub orgs with generic placeholder descriptions (all types: street_gang, prison_gang, white_supremacist, etc.)
-- **check_nation_consistency** — ensures nation affiliation matches member_of edges
-- **check_spinoff_direction** — validates spin_off edges point in the right direction
-- **check_isolated** — warns about orgs with no edges
-- **check_descriptions** — flags short/junk descriptions, HTML entities, slurs
-- **check_sources** — validates source URLs and titles; warns on bare domain titles
-- **check_id_consistency** — validates slug format (lowercase, a-z/0-9/hyphens only, no double hyphens, no leading/trailing hyphens); ensures file stem matches org ID slug
-- **check_temporal_logic** — validates edge year ranges are sane
+Lint check inventory and severities: [STANDARDS.md](STANDARDS.md).

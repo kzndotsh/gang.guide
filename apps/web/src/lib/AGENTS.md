@@ -1,31 +1,9 @@
-# src/lib — Shared Components & Utilities
+# src/lib
 
-## Map Rendering (KonvaMap.svelte)
+Map, inspector, overlays. Parent conventions: [`apps/web/AGENTS.md`](../AGENTS.md). Product docs: [`docs/ARCHITECTURE.md`](../../../docs/ARCHITECTURE.md).
 
-The map uses raw Konva.js API imperatively for performance (942 nodes + 1200 edges). Key design:
-- 4 layers: `bgLayer` (grid/lanes), `edgeLayer` (bezier curves), `nodeLayer` (circles), `labelLayer` (text)
-- `buildScene()` destroys and recreates all Konva objects — only called on filter/selection changes
-- Pan/zoom is handled by Konva's built-in stage dragging + wheel events (no rebuild needed)
-- Labels have collision detection — overlapping labels are hidden, selected label always shows on top
-- LOD: labels hidden below zoom 0.45 (layer visibility toggle, not rebuild)
-- Parent sends zoom commands via `zoomCommand` prop with incrementing `seq` for reactivity
+- **KonvaMap.svelte**: bg / edge / node / label layers. Nodes rebuilt on filters; edges+labels on hover/select/edgeMode. LOD hides labels at low zoom.
+- **InspectorPanel.svelte**: Overview, Network, Identity, Sources (`inspectorDisplay.ts`, `inspectorConnections.ts`, `inspectorFormat.ts`).
+- **overlays/**: OrgSearch (⌘K), YearSlider, ZoomControls, EdgeModeToggle (`hover`/`all`), LaneFilter, EdgeLegend, CoverageDialog.
 
-## Inspector (InspectorPanel.svelte)
-
-4-tab panel: Overview (description, year, metro), Network (edges to other orgs), Identity (colors, aliases, type), Sources (citations with links).
-
-## Layout Helpers
-
-- `timelineScale.ts` — converts years to pixel X positions, computes year domain
-- `panZoom.ts` — clampZoom, zoomAtPoint, fitContentInViewport
-- `layout.ts` — lane catalog, sort order, label truncation
-- `types.ts` — GraphNode, GraphEdge, Graph, GraphEvent types
-- `visibility.ts` — edge counting for display
-- `orgSources.ts` — source link formatting
-
-## Conventions
-
-- All components use Svelte 5 runes (`$state`, `$derived`, `$effect`, `$props`)
-- Export functions for component methods (though KonvaMap uses prop-based commands instead)
-- `cn()` from `utils.ts` for Tailwind class merging
-- UI primitives in `components/ui/` (shadcn-svelte)
+Runes only. `cn()` from `utils.ts`. Don't invent node/edge counts: read `graph.json` meta.

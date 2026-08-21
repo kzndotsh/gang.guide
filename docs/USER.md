@@ -1,58 +1,41 @@
-# User Guide
+# User guide
 
-## What is gang.guide?
+Map of US criminal organizations: alliances, rivalries, history, and sources.
 
-An interactive map of US criminal organizations — their alliances, rivalries, history, and connections. Built from sourced data, not speculation.
+## Map
 
-## Using the Map
+Works on desktop and mobile.
 
-The map works on desktop and mobile browsers.
+- Pan / zoom: wheel, trackpad pinch, or two-finger drag
+- Select: click or tap a node for the inspector
+- Search: ⌘K (Mac) or Ctrl+K, or the search control
+- Year slider: founding-year range
+- Lane filter: show or hide groups (Chicago, Bloods, Crips, and so on)
+- Edges: On hover (hovered or selected org) or All links (every edge)
 
-- **Pan/zoom** — scroll wheel, trackpad pinch, or two-finger touch to navigate
-- **Click/tap a node** — opens the inspector panel with org details
-- **Search** — Ctrl+K (desktop) or the search button (mobile) to search by name
-- **Year slider** — filter orgs by founding year range
-- **Lane filter** — show/hide geographic/affiliation groups
-- **Edge mode** — toggle between "all edges" and "focus" (selected org only)
+## URLs
 
-## URL Parameters
+- `?org=org:crips`: select that org
+- `?year=1960-1990`: year range
+- `?lane=chicago-folk,chicago-people`: only those lanes
 
-Share specific views by copying the URL:
+## Edge colors
 
-- `?org=org:crips` — select and focus an org
-- `?year=1960-1990` — filter to year range
-- `?lane=chicago-folk,chicago-people` — show only specific lanes
+Same as the on-map legend:
 
-## Edge Colors
+| Color | Types |
+|-------|--------|
+| Green | alliance |
+| Red | rivalry |
+| Purple | nation, member_of |
+| Amber | spin_off, parent |
 
-- **Green** — alliance
-- **Red** — rivalry
-- **Blue** — nation/member_of
-- **Gray** — spin-off/parent
+Directed types have arrowheads.
 
 ## Lanes
 
-Orgs are grouped into lanes (vertical rows) by geography and affiliation:
+Vertical bands by geography and affiliation. Groups include Chicago (Folk, People, Folk/People, Independent), California Bloods and Crips (plus nation rows), California Latino, Asian gangs, New York, Midwest, Detroit, South/Southwest, Historical East, Prison, White supremacist, Motorcycle clubs, Organized crime, Other, Unplaced.
 
-- Chicago (Folk, People, Folk-People, Independent)
-- California (Bloods, Crips, Latino)
-- Blood Nation / Crip Nation
-- New York, Midwest, Detroit, Southeast-Southwest, Historical East
-- Prison, White Supremacist, Motorcycle Clubs, Organized Crime, Asian Gangs
-- Other National
+## Sources
 
-## Data Sources
-
-Every org and relationship is backed by at least one source. Sources include:
-
-- Wikipedia
-- StreetGangs.com
-- UnitedGangs.com
-- Chicago Gang History
-- Detroit Street Gangs
-- NGCRC (National Gang Crime Research Center)
-- New York City Gangs
-- StoneGreasers
-- DOJ/FBI reports
-- Court records (CourtListener)
-- BlackPast.org
+Every org should have at least one cited source. Typical domains: Wikipedia, StreetGangs, UnitedGangs, Chicago Gang History, Detroit Street Gangs, NGCRC, NYC Gangs, StoneGreasers, DOJ/FBI, CourtListener, BlackPast, StopHoustonGangs, ADL, InSight Crime, SPLC.

@@ -1,10 +1,8 @@
 # Architecture
 
-## Overview
+gang.guide is a static site backed by flat JSON files. There is no database, API server, or accounts. Curation is the hard part; serving the site is not.
 
-gang.guide is a static site backed by flat JSON files. There is no database, no API server, and no user accounts. The complexity lives in the data curation pipeline, not the runtime infrastructure.
-
-## System Diagram
+## System diagram
 
 ```
 data/orgs/*.json ─┐
@@ -12,63 +10,50 @@ data/edges.json ──┼─→ build.py ─→ graph.json ──→ Cloudflare 
 data/lanes.json ──┘               details.json     (static assets)       (SvelteKit + Konva)
 ```
 
+Docs: [INDEX.md](INDEX.md). Agents: [`.ruler/AGENTS.md`](../.ruler/AGENTS.md).
+
 ## Layers
 
-### Data Layer (`data/`)
+### Data (`data/`)
 
-Flat JSON files are the source of truth. One org file per organization, one edge list, one lane taxonomy.
+Source of truth: one JSON file per org, one edge list, one lane taxonomy. Counts live in `graph.json` `meta` after `just build-data`.
 
-- **Orgs** — one file per organization, human-editable
-- **Edges** — single file, all relationships with IDs and optional temporal data
-- **Lanes** — defines the Y-axis layout groupings on the canvas
+### Pipeline (`apps/pipeline/`)
 
-Run `just build-data` to see current org/edge counts.
+Manual / `just`: not in the web runtime.
 
-### Pipeline Layer (`apps/pipeline/`)
+- **Scrapers** (`scrape/`): `cgh.py`, `dsg.py`, `ngcrc.py`, `nyc.py`, `stonegreasers.py`, `unitedgangs.py`, `wikipedia.py`, `stophoustongangs.py`, `adl.py`, `fbi_ngta.py`, `insightcrime.py`, `splc.py`, plus `common.py`
+- **Extract / adjudicate / verify / merge / apply**: see [PIPELINE.md](PIPELINE.md)
+- **Enrich / clean**: profile fill and spot-check, not part of `just pipeline`
+- **lint.py**: CI gate
 
-Python scripts that enrich the data using LLMs. Not part of the runtime — runs manually or via `just pipeline`.
+### Build (`build.py`)
 
-- **Scrapers** (`scrape/`) — `cgh.py`, `dsg.py`, `ngcrc.py`, `nyc.py`, `stonegreasers.py`, `unitedgangs.py`, `wikipedia.py`, `stophoustongangs.py`, `adl.py`, `fbi_ngta.py`, `insightcrime.py`, `splc.py`
-- **Extract** — sends source pages to sonnet 4.6 at 3 temperatures (v2 prompt); infers `org_type` and `org_lane` per org
-- **Adjudicate** — sonnet 4.6 validates evidence quotes (v2 prompt)
-- **Merge** — produces consensus from multiple runs
-- **Apply** — conservative upgrade of org files + edges; `--create-orgs` creates stub files for new orgs
+Reads orgs + edges → `apps/web/static/graph.json` (render) and `details.json` (lazy). Also:
 
-### Build Layer (`build.py`)
+- Nation edges from `nation_affiliation`
+- Lane-aware `display_year` when `founded_year` is missing
 
-Single Python script that reads all org files + edges and produces two static JSON files:
+### Frontend (`apps/web/`)
 
-- `graph.json` — slim rendering payload (nodes + edges + layout metadata)
-- `details.json` — descriptions + sources (lazy-loaded on click)
+SvelteKit with `prerender = true`, Cloudflare Workers via Alchemy (`apps/web/alchemy.run.ts`), `@sveltejs/adapter-cloudflare`.
 
-Also:
-- Auto-generates `nation` edges from the `nation_affiliation` field
-- Uses lane-aware `display_year` fallback for orgs with null `founded_year`
-
-### Frontend Layer (`apps/web/`)
-
-SvelteKit prerendered to static HTML, deployed to Cloudflare Workers via Alchemy IaC.
-
-- **KonvaMap.svelte** — persistent node architecture (nodes never destroyed on hover/select), edge-index based rendering
-- **Edge modes** — 'on hover' (show edges for hovered/selected node) and 'all links' (show every edge)
-- **Directional arrows** — nation/spin-off/member_of/parent edges rendered with arrowheads
-- **Edge legend overlay** — color-coded legend for edge types
-- **Inspector panel** — details view when a node is selected
-- **URL state** — `?org=`, `?year=`, `?lane=` sync bidirectionally
-- **Unified top bar** — zoom, search, and year slider styled as pills
+- **KonvaMap.svelte**: four layers (bg, edges, nodes, labels). Nodes rebuilt on filter/data change, not on hover. Edges/labels redraw on selection and edge-mode change.
+- **Edge modes**: `hover` ("On hover") and `all` ("All links")
+- **Arrows**: nation, member_of, spin_off, parent
+- **Inspector**: Overview, Network, Identity, Sources
+- **URL state**: `?org=`, `?year=min-max`, `?lane=` (comma-separated IDs)
 
 ### Deployment
 
-- Alchemy (`alchemy.run.ts`) manages Cloudflare Workers deployment
-- `adapter-cloudflare` serves prerendered pages + static JSON from edge
-- Zero cold starts, global CDN distribution
+`just deploy` runs `vite build` then Alchemy `--stage production`. Env: `ALCHEMY_PASSWORD`, `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID` in `apps/web/.env`. `.alchemy/` is gitignored.
 
-## Key Decisions
+## Decisions
 
-- **No database** — org files at ~2KB each fit in memory, deploy as static assets
-- **No API** — client fetches `graph.json` once, everything is client-side after that
-- **Prerendered** — no SSR needed, all pages are identical (single-page app)
-- **Edge IDs** — 12-char hash of source+target+type for stable references
-- **Normalized edges** — undirected types (alliance/rivalry) stored alphabetically to prevent duplicates
-- **Nation edges generated at build time** — `nation_affiliation` field is canonical, edges derived
-- **Lane-aware year fallback** — orgs without a `founded_year` get a display year based on their lane's typical era
+- **No database**: org files are small; deploy as static assets
+- **No API**: client loads `graph.json` once
+- **Prerendered SPA**: pages are static HTML
+- **Edge IDs**: 12-char hash of source+target+type
+- **Undirected edges**: alliance/rivalry stored with sorted endpoints
+- **Nation field is canonical**: edges derived at build
+- **Lane-aware year fallback**: null `founded_year` still plots in the right era
