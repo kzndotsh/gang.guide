@@ -2,9 +2,9 @@
   "id": "org:tap-boyz-chicago",
   "name": "TAP Boyz",
   "aliases": [
-    "TAP Boyz",
     "The Arabian Posse",
-    "TAP"
+    "TAP",
+    "Tall Arabian Posse"
   ],
   "type": "street_gang",
   "lane": "chicago-independent",
@@ -28,10 +28,15 @@
     {
       "url": "https://chicagoganghistory.com/gang/tall-arabian-posse",
       "title": "Tall Arabian Posse - Chicago Gang History"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Gangs_in_Chicago",
+      "title": "Gangs in Chicago - Wikipedia"
     }
   ],
   "colors": [
-    "black"
+    "white",
+    "red"
   ],
   "status": "inactive",
   "nation_affiliation": null,

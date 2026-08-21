@@ -110,8 +110,7 @@ org:night-riders                                   # boilerplate: stonegreasers 
 org:o-a-s                                          # boilerplate: only a mention in another page
 org:patch                                          # boilerplate: source URL covers different gang
 org:sinners                                        # boilerplate: newyorkcitygangs page inaccessible
-org:tjo                                            # boilerplate: no dedicated page found
-org:abm                                            # boilerplate: no specific facts available
+org:abm                                            # boilerplate: generic Detroit acronym only
 org:btd                                            # boilerplate: generic Detroit acronym only
 org:ctm                                            # boilerplate: no verifiable details
 org:ltc                                            # boilerplate: no verifiable details
@@ -140,7 +139,7 @@ org:69th-street-loafers                            # bare_source: only fix is ti
 org:7th-avenue-boys                                # bare_source: only fix is title
 org:baker-street-vice-lords                        # bare_source: only fix is title
 org:bayside-west-zombies                           # bare_source: only fix is title
-org:bel-aires                                      # bare_source: only fix is title
+org:belairs                                        # bare_source: only fix is title
 org:black-gents                                    # bare_source: only fix is title
 org:black-saints                                   # bare_source: only fix is title
 org:braghans                                       # bare_source: only fix is title
@@ -180,7 +179,6 @@ org:junior-sinner                                  # bare_source: only fix is ti
 org:k-town-lords                                   # bare_source: only fix is title
 org:chancellors                                    # suspicious_exact: confirmed valid
 org:thorndale-jag-offs                             # single_source: confirmed valid
-org:thorndale-jarvis-organization                  # single_source: confirmed valid
 
 # Final wave of bare_source dead-ends (only fix is title, no data value)
 org:211-crew                                       # suspicious_exact: confirmed valid

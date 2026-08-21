@@ -2,7 +2,10 @@
   "id": "org:thorndale-jag-offs",
   "name": "Thorndale Jag Offs",
   "aliases": [
-    "Truth Justice and Order"
+    "Truth Justice and Order",
+    "Thorndale Jagoffs",
+    "Thorndale Jarvis Organization",
+    "TJO"
   ],
   "type": "street_gang",
   "lane": "chicago-independent",
@@ -15,8 +18,12 @@
   "status": "inactive",
   "sources": [
     {
-      "url": "https://chicagoganghistory.com/gang/thorndale-jag-offs",
-      "title": "Thorndale Jag Offs - Chicago Gang History"
+      "url": "https://chicagoganghistory.com/gang/thorndale-jag-offs/",
+      "title": "Thorndale Jag Offs (TJO) – Joe Ganci & Edgewater | Chicago Gang History"
+    },
+    {
+      "url": "http://www.stonegreasers.com/greaser/corp.html",
+      "title": "www.stonegreasers.com"
     }
   ],
   "disbanded_year": 1990,

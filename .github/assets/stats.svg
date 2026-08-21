@@ -19,19 +19,19 @@
   <rect x="0.5" y="0.5" width="779" height="169" rx="6" stroke="#d0d7de" stroke-opacity="0.4"/>
 
   <!-- Row 1: Stats -->
-  <text class="value" x="20" y="42">1,289</text>
+  <text class="value" x="20" y="42">1,282</text>
   <text class="label" x="20" y="60">Organizations</text>
 
-  <text class="value" x="180" y="42">2,725</text>
+  <text class="value" x="180" y="42">2,722</text>
   <text class="label" x="180" y="60">Edges</text>
 
   <text class="value" x="320" y="42">0%</text>
   <text class="label" x="320" y="60">Evidence-backed</text>
 
-  <text class="value" x="500" y="42">1,068</text>
+  <text class="value" x="500" y="42">1,065</text>
   <text class="label" x="500" y="60">Active</text>
 
-  <text class="value" x="620" y="42">211</text>
+  <text class="value" x="620" y="42">207</text>
   <text class="label" x="620" y="60">Inactive</text>
 
   <!-- Divider -->
@@ -41,23 +41,23 @@
   <text class="small" x="20" y="100">Rivalry</text>
   <rect class="bar-bg" x="80" y="91" width="200" height="10"/>
   <rect class="bar-red" x="80" y="91" width="116" height="10"/>
-  <text class="small" x="288" y="100">1,590</text>
+  <text class="small" x="288" y="100">1,587</text>
 
   <text class="small" x="20" y="120">Alliance</text>
   <rect class="bar-bg" x="80" y="111" width="200" height="10"/>
-  <rect class="bar-blue" x="80" y="111" width="68" height="10"/>
+  <rect class="bar-blue" x="80" y="111" width="69" height="10"/>
   <text class="small" x="288" y="120">940</text>
 
   <text class="small" x="20" y="140">Evidence</text>
   <rect class="bar-bg" x="80" y="131" width="200" height="10"/>
   <rect class="bar-green" x="80" y="131" width="0" height="10"/>
-  <text class="small" x="288" y="140">0 / 2,725</text>
+  <text class="small" x="288" y="140">0 / 2,722</text>
 
   <!-- Right side mini stats -->
-  <text class="small" x="420" y="100">2,811 citations</text>
-  <text class="small" x="420" y="120">635 multi-sourced</text>
-  <text class="small" x="420" y="140">799 have aliases</text>
-  <text class="small" x="580" y="100">906 with colors</text>
-  <text class="small" x="580" y="120">359 with symbols</text>
-  <text class="small" x="580" y="140">862 exact/circa years</text>
+  <text class="small" x="420" y="100">2,805 citations</text>
+  <text class="small" x="420" y="120">634 multi-sourced</text>
+  <text class="small" x="420" y="140">795 have aliases</text>
+  <text class="small" x="580" y="100">902 with colors</text>
+  <text class="small" x="580" y="120">357 with symbols</text>
+  <text class="small" x="580" y="140">858 exact/circa years</text>
 </svg>

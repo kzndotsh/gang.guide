@@ -6,7 +6,9 @@
     "EWC",
     "East Warren Playboys",
     "East Warren Gangster Crips",
-    "East Warren GD Crips"
+    "East Warren GD Crips",
+    "East Warrens",
+    "East Warren Posse"
   ],
   "type": "street_gang",
   "lane": "detroit",
@@ -23,6 +25,10 @@
     {
       "url": "https://detroitstreetgangs.com/east-warren-posse/",
       "title": "Inside the Powerful Rise of East Warren Posse (EWP) / East Warren Crips in Detroit – DetroitStreetGangs.com"
+    },
+    {
+      "url": "https://detroitstreetgangs.com/east-warren-posse-ewp-east-warren-crips/",
+      "title": "Inside the Powerful Rise of East Warren Posse (EWP) / East Warren Crips in Detroit"
     }
   ],
   "symbols": [

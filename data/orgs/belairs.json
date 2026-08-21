@@ -2,7 +2,8 @@
   "id": "org:belairs",
   "name": "Belairs",
   "aliases": [
-    "Bel-Airs"
+    "Bel-Airs",
+    "Bel-Aires"
   ],
   "type": "street_gang",
   "lane": "chicago-independent",

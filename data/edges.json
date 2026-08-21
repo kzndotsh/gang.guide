@@ -6620,6 +6620,11 @@
         "url": "https://chicagoganghistory.com/gang/almighty-twelfth-street-players/",
         "title": "Chicago Gang History",
         "evidence": "the guns were blazing as the Players were taking on the whole BCN in a deadly gang war... The Player and Count war has never been forgiven"
+      },
+      {
+        "url": "http://www.stonegreasers.com/greaser/12th_street_players.html",
+        "title": "StoneGreasers",
+        "evidence": "Extreme warfare between the 12th Street Players and various Folk gangs and former allies, the Latin Kings, and Latin Counts in the Grant Works and The Island (Roosevelt Rd. and Austin Ave.) sections of Cicero"
       }
     ]
   },
@@ -8160,6 +8165,11 @@
         "url": "https://chicagoganghistory.com/gang/almighty-twelfth-street-players/",
         "title": "Chicago Gang History",
         "evidence": "Gangster Disciples moved into the 'Little Africa' area of Brookfield along East Avenue around East Avenue & 47th Street and Two Six moved into the area as well. All three Folk allied gangs teamed up on the Players"
+      },
+      {
+        "url": "http://www.stonegreasers.com/greaser/12th_street_players.html",
+        "title": "StoneGreasers",
+        "evidence": "The primary focus of the Players in Brookfield, Lagrange, and Countryside was the contention with overwhelming Folks Alliance member gangs; 2-6 (now Gangsta 2-6), 2-2 Boys, Black Gangster Disciples (now Gangsta Disciples), and a few Simon City Royals."
       }
     ]
   },
@@ -14774,18 +14784,6 @@
     ]
   },
   {
-    "source": "org:a-block",
-    "target": "org:dwbi",
-    "type": "rivalry",
-    "citations": [
-      {
-        "url": "https://detroitstreetgangs.com/hybrid-gangs-mixed-affiliation-groups/",
-        "title": "Detroit Street Gangs",
-        "evidence": "Rivals: TMCNE/862 , 24CashGang (392/FWC), Murdaville/SellGang (9's), RicoMafia/0430, A-Block/Avon Gangsters"
-      }
-    ]
-  },
-  {
     "source": "org:avon-gangsters",
     "target": "org:dwbi",
     "type": "rivalry",
@@ -15657,8 +15655,8 @@
     ]
   },
   {
-    "source": "org:12th-street-players",
-    "target": "org:latin-kings",
+    "source": "org:latin-kings",
+    "target": "org:twelfth-street-players",
     "type": "rivalry",
     "citations": [
       {
@@ -15666,23 +15664,12 @@
         "title": "StoneGreasers",
         "evidence": "Extreme warfare between the 12th Street Players and various Folk gangs and former allies, the Latin Kings, and Latin Counts in the Grant Works and The Island (Roosevelt Rd. and Austin Ave.) sections of Cicero"
       }
-    ]
+    ],
+    "start_year": 1990
   },
   {
-    "source": "org:12th-street-players",
-    "target": "org:latin-counts-chicago",
-    "type": "rivalry",
-    "citations": [
-      {
-        "url": "http://www.stonegreasers.com/greaser/12th_street_players.html",
-        "title": "StoneGreasers",
-        "evidence": "Extreme warfare between the 12th Street Players and various Folk gangs and former allies, the Latin Kings, and Latin Counts in the Grant Works and The Island (Roosevelt Rd. and Austin Ave.) sections of Cicero"
-      }
-    ]
-  },
-  {
-    "source": "org:12th-street-players",
-    "target": "org:gangsta-2-6",
+    "source": "org:gangsta-2-6",
+    "target": "org:twelfth-street-players",
     "type": "rivalry",
     "citations": [
       {
@@ -15693,8 +15680,8 @@
     ]
   },
   {
-    "source": "org:12th-street-players",
-    "target": "org:2-2-boys",
+    "source": "org:2-2-boys",
+    "target": "org:twelfth-street-players",
     "type": "rivalry",
     "citations": [
       {
@@ -15705,20 +15692,8 @@
     ]
   },
   {
-    "source": "org:12th-street-players",
-    "target": "org:black-gangster-disciples-nation",
-    "type": "rivalry",
-    "citations": [
-      {
-        "url": "http://www.stonegreasers.com/greaser/12th_street_players.html",
-        "title": "StoneGreasers",
-        "evidence": "The primary focus of the Players in Brookfield, Lagrange, and Countryside was the contention with overwhelming Folks Alliance member gangs; 2-6 (now Gangsta 2-6), 2-2 Boys, Black Gangster Disciples (now Gangsta Disciples), and a few Simon City Royals."
-      }
-    ]
-  },
-  {
-    "source": "org:12th-street-players",
-    "target": "org:simon-city-royals-chicago",
+    "source": "org:simon-city-royals-chicago",
+    "target": "org:twelfth-street-players",
     "type": "rivalry",
     "citations": [
       {
@@ -15777,7 +15752,7 @@
     ]
   },
   {
-    "source": "org:bel-aires",
+    "source": "org:belairs",
     "target": "org:cortland-stacies",
     "type": "rivalry",
     "citations": [
@@ -15789,7 +15764,7 @@
     ]
   },
   {
-    "source": "org:bel-aires",
+    "source": "org:belairs",
     "target": "org:dc-eagles-motorcycle-club",
     "type": "alliance",
     "citations": [
@@ -16326,7 +16301,7 @@
     ]
   },
   {
-    "source": "org:bel-aires",
+    "source": "org:belairs",
     "target": "org:corp",
     "type": "alliance",
     "citations": [
@@ -16351,7 +16326,7 @@
   },
   {
     "source": "org:corp",
-    "target": "org:tjo",
+    "target": "org:thorndale-jag-offs",
     "type": "alliance",
     "citations": [
       {
@@ -16847,7 +16822,7 @@
   },
   {
     "source": "org:c-d",
-    "target": "org:tjo",
+    "target": "org:thorndale-jag-offs",
     "type": "alliance",
     "start_year": 1967,
     "end_year": 1971,
@@ -16860,7 +16835,7 @@
     ]
   },
   {
-    "source": "org:tjo",
+    "source": "org:thorndale-jag-offs",
     "target": "org:turf",
     "type": "rivalry",
     "citations": [
@@ -16951,7 +16926,7 @@
     ]
   },
   {
-    "source": "org:thorndale-jarvis-organization",
+    "source": "org:thorndale-jag-offs",
     "target": "org:north-siders",
     "type": "spin_off",
     "citations": [
@@ -16964,7 +16939,7 @@
   },
   {
     "source": "org:almighty-black-p-stone-nation",
-    "target": "org:thorndale-jarvis-organization",
+    "target": "org:thorndale-jag-offs",
     "type": "rivalry",
     "citations": [
       {

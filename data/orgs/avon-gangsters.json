@@ -1,13 +1,16 @@
 {
   "id": "org:avon-gangsters",
   "name": "Avon Gangsters",
-  "aliases": [],
+  "aliases": [
+    "A-Block",
+    "AGS"
+  ],
   "type": "street_gang",
   "lane": "detroit",
   "metro": "Detroit",
   "founded_year": null,
   "founded_year_precision": "estimate",
-  "description": "Avon Gangsters, also known as A-Block, is a hybrid street gang based in Detroit. The group operates outside traditional nationwide gang structures with an identity rooted in local Crip lineage, and has been documented alongside other Detroit hybrid sets including RicoMafia/0430 and Murdaville/SellGang.",
+  "description": "Avon Gangsters (A-Block, AGS) are a Northwest Detroit street gang named after Avon Street near West Seven Mile. A hybrid set with local Crip lineage, they have been documented alongside RicoMafia/0430 and Murdaville/SellGang, and are cited as rivals of DWBI. The name A-Block is also used independently by other Detroit groups, including a SmokeCamp Bloods identifier around East Seven Mile.",
   "colors": [],
   "nation_affiliation": null,
   "status": "active",
@@ -19,6 +22,10 @@
     {
       "url": "https://grokipedia.com/page/gangs-in-detroit",
       "title": "Gangs in Detroit — Grokipedia"
+    },
+    {
+      "url": "https://detroitstreetgangs.com/major-neighborhood-based-gang-street-cliques-profiles/",
+      "title": "Profiles of Major Neighborhood Street Groups in Detroit"
     }
   ]
 }
