@@ -1,7 +1,10 @@
 {
   "id": "org:sacred-separatist-group",
   "name": "Sacred Separatist Group",
-  "aliases": [],
+  "aliases": [
+    "SSG",
+    "OPIOS"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -15,6 +18,10 @@
     {
       "url": "https://www.adl.org/resources/hate-symbol/sacred-separatist-group",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.adl.org/resources/article/white-supremacist-gangs-growing-problem-missouri",
+      "title": "White Supremacist Gangs: A Growing Problem in Missouri – ADL"
     }
   ],
   "symbols": [

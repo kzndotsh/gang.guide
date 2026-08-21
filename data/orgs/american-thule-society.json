@@ -1,7 +1,9 @@
 {
   "id": "org:american-thule-society",
   "name": "American Thule Society",
-  "aliases": [],
+  "aliases": [
+    "ATS"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",

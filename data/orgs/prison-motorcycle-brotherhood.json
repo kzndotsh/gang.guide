@@ -1,7 +1,9 @@
 {
   "id": "org:prison-motorcycle-brotherhood",
   "name": "Prison Motorcycle Brotherhood",
-  "aliases": [],
+  "aliases": [
+    "PMB"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",

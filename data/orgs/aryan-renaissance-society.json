@@ -1,7 +1,9 @@
 {
   "id": "org:aryan-renaissance-society",
   "name": "Aryan Renaissance Society",
-  "aliases": [],
+  "aliases": [
+    "ARS"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -15,6 +17,14 @@
     {
       "url": "https://www.adl.org/resources/hate-symbol/aryan-renaissance-society",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://www.adl.org/resources/article/white-supremacist-group-behind-houston-white-lives-matter-protest",
+      "title": "White Supremacist Group Behind Houston \"White Lives Matter\" Protest | ADL"
+    },
+    {
+      "url": "https://www.splcenter.org/resources/hatewatch/meet-white-lives-matter-racist-response-black-lives-matter-movement/",
+      "title": "Meet White Lives Matter: The Racist Response to the Black Lives Matter Movement | SPLC"
     }
   ],
   "symbols": [

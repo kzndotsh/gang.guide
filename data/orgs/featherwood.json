@@ -1,7 +1,9 @@
 {
   "id": "org:featherwood",
   "name": "Featherwood",
-  "aliases": [],
+  "aliases": [
+    "Feathers"
+  ],
   "type": "white_supremacist",
   "lane": "white-supremacist",
   "metro": "Unknown",
@@ -15,6 +17,10 @@
     {
       "url": "https://www.adl.org/resources/hate-symbol/featherwood",
       "title": "ADL (Anti-Defamation League)"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Peckerwood",
+      "title": "Peckerwood - Wikipedia"
     }
   ],
   "symbols": [

@@ -468,6 +468,16 @@ org:2-2-boys                          # no_year: tool-limit dead-end
 org:4-gang                            # no_year: timeout dead-end
 org:42-hustle-boyz                    # no_year: tool-limit dead-end
 
+org:aryan-brotherhood-of-north-carolina  # no_year: confirmed dead-end
+org:branded-peckerwood-family         # no_year: confirmed dead-end
+org:dukanes                           # no_year: confirmed dead-end
+org:famerica                          # no_year: confirmed dead-end
+org:famgoon                           # no_year: confirmed dead-end
+org:kilbourn-gaylords                 # no_year: tool-limit dead-end
+org:lover-boys                        # no_year: confirmed dead-end
+org:rtm                               # no_year: confirmed dead-end
+org:sacramaniacs                      # no_year: confirmed dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.
