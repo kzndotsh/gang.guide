@@ -33,6 +33,7 @@
   import { formatYearSpan, resolveDissolvedYearSpan, resolveNodeYearSpan } from '$lib/yearFormat';
   import { orgDisplayDescription, orgDisplayTitle } from '$lib/inspector/inspectorDisplay';
   import { dropConflictingSoftTies, groupConnections, mergeConnections } from '$lib/inspector/inspectorConnections';
+  import { orgSourceLinks, groupedClaimSources, nonClaimSources, predicateLabel } from '$lib/orgSources';
   import { Button } from '$lib/components/ui/button/index.js';
   import { Badge } from '$lib/components/ui/badge/index.js';
   import { ScrollArea } from '$lib/components/ui/scroll-area/index.js';
@@ -159,6 +160,12 @@
         node?.data?.era,
     ),
   );
+
+  // Source links — org sources + edge citations merged and grouped
+  const sourceLinks = $derived(orgSourceLinks(graph, node, []));
+  const claimGroups = $derived(groupedClaimSources(sourceLinks));
+  const refSources = $derived(nonClaimSources(sourceLinks));
+  const totalSourceCount = $derived(sourceLinks.length);
 </script>
 
 <div class="flex h-full min-h-0 flex-1 flex-col overflow-hidden bg-card" aria-label="Entity inspector">
@@ -220,8 +227,8 @@
           <ExternalLink class="size-3 shrink-0" />
           <span class="inline-flex min-w-0 max-w-full items-baseline gap-1">
             <span class="truncate">Sources</span>
-            {#if node?.data?.sources?.length}
-              <span class="text-[0.6rem] tabular-nums text-muted-foreground">({node.data.sources.length})</span>
+            {#if totalSourceCount}
+              <span class="text-[0.6rem] tabular-nums text-muted-foreground">({totalSourceCount})</span>
             {/if}
           </span>
         </Tabs.Trigger>
@@ -417,28 +424,68 @@
         </ScrollArea>
       </Tabs.Content>
 
-      
-
       <Tabs.Content value="sources" class="mt-0 min-h-0 flex-1 overflow-hidden p-0">
         <ScrollArea class="h-full">
           <div class="space-y-2 p-3">
-            {#if node?.data?.sources?.length}
-              {#each node.data.sources as src}
-                {#if typeof src === 'object' && src.url}
-                  <a
-                    href={src.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="flex items-start gap-2 rounded-md border border-border/60 px-3 py-2 text-xs transition-colors hover:bg-accent/40"
-                  >
-                    <ExternalLink class="mt-0.5 size-3 shrink-0 text-muted-foreground" />
-                    <span class="min-w-0">
-                      <span class="block font-medium text-primary">{src.title || 'Source'}</span>
-                      <span class="block truncate text-[0.6rem] text-muted-foreground">{src.url}</span>
-                    </span>
-                  </a>
+            {#if totalSourceCount}
+              <!-- Claim sources grouped by predicate (e.g. "Founded year", "Description") -->
+              {#if claimGroups.length}
+                <Accordion.Root type="multiple" value={claimGroups.map(g => g.predicate)} class="gap-2">
+                  {#each claimGroups as group (group.predicate)}
+                    <Accordion.Item value={group.predicate} class="rounded-lg border border-border/60 px-1">
+                      <Accordion.Trigger class="items-center px-3 py-2 text-xs hover:no-underline">
+                        <div class="flex items-center gap-1.5">
+                          <span class="font-medium">{predicateLabel(group.predicate)}</span>
+                          <span class="text-[0.6rem] tabular-nums text-muted-foreground">({group.items.length})</span>
+                        </div>
+                      </Accordion.Trigger>
+                      <Accordion.Content class="px-2 pb-2">
+                        <div class="flex flex-col gap-1.5">
+                          {#each group.items as src}
+                            <div class="rounded-md border border-border/40 bg-background/40 px-3 py-2">
+                              {#if src.snippets[0]?.quote}
+                                <p class="mb-1.5 text-[0.68rem] italic leading-relaxed text-muted-foreground">
+                                  "{src.snippets[0].quote.length > 160 ? src.snippets[0].quote.slice(0, 157) + '…' : src.snippets[0].quote}"
+                                </p>
+                              {/if}
+                              {#if src.url}
+                                <a href={src.url} target="_blank" rel="noopener noreferrer"
+                                  class="inline-flex items-center gap-1 text-[0.65rem] text-primary/80 hover:text-primary hover:underline">
+                                  <ExternalLink class="size-2.5 shrink-0" />
+                                  {src.label}
+                                </a>
+                              {:else}
+                                <span class="text-[0.65rem] text-muted-foreground">{src.label}</span>
+                              {/if}
+                            </div>
+                          {/each}
+                        </div>
+                      </Accordion.Content>
+                    </Accordion.Item>
+                  {/each}
+                </Accordion.Root>
+              {/if}
+
+              <!-- Reference sources (org-level sources[]) -->
+              {#if refSources.length}
+                {#if claimGroups.length}
+                  <div class="pt-1 text-[0.62rem] font-medium uppercase tracking-wider text-muted-foreground">References</div>
                 {/if}
-              {/each}
+                <div class="flex flex-col gap-1">
+                  {#each refSources as src}
+                    {#if src.url}
+                      <a href={src.url} target="_blank" rel="noopener noreferrer"
+                        class="flex items-start gap-2 rounded-md border border-border/60 px-3 py-2 text-xs transition-colors hover:bg-accent/40">
+                        <ExternalLink class="mt-0.5 size-3 shrink-0 text-muted-foreground" />
+                        <span class="min-w-0">
+                          <span class="block font-medium text-primary">{src.label}</span>
+                          <span class="block truncate text-[0.6rem] text-muted-foreground">{src.url}</span>
+                        </span>
+                      </a>
+                    {/if}
+                  {/each}
+                </div>
+              {/if}
             {:else}
               <p class="py-4 text-center text-xs text-muted-foreground">No sources linked</p>
             {/if}
