@@ -119,7 +119,7 @@ FIELDS:
 - founded_year: Only if the text explicitly states a year. "Founded in the early 2000s" = null.
 - colors: Only if explicitly stated as the org's colors. Not colors mentioned in other contexts.
 - membership_estimate: Only if a number is given. Ranges like "200-300" → use the midpoint.
-- description: Factual, based only on what the text says. No speculation or external knowledge.
+- description: Factual, based only on what the text says. No speculation or external knowledge. Write a narrative sentence — do NOT copy raw infobox fields, location data, section lists, or street addresses. If the text begins with infobox content (neighborhood names, street ranges, "Sections of X", "Established YYYY") skip those lines and summarize the narrative paragraph that follows.
 - orgs_mentioned: Every named criminal organization in the text, even those without a relationship edge.
 
 EDGE TYPES:
