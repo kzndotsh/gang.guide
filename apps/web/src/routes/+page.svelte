@@ -34,9 +34,10 @@
   }
   let zoomPct = $state(100);
   let searchRef = $state<OrgSearch | null>(null);
-  let yearMin = $state(1800);
+  let yearMin = $state(1930);
   let yearMax = $state(new Date().getFullYear());
   let hiddenLanes = $state<Set<string>>(new Set());
+  let yearPreferenceRestored = false;
 
   // Restore filters from localStorage
   if (browser) {
@@ -44,12 +45,19 @@
     if (saved) {
       try {
         const f = JSON.parse(saved);
-        if (f.yearMin) yearMin = f.yearMin;
-        if (f.yearMax) yearMax = f.yearMax;
+        if (f.yearMin) { yearMin = f.yearMin; yearPreferenceRestored = true; }
+        if (f.yearMax) { yearMax = f.yearMax; yearPreferenceRestored = true; }
         if (f.hiddenLanes) hiddenLanes = new Set(f.hiddenLanes);
       } catch {}
     }
   }
+
+  // Snap yearMax to actual graph data max on first load (if no saved preference)
+  $effect(() => {
+    if (!yearPreferenceRestored && yearDomain.max > yearMax) {
+      yearMax = yearDomain.max;
+    }
+  });
 
   // Save filters on change
   $effect(() => {
@@ -190,7 +198,7 @@
     if (selectedId) url.searchParams.set('org', selectedId);
     else url.searchParams.delete('org');
 
-    if (yearMin !== yearDomain.min || yearMax !== yearDomain.max) {
+    if (yearMin !== 1930 || yearMax !== yearDomain.max) {
       url.searchParams.set('year', `${yearMin}-${yearMax}`);
     } else {
       url.searchParams.delete('year');
