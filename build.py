@@ -33,7 +33,9 @@ def build_layout(org, lane_meta, slot):
 
     if not year:
         # No year: deterministic spread based on lane era
-        h = hash(org["id"]) & 0xFFFF
+        # hashlib.md5 for process-stable determinism (Python hash() is randomized since 3.3)
+        import hashlib
+        h = int(hashlib.md5(org["id"].encode()).hexdigest(), 16) & 0xFFFF
         lane_id = org.get("lane", "")
         if lane_id == "historical-east":
             display_year = 1948 + (h % 15)  # 1948-1963
@@ -45,7 +47,8 @@ def build_layout(org, lane_meta, slot):
         # Round/imprecise year: jitter forward only to avoid placing node before founding year.
         # "circa" = approximately ±1-2yr. "decade" = up to +9yr (could be anywhere in decade).
         # Round years (ends in 0) treated like circa.
-        h = hash(org["id"]) & 0xFF
+        import hashlib
+        h = int(hashlib.md5(org["id"].encode()).hexdigest(), 16) & 0xFF
         if precision == "decade":
             # Decade precision: 0-4yr spread (column jitter adds ~0-1yr on top)
             display_year = year + (h % 5)  # 0-4yr
@@ -84,7 +87,7 @@ def build_node(org, lane_meta, slot):
         "metro": org.get("metro"),
         "founded_year": org.get("founded_year"),
         "founded_year_precision": org.get("founded_year_precision"),
-        "dissolved_year": org.get("dissolved_year"),
+        "disbanded_year": org.get("disbanded_year"),
         "description": org.get("description"),
         "colors": org.get("colors", []),
         "symbols": org.get("symbols", []),

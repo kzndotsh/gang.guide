@@ -42,5 +42,6 @@
     "green"
   ],
   "status": "active",
-  "membership_estimate": 1000
+  "membership_estimate": 1000,
+  "nation_affiliation": "org:folk-nation"
 }

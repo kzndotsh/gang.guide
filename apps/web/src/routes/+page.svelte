@@ -34,8 +34,8 @@
   }
   let zoomPct = $state(100);
   let searchRef = $state<OrgSearch | null>(null);
-  let yearMin = $state(1930);
-  let yearMax = $state(2025);
+  let yearMin = $state(1800);
+  let yearMax = $state(new Date().getFullYear());
   let hiddenLanes = $state<Set<string>>(new Set());
 
   // Restore filters from localStorage
@@ -65,6 +65,18 @@
   const metroOptions = $derived(
     [...new Set(graph.nodes.map((n) => n.data?.metro?.trim()).filter(Boolean))].sort() as string[],
   );
+
+  // Year domain derived from actual graph data — not hardcoded
+  const yearDomain = $derived.by(() => {
+    const years = graph.nodes
+      .map((n) => n.data?.layout?.display_year ?? n.data?.founded_year)
+      .filter((y): y is number => typeof y === 'number' && y > 1000);
+    if (!years.length) return { min: 1800, max: new Date().getFullYear() };
+    return {
+      min: Math.floor(Math.min(...years)),
+      max: Math.ceil(Math.max(...years)),
+    };
+  });
 
   // Lane groups for the filter panel
   const laneGroups = $derived.by(() => {
@@ -178,7 +190,7 @@
     if (selectedId) url.searchParams.set('org', selectedId);
     else url.searchParams.delete('org');
 
-    if (yearMin !== 1930 || yearMax !== 2025) {
+    if (yearMin !== yearDomain.min || yearMax !== yearDomain.max) {
       url.searchParams.set('year', `${yearMin}-${yearMax}`);
     } else {
       url.searchParams.delete('year');
@@ -303,7 +315,7 @@
             <div class="hidden md:block">
               <EdgeModeToggle bind:edgeMode {selectedId} />
             </div>
-            <YearSlider bind:yearMin bind:yearMax />
+            <YearSlider bind:yearMin bind:yearMax min={yearDomain.min} max={yearDomain.max} />
           </div>
           <MapOverlay position="middle-left" class="hidden md:block">
             <EdgeLegend />

@@ -82,5 +82,6 @@
   "founded_year_precision": "estimate",
   "status": "active",
   "membership_estimate": 50000,
-  "military_service": "Army, Marines, Navy"
+  "military_service": "Army, Marines, Navy",
+  "nation_affiliation": "org:surenos"
 }

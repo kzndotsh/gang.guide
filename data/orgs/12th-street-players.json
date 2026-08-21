@@ -16,7 +16,7 @@
     "black",
     "white"
   ],
-  "nation_affiliation": null,
+  "nation_affiliation": "org:people-nation",
   "status": "inactive",
   "sources": [
     {

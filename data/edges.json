@@ -7558,21 +7558,6 @@
     ]
   },
   {
-    "id": "1639f6e55042",
-    "source": "org:simon-city-royals-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "citations": [
-      {
-        "url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/",
-        "title": "Chicago Gang History",
-        "evidence": "Folk Nation — c. 1979 – 2000 or later"
-      }
-    ]
-  },
-  {
     "id": "d7c55471922f",
     "source": "org:insane-deuces",
     "target": "org:simon-city-royals-chicago",
@@ -8234,20 +8219,6 @@
         "url": "https://chicagoganghistory.com/gang/gangster-disciples/",
         "title": "Chicago Gang History",
         "evidence": "In June of 1969, Vice Lords, Black P Stones and BGDs all got together to form a coalition known as the 'Lords Stones and Disciples' or 'LSD.'"
-      }
-    ]
-  },
-  {
-    "id": "fd8a0600a982",
-    "source": "org:black-gangster-disciples-nation",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1978,
-    "citations": [
-      {
-        "url": "https://chicagoganghistory.com/gang/gangster-disciples/",
-        "title": "Chicago Gang History",
-        "evidence": "This was the foundation and the beginning of Folks and Peoples."
       }
     ]
   },
@@ -10643,21 +10614,6 @@
         "url": "https://chicagoganghistory.com/gang/insane-racine-boys/",
         "title": "Chicago Gang History",
         "evidence": "The Racine Boys then allied with Ambrose and were able to join the Folk alliance alongside Ambrose in the year 1981."
-      }
-    ]
-  },
-  {
-    "id": "43d6786ce52c",
-    "source": "org:spanish-cobras-chicago",
-    "target": "org:folk-nation",
-    "type": "member_of",
-    "start_year": 1979,
-    "end_year": 2000,
-    "citations": [
-      {
-        "url": "https://chicagoganghistory.com/gang/insane-spanish-cobras/",
-        "title": "Chicago Gang History",
-        "evidence": "Folk Nation — c. 1979 – 2000 or later"
       }
     ]
   },
@@ -14004,18 +13960,6 @@
   },
   {
     "source": "org:almighty-vice-lord-nation",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "",
-        "title": "",
-        "evidence": "Multiple branches—Including Traveling Vice Lords (TVL), Insane Vice Lords (IVL), Conservative Vice Lords (CVL), Ebony Vice Lords (EVL), Unknown Vice Lords, Imperial Insane Vice Lords (IIVL), Cicero Insane Vice Lords (CIVL), and Mafia Insane Vice Lords (MIVL) —all operating under the People Nation (5X) banner."
-      }
-    ]
-  },
-  {
-    "source": "org:almighty-vice-lord-nation",
     "target": "org:folk-nation",
     "type": "rivalry",
     "citations": [
@@ -16915,18 +16859,6 @@
         "url": "http://www.stonegreasers.com/greaser/west-zombies-gang.html",
         "title": "StoneGreasers",
         "evidence": "They were close friends of the 'Corona Dukes' after a 1955 rumble on 32nd Avenue in Bayside."
-      }
-    ]
-  },
-  {
-    "source": "org:12th-street-players",
-    "target": "org:people-nation",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://www.stonegreasers.com/greaser/12th_street_players.html",
-        "title": "StoneGreasers",
-        "evidence": "The Countryside crew, started in 1987, was the only People gang being represented in the area"
       }
     ]
   },
@@ -20957,18 +20889,6 @@
   },
   {
     "source": "org:azusa-13",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/azusa-13/",
-        "title": "UnitedGangs",
-        "evidence": "The Varrio Azusa also have strong-ties to the Mexican-Mafia, a notorious criminal organization that operates from within the California state prison system."
-      }
-    ]
-  },
-  {
-    "source": "org:azusa-13",
     "target": "org:west-covina-mob-piru",
     "type": "rivalry",
     "citations": [
@@ -20988,18 +20908,6 @@
         "url": "https://unitedgangs.com/azusa-13/",
         "title": "UnitedGangs",
         "evidence": "They also feud with gangs in West Covina, such as the West Covina 13, West Covina Mob (bloods) and the West Covina Neighborhood Crips."
-      }
-    ]
-  },
-  {
-    "source": "org:barrio-mojados",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/barrio-mojados-13/",
-        "title": "UnitedGangs",
-        "evidence": "As with other Sureño gangs, the '13' signifies allegiance to the Mexican Mafia (La Eme), linking Barrio Mojados to the broader Southern California prison-based structure that influences gang behavior and expectations."
       }
     ]
   },
@@ -22581,18 +22489,6 @@
   },
   {
     "source": "org:cuatro-flats",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/cuatro-flats/",
-        "title": "UnitedGangs",
-        "evidence": "The 4th Street Flats also align themselves with the Mexican Mafia , so they represent Sur 13 ."
-      }
-    ]
-  },
-  {
-    "source": "org:cuatro-flats",
     "target": "org:the-mob-crew",
     "type": "rivalry",
     "citations": [
@@ -22648,30 +22544,6 @@
         "url": "https://unitedgangs.com/cuatro-flats/",
         "title": "UnitedGangs",
         "evidence": "Their main rivals include: The Mob Crew , Primera Flats , Breed Street , White Fence , Krazy Ass Mexicans , of all the MaraVilla Family Gangs"
-      }
-    ]
-  },
-  {
-    "source": "org:culver-city-boys",
-    "target": "org:surenos",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/2017/11/06/culver-city-boys/",
-        "title": "UnitedGangs",
-        "evidence": "Affiliated with both the Sureños and La eMe, the Mexican Mafia"
-      }
-    ]
-  },
-  {
-    "source": "org:culver-city-boys",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/2017/11/06/culver-city-boys/",
-        "title": "UnitedGangs",
-        "evidence": "Affiliated with both the Sureños and La eMe, the Mexican Mafia"
       }
     ]
   },
@@ -23254,18 +23126,6 @@
     ]
   },
   {
-    "source": "org:el-monte-flores",
-    "target": "org:surenos",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/el-monte-flores-13/",
-        "title": "UnitedGangs",
-        "evidence": "Like other gangs affiliated with the Mexican Mafia, members of El Monte Flores are asked to set their differences aside and join the Sureños while in prison."
-      }
-    ]
-  },
-  {
     "source": "org:elm-street-piru",
     "target": "org:lueders-park-pirus",
     "type": "alliance",
@@ -23636,18 +23496,6 @@
         "url": "https://unitedgangs.com/folk-nation/",
         "title": "UnitedGangs",
         "evidence": "The story of the Folk Nation begins in 1974, with the death of David Barksdale, leader of the recently formed Gangster Disciples Nation. Having then seized power, Larry Hoover called for a meeting with other local gangs leaders"
-      }
-    ]
-  },
-  {
-    "source": "org:forming-kaos",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/2026/04/30/forming-kaos-costa-mesa/",
-        "title": "UnitedGangs",
-        "evidence": "By the early 2000s, the gang became more closely aligned with the Sureño system, adopting the number '13' to signify affiliation with the Mexican Mafia."
       }
     ]
   },
@@ -24898,18 +24746,6 @@
         "url": "https://unitedgangs.com/hang-out-boys-13/",
         "title": "UnitedGangs",
         "evidence": "The Hangout Boys are allies of the 55 Bunch Gang and the Mexican Mafia"
-      }
-    ]
-  },
-  {
-    "source": "org:hang-out-boys-hob-in-south-los-angeles-los-angeles",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/hang-out-boys-13/",
-        "title": "UnitedGangs",
-        "evidence": "The Hang Out Boys are also known as the Hang Out Boys 13 (HOB13) or South Side Hang Out Boys 13 (SSHOB13), to show their affiliation with the Mexican Mafia"
       }
     ]
   },
@@ -26514,18 +26350,6 @@
     ]
   },
   {
-    "source": "org:lopers-13",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/2026/04/28/lopers-santa-ana/",
-        "title": "UnitedGangs",
-        "evidence": "As a Sureño-affiliated gang, the Lopers operate under the broader influence of the Mexican Mafia."
-      }
-    ]
-  },
-  {
     "source": "org:lynwood-neighborhood-crips",
     "target": "org:67-neighborhood-crips",
     "type": "member_of",
@@ -27926,18 +27750,6 @@
         "url": "https://unitedgangs.com/monster-kody-scott/",
         "title": "UnitedGangs",
         "evidence": "Eight Tray Gangster Crips, which have a long list of enemies: Denver Lane Bloods (DLB), Crenshaw Mafia Blood Gang, Harvard Park Brims"
-      }
-    ]
-  },
-  {
-    "source": "org:ms-13",
-    "target": "org:surenos",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/2014/05/01/ms-13-feds-nab-over-600-gang-suspects/",
-        "title": "UnitedGangs",
-        "evidence": "The Surenos, an umbrella group of street gangs with ties to Latin America that includes gangs such as the ultraviolent Mara Salvatrucha, or MS-13"
       }
     ]
   },
@@ -30072,30 +29884,6 @@
     ]
   },
   {
-    "source": "org:rancho-san-pedro-los-angeles",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/rancho-san-pedro-rsp/",
-        "title": "UnitedGangs",
-        "evidence": "The Rancho San Pedro's, are connected to the Mexican-Mafia"
-      }
-    ]
-  },
-  {
-    "source": "org:rancho-san-pedro-los-angeles",
-    "target": "org:surenos",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/rancho-san-pedro-rsp/",
-        "title": "UnitedGangs",
-        "evidence": "falls under the Sureños 13 (San Pedro 13) umbrella"
-      }
-    ]
-  },
-  {
     "source": "org:raymond-street-hustler-compton-crips",
     "target": "org:hustler-crips",
     "type": "member_of",
@@ -31323,30 +31111,6 @@
   },
   {
     "source": "org:santa-monica-13",
-    "target": "org:surenos",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/santa-monica-13/",
-        "title": "UnitedGangs",
-        "evidence": "The group's affiliation with both the Mexican Mafia and the Surenos gangs probably pushed its members to take parts in the illegal sale of narcotics."
-      }
-    ]
-  },
-  {
-    "source": "org:santa-monica-13",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/santa-monica-13/",
-        "title": "UnitedGangs",
-        "evidence": "The group's affiliation with both the Mexican Mafia and the Surenos gangs probably pushed its members to take parts in the illegal sale of narcotics."
-      }
-    ]
-  },
-  {
-    "source": "org:santa-monica-13",
     "target": "org:venice",
     "type": "rivalry",
     "citations": [
@@ -31985,18 +31749,6 @@
   },
   {
     "source": "org:south-los-13",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/south-los-13/",
-        "title": "UnitedGangs",
-        "evidence": "This gang falls under the Sureños \"card\" and are loyal to the Mexican Mafia, as indicated with the number \"13\" in their name."
-      }
-    ]
-  },
-  {
-    "source": "org:south-los-13",
     "target": "org:18th-street-gang",
     "type": "rivalry",
     "citations": [
@@ -32369,18 +32121,6 @@
   },
   {
     "source": "org:street-villains-gang",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/street-villains-gang/",
-        "title": "UnitedGangs",
-        "evidence": "The use of the number \"13\" corresponds to the 13th letter of the alphabet, \"M,\" and is commonly used by Southern California Latino gangs to signify allegiance to the Mexican Mafia"
-      }
-    ]
-  },
-  {
-    "source": "org:street-villains-gang",
     "target": "org:rollin-40s-neighborhood-crips",
     "type": "alliance",
     "citations": [
@@ -32388,30 +32128,6 @@
         "url": "https://unitedgangs.com/street-villains-gang/",
         "title": "UnitedGangs",
         "evidence": "Despite differing racial and gang affiliations, the two groups have coexisted peacefully for decades while sharing overlapping territory."
-      }
-    ]
-  },
-  {
-    "source": "org:mexican-mafia",
-    "target": "org:surenos",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/surenos/",
-        "title": "UnitedGangs",
-        "evidence": "Sureños (Spanish for \"Southerners\"), or Sureñas for females, are groups of loosely affiliated gangs that pay tribute to the Mexican Mafia while in US Federal and State correctional facilities."
-      }
-    ]
-  },
-  {
-    "source": "org:el-monte-flores",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/2016/04/08/suspected-leader-of-san-gabriel-valley-gang-pleads-guilty-to-racketeering-charges/",
-        "title": "UnitedGangs",
-        "evidence": "The suspected leader of a Mexican Mafia-controlled San Gabriel Valley gang that targeted black victims pleaded guilty Thursday to federal charges."
       }
     ]
   },
@@ -33125,18 +32841,6 @@
     ]
   },
   {
-    "source": "org:varrio-lennox",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/varrio-lennox/",
-        "title": "UnitedGangs",
-        "evidence": "The number 13, show their alliance to The Mexican-Mafia, a notorious criminal organization located in the California prison systems."
-      }
-    ]
-  },
-  {
     "source": "org:varrio-mesa-locos",
     "target": "org:mexican-mafia",
     "type": "alliance",
@@ -33205,18 +32909,6 @@
         "url": "https://unitedgangs.com/varrio-san-fers/",
         "title": "UnitedGangs",
         "evidence": "The Varrio San Fers are also known for their rivalry with Latinos in the city of Pacoima. For instance, a member of the San Fers shot a Latino man for wearing a Pittsburg Pirates baseball cap. Commonly sported by gangs in Pacoima, such as the Pacoima 13 and the Pacoima Flats."
-      }
-    ]
-  },
-  {
-    "source": "org:venice",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/venice-13/",
-        "title": "UnitedGangs",
-        "evidence": "Joining the Mexican Mafia, individuals belonging to the group were often used to maintain order and carry out missions while in prison."
       }
     ]
   },
@@ -33601,18 +33293,6 @@
         "url": "https://unitedgangs.com/ward-lane-compton-crips/",
         "title": "UnitedGangs",
         "evidence": "Crip rivals: Poccet Hood Compton Crips, Neighborhood Compton Crips, Santana Blocc Compton Crips"
-      }
-    ]
-  },
-  {
-    "source": "org:watts-13-gang",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/watts-13-gang/",
-        "title": "UnitedGangs",
-        "evidence": "The Watts 13 are connected to the Mexican Mafia and falls under the Sureno umbrella."
       }
     ]
   },
@@ -34341,18 +34021,6 @@
         "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
         "title": "FBI/NDIC National Gang Threat Assessment 2009",
         "evidence": "It competes with HAMC for membership and territory."
-      }
-    ]
-  },
-  {
-    "source": "org:florencia-13",
-    "target": "org:mexican-mafia",
-    "type": "member_of",
-    "citations": [
-      {
-        "url": "https://www.justice.gov/ndic/pubs32/32146/32146p.pdf",
-        "title": "FBI/NDIC National Gang Threat Assessment 2009",
-        "evidence": "Florencia 13 is subordinate to the Mexican Mafia (La Eme) prison gang and claims Sureños (Sur 13) affiliation."
       }
     ]
   },

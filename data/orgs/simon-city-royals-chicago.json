@@ -55,5 +55,6 @@
     "black"
   ],
   "status": "active",
-  "military_service": "Navy"
+  "military_service": "Navy",
+  "nation_affiliation": "org:folk-nation"
 }

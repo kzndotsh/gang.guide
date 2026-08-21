@@ -39,5 +39,6 @@
     "Pyramid"
   ],
   "membership_estimate": 35000,
-  "military_service": "Army"
+  "military_service": "Army",
+  "nation_affiliation": "org:people-nation"
 }

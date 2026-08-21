@@ -18,7 +18,7 @@ export function visibleEdgeCount(
     if (edgeMode === 'hover' && selectedId) {
       return e.source === selectedId || e.target === selectedId;
     }
-    return e.type === 'nation_affiliation';
+    return e.type === 'nation';
   }).length;
 }
 

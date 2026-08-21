@@ -17,7 +17,7 @@
     "black",
     "blue"
   ],
-  "nation_affiliation": null,
+  "nation_affiliation": "org:surenos",
   "status": "active",
   "sources": [
     {

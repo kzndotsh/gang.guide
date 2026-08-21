@@ -8,7 +8,7 @@
   "lane": "california-crips-east-coast",
   "metro": "Los Angeles",
   "founded_year": 1995,
-  "founded_year_precision": "range",
+  "founded_year_precision": "circa",
   "description": "59 East Coast Crips alliance. Due to demographic changes in this part of South Los Angeles, which saw the population go from majority Black to majority Latino, the presence of this gang has reduced significantly between 1995 and 2010. According the the 2010 Census, Blacks represented only 11 percent of the residents in zip code 90001, while Latinos represented 88 percent.",
   "nation_affiliation": "org:crips",
   "sources": [

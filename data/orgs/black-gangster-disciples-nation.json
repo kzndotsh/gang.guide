@@ -36,5 +36,6 @@
     "Six-Point Star"
   ],
   "membership_estimate": 40000,
-  "military_service": "Army, Marines, Navy, National Guard"
+  "military_service": "Army, Marines, Navy, National Guard",
+  "nation_affiliation": "org:folk-nation"
 }

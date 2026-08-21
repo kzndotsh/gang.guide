@@ -1,6 +1,5 @@
-import type { GraphNode } from './types';
-
-export type YearPrecision = 'exact' | 'circa' | 'decade' | 'range';
+import type { GraphNode, YearPrecision } from '$lib/types';
+export type { YearPrecision } from '$lib/types';
 
 export type YearSpan = {
   earliest: number;

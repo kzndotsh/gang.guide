@@ -8,7 +8,7 @@
   "lane": "california-bloods-la-south-bay",
   "metro": "Los Angeles",
   "founded_year": 1970,
-  "founded_year_precision": "range",
+  "founded_year_precision": "circa",
   "description": "East Side Pueblo Bishop Bloods are a predominately African-American street gang based in the Pueblo Del Rio housing projects in South Los Angeles in a community known as the Low Bottoms. They have been active in that area since the early 1970s before the Blood identity was even forged.",
   "nation_affiliation": "org:bloods",
   "sources": [

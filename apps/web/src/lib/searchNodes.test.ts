@@ -5,10 +5,7 @@ import type { GraphNode } from './types';
 const nodes: GraphNode[] = [
   {
     id: 'org:inglewood-family-gang',
-    type: 'organization',
     label: 'Inglewood Family Gang',
-    detail_level: 'skeleton',
-    review_status: 'auto',
     data: {
       standard_name: 'Inglewood Family Gang',
       aliases: ['IF', 'IFG'],
@@ -17,10 +14,7 @@ const nodes: GraphNode[] = [
   },
   {
     id: 'org:cross-atlantic-pirus',
-    type: 'organization',
     label: 'Cross Atlantic Pirus',
-    detail_level: 'skeleton',
-    review_status: 'auto',
     data: {
       standard_name: 'Cross Atlantic Pirus',
       aliases: ['CAP'],

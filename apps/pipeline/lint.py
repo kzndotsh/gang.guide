@@ -259,6 +259,9 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
 
         # Founded year precision consistency
         y_prec = org.get("founded_year_precision", "")
+        # Validate precision is a known value — 'range' and other non-schema values are errors
+        if y_prec and y_prec not in ("exact", "circa", "decade", "estimate"):
+            errors.append(f"{f}: invalid founded_year_precision '{y_prec}' (must be exact|circa|decade|estimate)")
         if y and y_prec:
             # 'decade' precision should use a round decade start (1940, 1950, etc.)
             if y_prec == "decade" and y % 10 != 0:

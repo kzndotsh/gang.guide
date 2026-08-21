@@ -22,5 +22,6 @@
     "blue"
   ],
   "status": "active",
-  "membership_estimate": 650
+  "membership_estimate": 650,
+  "nation_affiliation": "org:mexican-mafia"
 }

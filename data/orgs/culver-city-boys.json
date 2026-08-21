@@ -37,5 +37,6 @@
     "red",
     "black"
   ],
-  "status": "active"
+  "status": "active",
+  "nation_affiliation": "org:surenos"
 }

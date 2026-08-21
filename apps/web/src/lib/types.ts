@@ -1,14 +1,11 @@
-export type YearPrecision = 'exact' | 'circa' | 'decade' | 'range';
+export type YearPrecision = 'exact' | 'circa' | 'decade' | 'estimate' | 'range';
 
 export type OrganizationStatus = 'active' | 'inactive' | 'defunct' | 'unknown';
 
 export type YearSpanFields = {
   founded_year?: number;
-  founded_year_latest?: number;
   founded_year_precision?: YearPrecision;
-  dissolved_year?: number;
-  dissolved_year_latest?: number;
-  dissolved_year_precision?: YearPrecision;
+  disbanded_year?: number;
 };
 
 export type FieldSourceCitation = {
@@ -26,45 +23,40 @@ export type FieldSourceCitation = {
 
 export type GraphNode = {
   id: string;
-  type: string;
   label: string;
-  detail_level: string;
-  review_status: string;
+  // Legacy top-level fields — present in older graph.json, not emitted by current build.py
+  type?: string;
+  detail_level?: string;
+  review_status?: string;
   data: YearSpanFields & {
-    id?: string;
-    seed_key?: string;
     standard_name?: string;
-    map_hint?: { lane?: string; x_year?: number };
     layout?: {
       lane: string;
       lane_label?: string;
       lane_index: number;
-      lane_reason?: string;
       display_year: number;
       slot: number;
       overview: boolean;
-      year_span?: {
-        earliest: number;
-        latest: number;
-        precision: string;
-        midpoint: number;
-      } | null;
+      // Legacy — not emitted by current build.py
+      year_span?: { earliest: number; latest: number; precision: string; midpoint: number } | null;
     };
     aliases?: string[];
+    // Legacy optional fields — not emitted by current build.py but may exist in cached graph.json
     original_text_names?: string[];
-    type?: string;
     ethnicity?: string;
+    era?: string;
+    seed_key?: string;
+    field_sources?: Record<string, FieldSourceCitation[]>;
+    // Active fields emitted by build.py
+    type?: string;
     colors?: string[];
     symbols?: string[];
     status?: OrganizationStatus;
     description?: string;
     metro?: string;
     nation_affiliation?: string;
-    era?: string;
-    bootstrap?: boolean;
-    detail_level?: string;
-    field_sources?: Record<string, FieldSourceCitation[]>;
-    sources?: Array<{ url?: string; title?: string } | string>;
+    membership_estimate?: number;
+    sources?: Array<{ url?: string; title?: string }>;
   };
 };
 
@@ -72,15 +64,17 @@ export type GraphEdge = {
   source: string;
   target: string;
   type: string;
-  claim_id?: string;
+  start_year?: number;
+  end_year?: number;
   confidence_score?: number;
   review_status?: string;
+  citations?: Array<{ url?: string; title?: string; evidence?: string }>;
 };
 
 export type GraphEvent = {
   id: string;
   title: string;
-  year: number | null;
+  year?: number | null;
   year_earliest?: number | null;
   year_latest?: number | null;
   year_precision?: YearPrecision | null;
