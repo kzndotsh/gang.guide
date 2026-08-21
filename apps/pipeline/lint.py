@@ -345,6 +345,8 @@ def check_orgs(orgs: dict[str, dict], lane_ids: set[str]):
             and "motorcycle" not in lane
         ):
             warnings.append(f"{f}: white_supremacist org in non-WS lane '{lane}' — check lane assignment")
+        if org_type == "cybercrime_group" and lane and lane != "cybercrime":
+            warnings.append(f"{f}: cybercrime_group org in non-cybercrime lane '{lane}' — consider lane='cybercrime'")
 
         # Source title quality — bare domains are not informative
         BARE_DOMAINS = {

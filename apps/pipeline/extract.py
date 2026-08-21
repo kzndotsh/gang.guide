@@ -44,7 +44,7 @@ SYSTEM_PROMPT = """You extract structured relationship data from source text abo
 Return ONLY valid JSON matching this schema:
 {
   "subject_org": "Full proper name of the main organization this page is about",
-  "org_type": "street_gang|prison_gang|white_supremacist|motorcycle_club|organized_crime|alliance|nation",
+  "org_type": "street_gang|prison_gang|white_supremacist|motorcycle_club|organized_crime|cybercrime_group|alliance|nation",
   "org_lane": "lane id or null",
   "founded_year": 1972 or null,
   "colors": ["blue", "black"] or [],
@@ -73,7 +73,7 @@ NAMING:
 - edges.target: Always use the MOST SPECIFIC name from the text. If the source discusses local sets in Detroit and mentions "Rollin 60s", use the local set name that appears in the text (e.g. "7 Mile Rollin 60s Crips"), not the generic national org name. This prevents duplicates in the knowledge graph.
 
 FIELDS:
-- org_type: Classify the subject org. Use "white_supremacist" for white supremacist prison/street gangs (Aryan Brotherhood, Nazi Low Riders, etc.). Use "prison_gang" for non-white-supremacist prison gangs. Use "motorcycle_club" for OMGs. Use "organized_crime" for mafias/cartels. Use "street_gang" for standard street gangs. Use "alliance" or "nation" for umbrella coalitions (Folk Nation, etc.). Default to "street_gang" if unclear.
+- org_type: Classify the subject org. Use "white_supremacist" for white supremacist prison/street gangs. Use "prison_gang" for non-white-supremacist prison gangs. Use "motorcycle_club" for OMGs. Use "organized_crime" for mafias/cartels. Use "cybercrime_group" for hacking groups, ransomware organizations, and online criminal networks. Use "street_gang" for standard street gangs. Use "alliance" or "nation" for umbrella coalitions (Folk Nation, etc.). Default to "street_gang" if unclear.
 - org_lane: The lane ID this org belongs to. Must be one of these exact values or null:
     "prison" — Prison gangs (non-white-supremacist)
     "white-supremacist" — White supremacist gangs/orgs (Aryan Brotherhood, Nazi Low Riders, skinheads, etc.)

@@ -23,7 +23,7 @@
     },
     "type": {
       "type": "string",
-      "enum": ["street_gang", "organized_crime", "motorcycle_club", "prison_gang", "white_supremacist", "alliance", "nation"],
+      "enum": ["street_gang", "organized_crime", "motorcycle_club", "prison_gang", "white_supremacist", "cybercrime_group", "alliance", "nation"],
       "description": "Organization type"
     },
     "lane": {

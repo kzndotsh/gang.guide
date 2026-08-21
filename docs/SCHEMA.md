@@ -9,7 +9,7 @@ Machine-readable org schema: [`apps/pipeline/schema.json`](../apps/pipeline/sche
   "id": "org:slug-name",
   "name": "Display Name",
   "aliases": ["Alt Name 1", "Alt Name 2"],
-  "type": "street_gang | prison_gang | motorcycle_club | organized_crime | white_supremacist | alliance | nation",
+  "type": "street_gang | prison_gang | motorcycle_club | organized_crime | white_supremacist | cybercrime_group | alliance | nation",
   "lane": "lane-id",
   "metro": "City Name",
   "description": "Factual 2-4 sentence summary starting with the canonical name.",

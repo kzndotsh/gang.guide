@@ -1,0 +1,27 @@
+{
+  "id": "org:the-com",
+  "name": "The Com",
+  "aliases": [
+    "The Community",
+    "The C0m"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2012,
+  "founded_year_precision": "circa",
+  "status": "active",
+  "description": "The Com (short for 'The Community') is a transnational English-speaking online criminal network primarily composed of teenagers and young adults from the US and UK. It operates as a loose umbrella community facilitating cryptocurrency theft, SIM swapping, social engineering, extortion, and swatting. Member groups include Scattered Spider, Lapsus$, and ShinyHunters.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/The_Com",
+      "title": "The Com — Wikipedia"
+    },
+    {
+      "url": "https://www.theguardian.com/technology/2025/dec/19/the-com-cybercrime-network-behind-pornhub-hack",
+      "title": "The Com: the growing cybercrime network — The Guardian"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

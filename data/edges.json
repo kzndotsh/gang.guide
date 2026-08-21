@@ -34237,5 +34237,83 @@
         "evidence": ""
       }
     ]
+  },
+  {
+    "source": "org:scattered-spider",
+    "target": "org:the-com",
+    "type": "member_of",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Scattered_Spider",
+        "title": "Scattered Spider — Wikipedia",
+        "evidence": "Scattered Spider is a component of a larger global hacking community, known as 'The Community' or 'The Com'"
+      }
+    ],
+    "id": "e7ed8591a26d"
+  },
+  {
+    "source": "org:lapsus",
+    "target": "org:the-com",
+    "type": "member_of",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ShinyHunters",
+        "title": "ShinyHunters — Wikipedia",
+        "evidence": "ShinyHunters' membership is believed to partially overlap with other groups linked to international cybercrime network The Com, including Scattered Spider and Lapsus$."
+      }
+    ],
+    "id": "a497db4b9142"
+  },
+  {
+    "source": "org:shinyhunters",
+    "target": "org:the-com",
+    "type": "member_of",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ShinyHunters",
+        "title": "ShinyHunters — Wikipedia",
+        "evidence": "ShinyHunters' membership is believed to partially overlap with other groups linked to international cybercrime network The Com, including Scattered Spider and Lapsus$."
+      }
+    ],
+    "id": "57b536297ca7"
+  },
+  {
+    "source": "org:scattered-spider",
+    "target": "org:lapsus",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ShinyHunters",
+        "title": "ShinyHunters — Wikipedia",
+        "evidence": "Cybercrime group Scattered Lapsus$ Hunters claims to include members of all three groups."
+      }
+    ],
+    "id": "faeba9290e87"
+  },
+  {
+    "source": "org:scattered-spider",
+    "target": "org:shinyhunters",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ShinyHunters",
+        "title": "ShinyHunters — Wikipedia",
+        "evidence": "ShinyHunters' membership is believed to partially overlap with other groups linked to international cybercrime network The Com, including Scattered Spider and Lapsus$."
+      }
+    ],
+    "id": "eb1187de228b"
+  },
+  {
+    "source": "org:lapsus",
+    "target": "org:shinyhunters",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/ShinyHunters",
+        "title": "ShinyHunters — Wikipedia",
+        "evidence": "Cybercrime group Scattered Lapsus$ Hunters claims to include members of all three groups."
+      }
+    ],
+    "id": "e1f260a06ae1"
   }
 ]

@@ -1,0 +1,24 @@
+{
+  "id": "org:lapsus",
+  "name": "Lapsus$",
+  "aliases": [
+    "LAPSUS$",
+    "Strawberry Tempest",
+    "Dev-0537"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2021,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "Lapsus$ is an international extortion-focused hacking group known for high-profile breaches of Microsoft, Nvidia, Samsung, Okta, and Rockstar Games between 2021 and 2022. Composed largely of teenagers, the group used social engineering and SIM swapping rather than sophisticated malware. Several members were arrested in 2022. Membership overlaps with Scattered Spider and ShinyHunters.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Lapsus$",
+      "title": "Lapsus$ — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

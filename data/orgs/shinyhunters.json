@@ -1,0 +1,22 @@
+{
+  "id": "org:shinyhunters",
+  "name": "ShinyHunters",
+  "aliases": [
+    "Scattered Lapsus$ Hunters"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2019,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "ShinyHunters is a black-hat hacker and extortion group active since 2019, responsible for numerous high-profile data breaches including Ticketmaster (560 million records) and AT&T. The group sells stolen data on dark web markets. Membership overlaps with Scattered Spider and Lapsus$ through the broader Com network.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/ShinyHunters",
+      "title": "ShinyHunters — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

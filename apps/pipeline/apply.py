@@ -170,6 +170,7 @@ def create_org(
         "white_supremacist",
         "motorcycle_club",
         "organized_crime",
+        "cybercrime_group",
         "alliance",
         "nation",
     }
@@ -266,6 +267,7 @@ def apply_extraction(consensus: dict, org_id: str, org_path_index: dict, dry_run
         "white_supremacist",
         "motorcycle_club",
         "organized_crime",
+        "cybercrime_group",
         "alliance",
         "nation",
     }

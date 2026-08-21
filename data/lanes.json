@@ -233,6 +233,12 @@
       "label": "Unplaced",
       "group": "Regional",
       "order": 100
+    },
+    {
+      "id": "cybercrime",
+      "label": "Cybercrime",
+      "group": "Cybercrime",
+      "order": 88
     }
   ]
 }

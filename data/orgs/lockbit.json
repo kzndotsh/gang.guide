@@ -1,0 +1,25 @@
+{
+  "id": "org:lockbit",
+  "name": "LockBit",
+  "aliases": [
+    "LockBit 2.0",
+    "LockBit 3.0",
+    "LockBit Black"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2019,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "LockBit is a ransomware-as-a-service cybercriminal organization believed to be based in Russia. The world's most prolific ransomware group in 2022, responsible for approximately 44% of all ransomware incidents globally and $91 million in US ransom payments between 2020 and 2023. Disrupted by Operation Cronos in February 2024 when law enforcement seized infrastructure and arrested members.",
+  "disbanded_year": 2024,
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/LockBit",
+      "title": "LockBit — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

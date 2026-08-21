@@ -1,0 +1,24 @@
+{
+  "id": "org:darkside-hacker-group",
+  "name": "DarkSide",
+  "aliases": [
+    "Carbon Spider",
+    "Sangria Tempest"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2020,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "DarkSide is a Russian cybercriminal ransomware-as-a-service group best known for the May 2021 Colonial Pipeline attack, which caused fuel shortages across the southeastern United States. The group disbanded shortly after the attack following pressure from US law enforcement and the Russian government.",
+  "disbanded_year": 2021,
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/DarkSide_(hacker_group)",
+      "title": "DarkSide (hacker group) — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}
