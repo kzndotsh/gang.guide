@@ -32696,8 +32696,8 @@
   },
   {
     "id": "1f6675c2957c",
-    "source": "org:revil",
-    "target": "org:darkside-hacker-group",
+    "source": "org:darkside-hacker-group",
+    "target": "org:revil",
     "type": "alliance",
     "citations": [
       {
