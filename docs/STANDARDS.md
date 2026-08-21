@@ -56,6 +56,8 @@ Lint rules for org and edge files. `apps/pipeline/lint.py` runs in CI and after 
 | Duplicate edge (same src+tgt+type) | Error | Already exists |
 | `end_year` < `start_year` | Error | Temporal impossibility |
 | Alliance AND rivalry between same pair | Warning | Contradictory without temporal data |
+| Citation missing `url` | Warning | Every citation must have a URL |
+| Citation uses HTTP instead of HTTPS | Info | Should upgrade to `https` |
 | `start_year` well before org founded | Info | Suspicious temporal mismatch |
 
 ## Cross-reference rules

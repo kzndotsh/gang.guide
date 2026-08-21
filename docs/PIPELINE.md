@@ -48,7 +48,7 @@ Sends cleaned page text to **claude-sonnet-4.6** at temperatures 0.1, 0.3, 0.7 (
 - Skips pages already extracted (prompt hash in `meta.json`) unless `--force`
 - Resumes existing runs on crash
 
-Each run includes `subject_org`, `org_type`, `org_lane`, `founded_year`, `colors`, `symbols`, `edges` (with verbatim `evidence` and optional `period`), `orgs_mentioned`.
+Each run includes `subject_org`, `org_type`, `org_lane`, `founded_year`, `colors`, `symbols`, `edges` (with verbatim `evidence` quote and optional `period`), `orgs_mentioned`. Apply converts these to `citations[]` entries when writing to `edges.json`.
 
 ### 2. Adjudicate (`apps/pipeline/adjudicate.py`)
 
@@ -92,7 +92,8 @@ Writes `consensus.json` for apply.
 Conservative upgrade of live data files.
 
 - Only fills weaker fields (empty colors, thin descriptions, imprecise years)
-- Adds edges that do not already exist
+- Adds edges that do not already exist; for edges that already exist, appends a new citation if the source URL is not already recorded
+- New citations are written as `citations[]` entries (`url`, `title`, `evidence`)
 - `--create-orgs` writes stubs; type/lane from extract `org_type` / `org_lane`, else `street_gang` / unset
 - Rejects page-title names, self-edges, slug collisions, contradictions without dates
 - LA metro inheritance for Piru, Compton, etc.
