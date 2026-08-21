@@ -1,7 +1,7 @@
 {
   "id": "org:radford-street",
   "name": "Radford Street",
-  "lane": "california-latino-other",
+  "lane": "california-latino-sfv",
   "metro": "Los Angeles",
   "description": "A Latino street gang based near Radford Street in the North Hollywood/San Fernando Valley area of Los Angeles.",
   "type": "street_gang",

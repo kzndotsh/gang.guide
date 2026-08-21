@@ -1,7 +1,7 @@
 {
   "id": "org:opal-street",
   "name": "Opal Street",
-  "lane": "california-latino-other",
+  "lane": "california-latino-east-la",
   "metro": "Los Angeles",
   "description": "Predominantly Mexican-American street gang named after Opal Street in the Boyle Heights neighborhood of East Los Angeles, also known as Opal Street Locos (OSL), active since the 1980s.",
   "type": "street_gang",

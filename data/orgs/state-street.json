@@ -1,7 +1,7 @@
 {
   "id": "org:state-street",
   "name": "State Street Gang",
-  "lane": "california-latino-other",
+  "lane": "california-latino-south-la",
   "metro": "Los Angeles",
   "description": "A Latino street gang based near State Street in South Los Angeles, part of the network of Sureño-affiliated gangs in the area.",
   "type": "street_gang",

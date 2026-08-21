@@ -1,7 +1,7 @@
 {
   "id": "org:42nd-street-locos",
   "name": "42nd Street Locos",
-  "lane": "california-latino-other",
+  "lane": "california-latino-south-la",
   "metro": "Los Angeles",
   "description": "A Sureño-affiliated Latino street gang based around 42nd Street in South Los Angeles, one of numerous numbered-street Latino varrios in the South Central corridor.",
   "type": "street_gang",

@@ -1,7 +1,7 @@
 {
   "id": "org:montecito-park",
   "name": "Montecito Park",
-  "lane": "california-latino-other",
+  "lane": "california-latino-east-la",
   "metro": "Los Angeles",
   "description": "A Latino street gang based near Montecito Heights in Northeast Los Angeles, a Sureño-affiliated barrio gang.",
   "type": "street_gang",

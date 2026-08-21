@@ -1,7 +1,7 @@
 {
   "id": "org:valerio-street-locos",
   "name": "Valerio Street Locos",
-  "lane": "california-latino-other",
+  "lane": "california-latino-sfv",
   "metro": "Los Angeles",
   "description": "A Latino Sureño-affiliated street gang based near Valerio Street in the San Fernando Valley, Los Angeles.",
   "type": "street_gang",
