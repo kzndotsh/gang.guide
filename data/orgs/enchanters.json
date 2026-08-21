@@ -1,7 +1,10 @@
 {
   "id": "org:enchanters",
   "name": "Enchanters",
-  "aliases": [],
+  "aliases": [
+    "Astoria Enchanters",
+    "Corona Enchanters"
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",

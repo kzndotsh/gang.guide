@@ -1,7 +1,9 @@
 {
   "id": "org:phantom-lords",
   "name": "Phantom Lords",
-  "aliases": [],
+  "aliases": [
+    "P.L."
+  ],
   "type": "street_gang",
   "lane": "historical-east",
   "metro": "New York",
@@ -18,6 +20,18 @@
     {
       "url": "https://newyorkcitygangs.com/?page_id=1817",
       "title": "New York City Fighting Gangs — Hector of the Phantom Lords"
+    },
+    {
+      "url": "https://newyorkcitygangs.com/?page_id=3173",
+      "title": "Hector of the Phantom Lords — New York City Fighting Gangs"
+    },
+    {
+      "url": "https://www.boweryboyshistory.com/2026/07/screaming-phantoms-tomahawks-phantoms.html",
+      "title": "Screaming Phantoms, Tomahawks, Phantom Lords, Dirty Ones and other gangs of 1970s Williamsburg, Brooklyn — The Bowery Boys"
+    },
+    {
+      "url": "https://www.facebook.com/classicnystreetgangs/posts/rare-phantom-lords-photo-williamsburg-brooklyn-street-history-one-of-williamsbur/1645439584142149/",
+      "title": "Rare Phantom Lords Photo — Williamsburg Brooklyn Street History (Classic NY Street Gangs)"
     }
   ]
 }

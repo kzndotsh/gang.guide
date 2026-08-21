@@ -17,27 +17,34 @@
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Nine_Trey_Gangsters",
-      "title": "Nine Trey Gangsters \u2014 Wikipedia"
+      "title": "Nine Trey Gangsters — Wikipedia"
     },
     {
       "url": "https://www.justice.gov/usao-sdny/pr/leader-nine-trey-gangsta-bloods-sentenced-17-years-prison",
-      "title": "Nine Trey Leader Sentenced \u2014 DOJ"
+      "title": "Nine Trey Leader Sentenced — DOJ"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Lucchese_crime_family",
-      "title": "Lucchese crime family \u2014 Wikipedia"
+      "title": "Lucchese crime family — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Lucchese_crime_family_New_Jersey_faction",
-      "title": "Lucchese crime family New Jersey faction \u2014 Wikipedia"
+      "title": "Lucchese crime family New Jersey faction — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/United_Blood_Nation",
-      "title": "United Blood Nation \u2014 Wikipedia"
+      "title": "United Blood Nation — Wikipedia"
     }
   ],
   "colors": [
     "red"
   ],
-  "status": "active"
+  "status": "active",
+  "symbols": [
+    "Five-Pointed Star",
+    "Bulldog",
+    "Letter B Hand Sign",
+    "Red Bandana",
+    "Philadelphia Phillies Apparel"
+  ]
 }

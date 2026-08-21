@@ -499,6 +499,28 @@ org:new-springville-boys              # imprecise_year: no date found
 org:roach-guards                      # imprecise_year: historical 1820s, no exact date
 org:velentzas-organization            # imprecise_year: no date found
 
+org:gambino-crime-family              # absolute final dead-end
+org:bonanno-crime-family              # absolute final dead-end
+org:97-east-coast-crips               # absolute final dead-end
+org:geraghty-loma                     # absolute final dead-end
+org:parkside-pirus                    # absolute final dead-end
+org:beach-town-mafia-crips            # absolute final dead-end
+org:hells-devils                      # absolute final dead-end
+org:suicidal-town                     # absolute final dead-end
+org:west-blvd-crips                   # absolute final dead-end
+org:avenue-bloods                     # absolute final dead-end
+org:bailey-boys                       # no_symbols: no data found
+org:barrio-maravilla-east             # no_symbols: absolute final dead-end
+org:breed-street                      # no_symbols: confirmed dead-end
+org:ghost-shadows                     # no_symbols: confirmed dead-end
+org:hidden-valley-kings               # no_symbols: confirmed dead-end
+org:latin-scorpions                   # no_symbols: confirmed dead-end
+org:lrgp-gang                         # absolute final dead-end
+org:106-neighbor-hood-crips           # no_symbols: tool-limit dead-end
+org:python-knights                    # no_symbols: confirmed dead-end
+org:red-wings                         # no_symbols: tool-limit dead-end
+org:96-gangster-crips                 # no_symbols: confirmed dead-end
+
 # ── enrich:skip-field ─────────────────────────────────────────────────────────
 # Suppress a specific issue for a specific org without skipping enrichment entirely.
 # Useful when one field is a known dead end but others may still improve.
