@@ -1,0 +1,25 @@
+{
+  "id": "org:lulzsec",
+  "name": "LulzSec",
+  "aliases": [
+    "Lulz Security"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2011,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "description": "LulzSec (Lulz Security) was a hacktivist group that spun off from Anonymous in May 2011, responsible for high-profile attacks on Sony PlayStation Network, the CIA website, the FBI, and the US Senate during a 50-day hacking spree. The group disbanded in June 2011 after several members were identified. Co-founder Hector 'Sabu' Monsegur cooperated with the FBI, leading to the arrest of five core members in 2012.",
+  "disbanded_year": 2011,
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/LulzSec",
+      "title": "LulzSec — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": [
+    "Monocle Man Logo"
+  ]
+}

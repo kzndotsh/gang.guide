@@ -34341,5 +34341,44 @@
         "evidence": "Clop ransomware is operated by the cybercriminal group TA505, which has overlapping membership with Evil Corp / Indrik Spider operations."
       }
     ]
+  },
+  {
+    "id": "bb7389285310",
+    "source": "org:legion-of-doom",
+    "target": "org:masters-of-deception",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Masters_of_Deception",
+        "title": "Masters of Deception — Wikipedia",
+        "evidence": "Masters of Deception was formed by former Legion of Doom members and maintained a rivalry with LOD."
+      }
+    ]
+  },
+  {
+    "id": "d47848537edb",
+    "source": "org:legion-of-doom",
+    "target": "org:masters-of-deception",
+    "type": "rivalry",
+    "citations": [
+      {
+        "url": "https://www.cybersecurityeducationguides.org/legion-of-doom-vs-the-masters-of-deception/",
+        "title": "Legion of Doom vs. Masters of Deception — Cybersecurity Education Guides",
+        "evidence": "LOD was in the midst of an online feud with a New York-based rival, the Masters of Deception, leading to Operation Sundevil."
+      }
+    ]
+  },
+  {
+    "id": "a60620129077",
+    "source": "org:anonymous",
+    "target": "org:lulzsec",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://en.wikipedia.org/wiki/LulzSec",
+        "title": "LulzSec — Wikipedia",
+        "evidence": "LulzSec was a hacking group that spun off from Anonymous."
+      }
+    ]
   }
 ]

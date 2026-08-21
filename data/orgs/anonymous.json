@@ -1,0 +1,25 @@
+{
+  "id": "org:anonymous",
+  "name": "Anonymous",
+  "aliases": [
+    "Anon",
+    "AnonOps"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2003,
+  "founded_year_precision": "exact",
+  "status": "active",
+  "description": "Anonymous is an international decentralized hacktivist collective originating on 4chan in 2003. Known for the Guy Fawkes mask as its symbol, the group has conducted operations against governments, corporations, and the Church of Scientology (Project Chanology). Anonymous spawned numerous splinter groups including LulzSec.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Anonymous_(hacker_group)",
+      "title": "Anonymous (hacker group) — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": [
+    "Guy Fawkes Mask"
+  ]
+}
