@@ -1,0 +1,27 @@
+{
+  "id": "org:lizard-squad",
+  "name": "Lizard Squad",
+  "aliases": [
+    "LizardStresser"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "United States",
+  "founded_year": 2014,
+  "founded_year_precision": "exact",
+  "status": "inactive",
+  "disbanded_year": 2015,
+  "description": "Lizard Squad was a hacking group best known for taking down Xbox Live and PlayStation Network on Christmas Day 2014 with DDoS attacks. The group ran a DDoS-for-hire service called LizardStresser powered by hacked home routers. Several members were arrested in 2015, and the group's infrastructure was subsequently hacked and exposed.",
+  "sources": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Lizard_Squad",
+      "title": "Lizard Squad — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2015/01/lizard-kids-a-long-trail-of-fail/",
+      "title": "Lizard Kids: A Long Trail of Fail — Krebs on Security"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

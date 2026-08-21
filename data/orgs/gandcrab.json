@@ -1,0 +1,28 @@
+{
+  "id": "org:gandcrab",
+  "name": "GandCrab",
+  "aliases": [
+    "GandCrab RaaS",
+    "Oneiilk2"
+  ],
+  "type": "cybercrime_group",
+  "lane": "cybercrime",
+  "metro": "Russia",
+  "founded_year": 2018,
+  "founded_year_precision": "exact",
+  "disbanded_year": 2019,
+  "status": "inactive",
+  "description": "GandCrab was a Russian ransomware-as-a-service operation active January 2018 to May 2019, earning over $2 billion in extortion payments and at its peak accounting for up to half the global ransomware market. The group shipped five major code revisions and infected over 425,000 victims in a single month at peak volume. GandCrab 'retired' in May 2019, with leadership later identified as Daniil Shchukin ('UNKN') who immediately relaunched under the REvil name.",
+  "sources": [
+    {
+      "url": "https://krebsonsecurity.com/2019/07/whos-behind-the-gandcrab-ransomware/",
+      "title": "Who's Behind the GandCrab Ransomware? — Krebs on Security"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/GandCrab",
+      "title": "GandCrab — Wikipedia"
+    }
+  ],
+  "colors": [],
+  "symbols": []
+}

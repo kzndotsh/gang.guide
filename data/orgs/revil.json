@@ -11,12 +11,20 @@
   "founded_year": 2019,
   "founded_year_precision": "exact",
   "status": "inactive",
-  "description": "REvil (Ransomware Evil) is a Russian ransomware-as-a-service cybercriminal group responsible for high-profile attacks including JBS Foods ($11M ransom) and Kaseya VSA ($70M demand). The group was dismantled in January 2022 when the Russian Federal Security Service arrested several members and seized assets.",
+  "description": "REvil (Ransomware Evil), also known as Sodinokibi, was a Russian ransomware-as-a-service group that emerged in 2019 as a rebranding of GandCrab, led by 'UNKN' (Daniil Shchukin). The group earned over $120 million in 2020 alone. REvil carried out the Kaseya VSA supply-chain attack ($70M demand) and the JBS Foods attack ($11M ransom). Dismantled in January 2022 when Russia arrested 14 members at US request, seizing $600K, 500K euros, and 426M rubles.",
   "disbanded_year": 2022,
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/REvil",
       "title": "REvil — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2022/01/at-request-of-u-s-russia-rounds-up-14-revil-ransomware-affiliates/",
+      "title": "At Request of U.S., Russia Rounds Up 14 REvil Ransomware Affiliates — Krebs on Security"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+      "title": "Germany Doxes 'UNKN,' Head of RU Ransomware Gangs REvil, GandCrab — Krebs on Security"
     }
   ],
   "colors": [],

@@ -12,11 +12,15 @@
   "founded_year": 2019,
   "founded_year_precision": "exact",
   "status": "active",
-  "description": "Clop (also written Cl0p) is a Russian ransomware-as-a-service cybercriminal organization that has extorted over $500 million in ransom payments. The group is known for large-scale supply chain attacks exploiting zero-day vulnerabilities, including the 2021 Accellion FTA attack and the 2023 MOVEit Transfer attack that compromised hundreds of organizations including US government agencies.",
+  "description": "Clop (Cl0p) is a Russian ransomware-as-a-service cybercriminal organization, first observed in early 2019. The group has extorted over $500 million, specializing in supply chain attacks exploiting zero-day vulnerabilities in file transfer software. Major operations include the 2021 Accellion FTA attack and the 2023 MOVEit Transfer attack that compromised hundreds of organizations including US government agencies. Ukrainian police arrested six Clop money-laundering affiliates in 2021, but core members remain at large in Russia.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Clop_(hacker_group)",
       "title": "Clop (hacker group) — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2021/06/ukrainian-police-nab-six-tied-to-clop-ransomware/",
+      "title": "Ukrainian Police Nab Six Tied to CLOP Ransomware — Krebs on Security"
     }
   ],
   "colors": [],

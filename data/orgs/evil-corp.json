@@ -10,9 +10,9 @@
   "lane": "cybercrime",
   "metro": "Russia",
   "founded_year": 2009,
-  "founded_year_precision": "circa",
+  "founded_year_precision": "exact",
   "status": "active",
-  "description": "Evil Corp (also known as Indrik Spider) is a Russian cybercriminal organization led by Maksim Yakubets and Igor Turashev, considered the most prolific cybercrime group by the UK's National Crime Agency. Active since approximately 2009, the group developed the Dridex banking trojan and stole over $100 million from hundreds of banks worldwide. The US Treasury sanctioned the group in 2019 with a $5 million reward for Yakubets.",
+  "description": "Evil Corp is a Russian cybercriminal organization led by Maksim 'Aqua' Yakubets, who the U.S. Justice Department indicted in 2019 with a $5 million bounty — the largest-ever for a cybercriminal. Active since at least 2009, the group deployed JabberZeus and Dridex banking malware to steal approximately $100 million from hundreds of businesses in the US and Europe. Yakubets also worked for the Russian FSB intelligence service from 2017, exemplifying Russia's use of cybercriminals as state contractors.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Evil_Corp",
@@ -21,6 +21,10 @@
     {
       "url": "https://www.nationalcrimeagency.gov.uk/who-we-are/publications/732-evil-corp-behind-the-screens/file",
       "title": "Evil Corp: Behind the Screens — National Crime Agency"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2019/12/inside-evil-corp-a-100m-cybercrime-menace/",
+      "title": "Inside 'Evil Corp,' a $100M Cybercrime Menace — Krebs on Security"
     }
   ],
   "colors": [],

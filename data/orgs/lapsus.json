@@ -12,11 +12,15 @@
   "founded_year": 2021,
   "founded_year_precision": "exact",
   "status": "inactive",
-  "description": "Lapsus$ is an international extortion-focused hacking group known for high-profile breaches of Microsoft, Nvidia, Samsung, Okta, and Rockstar Games between 2021 and 2022. Composed largely of teenagers, the group used social engineering and SIM swapping rather than sophisticated malware. Several members were arrested in 2022. Membership overlaps with Scattered Spider and ShinyHunters.",
+  "description": "Lapsus$ (LAPSUS$) is an international extortion group that surfaced in December 2021, primarily using social engineering, SIM swapping, and recruiting corporate insiders rather than sophisticated malware. Members offered up to $20,000/week to mobile carrier employees for inside access. The group breached NVIDIA, Samsung, Okta, Microsoft, Vodafone, and Electronic Arts before most core members were identified. Operated solely via Telegram with 45,000+ subscribers. Overlaps with Scattered Spider and ShinyHunters through The Com network.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Lapsus$",
       "title": "Lapsus$ — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2022/03/a-closer-look-at-the-lapsus-data-extortion-group/",
+      "title": "A Closer Look at the LAPSUS$ Data Extortion Group — Krebs on Security"
     }
   ],
   "colors": [],

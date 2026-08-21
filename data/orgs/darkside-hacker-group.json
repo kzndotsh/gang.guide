@@ -11,12 +11,16 @@
   "founded_year": 2020,
   "founded_year_precision": "exact",
   "status": "inactive",
-  "description": "DarkSide is a Russian cybercriminal ransomware-as-a-service group best known for the May 2021 Colonial Pipeline attack, which caused fuel shortages across the southeastern United States. The group disbanded shortly after the attack following pressure from US law enforcement and the Russian government.",
+  "description": "DarkSide is a Russian ransomware-as-a-service cybercriminal group that first surfaced on Russian hacking forums in August 2020. Best known for the May 2021 Colonial Pipeline attack that shut down 5,550 miles of fuel pipe across the southeastern United States. DarkSide operated a 'big game hunting' strategy targeting companies with significant revenue, forbidding attacks on healthcare, education, and nonprofits. The group disbanded days after the Colonial Pipeline attack following server seizures and loss of cryptocurrency funds.",
   "disbanded_year": 2021,
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/DarkSide_(hacker_group)",
       "title": "DarkSide (hacker group) — Wikipedia"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2021/05/a-closer-look-at-the-darkside-ransomware-gang/",
+      "title": "A Closer Look at the DarkSide Ransomware Gang — Krebs on Security"
     }
   ],
   "colors": [],

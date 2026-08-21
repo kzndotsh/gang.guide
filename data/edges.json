@@ -32680,5 +32680,44 @@
         "evidence": "LulzSec was a hacking group that spun off from Anonymous."
       }
     ]
+  },
+  {
+    "id": "9f5b85d5dd76",
+    "source": "org:gandcrab",
+    "target": "org:revil",
+    "type": "spin_off",
+    "citations": [
+      {
+        "url": "https://krebsonsecurity.com/2019/07/is-revil-the-new-gandcrab-ransomware/",
+        "title": "Is 'REvil' the New GandCrab Ransomware? — Krebs on Security",
+        "evidence": "a growing body of evidence suggests the GandCrab team have instead quietly regrouped behind a more exclusive and advanced ransomware program known variously as 'REvil,' 'Sodin,' and 'Sodinokibi.'"
+      }
+    ]
+  },
+  {
+    "id": "1f6675c2957c",
+    "source": "org:revil",
+    "target": "org:darkside-hacker-group",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://krebsonsecurity.com/2022/01/at-request-of-u-s-russia-rounds-up-14-revil-ransomware-affiliates/",
+        "title": "At Request of U.S., Russia Rounds Up 14 REvil Ransomware Affiliates — Krebs on Security",
+        "evidence": "REvil associates working with another ransomware group — DarkSide — attacked Colonial Pipeline"
+      }
+    ]
+  },
+  {
+    "id": "b0d891857667",
+    "source": "org:conti",
+    "target": "org:trickbot",
+    "type": "alliance",
+    "citations": [
+      {
+        "url": "https://krebsonsecurity.com/2022/03/conti-ransomware-group-diaries-part-i-evasion/",
+        "title": "Conti Ransomware Group Diaries, Part I — Krebs on Security",
+        "evidence": "On Sept. 22, 2020, the U.S. National Security Agency began a weeks-long operation seizing control of the Trickbot botnet. Conti is one of several cybercrime groups that has regularly used Trickbot to deploy malware."
+      }
+    ]
   }
 ]

@@ -11,10 +11,10 @@
   "type": "cybercrime_group",
   "lane": "cybercrime",
   "metro": "Russia",
-  "founded_year": 2015,
+  "founded_year": 2013,
   "founded_year_precision": "exact",
   "status": "active",
-  "description": "FIN7 (also known as Carbon Spider or ELBRUS) is a Russian cybercriminal APT group that has primarily targeted US retail, restaurant, and hospitality sectors since 2015, stealing over $1 billion. They operated through a fake cybersecurity front company called Combi Security to recruit hackers. FIN7 is linked to the Carbanak malware campaign and the DarkSide ransomware group responsible for the Colonial Pipeline attack.",
+  "description": "FIN7 (Carbon Spider) is a Russian cybercriminal APT group active since 2013, causing an estimated $3 billion in losses through phishing, malware, and supply chain attacks. The group operated through a fake cybersecurity company called Combi Security and had over 70 employees in distinct business units. Declared 'dead' by US authorities after 2023 convictions but revived in 2024, building 4,000+ phishing domains spoofing brands like Microsoft, Google, Netflix, and Cisco using hosting from Stark Industries Solutions.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/FIN7",
@@ -23,6 +23,10 @@
     {
       "url": "https://www.fbi.gov/contact-us/field-offices/seattle/news/stories/how-cyber-crime-group-fin7-attacked-and-stole-data-from-hundreds-of-us-companies",
       "title": "How Cyber Crime Group FIN7 Attacked Hundreds of U.S. Companies — FBI"
+    },
+    {
+      "url": "https://krebsonsecurity.com/2024/07/the-stark-truth-behind-the-resurgence-of-russias-fin7/",
+      "title": "The Stark Truth Behind the Resurgence of Russia's Fin7 — Krebs on Security"
     }
   ],
   "colors": [],

@@ -11,7 +11,7 @@
   "lane": "cybercrime",
   "founded_year": 2022,
   "founded_year_precision": "exact",
-  "description": "Scattered Spider is a hacking group mostly composed of teens and young adults from the United States and the United Kingdom, believed to be affiliated with the cybercriminal network 'The Com'. Founded around May 2022, the group gained notoriety for hacking and extorting Caesars Entertainment and MGM Resorts International in 2023.",
+  "description": "Scattered Spider is an English-speaking cybercrime group, part of The Com network, that extorted at least $115 million from victims. The group primarily uses social engineering, SIM swapping, and corrupting corporate insiders rather than technical exploits — offering employees up to $20,000/week for inside access. Major attacks include MGM Resorts and Caesars Entertainment (2023), Transport for London, and UK retailers Marks & Spencer and Harrods. Several core members, many teenagers, pleaded guilty in 2026.",
   "metro": "United States",
   "sources": [
     {
