@@ -58,7 +58,7 @@ Output: `data/extracted/{source}/{slug}/adjudicated.json`
 
 ### 3. Verify (`apps/pipeline/verify.py`): optional
 
-Web-search fact-checking with **claude-sonnet-4.6** (up to 8 tool turns, DuckDuckGo + fetch_url).
+Web-search fact-checking with **claude-sonnet-4.6** (up to 8 tool turns via `apps/pipeline/search.py` — Brave Search + DuckDuckGo + Wikipedia + CourtListener).
 
 **Modifies `adjudicated.json` in-place** — merge reads the already-cleaned version. No separate verified.json data path.
 
@@ -183,7 +183,7 @@ org:bloods  cross_metro
 
 Standalone. Not in `just pipeline`.
 
-Ranks orgs by weakness × connectivity, greps `data/raw/`, then an agentic loop (`web_search`, `fetch_url`) fills gaps only. Never overwrites strong fields.
+Ranks orgs by weakness × connectivity, greps `data/raw/`, then an agentic loop (`web_search`, `fetch_url`, `court_search`) fills gaps only. Never overwrites strong fields. All search calls route through `apps/pipeline/search.py` (multi-source — see below).
 
 ```bash
 just enrich
@@ -218,3 +218,45 @@ python3 -m apps.pipeline.clean --issues suspicious_exact_year --lane chicago-fol
 ```
 
 Flags: `--dry-run`, `--limit N`, `--org ID`, `--issues CODE`, `--lane ID`, `--no-tools`, `--model`.
+
+## Search (`apps/pipeline/search.py`)
+
+Shared multi-source search module used by `enrich.py`, `clean.py`, and `verify.py`. All three tools import `multi_search`, `fetch_url`, and `court_search` from here rather than implementing their own HTTP logic.
+
+### Backends (run in parallel per query, results merged and deduplicated)
+
+| Backend | Key required | What it finds |
+|---------|-------------|---------------|
+| **Brave Search API** | `BRAVE_API_KEY` in `.env` | Structured web + news results, independent index |
+| **DuckDuckGo HTML** | None | Free fallback, always available |
+| **Wikipedia REST** | None | Clean article summaries via CirrusSearch fulltext |
+| **CourtListener** | `COURTLISTENER_API_KEY` in `.env` | Federal court opinions + PACER dockets |
+
+### Deduplication
+
+Results are deduplicated by normalized URL (query params stripped, lowercased) and by snippet fingerprint (first 60 chars). This removes near-duplicates when multiple backends return the same article.
+
+### LLM tools exposed
+
+| Tool | Description |
+|------|-------------|
+| `web_search(query)` | Runs all backends, returns merged results |
+| `fetch_url(url)` | Fetches page content; Wikipedia URLs use REST API for cleaner extraction |
+| `court_search(query)` | Searches CourtListener specifically — useful for founding dates and membership estimates cited in federal indictments |
+
+### Key behaviors
+
+- **CourtListener fires automatically** when the query contains legal/criminal keywords: `gang`, `rico`, `indictment`, `founded`, `membership`, `federal`, `convicted`, etc.
+- **Wikipedia fires automatically** for entity-like queries (mostly title-cased words)
+- **DDG redirect URLs are decoded** to direct destination URLs so `fetch_url` works on DDG results
+- **Rate limits**: CourtListener is 5 req/min (Access Level 5, 125/hour) — natural LLM turn delays prevent hitting this in normal use
+
+### API keys
+
+Add to root `.env`:
+```
+BRAVE_API_KEY=your_key_here
+COURTLISTENER_API_KEY=your_key_here
+```
+
+Get keys at: `brave.com/search/api` (2,000 free queries/month) and `courtlistener.com` (free with account registration).

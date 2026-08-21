@@ -14,7 +14,7 @@ Docs: `docs/INDEX.md`, `docs/SCHEMA.md`, `docs/STANDARDS.md`, `docs/PIPELINE.md`
 - `just ci`: full CI locally
 - `just deploy`: production
 - `just pipeline chicago_history`: extract → adjudicate → merge → apply dry-run (**not** verify)
-- `just verify <source>`: optional web-search fact-checking (merge does not read `verified.json`)
+- `just verify <source>`: optional web-search fact-checking (modifies adjudicated.json in-place; merge reads the cleaned version)
 - `just enrich` / `just enrich-rank`: weak org profiles
 - `just clean` / `just clean-rank`: spot-check existing fields
 - `just ruler`: regenerate AI agent configs
@@ -26,7 +26,7 @@ Docs: `docs/INDEX.md`, `docs/SCHEMA.md`, `docs/STANDARDS.md`, `docs/PIPELINE.md`
 ├── data/orgs/ edges.json lanes.json   # source of truth
 ├── data/raw/                          # scraped text (gitignored)
 ├── apps/web/                          # SvelteKit + Konva map
-├── apps/pipeline/                     # extract, adjudicate, verify, merge, apply, enrich, clean, lint
+├── apps/pipeline/                     # extract, adjudicate, verify, merge, apply, enrich, clean, lint, search
 ├── .ruler/AGENTS.md                   # this file
 ├── docs/                              # human documentation
 └── justfile
@@ -41,6 +41,8 @@ Docs: `docs/INDEX.md`, `docs/SCHEMA.md`, `docs/STANDARDS.md`, `docs/PIPELINE.md`
 ## Pipeline
 
 `just pipeline <source>` = extract → adjudicate → merge → apply (dry-run). Verify, enrich, and clean are separate.
+
+`apps/pipeline/search.py` — shared multi-source search (Brave + DuckDuckGo + Wikipedia REST + CourtListener). Used by enrich, clean, and verify. API keys: `BRAVE_API_KEY`, `COURTLISTENER_API_KEY` in root `.env`.
 
 Extract: sonnet 4.6 at 0.1/0.3/0.7. Adjudicate: sonnet 4.6. Merge copies `adjudicated.json` if present, else 2/3 consensus. Apply only upgrades weaker fields; lint gates. Logs: `data/logs/*.jsonl`. Ignore rules: `.gangguideignore`.
 
