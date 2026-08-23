@@ -982,6 +982,15 @@
     window.visualViewport?.addEventListener('resize', syncStageBox);
 
     buildSceneAsync();
+
+    // PaneGroup can report 0×0 on the first frame; keep polling until layout exists.
+    const pollReveal = () => {
+      if (cancelled || didInitialFit) return;
+      if (!tryRevealMap()) {
+        bootRaf = requestAnimationFrame(pollReveal);
+      }
+    };
+    pollReveal();
     };
 
     boot();

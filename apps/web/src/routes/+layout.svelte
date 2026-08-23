@@ -12,7 +12,7 @@
 <Tooltip.Provider>
   <div class="dark h-full min-h-dvh">
     <CustomCursor />
-    {#if navigating.to}
+    {#if navigating.from && navigating.to}
       <div class="fixed inset-0 z-50 flex items-center justify-center bg-background">
         <div class="text-center">
           <div class="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-muted-foreground border-t-primary"></div>

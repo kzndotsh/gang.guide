@@ -18,6 +18,7 @@
   import { visibleEdgeCount } from '$lib/map/visibility';
   import { PaneGroup, Pane, Handle } from '$lib/components/ui/resizable/index.js';
   import * as Drawer from '$lib/components/ui/drawer/index.js';
+  import { IsMobile } from '$lib/hooks/is-mobile.svelte.js';
 
     const INSPECTOR_LAYOUT_KEY = 'gang-guide-inspector';
   const INSPECTOR_MIN_SIZE = 16;
@@ -151,18 +152,11 @@
     visibleEdgeCount(graph, edgeMode, selectedId)
   );
 
-  let viewport = $state<'pending' | 'mobile' | 'desktop'>('pending');
+  const isMobile = new IsMobile();
   let urlSyncEnabled = $state(false);
 
   onMount(() => {
     if (!browser) return;
-    const mq = window.matchMedia('(min-width: 768px)');
-    const applyViewport = () => {
-      viewport = mq.matches ? 'desktop' : 'mobile';
-    };
-    applyViewport();
-    mq.addEventListener('change', applyViewport);
-
     const params = new URL(window.location.href).searchParams;
 
     // Restore org from URL
@@ -187,7 +181,6 @@
     }
 
     urlSyncEnabled = true;
-    return () => mq.removeEventListener('change', applyViewport);
   });
 
   // Sync state → URL after the first restore so iOS Safari does not abort in-flight loads.
@@ -294,16 +287,6 @@
 <svelte:window onkeydown={onKeydown} />
 
 <div class="fixed inset-0 h-dvh overflow-hidden bg-background pb-[env(safe-area-inset-bottom)]" style="background-color:#0d1117">
-  {#if viewport === 'pending'}
-    <div class="flex h-full flex-col items-center justify-center" style="background-color:#0d1117">
-      <svg class="size-16 animate-[spin_6s_linear_infinite] text-muted-foreground/20" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="0.4">
-        <circle cx="50" cy="50" r="45"/>
-        <ellipse cx="50" cy="50" rx="45" ry="12"/>
-        <ellipse cx="50" cy="50" rx="20" ry="45"/>
-        <ellipse cx="50" cy="50" rx="35" ry="45"/>
-      </svg>
-    </div>
-  {:else}
   {#snippet mapWorkspace()}
       <div class="flex h-full flex-col">
         <AppHeader
@@ -389,7 +372,23 @@
       </div>
     {/snippet}
 
-  {#if viewport === 'desktop'}
+  {#if isMobile.current}
+      {@render mapWorkspace()}
+      <Drawer.Root
+        open={Boolean(selectedId)}
+        onOpenChange={onInspectorOpenChange}
+        shouldScaleBackground={false}
+      >
+        <Drawer.Content class="h-[80dvh] max-h-[80dvh] min-h-0 gap-0 overflow-hidden rounded-t-lg bg-card p-0">
+          <InspectorPanel
+            {graph}
+            node={enrichedNode}
+            onclose={deselect}
+            onselect={select}
+          />
+        </Drawer.Content>
+      </Drawer.Root>
+    {:else}
       <PaneGroup autoSaveId={INSPECTOR_LAYOUT_KEY} direction="horizontal" class="flex h-full">
         <Pane defaultSize={100 - INSPECTOR_DEFAULT_SIZE} minSize={40} class="min-h-0 min-w-0">
           {@render mapWorkspace()}
@@ -414,23 +413,6 @@
           </aside>
         </Pane>
       </PaneGroup>
-    {:else}
-      {@render mapWorkspace()}
-      <Drawer.Root
-        open={Boolean(selectedId)}
-        onOpenChange={onInspectorOpenChange}
-        shouldScaleBackground={false}
-      >
-        <Drawer.Content class="h-[80dvh] max-h-[80dvh] min-h-0 gap-0 overflow-hidden rounded-t-lg bg-card p-0">
-          <InspectorPanel
-            {graph}
-            node={enrichedNode}
-            onclose={deselect}
-            onselect={select}
-          />
-        </Drawer.Content>
-      </Drawer.Root>
     {/if}
-  {/if}
 </div>
 

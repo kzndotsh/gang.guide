@@ -1,32 +1,13 @@
 import type { Graph } from '$lib/types';
 
-const GRAPH_ATTEMPTS = 3;
-const GRAPH_TIMEOUT_MS = 12_000;
-
 export async function load({ fetch }) {
-  let lastError: Error | null = null;
-
-  for (let attempt = 0; attempt < GRAPH_ATTEMPTS; attempt++) {
-    try {
-      const res = await fetch('/graph.json', { signal: abortAfter(GRAPH_TIMEOUT_MS) });
-      if (!res.ok) {
-        lastError = new Error(`Failed to load graph.json (${res.status})`);
-        continue;
-      }
-      const graph: Graph = await res.json();
-      return { graph };
-    } catch (err) {
-      lastError = err instanceof Error ? err : new Error('Failed to load graph.json');
-    }
+  // Do not pass a custom AbortSignal. SvelteKit hydrates prerendered fetch
+  // results from a script tag; a timeout/retry can miss that cache and hang
+  // on a competing <link rel=preload> of the same URL.
+  const res = await fetch('/graph.json');
+  if (!res.ok) {
+    throw new Error(`Failed to load graph.json (${res.status})`);
   }
-
-  throw lastError ?? new Error('Failed to load graph.json');
-}
-
-function abortAfter(ms: number): AbortSignal | undefined {
-  try {
-    return AbortSignal.timeout(ms);
-  } catch {
-    return undefined;
-  }
+  const graph: Graph = await res.json();
+  return { graph };
 }
