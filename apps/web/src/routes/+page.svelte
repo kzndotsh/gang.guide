@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { browser } from '$app/environment';
-  import { replaceState } from '$app/navigation';
   import KonvaMap from '$lib/map/KonvaMap.svelte';
   import { type EdgeMode } from '$lib/map/KonvaMap.svelte';
   import InspectorPanel from '$lib/inspector/InspectorPanel.svelte';
@@ -19,6 +18,7 @@
   import { PaneGroup, Pane, Handle } from '$lib/components/ui/resizable/index.js';
   import * as Drawer from '$lib/components/ui/drawer/index.js';
   import { IsMobile } from '$lib/hooks/is-mobile.svelte.js';
+  import { DEFAULT_YEAR_MIN, replaceLocation, yearQueryValue } from '$lib/urlState';
 
     const INSPECTOR_LAYOUT_KEY = 'gang-guide-inspector';
   const INSPECTOR_MIN_SIZE = 16;
@@ -36,7 +36,7 @@
   }
   let zoomPct = $state(100);
   let searchRef = $state<OrgSearch | null>(null);
-  let yearMin = $state(1930);
+  let yearMin = $state(DEFAULT_YEAR_MIN);
   let yearMax = $state(new Date().getFullYear());
   let hiddenLanes = $state<Set<string>>(new Set());
   let yearPreferenceRestored = false;
@@ -54,9 +54,10 @@
     }
   }
 
-  // Snap yearMax to actual graph data max on first load (if no saved preference)
+  // Align yearMax to the graph (not the calendar year) when the user has no saved range.
+  // Otherwise first paint of `/` writes `?year=1930-{thisYear}` and aborts hydration.
   $effect(() => {
-    if (!yearPreferenceRestored && yearDomain.max > yearMax) {
+    if (!yearPreferenceRestored) {
       yearMax = yearDomain.max;
     }
   });
@@ -169,7 +170,11 @@
     const y = params.get('year');
     if (y && y.includes('-')) {
       const [min, max] = y.split('-').map(Number);
-      if (min >= 1800 && max <= 2030) { yearMin = min; yearMax = max; }
+      if (min >= 1800 && max <= 2030) {
+        yearMin = min;
+        yearMax = max;
+        yearPreferenceRestored = true;
+      }
     }
 
     // Restore hidden lanes from URL
@@ -180,10 +185,19 @@
       hiddenLanes = new Set(allLanes.filter((l: string) => !showLanes.has(l)));
     }
 
-    urlSyncEnabled = true;
+    // Wait until after layout/paint so a query rewrite cannot abort first load.
+    let cancelled = false;
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (!cancelled) urlSyncEnabled = true;
+      });
+    });
+    return () => {
+      cancelled = true;
+    };
   });
 
-  // Sync state → URL after the first restore so iOS Safari does not abort in-flight loads.
+  // Sync state → URL after restore. Native history only — Kit replaceState can abort `/`.
   $effect(() => {
     if (!browser || !urlSyncEnabled) return;
     const url = new URL(window.location.href);
@@ -191,11 +205,9 @@
     if (selectedId) url.searchParams.set('org', selectedId);
     else url.searchParams.delete('org');
 
-    if (yearMin !== 1930 || yearMax !== yearDomain.max) {
-      url.searchParams.set('year', `${yearMin}-${yearMax}`);
-    } else {
-      url.searchParams.delete('year');
-    }
+    const year = yearQueryValue(yearMin, yearMax, yearDomain.max);
+    if (year) url.searchParams.set('year', year);
+    else url.searchParams.delete('year');
 
     // Only set lane param if something is hidden
     if (hiddenLanes.size > 0) {
@@ -206,11 +218,7 @@
       url.searchParams.delete('lane');
     }
 
-    const next = `${url.pathname}${url.search}${url.hash}`;
-    const current = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-    if (next !== current) {
-      replaceState(next, {});
-    }
+    replaceLocation(`${url.pathname}${url.search}${url.hash}`);
   });
 
   function onInspectorOpenChange(open: boolean) {
@@ -242,7 +250,7 @@
     selectedId = null;
     edgeMode = 'hover';
     hiddenLanes = new Set();
-    yearMin = 1930;
+    yearMin = DEFAULT_YEAR_MIN;
     yearMax = yearDomain.max;
     yearPreferenceRestored = true;
     if (browser) localStorage.removeItem('gang-guide-filters');
