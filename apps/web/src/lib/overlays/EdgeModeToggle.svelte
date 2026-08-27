@@ -9,31 +9,33 @@
   interface Props {
     edgeMode: EdgeMode;
     selectedId: string | null;
+    compact?: boolean;
   }
 
-  let { edgeMode = $bindable(), selectedId }: Props = $props();
+  let { edgeMode = $bindable(), selectedId, compact = false }: Props = $props();
 </script>
 
 <div
   role="group"
   aria-label="Edge display mode"
-  class="flex h-8 w-full items-center gap-1.5 rounded-full bg-muted p-0.5 md:h-7 md:w-auto md:gap-2"
+  class="flex items-center overflow-visible rounded-full bg-muted p-0.5 {compact ? 'h-9 shrink-0 gap-0.5' : 'h-8 w-full gap-1.5 md:h-7 md:w-auto md:gap-2'}"
 >
   <span
-    class="flex shrink-0 items-center justify-center pl-2 pr-0.5 text-muted-foreground md:pl-2.5"
+    class="flex shrink-0 items-center justify-center text-muted-foreground {compact ? 'pl-2 pr-0.5' : 'pl-2 pr-0.5 md:pl-2.5'}"
     aria-hidden="true"
   >
     <Link2 class="size-3" strokeWidth={2} />
   </span>
-  <div class="flex min-w-0 flex-1 items-stretch gap-0.5 pr-0.5">
+  <div class="flex shrink-0 items-center gap-0.5 overflow-visible {compact ? 'pr-1.5' : 'min-w-0 flex-1 pr-0.5'}">
   {#each EDGE_OPTIONS as opt}
     {@const disabled = opt.needsSelection && !selectedId}
     {@const active = edgeMode === opt.value}
     <button
       type="button"
-      class="min-w-0 flex-1 select-none rounded-full px-1.5 py-0.5 text-[0.62rem] font-medium transition-[color,background-color,box-shadow] md:flex-none md:px-3 md:text-[0.65rem] {active ? 'bg-accent text-foreground shadow-sm' : 'text-muted-foreground fine-hover:text-foreground'} {disabled ? 'pointer-events-none opacity-30' : ''}"
+      class="shrink-0 select-none whitespace-nowrap rounded-full leading-none font-medium transition-[color,background-color,box-shadow] {compact ? 'px-2.5 py-1 text-[0.62rem]' : 'min-w-0 flex-1 px-1.5 py-0.5 text-[0.62rem] md:flex-none md:px-3 md:py-0.5 md:text-[0.65rem]'} {active ? 'bg-accent text-foreground shadow-sm' : 'text-muted-foreground fine-hover:text-foreground'} {disabled ? 'pointer-events-none opacity-30' : ''}"
       onclick={() => { edgeMode = opt.value; }}
       aria-pressed={active}
+      aria-label={opt.mobileLabel}
       {disabled}
       title={opt.hint}
     >

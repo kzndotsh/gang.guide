@@ -14,9 +14,10 @@
     onToggleGroup: (group: string) => void;
     onShowAll: () => void;
     iconOnly?: boolean;
+    large?: boolean;
   }
 
-  let { groups, hiddenLanes, onToggleGroup, onShowAll, iconOnly = false }: Props = $props();
+  let { groups, hiddenLanes, onToggleGroup, onShowAll, iconOnly = false, large = false }: Props = $props();
 
   const groupNames = $derived(Object.keys(groups));
 
@@ -38,7 +39,7 @@
 
 <Popover.Root>
   <Popover.Trigger
-    class="relative inline-flex size-8 shrink-0 select-none items-center justify-center rounded-full bg-muted text-[0.65rem] leading-none font-medium text-muted-foreground active:scale-[0.97] fine-hover:text-foreground md:h-7 md:w-fit md:px-3.5"
+    class="relative inline-flex shrink-0 select-none items-center justify-center rounded-full bg-muted text-[0.65rem] leading-none font-medium text-muted-foreground active:scale-[0.97] fine-hover:text-foreground {large ? 'size-9' : 'size-8 md:h-7 md:w-fit md:px-3.5'}"
     aria-label={hiddenGroupCount > 0 ? `Lanes, ${hiddenGroupCount} hidden` : 'Lanes'}
   >
     <span class="inline-flex items-center gap-1.5">

@@ -5,14 +5,15 @@
 
   interface Props {
     iconOnly?: boolean;
+    large?: boolean;
   }
 
-  let { iconOnly = false }: Props = $props();
+  let { iconOnly = false, large = false }: Props = $props();
 </script>
 
 <Popover.Root>
   <Popover.Trigger
-    class="relative inline-flex size-8 shrink-0 select-none items-center justify-center rounded-full bg-muted text-[0.65rem] leading-none font-medium text-muted-foreground active:scale-[0.97] fine-hover:text-foreground md:h-7 md:w-fit md:px-3.5"
+    class="relative inline-flex shrink-0 select-none items-center justify-center rounded-full bg-muted text-[0.65rem] leading-none font-medium text-muted-foreground active:scale-[0.97] fine-hover:text-foreground {large ? 'size-9' : 'size-8 md:h-7 md:w-fit md:px-3.5'}"
     aria-label="Edge color legend"
   >
     <span class="inline-flex items-center gap-1.5">

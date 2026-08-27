@@ -387,35 +387,37 @@
               onFit={() => sendZoom("fit")}
             />
           </MapOverlay>
-          <div class="absolute inset-x-2 bottom-2 z-[2] flex min-w-0 items-center gap-1 md:hidden">
-            <button
-              type="button"
-              class="inline-flex size-8 shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground"
-              onclick={() => searchRef?.focusSearch()}
-              aria-label="Search organizations"
-              title="Search"
-            >
-              <Search class="size-3.5" strokeWidth={2} />
-            </button>
-            <YearSliderPopover
-              bind:yearMin
-              bind:yearMax
-              min={yearDomain.min}
-              max={yearDomain.max}
-              defaultMin={1930}
-              defaultMax={yearDomain.max}
-            />
-            <LaneFilter
-              iconOnly
-              groups={laneGroups}
-              {hiddenLanes}
-              onToggleGroup={toggleLaneGroup}
-              onShowAll={() => { if (hiddenLanes.size === 0) { hiddenLanes = new Set(Object.values(laneGroups).flat()); } else { hiddenLanes = new Set(); } }}
-            />
-            <EdgeLegendPopover iconOnly />
-            <div class="min-w-0 flex-1">
-              <EdgeModeToggle bind:edgeMode {selectedId} />
+          <div class="absolute inset-x-2 bottom-2 z-[2] flex items-center justify-between gap-2 md:hidden">
+            <div class="flex items-center gap-1.5">
+              <button
+                type="button"
+                class="inline-flex size-9 shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground"
+                onclick={() => searchRef?.focusSearch()}
+                aria-label="Search organizations"
+                title="Search"
+              >
+                <Search class="size-3.5" strokeWidth={2} />
+              </button>
+              <YearSliderPopover
+                large
+                bind:yearMin
+                bind:yearMax
+                min={yearDomain.min}
+                max={yearDomain.max}
+                defaultMin={1930}
+                defaultMax={yearDomain.max}
+              />
+              <LaneFilter
+                iconOnly
+                large
+                groups={laneGroups}
+                {hiddenLanes}
+                onToggleGroup={toggleLaneGroup}
+                onShowAll={() => { if (hiddenLanes.size === 0) { hiddenLanes = new Set(Object.values(laneGroups).flat()); } else { hiddenLanes = new Set(); } }}
+              />
+              <EdgeLegendPopover iconOnly large />
             </div>
+            <EdgeModeToggle bind:edgeMode {selectedId} compact />
           </div>
         </main>
       </div>

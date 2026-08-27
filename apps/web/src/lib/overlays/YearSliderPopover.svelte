@@ -10,6 +10,7 @@
     defaultMax?: number;
     yearMin: number;
     yearMax: number;
+    large?: boolean;
   }
 
   let {
@@ -19,6 +20,7 @@
     defaultMax = max,
     yearMin = $bindable(),
     yearMax = $bindable(),
+    large = false,
   }: Props = $props();
 
   const atDefault = $derived(yearMin === defaultMin && yearMax === defaultMax);
@@ -26,7 +28,7 @@
 
 <Popover.Root>
   <Popover.Trigger
-    class="relative inline-flex size-8 shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground"
+    class="relative inline-flex shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground {large ? 'size-9' : 'size-8'}"
     aria-label={atDefault ? 'Year range' : `Year range, ${yearMin} to ${yearMax}`}
   >
     <CalendarRange class="size-3.5" strokeWidth={2} />
