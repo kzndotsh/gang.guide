@@ -7,6 +7,7 @@
   import type { Graph } from '$lib/types';
   import { searchOrgNodes } from '$lib/searchNodes';
   import { orgDisplayTitle } from '$lib/inspector/inspectorDisplay';
+  import { restoreBodyInteraction } from '$lib/restoreBodyInteraction';
 
   interface Props {
     graph: Graph;
@@ -36,12 +37,16 @@
       open = !open;
     }
   }
+
+  function handleOpenChange(next: boolean) {
+    if (!next) restoreBodyInteraction();
+  }
 </script>
 
 <svelte:document onkeydown={handleKeydown} />
 
-<Command.Dialog bind:open class="sm:max-w-xl">
-  <Command.Input placeholder="Search orgs..." bind:value={query} class="text-sm" />
+<Command.Dialog bind:open onOpenChange={handleOpenChange} class="sm:max-w-xl">
+  <Command.Input placeholder="Search orgs..." bind:value={query} class="text-base md:text-sm" />
   <Command.List>
     {#if query.length > 1}
       {#if results.length === 0}

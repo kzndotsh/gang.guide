@@ -3,6 +3,7 @@
   import CoverageDialog from '$lib/overlays/CoverageDialog.svelte';
   import { Badge } from '$lib/components/ui/badge/index.js';
   import * as Dialog from '$lib/components/ui/dialog/index.js';
+  import { restoreBodyInteraction } from '$lib/restoreBodyInteraction';
 
 
   interface Props {
@@ -30,7 +31,7 @@
   <div class="flex min-w-0 shrink-0 items-center gap-2 pr-1 sm:pr-2">
     <button
       type="button"
-      class="flex min-w-0 items-center gap-2 rounded-md text-left active:scale-[0.97]"
+      class="flex min-w-0 select-none items-center gap-2 rounded-md text-left active:scale-[0.97]"
       onclick={() => onhome?.()}
       aria-label="Home, reset map"
       title="Home"
@@ -70,10 +71,10 @@
 
   <div class="ml-auto flex items-center gap-1.5 lg:ml-0">
     <CoverageDialog {graph} />
-    <Dialog.Root>
+    <Dialog.Root onOpenChange={(open) => { if (!open) restoreBodyInteraction(); }}>
     <Dialog.Trigger>
       {#snippet child({ props })}
-        <button {...props} class="inline-flex size-8 items-center justify-center rounded-md text-muted-foreground hover:bg-muted hover:text-foreground md:size-6" title="Build history">
+        <button {...props} class="inline-flex size-11 select-none items-center justify-center rounded-md text-muted-foreground active:scale-[0.97] fine-hover:bg-muted fine-hover:text-foreground md:size-6" title="Build history" aria-label="Build history">
               <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="10"/></svg>
             </button>
       {/snippet}
@@ -105,7 +106,7 @@
       href="https://github.com/kzndotsh/gang.guide"
       target="_blank"
       rel="noopener"
-      class="inline-flex size-8 items-center justify-center rounded-md bg-muted text-muted-foreground hover:bg-muted/80 hover:text-foreground md:size-6"
+      class="inline-flex size-11 select-none items-center justify-center rounded-md text-muted-foreground active:scale-[0.97] fine-hover:bg-muted fine-hover:text-foreground md:size-6"
       title="GitHub"
       aria-label="GitHub repository"
     >

@@ -192,18 +192,18 @@
         variant="line"
         class="flex min-w-0 shrink-0 gap-0 px-1"
       >
-        <Tabs.Trigger value="overview" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
+        <Tabs.Trigger value="overview" class="!flex-none min-h-11 min-w-0 gap-1 px-2 py-2 text-[0.68rem] md:min-h-0 md:py-1.5 data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
           <Info class="size-3 shrink-0" />
           <span class="truncate">Overview</span>
         </Tabs.Trigger>
-        <Tabs.Trigger value="network" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
+        <Tabs.Trigger value="network" class="!flex-none min-h-11 min-w-0 gap-1 px-2 py-2 text-[0.68rem] md:min-h-0 md:py-1.5 data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
           <Crosshair class="size-3 shrink-0" />
           <span class="inline-flex min-w-0 max-w-full items-baseline gap-1">
             <span class="truncate">Network</span>
             <span class="text-[0.6rem] tabular-nums text-muted-foreground">({connectionCount})</span>
           </span>
         </Tabs.Trigger>
-        <Tabs.Trigger value="identity" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
+        <Tabs.Trigger value="identity" class="!flex-none min-h-11 min-w-0 gap-1 px-2 py-2 text-[0.68rem] md:min-h-0 md:py-1.5 data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
           <Palette class="size-3 shrink-0" />
           <span class="inline-flex min-w-0 max-w-full items-baseline gap-1">
             <span class="truncate">Identity</span>
@@ -212,7 +212,7 @@
             {/if}
           </span>
         </Tabs.Trigger>
-        <Tabs.Trigger value="sources" class="!flex-none min-w-0 gap-1 px-2 py-1.5 text-[0.68rem] data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
+        <Tabs.Trigger value="sources" class="!flex-none min-h-11 min-w-0 gap-1 px-2 py-2 text-[0.68rem] md:min-h-0 md:py-1.5 data-[state=active]:text-foreground data-[state=active]:border-b data-[state=active]:border-foreground data-[state=active]:shadow-none data-[state=active]:ring-0 focus-visible:ring-0 focus-visible:outline-none ">
           <ExternalLink class="size-3 shrink-0" />
           <span class="inline-flex min-w-0 max-w-full items-baseline gap-1">
             <span class="truncate">Sources</span>

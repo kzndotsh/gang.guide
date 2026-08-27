@@ -3,6 +3,7 @@
   import type { Graph } from '$lib/types';
   import { Button } from '$lib/components/ui/button/index.js';
   import * as Dialog from '$lib/components/ui/dialog/index.js';
+  import { restoreBodyInteraction } from '$lib/restoreBodyInteraction';
 
   interface Props {
     graph: Graph;
@@ -22,14 +23,14 @@
   }
 </script>
 
-<Dialog.Root>
+<Dialog.Root onOpenChange={(open) => { if (!open) restoreBodyInteraction(); }}>
   <Dialog.Trigger>
     {#snippet child({ props })}
       <Button
         {...props}
         variant="ghost"
         size="icon-sm"
-        class="size-8 shrink-0 text-muted-foreground hover:text-foreground md:size-6"
+        class="size-11 shrink-0 select-none text-muted-foreground fine-hover:text-foreground md:size-6"
         aria-label="Data coverage"
       >
         <Info class="size-3.5" />

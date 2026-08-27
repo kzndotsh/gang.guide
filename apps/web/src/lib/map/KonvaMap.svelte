@@ -386,7 +386,7 @@
         x: pos.x, y: pos.y, radius: 6,
         fill: nodeColorFor(node),
         id: node.id,
-        hitStrokeWidth: 12, perfectDrawEnabled: false,
+        hitStrokeWidth: 16, perfectDrawEnabled: false,
       });
 
       circle.on('click tap', () => onselect(node.id));
@@ -898,6 +898,7 @@
       width: Math.max(containerEl.clientWidth, 1),
       height: Math.max(containerEl.clientHeight, 1),
       draggable: true,
+      dragDistance: 8,
     });
 
     bgLayer = new Konva.Layer({ listening: false });
@@ -958,6 +959,10 @@
 
     // Rebuild labels on pan end (viewport-dependent)
     // Also re-enable hit detection after drag (was disabled for perf during drag)
+    const enableNodeHitTesting = () => {
+      nodeLayer.listening(true);
+    };
+
     stage.on('dragstart', () => {
       nodeLayer.listening(false);
     });
@@ -965,11 +970,13 @@
       syncAxisLayer();
     });
     stage.on('dragend', () => {
-      nodeLayer.listening(true);
+      enableNodeHitTesting();
       syncAxisLayer();
       if (rebuildTimer) clearTimeout(rebuildTimer);
       rebuildTimer = setTimeout(() => drawLabels(), 150);
     });
+    stage.on('touchend', enableNodeHitTesting);
+    stage.on('touchcancel', enableNodeHitTesting);
 
     // Click on empty space = deselect
     stage.on('click tap', (e: any) => {
@@ -1011,7 +1018,7 @@
 </script>
 
 <div
-  class="absolute inset-0 overflow-hidden touch-none bg-background cursor-grab [background-image:radial-gradient(circle_at_center,var(--map-grid-dot)_0.65px,transparent_0.65px)] [background-size:18px_18px]"
+  class="pointer-events-auto absolute inset-0 overflow-hidden touch-none bg-background cursor-grab [background-image:radial-gradient(circle_at_center,var(--map-grid-dot)_0.65px,transparent_0.65px)] [background-size:18px_18px]"
 >
   <div
     class={cn(
