@@ -13,7 +13,7 @@
 
 <Popover.Root>
   <Popover.Trigger
-    class="relative inline-flex shrink-0 select-none items-center justify-center rounded-full bg-muted text-[0.65rem] leading-none font-medium text-muted-foreground active:scale-[0.97] fine-hover:text-foreground {large ? 'size-9' : 'size-8 md:h-7 md:w-fit md:px-3.5'}"
+    class="relative inline-flex shrink-0 select-none items-center justify-center rounded-full bg-muted text-[0.65rem] leading-none font-medium text-muted-foreground active:scale-[0.97] fine-hover:text-foreground {large ? 'size-10' : 'size-8 md:h-7 md:w-fit md:px-3.5'}"
     aria-label="Edge color legend"
   >
     <span class="inline-flex items-center gap-1.5">

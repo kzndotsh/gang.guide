@@ -28,10 +28,10 @@
 
 <Popover.Root>
   <Popover.Trigger
-    class="relative inline-flex shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground {large ? 'size-9' : 'size-8'}"
+    class="relative inline-flex shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground {large ? 'size-10' : 'size-8'}"
     aria-label={atDefault ? 'Year range' : `Year range, ${yearMin} to ${yearMax}`}
   >
-    <CalendarRange class="size-3.5" strokeWidth={2} />
+    <CalendarRange class={large ? 'size-4' : 'size-3.5'} strokeWidth={2} />
     {#if !atDefault}
       <span class="absolute -top-0.5 -right-0.5 size-2 rounded-full bg-primary" aria-hidden="true"></span>
     {/if}

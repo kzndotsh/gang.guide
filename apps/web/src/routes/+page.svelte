@@ -388,15 +388,15 @@
             />
           </MapOverlay>
           <div class="absolute inset-x-2 bottom-2 z-[2] flex items-center justify-between gap-2 md:hidden">
-            <div class="flex items-center gap-1.5">
+            <div class="flex items-center gap-2">
               <button
                 type="button"
-                class="inline-flex size-9 shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground"
+                class="inline-flex size-10 shrink-0 select-none items-center justify-center rounded-full bg-muted text-muted-foreground active:scale-[0.97] fine-hover:text-foreground"
                 onclick={() => searchRef?.focusSearch()}
                 aria-label="Search organizations"
                 title="Search"
               >
-                <Search class="size-3.5" strokeWidth={2} />
+                <Search class="size-4" strokeWidth={2} />
               </button>
               <YearSliderPopover
                 large
