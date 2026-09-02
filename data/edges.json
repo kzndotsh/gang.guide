@@ -2864,41 +2864,34 @@
   {
     "id": "d8668fc7f693",
     "source": "org:18th-street-gang",
-    "target": "org:playboys-surenos-13",
+    "target": "org:playboys-13",
     "type": "rivalry",
     "citations": []
   },
   {
     "id": "810aea2e2512",
     "source": "org:aryan-brotherhood",
-    "target": "org:playboys-surenos-13",
+    "target": "org:playboys-13",
     "type": "alliance",
     "citations": []
   },
   {
     "id": "d35e756fb5e4",
     "source": "org:florencia-13",
-    "target": "org:playboys-surenos-13",
+    "target": "org:playboys-13",
     "type": "rivalry",
-    "citations": []
-  },
-  {
-    "id": "094af375df39",
-    "source": "org:ms-13",
-    "target": "org:playboys-surenos-13",
-    "type": "alliance",
     "citations": []
   },
   {
     "id": "230e4062d8d0",
     "source": "org:mexican-mafia",
-    "target": "org:playboys-surenos-13",
+    "target": "org:playboys-13",
     "type": "alliance",
     "citations": []
   },
   {
     "id": "27597d24918f",
-    "source": "org:playboys-surenos-13",
+    "source": "org:playboys-13",
     "target": "org:venice-shoreline-crips",
     "type": "rivalry",
     "citations": []
@@ -18922,7 +18915,7 @@
   },
   {
     "source": "org:avalon-ganster-crips-los-angeles",
-    "target": "org:playboys-surenos-13",
+    "target": "org:playboys-13",
     "type": "alliance",
     "citations": [
       {
@@ -23708,23 +23701,6 @@
         "url": "https://unitedgangs.com/five-time-hometown-crips/",
         "title": "UnitedGangs",
         "evidence": "They are also known for their past feuds with the Delmann Heights Bloods"
-      }
-    ]
-  },
-  {
-    "source": "org:florencia-13",
-    "target": "org:playboys-13",
-    "type": "rivalry",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/florencia-13/",
-        "title": "UnitedGangs",
-        "evidence": "Their largest rivalries are with the 18th Street Gang, 38th Street Gang, Playboys 13, and the East Coast Crips."
-      },
-      {
-        "url": "https://unitedgangs.com/playboys-surenos-13/",
-        "title": "UnitedGangs",
-        "evidence": "Their arch enemies are the Florencia 13 (F-13), 38th Street Gang, and the 18th Street Gang"
       }
     ]
   },
@@ -28920,18 +28896,6 @@
     ]
   },
   {
-    "source": "org:18th-street-gang",
-    "target": "org:playboys-13",
-    "type": "rivalry",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/playboys-surenos-13/",
-        "title": "UnitedGangs",
-        "evidence": "They are rivals of the Westside Drifters (DFS) , 18th Street Gang (Pico-Union) , and the Mara Salvatrucha 13 (MS13)"
-      }
-    ]
-  },
-  {
     "source": "org:ms-13",
     "target": "org:playboys-13",
     "type": "rivalry",
@@ -28944,31 +28908,7 @@
     ]
   },
   {
-    "source": "org:mexican-mafia",
-    "target": "org:playboys-13",
-    "type": "alliance",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/playboys-surenos-13/",
-        "title": "UnitedGangs",
-        "evidence": "The Westside PlayBoys , are allies of the Down Ass Fuck (DAF) and the Mexican-Mafia"
-      }
-    ]
-  },
-  {
     "source": "org:broadway-gangster-crips",
-    "target": "org:playboys-13",
-    "type": "alliance",
-    "citations": [
-      {
-        "url": "https://unitedgangs.com/playboys-surenos-13/",
-        "title": "UnitedGangs",
-        "evidence": "Past allies are the Broadway Gangster Crips and the Avalon Gangster Crips"
-      }
-    ]
-  },
-  {
-    "source": "org:avalon-ganster-crips-los-angeles",
     "target": "org:playboys-13",
     "type": "alliance",
     "citations": [
