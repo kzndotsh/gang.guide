@@ -1,9 +1,7 @@
 {
   "id": "org:blackmatter",
   "name": "BlackMatter",
-  "aliases": [
-    "BlackMatter Ransomware"
-  ],
+  "aliases": [],
   "type": "cybercrime_group",
   "lane": "cybercrime",
   "metro": "Russia",

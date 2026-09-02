@@ -4,7 +4,7 @@
   "type": "prison_gang",
   "lane": "prison",
   "metro": "Los Angeles",
-  "description": "A white supremacist prison gang active in Southern California, especially Cypress, with small factions in Chicago and other states. Originated in the mid-1970s, recognized by California prison authorities in 1999. Known for extreme violence and a three-tier hierarchy. Allies include the Aryan Brotherhood and Public Enemy No. 1; rivals include Bloods, Crips, and Black Guerrilla Family.",
+  "description": "A white supremacist prison gang originating in the California Youth Authority in the mid-to-late 1970s, active both in prison and on the streets primarily in Southern California. Recognized as a gang by California prison authorities in 1999. Known for extreme violence, drug trafficking, and a hierarchical structure. Allied with the Aryan Brotherhood, Mexican Mafia, and Public Enemy No. 1; rivals include Bloods, Crips, and Black Guerrilla Family.",
   "founded_year": 1975,
   "aliases": [
     "NLR",
@@ -20,22 +20,18 @@
       "title": "Aryan Brotherhood — Wikipedia"
     },
     {
-      "url": "https://en.wikipedia.org/wiki/Hermandad_Aria",
-      "title": "Hermandad Aria — Wikipedia"
+      "url": "https://www.adl.org/resources/profile/nazi-low-riders",
+      "title": "Nazi Low Riders — ADL"
     },
     {
-      "url": "https://en.wikipedia.org/wiki/Big_Circle_Gang",
-      "title": "Big Circle Gang — Wikipedia"
-    },
-    {
-      "url": "https://en.wikipedia.org/wiki/Hells_Angels_MC_criminal_allegations_and_incidents",
-      "title": "Hells Angels MC criminal allegations and incidents — Wikipedia"
+      "url": "https://www.splcenter.org/resources/reports/nazi-low-riders-boast-over-1000-members-most-prison/",
+      "title": "Nazi Low Riders Boast Over 1,000 Members, Most in Prison — SPLC"
     }
   ],
   "colors": [
     "white"
   ],
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "status": "active",
   "membership_estimate": 1000,
   "symbols": [

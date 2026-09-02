@@ -2,14 +2,13 @@
   "id": "org:zoe-pound",
   "name": "Zoe Pound",
   "aliases": [
-    "ZMF",
     "Zoe Pound Crew",
     "Zoe Pound Gang"
   ],
   "type": "street_gang",
   "lane": "southeast-southwest",
   "founded_year": 1990,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "description": "Haitian-American street gang founded in 1990 in Miami, Florida, initially as a vigilante self-defense group. Engages in drug trafficking, robbery, murder, prostitution, and racketeering. Expanded across Florida and other states, with territory reaching Virginia by 2006. A faction called ZMF was involved in the 2018 murder of XXXTentacion.",
   "metro": "Miami",
   "sources": [
@@ -43,8 +42,7 @@
     }
   ],
   "symbols": [
-    "Haitian Flag",
-    "Zp"
+    "Haitian Flag"
   ],
   "colors": [
     "blue",

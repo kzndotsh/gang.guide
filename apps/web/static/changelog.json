@@ -1042,5 +1042,32 @@
     "delta_edges": 3,
     "delta_sources": 13,
     "built_at": "2026-08-21T20:07:56.581263+00:00"
+  },
+  {
+    "nodes": 1329,
+    "edges": 3233,
+    "sources": 2877,
+    "delta_nodes": 0,
+    "delta_edges": 0,
+    "delta_sources": -10,
+    "built_at": "2026-09-01T18:14:41.669016+00:00"
+  },
+  {
+    "nodes": 1329,
+    "edges": 3233,
+    "sources": 2879,
+    "delta_nodes": 0,
+    "delta_edges": 0,
+    "delta_sources": 2,
+    "built_at": "2026-09-02T18:33:14.104525+00:00"
+  },
+  {
+    "nodes": 1328,
+    "edges": 3233,
+    "sources": 2877,
+    "delta_nodes": -1,
+    "delta_edges": 0,
+    "delta_sources": -2,
+    "built_at": "2026-09-02T18:44:23.738982+00:00"
   }
 ]

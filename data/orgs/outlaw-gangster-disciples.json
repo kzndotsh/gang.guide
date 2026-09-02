@@ -6,9 +6,9 @@
   ],
   "type": "street_gang",
   "lane": "chicago-folk",
-  "founded_year": 1990,
+  "founded_year": 1988,
   "founded_year_precision": "circa",
-  "description": "A subset of the Gangster Disciples street gang, formed in the early 1990s in Chicago's Cabrini-Green housing project by Charles 'Big Chuck' Dorsey. It engages in drug trafficking, robbery, extortion, and murder, with an estimated 25,000–50,000 members as of 2009. The gang has expanded to Chicago's South Side and has been documented in the U.S. military.",
+  "description": "A subset of the Gangster Disciples street gang, founded in the late 1980s at Chicago's Cabrini-Green housing project by Charles 'Big Chuck' Dorsey. Originally a breakaway faction that openly defied the main GD leadership, Dorsey allied with the Insane Gangster Disciples to consolidate control of Cabrini-Green before he was killed in January 1996. The gang engages in drug trafficking, robbery, extortion, and murder, and has since expanded beyond Cabrini-Green with sets documented in cities including New York, Boston, and St. Louis. The parent organization, Gangster Disciples, has been documented in the U.S. military.",
   "sources": [
     {
       "url": "https://www.streetgangs.com/outlaw/gangster/disciples",
@@ -26,7 +26,6 @@
   ],
   "status": "active",
   "nation_affiliation": "org:folk-nation",
-  "membership_estimate": 25000,
   "symbols": [
     "Six-Point Star",
     "Pitchfork"

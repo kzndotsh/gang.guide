@@ -3,14 +3,23 @@
   "name": "Solid Wood Soldiers",
   "aliases": [
     "Stupid Woods",
-    "SWS"
+    "SWS",
+    "Wolfpack"
   ],
   "type": "prison_gang",
   "lane": "white-supremacist",
   "founded_year": 1990,
-  "founded_year_precision": "exact",
-  "description": "Neo-Nazi prison gang and organized crime syndicate based in Texas, founded in 1990 at Snake River Correctional Institution in Oregon. Known for drug trafficking, assault, murder, and racketeering, with strong ties to other white supremacist groups. Uses distinctive tattoos and symbols, including the number four representing honor, courage, respect, and loyalty.",
+  "founded_year_precision": "decade",
+  "description": "Neo-Nazi prison gang and organized crime syndicate based in Texas, founded during the 1990s by inmates within the Texas Department of Criminal Justice (TDCJ). Also known internally as 'The Wolfpack,' the gang is primarily involved in drug trafficking, assault, murder, and racketeering, with ties to other white supremacist groups. Their primary tattoo uses the SWS initials with lightning-bolt S's, a bear claw, the number 4 (representing Honor, Courage, Respect, and Loyalty), and the letters HCRL.",
   "sources": [
+    {
+      "url": "https://www.adl.org/resources/hate-symbol/solid-wood-soldiers",
+      "title": "Solid Wood Soldiers — ADL Hate Symbols Database"
+    },
+    {
+      "url": "https://www.justice.gov/usao-edtx/pr/12-southeast-texas-residents-arrested-federal-racketeering-charges",
+      "title": "12 Southeast Texas Residents Arrested On Federal Racketeering Charges — DOJ Eastern District of Texas"
+    },
     {
       "url": "https://en.wikipedia.org/wiki/Solid_Wood_Soldiers",
       "title": "Solid Wood Soldiers — Wikipedia"

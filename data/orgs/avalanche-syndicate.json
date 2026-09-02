@@ -9,10 +9,10 @@
   "lane": "cybercrime",
   "metro": "Russia",
   "founded_year": 2009,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "disbanded_year": 2016,
   "status": "inactive",
-  "description": "Avalanche was a major criminal syndicate that operated a bulletproof hosting network used for phishing attacks, banking malware distribution, and ransomware. The network hosted over 20 malware families and sent 1 million phishing emails daily at peak. Europol and US authorities conducted a global takedown in November 2016, arresting five individuals and taking down 800,000+ malicious domains.",
+  "description": "Avalanche was a major criminal syndicate that operated a bulletproof hosting network used for phishing attacks, banking malware distribution, and ransomware. Active since 2009 and run from Eastern Europe, the network hosted approximately 20 malware families and sent more than one million malicious emails per week at its peak. Europol and US authorities conducted a global takedown on November 30, 2016, arresting five individuals and seizing or blocking over 800,000 malicious domains.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Avalanche_(phishing_group)",

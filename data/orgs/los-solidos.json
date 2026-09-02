@@ -4,7 +4,7 @@
   "type": "street_gang",
   "lane": "other-national",
   "founded_year": 1990,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "description": "Los Solidos is a street gang founded in the early 1990s by Lawrence Beauvais in Hartford, Connecticut. The gang formed from the merger of two other gangs to defend against larger rivals like the Latin Kings. It operates in Hartford, Springfield, Massachusetts, and other northeastern cities, involved in drug trafficking, weapons sales, and violent crimes.",
   "metro": "Hartford",
   "sources": [
@@ -32,9 +32,7 @@
   "status": "active",
   "aliases": [
     "The Solid Ones",
-    "La Familia",
-    "OFO",
-    "Original Family Organization"
+    "La Familia"
   ],
   "symbols": [
     "Joker Mask",

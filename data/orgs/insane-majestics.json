@@ -8,9 +8,9 @@
   "type": "street_gang",
   "lane": "chicago-folk",
   "metro": "Chicago",
-  "description": "Insane Majestics is a Folk Nation street gang founded circa 1985 in Chicago.",
+  "description": "The Insane Majestics began as the Majestic Party Crew (MPC), a break-dancing and party crew founded circa 1985 by Sergio \"Gramps\" in Chicago's Marshall Square neighborhood. At their 1988 peak the MPCs claimed over 300 members before sustained pressure from Latin Kings, Satan Disciples, and Two Six splintered the crew. The core that refused to join a larger gang relocated to Cicero around 1990, basing themselves at 31st and Laramie. In 1992 they formally joined Folk Nation under the Satan Disciples' Insane alliance, adopted the Insane Majestics name, and immediately went to war with the Two Two Boys who had previously mentored them. The gang later opened sets in Lyons, Brookfield, Zion, and Waukegan.",
   "founded_year": 1985,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "colors": [
     "black",
     "grey",

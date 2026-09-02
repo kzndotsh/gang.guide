@@ -8,20 +8,20 @@
   "type": "prison_gang",
   "lane": "prison",
   "founded_year": 1985,
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "description": "Predominantly African-American prison gang formed in Folsom State Prison in the mid-1980s by inmates from the San Francisco Bay Area. The name combines the Swahili word for ten (kumi) with San Francisco's area code 415. Members often incorporate African symbols and Swahili language into their culture and tattoos. The gang operates in several California prisons and selected areas.",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/Kumi_415",
-      "title": "Kumi 415 — Wikipedia"
+      "url": "https://en.wikipedia.org/wiki/KUMI_415",
+      "title": "KUMI 415 — Wikipedia"
     },
     {
       "url": "https://en.wikipedia.org/wiki/Black_Guerrilla_Family",
       "title": "Black Guerrilla Family — Wikipedia"
     },
     {
-      "url": "https://www.courtlistener.com/docket/67290611/1/carroll-v-tiktok-inc",
-      "title": "Courtlistener"
+      "url": "https://www.mercurynews.com/2020/01/22/alleged-commander-of-kumi-415-prison-gang-sentenced-for-possessing-gun-after-oakland-police-chase-crash/",
+      "title": "Alleged 'commander' of Kumi 415 prison gang sentenced for possessing gun — Mercury News"
     }
   ],
   "metro": "San Francisco",

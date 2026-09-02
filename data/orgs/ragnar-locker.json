@@ -12,7 +12,7 @@
   "founded_year_precision": "exact",
   "disbanded_year": 2023,
   "status": "inactive",
-  "description": "Ragnar Locker was a ransomware group first identified in December 2019, known for using virtual machine escape techniques to encrypt victims' files and evade endpoint protection. The group targeted critical infrastructure including hospitals and energy companies across multiple countries. A coordinated Europol/Eurojust law enforcement action in October 2023 dismantled the group and arrested its developer.",
+  "description": "Ragnar Locker was a ransomware group first identified in December 2019, known for a novel evasion technique: deploying a full Windows XP virtual machine (via VirtualBox) on victim systems and running its ransomware payload inside that VM to encrypt host drives while staying invisible to endpoint protection — a technique later copied by the Maze group. The group practiced double extortion, threatening to publish stolen data if victims contacted law enforcement or recovery firms. It targeted critical infrastructure including hospitals, energy companies, and airlines across multiple countries. A coordinated Europol/Eurojust action in October 2023 dismantled the group, seized infrastructure across multiple countries, and arrested its key developer — a Russian national — in Paris.",
   "sources": [
     {
       "url": "https://en.wikipedia.org/wiki/Ragnar_Locker",

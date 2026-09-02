@@ -12,30 +12,14 @@
   "nation_affiliation": "org:bloods",
   "sources": [
     {
-      "url": "https://en.wikipedia.org/wiki/135_Pirus",
-      "title": "135 Pirus — Wikipedia"
-    },
-    {
       "url": "https://www.streetgangs.com/bloods/compton/135pirus",
-      "title": "135 Pirus — StreetGangs"
-    },
-    {
-      "url": "https://blackpast.org/african-american-history/rufus-buck-gang-1895-1896",
-      "title": "Academic research"
-    },
-    {
-      "url": "https://blackpast.org/global-african-history/taylor-john-baron-taylor-warwick-1952",
-      "title": "Academic research"
-    },
-    {
-      "url": "https://chicagoganghistory.com/gang/new-breeds",
-      "title": "Encyclopedia of Chicago"
+      "title": "135 Pirus (The Five) — StreetGangs.com"
     }
   ],
   "colors": [
     "red"
   ],
-  "founded_year_precision": "exact",
+  "founded_year_precision": "circa",
   "status": "active",
   "symbols": [
     "Five-Point Star",

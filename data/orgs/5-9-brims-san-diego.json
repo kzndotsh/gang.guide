@@ -4,13 +4,9 @@
   "type": "street_gang",
   "lane": "california-bloods-other",
   "founded_year": 1975,
-  "founded_year_precision": "exact",
-  "description": "The 5-9 Brims (South Side Brims) are a Blood-affiliated gang based in the Lincoln Park area of San Diego, California. They are also known as the Central City Gangsters and are one of several Blood sets operating in the San Diego area.",
+  "founded_year_precision": "circa",
+  "description": "The 5-9 Brims (South Side Brims) are a Blood-affiliated street gang based in the Ocean View Boulevard area of Southeast San Diego, California. Formerly known as the Central City Gangsters, they originated around 40th Street and Ocean View Boulevard in the mid-1970s. They are also known as the Oceanview Basement Bloods and have been allied with the Lincoln Park Bloods and Emerald Hills Gangster Bloods for decades.",
   "sources": [
-    {
-      "url": "https://en.wikipedia.org/wiki/5_9_Brims_San_Diego",
-      "title": "5 9 Brims San Diego — Wikipedia"
-    },
     {
       "url": "https://unitedgangs.com/south-side-59-brims/",
       "title": "5-9 Brims (San Diego) - United Gangs"
@@ -28,7 +24,8 @@
   "aliases": [
     "South Side Brims",
     "SSB",
-    "Central City Gangsters"
+    "Central City Gangsters",
+    "Oceanview Basement Bloods"
   ],
   "colors": [
     "red"
