@@ -121,6 +121,7 @@ def detect_issues(org: dict, edge_count: int) -> list[str]:
     # --- Founded year issues ---
     year = org.get("founded_year")
     precision = org.get("founded_year_precision", "") or ""
+    sources = org.get("sources") or []
     if year:
         # Crip/Blood/Piru sets can't predate the movements
         name_lower = name.lower()
@@ -131,8 +132,9 @@ def detect_issues(org: dict, edge_count: int) -> list[str]:
         # Decade precision with a very specific year (e.g. founded_year=1974, precision=decade)
         if precision == "decade" and year % 10 != 0:
             issues.append("precision_mismatch")
-        # Exact precision with a round year is suspicious without evidence
-        if precision == "exact" and year % 5 == 0:
+        # Exact precision with a round year is suspicious when under-sourced.
+        # Two or more sources is enough corroboration to trust the exactness.
+        if precision == "exact" and year % 5 == 0 and len(sources) < 2:
             issues.append("suspicious_exact_year")
 
     # --- Membership estimate plausibility ---
@@ -146,7 +148,6 @@ def detect_issues(org: dict, edge_count: int) -> list[str]:
             issues.append("implausible_membership")
 
     # --- Source quality ---
-    sources = org.get("sources") or []
     bare_domain_pattern = re.compile(r"^(https?://)?(www\.)?[\w.-]+\.[a-z]{2,}/?$")
     for s in sources:
         title = s.get("title", "") or ""
@@ -162,10 +163,13 @@ def detect_issues(org: dict, edge_count: int) -> list[str]:
         issues.append("single_source_precise")
 
     # --- General spot-check (low priority, random sampling for coverage) ---
-    # Flag ~1 in 20 orgs for general verification even if no specific issue
+    # Flag ~1 in 20 orgs for general verification even if no specific issue.
+    # Rotate weekly so the same org isn't re-flagged every single run.
     import hashlib
+    import time
 
-    h = int(hashlib.md5(org.get("id", "").encode()).hexdigest(), 16)
+    week = int(time.time()) // (7 * 86400)
+    h = int(hashlib.md5(f"{org.get('id', '')}{week}".encode()).hexdigest(), 16)
     if h % 20 == 0 and not issues:
         issues.append("spot_check")
 
