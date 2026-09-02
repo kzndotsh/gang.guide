@@ -158,14 +158,8 @@
 
   function nodeMidX(node: GraphNode): number {
     const baseX = scale.xForYear(plotYearForNode(node));
-    const slot = node.data?.layout?.slot ?? 0;
-    const layout = node.data?.layout ?? deriveClientLayout(node);
-    const rowCount = laneRowCount.get(layout.lane) ?? BASE_ROW_COUNT;
-    // Jitter wraps per row so nodes in the same row share the same X offset.
-    // This prevents unbounded rightward drift in dense lanes (e.g. 74 nodes → slot 73 * 8 = 584px off-canvas).
-    const col = Math.floor(slot / rowCount);
-    const jitter = col * 4;
-    return baseX + jitter;
+    const xOffset = (node.data?.layout as any)?.x_offset ?? 0;
+    return baseX + xOffset;
   }
 
   function nodeLaneY(node: GraphNode): number {

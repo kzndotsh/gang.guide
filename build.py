@@ -24,6 +24,63 @@ def load_lanes():
     return {ln["id"]: ln for ln in lanes}, lanes
 
 
+# ── Collision resolution ──────────────────────────────────────────────────────
+
+# Mirror frontend constants from timelineScale.ts / KonvaMap.svelte
+_PX_PER_YEAR = 42
+_TIMELINE_PAD = 80
+_YEAR_DOMAIN_PAD = 6
+_NODE_RADIUS = 6      # KonvaMap: radius: 6
+_MIN_DIST = _NODE_RADIUS * 2 + 2  # 14px — minimum centre-to-centre gap
+
+
+def _x_for_year(year: float, min_year: float) -> float:
+    return _TIMELINE_PAD + (year - min_year) * _PX_PER_YEAR
+
+
+def resolve_lane_collisions(lane_nodes: list[dict]) -> None:
+    """Push overlapping nodes apart along X by writing x_offset into their layout.
+
+    Works on the list in-place. Uses a 1-D interval sweep: sort by natural X,
+    enforce minimum separation in a forward pass, then re-centre the cluster
+    symmetrically so no node drifts further than necessary from its origin.
+    """
+    if len(lane_nodes) < 2:
+        return
+
+    display_years = [n["data"]["layout"]["display_year"] for n in lane_nodes]
+    min_year = min(display_years) - _YEAR_DOMAIN_PAD
+
+    # Natural X positions (before any offset)
+    natural = [_x_for_year(dy, min_year) for dy in display_years]
+
+    # Sort indices by natural X so the sweep is monotone
+    order = sorted(range(len(natural)), key=lambda i: natural[i])
+
+    # Working positions (absolute, not relative to natural)
+    pos = [natural[i] for i in order]
+
+    # Forward pass: each node must be at least MIN_DIST to the right of its predecessor
+    for k in range(1, len(pos)):
+        gap = pos[k] - pos[k - 1]
+        if gap < _MIN_DIST:
+            pos[k] = pos[k - 1] + _MIN_DIST
+
+    # Backward pass: pull left as much as possible without re-introducing violations
+    for k in range(len(pos) - 2, -1, -1):
+        # Don't exceed the natural position (never push left of origin)
+        max_pos = natural[order[k]]
+        # Don't violate min distance with right neighbour
+        max_pos_from_right = pos[k + 1] - _MIN_DIST
+        pos[k] = min(pos[k], max(max_pos, max_pos_from_right))
+
+    # Write offsets back (only non-zero ones to keep JSON small)
+    for k, orig_idx in enumerate(order):
+        off = round(pos[k] - natural[orig_idx], 1)
+        if off != 0.0:
+            lane_nodes[orig_idx]["data"]["layout"]["x_offset"] = off
+
+
 def build_layout(org, lane_meta, slot):
     lane_id = org.get("lane", "unplaced")
     meta = lane_meta.get(lane_id, {"label": lane_id, "order": 999})
@@ -134,8 +191,11 @@ def build_graph(out_path=None):
         lane_org_list.sort(
             key=lambda o: (o.get("founded_year") or 1980, o.get("name", ""))
         )
+        lane_nodes = []
         for slot, org in enumerate(lane_org_list):
-            nodes.append(build_node(org, lane_meta, slot))
+            lane_nodes.append(build_node(org, lane_meta, slot))
+        resolve_lane_collisions(lane_nodes)
+        nodes.extend(lane_nodes)
 
     # Load relationships
     node_ids = {n["id"] for n in nodes}
