@@ -344,7 +344,7 @@
             ondeselect={deselect}
             onzoom={(z) => (zoomPct = Math.round(z * 100))}
           />
-          <div class="absolute top-3 right-3 left-3 z-[2] hidden items-center justify-between gap-2 md:flex">
+          <div class="absolute top-[calc(36px+0.75rem)] right-3 left-3 z-[2] hidden items-center justify-between gap-2 md:flex">
             <button
               class="flex h-7 min-w-36 select-none items-center gap-1.5 rounded-full bg-muted px-3 text-muted-foreground active:scale-[0.97] fine-hover:text-foreground"
               onclick={() => searchRef?.focusSearch()}
